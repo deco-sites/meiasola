@@ -127,7 +127,9 @@ function Navbar({ menu, wishlist, myaccount, search, colors }: Props) {
             <IslandSearchButton />
           </div>
           <div class="col-span-2 my-auto flex justify-center">
-            <Icon id="MeiaSola" class="w-[110px] h-[18px]" />
+            <a href="/">
+              <Icon id="MeiaSola" class="w-[110px] h-[18px]" />
+            </a>
           </div>
           <div class="col-span-1 my-auto flex justify-between">
             <WishListButton {...wishlist} />
