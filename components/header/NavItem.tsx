@@ -1,62 +1,155 @@
 import Image from "apps/website/components/Image.tsx";
-import { headerHeight } from "./constants.ts";
 
-export interface INavItem {
-  label: string;
-  href: string;
-  children?: INavItem[];
-  image?: { src?: string; alt?: string };
+import Icon from "$store/components/ui/Icon.tsx";
+import type { AvailableIcons } from "$store/components/ui/Icon.tsx";
+
+import { HTMLWidget, ImageWidget } from "apps/admin/widgets.ts";
+
+export interface Props {
+  /**
+   * @default ""
+   */
+  label: HTMLWidget;
+
+  /**
+   * @default /
+   */
+  href?: string;
+
+  icon?: {
+    src: AvailableIcons;
+    height: number;
+    width: number;
+  };
+
+  /**
+   * @title put a left divider
+   */
+  divider?: boolean;
+
+  submenu?: SubMenuProps;
 }
 
-function NavItem({ item }: { item: INavItem }) {
-  const { href, label, children, image } = item;
+function NavItem({ label, href, icon, divider, submenu }: Props) {
+  const content = icon
+    ? (
+      <Icon
+        id={icon.src}
+        width={icon.width}
+        height={icon.height}
+      />
+    )
+    : (
+      <span
+        class="uppercase font-bold text-small"
+        dangerouslySetInnerHTML={{ __html: label }}
+      />
+    );
 
   return (
-    <li class="group flex items-center">
-      <a href={href} class="px-4 py-3">
-        <span class="group-hover:underline">
-          {label}
-        </span>
-      </a>
+    <>
+      {divider && <span class="h-[15px] w-px bg-current" />}
+      <li class="cursor-default group/menu h-full flex items-center">
+        <a href={href}>
+          {content}
+        </a>
 
-      {children && children.length > 0 &&
-        (
-          <div
-            class="fixed hidden hover:flex group-hover:flex bg-base-100 z-50 items-start justify-center gap-6 border-t border-b-2 border-base-200 w-screen"
-            style={{ top: "0px", left: "0px", marginTop: headerHeight }}
-          >
-            {image?.src && (
-              <Image
-                class="p-6"
-                src={image.src}
-                alt={image.alt}
-                width={300}
-                height={332}
-                loading="lazy"
-              />
-            )}
-            <ul class="flex items-start justify-center gap-6">
-              {children.map((node) => (
-                <li class="p-6">
-                  <a class="hover:underline" href={node.href}>
-                    <span>{node.label}</span>
-                  </a>
+        {submenu && <SubMenu {...submenu} />}
+      </li>
+    </>
+  );
+}
 
-                  <ul class="flex flex-col gap-1 mt-4">
-                    {node.children?.map((leaf) => (
-                      <li>
-                        <a class="hover:underline" href={leaf.href}>
-                          <span class="text-xs">{leaf.label}</span>
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </li>
-              ))}
-            </ul>
-          </div>
+export interface SubMenuProps {
+  sections: Section[];
+  image?: ImageWidget;
+}
+
+function SubMenu({ sections, image }: SubMenuProps) {
+  return (
+    <div class="hidden group-hover/menu:block bg-white text-black border-t border-grey-1 absolute top-full left-0 w-screen h-[245px] max-h-[245px] overflow-hidden">
+      <div class="container py-6 h-full flex gap-2">
+        {sections.map((section, index) => {
+          return (
+            <>
+              {index !== 0 && <div class="h-full w-px bg-grey-1 mr-18" />}
+              <Section {...section} />
+            </>
+          );
+        })}
+
+        {image && (
+          <Image
+            src={image}
+            width={400}
+            height={400}
+            class="h-full object-cover flex-1"
+          />
         )}
-    </li>
+      </div>
+    </div>
+  );
+}
+
+interface Section {
+  /**
+   * @title Section Title
+   */
+  label: string;
+  /**
+   * @title Hide Section Title On Mobile Menu
+   */
+  hideSectionOnMobile?: boolean;
+
+  /**
+   * @title Section Items
+   */
+  items: {
+    label: string;
+    href: string;
+    image?: {
+      src: ImageWidget;
+      width: number;
+      height: number;
+    };
+    underlined?: boolean;
+  }[];
+
+  /**
+   * @title Show Section Items as Square
+   */
+  showItemsAsSquare?: boolean;
+}
+
+function Section({ label, items }: Section) {
+  return (
+    <div>
+      {!items?.[0].image && <p class="font-bold text-subtitle">{label}</p>}
+      <ul class="text-body flex flex-col flex-wrap max-h-full">
+        {items.map((item) => {
+          const content = item.image
+            ? (
+              <Image
+                src={item.image.src}
+                width={item.image.width}
+                height={item.image.height}
+                class="opacity-50 hover:opacity-100"
+              />
+            )
+            : item.label;
+          return (
+            <li class={item.image ? "mt-7 mr-12" : "mt-8 mr-18"}>
+              <a
+                href={item.href}
+                class={`${item.underlined && "underline text-small"}`}
+              >
+                {content}
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
   );
 }
 

@@ -1,82 +1,143 @@
+import { useSignal } from "@preact/signals";
+
+import Button from "$store/components/ui/Button.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
-import type { INavItem } from "./NavItem.tsx";
+import Drawer from "$store/components/ui/Drawer.tsx";
+
+import Aside from "$store/components/header/Drawers/Aside.tsx";
+
+import type {
+  Props as NavItemProps,
+  SubMenuProps,
+} from "$store/components/header/NavItem.tsx";
+import WishListButton from "$store/components/header/Buttons/WishList.tsx";
+import type { Props as WishListButtonProps } from "$store/components/header/Buttons/WishList.tsx";
+import MyAccountButton from "$store/components/header/Buttons/MyAccount.tsx";
+import type { Props as MyAccountButtonProps } from "$store/components/header/Buttons/MyAccount.tsx";
 
 export interface Props {
-  items: INavItem[];
+  items: NavItemProps[];
 }
 
-function MenuItem({ item }: { item: INavItem }) {
+function Menu(
+  { items, myaccount, wishlist }: Props & {
+    wishlist: WishListButtonProps;
+    myaccount: MyAccountButtonProps;
+  },
+) {
+  const submenu = useSignal<SubMenuProps | undefined>(undefined);
+
   return (
-    <div class="collapse collapse-plus">
-      <input type="checkbox" />
-      <div class="collapse-title">{item.label}</div>
-      <div class="collapse-content">
-        <ul>
-          <li>
-            <a class="underline text-sm" href={item.href}>Ver todos</a>
-          </li>
-          {item.children?.map((node) => (
-            <li>
-              <MenuItem item={node} />
-            </li>
+    <Drawer
+      open={!!submenu.value}
+      onClose={() => submenu.value = undefined}
+      aside={
+        <Aside onClose={() => submenu.value = undefined} chevronLeft>
+          {submenu.value && <SubMenu {...submenu.value} />}
+        </Aside>
+      }
+    >
+      <nav class="flex flex-col justify-between grow">
+        <ul class="flex flex-col">
+          {items.map((item) => (
+            <MenuItem
+              {...item}
+              openSubmenu={() => submenu.value = item.submenu}
+            />
           ))}
         </ul>
-      </div>
-    </div>
-  );
-}
 
-function Menu({ items }: Props) {
-  return (
-    <div class="flex flex-col h-full">
-      <ul class="px-4 flex-grow flex flex-col divide-y divide-base-200">
-        {items.map((item) => (
+        <ul class="flex flex-col gap-8">
           <li>
-            <MenuItem item={item} />
+            <WishListButton {...wishlist} variantMenu />
           </li>
-        ))}
-      </ul>
-
-      <ul class="flex flex-col py-2 bg-base-200">
-        <li>
-          <a
-            class="flex items-center gap-4 px-4 py-2"
-            href="/wishlist"
-          >
-            <Icon id="Heart" size={24} strokeWidth={2} />
-            <span class="text-sm">Lista de desejos</span>
-          </a>
-        </li>
-        <li>
-          <a
-            class="flex items-center gap-4 px-4 py-2"
-            href="https://www.deco.cx"
-          >
-            <Icon id="MapPin" size={24} strokeWidth={2} />
-            <span class="text-sm">Nossas lojas</span>
-          </a>
-        </li>
-        <li>
-          <a
-            class="flex items-center gap-4 px-4 py-2"
-            href="https://www.deco.cx"
-          >
-            <Icon id="Phone" size={24} strokeWidth={2} />
-            <span class="text-sm">Fale conosco</span>
-          </a>
-        </li>
-        <li>
-          <a
-            class="flex items-center gap-4 px-4 py-2"
-            href="https://www.deco.cx"
-          >
-            <Icon id="User" size={24} strokeWidth={2} />
-            <span class="text-sm">Minha conta</span>
-          </a>
-        </li>
-      </ul>
-    </div>
+          <li>
+            <MyAccountButton {...myaccount} variantMenu />
+          </li>
+        </ul>
+      </nav>
+    </Drawer>
   );
 }
 
 export default Menu;
+
+function SubMenu({ sections }: SubMenuProps) {
+  return (
+    <nav class="flex flex-col justify-between grow">
+      <ul class="flex flex-col">
+        {sections.map((section, index) => (
+          <>
+            {index != 0 && <span class="h-px w-full my-4 bg-grey-1" />}
+            <div>
+              {!section.hideSectionOnMobile && (
+                <p class="uppercase text-large font-bold my-4">
+                  {section.label}
+                </p>
+              )}
+              <ul
+                class={`${
+                  section.showItemsAsSquare &&
+                  "flex flex-wrap gap-x-7 gap-y-6 mt-4"
+                }`}
+              >
+                {section.items.map((item) => (
+                  <li>
+                    <a
+                      href={item.href}
+                      class={`inline-block my-4 text-body ${
+                        item.underlined && "text-small underline"
+                      }
+                      ${
+                        section.showItemsAsSquare &&
+                        "px-2.5 h-[38px] flex items-center justify-center border border-black text-large leading-none !my-0"
+                      }`}
+                    >
+                      {item.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </>
+        ))}
+      </ul>
+    </nav>
+  );
+}
+
+function MenuItem(
+  { label, divider, href, icon, submenu, openSubmenu }: NavItemProps & {
+    openSubmenu: () => void;
+  },
+) {
+  const content = icon
+    ? (
+      <Icon
+        id={icon.src}
+        width={icon.width}
+        height={icon.height}
+      />
+    )
+    : (
+      <span
+        class="text-large uppercase font-medium"
+        dangerouslySetInnerHTML={{ __html: label }}
+      />
+    );
+
+  return (
+    <>
+      {divider && <span class="h-px w-full my-4 bg-grey-1" />}
+      <li>
+        {!submenu
+          ? <a href={href} class="my-4 w-fit inline-flex">{content}</a>
+          : (
+            <Button onClick={openSubmenu} class="py-4">
+              {content}
+            </Button>
+          )}
+      </li>
+    </>
+  );
+}

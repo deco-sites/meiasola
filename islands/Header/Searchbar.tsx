@@ -1,8 +1,8 @@
-import Component from "$store/components/header/Searchbar.tsx";
+import { SearchbarMobile } from "$store/components/header/Searchbar.tsx";
 import type { Props } from "$store/components/header/Searchbar.tsx";
 
 function Island(props: Props) {
-  return <Component {...props} />;
+  return <SearchbarMobile {...props} />;
 }
 
 export default Island;

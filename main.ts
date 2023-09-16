@@ -16,4 +16,8 @@ await start(manifest, {
     }),
     partytownPlugin(),
   ],
+  render: (ctx, render) => {
+    ctx.lang = "pt-BR";
+    render();
+  },
 });

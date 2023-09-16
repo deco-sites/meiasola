@@ -1,33 +1,28 @@
-import Slider from "$store/components/ui/Slider.tsx";
-import SliderJS from "$store/islands/SliderJS.tsx";
-import { useId } from "$store/sdk/useId.ts";
+import type { HTMLWidget } from "apps/admin/widgets.ts";
 
 export interface Props {
-  alerts: string[];
+  text: HTMLWidget;
   /**
-   * @title Autoplay interval
-   * @description time (in seconds) to start the carousel autoplay
+   * @title Hide Alert
    */
-  interval?: number;
+  hide?: boolean;
+
+  /**
+   * @format color
+   * @title Background
+   * @default #090B0A
+   */
+  background: string;
 }
 
-function Alert({ alerts = [], interval = 5 }: Props) {
-  const id = useId();
-
+function Alert({ text, hide, background }: Props) {
+  if (hide) return null;
   return (
-    <div id={id}>
-      <Slider class="carousel carousel-center w-screen bg-secondary gap-6">
-        {alerts.map((alert, index) => (
-          <Slider.Item index={index} class="carousel-item">
-            <span class="text-sm text-secondary-content flex justify-center items-center w-screen h-[38px]">
-              {alert}
-            </span>
-          </Slider.Item>
-        ))}
-      </Slider>
-
-      <SliderJS rootId={id} interval={interval && interval * 1e3} />
-    </div>
+    <div
+      style={{ background }}
+      class="text-white text-small flex justify-center items-center w-full h-[43px]"
+      dangerouslySetInnerHTML={{ __html: text }}
+    />
   );
 }
 

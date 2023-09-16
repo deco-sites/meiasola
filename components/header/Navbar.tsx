@@ -1,95 +1,172 @@
-import type { Props as SearchbarProps } from "$store/components/search/Searchbar.tsx";
+import { Head, IS_BROWSER } from "$fresh/runtime.ts";
+
 import Icon from "$store/components/ui/Icon.tsx";
-import { MenuButton, SearchButton } from "$store/islands/Header/Buttons.tsx";
-import CartButtonVDNA from "$store/islands/Header/Cart/vnda.tsx";
-import CartButtonVTEX from "$store/islands/Header/Cart/vtex.tsx";
-import CartButtonWake from "$store/islands/Header/Cart/wake.tsx";
-import CartButtonShopify from "$store/islands/Header/Cart/shopify.tsx";
-import Searchbar from "$store/islands/Header/Searchbar.tsx";
-import Image from "apps/website/components/Image.tsx";
-import { usePlatform } from "$store/sdk/usePlatform.tsx";
-import type { INavItem } from "./NavItem.tsx";
-import NavItem from "./NavItem.tsx";
-import { navbarHeight } from "./constants.ts";
 
-function Navbar({ items, searchbar, logo }: {
-  items: INavItem[];
-  searchbar: SearchbarProps;
-  logo?: { src: string; alt: string };
-}) {
-  const platform = usePlatform();
+import NavItem from "$store/components/header/NavItem.tsx";
+import WishListButton from "$store/components/header/Buttons/WishList.tsx";
+import type { Props as WishListButtonProps } from "$store/components/header/Buttons/WishList.tsx";
+import MyAccountButton from "$store/components/header/Buttons/MyAccount.tsx";
+import type { Props as MyAccountButtonProps } from "$store/components/header/Buttons/MyAccount.tsx";
+import { SearchbarInput } from "$store/components/header/Searchbar.tsx";
+import type { Props as SearchProps } from "$store/components/header/Searchbar.tsx";
+import type { Props as MenuProps } from "$store/components/header/Menu.tsx";
 
+import IslandSearchbar from "$store/islands/Header/Searchbar.tsx";
+import {
+  IslandCartDrawer,
+  IslandMenuDrawer,
+} from "$store/islands/Header/Drawers.tsx";
+
+import {
+  IslandCartButton,
+  IslandMenuButton,
+  IslandSearchButton,
+} from "$store/islands/Header/Buttons.tsx";
+
+export interface Props {
+  menu: MenuProps;
+  wishlist: WishListButtonProps;
+  myaccount: MyAccountButtonProps;
+  search: SearchProps;
+
+  colors: ColorProps;
+}
+
+interface ColorProps {
+  /**
+   * @format color
+   * @title First Background
+   * @description Background color when at the top of the page
+   * @default #090B0A
+   */
+  background_top: string;
+  /**
+   * @title Start with a Transparent Background
+   */
+  startWithtransparent?: boolean;
+  /**
+   * @format color
+   * @title First Text Color
+   * @description Text color when at the top of the page
+   * @default #FFFFFF
+   */
+  text_top: string;
+
+  /**
+   * @format color
+   * @title Second Background
+   * @description Background color when hover or at the rest of the page
+   * @default #090B0A
+   */
+  background_body: string;
+  /**
+   * @format color
+   * @title Second Text Color
+   * @description Text color when hover or at the rest of the page
+   * @default #FFFFFF
+   */
+  text_body: string;
+}
+
+function generateNavbarStyles(
+  {
+    background_top,
+    text_top,
+    background_body,
+    text_body,
+    startWithtransparent,
+  }: ColorProps,
+) {
+  return `
+  .my-custom-navbar {
+    background-color: ${startWithtransparent ? "transparent" : background_top};
+    color: ${text_top}; 
+  }
+
+  .my-custom-navbar:has(.navbar-content:hover,.searchbar-input:focus,.searchbar-mobile),.my-custom-navbar-active {
+    background-color: ${background_body};
+    color: ${text_body};
+  }
+`;
+}
+
+function madeNavbarWorksWithScroll(maxScrollInactiveHeight: number) {
+  return `
+    if(window) {
+      const navbars = document.querySelectorAll(".my-custom-navbar");
+      document.addEventListener("scroll", () => {
+        if (window.scrollY > ${maxScrollInactiveHeight}) {
+          navbars.forEach((navbar) => {
+            navbar.classList.add("my-custom-navbar-active");
+          });
+        } else {
+          navbars.forEach((navbar) => {
+            navbar.classList.remove("my-custom-navbar-active");
+          });
+        }
+      })
+    }
+  `;
+}
+
+function Navbar({ menu, wishlist, myaccount, search, colors }: Props) {
   return (
     <>
+      <Head>
+        <style
+          type="text/css"
+          dangerouslySetInnerHTML={{ __html: generateNavbarStyles(colors) }}
+        />
+      </Head>
+
       {/* Mobile Version */}
-      <div
-        style={{ height: navbarHeight }}
-        class="md:hidden flex flex-row justify-between items-center border-b border-base-200 w-full pl-2 pr-6 gap-2"
-      >
-        <MenuButton />
-
-        {logo && (
-          <a
-            href="/"
-            class="flex-grow inline-flex items-center"
-            style={{ minHeight: navbarHeight }}
-            aria-label="Store logo"
-          >
-            <Image src={logo.src} alt={logo.alt} width={126} height={16} />
-          </a>
-        )}
-
-        <div class="flex gap-1">
-          <SearchButton />
-          {platform === "vtex" && <CartButtonVTEX />}
-          {platform === "vnda" && <CartButtonVDNA />}
+      <div class="w-full h-[73px] flex tablet:hidden items-center my-custom-navbar transition-all duration-200 ease-out group">
+        <div class="container grid grid-cols-4 navbar-content">
+          <div class="col-span-1 my-auto flex justify-between">
+            <IslandMenuButton />
+            <IslandSearchButton />
+          </div>
+          <div class="col-span-2 my-auto flex justify-center">
+            <Icon id="MeiaSola" class="w-[110px] h-[18px]" />
+          </div>
+          <div class="col-span-1 my-auto flex justify-between">
+            <WishListButton {...wishlist} />
+            <IslandCartButton />
+          </div>
         </div>
+        <IslandSearchbar {...search} />
       </div>
 
       {/* Desktop Version */}
-      <div class="hidden md:flex flex-row justify-between items-center border-b border-base-200 w-full pl-2 pr-6">
-        <div class="flex-none w-44">
-          {logo && (
-            <a
-              href="/"
-              aria-label="Store logo"
-              class="block px-4 py-3 w-[160px]"
-            >
-              <Image src={logo.src} alt={logo.alt} width={126} height={16} />
+      <div class="w-full h-[73px] hidden tablet:flex items-center my-custom-navbar transition-all duration-200 ease-out group">
+        <div class="container grid grid-cols-12 navbar-content h-full">
+          <div class="col-span-6 desktop:col-span-8 flex items-center justify-end desktop:justify-start flex-row-reverse desktop:flex-row gap-10 desktop:gap-5 monitor:gap-10">
+            <a href="/">
+              <Icon id="MeiaSola" class="w-[110px] h-[18px]" />
             </a>
-          )}
-        </div>
-        <div class="flex-auto flex justify-center">
-          {items.map((item) => <NavItem item={item} />)}
-        </div>
-        <div class="flex-none w-44 flex items-center justify-end gap-2">
-          <SearchButton />
-          <Searchbar searchbar={searchbar} />
-          <a
-            class="btn btn-circle btn-sm btn-ghost"
-            href="/login"
-            aria-label="Log in"
-          >
-            <Icon id="User" size={24} strokeWidth={0.4} />
-          </a>
-          <a
-            class="btn btn-circle btn-sm btn-ghost"
-            href="/wishlist"
-            aria-label="Wishlist"
-          >
-            <Icon
-              id="Heart"
-              size={24}
-              strokeWidth={2}
-              fill="none"
-            />
-          </a>
-          {platform === "vtex" && <CartButtonVTEX />}
-          {platform === "vnda" && <CartButtonVDNA />}
-          {platform === "wake" && <CartButtonWake />}
-          {platform === "shopify" && <CartButtonShopify />}
+
+            <IslandMenuButton className="desktop:hidden" />
+            <ul class="hidden desktop:flex items-center gap-3 monitor:gap-5 h-full">
+              {menu.items.map((item) => <NavItem {...item} />)}
+            </ul>
+          </div>
+
+          <div class="col-span-6 desktop:col-span-4 flex gap-8 items-center">
+            <SearchbarInput {...search} />
+            <WishListButton {...wishlist} />
+            <MyAccountButton {...myaccount} />
+            <IslandCartButton />
+          </div>
         </div>
       </div>
+
+      <script
+        dangerouslySetInnerHTML={{
+          __html: madeNavbarWorksWithScroll(400),
+        }}
+      />
+      <IslandMenuDrawer menu={menu} wishlist={wishlist} myaccount={myaccount} />
+      <IslandCartDrawer />
     </>
   );
 }

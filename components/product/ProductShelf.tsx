@@ -8,7 +8,6 @@ import Slider from "$store/components/ui/Slider.tsx";
 import SliderJS from "$store/islands/SliderJS.tsx";
 import { useId } from "$store/sdk/useId.ts";
 import { useOffer } from "$store/sdk/useOffer.ts";
-import { usePlatform } from "$store/sdk/usePlatform.tsx";
 import type { Product } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 
@@ -31,7 +30,6 @@ function ProductShelf({
   cardLayout,
 }: Props) {
   const id = useId();
-  const platform = usePlatform();
 
   if (!products || products.length === 0) {
     return null;
@@ -60,7 +58,6 @@ function ProductShelf({
                 product={product}
                 itemListName={title}
                 layout={cardLayout}
-                platform={platform}
               />
             </Slider.Item>
           ))}

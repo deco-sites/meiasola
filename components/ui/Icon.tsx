@@ -3,7 +3,6 @@ import type { JSX } from "preact";
 
 export type AvailableIcons =
   | "ArrowsPointingOut"
-  | "Bars3"
   | "ChevronLeft"
   | "ChevronRight"
   | "ChevronUp"
@@ -39,8 +38,21 @@ export type AvailableIcons =
   | "User"
   | "Visa"
   | "WhatsApp"
-  | "XMark"
-  | "Zoom";
+  | "Zoom"
+  | "MeiaSola"
+  | "M|S"
+  | "Bag"
+  | "Heart"
+  | "User"
+  | "Microphone"
+  | "Search"
+  | "Facebook"
+  | "WhatsApp"
+  | "Instagram"
+  | "Tiktok"
+  | "Menu"
+  | "Menu"
+  | "XMark";
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   /**
@@ -53,7 +65,7 @@ interface Props extends JSX.SVGAttributes<SVGSVGElement> {
 }
 
 function Icon(
-  { id, strokeWidth = 16, size, width, height, ...otherProps }: Props,
+  { id, strokeWidth = 1.5, size, width, height, ...otherProps }: Props,
 ) {
   return (
     <svg

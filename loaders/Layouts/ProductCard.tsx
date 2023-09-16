@@ -1,5 +1,4 @@
 import ProductCard, { Layout } from "$store/components/product/ProductCard.tsx";
-import { usePlatform } from "$store/sdk/usePlatform.tsx";
 
 interface Props {
   /** @title Product Card layout props */
@@ -17,7 +16,6 @@ export const Preview = (props: Props) => {
       <div class="max-w-xs">
         <ProductCard
           layout={layout}
-          platform={usePlatform()}
           product={{
             "@type": "Product",
             "category": "Masculino>Camisetas Gola Lisa",
