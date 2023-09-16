@@ -46,7 +46,7 @@ function Newsletter(
   return (
     <>
       {/* MOBILE VERSION */}
-      <div class="block tablet:hidden bg-[#F3F3F3] py-4">
+      <div class="block tablet:hidden bg-[#F3F3F3] py-6">
         <div class="container flex flex-col gap-6">
           <div class="flex flex-col gap-3">
             <h3 class="font-bold text-subtitle">
@@ -91,7 +91,7 @@ function Newsletter(
           </div>
           <div class="col-span-1 flex"></div>
           <form
-            class="col-span-4 w-full form-control gap-3.5"
+            class="col-span-4 w-full form-control justify-center gap-3.5"
             onSubmit={handleSubmit}
           >
             <input
