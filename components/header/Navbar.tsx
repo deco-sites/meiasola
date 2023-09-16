@@ -121,7 +121,7 @@ function Navbar({ menu, wishlist, myaccount, search, colors }: Props) {
 
       {/* Mobile Version */}
       <div class="w-full h-[73px] flex tablet:hidden items-center my-custom-navbar transition-all duration-200 ease-out group">
-        <div class="container grid grid-cols-4 navbar-content">
+        <div class="container grid grid-cols-4 gap-4 navbar-content">
           <div class="col-span-1 my-auto flex justify-between">
             <IslandMenuButton />
             <IslandSearchButton />
@@ -141,7 +141,7 @@ function Navbar({ menu, wishlist, myaccount, search, colors }: Props) {
 
       {/* Desktop Version */}
       <div class="w-full h-[73px] hidden tablet:flex items-center my-custom-navbar transition-all duration-200 ease-out group">
-        <div class="container grid grid-cols-12 navbar-content h-full">
+        <div class="container grid grid-cols-12 gap-5 navbar-content h-full">
           <div class="col-span-6 desktop:col-span-8 flex items-center justify-end desktop:justify-start flex-row-reverse desktop:flex-row gap-10 desktop:gap-5 monitor:gap-10">
             <a href="/">
               <Icon id="MeiaSola" class="w-[110px] h-[18px]" />
