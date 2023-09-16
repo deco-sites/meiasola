@@ -2,6 +2,7 @@ import Image from "apps/website/components/Image.tsx";
 
 import Icon from "$store/components/ui/Icon.tsx";
 import type { AvailableIcons } from "$store/components/ui/Icon.tsx";
+import Divider from "$store/components/ui/Divider.tsx";
 
 import { HTMLWidget, ImageWidget } from "apps/admin/widgets.ts";
 
@@ -12,14 +13,15 @@ export interface Props {
   label: HTMLWidget;
 
   /**
+   * @title Link
    * @default /
    */
   href?: string;
 
   icon?: {
     src: AvailableIcons;
-    height: number;
     width: number;
+    height: number;
   };
 
   /**
@@ -48,7 +50,11 @@ function NavItem({ label, href, icon, divider, submenu }: Props) {
 
   return (
     <>
-      {divider && <li class="h-[15px] w-px bg-current" />}
+      {divider && (
+        <li>
+          <Divider className="!bg-current !h-[15px]" vertical />
+        </li>
+      )}
       <li class="cursor-default group/menu h-full flex items-center">
         <a href={href}>
           {content}
@@ -69,10 +75,10 @@ function SubMenu({ sections, image }: SubMenuProps) {
   return (
     <div class="hidden group-hover/menu:block bg-white text-black border-t border-grey-1 absolute top-full left-0 w-screen h-[245px] max-h-[245px] overflow-hidden">
       <div class="container py-6 h-full flex gap-2">
-        {sections.map((section, index) => {
+        {sections?.map((section, index) => {
           return (
             <>
-              {index !== 0 && <div class="h-full w-px bg-grey-1 mr-18" />}
+              {index !== 0 && <Divider className="mr-18" vertical />}
               <Section {...section} />
             </>
           );
@@ -80,6 +86,7 @@ function SubMenu({ sections, image }: SubMenuProps) {
 
         {image && (
           <Image
+            loading="lazy"
             src={image}
             width={400}
             height={400}
@@ -106,8 +113,10 @@ interface Section {
    */
   items: {
     label: string;
+    /** @title Link */
     href: string;
     image?: {
+      /** @title Imagem */
       src: ImageWidget;
       width: number;
       height: number;
@@ -126,10 +135,11 @@ function Section({ label, items }: Section) {
     <div>
       {!items?.[0].image && <p class="font-bold text-subtitle">{label}</p>}
       <ul class="text-body flex flex-col flex-wrap max-h-full">
-        {items.map((item) => {
+        {items?.map((item) => {
           const content = item.image
             ? (
               <Image
+                loading="lazy"
                 src={item.image.src}
                 width={item.image.width}
                 height={item.image.height}

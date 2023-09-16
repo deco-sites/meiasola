@@ -3,6 +3,7 @@ import { Suspense } from "preact/compat";
 
 import Button from "$store/components/ui/Button.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
+import Logo from "$store/components/ui/Logo.tsx";
 
 export interface Props {
   title?: string;
@@ -30,7 +31,7 @@ function Aside(
           )
           : (
             <div class="flex justify-center w-full">
-              <Icon id="MeiaSola" class="w-[90px] h-[14px]" />
+              <Logo class="w-[90px] h-[14px]" />
             </div>
           )}
         {onClose && (

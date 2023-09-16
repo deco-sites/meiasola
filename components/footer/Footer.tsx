@@ -12,10 +12,13 @@
 // import type { ImageWidget } from "apps/admin/widgets.ts";
 // import PoweredByDeco from "apps/website/components/PoweredByDeco.tsx";
 
-import Icon from "deco-sites/meiasola/components/ui/Icon.tsx";
+import Icon from "$store/components/ui/Icon.tsx";
+
+import Image from "apps/website/components/Image.tsx";
+import Logo from "$store/components/ui/Logo.tsx";
+import Divider from "$store/components/ui/Divider.tsx";
 
 import { ImageWidget } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
 
 // export type Item = {
 //   label: string;
@@ -333,16 +336,18 @@ import Image from "apps/website/components/Image.tsx";
 
 export interface Props {
   head: FooterHeadProps;
+  body: FooterBodyProps;
 }
 
-function Footer({ head }: Props) {
+function Footer({ head, body }: Props) {
   return (
     <footer class="bg-black text-white text-body py-9">
       <div class="container grid grid-cols-4 gap-4 tablet:grid-cols-12 tablet:gap-5">
         <div class="hidden tablet:flex col-span-1"></div>
         <div class="col-span-4 tablet:col-span-10 flex flex-col gap-6">
           <FooterHead {...head} />
-          <span class="bg-gray-1 w-full h-px" />
+          <Divider />
+          <FooterBody {...body} />
         </div>
         <div class="hidden tablet:flex col-span-1"></div>
       </div>
@@ -377,24 +382,22 @@ interface FooterHeadProps {
 }
 
 function FooterHead({ social, app }: FooterHeadProps) {
-  const Logo = () => (
+  const LogoWrapper = () => (
     <div class="flex-1 flex laptop:justify-center items-center">
-      <a href="/" alt="Logo da MeiaSola">
-        <Icon id="MeiaSola" class="w-[110px] h-[18px]" />
-      </a>
+      <Logo />
     </div>
   );
 
   return (
     <div class="flex flex-col gap-10 laptop:flex-row laptop:gap-0">
       <div class="flex-1 flex laptop:hidden">
-        <Logo />
+        <LogoWrapper />
       </div>
 
       <div class="flex-1 flex items-center justify-between laptop:justify-start gap-4">
-        <h4>{social.label}</h4>
+        <h5>{social?.label}</h5>
         <div class="flex gap-4">
-          {social.items.map((item) => (
+          {social?.items?.map((item) => (
             <a aria-label={item.label} href={item.link}>
               <Icon id={item.label} class="h-6 w-6 desktop:h-8 desktop:w-8" />
             </a>
@@ -403,13 +406,13 @@ function FooterHead({ social, app }: FooterHeadProps) {
       </div>
 
       <div class="flex-1 hidden laptop:flex">
-        <Logo />
+        <LogoWrapper />
       </div>
 
       <div class="flex-1 flex items-center justify-between laptop:justify-end gap-5">
-        <h4>{app.label}</h4>
+        <h5>{app?.label}</h5>
         <div class="flex gap-4">
-          {app.images.map((image) => (
+          {app?.images?.map((image) => (
             <a alt={image.label} href={image.link}>
               <Image
                 alt={image.label}
@@ -423,5 +426,70 @@ function FooterHead({ social, app }: FooterHeadProps) {
         </div>
       </div>
     </div>
+  );
+}
+
+interface FooterBodyProps {
+  categories: LinkMapProps[];
+  sections: LinkMapProps[];
+}
+
+function FooterBody({ categories, sections }: FooterBodyProps) {
+  return (
+    <>
+      {/* CATEGORIES */}
+      {categories?.length > 0 && (
+        <>
+          <div class="grid grid-cols-10 gap-5">
+            {categories?.map((category) => (
+              <div class="col-span-2 flex flex-col">
+                <LinkMap {...category} hideTitle />
+              </div>
+            ))}
+          </div>
+          <Divider />
+        </>
+      )}
+      {/* SECTIONS */}
+      <div class="grid grid-cols-10 gap-5">
+        {sections?.map((section) => (
+          <div class="col-span-2 flex flex-col gap-3">
+            <LinkMap {...section} />
+          </div>
+        ))}
+      </div>
+    </>
+  );
+}
+
+interface LinkMapProps {
+  /** @title Title */
+  label: string;
+  items: {
+    label: string;
+    link: string;
+  }[];
+}
+
+function LinkMap(
+  { label, items, hideTitle }: LinkMapProps & { hideTitle?: boolean },
+) {
+  return (
+    <>
+      {!hideTitle && <h4 class="font-bold text-large">{label}</h4>}
+      <ul class="flex flex-col gap-3">
+        {items.map((item) => (
+          <li class="truncate">
+            <a
+              alt={item.label}
+              href={item.link}
+              class="truncate"
+            >
+              {item.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </>
   );
 }

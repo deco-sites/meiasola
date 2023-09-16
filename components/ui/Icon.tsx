@@ -54,7 +54,7 @@ export type AvailableIcons =
   | "Menu"
   | "XMark";
 
-interface Props extends JSX.SVGAttributes<SVGSVGElement> {
+export interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   /**
    * Symbol id from element to render. Take a look at `/static/icons.svg`.
    *

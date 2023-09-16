@@ -1,6 +1,7 @@
-import { Head, IS_BROWSER } from "$fresh/runtime.ts";
+import { Head } from "$fresh/runtime.ts";
 
 import Icon from "$store/components/ui/Icon.tsx";
+import Logo from "$store/components/ui/Logo.tsx";
 
 import NavItem from "$store/components/header/NavItem.tsx";
 import WishListButton from "$store/components/header/Buttons/WishList.tsx";
@@ -127,9 +128,7 @@ function Navbar({ menu, wishlist, myaccount, search, colors }: Props) {
             <IslandSearchButton />
           </div>
           <div class="col-span-2 my-auto flex justify-center">
-            <a href="/" alt="Logo da MeiaSola">
-              <Icon id="MeiaSola" class="w-[110px] h-[18px]" />
-            </a>
+            <Logo />
           </div>
           <div class="col-span-1 my-auto flex justify-between">
             <WishListButton {...wishlist} />
@@ -143,13 +142,11 @@ function Navbar({ menu, wishlist, myaccount, search, colors }: Props) {
       <div class="w-full h-[73px] hidden tablet:flex items-center my-custom-navbar transition-all duration-200 ease-out group">
         <div class="container grid grid-cols-12 gap-5 navbar-content h-full">
           <div class="col-span-6 desktop:col-span-8 flex items-center justify-end desktop:justify-start flex-row-reverse desktop:flex-row gap-10 desktop:gap-5 monitor:gap-10">
-            <a href="/" alt="Logo da MeiaSola">
-              <Icon id="MeiaSola" class="w-[110px] h-[18px]" />
-            </a>
+            <Logo />
 
             <IslandMenuButton className="desktop:hidden" />
             <ul class="hidden desktop:flex items-center gap-3 monitor:gap-5 h-full">
-              {menu.items.map((item) => <NavItem {...item} />)}
+              {menu?.items?.map((item) => <NavItem {...item} />)}
             </ul>
           </div>
 

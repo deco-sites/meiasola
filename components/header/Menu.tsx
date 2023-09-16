@@ -3,6 +3,7 @@ import { useSignal } from "@preact/signals";
 import Button from "$store/components/ui/Button.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
 import Drawer from "$store/components/ui/Drawer.tsx";
+import Divider from "$store/components/ui/Divider.tsx";
 
 import Aside from "$store/components/header/Drawers/Aside.tsx";
 
@@ -39,7 +40,7 @@ function Menu(
     >
       <nav class="flex flex-col justify-between grow">
         <ul class="flex flex-col">
-          {items.map((item) => (
+          {items?.map((item) => (
             <MenuItem
               {...item}
               openSubmenu={() => submenu.value = item.submenu}
@@ -66,10 +67,14 @@ function SubMenu({ sections }: SubMenuProps) {
   return (
     <nav class="flex flex-col justify-between grow">
       <ul class="flex flex-col">
-        {sections.map((section, index) => (
+        {sections?.map((section, index) => (
           <>
-            {index != 0 && <span class="h-px w-full my-4 bg-grey-1" />}
-            <div>
+            {index != 0 && (
+              <li>
+                <Divider className="my-4" />
+              </li>
+            )}
+            <li>
               {!section.hideSectionOnMobile && (
                 <p class="uppercase text-large font-bold my-4">
                   {section.label}
@@ -81,7 +86,7 @@ function SubMenu({ sections }: SubMenuProps) {
                   "flex flex-wrap gap-x-7 gap-y-6 mt-4"
                 }`}
               >
-                {section.items.map((item) => (
+                {section.items?.map((item) => (
                   <li>
                     <a
                       href={item.href}
@@ -98,7 +103,7 @@ function SubMenu({ sections }: SubMenuProps) {
                   </li>
                 ))}
               </ul>
-            </div>
+            </li>
           </>
         ))}
       </ul>
@@ -128,7 +133,11 @@ function MenuItem(
 
   return (
     <>
-      {divider && <span class="h-px w-full my-4 bg-grey-1" />}
+      {divider && (
+        <li>
+          <Divider className="my-4" />
+        </li>
+      )}
       <li>
         {!submenu
           ? <a href={href} class="my-4 w-fit inline-flex">{content}</a>
