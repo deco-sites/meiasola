@@ -370,6 +370,8 @@ interface FooterHeadProps {
       src: ImageWidget;
       width: number;
       height: number;
+      hideOnMobile?: boolean;
+      link?: string;
     }[];
   };
 }
@@ -408,13 +410,15 @@ function FooterHead({ social, app }: FooterHeadProps) {
         <h4>{app.label}</h4>
         <div class="flex gap-4">
           {app.images.map((image) => (
-            <Image
-              alt={image.label}
-              src={image.src}
-              width={image.width}
-              height={image.height}
-              class="object-contain"
-            />
+            <a href={image.link}>
+              <Image
+                alt={image.label}
+                src={image.src}
+                width={image.width}
+                height={image.height}
+                class={`object-contain ${image.hideOnMobile && "hidden"}`}
+              />
+            </a>
           ))}
         </div>
       </div>
