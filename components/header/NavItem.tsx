@@ -48,7 +48,7 @@ function NavItem({ label, href, icon, divider, submenu }: Props) {
 
   return (
     <>
-      {divider && <span class="h-[15px] w-px bg-current" />}
+      {divider && <li class="h-[15px] w-px bg-current" />}
       <li class="cursor-default group/menu h-full flex items-center">
         <a href={href}>
           {content}

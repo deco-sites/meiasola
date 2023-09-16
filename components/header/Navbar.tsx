@@ -127,7 +127,7 @@ function Navbar({ menu, wishlist, myaccount, search, colors }: Props) {
             <IslandSearchButton />
           </div>
           <div class="col-span-2 my-auto flex justify-center">
-            <a href="/">
+            <a href="/" alt="Logo da MeiaSola">
               <Icon id="MeiaSola" class="w-[110px] h-[18px]" />
             </a>
           </div>
@@ -143,7 +143,7 @@ function Navbar({ menu, wishlist, myaccount, search, colors }: Props) {
       <div class="w-full h-[73px] hidden tablet:flex items-center my-custom-navbar transition-all duration-200 ease-out group">
         <div class="container grid grid-cols-12 gap-5 navbar-content h-full">
           <div class="col-span-6 desktop:col-span-8 flex items-center justify-end desktop:justify-start flex-row-reverse desktop:flex-row gap-10 desktop:gap-5 monitor:gap-10">
-            <a href="/">
+            <a href="/" alt="Logo da MeiaSola">
               <Icon id="MeiaSola" class="w-[110px] h-[18px]" />
             </a>
 

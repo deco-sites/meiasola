@@ -379,7 +379,7 @@ interface FooterHeadProps {
 function FooterHead({ social, app }: FooterHeadProps) {
   const Logo = () => (
     <div class="flex-1 flex laptop:justify-center items-center">
-      <a href="/">
+      <a href="/" alt="Logo da MeiaSola">
         <Icon id="MeiaSola" class="w-[110px] h-[18px]" />
       </a>
     </div>
@@ -410,7 +410,7 @@ function FooterHead({ social, app }: FooterHeadProps) {
         <h4>{app.label}</h4>
         <div class="flex gap-4">
           {app.images.map((image) => (
-            <a href={image.link}>
+            <a alt={image.label} href={image.link}>
               <Image
                 alt={image.label}
                 src={image.src}
