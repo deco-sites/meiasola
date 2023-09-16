@@ -3,7 +3,6 @@ import Avatar from "$store/components/ui/Avatar.tsx";
 import WishlistButton from "$store/islands/WishlistButton.tsx";
 import { formatPrice } from "$store/sdk/format.ts";
 import { useOffer } from "$store/sdk/useOffer.ts";
-import { usePlatform } from "$store/sdk/usePlatform.tsx";
 import { useVariantPossibilities } from "$store/sdk/useVariantPossiblities.ts";
 import type { Product } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
@@ -45,8 +44,6 @@ interface Props {
   /** @description used for analytics event */
   itemListName?: string;
   layout?: Layout;
-
-  platform: ReturnType<typeof usePlatform>;
 }
 
 const relative = (url: string) => {
@@ -58,7 +55,7 @@ const WIDTH = 200;
 const HEIGHT = 279;
 
 function ProductCard(
-  { product, preload, itemListName, layout, platform }: Props,
+  { product, preload, itemListName, layout }: Props,
 ) {
   const {
     url,
@@ -148,12 +145,10 @@ function ProductCard(
           }
         `}
         >
-          {platform === "vtex" && (
-            <WishlistButton
-              productGroupID={productGroupID}
-              productID={productID}
-            />
-          )}
+          <WishlistButton
+            productGroupID={productGroupID}
+            productID={productID}
+          />
         </div>
         {/* Product Images */}
         <a

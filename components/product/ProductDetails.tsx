@@ -3,10 +3,7 @@ import Breadcrumb from "$store/components/ui/Breadcrumb.tsx";
 import Button from "$store/components/ui/Button.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
 import Slider from "$store/components/ui/Slider.tsx";
-import AddToCartButtonVNDA from "$store/islands/AddToCartButton/vnda.tsx";
 import AddToCartButtonVTEX from "$store/islands/AddToCartButton/vtex.tsx";
-import AddToCartButtonWake from "$store/islands/AddToCartButton/wake.tsx";
-import AddToCartButtonShopify from "$store/islands/AddToCartButton/shopify.tsx";
 import OutOfStock from "$store/islands/OutOfStock.tsx";
 import ProductImageZoom from "$store/islands/ProductImageZoom.tsx";
 import ShippingSimulation from "$store/islands/ShippingSimulation.tsx";
@@ -15,7 +12,6 @@ import WishlistButton from "$store/islands/WishlistButton.tsx";
 import { formatPrice } from "$store/sdk/format.ts";
 import { useId } from "$store/sdk/useId.ts";
 import { useOffer } from "$store/sdk/useOffer.ts";
-import { usePlatform } from "$store/sdk/usePlatform.tsx";
 import type { ProductDetailsPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import Image from "apps/website/components/Image.tsx";
@@ -62,7 +58,6 @@ function NotFound() {
 }
 
 function ProductInfo({ page, layout }: { page: ProductDetailsPage } & Props) {
-  const platform = usePlatform();
   const {
     breadcrumbList,
     product,
@@ -136,66 +131,32 @@ function ProductInfo({ page, layout }: { page: ProductDetailsPage } & Props) {
         {availability === "https://schema.org/InStock"
           ? (
             <>
-              {platform === "vtex" && (
-                <>
-                  <AddToCartButtonVTEX
-                    name={name}
-                    productID={productID}
-                    productGroupID={productGroupID}
-                    price={price}
-                    discount={discount}
-                    seller={seller}
-                  />
-                  <WishlistButton
-                    variant="full"
-                    productID={productID}
-                    productGroupID={productGroupID}
-                  />
-                </>
-              )}
-              {platform === "wake" && (
-                <AddToCartButtonWake
-                  name={name}
-                  productID={productID}
-                  productGroupID={productGroupID}
-                  price={price}
-                  discount={discount}
-                />
-              )}
-              {platform === "vnda" && (
-                <AddToCartButtonVNDA
-                  name={name}
-                  productID={productID}
-                  productGroupID={productGroupID}
-                  price={price}
-                  discount={discount}
-                  additionalProperty={additionalProperty}
-                />
-              )}
-              {platform === "shopify" && (
-                <AddToCartButtonShopify
-                  name={name}
-                  productID={productID}
-                  productGroupID={productGroupID}
-                  price={price}
-                  discount={discount}
-                />
-              )}
+              <AddToCartButtonVTEX
+                name={name}
+                productID={productID}
+                productGroupID={productGroupID}
+                price={price}
+                discount={discount}
+                seller={seller}
+              />
+              <WishlistButton
+                variant="full"
+                productID={productID}
+                productGroupID={productGroupID}
+              />
             </>
           )
           : <OutOfStock productID={productID} />}
       </div>
       {/* Shipping Simulation */}
       <div class="mt-8">
-        {platform === "vtex" && (
-          <ShippingSimulation
-            items={[{
-              id: Number(product.sku),
-              quantity: 1,
-              seller: seller,
-            }]}
-          />
-        )}
+        <ShippingSimulation
+          items={[{
+            id: Number(product.sku),
+            quantity: 1,
+            seller: seller,
+          }]}
+        />
       </div>
       {/* Description card */}
       <div class="mt-4 sm:mt-6">

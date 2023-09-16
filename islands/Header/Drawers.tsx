@@ -1,8 +1,13 @@
-import Component from "$store/components/header/Drawers.tsx";
-import type { Props } from "$store/components/header/Drawers.tsx";
+import {
+  default as MenuDrawerComponent,
+  Props as MenuDrawerProps,
+} from "$store/components/header/Drawers/MenuDrawer.tsx";
+import { default as CartDrawerComponent } from "$store/components/header/Drawers/CartDrawer.tsx";
 
-function Island(props: Props) {
-  return <Component {...props} />;
+export function IslandMenuDrawer(props: MenuDrawerProps) {
+  return <MenuDrawerComponent {...props} />;
 }
 
-export default Island;
+export function IslandCartDrawer() {
+  return <CartDrawerComponent />;
+}

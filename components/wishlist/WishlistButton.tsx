@@ -31,7 +31,8 @@ function WishlistButton({
         : "btn-primary btn-outline gap-2"}
       loading={fetching.value}
       aria-label="Add to wishlist"
-      onClick={async (e) => {
+      // onClick={async (e) => {
+      onClick={(e) => {
         e.stopPropagation();
         e.preventDefault();
 
@@ -47,9 +48,9 @@ function WishlistButton({
 
         try {
           fetching.value = true;
-          inWishlist
-            ? await removeItem({ id: listItem.value!.id }!)
-            : await addItem(item);
+          // inWishlist
+          // ? await removeItem({ id: listItem.value!.id }!)
+          // : await addItem(item);
         } finally {
           fetching.value = false;
         }

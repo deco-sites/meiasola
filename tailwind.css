@@ -22,6 +22,11 @@
     overflow: hidden;
     height: 100vh;
   }
+
+  .container {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
 }
 
 .group:disabled .group-disabled\:animate-progress {
@@ -36,4 +41,18 @@
   to {
     --dot-progress: 100%
   }
+}
+
+@layer utilities {
+
+  /** Remove scrollbar from overflow-auto */
+  .scrollbar-none {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+
 }

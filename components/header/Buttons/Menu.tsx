@@ -1,19 +1,24 @@
-import Button from "$store/components/ui/Button.tsx";
-import Icon from "$store/components/ui/Icon.tsx";
 import { useUI } from "$store/sdk/useUI.ts";
 
-export default function MenuButton() {
+import Button, { Props as ButtonProps } from "$store/components/ui/Button.tsx";
+import Icon from "$store/components/ui/Icon.tsx";
+
+export interface Props {
+  className?: ButtonProps["className"];
+}
+
+export default function MenuButton({ className }: Props) {
   const { displayMenu } = useUI();
 
   return (
     <Button
-      class="btn btn-circle btn-sm btn-ghost"
-      aria-label="open menu"
+      className={className}
+      aria-label="Abrir menu"
       onClick={() => {
         displayMenu.value = true;
       }}
     >
-      <Icon id="Bars3" size={24} strokeWidth={0.01} />
+      <Icon id="Menu" class="h-6 w-6" />
     </Button>
   );
 }
