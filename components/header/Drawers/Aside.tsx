@@ -16,7 +16,7 @@ function Aside(
 ) {
   return (
     <div class="bg-white h-full w-[95vw] max-w-[300px] flex flex-col">
-      <div class="h-20 flex justify-between items-center px-6">
+      <div class="h-20 flex justify-between items-center px-6 shrink-0">
         {chevronLeft && onClose && (
           <Button class="btn btn-ghost" onClick={onClose}>
             <Icon id="ChevronLeft" class="h-4 w-4" />
