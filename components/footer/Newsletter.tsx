@@ -81,9 +81,9 @@ function Newsletter(
 
       {/* DESKTOP VERSION */}
       <div class="hidden tablet:block bg-[#F3F3F3] py-9">
-        <div class="container grid grid-cols-12 gap-4 tablet:gap-5">
-          <div class="col-span-1 flex"></div>
-          <div class="col-span-5 flex flex-col justify-center gap-5">
+        <div class="container grid grid-cols-12 gap-4 desktop:gap-5">
+          <div class="col-span-1 hidden desktop:flex"></div>
+          <div class="col-span-6 desktop:col-span-5 flex flex-col justify-center gap-5">
             <h3 class="font-medium text-h3">
               {title}
             </h3>
@@ -91,7 +91,7 @@ function Newsletter(
           </div>
           <div class="col-span-1 flex"></div>
           <form
-            class="col-span-4 w-full form-control justify-center gap-3.5"
+            class="col-span-5 desktop:col-span-4 w-full form-control justify-center gap-3.5"
             onSubmit={handleSubmit}
           >
             <input
@@ -112,7 +112,7 @@ function Newsletter(
               {form.buttonText || "CADASTRE-SE"}
             </button>
           </form>
-          <div class="col-span-1 flex"></div>
+          <div class="col-span-1 hidden desktop:flex"></div>
         </div>
       </div>
     </>

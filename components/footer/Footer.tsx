@@ -343,13 +343,13 @@ function Footer({ head, body }: Props) {
   return (
     <footer class="bg-black text-white text-body py-9">
       <div class="container grid grid-cols-4 gap-4 tablet:grid-cols-12 tablet:gap-5">
-        <div class="hidden tablet:flex col-span-1"></div>
-        <div class="col-span-4 tablet:col-span-10 flex flex-col gap-6">
+        <div class="hidden desktop:flex col-span-1"></div>
+        <div class="col-span-4 tablet:col-span-12 desktop:col-span-10 flex flex-col gap-6">
           <FooterHead {...head} />
           <Divider />
           <FooterBody {...body} />
         </div>
-        <div class="hidden tablet:flex col-span-1"></div>
+        <div class="hidden desktop:flex col-span-1"></div>
       </div>
     </footer>
   );
@@ -383,18 +383,18 @@ interface FooterHeadProps {
 
 function FooterHead({ social, app }: FooterHeadProps) {
   const LogoWrapper = () => (
-    <div class="flex-1 flex laptop:justify-center items-center">
+    <div class="flex-1 flex tablet:justify-center items-center">
       <Logo />
     </div>
   );
 
   return (
-    <div class="flex flex-col gap-10 laptop:flex-row laptop:gap-0">
-      <div class="flex-1 flex laptop:hidden">
+    <div class="flex flex-col gap-10 tablet:flex-row tablet:gap-0">
+      <div class="flex-1 flex tablet:hidden">
         <LogoWrapper />
       </div>
 
-      <div class="flex-1 flex items-center justify-between laptop:justify-start gap-4">
+      <div class="flex-1 flex items-center justify-between tablet:justify-start gap-4">
         <h5>{social?.label}</h5>
         <div class="flex gap-4">
           {social?.items?.map((item) => (
@@ -405,21 +405,25 @@ function FooterHead({ social, app }: FooterHeadProps) {
         </div>
       </div>
 
-      <div class="flex-1 hidden laptop:flex">
+      <div class="flex-1 hidden tablet:flex">
         <LogoWrapper />
       </div>
 
-      <div class="flex-1 flex items-center justify-between laptop:justify-end gap-5">
-        <h5>{app?.label}</h5>
-        <div class="flex gap-4">
+      <div class="flex-1 flex items-center justify-between tablet:justify-end gap-5">
+        <h5 class="shrink-0">{app?.label}</h5>
+        <div class="flex gap-4 items-center">
           {app?.images?.map((image) => (
-            <a alt={image.label} href={image.link}>
+            <a
+              alt={image.label}
+              href={image.link}
+              class={image.hideOnMobile ? "hidden laptop:block" : ""}
+            >
               <Image
                 alt={image.label}
                 src={image.src}
                 width={image.width}
                 height={image.height}
-                class={`object-contain ${image.hideOnMobile && "hidden"}`}
+                class="object-contain"
               />
             </a>
           ))}
@@ -479,11 +483,11 @@ function LinkMap(
       {!hideTitle && <h4 class="font-bold text-large">{label}</h4>}
       <ul class="flex flex-col gap-3">
         {items.map((item) => (
-          <li class="truncate">
+          <li>
             <a
               alt={item.label}
               href={item.link}
-              class="truncate"
+              class="truncate block"
             >
               {item.label}
             </a>
