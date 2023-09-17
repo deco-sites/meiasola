@@ -444,22 +444,46 @@ function FooterBody({ categories, sections }: FooterBodyProps) {
       {/* CATEGORIES */}
       {categories?.length > 0 && (
         <>
-          <div class="grid grid-cols-10 gap-5">
-            {categories?.map((category) => (
-              <div class="col-span-2 flex flex-col">
-                <LinkMap {...category} hideTitle />
-              </div>
-            ))}
+          <div class="group">
+            <LinkMapAccordion
+              label="Categorias"
+              id="categories-accordion"
+              hideTitle
+            />
+            <div class="hidden group-[&:has(input:checked)]:flex flex-col gap-3 pt-3 tablet:!grid tablet:grid-cols-10 tablet:gap-5 tablet:pt-0">
+              {categories?.map((category) => (
+                <div class="flex flex-col tablet:col-span-2">
+                  <h4 class="tablet:hidden pb-3">
+                    {category.label}
+                  </h4>
+                  <LinkList
+                    {...category}
+                    className="pl-3 tablet:pl-0"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
           <Divider />
         </>
       )}
+
       {/* SECTIONS */}
-      <div class="grid grid-cols-10 gap-5">
-        {sections?.map((section) => (
-          <div class="col-span-2 flex flex-col gap-3">
-            <LinkMap {...section} />
-          </div>
+      <div class="flex flex-col gap-6 tablet:grid tablet:grid-cols-10 tablet:gap-5">
+        {sections?.map((section, index) => (
+          <>
+            <div class="col-span-2 flex flex-col gap-3 group">
+              <LinkMapAccordion
+                label={section.label}
+                id={`accordion-section-${index}`}
+              />
+              <LinkList
+                {...section}
+                className="hidden group-[&:has(input:checked)]:flex tablet:flex"
+              />
+            </div>
+            <Divider className="block tablet:hidden" />
+          </>
         ))}
       </div>
     </>
@@ -475,25 +499,50 @@ interface LinkMapProps {
   }[];
 }
 
-function LinkMap(
-  { label, items, hideTitle }: LinkMapProps & { hideTitle?: boolean },
+function LinkList(
+  { items, className }: {
+    items: LinkMapProps["items"];
+    className?: HTMLUListElement["className"];
+  },
 ) {
   return (
-    <>
-      {!hideTitle && <h4 class="font-bold text-large">{label}</h4>}
-      <ul class="flex flex-col gap-3">
-        {items.map((item) => (
-          <li>
-            <a
-              alt={item.label}
-              href={item.link}
-              class="truncate block"
-            >
-              {item.label}
-            </a>
-          </li>
-        ))}
-      </ul>
-    </>
+    <ul class={`flex flex-col gap-3 ${className}`}>
+      {items.map((item) => (
+        <li class="truncate">
+          <a
+            alt={item.label}
+            href={item.link}
+          >
+            {item.label}
+          </a>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+function LinkMapAccordion(
+  { label, id, hideTitle }: { label: string; id: string; hideTitle?: boolean },
+) {
+  return (
+    <label
+      for={id}
+      class={`flex justify-between items-center text-large ${
+        hideTitle && "tablet:hidden"
+      } tablet:font-bold cursor-pointer tablet:cursor-default`}
+    >
+      <h4 class="truncate">{label}</h4>
+      <input
+        id={id}
+        type="checkbox"
+        class="hidden peer tablet:hidden"
+      />
+      <span class="block peer-checked:hidden tablet:hidden leading-none">
+        +
+      </span>
+      <span class="hidden peer-checked:block tablet:hidden leading-none">
+        -
+      </span>
+    </label>
   );
 }
