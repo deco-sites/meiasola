@@ -50,7 +50,7 @@ export default Footer;
 function Copyright({ copyright }: { copyright: HTMLWidget }) {
   return (
     <div
-      class="text-small text-center tablet:text-left max-w-[688px] leading-none"
+      class="text-small text-center tablet:text-left max-w-[688px] leading-snug"
       dangerouslySetInnerHTML={{ __html: copyright }}
     />
   );

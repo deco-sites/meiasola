@@ -3,66 +3,66 @@
 // This file is automatically updated during development when running `dev.ts`.
 
 import * as $$$0 from "./loaders/Layouts/ProductCard.tsx";
-import * as $$$$$$0 from "./sections/Footer/Footer.tsx";
-import * as $$$$$$1 from "./sections/Newsletter/Newsletter.tsx";
-import * as $$$$$$2 from "./sections/Images/Carousel.tsx";
-import * as $$$$$$3 from "./sections/Images/BannerGrid.tsx";
-import * as $$$$$$4 from "./sections/Images/ShoppableBanner.tsx";
-import * as $$$$$$5 from "./sections/Images/ImageGallery.tsx";
-import * as $$$$$$6 from "./sections/Product/ProductShelf.tsx";
-import * as $$$$$$7 from "./sections/Product/Wishlist.tsx";
-import * as $$$$$$8 from "./sections/Product/ProductDetails.tsx";
-import * as $$$$$$9 from "./sections/Product/SearchResult.tsx";
-import * as $$$$$$10 from "./sections/Header/Header.tsx";
-import * as $$$$$$11 from "./sections/Miscellaneous/CookieConsent.tsx";
-import * as $$$$$$12 from "./sections/Miscellaneous/CampaignTimer.tsx";
-import * as $$$$$$13 from "./sections/Category/CategoryBanner.tsx";
-import * as $$$$$$14 from "./sections/Category/CategoryList.tsx";
-import * as $$$$$$15 from "./sections/Content/Faq.tsx";
-import * as $$$$$$16 from "./sections/Content/Benefits.tsx";
-import * as $$$$$$17 from "./sections/Content/Logos.tsx";
-import * as $$$$$$18 from "./sections/Content/Testimonials.tsx";
-import * as $$$$$$19 from "./sections/Links/LinkTree.tsx";
-import * as $$$$$$20 from "./sections/Links/Shortcuts.tsx";
-import * as $$$$$$21 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$0 from "./sections/Category/CategoryBanner.tsx";
+import * as $$$$$$1 from "./sections/Category/CategoryList.tsx";
+import * as $$$$$$2 from "./sections/Content/Benefits.tsx";
+import * as $$$$$$3 from "./sections/Content/Faq.tsx";
+import * as $$$$$$4 from "./sections/Content/Logos.tsx";
+import * as $$$$$$5 from "./sections/Content/Testimonials.tsx";
+import * as $$$$$$6 from "./sections/Footer/Footer.tsx";
+import * as $$$$$$7 from "./sections/Header/Header.tsx";
+import * as $$$$$$8 from "./sections/Images/BannerGrid.tsx";
+import * as $$$$$$9 from "./sections/Images/Carousel.tsx";
+import * as $$$$$$10 from "./sections/Images/ImageGallery.tsx";
+import * as $$$$$$11 from "./sections/Images/ShoppableBanner.tsx";
+import * as $$$$$$12 from "./sections/Links/LinkTree.tsx";
+import * as $$$$$$13 from "./sections/Links/Shortcuts.tsx";
+import * as $$$$$$14 from "./sections/Miscellaneous/CampaignTimer.tsx";
+import * as $$$$$$15 from "./sections/Miscellaneous/CookieConsent.tsx";
+import * as $$$$$$16 from "./sections/Newsletter/Newsletter.tsx";
+import * as $$$$$$17 from "./sections/Product/ProductDetails.tsx";
+import * as $$$$$$18 from "./sections/Product/ProductShelf.tsx";
+import * as $$$$$$19 from "./sections/Product/SearchResult.tsx";
+import * as $$$$$$20 from "./sections/Product/Wishlist.tsx";
+import * as $$$$$$21 from "./sections/Social/InstagramPosts.tsx";
 import * as $$$$$$22 from "./sections/Social/WhatsApp.tsx";
-import * as $$$$$$23 from "./sections/Social/InstagramPosts.tsx";
-import * as $$$$$$$$$$$0 from "./apps/site.ts";
-import * as $$$$$$$$$$$1 from "./apps/decohub.ts";
+import * as $$$$$$23 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$$$$$$0 from "./apps/decohub.ts";
+import * as $$$$$$$$$$$1 from "./apps/site.ts";
 
 const manifest = {
   "loaders": {
     "deco-sites/meiasola/loaders/Layouts/ProductCard.tsx": $$$0,
   },
   "sections": {
-    "deco-sites/meiasola/sections/Category/CategoryBanner.tsx": $$$$$$13,
-    "deco-sites/meiasola/sections/Category/CategoryList.tsx": $$$$$$14,
-    "deco-sites/meiasola/sections/Content/Benefits.tsx": $$$$$$16,
-    "deco-sites/meiasola/sections/Content/Faq.tsx": $$$$$$15,
-    "deco-sites/meiasola/sections/Content/Logos.tsx": $$$$$$17,
-    "deco-sites/meiasola/sections/Content/Testimonials.tsx": $$$$$$18,
-    "deco-sites/meiasola/sections/Footer/Footer.tsx": $$$$$$0,
-    "deco-sites/meiasola/sections/Header/Header.tsx": $$$$$$10,
-    "deco-sites/meiasola/sections/Images/BannerGrid.tsx": $$$$$$3,
-    "deco-sites/meiasola/sections/Images/Carousel.tsx": $$$$$$2,
-    "deco-sites/meiasola/sections/Images/ImageGallery.tsx": $$$$$$5,
-    "deco-sites/meiasola/sections/Images/ShoppableBanner.tsx": $$$$$$4,
-    "deco-sites/meiasola/sections/Links/LinkTree.tsx": $$$$$$19,
-    "deco-sites/meiasola/sections/Links/Shortcuts.tsx": $$$$$$20,
-    "deco-sites/meiasola/sections/Miscellaneous/CampaignTimer.tsx": $$$$$$12,
-    "deco-sites/meiasola/sections/Miscellaneous/CookieConsent.tsx": $$$$$$11,
-    "deco-sites/meiasola/sections/Newsletter/Newsletter.tsx": $$$$$$1,
-    "deco-sites/meiasola/sections/Product/ProductDetails.tsx": $$$$$$8,
-    "deco-sites/meiasola/sections/Product/ProductShelf.tsx": $$$$$$6,
-    "deco-sites/meiasola/sections/Product/SearchResult.tsx": $$$$$$9,
-    "deco-sites/meiasola/sections/Product/Wishlist.tsx": $$$$$$7,
-    "deco-sites/meiasola/sections/Social/InstagramPosts.tsx": $$$$$$23,
+    "deco-sites/meiasola/sections/Category/CategoryBanner.tsx": $$$$$$0,
+    "deco-sites/meiasola/sections/Category/CategoryList.tsx": $$$$$$1,
+    "deco-sites/meiasola/sections/Content/Benefits.tsx": $$$$$$2,
+    "deco-sites/meiasola/sections/Content/Faq.tsx": $$$$$$3,
+    "deco-sites/meiasola/sections/Content/Logos.tsx": $$$$$$4,
+    "deco-sites/meiasola/sections/Content/Testimonials.tsx": $$$$$$5,
+    "deco-sites/meiasola/sections/Footer/Footer.tsx": $$$$$$6,
+    "deco-sites/meiasola/sections/Header/Header.tsx": $$$$$$7,
+    "deco-sites/meiasola/sections/Images/BannerGrid.tsx": $$$$$$8,
+    "deco-sites/meiasola/sections/Images/Carousel.tsx": $$$$$$9,
+    "deco-sites/meiasola/sections/Images/ImageGallery.tsx": $$$$$$10,
+    "deco-sites/meiasola/sections/Images/ShoppableBanner.tsx": $$$$$$11,
+    "deco-sites/meiasola/sections/Links/LinkTree.tsx": $$$$$$12,
+    "deco-sites/meiasola/sections/Links/Shortcuts.tsx": $$$$$$13,
+    "deco-sites/meiasola/sections/Miscellaneous/CampaignTimer.tsx": $$$$$$14,
+    "deco-sites/meiasola/sections/Miscellaneous/CookieConsent.tsx": $$$$$$15,
+    "deco-sites/meiasola/sections/Newsletter/Newsletter.tsx": $$$$$$16,
+    "deco-sites/meiasola/sections/Product/ProductDetails.tsx": $$$$$$17,
+    "deco-sites/meiasola/sections/Product/ProductShelf.tsx": $$$$$$18,
+    "deco-sites/meiasola/sections/Product/SearchResult.tsx": $$$$$$19,
+    "deco-sites/meiasola/sections/Product/Wishlist.tsx": $$$$$$20,
+    "deco-sites/meiasola/sections/Social/InstagramPosts.tsx": $$$$$$21,
     "deco-sites/meiasola/sections/Social/WhatsApp.tsx": $$$$$$22,
-    "deco-sites/meiasola/sections/Theme/Theme.tsx": $$$$$$21,
+    "deco-sites/meiasola/sections/Theme/Theme.tsx": $$$$$$23,
   },
   "apps": {
-    "deco-sites/meiasola/apps/decohub.ts": $$$$$$$$$$$1,
-    "deco-sites/meiasola/apps/site.ts": $$$$$$$$$$$0,
+    "deco-sites/meiasola/apps/decohub.ts": $$$$$$$$$$$0,
+    "deco-sites/meiasola/apps/site.ts": $$$$$$$$$$$1,
   },
   "name": "deco-sites/meiasola",
   "baseUrl": import.meta.url,

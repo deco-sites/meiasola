@@ -18,7 +18,7 @@ function ImagesSection(
 ) {
   return (
     <div class={`${className} flex flex-col gap-3 w-full`}>
-      <h4 class="font-bold text-large truncate">{title}</h4>
+      <h4 class="font-bold truncate monitor:text-large">{title}</h4>
       <ul class="flex flex-wrap gap-3">
         {images?.map((image) => (
           <li>
