@@ -1,4 +1,5 @@
 import type { ComponentChildren, JSX } from "preact";
+import Icon from "$store/components/ui/Icon.tsx";
 
 function Dot({ index, children }: {
   index: number;
@@ -26,12 +27,34 @@ function Item({
   return <li data-slider-item={index} {...props} />;
 }
 
-function NextButton(props: JSX.IntrinsicElements["button"]) {
-  return <button data-slide="next" aria-label="Next item" {...props} />;
+function NextButton(
+  { class: _class, ...props }: JSX.IntrinsicElements["button"],
+) {
+  return (
+    <button
+      data-slide="next"
+      aria-label="Next item"
+      class={`bg-white rounded-full hidden laptop:block p-1 disabled:opacity-25 ${_class}`}
+      {...props}
+    >
+      <Icon id="ChevronRight" class="w-4 h-4 rounded-full" />
+    </button>
+  );
 }
 
-function PrevButton(props: JSX.IntrinsicElements["button"]) {
-  return <button data-slide="prev" aria-label="Previous item" {...props} />;
+function PrevButton(
+  { class: _class, ...props }: JSX.IntrinsicElements["button"],
+) {
+  return (
+    <button
+      data-slide="prev"
+      aria-label="Previous item"
+      class={`bg-white rounded-full hidden laptop:block p-1 disabled:opacity-25 ${_class}`}
+      {...props}
+    >
+      <Icon id="ChevronLeft" class="w-4 h-4 rounded-full" />
+    </button>
+  );
 }
 
 Slider.Dot = Dot;

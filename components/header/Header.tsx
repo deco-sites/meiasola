@@ -13,9 +13,11 @@ function Header({
   navbar,
 }: Props) {
   return (
-    <header class="fixed w-screen z-50">
-      <Alert {...alert} />
-      <Navbar {...navbar} />
+    <header class="h-[calc(43px+73px)] w-screen">
+      <div class="fixed z-50 w-screen">
+        <Alert {...alert} />
+        <Navbar {...navbar} />
+      </div>
     </header>
   );
 }
