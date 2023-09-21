@@ -86,7 +86,7 @@ function LinkList(
   return (
     <ul class={`flex flex-col gap-3 ${className}`}>
       {items.map((item) => (
-        <li class="truncate">
+        <li>
           <a
             alt={item.label}
             href={item.link}
@@ -109,7 +109,7 @@ function LinkMapAccordion(
         hideTitle && "tablet:hidden"
       } tablet:font-bold cursor-pointer tablet:cursor-default`}
     >
-      <h4 class="truncate">{label}</h4>
+      <h4>{label}</h4>
       <input
         id={id}
         type="checkbox"
