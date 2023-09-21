@@ -161,7 +161,7 @@ function Navbar({ menu, wishlist, myaccount, search, colors }: Props) {
 
       <script
         dangerouslySetInnerHTML={{
-          __html: madeNavbarWorksWithScroll(400),
+          __html: madeNavbarWorksWithScroll(300),
         }}
       />
       <IslandMenuDrawer menu={menu} wishlist={wishlist} myaccount={myaccount} />

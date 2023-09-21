@@ -1,4 +1,10 @@
 @tailwind base;
+
+  h1, h2, h3, h4, h5, h6, p  {
+    padding: 0;
+    margin: 0
+  }
+
 @tailwind components;
 @tailwind utilities;
 
@@ -7,6 +13,11 @@
   /* Allow changing font family via CMS */
   html {
     font-family: var(--font-family);
+  }
+
+  body {
+    overflow-x: hidden;
+    width: 100vw;
   }
 
   /** Remove default styles from input[type=number] */

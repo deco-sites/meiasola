@@ -28,7 +28,7 @@ export interface Props {
 export default function InstagramCarousel({ label, link, images }: Props) {
   const id = "instagram-images-carousel";
   return (
-    <section class="pb-10 bg-white text-black">
+    <section class="pb-6 tablet:pb-10 bg-white text-black">
       <div class="container py-[30px] flex items-center">
         <a alt="Instagram da Meia Sola" href={link}>
           <h3 class="uppercase font-bold text-subtitle">{label}</h3>
@@ -47,8 +47,8 @@ export default function InstagramCarousel({ label, link, images }: Props) {
                 width={360}
                 height={360}
                 loading="lazy"
-                sizes="(max-width: 360px) 50%, 25%"
-                class="object-cover"
+                sizes="(max-width: 360px) 160px, 360px"
+                class="object-cover h-[160px] w-[160px] tablet:h-[360px] tablet:w-[360px]"
               />
             </Slider.Item>
           ))}
