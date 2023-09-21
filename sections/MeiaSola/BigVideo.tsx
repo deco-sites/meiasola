@@ -25,7 +25,7 @@ export default function BigVideo({ video, title, subtitle, button }: Props) {
           <a
             alt={button.text}
             href={button.link}
-            class="text-small px-6 py-2.5 rounded-full bg-black text-white leading-none transition-all duration-300 ease-out tablet:bg-transparent tablet:border tablet:border-white tablet:hover:bg-white"
+            class="text-small px-6 py-2.5 rounded-full bg-black text-white leading-none transition-all duration-300 ease-out tablet:bg-transparent tablet:border tablet:border-white tablet:hover:bg-white tablet:hover:text-black"
           >
             {button.text}
           </a>
