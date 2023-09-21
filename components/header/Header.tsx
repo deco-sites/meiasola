@@ -14,9 +14,7 @@ function Header({
 }: Props) {
   return (
     <header
-      class={navbar.colors.startWithtransparent
-        ? "h-[43px]"
-        : "h-[calc(43px+73px)"}
+      class={navbar.colors.startWithtransparent ? "h-0" : "h-[calc(43px+73px)"}
     >
       <div class="fixed z-50 w-screen">
         <Alert {...alert} />

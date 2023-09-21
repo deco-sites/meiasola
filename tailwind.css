@@ -1,10 +1,4 @@
 @tailwind base;
-
-  h1, h2, h3, h4, h5, h6, p  {
-    padding: 0;
-    margin: 0
-  }
-
 @tailwind components;
 @tailwind utilities;
 
@@ -37,6 +31,14 @@
   .container {
     width: 100% !important;
     max-width: 1440px !important;
+  }
+
+  h1, h2, h3 {
+    font-weight: bold;
+  }
+
+  h1, h2, h3, h3, h5, h6, p {
+    line-height: 1;
   }
 }
 
