@@ -46,5 +46,10 @@ export default {
         18: "4.5rem",
       },
     },
+    letterSpacing: {
+      normal: "0px",
+      wide: "3.84px",
+      widest: "4.32px",
+    },
   },
 };

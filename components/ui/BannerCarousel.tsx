@@ -33,10 +33,10 @@ function BannerCarousel({ items, interval }: Props) {
         ))}
       </Slider>
 
-      <div class="absolute left-0 top-0 h-full w-[15%] flex items-center justify-center">
+      <div class="absolute left-0 top-0 h-full w-[15%] flex items-center justify-center z-20">
         <Slider.PrevButton />
       </div>
-      <div class="absolute right-0 top-0 h-full w-[15%] flex items-center justify-center">
+      <div class="absolute right-0 top-0 h-full w-[15%] flex items-center justify-center z-20">
         <Slider.NextButton />
       </div>
 
@@ -82,7 +82,7 @@ function Item(props: Video | Image) {
           dangerouslySetInnerHTML={{ __html: content ?? "" }}
         />
         <div class="flex-1 flex justify-center items-center">
-          <span class="bg-black text-white text-small px-6 py-2.5 rounded-full tablet:bg-transparent tablet:border transition-all duration-300 ease-out tablet:border-white tablet:hover:bg-black tablet:hover:border-black">
+          <span class="bg-black text-white text-small px-6 py-2.5 rounded-full tablet:bg-transparent tablet:border transition-all duration-300 ease-out tablet:border-white tablet:hover:bg-white tablet:hover:text-black">
             {button.text}
           </span>
         </div>

@@ -1,19 +1,16 @@
-import type { ImageWidget } from "apps/admin/widgets.ts";
+import { HTMLWidget, ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 
 import Slider from "$store/components/ui/Slider.tsx";
 import IslandSliderController from "$store/islands/SliderJS.tsx";
+import { useId } from "$store/sdk/useId.ts";
 
 export interface Props {
   /**
    * @title Title
    * @default "Instagram Meia Sola"
    */
-  label: string;
-  /**
-   * @title Link do Instagram
-   */
-  link: string;
+  label: HTMLWidget;
 
   images: {
     /**
@@ -25,14 +22,15 @@ export interface Props {
   }[];
 }
 
-export default function InstagramCarousel({ label, link, images }: Props) {
-  const id = "instagram-images-carousel";
+export default function InstagramCarousel({ label, images }: Props) {
+  const id = useId();
   return (
     <section class="pb-6 tablet:pb-10 bg-white text-black">
       <div class="container py-[30px] flex items-center">
-        <a alt="Instagram da Meia Sola" href={link}>
-          <h3 class="uppercase font-bold text-subtitle">{label}</h3>
-        </a>
+        <h3
+          class="uppercase font-bold text-subtitle tracking-widest"
+          dangerouslySetInnerHTML={{ __html: label }}
+        />
       </div>
       <div id={id} class="relative container px-0">
         <Slider class="carousel gap-1 scroll-smooth">
