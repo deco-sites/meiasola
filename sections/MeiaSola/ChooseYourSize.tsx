@@ -1,7 +1,5 @@
-import { HTMLWidget } from "apps/admin/widgets.ts";
-
 export interface Props {
-  text: HTMLWidget;
+  title: string;
   sizes: {
     /**
      * @title size
@@ -12,14 +10,13 @@ export interface Props {
   }[];
 }
 
-function ChooseYourSize({ text, sizes }: Props) {
+function ChooseYourSize({ title, sizes }: Props) {
   return (
     <div class="bg-black text-white text-large py-6 laptop:py-5">
       <div class="container flex flex-col items-center gap-8 laptop:flex-row laptop:justify-between">
-        <div
-          class="text-large tracking-wide text-center laptop:text-left"
-          dangerouslySetInnerHTML={{ __html: text }}
-        />
+        <h4 class="text-large tracking-wide text-center laptop:text-left">
+          {title}
+        </h4>
         <ul class="flex flex-wrap justify-center gap-8 laptop:gap-6 desktop:gap-8">
           {sizes.map((size, index) => {
             return (
