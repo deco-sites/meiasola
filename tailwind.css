@@ -8,10 +8,10 @@
   html {
     font-family: var(--font-family);
   }
-
+  
   body {
     overflow-x: hidden;
-    width: 100vw;
+    max-width: 100vw;
   }
 
   /** Remove default styles from input[type=number] */

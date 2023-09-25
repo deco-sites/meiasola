@@ -11,7 +11,7 @@ export interface Props {
   images: {
     /**
      * @title alt
-     * @description SEO: Dê um texto descritivo para sua imagem
+     * @description SEO: Give descriptive text to your image
      */
     label?: string;
     src: ImageWidget;

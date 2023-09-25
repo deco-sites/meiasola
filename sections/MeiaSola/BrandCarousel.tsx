@@ -13,7 +13,7 @@ export interface Props {
 function FavoriteBrands({ title, brands }: Props) {
   const id = useId();
   return (
-    <div class="py-9 flex flex-col gap-6">
+    <div class="py-9 flex flex-col gap-6 text-black">
       <div class="container">
         <h3 class="font-bold text-subtitle tracking-widest">{title}</h3>
       </div>

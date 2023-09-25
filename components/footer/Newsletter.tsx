@@ -46,7 +46,7 @@ function Newsletter(
   return (
     <>
       {/* MOBILE VERSION */}
-      <div class="block tablet:hidden bg-[#F3F3F3] py-6">
+      <div class="block tablet:hidden bg-[#F3F3F3] py-6 text-black">
         <div class="container flex flex-col gap-6">
           <div class="flex flex-col gap-3">
             <h3 class="font-bold text-subtitle">
@@ -80,7 +80,7 @@ function Newsletter(
       </div>
 
       {/* DESKTOP VERSION */}
-      <div class="hidden tablet:block bg-[#F3F3F3] py-9">
+      <div class="hidden tablet:block bg-[#F3F3F3] py-9 text-black">
         <div class="container grid grid-cols-12 gap-4 desktop:gap-5">
           <div class="col-span-1 hidden desktop:flex"></div>
           <div class="col-span-6 desktop:col-span-5 flex flex-col justify-center gap-5">

@@ -24,7 +24,7 @@ function ChooseYourSize({ title, sizes }: Props) {
                 <a
                   href={size.link}
                   aria-label={`Numeração ${size.label}`}
-                  class="border border-white p-2.5 block"
+                  class="border border-white p-2.5 block hover:bg-white hover:text-black transition-all duration-300 ease-out"
                 >
                   {size.label}
                 </a>

@@ -56,7 +56,7 @@ interface ItemProps {
   };
 
   /**
-   * @title Texto descritivo para pessoas com deficiência visual
+   * @title Descriptive text for people with visual impairments
    */
   alt?: string;
 
