@@ -20,9 +20,11 @@ function FavoriteBrands({ title, brands }: Props) {
 
       <div class="container relative" id={id}>
         <Slider class="flex gap-4 laptop:gap-7 w-full">
-          {brands.map((brand) => {
-            return <Brand {...brand} />;
-          })}
+          {brands.map((brand, index) => (
+            <Slider.Item index={index} class="carousel-item">
+              <Brand {...brand} />
+            </Slider.Item>
+          ))}
         </Slider>
         <Slider.PrevButton class="absolute left-[25px] top-1/2" />
         <Slider.NextButton class="absolute right-[25px] top-1/2" />

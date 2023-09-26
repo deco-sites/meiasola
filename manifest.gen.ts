@@ -19,18 +19,19 @@ import * as $$$$$$12 from "./sections/Links/LinkTree.tsx";
 import * as $$$$$$13 from "./sections/Links/Shortcuts.tsx";
 import * as $$$$$$14 from "./sections/MeiaSola/BrandCarousel.tsx";
 import * as $$$$$$15 from "./sections/MeiaSola/ChooseYourSize.tsx";
-import * as $$$$$$16 from "./sections/MeiaSola/InstagramCarousel.tsx";
-import * as $$$$$$17 from "./sections/MeiaSola/NewCollection.tsx";
-import * as $$$$$$18 from "./sections/Miscellaneous/CampaignTimer.tsx";
-import * as $$$$$$19 from "./sections/Miscellaneous/CookieConsent.tsx";
-import * as $$$$$$20 from "./sections/Newsletter/Newsletter.tsx";
-import * as $$$$$$21 from "./sections/Product/ProductDetails.tsx";
-import * as $$$$$$22 from "./sections/Product/ProductShelf.tsx";
-import * as $$$$$$23 from "./sections/Product/SearchResult.tsx";
-import * as $$$$$$24 from "./sections/Product/Wishlist.tsx";
-import * as $$$$$$25 from "./sections/Social/InstagramPosts.tsx";
-import * as $$$$$$26 from "./sections/Social/WhatsApp.tsx";
-import * as $$$$$$27 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$16 from "./sections/MeiaSola/Collections.tsx";
+import * as $$$$$$17 from "./sections/MeiaSola/InstagramCarousel.tsx";
+import * as $$$$$$18 from "./sections/MeiaSola/NewCollection.tsx";
+import * as $$$$$$19 from "./sections/Miscellaneous/CampaignTimer.tsx";
+import * as $$$$$$20 from "./sections/Miscellaneous/CookieConsent.tsx";
+import * as $$$$$$21 from "./sections/Newsletter/Newsletter.tsx";
+import * as $$$$$$22 from "./sections/Product/ProductDetails.tsx";
+import * as $$$$$$23 from "./sections/Product/ProductShelf.tsx";
+import * as $$$$$$24 from "./sections/Product/SearchResult.tsx";
+import * as $$$$$$25 from "./sections/Product/Wishlist.tsx";
+import * as $$$$$$26 from "./sections/Social/InstagramPosts.tsx";
+import * as $$$$$$27 from "./sections/Social/WhatsApp.tsx";
+import * as $$$$$$28 from "./sections/Theme/Theme.tsx";
 import * as $$$$$$$$$$$0 from "./apps/decohub.ts";
 import * as $$$$$$$$$$$1 from "./apps/site.ts";
 
@@ -55,18 +56,19 @@ const manifest = {
     "deco-sites/meiasola/sections/Links/Shortcuts.tsx": $$$$$$13,
     "deco-sites/meiasola/sections/MeiaSola/BrandCarousel.tsx": $$$$$$14,
     "deco-sites/meiasola/sections/MeiaSola/ChooseYourSize.tsx": $$$$$$15,
-    "deco-sites/meiasola/sections/MeiaSola/InstagramCarousel.tsx": $$$$$$16,
-    "deco-sites/meiasola/sections/MeiaSola/NewCollection.tsx": $$$$$$17,
-    "deco-sites/meiasola/sections/Miscellaneous/CampaignTimer.tsx": $$$$$$18,
-    "deco-sites/meiasola/sections/Miscellaneous/CookieConsent.tsx": $$$$$$19,
-    "deco-sites/meiasola/sections/Newsletter/Newsletter.tsx": $$$$$$20,
-    "deco-sites/meiasola/sections/Product/ProductDetails.tsx": $$$$$$21,
-    "deco-sites/meiasola/sections/Product/ProductShelf.tsx": $$$$$$22,
-    "deco-sites/meiasola/sections/Product/SearchResult.tsx": $$$$$$23,
-    "deco-sites/meiasola/sections/Product/Wishlist.tsx": $$$$$$24,
-    "deco-sites/meiasola/sections/Social/InstagramPosts.tsx": $$$$$$25,
-    "deco-sites/meiasola/sections/Social/WhatsApp.tsx": $$$$$$26,
-    "deco-sites/meiasola/sections/Theme/Theme.tsx": $$$$$$27,
+    "deco-sites/meiasola/sections/MeiaSola/Collections.tsx": $$$$$$16,
+    "deco-sites/meiasola/sections/MeiaSola/InstagramCarousel.tsx": $$$$$$17,
+    "deco-sites/meiasola/sections/MeiaSola/NewCollection.tsx": $$$$$$18,
+    "deco-sites/meiasola/sections/Miscellaneous/CampaignTimer.tsx": $$$$$$19,
+    "deco-sites/meiasola/sections/Miscellaneous/CookieConsent.tsx": $$$$$$20,
+    "deco-sites/meiasola/sections/Newsletter/Newsletter.tsx": $$$$$$21,
+    "deco-sites/meiasola/sections/Product/ProductDetails.tsx": $$$$$$22,
+    "deco-sites/meiasola/sections/Product/ProductShelf.tsx": $$$$$$23,
+    "deco-sites/meiasola/sections/Product/SearchResult.tsx": $$$$$$24,
+    "deco-sites/meiasola/sections/Product/Wishlist.tsx": $$$$$$25,
+    "deco-sites/meiasola/sections/Social/InstagramPosts.tsx": $$$$$$26,
+    "deco-sites/meiasola/sections/Social/WhatsApp.tsx": $$$$$$27,
+    "deco-sites/meiasola/sections/Theme/Theme.tsx": $$$$$$28,
   },
   "apps": {
     "deco-sites/meiasola/apps/decohub.ts": $$$$$$$$$$$0,
