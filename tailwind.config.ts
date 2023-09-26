@@ -31,6 +31,10 @@ export default {
         2: "#B8B8B8",
       },
       red: "#FF0000",
+      element: {
+        DEFAULT: "#F2f2f2",
+        hover: "#EBEBEB",
+      },
     },
     fontSize: {
       h1: "42px",
