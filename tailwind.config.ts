@@ -34,6 +34,7 @@ export default {
       element: {
         DEFAULT: "#F2f2f2",
         hover: "#EBEBEB",
+        dark: "#8A8A8A",
       },
     },
     fontSize: {
