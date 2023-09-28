@@ -5,8 +5,8 @@ import { BlogPost } from "https://raw.githubusercontent.com/deco-sites/blog/main
 import { toBlogPost } from "https://raw.githubusercontent.com/deco-sites/blog/main/packs/wordpress/utils/transform.ts";
 
 /**
- * @title WordPress - List Blog Posts
- * @description Use this function to list blog posts from blog.meiasola.
+ * @title Meia Sola - Blog Posts from API
+ * @description Use this function to list blog posts from blog.meiasola.com.br
  */
 const blogPostListLoader = async (
   _props: unknown,
