@@ -18,7 +18,7 @@ function ChooseYourSize({ title, sizes }: Props) {
           {title}
         </h4>
         <ul class="flex flex-wrap justify-center gap-8 laptop:gap-6 desktop:gap-8">
-          {sizes.map((size, index) => {
+          {sizes?.map((size, index) => {
             return (
               <li key={"size-" + index}>
                 <a
