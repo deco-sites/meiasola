@@ -61,7 +61,7 @@ function ProductCard(
       />
 
       {/* Product Images */}
-      <div class="relative overflow-hidden bg-element h-[376px]">
+      <div class="relative overflow-hidden bg-element h-[376px] flex items-center justify-center">
         {/* Wishlist button */}
         <div class="absolute top-4 right-4 z-10">
           <WishlistButton
@@ -73,8 +73,8 @@ function ProductCard(
         <Image
           src={front.url!}
           alt={front.alternateName}
-          width={310}
-          height={376}
+          width={500}
+          height={500}
           class="w-full h-full object-cover"
           sizes="(max-width: 640px) 50vw, 20vw"
           preload={preload}
@@ -84,9 +84,9 @@ function ProductCard(
         <Image
           src={back?.url ?? front.url!}
           alt={back?.alternateName ?? front.alternateName}
-          width={310}
-          height={376}
-          class="transition-all duration-200 ease-in-out opacity-0 group-hover:opacity-100 absolute top-0 left-0 z-[1] w-full h-full object-cover"
+          width={500}
+          height={500}
+          class="w-full h-full object-cover opacity-0 transition-opacity ease-in-out duration-200 group-hover:opacity-100 absolute top-0 left-0"
           sizes="(max-width: 640px) 50vw, 20vw"
           loading="lazy"
           decoding="async"

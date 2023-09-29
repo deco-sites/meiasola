@@ -10,14 +10,16 @@ import { SendEventOnLoad } from "$store/components/Analytics.tsx";
 import { useOffer } from "$store/sdk/useOffer.ts";
 
 export interface Props {
-  title?: string;
+  title: string;
   description?: string;
+  seeMoreUrl?: string;
   products: Product[] | null;
 }
 
 function ProductShelf({
   title,
   description,
+  seeMoreUrl,
   products,
 }: Props) {
   const id = useId();
@@ -25,25 +27,33 @@ function ProductShelf({
   if (!products || products?.length === 0) return null;
 
   return (
-    <div class="w-full container py-6 flex flex-col gap-6 text-black">
-      {(title || description) && (
+    <div class="w-full container relative py-6 flex flex-col gap-6 text-black">
+      <div class="flex justify-between">
         <div class="flex items-end gap-4">
-          {title && (
-            <h3 class="font-bold text-subtitle tracking-widest">{title}</h3>
-          )}
+          <h3 class="font-bold text-subtitle tracking-widest leading-none">
+            {title}
+          </h3>
           {description && <p class="text-small">{description}</p>}
         </div>
-      )}
+        {seeMoreUrl && (
+          <a
+            alt="Ver mais produtos"
+            class="text-small underline"
+            href={seeMoreUrl}
+          >
+            ver mais
+          </a>
+        )}
+      </div>
 
       <div
-        class="relative"
         id={id}
       >
         <Slider class="carousel carousel-start flex gap-4">
           {products?.map((product, index) => (
             <Slider.Item
               index={index}
-              class="carousel-item w-[310px] desktop:flex-1"
+              class="carousel-item w-[310px] shrink-0 desktop:shrink"
             >
               <ProductCard
                 product={product}
@@ -53,8 +63,8 @@ function ProductShelf({
           ))}
         </Slider>
 
-        <Slider.PrevButton class="absolute left-[25px] top-1/2" />
-        <Slider.NextButton class="absolute right-[25px] top-1/2" />
+        <Slider.PrevButton class="absolute left-[25px] top-[188px] z-10" />
+        <Slider.NextButton class="absolute right-[25px] top-[188px] z-10" />
 
         <SliderJS rootId={id} />
 
