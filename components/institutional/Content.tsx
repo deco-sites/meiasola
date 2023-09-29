@@ -31,7 +31,7 @@ function Content({ menuSection: { Component, props }, content, image }: Props) {
         <main class="flex col-span-9 desktop:col-span-8 flex-col gap-6">
           <div
             dangerouslySetInnerHTML={{ __html: content }}
-            class="flex flex-col gap-6"
+            class="flex flex-col gap-6 text-black"
           />
           {image && (
             <Image
