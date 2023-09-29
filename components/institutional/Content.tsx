@@ -24,7 +24,7 @@ export interface Props {
 function Content({ menuSection: { Component, props }, content, image }: Props) {
   return (
     <>
-      <div class="container flex flex-col tablet:grid tablet:grid-cols-12 gap-5 py-11">
+      <div class="container flex flex-col tablet:grid tablet:grid-cols-12 gap-5 py-6 laptop:py-11">
         <aside class="flex tablet:col-span-3 -mr-6 tablet:mr-0">
           <Component {...props} />
         </aside>
