@@ -65,6 +65,7 @@ function ProductCard(
         {/* Wishlist button */}
         <div class="absolute top-4 right-4 z-10">
           <WishlistButton
+            variant="icon"
             productGroupID={productGroupID}
             productID={productID}
           />
