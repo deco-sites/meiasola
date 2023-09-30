@@ -35,6 +35,10 @@ function ProductCard(
   const [front, back] = images ?? [];
   const { listPrice, price } = useOffer(offers);
 
+  const discountPercentage = listPrice && price
+    ? Math.ceil(listPrice * 100 / price - 100)
+    : 0;
+
   return (
     <a
       id={id}
@@ -70,6 +74,15 @@ function ProductCard(
           />
         </div>
 
+        {/* Percentage Tag */}
+        {discountPercentage > 0
+          ? (
+            <div class="bg-black text-white text-small font-bold p-1 absolute top-4 left-4 z-10">
+              {discountPercentage}% OFF
+            </div>
+          )
+          : null}
+
         <img
           src={front.url!}
           alt={front.alternateName}
@@ -91,14 +104,20 @@ function ProductCard(
       {/* Prices & Name */}
       <div class="flex flex-col gap-3 w-full">
         <p class="text-small text-element-dark leading-none">
-          {product.brand}
+          {product.brand?.name}
         </p>
         <h4 class="truncate text-body leading-none">
           {name}
         </h4>
-        <span class="line-through text-element-dark text-small leading-none">
-          {formatPrice(listPrice, offers!.priceCurrency!)}
-        </span>
+
+        {discountPercentage > 0
+          ? (
+            <span class="line-through text-element-dark text-small leading-none">
+              {formatPrice(listPrice, offers!.priceCurrency!)}
+            </span>
+          )
+          : null}
+
         <span class="text-body font-bold leading-none">
           {formatPrice(price, offers!.priceCurrency!)}
         </span>
