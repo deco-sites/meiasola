@@ -63,8 +63,8 @@ function ProductShelf({
           ))}
         </Slider>
 
-        <Slider.PrevButton class="absolute left-[25px] top-[188px] z-10" />
-        <Slider.NextButton class="absolute right-[25px] top-[188px] z-10" />
+        <Slider.PrevButton class="absolute left-[25px] top-1/2 z-10" />
+        <Slider.NextButton class="absolute right-[25px] top-1/2 z-10" />
 
         <SliderJS rootId={id} />
 

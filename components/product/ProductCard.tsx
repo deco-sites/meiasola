@@ -4,7 +4,6 @@ import { formatPrice } from "$store/sdk/format.ts";
 import { useOffer } from "$store/sdk/useOffer.ts";
 import type { Product } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
-import Image from "apps/website/components/Image.tsx";
 
 interface Props {
   product: Product;
@@ -71,26 +70,21 @@ function ProductCard(
           />
         </div>
 
-        <Image
+        <img
           src={front.url!}
           alt={front.alternateName}
-          width={500}
-          height={500}
-          class="w-full h-full object-cover"
-          sizes="(max-width: 640px) 50vw, 20vw"
-          preload={preload}
+          class="w-[264px] h-[264px] object-contain mix-blend-multiply block group-hover:hidden"
           loading={preload ? "eager" : "lazy"}
-          decoding="async"
+          width={264}
+          height={264}
         />
-        <Image
+        <img
           src={back?.url ?? front.url!}
           alt={back?.alternateName ?? front.alternateName}
-          width={500}
-          height={500}
-          class="w-full h-full object-cover opacity-0 transition-opacity ease-in-out duration-200 group-hover:opacity-100 absolute top-0 left-0"
-          sizes="(max-width: 640px) 50vw, 20vw"
-          loading="lazy"
-          decoding="async"
+          class="w-[264px] h-[264px] object-contain mix-blend-multiply hidden group-hover:block"
+          loading={preload ? "eager" : "lazy"}
+          width={264}
+          height={264}
         />
       </div>
 
