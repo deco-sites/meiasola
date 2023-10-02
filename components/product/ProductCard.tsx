@@ -4,7 +4,6 @@ import { formatPrice } from "$store/sdk/format.ts";
 import { useOffer } from "$store/sdk/useOffer.ts";
 import type { Product } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
-import Image from "apps/website/components/Image.tsx";
 
 interface Props {
   product: Product;
@@ -36,6 +35,10 @@ function ProductCard(
   const [front, back] = images ?? [];
   const { listPrice, price } = useOffer(offers);
 
+  const discountPercentage = listPrice && price
+    ? Math.ceil(listPrice * 100 / price - 100)
+    : 0;
+
   return (
     <a
       id={id}
@@ -61,49 +64,60 @@ function ProductCard(
       />
 
       {/* Product Images */}
-      <div class="relative overflow-hidden bg-element h-[376px]">
+      <div class="relative overflow-hidden bg-element h-[376px] flex items-center justify-center">
         {/* Wishlist button */}
         <div class="absolute top-4 right-4 z-10">
           <WishlistButton
+            variant="icon"
             productGroupID={productGroupID}
             productID={productID}
           />
         </div>
 
-        <Image
+        {/* Percentage Tag */}
+        {discountPercentage > 0
+          ? (
+            <div class="bg-black text-white text-small font-bold p-1 absolute top-4 left-4 z-10">
+              {discountPercentage}% OFF
+            </div>
+          )
+          : null}
+
+        <img
           src={front.url!}
           alt={front.alternateName}
-          width={310}
-          height={376}
-          class="w-full h-full object-cover"
-          sizes="(max-width: 640px) 50vw, 20vw"
-          preload={preload}
+          class="w-[264px] h-[264px] object-contain mix-blend-multiply block group-hover:hidden"
           loading={preload ? "eager" : "lazy"}
-          decoding="async"
+          width={264}
+          height={264}
         />
-        <Image
+        <img
           src={back?.url ?? front.url!}
           alt={back?.alternateName ?? front.alternateName}
-          width={310}
-          height={376}
-          class="transition-all duration-200 ease-in-out opacity-0 group-hover:opacity-100 absolute top-0 left-0 z-[1] w-full h-full object-cover"
-          sizes="(max-width: 640px) 50vw, 20vw"
-          loading="lazy"
-          decoding="async"
+          class="w-[264px] h-[264px] object-contain mix-blend-multiply hidden group-hover:block"
+          loading={preload ? "eager" : "lazy"}
+          width={264}
+          height={264}
         />
       </div>
 
       {/* Prices & Name */}
       <div class="flex flex-col gap-3 w-full">
         <p class="text-small text-element-dark leading-none">
-          {product.brand}
+          {product.brand?.name}
         </p>
         <h4 class="truncate text-body leading-none">
           {name}
         </h4>
-        <span class="line-through text-element-dark text-small leading-none">
-          {formatPrice(listPrice, offers!.priceCurrency!)}
-        </span>
+
+        {discountPercentage > 0
+          ? (
+            <span class="line-through text-element-dark text-small leading-none">
+              {formatPrice(listPrice, offers!.priceCurrency!)}
+            </span>
+          )
+          : null}
+
         <span class="text-body font-bold leading-none">
           {formatPrice(price, offers!.priceCurrency!)}
         </span>
