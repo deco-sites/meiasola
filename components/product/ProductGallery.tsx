@@ -13,12 +13,14 @@ export interface Props {
 
 function ProductGallery({ products }: Props) {
   return (
-    <div class="grid grid-cols-2 gap-2 items-center sm:grid-cols-4 sm:gap-10">
+    <div class="grid grid-cols-4 grid-rows-3 gap-x-0.5 gap-y-10 h-fit">
       {products?.map((product, index) => (
-        <ProductCard
-          product={product}
-          preload={index === 0}
-        />
+        <div class="flex col-span-1 h-[378px]">
+          <ProductCard
+            product={product}
+            preload={index === 0}
+          />
+        </div>
       ))}
     </div>
   );
