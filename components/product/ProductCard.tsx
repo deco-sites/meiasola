@@ -1,9 +1,12 @@
+import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
+import { Picture, Source } from "apps/website/components/Picture.tsx";
+import type { Product } from "apps/commerce/types.ts";
+
 import { SendEventOnClick } from "$store/components/Analytics.tsx";
 import WishlistButton from "$store/islands/WishlistButton.tsx";
 import { formatPrice } from "$store/sdk/format.ts";
 import { useOffer } from "$store/sdk/useOffer.ts";
-import type { Product } from "apps/commerce/types.ts";
-import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
+import Image from "$store/components/ui/Image.tsx";
 
 interface Props {
   product: Product;
@@ -43,7 +46,7 @@ function ProductCard(
     <a
       id={id}
       href={url && relative(url)}
-      class="group flex flex-col gap-4 w-full"
+      class="group flex flex-col gap-4 w-full text-black"
       data-deco="view-product"
     >
       <SendEventOnClick
@@ -64,7 +67,7 @@ function ProductCard(
       />
 
       {/* Product Images */}
-      <div class="relative overflow-hidden bg-element h-[376px] flex items-center justify-center">
+      <div class="relative overflow-hidden bg-element px-4 py-11 shrink-0">
         {/* Wishlist button */}
         <div class="absolute top-4 right-4 z-10">
           <WishlistButton
@@ -83,40 +86,46 @@ function ProductCard(
           )
           : null}
 
-        <img
+        <Image
+          width={135}
+          height={135}
+          fit="contain"
+          loading={preload ? "eager" : "lazy"}
+          fetchPriority={preload ? "high" : "auto"}
           src={front.url!}
-          alt={front.alternateName}
-          class="w-[264px] h-[264px] object-contain mix-blend-multiply block group-hover:hidden"
-          loading={preload ? "eager" : "lazy"}
-          width={264}
-          height={264}
+          alt={front.alternateName ?? "Primeira imagem do produto"}
+          className="w-full h-full mix-blend-multiply block group-hover:hidden"
         />
-        <img
+        <Image
+          width={135}
+          height={135}
+          fit="contain"
+          loading="lazy"
+          fetchPriority="auto"
           src={back?.url ?? front.url!}
-          alt={back?.alternateName ?? front.alternateName}
-          class="w-[264px] h-[264px] object-contain mix-blend-multiply hidden group-hover:block"
-          loading={preload ? "eager" : "lazy"}
-          width={264}
-          height={264}
+          alt={back?.alternateName ?? front.alternateName ??
+            "Segunda imagem do produto"}
+          className="w-full h-full mix-blend-multiply hidden group-hover:block"
         />
       </div>
 
       {/* Prices & Name */}
-      <div class="flex flex-col gap-3 w-full">
-        <p class="text-small text-element-dark leading-none">
-          {product.brand?.name}
-        </p>
-        <h4 class="truncate text-body leading-none">
-          {name}
-        </h4>
+      <div class="flex flex-col gap-3 w-full h-full justify-between">
+        <div class="flex flex-col gap-3">
+          <p class="text-small text-element-dark leading-none">
+            {product.brand?.name}
+          </p>
+          <h4 class="text-body leading-none line-clamp-2">
+            {name}
+          </h4>
+        </div>
 
-        {discountPercentage > 0
-          ? (
+        {discountPercentage > 0 &&
+          (
             <span class="line-through text-element-dark text-small leading-none">
               {formatPrice(listPrice, offers!.priceCurrency!)}
             </span>
-          )
-          : null}
+          )}
 
         <span class="text-body font-bold leading-none">
           {formatPrice(price, offers!.priceCurrency!)}

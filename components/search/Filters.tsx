@@ -4,13 +4,11 @@ import type {
   FilterToggleValue,
   ProductListingPage,
 } from "apps/commerce/types.ts";
-import { parseRange } from "apps/commerce/utils/filters.ts";
 
-import { formatPrice } from "$store/sdk/format.ts";
-import Avatar from "$store/components/ui/Avatar.tsx";
 import Divider from "$store/components/ui/Divider.tsx";
+import Icon from "$store/components/ui/Icon.tsx";
 
-interface Props {
+export interface Props {
   filters: ProductListingPage["filters"];
 }
 
@@ -23,18 +21,20 @@ function ValueItem(
   return (
     <a
       href={url}
-      class={`block gap-2 border border-current rounded-full px-3 py-1 text-small ${
-        selected ? "text-black" : "text-grey-2"
+      class={`text-small ${
+        selected
+          ? "text-black border rounded-full px-3 py-1 inline-flex items-center gap-2"
+          : "text-filter block"
       }`}
     >
-      {label}
+      {label} ({quantity}) {selected && <Icon id="XMark" className="h-2 w-2" />}
     </a>
   );
 }
 
 function FilterValues({ key, values }: FilterToggle) {
   return (
-    <ul class="flex flex-wrap gap-x-2 gap-y-3">
+    <ul class="flex flex-col gap-3">
       {values.map((item, index) => {
         const { url, selected, value, quantity } = item;
 

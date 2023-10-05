@@ -52,7 +52,8 @@ export type AvailableIcons =
   | "Tiktok"
   | "Menu"
   | "Menu"
-  | "XMark";
+  | "XMark"
+  | "Filter";
 
 export interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   /**

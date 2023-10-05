@@ -8,8 +8,11 @@ import Breadcrumb from "$store/components/ui/Breadcrumb.tsx";
 import { useOffer } from "$store/sdk/useOffer.ts";
 import ProductGallery from "$store/components/product/ProductGallery.tsx";
 import Filters from "$store/components/search/Filters.tsx";
-import Divider from "$store/components/ui/Divider.tsx";
 
+import {
+  IslandButtonFilters,
+  IslandFiltersDrawer,
+} from "$store/islands/Drawers.tsx";
 import IslandSort from "$store/islands/Sort.tsx";
 
 export interface Props {
@@ -53,15 +56,18 @@ function Result({
     <>
       <Image images={images} breadcrumb={breadcrumb} />
       <Heading seo={seo} sortOptions={sortOptions} />
+      <IslandFiltersDrawer filters={filters} />
 
-      <div class="container py-10 grid grid-cols-4 gap-4 tablet:grid-cols-12 tablet:gap-5">
+      <div class="container py-10 grid grid-cols-4 gap-4 laptop:grid-cols-12 laptop:gap-5">
         <aside class="flex flex-col gap-6 col-span-3">
           <span class="text-black uppercase text-small font-bold">
             {pageInfo.records} itens
           </span>
-          <Filters filters={filters} />
+          <div class="hidden laptop:block">
+            <Filters filters={filters} />
+          </div>
         </aside>
-        <div class="flex col-span-9">
+        <div class="flex col-span-4 laptop:col-span-9">
           <ProductGallery products={products} />
         </div>
       </div>
@@ -107,10 +113,13 @@ function Heading(
           <h1 class="shrink-0 text-h3 leadin-none uppercase font-medium tracking-wide">
             {seo?.title}
           </h1>
-          <p class="leading-none line-clamp-2 text-small">{seo?.description}</p>
+          <p class="laptop:leading-none laptop:line-clamp-2 text-small">
+            {seo?.description}
+          </p>
         </div>
 
         <div class="flex gap-4 laptop:w-1/4 laptop:justify-end">
+          <IslandButtonFilters className="laptop:hidden" />
           <IslandSort sortOptions={sortOptions} />
         </div>
       </div>

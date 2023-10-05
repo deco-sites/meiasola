@@ -36,6 +36,7 @@ export default {
         hover: "#EBEBEB",
         dark: "#8A8A8A",
       },
+      filter: "#777777"
     },
     fontSize: {
       h1: "42px",

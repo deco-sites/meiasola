@@ -53,7 +53,7 @@ function ProductShelf({
           {products?.map((product, index) => (
             <Slider.Item
               index={index}
-              class="carousel-item w-[310px] shrink-0 desktop:shrink"
+              class="carousel-item w-[310px] shrink-0"
             >
               <ProductCard
                 product={product}

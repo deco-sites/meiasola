@@ -38,7 +38,7 @@ function Sort({ sortOptions }: Props) {
   const sort = useSort();
 
   return (
-    <div class="dropdown laptop:dropdown-end">
+    <div class="dropdown w-full flex border justify-center p-2 laptop:inline-block laptop:w-fit laptop:justify-end laptop:p-0 laptop:border-none laptop:dropdown-end">
       <label
         tabIndex={0}
         class="flex gap-2 items-center text-small cursor-pointer"
@@ -57,8 +57,14 @@ function Sort({ sortOptions }: Props) {
         ) => (
           <li
             key={`sort-option-${index}`}
-            onClick={() => applySort(option.label)}
-            class="block w-[200px] py-4 text-center text-small cursor-pointer transition-all duration-300 ease-in-out hover:bg-grey-1 border-t border-grey-1"
+            onClick={() => {
+              if (sort !== option.label) applySort(option.label);
+            }}
+            class={`block w-[200px] py-4 text-center text-small transition-all duration-300 ease-in-out border-t border-grey-1 ${
+              sort === option.label
+                ? "cursor-default text-grey-1"
+                : "cursor-pointer hover:bg-grey-1"
+            }`}
             style={{
               borderTop: index === 0 ? "none" : "",
             }}
