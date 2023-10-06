@@ -1,12 +1,11 @@
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
-import { Picture, Source } from "apps/website/components/Picture.tsx";
 import type { Product } from "apps/commerce/types.ts";
+import Image from "apps/website/components/Image.tsx";
 
 import { SendEventOnClick } from "$store/components/Analytics.tsx";
 import WishlistButton from "$store/islands/WishlistButton.tsx";
 import { formatPrice } from "$store/sdk/format.ts";
 import { useOffer } from "$store/sdk/useOffer.ts";
-import Image from "$store/components/ui/Image.tsx";
 
 interface Props {
   product: Product;

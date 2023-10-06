@@ -53,25 +53,20 @@ function Result({
 }: Omit<Props, "page"> & { page: ProductListingPage }) {
   const { products, filters, breadcrumb, sortOptions, seo, pageInfo } = page;
 
-  console.log({
-    ...page,
-    products: undefined,
-    filters: undefined,
-    sortOptions: undefined,
-  });
-
   return (
     <>
-      <Heading
-        products={pageInfo.records ?? 0}
-        seo={seo}
-        sortOptions={sortOptions}
-      />
+      <Image images={images} breadcrumb={breadcrumb} />
+      <Heading seo={seo} sortOptions={sortOptions} />
       <IslandFiltersDrawer filters={filters} />
 
       <div class="container py-10 grid grid-cols-4 gap-4 laptop:grid-cols-12 laptop:gap-5">
-        <aside class="hidden laptop:flex flex-col gap-6 col-span-3">
-          <Filters filters={filters} />
+        <aside class="flex flex-col gap-6 col-span-3">
+          <span class="text-black uppercase text-small font-bold">
+            {pageInfo.records} itens
+          </span>
+          <div class="hidden laptop:block">
+            <Filters filters={filters} />
+          </div>
         </aside>
         <div class="flex col-span-4 laptop:col-span-9">
           <ProductGallery products={products} />
@@ -107,25 +102,21 @@ function SearchResult({ page, ...props }: Props) {
 export default SearchResult;
 
 function Heading(
-  { seo, sortOptions, products }: {
-    products: number;
+  { seo, sortOptions }: {
     seo: ProductListingPage["seo"];
     sortOptions: ProductListingPage["sortOptions"];
   },
 ) {
-  const url = new URL(seo?.canonical ?? "");
-  const search = url.searchParams.get("q") ?? "";
-
   return (
-    <div class="laptop:border-b laptop:border-grey-1 pt-6 tablet:py-10 text-black">
-      <div class="container flex flex-col gap-6 laptop:flex-row laptop:justify-between items-end">
-        <div class="flex flex-col gap-8">
-          <h1 class="text-subtile font-normal leading-none">
-            Você buscou por: <span class="font-bold">{search}</span>
+    <div class="laptop:border-b laptop:border-grey-1 pt-6 laptop:pb-6 tablet:py-10 text-black">
+      <div class="container flex flex-col gap-6 laptop:flex-row laptop:justify-between">
+        <div class="flex flex-col gap-6 laptop:flex-row laptop:w-3/4 laptop:gap-5 laptop:items-center">
+          <h1 class="shrink-0 text-h3 leading-none uppercase font-medium tracking-wide">
+            {seo?.title}
           </h1>
-          <span class="uppercase text-small font-bold">
-            {products} itens
-          </span>
+          <p class="laptop:leading-none laptop:line-clamp-2 text-small">
+            {seo?.description}
+          </p>
         </div>
 
         <div class="flex gap-4 laptop:w-1/4 laptop:justify-end">
@@ -149,7 +140,6 @@ function Image(
       breadcrumb.itemListElement[breadcrumb.itemListElement.length - 1];
     const url = new URL(last.item);
     const pathname = url.pathname;
-    console.log(pathname);
     image = images.findLast((image) =>
       (new RegExp(image.route)).test(image.route)
     );
