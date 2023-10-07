@@ -28,14 +28,17 @@ export default function InstagramCarousel({ title, images }: Props) {
       <div id={id} class="relative container px-0">
         <Slider class="carousel gap-1 scroll-smooth">
           {images?.map((image, index) => (
-            <Slider.Item index={index} class="carousel-item laptop:w-1/4">
+            <Slider.Item
+              index={index}
+              class="carousel-item laptop:w-1/4 bg-grey-1"
+            >
               <Image
                 alt={image.label ?? "Imagem do Instagram"}
                 src={image.src}
                 width={360}
                 height={360}
                 loading="lazy"
-                fetchPriority="auto"
+                fetchPriority="low"
                 sizes="(max-width: 360px) 160px, 360px"
                 class="object-cover h-[160px] w-[160px] tablet:h-[360px] tablet:w-[360px]"
               />

@@ -12,30 +12,34 @@ export interface Props {
   chevronLeft?: boolean;
 }
 
-function Aside(
-  { title, onClose, children, chevronLeft }: Props,
-) {
+function Aside({ title, onClose, children, chevronLeft }: Props) {
   return (
     <div class="bg-white h-full w-[95vw] max-w-[300px] flex flex-col">
       <div class="h-20 flex justify-between items-center px-6 shrink-0">
         {chevronLeft && onClose && (
-          <Button class="btn btn-ghost" onClick={onClose}>
+          <Button
+            class="btn btn-ghost"
+            aria-label="Clique para Voltar"
+            onClick={onClose}
+          >
             <Icon id="ChevronLeft" class="h-4 w-4" />
           </Button>
         )}
-        {title
-          ? (
-            <h1 class="px-4 py-3">
-              <span class="font-bold text-subtitle">{title}</span>
-            </h1>
-          )
-          : (
-            <div class="flex justify-center w-full">
-              <Logo class="w-[90px] h-[14px]" />
-            </div>
-          )}
+        {title ? (
+          <h1 class="px-4 py-3">
+            <span class="font-bold text-subtitle">{title}</span>
+          </h1>
+        ) : (
+          <div class="flex justify-center w-full">
+            <Logo class="w-[90px] h-[14px]" />
+          </div>
+        )}
         {onClose && (
-          <Button class="btn btn-ghost" onClick={onClose}>
+          <Button
+            class="btn btn-ghost"
+            aria-label="Clique para Fechar"
+            onClick={onClose}
+          >
             <Icon id="XMark" class="h-4 w-4" />
           </Button>
         )}

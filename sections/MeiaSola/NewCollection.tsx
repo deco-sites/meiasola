@@ -22,14 +22,17 @@ function NewCollection({ image, content, button }: Props) {
     <div class="container flex flex-col gap-6 text-black py-3 tablet:py-11 tablet:grid tablet:grid-cols-12 tablet:gap-4 desktop:gap-5">
       <div class="flex h-full tablet:col-span-6">
         {image && (
-          <Image
-            alt={image.alt}
-            src={image.src}
-            width={640}
-            height={584}
-            loading="lazy"
-            class="w-full h-full object-cover"
-          />
+          <div class="w-full h-full bg-grey-1">
+            <Image
+              alt={image.alt}
+              src={image.src}
+              width={640}
+              height={584}
+              loading="lazy"
+              fetchPriority="auto"
+              class="w-full h-full object-cover"
+            />
+          </div>
         )}
       </div>
       <div class="hidden tablet:flex col-span-1" />

@@ -29,15 +29,17 @@ function Collections({ variant, collections }: Props) {
                 class="relative flex justify-center items-end p-6 w-[310px] h-[480px] text-body text-white shrink-0 snap-start desktop:shrink"
               >
                 <p class="z-10 text-center">{collection.label}</p>
-                <Image
-                  alt="Imagem da coleção"
-                  width={310}
-                  height={480}
-                  loading="lazy"
-                  fetchPriority="auto"
-                  src={collection.image}
-                  class="object-cover h-full w-full absolute top-0 left-0 z-0"
-                />
+                <div class="h-full w-full bg-grey-1 absolute top-0 left-0 z-0">
+                  <Image
+                    alt="Imagem da coleção"
+                    width={310}
+                    height={480}
+                    loading="lazy"
+                    fetchPriority="auto"
+                    src={collection.image}
+                    class="object-cover h-full w-full"
+                  />
+                </div>
                 <div
                   class="absolute h-full w-full top-0 left-0 z-[1]"
                   style={{
@@ -63,21 +65,25 @@ function Collections({ variant, collections }: Props) {
                 key={"collection-" + index}
                 href={collection.link}
                 aria-label={`Clique para ver produtos de: ${collection.label}`}
-                class="flex flex-col items-center gap-5 w-[350px] h-[481px] text-body text-black shrink-0 snap-start desktop:shrink"
+                class="flex flex-col items-center gap-5 w-[350px] h-[481px] text-body text-black shrink-0 snap-start desktop:shrink group"
               >
                 <h4 class="text-center text-large tracking-wide font-medium">
                   {collection.label}
                 </h4>
-                <Image
-                  alt="Imagem da coleção"
-                  width={350}
-                  height={410}
-                  loading="lazy"
-                  fetchPriority="auto"
-                  src={collection.image}
-                  class="object-cover h-full w-full flex-1"
-                />
-                <p class="text-center text-small">SHOP NOW</p>
+                <div class="h-full w-full bg-grey-1">
+                  <Image
+                    alt="Imagem da coleção"
+                    width={350}
+                    height={410}
+                    loading="lazy"
+                    fetchPriority="auto"
+                    src={collection.image}
+                    class="object-cover h-full w-full flex-1"
+                  />
+                </div>
+                <p class="text-center text-small group-hover:underline">
+                  SHOP NOW
+                </p>
               </a>
             );
           })}

@@ -33,20 +33,14 @@ export interface Props {
 }
 
 function NavItem({ label, href, icon, divider, submenu }: Props) {
-  const content = icon
-    ? (
-      <Icon
-        id={icon.src}
-        width={icon.width}
-        height={icon.height}
-      />
-    )
-    : (
-      <span
-        class="uppercase font-bold text-small"
-        dangerouslySetInnerHTML={{ __html: label }}
-      />
-    );
+  const content = icon ? (
+    <Icon id={icon.src} width={icon.width} height={icon.height} />
+  ) : (
+    <span
+      class="uppercase font-bold text-small"
+      dangerouslySetInnerHTML={{ __html: label }}
+    />
+  );
 
   return (
     <>
@@ -56,9 +50,7 @@ function NavItem({ label, href, icon, divider, submenu }: Props) {
         </li>
       )}
       <li class="cursor-default group/menu h-full flex items-center">
-        <a href={href}>
-          {content}
-        </a>
+        <a href={href}>{content}</a>
 
         {submenu && <SubMenu {...submenu} />}
       </li>
@@ -85,13 +77,16 @@ function SubMenu({ sections, image }: SubMenuProps) {
         })}
 
         {image && (
-          <Image
-            loading="lazy"
-            src={image}
-            width={400}
-            height={400}
-            class="h-full object-cover flex-1"
-          />
+          <div class="bg-grey-1 h-full flex-1">
+            <Image
+              src={image}
+              width={400}
+              height={400}
+              loading="lazy"
+              fetchPriority="auto"
+              class="h-full w-full object-cover"
+            />
+          </div>
         )}
       </div>
     </div>
@@ -136,17 +131,22 @@ function Section({ label, items }: Section) {
       {!items?.[0].image && <p class="font-bold text-subtitle">{label}</p>}
       <ul class="text-body flex flex-col flex-wrap max-h-full">
         {items?.map((item) => {
-          const content = item.image
-            ? (
+          const content = item.image ? (
+            <div
+              class={`w-[${item.image.width}px] h-[${item.image.height}px bg-grey-1]`}
+            >
               <Image
                 loading="lazy"
+                fetchPriority="auto"
                 src={item.image.src}
                 width={item.image.width}
                 height={item.image.height}
                 class="opacity-50 hover:opacity-100"
               />
-            )
-            : item.label;
+            </div>
+          ) : (
+            item.label
+          );
           return (
             <li class={item.image ? "mt-7 mr-12" : "mt-8 mr-18"}>
               <a
