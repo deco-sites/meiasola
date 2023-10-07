@@ -26,18 +26,18 @@ function CartButton({ loading, currency, total, items }: Props) {
   return (
     <Button
       class="relative"
-      aria-label="open cart"
+      aria-label="Abrir o carrinho"
       data-deco={displayCart.value && "open-cart"}
       onClick={onClick}
     >
       <div class="h-[15px] w-[15px] absolute top-[-2px] right-[-6px]">
-        {loading
-          ? <div class="loading loading-spinner w-full h-full" />
-          : (
-            <div class="bg-red text-white rounded-full text-[10px] a">
-              {totalItems > 9 ? "9+" : totalItems}
-            </div>
-          )}
+        {loading ? (
+          <div class="loading loading-spinner w-full h-full" />
+        ) : (
+          <div class="bg-red text-white rounded-full text-[10px] a">
+            {totalItems > 9 ? "9+" : totalItems}
+          </div>
+        )}
       </div>
       <Icon id="Bag" size={22} />
     </Button>

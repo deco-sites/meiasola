@@ -24,7 +24,7 @@ function Categories({ title, categories }: Props) {
           return (
             <li key={"category-" + index}>
               <a
-                aria-label={`Categoria ${category.label}`}
+                aria-label={`Clique para ver produtos da categoria: ${category.label}`}
                 href={category.link}
                 class="h-[128px] w-[110px] bg-element transition-all duration-200 ease hover:bg-element-hover p-2.5 flex flex-col justify-between items-center text-center text-large shrink-0 snap-start"
               >

@@ -21,10 +21,7 @@ function BannerCarousel({ items, interval }: Props) {
   const id = useId();
 
   return (
-    <div
-      id={id}
-      class="relative w-full h-fit"
-    >
+    <div id={id} class="relative w-full h-fit">
       <Slider class="carousel carousel-center w-full col-span-full row-span-full">
         {items?.map((item, index) => (
           <Slider.Item index={index} class="carousel-item w-full">
@@ -72,7 +69,9 @@ function Item(props: Video | Image) {
   return (
     <a
       class="w-full h-[310px] tablet:h-screen max-h-[696px] relative"
-      aria-label={alt ?? "Banner com conteúdo, clique e confira!"}
+      aria-label={
+        `Item do carrossel: ${alt}` ?? "Banner com conteúdo, clique e confira!"
+      }
       href={button.link}
     >
       <div class="container flex flex-col h-full relative z-10">
@@ -88,30 +87,26 @@ function Item(props: Video | Image) {
         </div>
       </div>
 
-      {instanceOfImage(props)
-        ? (
-          <ImageComponent
-            alt={alt}
-            src={props.image}
-            width={1440}
-            height={696}
-            loading="lazy"
-            sizes="(max-width: 767px) 767px, 1440px"
-            class="w-full h-full object-cover absolute top-0 left-0 z-0"
-          />
-        )
-        : instanceOfVideo(props)
-        ? (
-          <video
-            autoPlay
-            muted
-            loop
-            class="w-full h-full object-cover absolute top-0 left-0 z-0"
-          >
-            <source src={props.video} />
-          </video>
-        )
-        : null}
+      {instanceOfImage(props) ? (
+        <ImageComponent
+          alt={alt}
+          src={props.image}
+          width={1440}
+          height={696}
+          loading="lazy"
+          sizes="(max-width: 767px) 767px, 1440px"
+          class="w-full h-full object-cover absolute top-0 left-0 z-0"
+        />
+      ) : instanceOfVideo(props) ? (
+        <video
+          autoPlay
+          muted
+          loop
+          class="w-full h-full object-cover absolute top-0 left-0 z-0"
+        >
+          <source src={props.video} />
+        </video>
+      ) : null}
 
       {gradient && (
         <div

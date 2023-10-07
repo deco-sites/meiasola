@@ -25,7 +25,7 @@ function Collections({ variant, collections }: Props) {
               <a
                 key={"collection-" + index}
                 href={collection.link}
-                aria-label={collection.label}
+                aria-label={`Clique para ver produtos de: ${collection.label}`}
                 class="relative flex justify-center items-end p-6 w-[310px] h-[480px] text-body text-white shrink-0 snap-start desktop:shrink"
               >
                 <p class="z-10 text-center">{collection.label}</p>
@@ -34,6 +34,7 @@ function Collections({ variant, collections }: Props) {
                   width={310}
                   height={480}
                   loading="lazy"
+                  fetchPriority="auto"
                   src={collection.image}
                   class="object-cover h-full w-full absolute top-0 left-0 z-0"
                 />
@@ -61,7 +62,7 @@ function Collections({ variant, collections }: Props) {
               <a
                 key={"collection-" + index}
                 href={collection.link}
-                aria-label={collection.label}
+                aria-label={`Clique para ver produtos de: ${collection.label}`}
                 class="flex flex-col items-center gap-5 w-[350px] h-[481px] text-body text-black shrink-0 snap-start desktop:shrink"
               >
                 <h4 class="text-center text-large tracking-wide font-medium">
@@ -72,6 +73,7 @@ function Collections({ variant, collections }: Props) {
                   width={350}
                   height={410}
                   loading="lazy"
+                  fetchPriority="auto"
                   src={collection.image}
                   class="object-cover h-full w-full flex-1"
                 />
