@@ -75,6 +75,7 @@ const portugueseMappings: { [key: string]: string } = {
   "Tamanho": "Tamanho",
   "Brands": "Marca",
   "Cor": "Cores",
+  "Departments": "Departamentos"
 };
 
 function Filters({ filters }: Props) {
@@ -83,7 +84,7 @@ function Filters({ filters }: Props) {
       {filters
         .filter(isToggle)
         .map((filter, index) => {
-          if (portugueseMappings[filter.label]) {
+          if (portugueseMappings[filter.label] && filter.quantity > 0) {
             return (
               <>
                 {index !== 0 && <Divider />}

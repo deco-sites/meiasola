@@ -16,10 +16,7 @@ function ProductGallery({ products }: Props) {
     <div class="h-fit grid grid-cols-12 gap-x-4 gap-y-6 laptop:gap-x-0.5 laptop:gap-y-10">
       {products?.map((product, index) => (
         <div class="flex col-span-6 tablet:col-span-4 laptop:col-span-3">
-          <ProductCard
-            product={product}
-            preload={index === 0}
-          />
+          <ProductCard product={product} preload={index < 4} />
         </div>
       ))}
     </div>

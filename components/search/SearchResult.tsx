@@ -53,25 +53,43 @@ function Result({
 }: Omit<Props, "page"> & { page: ProductListingPage }) {
   const { products, filters, breadcrumb, sortOptions, seo, pageInfo } = page;
 
-  console.log({
-    ...page,
-    products: undefined,
-    filters: undefined,
-    sortOptions: undefined,
+  console.log(seo);
+
+  let search = "";
+
+  pageInfo?.nextPage?.split("&").forEach((term) => {
+    const [key, value] = term.split("=");
+    if (key === "q") {
+      search = decodeURIComponent(value);
+    }
   });
+
+  const url = new URL(seo?.canonical ?? "");
+  if (url.searchParams.get("q")) search = url.searchParams.get("q");
 
   return (
     <>
+      {!search && <Image images={images} breadcrumb={breadcrumb} />}
       <Heading
-        products={pageInfo.records ?? 0}
         seo={seo}
+        productsCount={pageInfo.records ?? 0}
         sortOptions={sortOptions}
+        searchTerm={search}
       />
       <IslandFiltersDrawer filters={filters} />
 
-      <div class="container py-10 grid grid-cols-4 gap-4 laptop:grid-cols-12 laptop:gap-5">
-        <aside class="hidden laptop:flex flex-col gap-6 col-span-3">
-          <Filters filters={filters} />
+      <div class="container py-6 laptop:py-10 grid grid-cols-4 gap-4 laptop:grid-cols-12 laptop:gap-5">
+        <aside class="flex flex-col gap-6 col-span-3">
+          <span
+            class={`text-black uppercase text-small font-bold ${
+              search && "laptop:hidden"
+            }`}
+          >
+            {pageInfo.records} itens
+          </span>
+          <div class="hidden laptop:block">
+            <Filters filters={filters} />
+          </div>
         </aside>
         <div class="flex col-span-4 laptop:col-span-9">
           <ProductGallery products={products} />
@@ -87,7 +105,7 @@ function Result({
             item_list_id: "",
             items: page.products?.map((product) =>
               mapProductToAnalyticsItem({
-                ...(useOffer(product.offers)),
+                ...useOffer(product.offers),
                 product,
                 breadcrumbList: page.breadcrumb,
               })
@@ -106,27 +124,41 @@ function SearchResult({ page, ...props }: Props) {
 
 export default SearchResult;
 
-function Heading(
-  { seo, sortOptions, products }: {
-    products: number;
-    seo: ProductListingPage["seo"];
-    sortOptions: ProductListingPage["sortOptions"];
-  },
-) {
-  const url = new URL(seo?.canonical ?? "");
-  const search = url.searchParams.get("q") ?? "";
-
+function Heading({
+  seo,
+  sortOptions,
+  productsCount,
+  searchTerm,
+}: {
+  searchTerm?: string;
+  productsCount: number;
+  seo: ProductListingPage["seo"];
+  sortOptions: ProductListingPage["sortOptions"];
+}) {
   return (
-    <div class="laptop:border-b laptop:border-grey-1 pt-6 tablet:py-10 text-black">
-      <div class="container flex flex-col gap-6 laptop:flex-row laptop:justify-between items-end">
-        <div class="flex flex-col gap-8">
-          <h1 class="text-subtile font-normal leading-none">
-            Você buscou por: <span class="font-bold">{search}</span>
-          </h1>
-          <span class="uppercase text-small font-bold">
-            {products} itens
-          </span>
-        </div>
+    <div
+      class={`laptop:border-b laptop:border-grey-1 laptop:pb-10 pt-6 tablet:pt-10 text-black`}
+    >
+      <div class="container flex flex-col gap-6 laptop:flex-row laptop:justify-between laptop:items-end">
+        {searchTerm ? (
+          <div class="flex flex-col gap-8">
+            <h1 class="text-subtile font-normal leading-none">
+              Você buscou por: <span class="font-bold">{searchTerm}</span>
+            </h1>
+            <span class="uppercase text-small font-bold hidden laptop:block">
+              {productsCount} itens
+            </span>
+          </div>
+        ) : (
+          <div class="flex flex-col gap-6 laptop:flex-row laptop:w-3/4 laptop:gap-5 laptop:items-center">
+            <h1 class="shrink-0 text-h3 leading-none uppercase font-medium tracking-wide">
+              {seo?.title}
+            </h1>
+            <p class="laptop:leading-none laptop:line-clamp-2 text-small">
+              {seo?.description}
+            </p>
+          </div>
+        )}
 
         <div class="flex gap-4 laptop:w-1/4 laptop:justify-end">
           <IslandButtonFilters className="laptop:hidden" />
@@ -137,21 +169,22 @@ function Heading(
   );
 }
 
-function Image(
-  { images = [], breadcrumb }: {
-    images: Props["images"];
-    breadcrumb: ProductListingPage["breadcrumb"];
-  },
-) {
+function Image({
+  images = [],
+  breadcrumb,
+}: {
+  images: Props["images"];
+  breadcrumb: ProductListingPage["breadcrumb"];
+}) {
   let image = null;
+
   if (breadcrumb?.itemListElement.length > 0) {
     const last =
       breadcrumb.itemListElement[breadcrumb.itemListElement.length - 1];
     const url = new URL(last.item);
     const pathname = url.pathname;
-    console.log(pathname);
     image = images.findLast((image) =>
-      (new RegExp(image.route)).test(image.route)
+      new RegExp(image.route).test(image.route)
     );
   }
 
