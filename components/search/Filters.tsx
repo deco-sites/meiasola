@@ -1,14 +1,14 @@
-import Avatar from "$store/components/ui/Avatar.tsx";
-import { formatPrice } from "$store/sdk/format.ts";
 import type {
   Filter,
   FilterToggle,
   FilterToggleValue,
   ProductListingPage,
 } from "apps/commerce/types.ts";
-import { parseRange } from "apps/commerce/utils/filters.ts";
 
-interface Props {
+import Divider from "$store/components/ui/Divider.tsx";
+import Icon from "$store/components/ui/Icon.tsx";
+
+export interface Props {
   filters: ProductListingPage["filters"];
 }
 
@@ -19,63 +19,85 @@ function ValueItem(
   { url, selected, label, quantity }: FilterToggleValue,
 ) {
   return (
-    <a href={url} class="flex items-center gap-2">
-      <div aria-checked={selected} class="checkbox" />
-      <span class="text-sm">{label}</span>
-      {quantity > 0 && <span class="text-sm text-base-300">({quantity})</span>}
+    <a
+      href={url}
+      class={`text-small ${
+        selected
+          ? "text-black border rounded-full px-3 py-1 inline-flex items-center gap-2"
+          : "text-filter block"
+      }`}
+    >
+      {label} ({quantity}) {selected && <Icon id="XMark" className="h-2 w-2" />}
     </a>
   );
 }
 
 function FilterValues({ key, values }: FilterToggle) {
-  const flexDirection = key === "tamanho" || key === "cor"
-    ? "flex-row"
-    : "flex-col";
-
   return (
-    <ul class={`flex flex-wrap gap-2 ${flexDirection}`}>
-      {values.map((item) => {
+    <ul class="flex flex-col gap-3">
+      {values.map((item, index) => {
         const { url, selected, value, quantity } = item;
 
-        if (key === "cor" || key === "tamanho") {
-          return (
-            <a href={url}>
-              <Avatar
-                content={value}
-                variant={selected ? "active" : "default"}
-              />
-            </a>
-          );
-        }
+        // if (key === "cor" || key === "tamanho") {
+        //   return (
+        //     <a href={url}>
+        //       <Avatar
+        //         content={value}
+        //         variant={selected ? "active" : "default"}
+        //       />
+        //     </a>
+        //   );
+        // }
 
-        if (key === "price") {
-          const range = parseRange(item.value);
+        // if (key === "price") {
+        //   const range = parseRange(item.value);
 
-          return range && (
-            <ValueItem
-              {...item}
-              label={`${formatPrice(range.from)} - ${formatPrice(range.to)}`}
-            />
-          );
-        }
+        //   return range && (
+        //     <ValueItem
+        //       {...item}
+        //       label={`${formatPrice(range.from)} - ${formatPrice(range.to)}`}
+        //     />
+        //   );
+        // }
 
-        return <ValueItem {...item} />;
+        return (
+          <li key={`key-${key}-value-${index}`}>
+            <ValueItem {...item} />
+          </li>
+        );
       })}
     </ul>
   );
 }
 
+const portugueseMappings: { [key: string]: string } = {
+  "Categories": "Categoria",
+  "Tamanho": "Tamanho",
+  "Brands": "Marca",
+  "Cor": "Cores",
+  "Departments": "Departamentos"
+};
+
 function Filters({ filters }: Props) {
   return (
-    <ul class="flex flex-col gap-6 p-4">
+    <ul class="flex flex-col gap-6 text-black">
       {filters
         .filter(isToggle)
-        .map((filter) => (
-          <li class="flex flex-col gap-4">
-            <span>{filter.label}</span>
-            <FilterValues {...filter} />
-          </li>
-        ))}
+        .map((filter, index) => {
+          if (portugueseMappings[filter.label] && filter.quantity > 0) {
+            return (
+              <>
+                {index !== 0 && <Divider />}
+                <li class="flex flex-col gap-3">
+                  <span class="font-medium text-large">
+                    {portugueseMappings[filter.label]}
+                  </span>
+                  <FilterValues {...filter} />
+                </li>
+              </>
+            );
+          }
+        })}
     </ul>
   );
 }

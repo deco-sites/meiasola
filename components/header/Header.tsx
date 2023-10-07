@@ -16,7 +16,7 @@ function Header({
     <header
       class={navbar.colors.startWithtransparent ? "h-0" : "h-[calc(43px+73px)]"}
     >
-      <div class="fixed z-50 w-screen">
+      <div class="fixed z-50 w-full">
         <Alert {...alert} />
         <Navbar {...navbar} />
       </div>

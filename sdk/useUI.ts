@@ -9,10 +9,13 @@ const displayCart = signal(false);
 const displayMenu = signal(false);
 const displaySearchBar = signal(false);
 
+const displayFilters = signal(false);
+
 const state = {
   displayCart,
   displayMenu,
   displaySearchBar,
+  displayFilters,
 };
 
 export const useUI = () => state;

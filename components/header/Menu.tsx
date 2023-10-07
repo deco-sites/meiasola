@@ -5,7 +5,7 @@ import Icon from "$store/components/ui/Icon.tsx";
 import Drawer from "$store/components/ui/Drawer.tsx";
 import Divider from "$store/components/ui/Divider.tsx";
 
-import Aside from "$store/components/header/Drawers/Aside.tsx";
+import Aside from "$store/components/ui/Aside.tsx";
 
 import type {
   Props as NavItemProps,

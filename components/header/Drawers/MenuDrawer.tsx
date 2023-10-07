@@ -3,7 +3,7 @@ import { lazy } from "preact/compat";
 
 import Drawer from "$store/components/ui/Drawer.tsx";
 
-import Aside from "$store/components/header/Drawers/Aside.tsx";
+import Aside from "$store/components/ui/Aside.tsx";
 import type { Props as MenuProps } from "$store/components/header/Menu.tsx";
 import type { Props as WishListButtonProps } from "$store/components/header/Buttons/WishList.tsx";
 import type { Props as MyAccountButtonProps } from "$store/components/header/Buttons/MyAccount.tsx";

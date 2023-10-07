@@ -4,16 +4,18 @@
 
 import * as $0 from "./routes/_app.tsx";
 import * as $$0 from "./islands/AddToCartButton/vtex.tsx";
-import * as $$1 from "./islands/Header/Buttons.tsx";
-import * as $$2 from "./islands/Header/Drawers.tsx";
-import * as $$3 from "./islands/Header/Searchbar.tsx";
-import * as $$4 from "./islands/Newsletter.tsx";
-import * as $$5 from "./islands/OutOfStock.tsx";
-import * as $$6 from "./islands/ProductImageZoom.tsx";
-import * as $$7 from "./islands/SearchControls.tsx";
-import * as $$8 from "./islands/ShippingSimulation.tsx";
-import * as $$9 from "./islands/SliderJS.tsx";
-import * as $$10 from "./islands/WishlistButton.tsx";
+import * as $$1 from "./islands/Drawers.tsx";
+import * as $$2 from "./islands/Header/Buttons.tsx";
+import * as $$3 from "./islands/Header/Drawers.tsx";
+import * as $$4 from "./islands/Header/Searchbar.tsx";
+import * as $$5 from "./islands/Newsletter.tsx";
+import * as $$6 from "./islands/OutOfStock.tsx";
+import * as $$7 from "./islands/ProductImageZoom.tsx";
+import * as $$8 from "./islands/SearchControls.tsx";
+import * as $$9 from "./islands/ShippingSimulation.tsx";
+import * as $$10 from "./islands/SliderJS.tsx";
+import * as $$11 from "./islands/Sort.tsx";
+import * as $$12 from "./islands/WishlistButton.tsx";
 
 const manifest = {
   routes: {
@@ -21,16 +23,18 @@ const manifest = {
   },
   islands: {
     "./islands/AddToCartButton/vtex.tsx": $$0,
-    "./islands/Header/Buttons.tsx": $$1,
-    "./islands/Header/Drawers.tsx": $$2,
-    "./islands/Header/Searchbar.tsx": $$3,
-    "./islands/Newsletter.tsx": $$4,
-    "./islands/OutOfStock.tsx": $$5,
-    "./islands/ProductImageZoom.tsx": $$6,
-    "./islands/SearchControls.tsx": $$7,
-    "./islands/ShippingSimulation.tsx": $$8,
-    "./islands/SliderJS.tsx": $$9,
-    "./islands/WishlistButton.tsx": $$10,
+    "./islands/Drawers.tsx": $$1,
+    "./islands/Header/Buttons.tsx": $$2,
+    "./islands/Header/Drawers.tsx": $$3,
+    "./islands/Header/Searchbar.tsx": $$4,
+    "./islands/Newsletter.tsx": $$5,
+    "./islands/OutOfStock.tsx": $$6,
+    "./islands/ProductImageZoom.tsx": $$7,
+    "./islands/SearchControls.tsx": $$8,
+    "./islands/ShippingSimulation.tsx": $$9,
+    "./islands/SliderJS.tsx": $$10,
+    "./islands/Sort.tsx": $$11,
+    "./islands/WishlistButton.tsx": $$12,
   },
   baseUrl: import.meta.url,
 };

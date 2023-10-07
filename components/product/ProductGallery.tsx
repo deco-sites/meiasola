@@ -1,8 +1,6 @@
 import { Product } from "apps/commerce/types.ts";
 
-import ProductCard, {
-  Layout as cardLayout,
-} from "$store/components/product/ProductCard.tsx";
+import ProductCard from "$store/components/product/ProductCard.tsx";
 
 export interface Columns {
   mobile?: number;
@@ -11,18 +9,15 @@ export interface Columns {
 
 export interface Props {
   products: Product[] | null;
-  layout?: cardLayout;
 }
 
-function ProductGallery({ products, layout }: Props) {
+function ProductGallery({ products }: Props) {
   return (
-    <div class="grid grid-cols-2 gap-2 items-center sm:grid-cols-4 sm:gap-10">
+    <div class="h-fit grid grid-cols-12 gap-x-4 gap-y-6 laptop:gap-x-0.5 laptop:gap-y-10">
       {products?.map((product, index) => (
-        <ProductCard
-          product={product}
-          preload={index === 0}
-          layout={layout}
-        />
+        <div class="flex col-span-6 tablet:col-span-4 laptop:col-span-3">
+          <ProductCard product={product} preload={index < 4} />
+        </div>
       ))}
     </div>
   );

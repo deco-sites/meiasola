@@ -1,29 +1,42 @@
-import { SendEventOnLoad } from "$store/components/Analytics.tsx";
-import { Layout as cardLayout } from "$store/components/product/ProductCard.tsx";
-import Filters from "$store/components/search/Filters.tsx";
-import Icon from "$store/components/ui/Icon.tsx";
-import SearchControls from "$store/islands/SearchControls.tsx";
-import { useOffer } from "$store/sdk/useOffer.ts";
-import type { ProductListingPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
-import ProductGallery, { Columns } from "../product/ProductGallery.tsx";
+import { ProductListingPage } from "apps/commerce/types.ts";
+import { Picture, Source } from "apps/website/components/Picture.tsx";
+import type { ImageWidget } from "apps/admin/widgets.ts";
 
-export interface Layout {
-  /**
-   * @description Use drawer for mobile like behavior on desktop. Aside for rendering the filters alongside the products
-   */
-  variant?: "aside" | "drawer";
-  /**
-   * @description Number of products per line on grid
-   */
-  columns: Columns;
-}
+import { SendEventOnLoad } from "$store/components/Analytics.tsx";
+import Breadcrumb from "$store/components/ui/Breadcrumb.tsx";
+import { useOffer } from "$store/sdk/useOffer.ts";
+import ProductGallery from "$store/components/product/ProductGallery.tsx";
+import Filters from "$store/components/search/Filters.tsx";
+
+import {
+  IslandButtonFilters,
+  IslandFiltersDrawer,
+} from "$store/islands/Drawers.tsx";
+import IslandSort from "$store/islands/Sort.tsx";
+import { IS_BROWSER } from "$fresh/runtime.ts";
 
 export interface Props {
   /** @title Integration */
   page: ProductListingPage | null;
-  layout?: Layout;
-  cardLayout?: cardLayout;
+  images?: Image[];
+}
+
+interface Image {
+  /**
+   * @title Image
+   */
+  src: ImageWidget;
+
+  /**
+   * @description A RegExp for indentify routes that will use this imagem. Ex: /bolsas/*
+   */
+  route: string;
+
+  /**
+   * @description Descriptive text for people with visual impairments
+   */
+  alt?: string;
 }
 
 function NotFound() {
@@ -36,56 +49,53 @@ function NotFound() {
 
 function Result({
   page,
-  layout,
-  cardLayout,
+  images = [],
 }: Omit<Props, "page"> & { page: ProductListingPage }) {
-  const { products, filters, breadcrumb, pageInfo, sortOptions } = page;
+  const { products, filters, breadcrumb, sortOptions, seo, pageInfo } = page;
+
+  console.log(seo);
+
+  let search = "";
+
+  pageInfo?.nextPage?.split("&").forEach((term) => {
+    const [key, value] = term.split("=");
+    if (key === "q") {
+      search = decodeURIComponent(value);
+    }
+  });
+
+  const url = new URL(seo?.canonical ?? "");
+  if (url.searchParams.get("q")) search = url.searchParams.get("q");
 
   return (
     <>
-      <div class="container px-4 sm:py-10">
-        <SearchControls
-          sortOptions={sortOptions}
-          filters={filters}
-          breadcrumb={breadcrumb}
-          displayFilter={layout?.variant === "drawer"}
-        />
+      {!search && <Image images={images} breadcrumb={breadcrumb} />}
+      <Heading
+        seo={seo}
+        productsCount={pageInfo.records ?? 0}
+        sortOptions={sortOptions}
+        searchTerm={search}
+      />
+      <IslandFiltersDrawer filters={filters} />
 
-        <div class="flex flex-row">
-          {layout?.variant === "aside" && filters.length > 0 && (
-            <aside class="hidden sm:block w-min min-w-[250px]">
-              <Filters filters={filters} />
-            </aside>
-          )}
-          <div class="flex-grow">
-            <ProductGallery products={products} layout={cardLayout} />
+      <div class="container py-6 laptop:py-10 grid grid-cols-4 gap-4 laptop:grid-cols-12 laptop:gap-5">
+        <aside class="flex flex-col gap-6 col-span-3">
+          <span
+            class={`text-black uppercase text-small font-bold ${
+              search && "laptop:hidden"
+            }`}
+          >
+            {pageInfo.records} itens
+          </span>
+          <div class="hidden laptop:block">
+            <Filters filters={filters} />
           </div>
-        </div>
-
-        <div class="flex justify-center my-4">
-          <div class="join">
-            <a
-              aria-label="previous page link"
-              rel="prev"
-              href={pageInfo.previousPage ?? "#"}
-              class="btn btn-ghost join-item"
-            >
-              <Icon id="ChevronLeft" size={24} strokeWidth={2} />
-            </a>
-            <span class="btn btn-ghost join-item">
-              Page {pageInfo.currentPage + 1}
-            </span>
-            <a
-              aria-label="next page link"
-              rel="next"
-              href={pageInfo.nextPage ?? "#"}
-              class="btn btn-ghost join-item"
-            >
-              <Icon id="ChevronRight" size={24} strokeWidth={2} />
-            </a>
-          </div>
+        </aside>
+        <div class="flex col-span-4 laptop:col-span-9">
+          <ProductGallery products={products} />
         </div>
       </div>
+
       <SendEventOnLoad
         event={{
           name: "view_item_list",
@@ -95,7 +105,7 @@ function Result({
             item_list_id: "",
             items: page.products?.map((product) =>
               mapProductToAnalyticsItem({
-                ...(useOffer(product.offers)),
+                ...useOffer(product.offers),
                 product,
                 breadcrumbList: page.breadcrumb,
               })
@@ -108,11 +118,106 @@ function Result({
 }
 
 function SearchResult({ page, ...props }: Props) {
-  if (!page) {
-    return <NotFound />;
-  }
-
+  if (!page) return <NotFound />;
   return <Result {...props} page={page} />;
 }
 
 export default SearchResult;
+
+function Heading({
+  seo,
+  sortOptions,
+  productsCount,
+  searchTerm,
+}: {
+  searchTerm?: string;
+  productsCount: number;
+  seo: ProductListingPage["seo"];
+  sortOptions: ProductListingPage["sortOptions"];
+}) {
+  return (
+    <div
+      class={`laptop:border-b laptop:border-grey-1 laptop:pb-10 pt-6 tablet:pt-10 text-black`}
+    >
+      <div class="container flex flex-col gap-6 laptop:flex-row laptop:justify-between laptop:items-end">
+        {searchTerm ? (
+          <div class="flex flex-col gap-8">
+            <h1 class="text-subtile font-normal leading-none">
+              Você buscou por: <span class="font-bold">{searchTerm}</span>
+            </h1>
+            <span class="uppercase text-small font-bold hidden laptop:block">
+              {productsCount} itens
+            </span>
+          </div>
+        ) : (
+          <div class="flex flex-col gap-6 laptop:flex-row laptop:w-3/4 laptop:gap-5 laptop:items-center">
+            <h1 class="shrink-0 text-h3 leading-none uppercase font-medium tracking-wide">
+              {seo?.title}
+            </h1>
+            <p class="laptop:leading-none laptop:line-clamp-2 text-small">
+              {seo?.description}
+            </p>
+          </div>
+        )}
+
+        <div class="flex gap-4 laptop:w-1/4 laptop:justify-end">
+          <IslandButtonFilters className="laptop:hidden" />
+          <IslandSort sortOptions={sortOptions} />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Image({
+  images = [],
+  breadcrumb,
+}: {
+  images: Props["images"];
+  breadcrumb: ProductListingPage["breadcrumb"];
+}) {
+  let image = null;
+
+  if (breadcrumb?.itemListElement.length > 0) {
+    const last =
+      breadcrumb.itemListElement[breadcrumb.itemListElement.length - 1];
+    const url = new URL(last.item);
+    const pathname = url.pathname;
+    image = images.findLast((image) =>
+      new RegExp(image.route).test(image.route)
+    );
+  }
+
+  if (image) {
+    return (
+      <div class="w-full h-[260px] relative py-10">
+        <div class="container relative z-10">
+          <Breadcrumb itemListElement={breadcrumb?.itemListElement} />
+        </div>
+        <Picture>
+          <Source
+            media="(max-width: 767px)"
+            src={image.src}
+            width={390}
+            height={260}
+          />
+          <Source
+            media="(min-width: 768px)"
+            src={image.src}
+            width={1440}
+            height={260}
+          />
+          <img
+            class="h-full w-full object-cover absolute top-0 left-0 z-0"
+            sizes="100vw"
+            src={image.src}
+            alt={image.alt ?? "Imagem da Categoria"}
+            decoding="async"
+            loading="lazy"
+          />
+        </Picture>
+      </div>
+    );
+  }
+  return null;
+}
