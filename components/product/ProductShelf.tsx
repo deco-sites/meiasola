@@ -16,12 +16,7 @@ export interface Props {
   products: Product[] | null;
 }
 
-function ProductShelf({
-  title,
-  description,
-  seeMoreUrl,
-  products,
-}: Props) {
+function ProductShelf({ title, description, seeMoreUrl, products }: Props) {
   const id = useId();
 
   if (!products || products?.length === 0) return null;
@@ -38,7 +33,7 @@ function ProductShelf({
         {seeMoreUrl && (
           <a
             alt="Ver mais produtos"
-            class="text-small underline"
+            class="text-small underline hidden laptop:block"
             href={seeMoreUrl}
           >
             ver mais
@@ -46,19 +41,14 @@ function ProductShelf({
         )}
       </div>
 
-      <div
-        id={id}
-      >
+      <div id={id}>
         <Slider class="carousel carousel-start flex gap-4">
           {products?.map((product, index) => (
             <Slider.Item
               index={index}
               class="carousel-item w-[310px] desktop:w-[calc((100vw-70px-70px)/4-16px)] monitor:w-[310px]"
             >
-              <ProductCard
-                product={product}
-                itemListName={title}
-              />
+              <ProductCard product={product} itemListName={title} />
             </Slider.Item>
           ))}
         </Slider>
@@ -76,7 +66,7 @@ function ProductShelf({
               items: products.map((product) =>
                 mapProductToAnalyticsItem({
                   product,
-                  ...(useOffer(product.offers)),
+                  ...useOffer(product.offers),
                 })
               ),
             },

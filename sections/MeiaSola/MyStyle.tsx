@@ -1,5 +1,7 @@
 import { BlogPosting } from "https://raw.githubusercontent.com/deco-sites/blog/main/blog/types.ts";
+
 import Image from "apps/website/components/Image.tsx";
+import { Head } from "$fresh/runtime.ts";
 
 export interface Props {
   title: string;
@@ -12,14 +14,16 @@ function MyStyle({ title, posts }: Props) {
   return (
     <>
       <Head>
-        <style>
+        <style type="text/css">
           {`        
-            .post.content > p {
-              width: 100%;
-              overflow: hidden;
+            .post-content > p {
+              white-space: break-spaces;
               display: -webkit-box;
               -webkit-box-orient: vertical;
-              -webkit-line-clamp: 2;
+              -webkit-line-clamp: 3;
+            }
+            .post-content .link-more {
+              display: none;
             }
         `}
         </style>
@@ -47,12 +51,13 @@ function MyStyle({ title, posts }: Props) {
                     />
                   )}
                 </div>
-                <h5 class="font-bold text-body">{post.headline}</h5>
-                <div
-                  class="truncate text-small line-clamp-3 w-full overflow-clip post-content"
-                  dangerouslySetInnerHTML={{ __html: post.description ?? "" }}
-                />
-                <div class="flex items-end flex-1">
+
+                <div class="flex flex-col justify-end items-start gap-3 flex-1">
+                  <h5 class="font-bold text-body">{post.headline}</h5>
+                  <div
+                    class="truncate text-small line-clamp-3 w-full overflow-clip post-content"
+                    dangerouslySetInnerHTML={{ __html: post.description ?? "" }}
+                  />
                   <a class="underline font-bold text-small" href={post.url}>
                     LEIA MAIS
                   </a>
