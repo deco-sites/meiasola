@@ -20,6 +20,21 @@ export interface Props {
   /** @title Integration */
   page: ProductListingPage | null;
   images?: Image[];
+  sizes?: {
+    title: string;
+    sizes: Size[];
+    routesToShow: {
+      /**
+       * @title Route
+       */
+      label: string;
+    }[];
+  };
+}
+
+interface Size {
+  size: number;
+  link: string;
 }
 
 interface Image {
@@ -29,7 +44,7 @@ interface Image {
   src: ImageWidget;
 
   /**
-   * @description A RegExp for indentify routes that will use this imagem. Ex: /bolsas/*
+   * @description A RegExp for indentify routes that will use this imagem. Ex: /bolsas
    */
   route: string;
 
@@ -50,10 +65,9 @@ function NotFound() {
 function Result({
   page,
   images = [],
+  sizes,
 }: Omit<Props, "page"> & { page: ProductListingPage }) {
   const { products, filters, breadcrumb, sortOptions, seo, pageInfo } = page;
-
-  console.log(seo);
 
   let search = "";
 
@@ -64,12 +78,22 @@ function Result({
     }
   });
 
-  const url = new URL(seo?.canonical ?? "");
-  if (url.searchParams.get("q")) search = url.searchParams.get("q");
+  const q = new URL(seo?.canonical ?? "").searchParams.get("q");
+  if (q) search = q;
+
+  let url = null;
+  if (breadcrumb?.itemListElement.length > 0) {
+    const last =
+      breadcrumb.itemListElement[breadcrumb.itemListElement.length - 1];
+    const url = new URL(last.item);
+  }
 
   return (
     <>
-      {!search && <Image images={images} breadcrumb={breadcrumb} />}
+      {!search && url && (
+        <Image images={images} breadcrumb={breadcrumb} url={url} />
+      )}
+      {!search && sizes && url && <Sizes sizes={sizes} url={url} />}
       <Heading
         seo={seo}
         productsCount={pageInfo.records ?? 0}
@@ -169,24 +193,51 @@ function Heading({
   );
 }
 
+function Sizes({ sizes, url }: { sizes: Props["sizes"]; url: URL }) {
+  const pathname = url.pathname;
+
+  if (!sizes.routesToShow.findLast((route) => pathname.includes(route.label)))
+    return null;
+
+  return (
+    <div class="bg-black text-white text-large py-6 laptop:py-5">
+      <div class="container flex flex-col items-center gap-8 laptop:flex-row laptop:justify-between">
+        <h4 class="text-large tracking-wide text-center laptop:text-left">
+          {title}
+        </h4>
+        <ul class="flex flex-wrap justify-center gap-8 laptop:gap-6 desktop:gap-8">
+          {sizes?.map((size, index) => {
+            return (
+              <li key={"size-" + index}>
+                <a
+                  href={size.link}
+                  aria-label={`Numeração ${size.label}`}
+                  class="border border-white p-2.5 block hover:bg-white hover:text-black transition-all duration-300 ease-out"
+                >
+                  {size.label}
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    </div>
+  );
+}
+
 function Image({
   images = [],
   breadcrumb,
+  url,
 }: {
   images: Props["images"];
   breadcrumb: ProductListingPage["breadcrumb"];
+  url: URL;
 }) {
   let image = null;
 
-  if (breadcrumb?.itemListElement.length > 0) {
-    const last =
-      breadcrumb.itemListElement[breadcrumb.itemListElement.length - 1];
-    const url = new URL(last.item);
-    const pathname = url.pathname;
-    image = images.findLast((image) =>
-      new RegExp(image.route).test(image.route)
-    );
-  }
+  const pathname = url.pathname;
+  image = images.findLast((image) => pathname.includes(image.route));
 
   if (image) {
     return (
