@@ -39,6 +39,7 @@ interface Size {
    * @title Size
    */
   label: string;
+  link: string;
 }
 
 interface Image {
@@ -82,7 +83,9 @@ function Result({
     }
   });
 
-  const q = new URL(seo?.canonical ?? "").searchParams.get("q");
+  const q = seo?.canonical
+    ? new URL(seo.canonical ?? "").searchParams.get("q")
+    : null;
   if (q) search = q;
 
   let url = null;
@@ -215,9 +218,7 @@ function Sizes({
             return (
               <li key={"size-" + index}>
                 <a
-                  href={`/${pathname.split("/")[0].toString()}/${
-                    size.label
-                  }?map=c%2CspecificationFilter_57`}
+                  href={size.link}
                   aria-label={`Numeração ${size.label}`}
                   class="border border-white p-2.5 block hover:bg-white hover:text-black transition-all duration-300 ease-out"
                 >
@@ -281,7 +282,7 @@ function Image({
 }
 
 function SearchResult({ page, ...props }: Props) {
-  if (!page) return <NotFound />;
+  if (page.pageInfo.records === 0 || !page) return <NotFound />;
   return <Result {...props} page={page} />;
 }
 
