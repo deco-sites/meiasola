@@ -23,18 +23,22 @@ export interface Props {
   sizes?: {
     title: string;
     sizes: Size[];
-    routesToShow: {
-      /**
-       * @title Route
-       */
-      label: string;
-    }[];
+    routesToShow: Route[];
   };
 }
 
+interface Route {
+  /**
+   * @title Route
+   */
+  label: string;
+}
+
 interface Size {
-  size: number;
-  link: string;
+  /**
+   * @title Size
+   */
+  label: string;
 }
 
 interface Image {
@@ -85,7 +89,7 @@ function Result({
   if (breadcrumb?.itemListElement.length > 0) {
     const last =
       breadcrumb.itemListElement[breadcrumb.itemListElement.length - 1];
-    const url = new URL(last.item);
+    url = new URL(last.item);
   }
 
   return (
@@ -93,7 +97,7 @@ function Result({
       {!search && url && (
         <Image images={images} breadcrumb={breadcrumb} url={url} />
       )}
-      {!search && sizes && url && <Sizes sizes={sizes} url={url} />}
+      {!search && url && <Sizes sizes={sizes} pathname={url.pathname} />}
       <Heading
         seo={seo}
         productsCount={pageInfo.records ?? 0}
@@ -141,13 +145,6 @@ function Result({
   );
 }
 
-function SearchResult({ page, ...props }: Props) {
-  if (!page) return <NotFound />;
-  return <Result {...props} page={page} />;
-}
-
-export default SearchResult;
-
 function Heading({
   seo,
   sortOptions,
@@ -193,10 +190,18 @@ function Heading({
   );
 }
 
-function Sizes({ sizes, url }: { sizes: Props["sizes"]; url: URL }) {
-  const pathname = url.pathname;
+function Sizes({
+  sizes: props,
+  pathname,
+}: {
+  sizes: Props["sizes"];
+  pathname: string;
+}) {
+  if (!props) return null;
 
-  if (!sizes.routesToShow.findLast((route) => pathname.includes(route.label)))
+  const { routesToShow, title, sizes } = props;
+
+  if (!routesToShow.findLast((route) => pathname.includes(route.label)))
     return null;
 
   return (
@@ -210,7 +215,9 @@ function Sizes({ sizes, url }: { sizes: Props["sizes"]; url: URL }) {
             return (
               <li key={"size-" + index}>
                 <a
-                  href={size.link}
+                  href={`/${pathname.split("/")[0].toString()}/${
+                    size.label
+                  }?map=c%2CspecificationFilter_57`}
                   aria-label={`Numeração ${size.label}`}
                   class="border border-white p-2.5 block hover:bg-white hover:text-black transition-all duration-300 ease-out"
                 >
@@ -272,3 +279,10 @@ function Image({
   }
   return null;
 }
+
+function SearchResult({ page, ...props }: Props) {
+  if (!page) return <NotFound />;
+  return <Result {...props} page={page} />;
+}
+
+export default SearchResult;
