@@ -53,7 +53,8 @@ export type AvailableIcons =
   | "Menu"
   | "Menu"
   | "XMark"
-  | "Filter";
+  | "Filter"
+  | "Email";
 
 export interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   /**
@@ -65,9 +66,14 @@ export interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   size?: number;
 }
 
-function Icon(
-  { id, strokeWidth = 1.5, size, width, height, ...otherProps }: Props,
-) {
+function Icon({
+  id,
+  strokeWidth = 1.5,
+  size,
+  width,
+  height,
+  ...otherProps
+}: Props) {
   return (
     <svg
       {...otherProps}

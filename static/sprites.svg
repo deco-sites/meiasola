@@ -4,21 +4,24 @@
 	</symbol>
 
 	<symbol id="ChevronUp" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-		<path d="M17 14L11.9992 9.42L7 14" stroke="#0A090B" stroke-linecap="round" stroke-linejoin="round"/>
+		<path d="M17 14L11.9992 9.42L7 14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
 	</symbol>
 
 	<symbol id="ChevronLeft" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-		<path d="M14 7L9.42 12.0008L14 17" stroke="#0A090B" stroke-linecap="round" stroke-linejoin="round"/>
+		<path d="M14 7L9.42 12.0008L14 17" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
 	</symbol>
 
 	<symbol id="ChevronRight" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-		<path d="M10 17L14.58 11.9992L10 7" stroke="#0A090B" stroke-linecap="round" stroke-linejoin="round"/>
+		<path d="M10 17L14.58 11.9992L10 7" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
 	</symbol>
 
 	<symbol id="Filter" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 		<path d="M2.8999 4.7999L12.4999 4.7999M2.8999 11.9999H12.4999M12.4999 11.9999V14.3999M12.4999 11.9999V9.5999M2.8999 19.1999H7.6999M12.4999 19.1999L22.0999 19.1999M17.2999 11.9999H22.0999M17.2999 4.7999L22.0999 4.7999M17.2999 4.7999V7.1999M17.2999 4.7999V2.3999M8.2999 21.5999V16.7999" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
 	</symbol>
 
+	<symbol id="Email" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path d="M3.23438 3.93749L7.12646 6.7318C7.35119 6.89315 7.64881 6.89315 7.87354 6.7318L11.7656 3.93749M3.5625 11.0833H11.4375C12.1624 11.0833 12.75 10.4739 12.75 9.72221V4.27777C12.75 3.52605 12.1624 2.91666 11.4375 2.91666H3.5625C2.83763 2.91666 2.25 3.52605 2.25 4.27777V9.72221C2.25 10.4739 2.83763 11.0833 3.5625 11.0833Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+	</symbol>
 	
 	<!--
 	<symbol id="ChevronUp" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.7929 8.29289C12.1834 7.90237 12.8166 7.90237 13.2071 8.29289L19.2071 14.2929C19.5976 14.6834 19.5976 15.3166 19.2071 15.7071C18.8166 16.0976 18.1834 16.0976 17.7929 15.7071L12.5 10.4142L7.20711 15.7071C6.81658 16.0976 6.18342 16.0976 5.79289 15.7071C5.40237 15.3166 5.40237 14.6834 5.79289 14.2929L11.7929 8.29289Z"/></symbol>

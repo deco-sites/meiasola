@@ -14,7 +14,6 @@ import {
   IslandFiltersDrawer,
 } from "$store/islands/Drawers.tsx";
 import IslandSort from "$store/islands/Sort.tsx";
-import { IS_BROWSER } from "$fresh/runtime.ts";
 
 export interface Props {
   /** @title Integration */
@@ -25,46 +24,6 @@ export interface Props {
     sizes: Size[];
     routesToShow: Route[];
   };
-}
-
-interface Route {
-  /**
-   * @title Route
-   */
-  label: string;
-}
-
-interface Size {
-  /**
-   * @title Size
-   */
-  label: string;
-  link: string;
-}
-
-interface Image {
-  /**
-   * @title Image
-   */
-  src: ImageWidget;
-
-  /**
-   * @description A RegExp for indentify routes that will use this imagem. Ex: /bolsas
-   */
-  route: string;
-
-  /**
-   * @description Descriptive text for people with visual impairments
-   */
-  alt?: string;
-}
-
-function NotFound() {
-  return (
-    <div class="w-full flex justify-center items-center py-10">
-      <span>Not Found!</span>
-    </div>
-  );
 }
 
 function Result({
@@ -97,16 +56,26 @@ function Result({
 
   return (
     <>
-      {!search && url && (
+      {!search && url && images && (
         <Image images={images} breadcrumb={breadcrumb} url={url} />
       )}
-      {!search && url && <Sizes sizes={sizes} pathname={url.pathname} />}
+
+      {!search && url && sizes && (
+        <Sizes
+          title={sizes.title}
+          routes={sizes.routesToShow}
+          sizes={sizes.sizes}
+          pathname={url.pathname}
+        />
+      )}
+
       <Heading
         seo={seo}
         productsCount={pageInfo.records ?? 0}
         sortOptions={sortOptions}
         searchTerm={search}
       />
+
       <IslandFiltersDrawer filters={filters} />
 
       <div class="container py-6 laptop:py-10 grid grid-cols-4 gap-4 laptop:grid-cols-12 laptop:gap-5">
@@ -193,19 +162,33 @@ function Heading({
   );
 }
 
+interface Route {
+  /**
+   * @title Route
+   */
+  label: string;
+}
+
+interface Size {
+  /**
+   * @title Size
+   */
+  label: string;
+  link: string;
+}
+
 function Sizes({
-  sizes: props,
+  title,
+  routes,
+  sizes,
   pathname,
 }: {
-  sizes: Props["sizes"];
+  title: string;
+  routes: Route[];
+  sizes: Size[];
   pathname: string;
 }) {
-  if (!props) return null;
-
-  const { routesToShow, title, sizes } = props;
-
-  if (!routesToShow.findLast((route) => pathname.includes(route.label)))
-    return null;
+  if (!routes.findLast((route) => pathname.includes(route.label))) return null;
 
   return (
     <div class="bg-black text-white text-large py-6 laptop:py-5">
@@ -214,11 +197,11 @@ function Sizes({
           {title}
         </h4>
         <ul class="flex flex-wrap justify-center gap-8 laptop:gap-6 desktop:gap-8">
-          {sizes?.map((size, index) => {
+          {sizes.map((size, index) => {
             return (
               <li key={"size-" + index}>
                 <a
-                  href={size.link}
+                  href={pathname + size.link}
                   aria-label={`Numeração ${size.label}`}
                   class="border border-white p-2.5 block hover:bg-white hover:text-black transition-all duration-300 ease-out"
                 >
@@ -233,12 +216,29 @@ function Sizes({
   );
 }
 
+interface Image {
+  /**
+   * @title Image
+   */
+  src: ImageWidget;
+
+  /**
+   * @description A RegExp for indentify routes that will use this imagem. Ex: /bolsas
+   */
+  route: string;
+
+  /**
+   * @description Descriptive text for people with visual impairments
+   */
+  alt?: string;
+}
+
 function Image({
   images = [],
   breadcrumb,
   url,
 }: {
-  images: Props["images"];
+  images: Image[];
   breadcrumb: ProductListingPage["breadcrumb"];
   url: URL;
 }) {
@@ -282,8 +282,16 @@ function Image({
 }
 
 function SearchResult({ page, ...props }: Props) {
-  if (page.pageInfo.records === 0 || !page) return <NotFound />;
+  if (!page || page.pageInfo.records === 0) return <NotFound />;
   return <Result {...props} page={page} />;
 }
 
 export default SearchResult;
+
+function NotFound() {
+  return (
+    <div class="w-full flex justify-center items-center py-10">
+      <span>Not Found!</span>
+    </div>
+  );
+}
