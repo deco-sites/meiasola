@@ -38,130 +38,132 @@ function NotFound() {
   );
 }
 
-// function ProductInfo({ page }: { page: ProductDetailsPage }) {
-//   const { breadcrumbList, product, seo } = page;
-//   const {
-//     description,
-//     productID,
-//     offers,
-//     name = "",
-//     gtin,
-//     isVariantOf,
-//     additionalProperty = [],
-//   } = product;
-//   const {
-//     price = 0,
-//     listPrice,
-//     seller = "1",
-//     installments,
-//     availability,
-//   } = useOffer(offers);
-//   const productGroupID = isVariantOf?.productGroupID ?? "";
-//   const discount = price && listPrice ? listPrice - price : 0;
+function ProductInfo({ page }: { page: ProductDetailsPage }) {
+  const { breadcrumbList, product, seo } = page;
+  const {
+    description,
+    productID,
+    offers,
+    name = "",
+    gtin,
+    isVariantOf,
+    additionalProperty = [],
+  } = product;
+  const {
+    price = 0,
+    listPrice,
+    seller = "1",
+    installments,
+    availability,
+  } = useOffer(offers);
+  const productGroupID = isVariantOf?.productGroupID ?? "";
+  const discount = price && listPrice ? listPrice - price : 0;
 
-//   // return (
-//   //   <>
-//   //     {/* Breadcrumb */}
-//   //     <Breadcrumb
-//   //       itemListElement={breadcrumbList?.itemListElement.slice(0, -1)}
-//   //     />
-//   //     {/* Code and name */}
-//   //     <div class="mt-4 sm:mt-8">
-//   //       <div>
-//   //         {gtin && <span class="text-sm text-base-300">Cod. {gtin}</span>}
-//   //       </div>
-//   //       <h1>
-//   //         <span class="font-medium text-xl capitalize">
-//   //           {layout?.name === "concat"
-//   //             ? `${isVariantOf?.name} ${name}`
-//   //             : layout?.name === "productGroup"
-//   //             ? isVariantOf?.name
-//   //             : name}
-//   //         </span>
-//   //       </h1>
-//   //     </div>
-//   //     {/* Prices */}
-//   //     <div class="mt-4">
-//   //       <div class="flex flex-row gap-2 items-center">
-//   //         {(listPrice ?? 0) > price && (
-//   //           <span class="line-through text-base-300 text-xs">
-//   //             {formatPrice(listPrice, offers!.priceCurrency!)}
-//   //           </span>
-//   //         )}
-//   //         <span class="font-medium text-xl text-secondary">
-//   //           {formatPrice(price, offers!.priceCurrency!)}
-//   //         </span>
-//   //       </div>
-//   //       <span class="text-sm text-base-300">{installments}</span>
-//   //     </div>
-//   //     {/* Sku Selector */}
-//   //     <div class="mt-4 sm:mt-6">
-//   //       <ProductSelector product={product} />
-//   //     </div>
-//   //     {/* Add to Cart and Favorites button */}
-//   //     <div class="mt-4 sm:mt-10 flex flex-col gap-2">
-//   //       {availability === "https://schema.org/InStock" ? (
-//   //         <>
-//   //           <AddToCartButtonVTEX
-//   //             name={name}
-//   //             productID={productID}
-//   //             productGroupID={productGroupID}
-//   //             price={price}
-//   //             discount={discount}
-//   //             seller={seller}
-//   //           />
-//   //           <WishlistButton
-//   //             variant="full"
-//   //             productID={productID}
-//   //             productGroupID={productGroupID}
-//   //           />
-//   //         </>
-//   //       ) : (
-//   //         <OutOfStock productID={productID} />
-//   //       )}
-//   //     </div>
-//   //     {/* Shipping Simulation */}
-//   //     <div class="mt-8">
-//   //       <ShippingSimulation
-//   //         items={[
-//   //           {
-//   //             id: Number(product.sku),
-//   //             quantity: 1,
-//   //             seller: seller,
-//   //           },
-//   //         ]}
-//   //       />
-//   //     </div>
-//   //     {/* Description card */}
-//   //     <div class="mt-4 sm:mt-6">
-//   //       <span class="text-sm">
-//   //         {description && (
-//   //           <details>
-//   //             <summary class="cursor-pointer">Descrição</summary>
-//   //             <div class="ml-2 mt-2">{description}</div>
-//   //           </details>
-//   //         )}
-//   //       </span>
-//   //     </div>
-//   //     {/* Analytics Event */}
-//   //     <SendEventOnLoad
-//   //       event={{
-//   //         name: "view_item",
-//   //         params: {
-//   //           items: [
-//   //             mapProductToAnalyticsItem({
-//   //               product,
-//   //               breadcrumbList,
-//   //               price,
-//   //               listPrice,
-//   //             }),
-//   //           ],
-//   //         },
-//   //       }}
-//   //     />
-//   //   </>
-//   // );
-// }
+  return (
+    <>
+      {/* Breadcrumb */}
+      {/* <Breadcrumb
+        itemListElement={breadcrumbList?.itemListElement.slice(0, -1)}
+      /> */}
+      {/* Code and name */}
+      {/* <div class="mt-4 sm:mt-8">
+        <div>
+          {gtin && <span class="text-sm text-base-300">Cod. {gtin}</span>}
+        </div>
+        <h1>
+          <span class="font-medium text-xl capitalize">
+            {layout?.name === "concat"
+              ? `${isVariantOf?.name} ${name}`
+              : layout?.name === "productGroup"
+              ? isVariantOf?.name
+              : name}
+          </span>
+        </h1>
+      </div> */}
+      {/* Prices */}
+      {/* <div class="mt-4">
+        <div class="flex flex-row gap-2 items-center">
+          {(listPrice ?? 0) > price && (
+            <span class="line-through text-base-300 text-xs">
+              {formatPrice(listPrice, offers!.priceCurrency!)}
+            </span>
+          )}
+          <span class="font-medium text-xl text-secondary">
+            {formatPrice(price, offers!.priceCurrency!)}
+          </span>
+        </div>
+        <span class="text-sm text-base-300">{installments}</span>
+      </div> */}
+      {/* Sku Selector */}
+      {/* <div class="mt-4 sm:mt-6">
+        <ProductSelector product={product} />
+      </div> */}
+      {/* Add to Cart and Favorites button */}
+      <div 
+      // class="mt-4 sm:mt-10 flex flex-col gap-2"
+      >
+        {availability === "https://schema.org/InStock" ? (
+          <>
+              <AddToCartButtonVTEX
+                name={name}
+                productID={productID}
+                productGroupID={productGroupID}
+                price={price}
+                discount={discount}
+                seller={seller}
+              />
+            {/* <WishlistButton
+              variant="full"
+              productID={productID}
+              productGroupID={productGroupID}
+            /> */}
+          </>
+        ) : (
+          <OutOfStock productID={productID} />
+        )}
+      </div>
+      {/* Shipping Simulation */}
+      {/* <div class="mt-8">
+        <ShippingSimulation
+          items={[
+            {
+              id: Number(product.sku),
+              quantity: 1,
+              seller: seller,
+            },
+          ]}
+        />
+      </div> */}
+      {/* Description card */}
+      {/* <div class="mt-4 sm:mt-6">
+        <span class="text-sm">
+          {description && (
+            <details>
+              <summary class="cursor-pointer">Descrição</summary>
+              <div class="ml-2 mt-2">{description}</div>
+            </details>
+          )}
+        </span>
+      </div> */}
+      {/* Analytics Event */}
+      <SendEventOnLoad
+        event={{
+          name: "view_item",
+          params: {
+            items: [
+              mapProductToAnalyticsItem({
+                product,
+                breadcrumbList,
+                price,
+                listPrice,
+              }),
+            ],
+          },
+        }}
+      />
+    </>
+  );
+}
 
 function Details({ page }: { page: ProductDetailsPage }) {
   // const id = useId();
@@ -330,7 +332,10 @@ function ProductDetails({ page, layout }: Props) {
     return (
       <div class="container grid grid-cols-12 gap-4 desktop:gap-5">
         <Images images={product.image} />
+        <div>
         <Details page={page} />
+        <ProductInfo page={page} />
+        </div>
       </div>
     );
   }
