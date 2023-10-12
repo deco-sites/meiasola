@@ -8,15 +8,18 @@ export interface Props {
 
 function Coupon({ coupon, onAddCoupon }: Props) {
   const [loading, setLoading] = useState(false);
-  const [display, setDisplay] = useState(false);
+  // const [display, setDisplay] = useState(false);
 
   return (
-    <div class="flex justify-between items-center px-4">
-      <span class="text-sm">Cupom de desconto</span>
-      {display
-        ? (
+    <div 
+    // class="flex justify-between items-center px-4"
+    >
+      {/* <span class="text-sm">Cupom de desconto</span> */}
+      {
+         (
           <form
-            class="join"
+            // class="join"
+            class="flex justify-between items-center"
             onSubmit={async (e) => {
               e.preventDefault();
               const { currentTarget: { elements } } = e;
@@ -29,7 +32,6 @@ function Coupon({ coupon, onAddCoupon }: Props) {
               try {
                 setLoading(true);
                 await onAddCoupon(text);
-                setDisplay(false);
               } finally {
                 setLoading(false);
               }
@@ -37,29 +39,22 @@ function Coupon({ coupon, onAddCoupon }: Props) {
           >
             <input
               name="coupon"
-              class="input join-item"
+              class="input border-black p-2  w-[259px] h-[35px] text-small focus:outline-none"
               type="text"
               value={coupon ?? ""}
-              placeholder={"Cupom"}
+              placeholder={"Cupom de desconto"}
             />
             <Button
-              class="join-item"
+              class="bg-black text-white hover:bg-black hover:text-white p-[10px] w-[75px] h-[35px] text-small font-normal normal-case 	" 
               type="submit"
               htmlFor="coupon"
               loading={loading}
             >
-              Ok
+              Aplicar
             </Button>
           </form>
         )
-        : (
-          <Button
-            class="btn-ghost underline font-normal"
-            onClick={() => setDisplay(true)}
-          >
-            {coupon || "Adicionar"}
-          </Button>
-        )}
+}
     </div>
   );
 }

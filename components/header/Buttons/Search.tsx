@@ -8,7 +8,7 @@ export default function SearchButton() {
 
   return (
     <Button
-      class="relative"
+      class="relative hover:bg-transparent bg-transparent"
       aria-label="Abrir barra de pesquisa"
       onClick={() => {
         displaySearchBar.value = !displaySearchBar.value;
