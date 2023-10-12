@@ -19,7 +19,7 @@ function CartDrawer() {
       onClose={onClose}
       aside={
         <Aside
-          title="Minha sacola"
+          title="Carrinho"
           onClose={onClose}
         >
           <Cart />

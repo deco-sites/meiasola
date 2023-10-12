@@ -66,19 +66,19 @@ function CartItem(
     >
       <Image
         {...image}
-        style={{ aspectRatio: "108 / 150" }}
-        width={108}
-        height={150}
-        class="h-full object-contain"
+        style={{ aspectRatio: "73 / 76" }}
+        width={73}
+        height={76}
+        class="h-full object-contain object-top"
       />
 
-      <div class="flex flex-col gap-2">
-        <div class="flex justify-between items-center">
-          <span>{name}</span>
+      <div class="flex flex-col justify-between">
+        <div class="flex justify-between items-start">
+          <span class="text-small text-grey-2 w-2/3 line-clamp-2">{name}</span>
           <Button
             disabled={loading || isGift}
             loading={loading}
-            class="btn-ghost btn-square"
+            class="btn-ghost btn-square text-grey-2 hover:bg-transparent w-min"
             onClick={withLoading(async () => {
               const analyticsItem = itemToAnalyticsItem(index);
 
@@ -90,18 +90,10 @@ function CartItem(
               });
             })}
           >
-            <Icon id="Trash" size={24} />
+            <Icon id="Trash" size={16} />
           </Button>
         </div>
-        <div class="flex items-center gap-2">
-          <span class="line-through text-base-300 text-sm">
-            {formatPrice(list, currency, locale)}
-          </span>
-          <span class="text-sm text-secondary">
-            {isGift ? "Grátis" : formatPrice(sale, currency, locale)}
-          </span>
-        </div>
-
+        <div class="flex align-baseline items-end justify-between gap-2">
         <QuantitySelector
           disabled={loading || isGift}
           quantity={quantity}
@@ -121,6 +113,15 @@ function CartItem(
             }
           })}
         />
+          {/* <span class="line-through text-base-300 text-sm">
+            {formatPrice(list, currency, locale)}
+          </span> */}
+          <span class="text-body text-black font-extrabold">
+            {isGift ? "Grátis" : formatPrice(sale, currency, locale)}
+          </span>
+        </div>
+
+
       </div>
     </div>
   );

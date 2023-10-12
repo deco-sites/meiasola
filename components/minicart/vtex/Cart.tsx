@@ -10,9 +10,11 @@ function Cart() {
   const locale = cart.value?.clientPreferencesData.locale ?? "pt-BR";
   const currency = cart.value?.storePreferencesData.currencyCode ?? "BRL";
   const coupon = cart.value?.marketingData?.coupon ?? undefined;
+  const installments = cart.value?.paymentData?.installmentOptions[0]?.installments.length ?? 0;
 
   return (
     <BaseCart
+    installments={installments}
       items={items.map((item) => ({
         image: { src: item.imageUrl, alt: item.skuName },
         quantity: item.quantity,
