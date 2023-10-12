@@ -2,6 +2,7 @@ import Button from "$store/components/ui/Button.tsx";
 import { sendEvent } from "$store/sdk/analytics.tsx";
 import { useUI } from "$store/sdk/useUI.ts";
 import { useState } from "preact/hooks";
+import Icon from "deco-sites/meiasola/components/ui/Icon.tsx";
 
 export interface Props {
   /** @description: sku name */
@@ -60,8 +61,14 @@ export default function AddToCartButton(props: Props) {
   const btnProps = useAddToCart(props);
 
   return (
-    <Button {...btnProps} data-deco="add-to-cart" class="btn-primary">
-      Adicionar à Sacola
-    </Button>
+    <div>
+      <Button {...btnProps} data-deco="add-to-cart" class="flex flex-col text-small underline normal-case font-normal text-black">
+      <Icon
+        id={"Bag"}
+        width={15}
+        height={15} />
+        Adicionar à sacola
+      </Button>
+    </div>
   );
 }
