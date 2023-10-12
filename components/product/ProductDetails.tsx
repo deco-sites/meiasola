@@ -1,21 +1,16 @@
-import { SendEventOnLoad } from "$store/components/Analytics.tsx";
-import Breadcrumb from "$store/components/ui/Breadcrumb.tsx";
-import Button from "$store/components/ui/Button.tsx";
-import Icon from "$store/components/ui/Icon.tsx";
-import Slider from "$store/components/ui/Slider.tsx";
-import AddToCartButtonVTEX from "$store/islands/AddToCartButton/vtex.tsx";
-import OutOfStock from "$store/islands/OutOfStock.tsx";
-import ProductImageZoom from "$store/islands/ProductImageZoom.tsx";
-import ShippingSimulation from "$store/islands/ShippingSimulation.tsx";
-import SliderJS from "$store/islands/SliderJS.tsx";
-import WishlistButton from "$store/islands/WishlistButton.tsx";
-import { formatPrice } from "$store/sdk/format.ts";
-import { useId } from "$store/sdk/useId.ts";
-import { useOffer } from "$store/sdk/useOffer.ts";
 import type { ProductDetailsPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import Image from "apps/website/components/Image.tsx";
-import ProductSelector from "./ProductVariantSelector.tsx";
+
+import { SendEventOnLoad } from "$store/components/Analytics.tsx";
+import Breadcrumb from "$store/components/ui/Breadcrumb.tsx";
+import Button from "$store/components/ui/Button.tsx";
+import WishlistButton from "$store/islands/WishlistButton.tsx";
+
+import AddToCartButtonVTEX from "$store/islands/AddToCartButton/vtex.tsx";
+import OutOfStock from "$store/islands/OutOfStock.tsx";
+
+import { useOffer } from "$store/sdk/useOffer.ts";
 
 export interface Props {
   /** @title Integration */
@@ -99,19 +94,19 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
         <ProductSelector product={product} />
       </div> */}
       {/* Add to Cart and Favorites button */}
-      <div 
+      <div
       // class="mt-4 sm:mt-10 flex flex-col gap-2"
       >
         {availability === "https://schema.org/InStock" ? (
           <>
-              <AddToCartButtonVTEX
-                name={name}
-                productID={productID}
-                productGroupID={productGroupID}
-                price={price}
-                discount={discount}
-                seller={seller}
-              />
+            <AddToCartButtonVTEX
+              name={name}
+              productID={productID}
+              productGroupID={productGroupID}
+              price={price}
+              discount={discount}
+              seller={seller}
+            />
             {/* <WishlistButton
               variant="full"
               productID={productID}
@@ -295,11 +290,38 @@ function Details({ page }: { page: ProductDetailsPage }) {
   //   </div>
   // );
 
-  const { seo, breadcrumb } = page;
+  const { breadcrumbList, product } = page;
+
+  console.log(product);
+
+  const rating = product.aggregateRating ?? 0;
 
   return (
-    <div class="col-span-4 flex">
-      <Breadcrumb itemListElement={breadcrumb?.itemListElement} />
+    <div class="col-span-4 flex flex-col gap-8">
+      <div class="flex flex-col gap-4">
+        <Breadcrumb
+          itemListElement={breadcrumbList?.itemListElement.slice(0, 2)}
+        />
+
+        {/* BRAND */}
+        {product.brand?.name && (
+          <h4 class="text-large font-bold">{product.brand.name}</h4>
+        )}
+
+        {/* NAME AND WISHLIST */}
+        {product.name && (
+          <span class="flex w-full justify-between">
+            <h1 class="text-subtitle font-normal">{product.name}</h1>
+            <WishlistButton
+              variant="icon"
+              productGroupID={product.isVariantOf?.productGroupID}
+              productID={product.productID}
+            />
+          </span>
+        )}
+
+        <span class="flex gap-12">Avaliação</span>
+      </div>
     </div>
   );
 }
@@ -309,33 +331,39 @@ function Images({
 }: {
   images: ProductDetailsPage["product"]["image"];
 }) {
+  if (!images) return null;
+
   return (
     <div class="col-span-8 laptop:pr-5 grid grid-cols-2 grid-rows-2 gap-x-[2px] gap-y-[2px]">
       {/* repeat array to repeat when have just 1, 2 or 3 images */}
-      {[...images, ...images, ...images, ...images].slice(0, 4).map((image) => (
-        <div class="bg-grey-1 w-full p-6 h-[400px] flex-1">
-          <Image
-            src={image.url}
-            width={400}
-            height={400}
-            class="mix-blend-multiply h-full w-full object-cover flex-1"
-          />
-        </div>
-      ))}
+      {[...images, ...images, ...images, ...images].slice(0, 4).map((image) => {
+        if (!image.url) return null;
+
+        return (
+          <div class="bg-grey-1 w-full p-6 h-[400px] flex-1">
+            <Image
+              src={image.url}
+              width={400}
+              height={400}
+              fit="contain"
+              loading="eager"
+              fetchPriority="auto"
+              class="mix-blend-multiply h-full w-full object-cover flex-1"
+            />
+          </div>
+        );
+      })}
     </div>
   );
 }
 
-function ProductDetails({ page, layout }: Props) {
+function ProductDetails({ page }: Props) {
   if (page) {
     const { product } = page;
     return (
-      <div class="container grid grid-cols-12 gap-4 desktop:gap-5">
+      <div class="container grid grid-cols-12 gap-4 desktop:gap-5 laptop:py-11">
         <Images images={product.image} />
-        <div>
         <Details page={page} />
-        <ProductInfo page={page} />
-        </div>
       </div>
     );
   }

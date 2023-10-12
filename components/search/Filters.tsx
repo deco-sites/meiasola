@@ -7,6 +7,8 @@ import type {
 
 import Divider from "$store/components/ui/Divider.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
+import { parseRange } from "apps/commerce/utils/filters.ts";
+import { formatPrice } from "deco-sites/meiasola/sdk/format.ts";
 
 export interface Props {
   filters: ProductListingPage["filters"];
@@ -15,15 +17,13 @@ export interface Props {
 const isToggle = (filter: Filter): filter is FilterToggle =>
   filter["@type"] === "FilterToggle";
 
-function ValueItem(
-  { url, selected, label, quantity }: FilterToggleValue,
-) {
+function ValueItem({ url, selected, label, quantity }: FilterToggleValue) {
   return (
     <a
       href={url}
       class={`text-small ${
         selected
-          ? "text-black border rounded-full px-3 py-1 inline-flex items-center gap-2"
+          ? "text-black border rounded-full px-3 py-1 inline-flex items-center gap-2 w-fit"
           : "text-filter block"
       }`}
     >
@@ -36,29 +36,18 @@ function FilterValues({ key, values }: FilterToggle) {
   return (
     <ul class="flex flex-col gap-3">
       {values.map((item, index) => {
-        const { url, selected, value, quantity } = item;
+        if (key === "price") {
+          const range = parseRange(item.value);
 
-        // if (key === "cor" || key === "tamanho") {
-        //   return (
-        //     <a href={url}>
-        //       <Avatar
-        //         content={value}
-        //         variant={selected ? "active" : "default"}
-        //       />
-        //     </a>
-        //   );
-        // }
-
-        // if (key === "price") {
-        //   const range = parseRange(item.value);
-
-        //   return range && (
-        //     <ValueItem
-        //       {...item}
-        //       label={`${formatPrice(range.from)} - ${formatPrice(range.to)}`}
-        //     />
-        //   );
-        // }
+          return (
+            range && (
+              <ValueItem
+                {...item}
+                label={`${formatPrice(range.from)} a ${formatPrice(range.to)}`}
+              />
+            )
+          );
+        }
 
         return (
           <li key={`key-${key}-value-${index}`}>
@@ -70,34 +59,31 @@ function FilterValues({ key, values }: FilterToggle) {
   );
 }
 
-const portugueseMappings: { [key: string]: string } = {
-  "Categories": "Categoria",
-  "Tamanho": "Tamanho",
-  "Brands": "Marca",
-  "Cor": "Cores",
-  "Departments": "Departamentos"
-};
-
 function Filters({ filters }: Props) {
+  const sorted = [...filters].filter(isToggle).sort((a, _) => {
+    if (a.label === "Categoria") return 5;
+    if (a.label === "Subcategoria") return 4;
+    if (a.label === "Marca") return 3;
+    if (a.label === "Preço") return 2;
+    if (a.label === "Tamanho") return 1;
+    return 0;
+  });
+
   return (
     <ul class="flex flex-col gap-6 text-black">
-      {filters
-        .filter(isToggle)
-        .map((filter, index) => {
-          if (portugueseMappings[filter.label] && filter.quantity > 0) {
-            return (
-              <>
-                {index !== 0 && <Divider />}
-                <li class="flex flex-col gap-3">
-                  <span class="font-medium text-large">
-                    {portugueseMappings[filter.label]}
-                  </span>
-                  <FilterValues {...filter} />
-                </li>
-              </>
-            );
-          }
-        })}
+      {sorted.map((filter, index) => {
+        if (filter.quantity > 0 && filter.label !== "Departamento") {
+          return (
+            <>
+              {index !== 0 && <Divider />}
+              <li class="flex flex-col gap-3">
+                <span class="font-medium text-large">{filter.label}</span>
+                <FilterValues {...filter} />
+              </li>
+            </>
+          );
+        }
+      })}
     </ul>
   );
 }
