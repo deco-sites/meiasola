@@ -38,7 +38,7 @@ function ProductCard(
   const { listPrice, price } = useOffer(offers);
 
   const discountPercentage = listPrice && price
-    ? Math.ceil(listPrice * 100 / price - 100)
+    ? Math.ceil(100 - (price / listPrice * 100))
     : 0;
 
   return (
