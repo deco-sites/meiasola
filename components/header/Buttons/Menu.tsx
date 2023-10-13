@@ -13,12 +13,13 @@ export default function MenuButton({ className }: Props) {
   return (
     <Button
       className={className}
+      class="hover:bg-transparent bg-transparent"
       aria-label="Abrir menu"
       onClick={() => {
         displayMenu.value = true;
       }}
     >
-      <Icon id="Menu" class="h-6 w-6" />
+      <Icon id="Menu" class="h-6 w-6 " />
     </Button>
   );
 }

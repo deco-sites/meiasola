@@ -43,7 +43,7 @@ export function SearchbarInput(
         placeholder={placeholder}
         class="grow searchbar-input bg-transparent text-small group-[&.isLarge]:text-body text-current leading-none placeholder:text-small placeholder:group-[&.isLarge]:text-body placeholder:text-current focus:outline-none"
       />
-      <Button type="submit" aria-label="Pesquisar">
+      <Button type="submit" aria-label="Pesquisar" class="hover:bg-transparent bg-transparent">
         <Icon
           id="Search"
           class="h-4 w-4 group-[&.isLarge]:h-5 group-[&.isLarge]:w-5"

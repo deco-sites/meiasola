@@ -25,7 +25,7 @@ function CartButton({ loading, currency, total, items }: Props) {
 
   return (
     <Button
-      class="relative"
+      class="relative hover:bg-transparent bg-transparent"
       aria-label="Abrir o carrinho"
       data-deco={displayCart.value && "open-cart"}
       onClick={onClick}

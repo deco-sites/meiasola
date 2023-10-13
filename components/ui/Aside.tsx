@@ -14,8 +14,8 @@ export interface Props {
 
 function Aside({ title, onClose, children, chevronLeft }: Props) {
   return (
-    <div class="bg-white h-full w-[95vw] max-w-[300px] flex flex-col">
-      <div class="h-20 flex justify-between items-center px-6 shrink-0">
+    <div class="bg-white h-full w-[398px] flex flex-col">
+      <div class="h-16 flex justify-between items-center px-6 shrink-0 border-b border-base-200 ">
         {chevronLeft && onClose && (
           <Button
             class="btn btn-ghost"
