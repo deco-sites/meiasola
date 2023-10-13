@@ -45,7 +45,7 @@ function Coupon({ coupon, onAddCoupon }: Props) {
               placeholder={"Cupom de desconto"}
             />
             <Button
-              class="bg-black text-white hover:bg-black hover:text-white p-[10px] w-[75px] h-[35px] text-small font-normal normal-case 	" 
+              class="bg-black text-white hover:bg-black hover:text-white p-[11.5px] w-[75px] h-[35px] text-small font-normal normal-case 	" 
               type="submit"
               htmlFor="coupon"
               loading={loading}
