@@ -4,22 +4,23 @@ import Image from "apps/website/components/Image.tsx";
 
 import { SendEventOnLoad } from "$store/components/Analytics.tsx";
 import Breadcrumb from "$store/components/ui/Breadcrumb.tsx";
+import Icon from "$store/components/ui/Icon.tsx";
 import Button from "$store/components/ui/Button.tsx";
-import WishlistButton from "$store/islands/WishlistButton.tsx";
+import Divider from "$store/components/ui/Divider.tsx";
 
+import WishlistButton from "$store/islands/WishlistButton.tsx";
 import AddToCartButtonVTEX from "$store/islands/AddToCartButton/vtex.tsx";
 import OutOfStock from "$store/islands/OutOfStock.tsx";
 
 import { useOffer } from "$store/sdk/useOffer.ts";
+import { formatPrice } from "$store/sdk/format.ts";
+import { useVariantPossibilities } from "deco-sites/meiasola/sdk/useVariantPossiblities.ts";
 
 export interface Props {
   /** @title Integration */
   page: ProductDetailsPage | null;
 }
 
-/**
- * Rendered when a not found is returned by any of the loaders run on this page
- */
 function NotFound() {
   return (
     <div class="w-full flex justify-center items-center py-28">
@@ -160,7 +161,7 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
   );
 }
 
-function Details({ page }: { page: ProductDetailsPage }) {
+function Details(page: ProductDetailsPage) {
   // const id = useId();
   // const {
   //   page: {
@@ -290,38 +291,97 @@ function Details({ page }: { page: ProductDetailsPage }) {
   //   </div>
   // );
 
-  const { breadcrumbList, product } = page;
-
-  console.log(product);
-
-  const rating = product.aggregateRating ?? 0;
+  console.log(page.product);
 
   return (
     <div class="col-span-4 flex flex-col gap-8">
-      <div class="flex flex-col gap-4">
-        <Breadcrumb
-          itemListElement={breadcrumbList?.itemListElement.slice(0, 2)}
+      <Name {...page} />
+      <Prices product={page.product} />
+      <Sizes product={page.product} />
+      <Seller product={page.product} />
+      {/* ACTIONS */}
+      {/* VARIANTS */}
+      <Description product={page.product} />
+      {/* CEP */}
+    </div>
+  );
+}
+
+function Name({ breadcrumbList, product }: ProductDetailsPage) {
+  return (
+    <div class="flex flex-col gap-4">
+      <Breadcrumb
+        itemListElement={breadcrumbList?.itemListElement.slice(0, 2)}
+      />
+
+      {/* BRAND */}
+      {product.brand?.name && (
+        <h4 class="text-large font-bold">{product.brand.name}</h4>
+      )}
+
+      {/* NAME AND WISHLIST */}
+      <span class="flex w-full items-center justify-between">
+        <h1 class="text-subtitle font-normal">{product.name}</h1>
+        <WishlistButton
+          variant="icon"
+          productGroupID={product.isVariantOf?.productGroupID}
+          productID={product.productID}
         />
+      </span>
 
-        {/* BRAND */}
-        {product.brand?.name && (
-          <h4 class="text-large font-bold">{product.brand.name}</h4>
-        )}
-
-        {/* NAME AND WISHLIST */}
-        {product.name && (
-          <span class="flex w-full justify-between">
-            <h1 class="text-subtitle font-normal">{product.name}</h1>
-            <WishlistButton
-              variant="icon"
-              productGroupID={product.isVariantOf?.productGroupID}
-              productID={product.productID}
-            />
-          </span>
-        )}
-
-        <span class="flex gap-12">Avaliação</span>
+      <div class="flex gap-3 text-small">
+        <span class="flex gap-1">
+          {[1, 2, 3, 4, 5].map((_) => (
+            <Icon id="Star" strokeWidth={1} class="w-4 h-4" />
+          ))}
+        </span>
+        Avaliação
       </div>
+    </div>
+  );
+}
+
+function Prices({ product }: { product: ProductDetailsPage["product"] }) {
+  const { listPrice, price, installments } = useOffer(product.offers);
+
+  const discountPercentage =
+    listPrice && price ? Math.ceil(100 - (price / listPrice) * 100) : 0;
+
+  return (
+    <div class="flex flex-col gap-2">
+      {discountPercentage > 0 && (
+        <span class="line-through text-grey-2 text-body leading-none">
+          {formatPrice(listPrice, product.offers!.priceCurrency!)}
+        </span>
+      )}
+
+      <div class="flex items-center justify-between">
+        <span class="flex items-center gap-2">
+          <h2 class="text-subtitle font-bold leading-none">
+            {formatPrice(price, product.offers!.priceCurrency!)}
+          </h2>
+
+          {discountPercentage > 0 && (
+            <div class="bg-black text-white text-small font-bold p-1">
+              {discountPercentage}% OFF
+            </div>
+          )}
+        </span>
+      </div>
+
+      {installments && (
+        <h4 class="text-small leading-none flex items-center gap-1">
+          ou
+          <span class="font-bold">
+            {installments.billingDuration}X de{" "}
+            {formatPrice(
+              installments.billingIncrement,
+              product.offers!.priceCurrency!
+            )}
+          </span>
+          {installments.taxes}
+        </h4>
+      )}
     </div>
   );
 }
@@ -331,39 +391,130 @@ function Images({
 }: {
   images: ProductDetailsPage["product"]["image"];
 }) {
-  if (!images) return null;
+  if (!images || images.length === 0) return null;
+
+  // repeat array to repeat when have just 1, 2 or 3 images
+  const imagesList = [...images, ...images, ...images, ...images].slice(0, 4);
 
   return (
-    <div class="col-span-8 laptop:pr-5 grid grid-cols-2 grid-rows-2 gap-x-[2px] gap-y-[2px]">
-      {/* repeat array to repeat when have just 1, 2 or 3 images */}
-      {[...images, ...images, ...images, ...images].slice(0, 4).map((image) => {
-        if (!image.url) return null;
+    <>
+      <div class="hidden laptop:grid grid-cols-2 grid-rows-2 gap-[2px] col-span-8 pr-5">
+        {/* repeat array to repeat when have just 1, 2 or 3 images */}
+        {imagesList.map((image) => {
+          if (!image.url) return null;
 
-        return (
-          <div class="bg-grey-1 w-full p-6 h-[400px] flex-1">
-            <Image
-              src={image.url}
-              width={400}
-              height={400}
-              fit="contain"
-              loading="eager"
-              fetchPriority="auto"
-              class="mix-blend-multiply h-full w-full object-cover flex-1"
-            />
-          </div>
-        );
-      })}
+          return (
+            <div class="bg-grey-1 w-full p-6 h-[400px] flex-1">
+              <Image
+                src={image.url}
+                width={400}
+                height={400}
+                fit="contain"
+                loading="eager"
+                fetchPriority="auto"
+                class="mix-blend-multiply h-full w-full object-cover flex-1"
+              />
+            </div>
+          );
+        })}
+      </div>
+    </>
+  );
+}
+
+function Seller({ product }: { product: ProductDetailsPage["product"] }) {
+  const { seller } = useOffer(product.offers);
+
+  const translateSeller = (seller?: string) => {
+    switch (seller) {
+      case "1":
+        return "Meia Sola";
+      default:
+        return seller;
+    }
+  };
+
+  return (
+    <p class="text-small">Vendido e entregue por: {translateSeller(seller)}</p>
+  );
+}
+
+function Sizes({ product }: { product: ProductDetailsPage["product"] }) {
+  const possibilities = useVariantPossibilities(product);
+
+  let sizes = null;
+  if (possibilities["Tamanho"]) {
+    sizes = possibilities["Tamanho"];
+  }
+
+  if (!sizes || Object.entries(sizes).length <= 1) return null;
+
+  return (
+    <div class="flex flex-col gap-3.5">
+      <div class="flex items-center justify-between">
+        <h4 class="font-bold text-body">Tamanho:</h4>
+      </div>
+
+      <ul class="flex flex-wrap gap-3">
+        {Object.entries(sizes).map(([size, [link]]) => {
+          const url = new URL(link);
+          const sizeSku = url.searchParams.get("skuId");
+
+          return (
+            <li key={size}>
+              <a
+                href={link}
+                alt={size}
+                class={`border border-black p-2.5 block hover:bg-black hover:text-white text-large leading-none transition-all duration-300 ease-out ${
+                  sizeSku === product.sku && "bg-black text-white"
+                }`}
+              >
+                {size}
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+
+      <Divider />
     </div>
+  );
+}
+
+function Description({ product }: { product: ProductDetailsPage["product"] }) {
+  if (!product.description) return null;
+
+  const clamp = product.description.split(" ").length > 50;
+
+  return (
+    <span class="group">
+      <p
+        class={`text-small ${
+          clamp && "group-[&:not(:has(input:checked))]:line-clamp-4"
+        }`}
+      >
+        <span class="font-bold">Descrição: </span>
+        {product.description}
+      </p>
+      {clamp && (
+        <label
+          class="underline cursor-pointer text-small [&:has(input:checked)]:hidden"
+          for="description-checkbox"
+        >
+          ver mais
+          <input id="description-checkbox" type="checkbox" class="hidden" />
+        </label>
+      )}
+    </span>
   );
 }
 
 function ProductDetails({ page }: Props) {
   if (page) {
-    const { product } = page;
     return (
-      <div class="container grid grid-cols-12 gap-4 desktop:gap-5 laptop:py-11">
-        <Images images={product.image} />
-        <Details page={page} />
+      <div class="container grid grid-cols-12 gap-4 desktop:gap-5 laptop:py-11 text-black">
+        <Images images={page.product.image} />
+        <Details {...page} />
       </div>
     );
   }

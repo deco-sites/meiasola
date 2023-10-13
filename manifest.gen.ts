@@ -4,7 +4,6 @@
 
 import * as $$$0 from "./loaders/Layouts/ProductCard.tsx";
 import * as $$$1 from "./loaders/meiasola/myStylePosts.ts";
-import * as $$$2 from "./loaders/meiasola/productDetailsPage.ts";
 import * as $$$$$$0 from "./sections/Category/CategoryBanner.tsx";
 import * as $$$$$$1 from "./sections/Category/CategoryList.tsx";
 import * as $$$$$$2 from "./sections/Content/Benefits.tsx";
@@ -46,7 +45,6 @@ const manifest = {
   "loaders": {
     "deco-sites/meiasola/loaders/Layouts/ProductCard.tsx": $$$0,
     "deco-sites/meiasola/loaders/meiasola/myStylePosts.ts": $$$1,
-    "deco-sites/meiasola/loaders/meiasola/productDetailsPage.ts": $$$2,
   },
   "sections": {
     "deco-sites/meiasola/sections/Category/CategoryBanner.tsx": $$$$$$0,
