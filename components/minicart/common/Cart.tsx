@@ -50,16 +50,16 @@ function Cart({
       // style={{ minWidth: "calc(min(100vw, 398px))", maxWidth: "398px" }}
     >
       {isEmtpy ? (
-        <div class='flex flex-col gap-6'>
+        <div class='flex flex-col w-[398px] items-center justify-center'>
           <span class='font-medium text-2xl'>Sua sacola está vazia</span>
-          <Button
-            class='btn-outline'
+          <button
+            class='btn-outline btn border-1 border-black mt-4'
             onClick={() => {
               displayCart.value = false;
             }}
           >
             Escolher produtos
-          </Button>
+          </button>
         </div>
       ) : (
         <>
