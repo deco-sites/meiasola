@@ -145,9 +145,9 @@ function Heading({
         ) : (
           <div class="flex flex-col gap-6 laptop:flex-row laptop:w-3/4 laptop:gap-5 laptop:items-center">
             <h1 class="shrink-0 text-h3 leading-none uppercase font-medium tracking-wide">
-              {seo?.title}
+            {(seo?.title.toLowerCase().includes("bolsas") ? "BOLSAS" : seo?.title)}
             </h1>
-            <p class="laptop:leading-none laptop:line-clamp-2 text-small">
+            <p class="laptop:leading-none laptop:line-clamp-2 text-small text-neutral-500">
               {seo?.description}
             </p>
           </div>
