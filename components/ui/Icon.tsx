@@ -21,8 +21,8 @@ export type AvailableIcons =
   | "WhatsApp"
   | "Menu"
   | "XMark"
-  | "Trash"
-  | "Bag";
+  | "Ruler"
+  | "Trash";
 
 export interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   /**

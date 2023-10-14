@@ -11,11 +11,16 @@ const displaySearchBar = signal(false);
 
 const displayFilters = signal(false);
 
+const displaySizeGuide = signal(false);
+const displayNotifyMe = signal<string | undefined>(undefined);
+
 const state = {
   displayCart,
   displayMenu,
   displaySearchBar,
   displayFilters,
+  displaySizeGuide,
+displayNotifyMe
 };
 
 export const useUI = () => state;

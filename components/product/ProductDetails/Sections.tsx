@@ -10,73 +10,23 @@ import Divider from "$store/components/ui/Divider.tsx";
 import ShippingSimulation from "$store/components/ui/ShippingSimulation.tsx";
 
 import WishlistButton from "$store/islands/WishlistButton.tsx";
-import AddToCartButtonVTEX from "$store/islands/AddToCartButton/vtex.tsx";
-import OutOfStock from "$store/islands/OutOfStock.tsx";
+import {
+  AddToCartButton,
+  SizeGuideButton,
+  NotifyMeButton,
+} from "$store/islands/ProductDetails/Buttons.tsx";
+
+import {
+  IslandSizeGuide,
+  IslandNotifyMe,
+} from "$store/islands/ProductDetails/Modals.tsx";
+import { Props as SizeGuideProps } from "$store/components/product/ProductDetails/Modals/SizeGuide.tsx";
 
 import { useOffer } from "$store/sdk/useOffer.ts";
 import { formatPrice } from "$store/sdk/format.ts";
-import { useVariantPossibilities } from "deco-sites/meiasola/sdk/useVariantPossiblities.ts";
+import { useVariantPossibilities } from "$store/sdk/useVariantPossiblities.ts";
 
-export interface Props {
-  /** @title Integration */
-  page: ProductDetailsPage | null;
-}
-
-function NotFound() {
-  return (
-    <div class="w-full flex justify-center items-center py-28">
-      <div class="flex flex-col items-center justify-center gap-6">
-        <span class="font-medium text-2xl">Página não encontrada</span>
-        <a href="/">
-          <Button>Voltar à página inicial</Button>
-        </a>
-      </div>
-    </div>
-  );
-}
-
-function Details(page: ProductDetailsPage) {
-  const { price = 0, listPrice, seller = "1" } = useOffer(page.product.offers);
-
-  return (
-    <div class="col-span-4 flex flex-col gap-8">
-      <Name {...page} />
-      <Prices product={page.product} />
-      <Sizes product={page.product} />
-      <Seller product={page.product} />
-      <Actions product={page.product} />
-      <Colors product={page.product} />
-      <Description product={page.product} />
-      {/* <ShippingSimulation
-        items={[
-          {
-            id: Number(page.product.sku),
-            quantity: 1,
-            seller,
-          },
-        ]}
-      /> */}
-
-      <SendEventOnLoad
-        event={{
-          name: "view_item",
-          params: {
-            items: [
-              mapProductToAnalyticsItem({
-                product: page.product,
-                breadcrumbList: page.breadcrumbList,
-                price,
-                listPrice,
-              }),
-            ],
-          },
-        }}
-      />
-    </div>
-  );
-}
-
-function Name({ breadcrumbList, product }: ProductDetailsPage) {
+export function Name({ breadcrumbList, product }: ProductDetailsPage) {
   return (
     <div class="flex flex-col gap-4">
       <Breadcrumb
@@ -110,7 +60,11 @@ function Name({ breadcrumbList, product }: ProductDetailsPage) {
   );
 }
 
-function Prices({ product }: { product: ProductDetailsPage["product"] }) {
+export function Prices({
+  product,
+}: {
+  product: ProductDetailsPage["product"];
+}) {
   const { listPrice, price, installments } = useOffer(product.offers);
 
   const discountPercentage =
@@ -155,7 +109,7 @@ function Prices({ product }: { product: ProductDetailsPage["product"] }) {
   );
 }
 
-function Images({
+export function Images({
   images,
 }: {
   images: ProductDetailsPage["product"]["image"];
@@ -191,7 +145,11 @@ function Images({
   );
 }
 
-function Seller({ product }: { product: ProductDetailsPage["product"] }) {
+export function Seller({
+  product,
+}: {
+  product: ProductDetailsPage["product"];
+}) {
   const { seller } = useOffer(product.offers);
 
   const translateSeller = (seller?: string) => {
@@ -208,7 +166,13 @@ function Seller({ product }: { product: ProductDetailsPage["product"] }) {
   );
 }
 
-function Sizes({ product }: { product: ProductDetailsPage["product"] }) {
+export function Sizes({
+  product,
+  sizeProps,
+}: {
+  product: ProductDetailsPage["product"];
+  sizeProps: SizeGuideProps;
+}) {
   const possibilities = useVariantPossibilities(product);
 
   let sizes = null;
@@ -222,9 +186,10 @@ function Sizes({ product }: { product: ProductDetailsPage["product"] }) {
     <div class="flex flex-col gap-3.5">
       <div class="flex items-center justify-between">
         <h4 class="font-bold text-body">Tamanho:</h4>
+        <SizeGuideButton />
       </div>
 
-      <ul class="flex flex-wrap gap-3">
+      <ul class="flex flex-wrap justify-between tablet:justify-start gap-3">
         {Object.entries(sizes).map(([size, [{ url: link, availability }]]) => {
           const url = new URL(link);
           const sizeSku = url.searchParams.get("skuId");
@@ -241,14 +206,14 @@ function Sizes({ product }: { product: ProductDetailsPage["product"] }) {
                     ? "border-black hover:bg-black text-black"
                     : "border-grey-2 hover:bg-grey-2 text-grey-2"
                 }
-                ${
-                  sizeSku === product.sku
-                    ? avaliable
-                      ? "bg-black text-white"
-                      : "bg-grey-2 text-white"
-                    : ""
-                }
-                `}
+                  ${
+                    sizeSku === product.sku
+                      ? avaliable
+                        ? "bg-black text-white"
+                        : "bg-grey-2 text-white"
+                      : ""
+                  }
+                  `}
               >
                 {size}
               </a>
@@ -257,12 +222,18 @@ function Sizes({ product }: { product: ProductDetailsPage["product"] }) {
         })}
       </ul>
 
+      <IslandSizeGuide {...sizeProps} />
+
       <Divider />
     </div>
   );
 }
 
-function Description({ product }: { product: ProductDetailsPage["product"] }) {
+export function Description({
+  product,
+}: {
+  product: ProductDetailsPage["product"];
+}) {
   if (!product.description) return null;
 
   const clamp = product.description.split(" ").length > 50;
@@ -290,7 +261,11 @@ function Description({ product }: { product: ProductDetailsPage["product"] }) {
   );
 }
 
-function Colors({ product }: { product: ProductDetailsPage["product"] }) {
+export function Colors({
+  product,
+}: {
+  product: ProductDetailsPage["product"];
+}) {
   const possibilities = useVariantPossibilities(product);
 
   let colors = null;
@@ -343,7 +318,11 @@ function Colors({ product }: { product: ProductDetailsPage["product"] }) {
   );
 }
 
-function Actions({ product }: { product: ProductDetailsPage["product"] }) {
+export function Actions({
+  product,
+}: {
+  product: ProductDetailsPage["product"];
+}) {
   const {
     price = 0,
     listPrice,
@@ -357,7 +336,7 @@ function Actions({ product }: { product: ProductDetailsPage["product"] }) {
     return (
       <div class="flex flex-col gap-2 justify-center">
         <a alt="Ir para o checkout com esse produto" href="/checkout">
-          <AddToCartButtonVTEX
+          <AddToCartButton
             name={product.name ?? ""}
             productID={product.productID}
             productGroupID={productGroupID}
@@ -367,9 +346,9 @@ function Actions({ product }: { product: ProductDetailsPage["product"] }) {
             class="bg-black hover:bg-black text-white w-full !h-[45px] font-normal flex items-center justify-center text-body disabled:opacity-50"
           >
             COMPRAR
-          </AddToCartButtonVTEX>
+          </AddToCartButton>
         </a>
-        <AddToCartButtonVTEX
+        <AddToCartButton
           name={product.name ?? ""}
           productID={product.productID}
           productGroupID={productGroupID}
@@ -380,20 +359,10 @@ function Actions({ product }: { product: ProductDetailsPage["product"] }) {
       </div>
     );
 
-  return <OutOfStock productID={product.productID} />;
+  return (
+    <>
+      <NotifyMeButton productID={product.productID} />
+      <IslandNotifyMe />
+    </>
+  );
 }
-
-function ProductDetails({ page }: Props) {
-  if (page) {
-    return (
-      <div class="container grid grid-cols-12 gap-4 desktop:gap-5 laptop:py-11 text-black">
-        <Images images={page.product.image} />
-        <Details {...page} />
-      </div>
-    );
-  }
-
-  return <NotFound />;
-}
-
-export default ProductDetails;
