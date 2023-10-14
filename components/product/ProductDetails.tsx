@@ -7,6 +7,7 @@ import Breadcrumb from "$store/components/ui/Breadcrumb.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
 import Button from "$store/components/ui/Button.tsx";
 import Divider from "$store/components/ui/Divider.tsx";
+import ShippingSimulation from "$store/components/ui/ShippingSimulation.tsx";
 
 import WishlistButton from "$store/islands/WishlistButton.tsx";
 import AddToCartButtonVTEX from "$store/islands/AddToCartButton/vtex.tsx";
@@ -34,264 +35,8 @@ function NotFound() {
   );
 }
 
-function ProductInfo({ page }: { page: ProductDetailsPage }) {
-  const { breadcrumbList, product, seo } = page;
-  const {
-    description,
-    productID,
-    offers,
-    name = "",
-    gtin,
-    isVariantOf,
-    additionalProperty = [],
-  } = product;
-  const {
-    price = 0,
-    listPrice,
-    seller = "1",
-    installments,
-    availability,
-  } = useOffer(offers);
-  const productGroupID = isVariantOf?.productGroupID ?? "";
-  const discount = price && listPrice ? listPrice - price : 0;
-
-  return (
-    <>
-      {/* Breadcrumb */}
-      {/* <Breadcrumb
-        itemListElement={breadcrumbList?.itemListElement.slice(0, -1)}
-      /> */}
-      {/* Code and name */}
-      {/* <div class="mt-4 sm:mt-8">
-        <div>
-          {gtin && <span class="text-sm text-base-300">Cod. {gtin}</span>}
-        </div>
-        <h1>
-          <span class="font-medium text-xl capitalize">
-            {layout?.name === "concat"
-              ? `${isVariantOf?.name} ${name}`
-              : layout?.name === "productGroup"
-              ? isVariantOf?.name
-              : name}
-          </span>
-        </h1>
-      </div> */}
-      {/* Prices */}
-      {/* <div class="mt-4">
-        <div class="flex flex-row gap-2 items-center">
-          {(listPrice ?? 0) > price && (
-            <span class="line-through text-base-300 text-xs">
-              {formatPrice(listPrice, offers!.priceCurrency!)}
-            </span>
-          )}
-          <span class="font-medium text-xl text-secondary">
-            {formatPrice(price, offers!.priceCurrency!)}
-          </span>
-        </div>
-        <span class="text-sm text-base-300">{installments}</span>
-      </div> */}
-      {/* Sku Selector */}
-      {/* <div class="mt-4 sm:mt-6">
-        <ProductSelector product={product} />
-      </div> */}
-      {/* Add to Cart and Favorites button */}
-      <div
-      // class="mt-4 sm:mt-10 flex flex-col gap-2"
-      >
-        {availability === "https://schema.org/InStock" ? (
-          <>
-            <AddToCartButtonVTEX
-              name={name}
-              productID={productID}
-              productGroupID={productGroupID}
-              price={price}
-              discount={discount}
-              seller={seller}
-            />
-            {/* <WishlistButton
-              variant="full"
-              productID={productID}
-              productGroupID={productGroupID}
-            /> */}
-          </>
-        ) : (
-          <OutOfStock productID={productID} />
-        )}
-      </div>
-      {/* Shipping Simulation */}
-      {/* <div class="mt-8">
-        <ShippingSimulation
-          items={[
-            {
-              id: Number(product.sku),
-              quantity: 1,
-              seller: seller,
-            },
-          ]}
-        />
-      </div> */}
-      {/* Description card */}
-      {/* <div class="mt-4 sm:mt-6">
-        <span class="text-sm">
-          {description && (
-            <details>
-              <summary class="cursor-pointer">Descrição</summary>
-              <div class="ml-2 mt-2">{description}</div>
-            </details>
-          )}
-        </span>
-      </div> */}
-      {/* Analytics Event */}
-      <SendEventOnLoad
-        event={{
-          name: "view_item",
-          params: {
-            items: [
-              mapProductToAnalyticsItem({
-                product,
-                breadcrumbList,
-                price,
-                listPrice,
-              }),
-            ],
-          },
-        }}
-      />
-    </>
-  );
-}
-
 function Details(page: ProductDetailsPage) {
-  // const id = useId();
-  // const {
-  //   page: {
-  //     product: { image: images = [] },
-  //   },
-  //   layout,
-  // } = props;
-  // const variant = layout?.image ?? "slider";
-
-  // /**
-  //  * Product slider variant
-  //  *
-  //  * Creates a three columned grid on destkop, one for the dots preview, one for the image slider and the other for product info
-  //  * On mobile, there's one single column with 3 rows. Note that the orders are different from desktop to mobile, that's why
-  //  * we rearrange each cell with col-start- directives
-  //  */
-  // if (variant === "slider") {
-  //   return (
-  //     <>
-  //       <div
-  //         id={id}
-  //         class="grid grid-cols-1 gap-4 sm:grid-cols-[max-content_40vw_40vw] sm:grid-rows-1 sm:justify-center"
-  //       >
-  //         {/* Image Slider */}
-  //         <div class="relative sm:col-start-2 sm:col-span-1 sm:row-start-1">
-  //           <Slider class="carousel carousel-center gap-6 w-screen sm:w-[40vw]">
-  //             {images.map((img, index) => (
-  //               <Slider.Item index={index} class="carousel-item w-full">
-  //                 <Image
-  //                   class="w-full"
-  //                   sizes="(max-width: 640px) 100vw, 40vw"
-  //                   style={{ aspectRatio: ASPECT_RATIO }}
-  //                   src={img.url!}
-  //                   alt={img.alternateName}
-  //                   width={WIDTH}
-  //                   height={HEIGHT}
-  //                   // Preload LCP image for better web vitals
-  //                   preload={index === 0}
-  //                   loading={index === 0 ? "eager" : "lazy"}
-  //                 />
-  //               </Slider.Item>
-  //             ))}
-  //           </Slider>
-
-  //           <Slider.PrevButton
-  //             class="no-animation absolute left-2 top-1/2 btn btn-circle btn-outline"
-  //             disabled
-  //           >
-  //             <Icon size={24} id="ChevronLeft" strokeWidth={3} />
-  //           </Slider.PrevButton>
-
-  //           <Slider.NextButton
-  //             class="no-animation absolute right-2 top-1/2 btn btn-circle btn-outline"
-  //             disabled={images.length < 2}
-  //           >
-  //             <Icon size={24} id="ChevronRight" strokeWidth={3} />
-  //           </Slider.NextButton>
-
-  //           <div class="absolute top-2 right-2 bg-base-100 rounded-full">
-  //             <ProductImageZoom
-  //               images={images}
-  //               width={700}
-  //               height={Math.trunc((700 * HEIGHT) / WIDTH)}
-  //             />
-  //           </div>
-  //         </div>
-
-  //         {/* Dots */}
-  //         <ul class="flex gap-2 sm:justify-start overflow-auto px-4 sm:px-0 sm:flex-col sm:col-start-1 sm:col-span-1 sm:row-start-1">
-  //           {images.map((img, index) => (
-  //             <li class="min-w-[63px] sm:min-w-[100px]">
-  //               <Slider.Dot index={index}>
-  //                 <Image
-  //                   style={{ aspectRatio: ASPECT_RATIO }}
-  //                   class="group-disabled:border-base-300 border rounded "
-  //                   width={63}
-  //                   height={87.5}
-  //                   src={img.url!}
-  //                   alt={img.alternateName}
-  //                 />
-  //               </Slider.Dot>
-  //             </li>
-  //           ))}
-  //         </ul>
-
-  //         {/* Product Info */}
-  //         <div class="px-4 sm:pr-0 sm:pl-6 sm:col-start-3 sm:col-span-1 sm:row-start-1">
-  //           <ProductInfo {...props} />
-  //         </div>
-  //       </div>
-  //       <SliderJS rootId={id}></SliderJS>
-  //     </>
-  //   );
-  // }
-
-  // /**
-  //  * Product front-back variant.
-  //  *
-  //  * Renders two images side by side both on mobile and on desktop. On mobile, the overflow is
-  //  * reached causing a scrollbar to be rendered.
-  //  */
-  // return (
-  //   <div class="grid grid-cols-1 gap-4 sm:grid-cols-[50vw_25vw] sm:grid-rows-1 sm:justify-center">
-  //     {/* Image slider */}
-  //     <ul class="carousel carousel-center gap-6">
-  //       {[images[0], images[1] ?? images[0]].map((img, index) => (
-  //         <li class="carousel-item min-w-[100vw] sm:min-w-[24vw]">
-  //           <Image
-  //             sizes="(max-width: 640px) 100vw, 24vw"
-  //             style={{ aspectRatio: ASPECT_RATIO }}
-  //             src={img.url!}
-  //             alt={img.alternateName}
-  //             width={WIDTH}
-  //             height={HEIGHT}
-  //             // Preload LCP image for better web vitals
-  //             preload={index === 0}
-  //             loading={index === 0 ? "eager" : "lazy"}
-  //           />
-  //         </li>
-  //       ))}
-  //     </ul>
-
-  //     {/* Product Info */}
-  //     <div class="px-4 sm:pr-0 sm:pl-6">
-  //       <ProductInfo {...props} />
-  //     </div>
-  //   </div>
-  // );
-
-  console.log(page.product);
+  const { price = 0, listPrice, seller = "1" } = useOffer(page.product.offers);
 
   return (
     <div class="col-span-4 flex flex-col gap-8">
@@ -299,10 +44,34 @@ function Details(page: ProductDetailsPage) {
       <Prices product={page.product} />
       <Sizes product={page.product} />
       <Seller product={page.product} />
-      {/* ACTIONS */}
-      {/* VARIANTS */}
+      <Actions product={page.product} />
+      <Colors product={page.product} />
       <Description product={page.product} />
-      {/* CEP */}
+      {/* <ShippingSimulation
+        items={[
+          {
+            id: Number(page.product.sku),
+            quantity: 1,
+            seller,
+          },
+        ]}
+      /> */}
+
+      <SendEventOnLoad
+        event={{
+          name: "view_item",
+          params: {
+            items: [
+              mapProductToAnalyticsItem({
+                product: page.product,
+                breadcrumbList: page.breadcrumbList,
+                price,
+                listPrice,
+              }),
+            ],
+          },
+        }}
+      />
     </div>
   );
 }
@@ -456,18 +225,30 @@ function Sizes({ product }: { product: ProductDetailsPage["product"] }) {
       </div>
 
       <ul class="flex flex-wrap gap-3">
-        {Object.entries(sizes).map(([size, [link]]) => {
+        {Object.entries(sizes).map(([size, [{ url: link, availability }]]) => {
           const url = new URL(link);
           const sizeSku = url.searchParams.get("skuId");
+
+          const avaliable = availability === "https://schema.org/InStock";
 
           return (
             <li key={size}>
               <a
                 href={link}
                 alt={size}
-                class={`border border-black p-2.5 block hover:bg-black hover:text-white text-large leading-none transition-all duration-300 ease-out ${
-                  sizeSku === product.sku && "bg-black text-white"
-                }`}
+                class={`border p-2.5 block hover:text-white text-large leading-none transition-all duration-300 ease-out ${
+                  avaliable
+                    ? "border-black hover:bg-black text-black"
+                    : "border-grey-2 hover:bg-grey-2 text-grey-2"
+                }
+                ${
+                  sizeSku === product.sku
+                    ? avaliable
+                      ? "bg-black text-white"
+                      : "bg-grey-2 text-white"
+                    : ""
+                }
+                `}
               >
                 {size}
               </a>
@@ -507,6 +288,99 @@ function Description({ product }: { product: ProductDetailsPage["product"] }) {
       )}
     </span>
   );
+}
+
+function Colors({ product }: { product: ProductDetailsPage["product"] }) {
+  const possibilities = useVariantPossibilities(product);
+
+  let colors = null;
+  if (possibilities["Cor"]) {
+    colors = possibilities["Cor"];
+  }
+
+  if (!colors || Object.entries(colors).length <= 1) return null;
+
+  return (
+    <div class="flex flex-col gap-4">
+      <h4 class="font-bold text-body">Outras Cores:</h4>
+
+      <ul class="flex flex-wrap gap-4">
+        {Object.entries(colors).map(([color, [data]]) => {
+          const { url: link, image: images } = data;
+
+          const url = new URL(link);
+          const colorSku = url.searchParams.get("skuId");
+
+          const [image] = images ?? [];
+
+          return (
+            <li key={color}>
+              <a
+                href={link}
+                alt={color}
+                class={`block border hover:border-black transition-all duration-300 ease-out w-[64px] h-[72px] bg-gray-1 ${
+                  colorSku === product.sku
+                    ? "border-black"
+                    : "border-transparent"
+                }`}
+              >
+                <Image
+                  alt={`Imagem da cor ${color}`}
+                  src={image.url!}
+                  width={64}
+                  height={72}
+                  loading="lazy"
+                  fetchPriority="low"
+                  className="object-cover w-full h-full mix-blend-multiply"
+                  fit="contain"
+                />
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+  );
+}
+
+function Actions({ product }: { product: ProductDetailsPage["product"] }) {
+  const {
+    price = 0,
+    listPrice,
+    availability,
+    seller = "1",
+  } = useOffer(product.offers);
+  const productGroupID = product.isVariantOf?.productGroupID ?? "";
+  const discount = price && listPrice ? listPrice - price : 0;
+
+  if (availability === "https://schema.org/InStock")
+    return (
+      <div class="flex flex-col gap-2 justify-center">
+        <a alt="Ir para o checkout com esse produto" href="/checkout">
+          <AddToCartButtonVTEX
+            name={product.name ?? ""}
+            productID={product.productID}
+            productGroupID={productGroupID}
+            price={price}
+            discount={discount}
+            seller={seller}
+            class="bg-black hover:bg-black text-white w-full !h-[45px] font-normal flex items-center justify-center text-body disabled:opacity-50"
+          >
+            COMPRAR
+          </AddToCartButtonVTEX>
+        </a>
+        <AddToCartButtonVTEX
+          name={product.name ?? ""}
+          productID={product.productID}
+          productGroupID={productGroupID}
+          price={price}
+          discount={discount}
+          seller={seller}
+        />
+      </div>
+    );
+
+  return <OutOfStock productID={product.productID} />;
 }
 
 function ProductDetails({ page }: Props) {

@@ -1,8 +1,10 @@
+import type { ComponentChildren } from "preact";
+import { useState } from "preact/hooks";
+
 import Button from "$store/components/ui/Button.tsx";
 import { sendEvent } from "$store/sdk/analytics.tsx";
 import { useUI } from "$store/sdk/useUI.ts";
-import { useState } from "preact/hooks";
-import Icon from "deco-sites/meiasola/components/ui/Icon.tsx";
+import Icon from "$store/components/ui/Icon.tsx";
 
 export interface Props {
   /** @description: sku name */
@@ -12,6 +14,9 @@ export interface Props {
   price: number;
   discount: number;
   onAddItem: () => Promise<void>;
+
+  class?: string;
+  children?: ComponentChildren;
 }
 
 const useAddToCart = ({
@@ -26,9 +31,6 @@ const useAddToCart = ({
   const { displayCart } = useUI();
 
   const onClick = async (e: MouseEvent) => {
-    e.preventDefault();
-    e.stopPropagation();
-
     try {
       setLoading(true);
 
@@ -37,14 +39,16 @@ const useAddToCart = ({
       sendEvent({
         name: "add_to_cart",
         params: {
-          items: [{
-            quantity: 1,
-            price,
-            item_name: name,
-            discount: discount,
-            item_id: productGroupID,
-            item_variant: productID,
-          }],
+          items: [
+            {
+              quantity: 1,
+              price,
+              item_name: name,
+              discount: discount,
+              item_id: productGroupID,
+              item_variant: productID,
+            },
+          ],
         },
       });
 
@@ -58,17 +62,29 @@ const useAddToCart = ({
 };
 
 export default function AddToCartButton(props: Props) {
-  const btnProps = useAddToCart(props);
+  const { loading, onClick } = useAddToCart(props);
 
   return (
-    <div>
-      <Button {...btnProps} data-deco="add-to-cart" class="flex flex-col text-small underline normal-case font-normal text-black">
-      <Icon
-        id={"Bag"}
-        width={15}
-        height={15} />
-        Adicionar à sacola
-      </Button>
-    </div>
+    <Button
+      disabled={loading}
+      onClick={onClick}
+      data-deco="add-to-cart"
+      class={
+        props.class
+          ? props.class
+          : "flex justify-center gap-2 text-small underline text-black h-fit p-0 font-normal w-full bg-transparent hover:bg-transparent normal-case disabled:bg-transparent"
+      }
+    >
+      {loading ? (
+        <span class="loading loading-spinner h-3 w-3 loading-current"></span>
+      ) : props.children ? (
+        props.children
+      ) : (
+        <>
+          <Icon id={"Bag"} class="h-3 w-3" />
+          Adicionar à sacola
+        </>
+      )}
+    </Button>
   );
 }

@@ -15,6 +15,10 @@ import {
 } from "$store/islands/Drawers.tsx";
 import IslandSort from "$store/islands/Sort.tsx";
 
+type ProductListingPageAndSearch = ProductListingPage & {
+  search: { term: string | null; pathname: string };
+};
+
 export interface Props {
   /** @title Integration */
   page: ProductListingPage | null;
@@ -30,42 +34,26 @@ function Result({
   page,
   images = [],
   sizes,
-}: Omit<Props, "page"> & { page: ProductListingPage }) {
-  const { products, filters, breadcrumb, sortOptions, seo, pageInfo } = page;
-
-  let search = "";
-
-  pageInfo?.nextPage?.split("&").forEach((term) => {
-    const [key, value] = term.split("=");
-    if (key === "q") {
-      search = decodeURIComponent(value);
-    }
-  });
-
-  const q = seo?.canonical
-    ? new URL(seo.canonical ?? "").searchParams.get("q")
-    : null;
-  if (q) search = q;
-
-  let url = null;
-  if (breadcrumb?.itemListElement.length > 0) {
-    const last =
-      breadcrumb.itemListElement[breadcrumb.itemListElement.length - 1];
-    url = new URL(last.item);
-  }
+}: Omit<Props, "page"> & { page: ProductListingPageAndSearch }) {
+  const { products, filters, breadcrumb, sortOptions, seo, pageInfo, search } =
+    page;
 
   return (
     <>
-      {!search && url && images && (
-        <Image images={images} breadcrumb={breadcrumb} url={url} />
+      {!search?.term && search?.pathname && images && (
+        <Image
+          images={images}
+          breadcrumb={breadcrumb}
+          pathname={search?.pathname}
+        />
       )}
 
-      {!search && url && sizes && (
+      {!search?.term && search?.pathname && sizes && (
         <Sizes
           title={sizes.title}
           routes={sizes.routesToShow}
           sizes={sizes.sizes}
-          pathname={url.pathname}
+          pathname={search.pathname}
         />
       )}
 
@@ -73,7 +61,7 @@ function Result({
         seo={seo}
         productsCount={pageInfo.records ?? 0}
         sortOptions={sortOptions}
-        searchTerm={search}
+        searchTerm={search?.term ?? undefined}
       />
 
       <IslandFiltersDrawer filters={filters} />
@@ -145,7 +133,7 @@ function Heading({
         ) : (
           <div class="flex flex-col gap-6 laptop:flex-row laptop:w-3/4 laptop:gap-5 laptop:items-center">
             <h1 class="shrink-0 text-h3 leading-none uppercase font-medium tracking-wide">
-            {(seo?.title.toLowerCase().includes("bolsas") ? "BOLSAS" : seo?.title)}
+              {(seo?.title ?? "").toLowerCase().replace(" - meia sola", "")}
             </h1>
             <p class="laptop:leading-none laptop:line-clamp-2 text-small text-neutral-500">
               {seo?.description}
@@ -236,15 +224,14 @@ interface Image {
 function Image({
   images = [],
   breadcrumb,
-  url,
+  pathname,
 }: {
   images: Image[];
   breadcrumb: ProductListingPage["breadcrumb"];
-  url: URL;
+  pathname: string;
 }) {
   let image = null;
 
-  const pathname = url.pathname;
   image = images.findLast((image) => pathname.includes(image.route));
 
   if (image) {
@@ -283,7 +270,7 @@ function Image({
 
 function SearchResult({ page, ...props }: Props) {
   if (!page || page.pageInfo.records === 0) return <NotFound />;
-  return <Result {...props} page={page} />;
+  return <Result {...props} page={page as ProductListingPageAndSearch} />;
 }
 
 export default SearchResult;

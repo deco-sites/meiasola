@@ -31,30 +31,34 @@ export interface Props {
   itemToAnalyticsItem: (index: number) => AnalyticsItem | null | undefined;
 }
 
-function CartItem(
-  {
-    item,
-    index,
-    locale,
-    currency,
-    onUpdateQuantity,
-    itemToAnalyticsItem,
-  }: Props,
-) {
-  const { image, name, price: { sale, list }, quantity } = item;
+function CartItem({
+  item,
+  index,
+  locale,
+  currency,
+  onUpdateQuantity,
+  itemToAnalyticsItem,
+}: Props) {
+  const {
+    image,
+    name,
+    price: { sale, list },
+    quantity,
+  } = item;
   const isGift = sale < 0.01;
   const [loading, setLoading] = useState(false);
 
   const withLoading = useCallback(
-    <A,>(cb: (args: A) => Promise<void>) => async (e: A) => {
-      try {
-        setLoading(true);
-        await cb(e);
-      } finally {
-        setLoading(false);
-      }
-    },
-    [],
+    <A,>(cb: (args: A) => Promise<void>) =>
+      async (e: A) => {
+        try {
+          setLoading(true);
+          await cb(e);
+        } finally {
+          setLoading(false);
+        }
+      },
+    []
   );
 
   return (
@@ -84,35 +88,36 @@ function CartItem(
 
               await onUpdateQuantity(0, index);
 
-              analyticsItem && sendEvent({
-                name: "remove_from_cart",
-                params: { items: [analyticsItem] },
-              });
+              analyticsItem &&
+                sendEvent({
+                  name: "remove_from_cart",
+                  params: { items: [analyticsItem] },
+                });
             })}
           >
-            <Icon id="Trash" size={16} />
+            <Icon id="Trash" size={16} class="text-gray-2" />
           </Button>
         </div>
         <div class="flex align-baseline items-end justify-between gap-2">
-        <QuantitySelector
-          disabled={loading || isGift}
-          quantity={quantity}
-          onChange={withLoading(async (quantity) => {
-            const analyticsItem = itemToAnalyticsItem(index);
-            const diff = quantity - item.quantity;
+          <QuantitySelector
+            disabled={loading || isGift}
+            quantity={quantity}
+            onChange={withLoading(async (quantity) => {
+              const analyticsItem = itemToAnalyticsItem(index);
+              const diff = quantity - item.quantity;
 
-            await onUpdateQuantity(quantity, index);
+              await onUpdateQuantity(quantity, index);
 
-            if (analyticsItem) {
-              analyticsItem.quantity = diff;
+              if (analyticsItem) {
+                analyticsItem.quantity = diff;
 
-              sendEvent({
-                name: diff < 0 ? "remove_from_cart" : "add_to_cart",
-                params: { items: [analyticsItem] },
-              });
-            }
-          })}
-        />
+                sendEvent({
+                  name: diff < 0 ? "remove_from_cart" : "add_to_cart",
+                  params: { items: [analyticsItem] },
+                });
+              }
+            })}
+          />
           {/* <span class="line-through text-base-300 text-sm">
             {formatPrice(list, currency, locale)}
           </span> */}
@@ -120,8 +125,6 @@ function CartItem(
             {isGift ? "Grátis" : formatPrice(sale, currency, locale)}
           </span>
         </div>
-
-
       </div>
     </div>
   );
