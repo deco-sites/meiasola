@@ -3,14 +3,14 @@
 // This file is automatically updated during development when running `dev.ts`.
 
 import * as $0 from "./routes/_app.tsx";
-import * as $$0 from "./islands/AddToCartButton/vtex.tsx";
-import * as $$1 from "./islands/ContactUsForm.tsx";
-import * as $$2 from "./islands/Drawers.tsx";
-import * as $$3 from "./islands/Header/Buttons.tsx";
-import * as $$4 from "./islands/Header/Drawers.tsx";
-import * as $$5 from "./islands/Header/Searchbar.tsx";
-import * as $$6 from "./islands/Newsletter.tsx";
-import * as $$7 from "./islands/OutOfStock.tsx";
+import * as $$0 from "./islands/ContactUsForm.tsx";
+import * as $$1 from "./islands/Drawers.tsx";
+import * as $$2 from "./islands/Header/Buttons.tsx";
+import * as $$3 from "./islands/Header/Drawers.tsx";
+import * as $$4 from "./islands/Header/Searchbar.tsx";
+import * as $$5 from "./islands/Newsletter.tsx";
+import * as $$6 from "./islands/ProductDetails/Buttons.tsx";
+import * as $$7 from "./islands/ProductDetails/Modals.tsx";
 import * as $$8 from "./islands/ProductImageZoom.tsx";
 import * as $$9 from "./islands/SearchControls.tsx";
 import * as $$10 from "./islands/ShippingSimulation.tsx";
@@ -23,14 +23,14 @@ const manifest = {
     "./routes/_app.tsx": $0,
   },
   islands: {
-    "./islands/AddToCartButton/vtex.tsx": $$0,
-    "./islands/ContactUsForm.tsx": $$1,
-    "./islands/Drawers.tsx": $$2,
-    "./islands/Header/Buttons.tsx": $$3,
-    "./islands/Header/Drawers.tsx": $$4,
-    "./islands/Header/Searchbar.tsx": $$5,
-    "./islands/Newsletter.tsx": $$6,
-    "./islands/OutOfStock.tsx": $$7,
+    "./islands/ContactUsForm.tsx": $$0,
+    "./islands/Drawers.tsx": $$1,
+    "./islands/Header/Buttons.tsx": $$2,
+    "./islands/Header/Drawers.tsx": $$3,
+    "./islands/Header/Searchbar.tsx": $$4,
+    "./islands/Newsletter.tsx": $$5,
+    "./islands/ProductDetails/Buttons.tsx": $$6,
+    "./islands/ProductDetails/Modals.tsx": $$7,
     "./islands/ProductImageZoom.tsx": $$8,
     "./islands/SearchControls.tsx": $$9,
     "./islands/ShippingSimulation.tsx": $$10,

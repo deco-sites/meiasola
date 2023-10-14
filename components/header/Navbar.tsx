@@ -69,22 +69,20 @@ interface ColorProps {
   text_body: string;
 }
 
-function generateNavbarStyles(
-  {
-    background_top,
-    text_top,
-    background_body,
-    text_body,
-    startWithtransparent,
-  }: ColorProps,
-) {
+function generateNavbarStyles({
+  background_top,
+  text_top,
+  background_body,
+  text_body,
+  startWithtransparent,
+}: ColorProps) {
   return `
   .my-custom-navbar {
     background-color: ${startWithtransparent ? "transparent" : background_top};
     color: ${text_top}; 
   }
 
-  .my-custom-navbar:has(.navbar-content:hover,.searchbar-input:focus,.searchbar-mobile),.my-custom-navbar-active {
+  .my-custom-navbar:has(.navbar-content:hover,.searchbar-input:focus,.searchbar-mobile),.my-custom-navbar-active, .searchbar-mobile {
     background-color: ${background_body};
     color: ${text_body};
   }
@@ -146,7 +144,9 @@ function Navbar({ menu, wishlist, myaccount, search, colors }: Props) {
 
             <IslandMenuButton className="desktop:hidden" />
             <ul class="hidden desktop:flex items-center gap-3 monitor:gap-5 h-full">
-              {menu?.items?.map((item) => <NavItem {...item} />)}
+              {menu?.items?.map((item) => (
+                <NavItem {...item} />
+              ))}
             </ul>
           </div>
 

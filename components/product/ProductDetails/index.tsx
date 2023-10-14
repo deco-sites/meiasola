@@ -1,0 +1,101 @@
+import type { ProductDetailsPage } from "apps/commerce/types.ts";
+import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
+
+import { SendEventOnLoad } from "$store/components/Analytics.tsx";
+import Button from "$store/components/ui/Button.tsx";
+
+import { useOffer } from "$store/sdk/useOffer.ts";
+
+import {
+  Name,
+  Prices,
+  Sizes,
+  Seller,
+  Actions,
+  Colors,
+  Description,
+  Images,
+} from "$store/components/product/ProductDetails/Sections.tsx";
+
+import type { Props as SizeGuideProps } from "$store/components/product/ProductDetails/Modals/SizeGuide.tsx";
+
+export interface Props {
+  /** @title Integration */
+  page: ProductDetailsPage | null;
+  size: SizeGuideProps;
+}
+
+function NotFound() {
+  return (
+    <div class="w-full flex justify-center items-center py-28">
+      <div class="flex flex-col items-center justify-center gap-6">
+        <span class="font-medium text-2xl">Página não encontrada</span>
+        <a href="/">
+          <Button>Voltar à página inicial</Button>
+        </a>
+      </div>
+    </div>
+  );
+}
+
+function Details({
+  page,
+  sizeProps,
+}: {
+  page: ProductDetailsPage;
+  sizeProps: SizeGuideProps;
+}) {
+  const { price = 0, listPrice, seller = "1" } = useOffer(page.product.offers);
+
+  return (
+    <div class="col-span-4 flex flex-col gap-8">
+      <Name {...page} />
+      <Prices product={page.product} />
+      <Sizes product={page.product} sizeProps={sizeProps} />
+      <Seller product={page.product} />
+      <Actions product={page.product} />
+      <Colors product={page.product} />
+      <Description product={page.product} />
+      {/* <ShippingSimulation
+        items={[
+          {
+            id: Number(page.product.sku),
+            quantity: 1,
+            seller,
+          },
+        ]}
+      /> */}
+
+      <SendEventOnLoad
+        event={{
+          name: "view_item",
+          params: {
+            items: [
+              mapProductToAnalyticsItem({
+                product: page.product,
+                breadcrumbList: page.breadcrumbList,
+                price,
+                listPrice,
+              }),
+            ],
+          },
+        }}
+      />
+    </div>
+  );
+}
+
+function ProductDetails({ page, size }: Props) {
+  if (page) {
+    return (
+      <div class="container grid grid-cols-4 laptop:grid-cols-12 gap-4 desktop:gap-5 laptop:py-11 text-black">
+        <Images images={page.product.image} />
+        <Details page={page} sizeProps={size} />
+      </div>
+    );
+  }
+
+  return <NotFound />;
+}
+
+export default ProductDetails;

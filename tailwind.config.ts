@@ -54,6 +54,7 @@ export default {
     },
     letterSpacing: {
       normal: "0px",
+      large: "1.92px",
       wide: "3.84px",
       widest: "4.32px",
     },
