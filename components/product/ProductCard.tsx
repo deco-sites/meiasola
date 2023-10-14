@@ -66,7 +66,7 @@ function ProductCard(
       />
 
       {/* Product Images */}
-      <div class="relative overflow-hidden bg-element px-4 py-11 shrink-0">
+      <div class="relative overflow-hidden bg-element px-4 py-11 shrink-0 h-[345px] items-center flex justify-center object-center">
         {/* Wishlist button */}
         <div class="absolute top-4 right-4 z-10">
           <WishlistButton
@@ -86,25 +86,25 @@ function ProductCard(
           : null}
 
         <Image
-          width={135}
-          height={135}
+          width={364}
+          height={264}
           fit="contain"
           loading={preload ? "eager" : "lazy"}
           fetchPriority={preload ? "high" : "auto"}
           src={front.url!}
           alt={front.alternateName ?? "Primeira imagem do produto"}
-          className="w-full h-full mix-blend-multiply block group-hover:hidden"
+          className="mix-blend-multiply block group-hover:hidden"
         />
         <Image
-          width={135}
-          height={135}
+          width={364}
+          height={264}
           fit="contain"
           loading="lazy"
           fetchPriority="auto"
           src={back?.url ?? front.url!}
           alt={back?.alternateName ?? front.alternateName ??
             "Segunda imagem do produto"}
-          className="w-full h-full mix-blend-multiply hidden group-hover:block"
+          className="mix-blend-multiply hidden group-hover:block"
         />
       </div>
 
