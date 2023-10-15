@@ -66,7 +66,7 @@ export default function AddToCartButton(props: Props) {
 
   return (
     <Button
-      disabled={loading}
+      loading={loading}
       onClick={onClick}
       data-deco="add-to-cart"
       class={
@@ -75,9 +75,7 @@ export default function AddToCartButton(props: Props) {
           : "flex justify-center gap-2 text-small underline text-black h-fit p-0 font-normal w-full bg-transparent hover:bg-transparent normal-case disabled:bg-transparent"
       }
     >
-      {loading ? (
-        <span class="loading loading-spinner h-3 w-3 loading-current"></span>
-      ) : props.children ? (
+      {props.children ? (
         props.children
       ) : (
         <>

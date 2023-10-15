@@ -95,7 +95,7 @@ function CartItem({
                 });
             })}
           >
-            <Icon id="Trash" size={16} class="text-gray-2" />
+            <Icon id="Trash" size={16} class="text-grey-2" />
           </Button>
         </div>
         <div class="flex align-baseline items-end justify-between gap-2">
