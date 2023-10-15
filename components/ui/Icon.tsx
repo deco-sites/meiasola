@@ -21,6 +21,7 @@ export type AvailableIcons =
   | "WhatsApp"
   | "Menu"
   | "XMark"
+  | "Info"
   | "Ruler"
   | "Location"
   | "Trash";
