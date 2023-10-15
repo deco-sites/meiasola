@@ -74,6 +74,8 @@ export function Prices({
   const discountPercentage =
     listPrice && price ? Math.ceil(100 - (price / listPrice) * 100) : 0;
 
+  const showFreeShipping = listPrice >= 100; // get this number from admin, is the same number of free shipping in cart
+
   return (
     <div class="flex flex-col gap-2">
       {discountPercentage > 0 && (
@@ -94,6 +96,12 @@ export function Prices({
             </div>
           )}
         </span>
+        {showFreeShipping && (
+          <div class="bg-green-1 text-green-2 text-small p-1 flex items-center gap-1 leading-none font-bold">
+            FRETE GRÁTIS
+            <Icon id="Info" class="h-3.5 w-3.5 shrink-0" />
+          </div>
+        )}
       </div>
 
       {installments && (
