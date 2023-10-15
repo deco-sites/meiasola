@@ -82,7 +82,7 @@ function Result({
         </aside>
         <div class="col-span-4 laptop:col-span-9 flex flex-col items-center gap-6 laptop:gap-10">
           <ProductGallery products={products} />
-          <IslandLoadMore />
+          {pageInfo.nextPage && <IslandLoadMore />}
         </div>
       </div>
 
