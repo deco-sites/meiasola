@@ -19,7 +19,9 @@ const loader = (
   const { url: baseUrl } = req;
   const url = new URL(baseUrl);
 
-  const filters = page.filters.filter((filter) => filter.key !== "cor");
+  const filtersWithOutColors = page.filters.filter((filter) =>
+    filter.key !== "cor"
+  );
 
   const productColors: string[] = [];
 
@@ -30,7 +32,7 @@ const loader = (
       )?.value;
 
       if (color) productColors.push(color);
-    })
+    });
   });
 
   const comingColorFilters = page.filters.find((filter) =>
@@ -45,8 +47,6 @@ const loader = (
     values: [],
   };
 
-  console.log(page.pageInfo)
-
   if (comingColorFilters) {
     const filteredValues = comingColorFilters.values.filter((option) =>
       productColors.includes(option.label)
@@ -56,11 +56,49 @@ const loader = (
     filteredColorsFilters.values = filteredValues;
   }
 
+  const sellers = [
+    { id: "1", name: "Meia Sola" },
+    { id: "lancaperfume", name: "Lança Perfume" },
+    // { id: "Lojamyft", name: "Lojamyft" },
+    // { id: "MSL", name: "Lojamyft" },
+  ];
+
+  const sellerFilter: Filter = {
+    "@type": "FilterToggle",
+    key: "seller",
+    label: "Vendedor",
+    quantity: sellers.length,
+    values: sellers.map((seller) => {
+      const sellerSearchParam = `filter.seller=${seller.id}`;
+
+      const searchIsEmpty = url.search === "";
+
+      let search = searchIsEmpty ? "?" : url.search;
+      const selected = search.includes(sellerSearchParam);
+      if (selected) {
+        search = search.replace(`${sellerSearchParam}`, "");
+      } else {
+        search += "&" + sellerSearchParam;
+      }
+
+      search = search.replace("&&", "&");
+      search = search.replace("?&", "?");
+
+      return {
+        value: seller.id,
+        selected,
+        url: search === "?" ? "" : search,
+        label: seller.name,
+      };
+    }),
+  };
+
   return {
     ...page,
     filters: [
-      ...filters,
+      ...filtersWithOutColors,
       filteredColorsFilters,
+      sellerFilter,
     ],
     search: {
       term: url.searchParams.get("q"),
