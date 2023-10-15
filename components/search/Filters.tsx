@@ -75,7 +75,7 @@ function Filters({ filters }: Props) {
         if (filter.quantity > 0 && filter.label !== "Departamento") {
           return (
             <>
-              {index !== 0 && <Divider />}
+              <Divider className={index === 0 ? "hidden laptop:flex" : ""} />
               <li class="flex flex-col gap-3">
                 <span class="font-medium text-large">{filter.label}</span>
                 <FilterValues {...filter} />

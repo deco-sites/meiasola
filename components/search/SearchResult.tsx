@@ -8,6 +8,7 @@ import Breadcrumb from "$store/components/ui/Breadcrumb.tsx";
 import { useOffer } from "$store/sdk/useOffer.ts";
 import ProductGallery from "$store/components/product/ProductGallery.tsx";
 import Filters from "$store/components/search/Filters.tsx";
+import IslandLoadMore from "$store/islands/LoadMore.tsx";
 
 import {
   IslandButtonFilters,
@@ -70,7 +71,7 @@ function Result({
         <aside class="flex flex-col gap-6 col-span-3">
           <span
             class={`text-black uppercase text-small font-bold ${
-              search && "laptop:hidden"
+              search?.term && "laptop:hidden"
             }`}
           >
             {pageInfo.records} itens
@@ -79,8 +80,9 @@ function Result({
             <Filters filters={filters} />
           </div>
         </aside>
-        <div class="flex col-span-4 laptop:col-span-9">
+        <div class="col-span-4 laptop:col-span-9 flex flex-col items-center gap-6 laptop:gap-10">
           <ProductGallery products={products} />
+          <IslandLoadMore />
         </div>
       </div>
 
