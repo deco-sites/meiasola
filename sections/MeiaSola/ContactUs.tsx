@@ -135,13 +135,15 @@ export function Input({
           name={name}
           placeholder={placeholder}
           class={`${styles} h-[130px] resize-none`}
-        ></textarea>
+          required
+        />
       ) : (
         <input
           type={type}
           name={name}
           class={` ${styles} h-[35px]`}
           placeholder={placeholder}
+          required
         />
       )}
     </div>

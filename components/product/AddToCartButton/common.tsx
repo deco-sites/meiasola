@@ -75,7 +75,7 @@ export default function AddToCartButton(props: Props) {
           : "flex justify-center gap-2 text-small underline text-black h-fit p-0 font-normal w-full bg-transparent hover:bg-transparent normal-case disabled:bg-transparent"
       }
     >
-      {loading ? (
+      {loading.value ? (
         <span class="loading loading-spinner h-3 w-3 loading-current"></span>
       ) : props.children ? (
         props.children

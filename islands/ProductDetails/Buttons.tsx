@@ -32,7 +32,7 @@ export function NotifyMeButton({ productID }: { productID: string }) {
   return (
     <Button
       aria-label="Avise-me quando chegar"
-      class="bg-gray-2 hover:bg-grey-2 text-white w-full !h-[45px] font-normal flex items-center justify-center text-body"
+      class="bg-grey-1 hover:bg-grey-1 text-filter w-full !h-[45px] font-normal flex items-center justify-center text-body"
       onClick={() => {
         displayNotifyMe.value = productID;
       }}
