@@ -2,7 +2,7 @@
 // This file SHOULD be checked into source version control.
 // This file is automatically updated during development when running `dev.ts`.
 
-import * as $$$0 from "./loaders/Layouts/ProductCard.tsx";
+import * as $$$0 from "./loaders/meiasola/myStylePosts.ts";
 import * as $$$1 from "./loaders/meiasola/extensionProductListingPage.ts";
 import * as $$$2 from "./loaders/meiasola/myStylePosts.ts";
 import * as $$$$$$0 from "./sections/Category/CategoryBanner.tsx";
@@ -44,9 +44,9 @@ import * as $$$$$$$$$$$1 from "./apps/decohub.ts";
 
 const manifest = {
   "loaders": {
-    "deco-sites/meiasola/loaders/Layouts/ProductCard.tsx": $$$0,
+    "deco-sites/meiasola/loaders/Layouts/ProductCard.tsx": $$$2,
     "deco-sites/meiasola/loaders/meiasola/extensionProductListingPage.ts": $$$1,
-    "deco-sites/meiasola/loaders/meiasola/myStylePosts.ts": $$$2,
+    "deco-sites/meiasola/loaders/meiasola/myStylePosts.ts": $$$0,
   },
   "sections": {
     "deco-sites/meiasola/sections/Category/CategoryBanner.tsx": $$$$$$0,
