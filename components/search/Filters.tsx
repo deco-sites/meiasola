@@ -17,7 +17,13 @@ export interface Props {
 const isToggle = (filter: Filter): filter is FilterToggle =>
   filter["@type"] === "FilterToggle";
 
-function ValueItem({ url, selected, label, quantity }: FilterToggleValue) {
+function ValueItem({
+  url,
+  selected,
+  label,
+  quantity,
+  showQuantity,
+}: FilterToggleValue & { showQuantity?: boolean }) {
   return (
     <a
       href={url}
@@ -27,7 +33,8 @@ function ValueItem({ url, selected, label, quantity }: FilterToggleValue) {
           : "text-filter block"
       }`}
     >
-      {label} ({quantity}) {selected && <Icon id="XMark" className="h-2 w-2" />}
+      {label} {showQuantity && <>({quantity})</>}{" "}
+      {selected && <Icon id="XMark" className="h-2 w-2" />}
     </a>
   );
 }
@@ -51,7 +58,7 @@ function FilterValues({ key, values }: FilterToggle) {
 
         return (
           <li key={`key-${key}-value-${index}`}>
-            <ValueItem {...item} />
+            <ValueItem {...item} showQuantity={key !== "seller"} />
           </li>
         );
       })}
@@ -60,22 +67,13 @@ function FilterValues({ key, values }: FilterToggle) {
 }
 
 function Filters({ filters }: Props) {
-  const sorted = [...filters].filter(isToggle).sort((a, _) => {
-    if (a.label === "Categoria") return 5;
-    if (a.label === "Subcategoria") return 4;
-    if (a.label === "Marca") return 3;
-    if (a.label === "Preço") return 2;
-    if (a.label === "Tamanho") return 1;
-    return 0;
-  });
-
   return (
     <ul class="flex flex-col gap-6 text-black">
-      {sorted.map((filter, index) => {
+      {filters.filter(isToggle).map((filter, index) => {
         if (filter.quantity > 0 && filter.label !== "Departamento") {
           return (
             <>
-              {index !== 0 && <Divider />}
+              <Divider className={index === 0 ? "hidden laptop:flex" : ""} />
               <li class="flex flex-col gap-3">
                 <span class="font-medium text-large">{filter.label}</span>
                 <FilterValues {...filter} />
