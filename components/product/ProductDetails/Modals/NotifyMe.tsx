@@ -111,15 +111,11 @@ export default function NotifyMeModal() {
 
           <Button
             type="submit"
-            disabled={loading}
+            loading={loading}
             aria-label="Enviar formulário"
             class="bg-black hover:bg-black text-white w-full !h-[45px] font-normal flex items-center justify-center text-body"
           >
-            {loading.value ? (
-              <span class="loading loading-spinner h-3 w-3 loading-current" />
-            ) : (
-              "AVISE-ME"
-            )}
+            AVISE-ME
           </Button>
         </form>
       </div>

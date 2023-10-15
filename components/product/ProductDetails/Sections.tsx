@@ -16,6 +16,10 @@ import {
   NotifyMeButton,
 } from "$store/islands/ProductDetails/Buttons.tsx";
 
+import Slider from "$store/components/ui/Slider.tsx";
+import SliderJS from "$store/islands/SliderJS.tsx";
+import { useId } from "$store/sdk/useId.ts";
+
 import {
   IslandSizeGuide,
   IslandNotifyMe,
@@ -119,10 +123,11 @@ export function Images({
   // repeat array to repeat when have just 1, 2 or 3 images
   const imagesList = [...images, ...images, ...images, ...images].slice(0, 4);
 
+  const id = useId();
+
   return (
     <>
       <div class="hidden laptop:grid grid-cols-2 grid-rows-2 gap-[2px] col-span-8 pr-5">
-        {/* repeat array to repeat when have just 1, 2 or 3 images */}
         {imagesList.map((image) => {
           if (!image.url) return null;
 
@@ -134,12 +139,44 @@ export function Images({
                 height={400}
                 fit="contain"
                 loading="eager"
-                fetchPriority="auto"
+                fetchPriority="high"
                 class="mix-blend-multiply h-full w-full object-cover flex-1"
               />
             </div>
           );
         })}
+      </div>
+      <div
+        id={id}
+        class="relative laptop:hidden col-span-4 -mx-6 mobile:-mx-[50px]"
+      >
+        <Slider class="carousel carousel-start flex gap-4 bg-grey-1">
+          {imagesList.map((image, index) => (
+            <Slider.Item index={index} class="carousel-item w-full">
+              <div class="bg-grey-1 w-full h-[400px] flex-1">
+                <Image
+                  src={image.url}
+                  width={400}
+                  height={400}
+                  fit="contain"
+                  loading="eager"
+                  fetchPriority="high"
+                  class="mix-blend-multiply h-full w-full object-cover flex-1"
+                />
+              </div>
+            </Slider.Item>
+          ))}
+        </Slider>
+
+        <div class="flex gap-8 absolute bottom-6 left-1/2 -translate-x-1/2">
+          {imagesList.map((image, index) => (
+            <Slider.Dot index={index}>
+              <span class="block h-[6px] w-[6px] rounded-full bg-grey-2 group-disabled:bg-black" />
+            </Slider.Dot>
+          ))}
+        </div>
+
+        <SliderJS rootId={id} />
       </div>
     </>
   );
@@ -293,7 +330,7 @@ export function Colors({
               <a
                 href={link}
                 alt={color}
-                class={`block border hover:border-black transition-all duration-300 ease-out w-[64px] h-[72px] bg-gray-1 ${
+                class={`block border hover:border-black transition-all duration-300 ease-out w-[64px] h-[72px] bg-grey-1 ${
                   colorSku === product.sku
                     ? "border-black"
                     : "border-transparent"
@@ -364,5 +401,34 @@ export function Actions({
       <NotifyMeButton productID={product.productID} />
       <IslandNotifyMe />
     </>
+  );
+}
+
+export function CEP({ sku, seller }: { sku: number; seller: string }) {
+  return (
+    <div class="flex flex-col gap-3 text-small">
+      <div class="flex gap-2">
+        <Icon id="Location" class="h-3.5 w-3.5 shrink-0" />
+        Preencha com seu CEP para consultar a disponibilidade nas lojas perto de
+        você.
+      </div>
+      <ShippingSimulation
+        items={[
+          {
+            id: sku,
+            quantity: 1,
+            seller,
+          },
+        ]}
+      />
+      <a
+        href="http://www.buscacep.correios.com.br/sistemas/buscacep/"
+        aria-label="Não sei meu CEP"
+        class="underline text-black text-small"
+        target="_blank"
+      >
+        Não sei meu CEP
+      </a>
+    </div>
   );
 }

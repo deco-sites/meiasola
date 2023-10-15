@@ -1,12 +1,12 @@
-import Button from '$store/components/ui/Button.tsx';
-import { sendEvent } from '$store/sdk/analytics.tsx';
-import { formatPrice } from '$store/sdk/format.ts';
-import { useUI } from '$store/sdk/useUI.ts';
-import { AnalyticsItem } from 'apps/commerce/types.ts';
-import CartItem, { Item, Props as ItemProps } from './CartItem.tsx';
-import Coupon, { Props as CouponProps } from './Coupon.tsx';
-import FreeShippingProgressBar from './FreeShippingProgressBar.tsx';
-import ShippingSimulation from 'deco-sites/meiasola/components/ui/ShippingSimulation.tsx';
+import Button from "$store/components/ui/Button.tsx";
+import { sendEvent } from "$store/sdk/analytics.tsx";
+import { formatPrice } from "$store/sdk/format.ts";
+import { useUI } from "$store/sdk/useUI.ts";
+import { AnalyticsItem } from "apps/commerce/types.ts";
+import CartItem, { Item, Props as ItemProps } from "./CartItem.tsx";
+import Coupon, { Props as CouponProps } from "./Coupon.tsx";
+import FreeShippingProgressBar from "./FreeShippingProgressBar.tsx";
+import ShippingSimulation from "$store/components/ui/ShippingSimulation.tsx";
 
 interface Props {
   items: Item[];
@@ -19,9 +19,9 @@ interface Props {
   coupon?: string;
   freeShippingTarget: number;
   checkoutHref: string;
-  onAddCoupon: CouponProps['onAddCoupon'];
-  onUpdateQuantity: ItemProps['onUpdateQuantity'];
-  itemToAnalyticsItem: ItemProps['itemToAnalyticsItem'];
+  onAddCoupon: CouponProps["onAddCoupon"];
+  onUpdateQuantity: ItemProps["onUpdateQuantity"];
+  itemToAnalyticsItem: ItemProps["itemToAnalyticsItem"];
   installments: number;
 }
 
@@ -45,15 +45,12 @@ function Cart({
   const isEmtpy = items.length === 0;
 
   return (
-    <div
-      class='flex flex-col justify-center items-center overflow-hidden'
-      // style={{ minWidth: "calc(min(100vw, 398px))", maxWidth: "398px" }}
-    >
+    <div class="flex flex-col justify-center items-center overflow-hidden">
       {isEmtpy ? (
-        <div class='flex flex-col w-[398px] items-center justify-center'>
-          <span class='font-medium text-2xl'>Sua sacola está vazia</span>
+        <div class="flex flex-col w-[398px] items-center justify-center">
+          <span class="font-medium text-2xl">Sua sacola está vazia</span>
           <button
-            class='btn-outline btn border-1 border-black mt-4'
+            class="btn-outline btn border-1 border-black mt-4"
             onClick={() => {
               displayCart.value = false;
             }}
@@ -65,8 +62,8 @@ function Cart({
         <>
           {/* Cart Items */}
           <ul
-            role='list'
-            class='mt-6 px-2 flex-grow overflow-y-auto flex flex-col gap-6 w-full'
+            role="list"
+            class="mt-6 px-2 flex-grow overflow-y-auto flex flex-col gap-6 w-full"
           >
             {items.map((item, index) => (
               <li key={index}>
@@ -82,7 +79,7 @@ function Cart({
             ))}
           </ul>
           {/* Free Shipping Bar */}
-          <div class='py-4 w-full border-t border-base-200 '>
+          <div class="py-4 w-full border-t border-base-200 ">
             <FreeShippingProgressBar
               total={total}
               locale={locale}
@@ -91,71 +88,55 @@ function Cart({
             />
           </div>
           {/* Cart Footer */}
-          <footer class='w-full'>
+          <footer class="w-full">
             {/* Subtotal */}
-            <div class=' py-2 flex flex-col'>
-              {/* {discounts > 0 && (
-                  <div class="flex justify-between items-center px-4">
-                    <span class="text-sm">Descontos</span>
-                    <span class="text-sm">
-                      {formatPrice(discounts, currency, locale)}
-                    </span>
-                  </div>
-                )}
-                <div class="w-full flex justify-between px-4 text-sm">
-                  <span>Subtotal</span>
-                  <span class="px-4">
-                    {formatPrice(subtotal, currency, locale)}
-                  </span>
-                </div> */}
+            <div class=" py-2 flex flex-col">
               <Coupon onAddCoupon={onAddCoupon} coupon={coupon} />
               {/* Shipping Simulation */}
-              <div class='mt-5'>
+              <div class="mt-5">
                 <ShippingSimulation
                   items={[
                     {
                       id: Number(1),
                       quantity: 1,
-                      seller: '1',
+                      seller: "1",
                     },
                   ]}
+                  gap
                 />
               </div>
             </div>
 
             {/* Total */}
-            <div class='pt-4 flex flex-col justify-end items-end'>
-              <div class='flex justify-between items-center w-full'>
-                <span class='text-small'>total:</span>
-                <span class='font-bold text-body'>
+            <div class="pt-4 flex flex-col justify-end items-end">
+              <div class="flex justify-between items-center w-full">
+                <span class="text-small">total:</span>
+                <span class="font-bold text-body">
                   {formatPrice(total, currency, locale)}
                 </span>
               </div>
-              <span class='text-small'>
-                ou {installments}x de{' '}
+              <span class="text-small">
+                ou {installments}x de{" "}
                 {formatPrice(total / installments, currency, locale)} sem juros
               </span>
-              {/* <span class="text-sm text-base-300">
-                  Taxas e fretes serão calculados no checkout
-                </span> */}
             </div>
 
-            <div class='flex justify-between mt-9'>
+            <div class="flex justify-between mt-9">
               <button
-                class='w-20 text-small text-left'
-                aria-label='Clique para Fechar'
-                onClick={() => displayCart.value = false}
-                >
+                class="w-20 text-small text-left"
+                aria-label="Clique para Fechar"
+                onClick={() => (displayCart.value = false)}
+              >
                 continuar comprando
               </button>
-              <a class='' href={checkoutHref}>
+              <a class="" href={checkoutHref}>
                 <Button
-                  data-deco='buy-button'
-                  class='btn-primary  p-[18px] w-[167px] h-[46px] text-small text-white normal-case'
+                  data-deco="buy-button"
+                  class="btn-primary  p-[18px] w-[167px] h-[46px] text-small text-white normal-case"
                   disabled={loading || isEmtpy}
                   onClick={() => {
                     sendEvent({
-                      name: 'begin_checkout',
+                      name: "begin_checkout",
                       params: {
                         coupon,
                         currency,

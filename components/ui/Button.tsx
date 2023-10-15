@@ -24,7 +24,11 @@ const Button = forwardRef<HTMLButtonElement, Props>(
       type={type}
       ref={ref}
     >
-      {loading ? <span class="loading loading-spinner" /> : children}
+      {loading ? (
+        <span class="loading loading-spinner loading-current h-3 w-3" />
+      ) : (
+        children
+      )}
     </button>
   )
 );

@@ -21,25 +21,15 @@ const relative = (url: string) => {
   return `${link.pathname}${link.search}`;
 };
 
-function ProductCard(
-  { product, preload, itemListName }: Props,
-) {
-  const {
-    url,
-    productID,
-    name,
-    image: images,
-    offers,
-    isVariantOf,
-  } = product;
+function ProductCard({ product, preload, itemListName }: Props) {
+  const { url, productID, name, image: images, offers, isVariantOf } = product;
   const id = `product-card-${productID}`;
   const productGroupID = isVariantOf?.productGroupID;
   const [front, back] = images ?? [];
   const { listPrice, price } = useOffer(offers);
 
-  const discountPercentage = listPrice && price
-    ? Math.ceil(100 - (price / listPrice * 100))
-    : 0;
+  const discountPercentage =
+    listPrice && price ? Math.ceil(100 - (price / listPrice) * 100) : 0;
 
   return (
     <a
@@ -77,13 +67,11 @@ function ProductCard(
         </div>
 
         {/* Percentage Tag */}
-        {discountPercentage > 0
-          ? (
-            <div class="bg-black text-white text-small font-bold p-1 absolute top-4 left-4 z-10">
-              {discountPercentage}% OFF
-            </div>
-          )
-          : null}
+        {discountPercentage > 0 ? (
+          <div class="bg-black text-white text-small font-bold p-1 absolute top-4 left-4 z-10">
+            {discountPercentage}% OFF
+          </div>
+        ) : null}
 
         <Image
           width={135}
@@ -102,8 +90,11 @@ function ProductCard(
           loading="lazy"
           fetchPriority="auto"
           src={back?.url ?? front.url!}
-          alt={back?.alternateName ?? front.alternateName ??
-            "Segunda imagem do produto"}
+          alt={
+            back?.alternateName ??
+            front.alternateName ??
+            "Segunda imagem do produto"
+          }
           className="w-full h-full mix-blend-multiply hidden group-hover:block"
         />
       </div>
@@ -114,17 +105,14 @@ function ProductCard(
           <p class="text-small text-element-dark leading-none">
             {product.brand?.name}
           </p>
-          <h4 class="text-body leading-none line-clamp-2">
-            {name}
-          </h4>
+          <h4 class="text-body line-clamp-2">{name}</h4>
         </div>
 
-        {discountPercentage > 0 &&
-          (
-            <span class="line-through text-element-dark text-small leading-none">
-              {formatPrice(listPrice, offers!.priceCurrency!)}
-            </span>
-          )}
+        {discountPercentage > 0 && (
+          <span class="line-through text-element-dark text-small leading-none">
+            {formatPrice(listPrice, offers!.priceCurrency!)}
+          </span>
+        )}
 
         <span class="text-body font-bold leading-none">
           {formatPrice(price, offers!.priceCurrency!)}

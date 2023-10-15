@@ -15,9 +15,12 @@ import {
   Colors,
   Description,
   Images,
+  CEP,
 } from "$store/components/product/ProductDetails/Sections.tsx";
 
 import type { Props as SizeGuideProps } from "$store/components/product/ProductDetails/Modals/SizeGuide.tsx";
+
+import ShippingSimulation from "$store/islands/ShippingSimulation.tsx";
 
 export interface Props {
   /** @title Integration */
@@ -56,15 +59,7 @@ function Details({
       <Actions product={page.product} />
       <Colors product={page.product} />
       <Description product={page.product} />
-      {/* <ShippingSimulation
-        items={[
-          {
-            id: Number(page.product.sku),
-            quantity: 1,
-            seller,
-          },
-        ]}
-      /> */}
+      <CEP sku={parseInt(page.product.sku)} seller={seller} />
 
       <SendEventOnLoad
         event={{
@@ -88,7 +83,7 @@ function Details({
 function ProductDetails({ page, size }: Props) {
   if (page) {
     return (
-      <div class="container grid grid-cols-4 laptop:grid-cols-12 gap-4 desktop:gap-5 laptop:py-11 text-black">
+      <div class="container grid grid-cols-4 laptop:grid-cols-12 gap-4 desktop:gap-5 pb-6 laptop:py-11 text-black">
         <Images images={page.product.image} />
         <Details page={page} sizeProps={size} />
       </div>
