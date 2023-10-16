@@ -19,7 +19,7 @@ const Button = forwardRef<HTMLButtonElement, Props>(
   ) => (
     <button
       {...props}
-      class={`btn no-animation p-0 border-0 h-fit min-h-fit text-current ${_class}`}
+      class={`no-animation p-0 border-0 h-fit min-h-fit text-current duration-300 transition-all ease-in-out ${_class}`}
       disabled={disabled || loading}
       type={type}
       ref={ref}

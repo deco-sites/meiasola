@@ -59,8 +59,8 @@ const loader = (
   const sellers = [
     { id: "1", name: "Meia Sola" },
     { id: "lancaperfume", name: "Lança Perfume" },
-    // { id: "Lojamyft", name: "Lojamyft" },
-    // { id: "MSL", name: "Lojamyft" },
+    { id: "Lojamyft", name: "Lojamyft" },
+    { id: "MSL", name: "Lojamyft" },
   ];
 
   const sellerFilter: Filter = {
@@ -88,7 +88,7 @@ const loader = (
         value: seller.id,
         selected,
         url: search === "?" ? "" : search,
-        label: seller.name,
+        label: seller.id === "MSL" ? "MSL" : seller.name,
       };
     }),
   };
@@ -102,7 +102,7 @@ const loader = (
     ],
     search: {
       term: url.searchParams.get("q"),
-      pathname: url.pathname,
+      url
     },
   };
 };

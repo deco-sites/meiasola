@@ -17,7 +17,7 @@ import {
 import IslandSort from "$store/islands/Sort.tsx";
 
 type ProductListingPageAndSearch = ProductListingPage & {
-  search: { term: string | null; pathname: string };
+  search: { term: string | null; url: URL };
 };
 
 export interface Props {
@@ -39,22 +39,24 @@ function Result({
   const { products, filters, breadcrumb, sortOptions, seo, pageInfo, search } =
     page;
 
+  const isSearchPage = search && search.term && search.term != "";
+
   return (
     <>
-      {!search?.term && search?.pathname && images && (
+      {!isSearchPage && images && images.length > 0 && (
         <Image
           images={images}
           breadcrumb={breadcrumb}
-          pathname={search?.pathname}
+          pathname={search.url.pathname}
         />
       )}
 
-      {!search?.term && search?.pathname && sizes && (
+      {!isSearchPage && sizes && sizes.sizes.length > 0 && (
         <Sizes
           title={sizes.title}
           routes={sizes.routesToShow}
           sizes={sizes.sizes}
-          pathname={search.pathname}
+          url={search.url}
         />
       )}
 
@@ -82,7 +84,9 @@ function Result({
         </aside>
         <div class="col-span-4 laptop:col-span-9 flex flex-col items-center gap-6 laptop:gap-10">
           <ProductGallery products={products} />
-          {pageInfo.nextPage && <IslandLoadMore />}
+          {pageInfo.nextPage && (
+            <IslandLoadMore count={pageInfo.recordPerPage ?? 24} />
+          )}
         </div>
       </div>
 
@@ -112,11 +116,13 @@ function Heading({
   sortOptions,
   productsCount,
   searchTerm,
+  title,
 }: {
   searchTerm?: string;
   productsCount: number;
   seo: ProductListingPage["seo"];
   sortOptions: ProductListingPage["sortOptions"];
+  title?: string;
 }) {
   return (
     <div
@@ -135,7 +141,7 @@ function Heading({
         ) : (
           <div class="flex flex-col gap-6 laptop:flex-row laptop:w-3/4 laptop:gap-5 laptop:items-center">
             <h1 class="shrink-0 text-h3 leading-none uppercase font-medium tracking-wide">
-              {(seo?.title ?? "").toLowerCase().replace(" - meia sola", "")}
+              {(seo?.title ?? "")?.split(" ")[0]}
             </h1>
             <p class="laptop:leading-none laptop:line-clamp-2 text-small text-neutral-500">
               {seo?.description}
@@ -164,21 +170,21 @@ interface Size {
    * @title Size
    */
   label: string;
-  link: string;
 }
 
 function Sizes({
   title,
   routes,
   sizes,
-  pathname,
+  url,
 }: {
   title: string;
   routes: Route[];
   sizes: Size[];
-  pathname: string;
+  url: URL;
 }) {
-  if (!routes.findLast((route) => pathname.includes(route.label))) return null;
+  if (!routes.findLast((route) => url.pathname.includes(route.label)))
+    return null;
 
   return (
     <div class="bg-black text-white text-large py-6 laptop:py-5">
@@ -187,13 +193,28 @@ function Sizes({
           {title}
         </h4>
         <ul class="flex flex-wrap justify-center gap-8 laptop:gap-6 desktop:gap-8">
-          {sizes.map((size, index) => {
+          {sizes?.map((size, index) => {
+            const sizeUrl = new URL(url.href);
+
+            const isActive = sizeUrl.search.includes(
+              `filter.tamanho=${size.label}`
+            );
+
+            if (isActive) sizeUrl.searchParams.delete("filter.tamanho");
+            else {
+              if (sizeUrl.searchParams.get("filter.tamanho"))
+                sizeUrl.searchParams.set("filter.tamanho", size.label);
+              else sizeUrl.searchParams.append("filter.tamanho", size.label);
+            }
+
             return (
               <li key={"size-" + index}>
                 <a
-                  href={pathname + size.link}
+                  href={sizeUrl.href}
                   aria-label={`Numeração ${size.label}`}
-                  class="border border-white p-2.5 block hover:bg-white hover:text-black transition-all duration-300 ease-out"
+                  class={`border border-white p-2.5 block hover:bg-white hover:text-black ${
+                    isActive ? "bg-white text-black" : ""
+                  } transition-all duration-300 ease-out`}
                 >
                   {size.label}
                 </a>
