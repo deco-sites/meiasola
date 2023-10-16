@@ -19,7 +19,7 @@ export default function LoadMore({ count }: { count: number }) {
       const page =
         await Runtime.vtex.loaders.intelligentSearch.productListingPage({
           count,
-          page: products.value.length / 24 + 2,
+          page: products.value.length / count + 2,
         });
 
       if (page?.products && page.products.length > 0) {
