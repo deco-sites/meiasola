@@ -74,7 +74,7 @@ function ProductCard({ product, preload, itemListName }: Props) {
         ) : null}
 
         <Image
-          width={364}
+          width={264}
           height={264}
           fit="contain"
           loading={preload ? "eager" : "lazy"}
@@ -84,7 +84,7 @@ function ProductCard({ product, preload, itemListName }: Props) {
           className="mix-blend-multiply block group-hover:hidden"
         />
         <Image
-          width={364}
+          width={264}
           height={264}
           fit="contain"
           loading="lazy"

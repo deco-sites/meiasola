@@ -42,11 +42,11 @@ function ProductShelf({ title, description, seeMoreUrl, products }: Props) {
       </div>
 
       <div id={id}>
-        <Slider class="carousel carousel-start flex gap-4">
+        <Slider class="carousel carousel-start flex gap-4 laptop:gap-5 overflow-y-hidden">
           {products?.map((product, index) => (
             <Slider.Item
               index={index}
-              class="carousel-item w-[288px] monitor:w-[288px] "
+              class="carousel-item w-[288px] monitor:w-[288px]"
             >
               <ProductCard product={product} itemListName={title} />
             </Slider.Item>

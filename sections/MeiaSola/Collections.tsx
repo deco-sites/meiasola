@@ -19,7 +19,7 @@ function Collections({ variant, collections }: Props) {
   if (variant === "one") {
     return (
       <div class="container py-3 tablet:py-11 text-black">
-        <div class="flex gap-5 overflow-x-scroll snap-x snap-mandatory scrollbar-none">
+        <div class="flex gap-5 overflow-y-hidden overflow-x-scroll snap-x snap-mandatory scrollbar-none">
           {collections?.map((collection, index) => {
             return (
               <a
@@ -58,7 +58,7 @@ function Collections({ variant, collections }: Props) {
   if (variant === "two") {
     return (
       <div class="container py-3 mt-3 tablet:mt-7 text-black">
-        <div class="flex desktop:justify-center gap-5 overflow-x-scroll snap-x snap-mandatory scrollbar-none">
+        <div class="flex desktop:justify-center gap-5 overflow-y-hidden overflow-x-scroll snap-x snap-mandatory scrollbar-none">
           {collections?.map((collection, index) => {
             return (
               <a

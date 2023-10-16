@@ -146,9 +146,9 @@ export function Images({
                 width={400}
                 height={400}
                 fit="contain"
-                loading="eager"
+                loading="low"
                 fetchPriority="high"
-                class="mix-blend-multiply h-full w-full object-cover flex-1"
+                class="mix-blend-multiply h-full w-full object-contain flex-1"
               />
             </div>
           );
@@ -167,9 +167,9 @@ export function Images({
                   width={400}
                   height={400}
                   fit="contain"
-                  loading="eager"
+                  loading="low"
                   fetchPriority="high"
-                  class="mix-blend-multiply h-full w-full object-cover flex-1"
+                  class="mix-blend-multiply h-full w-full object-contain flex-1"
                 />
               </div>
             </Slider.Item>

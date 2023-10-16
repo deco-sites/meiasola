@@ -8,7 +8,7 @@ import { Product } from "apps/commerce/types.ts";
 import Button from "$store/components/ui/Button.tsx";
 import ProductGallery from "$store/components/product/ProductGallery.tsx";
 
-export default function LoadMore() {
+export default function LoadMore({ count }: { count: number }) {
   const loading = useSignal(false);
   const products = useSignal<Product[]>([]);
 
@@ -16,26 +16,11 @@ export default function LoadMore() {
     try {
       loading.value = true;
 
-      const url = new URL(window.location.href);
-      const req = new Request(url);
-
       const page =
-        await Runtime.vtex.loaders.intelligentSearch.productListingPage(
-          {
-            count: 24,
-            query: url.searchParams.get("q"),
-            sort: url.searchParams.get("sort") ?? "release:desc",
-            page: products.value.length / 24 + 1, // mudar para  1
-            // selectedFacets: url.search
-            //   .slice(1)
-            //   .split("&")
-            //   .map((param) => ({
-            //     key: param.split("=")[0],
-            //     value: url.searchParams.get(param.split("=")[0]),
-            //   })),
-          },
-          req
-        );
+        await Runtime.vtex.loaders.intelligentSearch.productListingPage({
+          count,
+          page: products.value.length / count + 2,
+        });
 
       if (page?.products && page.products.length > 0) {
         products.value = [...products.value, ...page.products];

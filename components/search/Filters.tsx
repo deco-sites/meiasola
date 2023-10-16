@@ -70,7 +70,7 @@ function Filters({ filters }: Props) {
   return (
     <ul class="flex flex-col gap-6 text-black">
       {filters.filter(isToggle).map((filter, index) => {
-        if (filter.quantity > 0 && filter.label !== "Departamento") {
+        if (filter.quantity > 0) {
           return (
             <>
               <Divider className={index === 0 ? "hidden laptop:flex" : ""} />

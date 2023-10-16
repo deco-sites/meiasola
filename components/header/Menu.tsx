@@ -20,20 +20,22 @@ export interface Props {
   items: NavItemProps[];
 }
 
-function Menu(
-  { items, myaccount, wishlist }: Props & {
-    wishlist: WishListButtonProps;
-    myaccount: MyAccountButtonProps;
-  },
-) {
+function Menu({
+  items,
+  myaccount,
+  wishlist,
+}: Props & {
+  wishlist: WishListButtonProps;
+  myaccount: MyAccountButtonProps;
+}) {
   const submenu = useSignal<SubMenuProps | undefined>(undefined);
 
   return (
     <Drawer
       open={!!submenu.value}
-      onClose={() => submenu.value = undefined}
+      onClose={() => (submenu.value = undefined)}
       aside={
-        <Aside onClose={() => submenu.value = undefined} chevronLeft>
+        <Aside onClose={() => (submenu.value = undefined)} chevronLeft>
           {submenu.value && <SubMenu {...submenu.value} />}
         </Aside>
       }
@@ -43,7 +45,7 @@ function Menu(
           {items?.map((item) => (
             <MenuItem
               {...item}
-              openSubmenu={() => submenu.value = item.submenu}
+              openSubmenu={() => (submenu.value = item.submenu)}
             />
           ))}
         </ul>
@@ -111,25 +113,24 @@ function SubMenu({ sections }: SubMenuProps) {
   );
 }
 
-function MenuItem(
-  { label, divider, href, icon, submenu, openSubmenu }: NavItemProps & {
-    openSubmenu: () => void;
-  },
-) {
-  const content = icon
-    ? (
-      <Icon
-        id={icon.src}
-        width={icon.width}
-        height={icon.height}
-      />
-    )
-    : (
-      <span
-        class="text-large uppercase font-medium"
-        dangerouslySetInnerHTML={{ __html: label }}
-      />
-    );
+function MenuItem({
+  label,
+  divider,
+  href,
+  icon,
+  submenu,
+  openSubmenu,
+}: NavItemProps & {
+  openSubmenu: () => void;
+}) {
+  const content = icon ? (
+    <Icon id={icon.src} width={icon.width} height={icon.height} />
+  ) : (
+    <span
+      class="text-large uppercase font-medium"
+      dangerouslySetInnerHTML={{ __html: label }}
+    />
+  );
 
   return (
     <>
@@ -139,13 +140,18 @@ function MenuItem(
         </li>
       )}
       <li>
-        {!submenu
-          ? <a href={href} class="my-4 w-fit inline-flex">{content}</a>
-          : (
-            <Button onClick={openSubmenu} class="py-4">
-              {content}
-            </Button>
-          )}
+        {!submenu ? (
+          <a href={href} class="my-4 w-fit inline-flex">
+            {content}
+          </a>
+        ) : (
+          <Button
+            onClick={openSubmenu}
+            class="py-4 bg-transparent hover:bg-transparent"
+          >
+            {content}
+          </Button>
+        )}
       </li>
     </>
   );
