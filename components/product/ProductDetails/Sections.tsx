@@ -151,7 +151,7 @@ export function Images({
 
   if (!justOneImage && images.length < 4) {
     // repeat array to repeat when have just 2 or 3 images
-    imagesList = [...images, ...images].slice(0, 4);
+    imagesList = [...images, ...images];
   }
 
   const id = useId();
@@ -163,7 +163,7 @@ export function Images({
           justOneImage ? "grid-cols-1 grid-rows-1" : "grid-cols-2 grid-rows-2"
         } gap-[2px] col-span-8 pr-5`}
       >
-        {imagesList.map((image, index) => {
+        {imagesList.slice(0, 4).map((image, index) => {
           if (!image.url) return null;
 
           return (
