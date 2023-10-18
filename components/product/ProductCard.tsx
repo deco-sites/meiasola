@@ -6,6 +6,7 @@ import { SendEventOnClick } from "$store/components/Analytics.tsx";
 import WishlistButton from "$store/islands/WishlistButton.tsx";
 import { formatPrice } from "$store/sdk/format.ts";
 import { useOffer } from "$store/sdk/useOffer.ts";
+import { useVariantPossibilities } from "$store/sdk/useVariantPossiblities.ts";
 
 interface Props {
   product: Product;
@@ -26,15 +27,31 @@ function ProductCard({ product, preload, itemListName }: Props) {
   const id = `product-card-${productID}`;
   const productGroupID = isVariantOf?.productGroupID;
   const [front, back] = images ?? [];
-  const { listPrice, price } = useOffer(offers);
+  const { listPrice, price, availability } = useOffer(offers);
 
   const discountPercentage =
     listPrice && price ? Math.ceil(100 - (price / listPrice) * 100) : 0;
 
+  let availableUrl = url;
+
+  // make this to open product with an available size
+  if (availability !== "https://schema.org/InStock") {
+    const possibilities = useVariantPossibilities(product);
+    const sizes = possibilities["Tamanho"];
+    if (sizes && Object.values(sizes).length > 1) {
+      for (const variant of Object.values(sizes)) {
+        if (variant[0].availability === "https://schema.org/InStock") {
+          availableUrl = variant[0].url;
+          break;
+        }
+      }
+    }
+  }
+
   return (
     <a
       id={id}
-      href={url && relative(url)}
+      href={availableUrl && relative(availableUrl)}
       class="group flex flex-col gap-4 w-full text-black"
       data-deco="view-product"
     >
