@@ -7,7 +7,7 @@ import Breadcrumb from "$store/components/ui/Breadcrumb.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
 import Button from "$store/components/ui/Button.tsx";
 import Divider from "$store/components/ui/Divider.tsx";
-import ShippingSimulation from "$store/components/ui/ShippingSimulation.tsx";
+import ShippingSimulation from "$store/islands/ShippingSimulation.tsx";
 import { FREE_SHIPPING_VALUE } from "$store/components/constants.ts";
 
 import WishlistButton from "$store/islands/WishlistButton.tsx";
@@ -300,8 +300,6 @@ export function Sizes({
       </ul>
 
       <IslandSizeGuide {...sizeProps} />
-
-      <Divider />
     </div>
   );
 }
@@ -446,8 +444,9 @@ export function Actions({
 
 export function CEP({ sku, seller }: { sku: number; seller: string }) {
   return (
-    <div class="flex flex-col gap-3 text-small">
-      <div class="flex gap-2">
+    <div class="flex flex-col gap-3 text-small group relative">
+      <Divider className="absolute group-[&:has(#shipping-result)]:-top-4 group-[&:not(:has(#shipping-result))]:hidden" />
+      <div class="flex gap-2 group-[&:has(#shipping-result)]:hidden">
         <Icon id="Location" class="h-3.5 w-3.5 shrink-0" />
         Preencha com seu CEP para consultar a disponibilidade nas lojas perto de
         você.
@@ -464,7 +463,7 @@ export function CEP({ sku, seller }: { sku: number; seller: string }) {
       <a
         href="http://www.buscacep.correios.com.br/sistemas/buscacep/"
         aria-label="Não sei meu CEP"
-        class="underline text-black text-small"
+        class="underline text-black text-small group-[&:has(#shipping-result)]:hidden"
         target="_blank"
       >
         Não sei meu CEP
