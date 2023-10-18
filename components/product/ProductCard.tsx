@@ -106,7 +106,7 @@ function ProductCard({ product, preload, itemListName }: Props) {
             {product.brand?.name}
           </p>
           <h4 class="text-body line-clamp-2 capitalize">
-            {isVariantOf?.name ?? name}
+            {isVariantOf?.name.toLowerCase() ?? name.toLowerCase()}
           </h4>
         </div>
 

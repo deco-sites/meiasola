@@ -44,8 +44,10 @@ export function Name({ breadcrumbList, product, seo }: ProductDetailsPage) {
       )}
 
       {/* NAME AND WISHLIST */}
-      <span class="flex w-full items-center justify-between gap-3">
-        <h1 class="text-subtitle font-normal">{seo?.title ?? product.name}</h1>
+      <span class="flex w-full items-center justify-between gap-3 capitalize">
+        <h1 class="text-subtitle font-normal">
+          {seo?.title?.toLowerCase() ?? product.name.toLowerCase()}
+        </h1>
         <WishlistButton
           variant="icon"
           productGroupID={product.isVariantOf?.productGroupID}
