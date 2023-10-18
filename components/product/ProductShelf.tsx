@@ -61,7 +61,7 @@ function ProductShelf({
           {products?.map((product, index) => (
             <Slider.Item
               index={index}
-              class={`carousel-item w-[288px] monitor:w-[288px] ${
+              class={`carousel-item w-[310px] desktop:w-[calc((100vw-70px-70px)/4-16px)] monitor:w-[310px] ${
                 forceFullWidth
                   ? index === 0
                     ? "snap-start"
