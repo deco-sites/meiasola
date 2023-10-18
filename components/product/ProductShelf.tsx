@@ -14,16 +14,27 @@ export interface Props {
   description?: string;
   seeMoreUrl?: string;
   products: Product[] | null;
+  forceFullWidth?: boolean;
 }
 
-function ProductShelf({ title, description, seeMoreUrl, products }: Props) {
+function ProductShelf({
+  title,
+  description,
+  seeMoreUrl,
+  products,
+  forceFullWidth,
+}: Props) {
   const id = useId();
 
   if (!products || products?.length === 0) return null;
 
   return (
-    <div class="w-full container relative py-6 flex flex-col gap-6 text-black">
-      <div class="flex justify-between">
+    <div
+      class={`w-full ${
+        forceFullWidth ? "" : "container"
+      } relative py-6 flex flex-col gap-6 text-black`}
+    >
+      <div class={`flex justify-between ${forceFullWidth ? "container" : ""}`}>
         <div class="flex items-end gap-4">
           <h3 class="font-bold text-subtitle tracking-widest leading-none">
             {title}
@@ -42,11 +53,23 @@ function ProductShelf({ title, description, seeMoreUrl, products }: Props) {
       </div>
 
       <div id={id}>
-        <Slider class="carousel carousel-start flex gap-4 laptop:gap-5 overflow-y-hidden">
+        <Slider
+          class={`carousel carousel-start flex ${
+            forceFullWidth ? "gap-[2px]" : "gap-4 laptop:gap-5"
+          } overflow-y-hidden`}
+        >
           {products?.map((product, index) => (
             <Slider.Item
               index={index}
-              class="carousel-item w-[288px] monitor:w-[288px]"
+              class={`carousel-item w-[288px] monitor:w-[288px] ${
+                forceFullWidth
+                  ? index === 0
+                    ? "snap-start"
+                    : index === products.length - 1
+                    ? "snap-end"
+                    : "snap-center"
+                  : "snap-start"
+              }`}
             >
               <ProductCard product={product} itemListName={title} />
             </Slider.Item>
