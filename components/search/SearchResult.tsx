@@ -1,3 +1,5 @@
+import { Partial } from "$fresh/runtime.ts";
+
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import { ProductListingPage } from "apps/commerce/types.ts";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
@@ -9,6 +11,7 @@ import { useOffer } from "$store/sdk/useOffer.ts";
 import ProductGallery from "$store/components/product/ProductGallery.tsx";
 import Filters from "$store/components/search/Filters.tsx";
 import IslandLoadMore from "$store/islands/LoadMore.tsx";
+import Button from "$store/components/ui/Button.tsx";
 
 import {
   IslandButtonFilters,
@@ -40,6 +43,8 @@ function Result({
     page;
 
   const isSearchPage = search && search.term && search.term != "";
+  const loadMoreURL = new URL(search.url.href);
+  loadMoreURL.searchParams.set("page", pageInfo.currentPage + 1);
 
   return (
     <>
@@ -82,10 +87,21 @@ function Result({
             <Filters filters={filters} />
           </div>
         </aside>
-        <div class="col-span-4 laptop:col-span-9 flex flex-col items-center gap-6 laptop:gap-10">
-          <ProductGallery products={products} />
+        <div
+          class="col-span-4 laptop:col-span-9 flex flex-col items-center gap-6 laptop:gap-10"
+          f-client-nav
+        >
+          <Partial name="product-listing" mode="append">
+            <ProductGallery products={products} />
+          </Partial>
           {pageInfo.nextPage && (
-            <IslandLoadMore count={pageInfo.recordPerPage ?? 24} />
+            <Button
+              aria-label="Ver mais produtos"
+              class="btn-ghost !border border-black uppercase tracking-large text-small text-black bg-white hover:bg-black hover:text-white disabled:bg-black disabled:text-white font-normal p-2.5 !w-full mobile:!w-fit mt-4 laptop:mt-5"
+              f-partial={`${loadMoreURL.pathname}${loadMoreURL.search}`}
+            >
+              VER MAIS
+            </Button>
           )}
         </div>
       </div>

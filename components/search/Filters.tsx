@@ -1,3 +1,5 @@
+import { Partial } from "$fresh/runtime.ts";
+
 import type {
   Filter,
   FilterToggle,
@@ -27,6 +29,7 @@ function ValueItem({
   return (
     <a
       href={url}
+      f-partial={url}
       class={`text-small ${
         selected
           ? "text-black border rounded-full px-3 py-1 inline-flex items-center gap-2 w-fit"
@@ -42,33 +45,37 @@ function ValueItem({
 function FilterValues({ key, values }: FilterToggle) {
   return (
     <ul class="flex flex-col gap-3">
-      {values.map((item, index) => {
-        if (key === "price") {
-          const range = parseRange(item.value);
+      <Partial name={`listing-filters-mobile-${key}`} mode="append">
+        {values.map((item, index) => {
+          if (key === "price") {
+            const range = parseRange(item.value);
+
+            return (
+              range && (
+                <ValueItem
+                  {...item}
+                  label={`${formatPrice(range.from)} a ${formatPrice(
+                    range.to
+                  )}`}
+                />
+              )
+            );
+          }
 
           return (
-            range && (
-              <ValueItem
-                {...item}
-                label={`${formatPrice(range.from)} a ${formatPrice(range.to)}`}
-              />
-            )
+            <li key={`key-${key}-value-${index}`}>
+              <ValueItem {...item} showQuantity={key !== "seller"} />
+            </li>
           );
-        }
-
-        return (
-          <li key={`key-${key}-value-${index}`}>
-            <ValueItem {...item} showQuantity={key !== "seller"} />
-          </li>
-        );
-      })}
+        })}
+      </Partial>
     </ul>
   );
 }
 
 function Filters({ filters }: Props) {
   return (
-    <ul class="flex flex-col gap-6 text-black">
+    <ul class="flex flex-col gap-6 text-black" f-client-nav>
       {filters.filter(isToggle).map((filter, index) => {
         if (filter.quantity > 0) {
           return (
