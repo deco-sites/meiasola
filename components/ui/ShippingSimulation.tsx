@@ -120,7 +120,7 @@ function ShippingSimulation({ items, gap }: Props & { gap?: boolean }) {
 
       {simulateResult.value && (
         <>
-          <div class="flex justify-between">
+          <div id="shipping-result" class="flex justify-between">
             <span class="text-small font-bold">{postalCode.value}</span>
             <button
               class="text-small font-normal"
