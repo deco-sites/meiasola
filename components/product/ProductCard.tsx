@@ -1,7 +1,7 @@
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import type { Product } from "apps/commerce/types.ts";
-import Image from "apps/website/components/Image.tsx";
 
+import Image from "$store/components/ui/Image.tsx";
 import { SendEventOnClick } from "$store/components/Analytics.tsx";
 import WishlistButton from "$store/islands/WishlistButton.tsx";
 import { formatPrice } from "$store/sdk/format.ts";

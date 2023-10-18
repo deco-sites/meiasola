@@ -1,7 +1,7 @@
 import type { ProductDetailsPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
-import Image from "apps/website/components/Image.tsx";
 
+import Image from "$store/components/ui/Image.tsx";
 import { SendEventOnLoad } from "$store/components/Analytics.tsx";
 import Breadcrumb from "$store/components/ui/Breadcrumb.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
