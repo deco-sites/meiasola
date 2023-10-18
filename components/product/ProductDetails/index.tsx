@@ -1,8 +1,11 @@
+import { Partial } from "$fresh/runtime.ts";
+
 import type { ProductDetailsPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 
 import { SendEventOnLoad } from "$store/components/Analytics.tsx";
 import Button from "$store/components/ui/Button.tsx";
+import Divider from "$store/components/ui/Divider.tsx";
 
 import { useOffer } from "$store/sdk/useOffer.ts";
 
@@ -52,13 +55,16 @@ function Details({
 
   return (
     <div class="col-span-4 flex flex-col gap-8">
-      <Name {...page} />
-      <Prices product={page.product} />
-      <Sizes product={page.product} sizeProps={sizeProps} />
-      <Seller product={page.product} />
-      <Actions product={page.product} />
-      <Colors product={page.product} />
-      <Description product={page.product} />
+      <Partial name="sections">
+        <Name {...page} />
+        <Prices product={page.product} />
+        <Sizes product={page.product} sizeProps={sizeProps} />
+        <Divider className="-mt-4" />
+        <Seller product={page.product} />
+        <Actions product={page.product} />
+        <Colors product={page.product} />
+        <Description product={page.product} />
+      </Partial>
       <CEP sku={parseInt(page.product.sku)} seller={seller} />
 
       <SendEventOnLoad
@@ -83,8 +89,13 @@ function Details({
 function ProductDetails({ page, size }: Props) {
   if (page) {
     return (
-      <div class="container grid grid-cols-4 laptop:grid-cols-12 gap-4 desktop:gap-5 pb-6 laptop:py-11 text-black">
-        <Images images={page.product.image} />
+      <div
+        class="container grid grid-cols-4 laptop:grid-cols-12 gap-4 desktop:gap-5 pb-6 laptop:py-11 text-black"
+        f-client-nav
+      >
+        <Partial name="images">
+          <Images images={page.product.image} />
+        </Partial>
         <Details page={page} sizeProps={size} />
       </div>
     );

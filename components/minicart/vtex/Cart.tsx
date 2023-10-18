@@ -1,5 +1,6 @@
 import { itemToAnalyticsItem, useCart } from "apps/vtex/hooks/useCart.ts";
 import BaseCart from "../common/Cart.tsx";
+import { FREE_SHIPPING_VALUE } from "$store/components/constants.ts";
 
 function Cart() {
   const { cart, loading, updateItems, addCouponsToCart } = useCart();
@@ -10,11 +11,12 @@ function Cart() {
   const locale = cart.value?.clientPreferencesData.locale ?? "pt-BR";
   const currency = cart.value?.storePreferencesData.currencyCode ?? "BRL";
   const coupon = cart.value?.marketingData?.coupon ?? undefined;
-  const installments = cart.value?.paymentData?.installmentOptions[0]?.installments.length ?? 0;
+  const installments =
+    cart.value?.paymentData?.installmentOptions[0]?.installments.length ?? 0;
 
   return (
     <BaseCart
-    installments={installments}
+      installments={installments}
       items={items.map((item) => ({
         image: { src: item.imageUrl, alt: item.skuName },
         quantity: item.quantity,
@@ -30,11 +32,12 @@ function Cart() {
       locale={locale}
       currency={currency}
       loading={loading.value}
-      freeShippingTarget={1000}
+      freeShippingTarget={FREE_SHIPPING_VALUE}
       coupon={coupon}
       onAddCoupon={(text) => addCouponsToCart({ text })}
       onUpdateQuantity={(quantity, index) =>
-        updateItems({ orderItems: [{ index, quantity }] })}
+        updateItems({ orderItems: [{ index, quantity }] })
+      }
       itemToAnalyticsItem={(index) => {
         const item = items[index];
 

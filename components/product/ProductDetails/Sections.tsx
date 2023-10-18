@@ -8,6 +8,7 @@ import Icon from "$store/components/ui/Icon.tsx";
 import Button from "$store/components/ui/Button.tsx";
 import Divider from "$store/components/ui/Divider.tsx";
 import ShippingSimulation from "$store/components/ui/ShippingSimulation.tsx";
+import { FREE_SHIPPING_VALUE } from "$store/components/constants.ts";
 
 import WishlistButton from "$store/islands/WishlistButton.tsx";
 import {
@@ -30,7 +31,7 @@ import { useOffer } from "$store/sdk/useOffer.ts";
 import { formatPrice } from "$store/sdk/format.ts";
 import { useVariantPossibilities } from "$store/sdk/useVariantPossiblities.ts";
 
-export function Name({ breadcrumbList, product }: ProductDetailsPage) {
+export function Name({ breadcrumbList, product, seo }: ProductDetailsPage) {
   return (
     <div class="flex flex-col gap-4">
       <Breadcrumb
@@ -44,7 +45,7 @@ export function Name({ breadcrumbList, product }: ProductDetailsPage) {
 
       {/* NAME AND WISHLIST */}
       <span class="flex w-full items-center justify-between">
-        <h1 class="text-subtitle font-normal">{product.name}</h1>
+        <h1 class="text-subtitle font-normal">{seo?.title ?? product.name}</h1>
         <WishlistButton
           variant="icon"
           productGroupID={product.isVariantOf?.productGroupID}
@@ -74,7 +75,7 @@ export function Prices({
   const discountPercentage =
     listPrice && price ? Math.ceil(100 - (price / listPrice) * 100) : 0;
 
-  const showFreeShipping = listPrice >= 100; // get this number from admin, is the same number of free shipping in cart
+  const showFreeShipping = listPrice >= FREE_SHIPPING_VALUE;
 
   return (
     <div class="flex flex-col gap-2">
@@ -97,10 +98,24 @@ export function Prices({
           )}
         </span>
         {showFreeShipping && (
-          <div class="bg-green-1 text-green-2 text-small p-1 flex items-center gap-1 leading-none font-bold">
+          <button
+            type="button"
+            class="bg-green-1 text-green-2 text-small p-1 flex items-center gap-1 leading-none font-bold relative group cursor-pointer"
+          >
             FRETE GRÁTIS
             <Icon id="Info" class="h-3.5 w-3.5 shrink-0" />
-          </div>
+            <span class="bg-black rounded-[4px] font-normal text-white hidden group-focus:block absolute top-8 left-1/2 -translate-x-1/2 p-3 text-small w-max">
+              Frete grátis válido para
+              <br />
+              pedidos acima de{" "}
+              <strong>
+                {formatPrice(
+                  FREE_SHIPPING_VALUE,
+                  product.offers!.priceCurrency!
+                ).replace(",00", "")}
+              </strong>
+            </span>
+          </button>
         )}
       </div>
 
@@ -128,19 +143,34 @@ export function Images({
 }) {
   if (!images || images.length === 0) return null;
 
-  // repeat array to repeat when have just 1, 2 or 3 images
-  const imagesList = [...images, ...images, ...images, ...images].slice(0, 4);
+  const justOneImage = images.length === 1;
+
+  let imagesList = [...images];
+
+  if (!justOneImage && images.length < 4) {
+    // repeat array to repeat when have just 2 or 3 images
+    imagesList = [...images, ...images].slice(0, 4);
+  }
 
   const id = useId();
 
   return (
     <>
-      <div class="hidden laptop:grid grid-cols-2 grid-rows-2 gap-[2px] col-span-8 pr-5">
-        {imagesList.map((image) => {
+      <div
+        class={`hidden laptop:grid ${
+          justOneImage ? "grid-cols-1 grid-rows-1" : "grid-cols-2 grid-rows-2"
+        } gap-[2px] col-span-8 pr-5`}
+      >
+        {imagesList.map((image, index) => {
           if (!image.url) return null;
 
           return (
-            <div class="bg-grey-1 w-full p-6 h-[400px] flex-1">
+            <div
+              class={`bg-grey-1 w-full p-6 ${
+                justOneImage ? "h-[800px]" : "h-[400px]"
+              } flex-1`}
+              key={`image-${index}`}
+            >
               <Image
                 src={image.url}
                 width={400}
@@ -176,13 +206,15 @@ export function Images({
           ))}
         </Slider>
 
-        <div class="flex gap-8 absolute bottom-6 left-1/2 -translate-x-1/2">
-          {imagesList.map((image, index) => (
-            <Slider.Dot index={index}>
-              <span class="block h-[6px] w-[6px] rounded-full bg-grey-2 group-disabled:bg-black" />
-            </Slider.Dot>
-          ))}
-        </div>
+        {!justOneImage && (
+          <div class="flex gap-8 absolute bottom-6 left-1/2 -translate-x-1/2">
+            {imagesList.map((image, index) => (
+              <Slider.Dot index={index}>
+                <span class="block h-[6px] w-[6px] rounded-full bg-grey-2 group-disabled:bg-black" />
+              </Slider.Dot>
+            ))}
+          </div>
+        )}
 
         <SliderJS rootId={id} />
       </div>
