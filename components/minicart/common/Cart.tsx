@@ -44,6 +44,8 @@ function Cart({
   const { displayCart } = useUI();
   const isEmtpy = items.length === 0;
 
+  const newTotal = subtotal - discounts * -1;
+
   return (
     <div class="flex flex-col justify-center items-center overflow-hidden">
       {isEmtpy ? (
@@ -63,7 +65,7 @@ function Cart({
           {/* Cart Items */}
           <ul
             role="list"
-            class="mt-6 px-2 flex-grow overflow-y-auto flex flex-col gap-6 w-full"
+            class="mt-6 px-2 flex-grow overflow-y-auto flex flex-col gap-6 w-full scrollbar-none"
           >
             {items.map((item, index) => (
               <li key={index}>
@@ -112,12 +114,13 @@ function Cart({
               <div class="flex justify-between items-center w-full">
                 <span class="text-small">total:</span>
                 <span class="font-bold text-body">
-                  {formatPrice(total, currency, locale)}
+                  {formatPrice(newTotal, currency, locale)}
                 </span>
               </div>
               <span class="text-small">
                 ou {installments}x de{" "}
-                {formatPrice(total / installments, currency, locale)} sem juros
+                {formatPrice(newTotal / installments, currency, locale)} sem
+                juros
               </span>
             </div>
 
@@ -140,7 +143,7 @@ function Cart({
                       params: {
                         coupon,
                         currency,
-                        value: total - discounts,
+                        value: newTotal,
                         items: items
                           .map((_, index) => itemToAnalyticsItem(index))
                           .filter((x): x is AnalyticsItem => Boolean(x)),

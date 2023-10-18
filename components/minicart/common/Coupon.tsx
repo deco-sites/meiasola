@@ -8,54 +8,68 @@ export interface Props {
 
 function Coupon({ coupon, onAddCoupon }: Props) {
   const [loading, setLoading] = useState(false);
-  // const [display, setDisplay] = useState(false);
+
+  if (coupon) {
+    return (
+      <div class="flex gap-2">
+        <span class="text-small font-bold">{coupon}</span>
+        <Button
+          class="text-small font-normal !p-0 !bg-transparent"
+          loading={loading}
+          onClick={async (e) => {
+            e.preventDefault();
+            try {
+              setLoading(true);
+              onAddCoupon(undefined);
+            } finally {
+              setLoading(false);
+            }
+          }}
+        >
+          remover cupom
+        </Button>
+      </div>
+    );
+  }
 
   return (
-    <div 
-    // class="flex justify-between items-center px-4"
+    <form
+      class="grid grid-cols-4 gap-4"
+      onSubmit={async (e) => {
+        e.preventDefault();
+        const {
+          currentTarget: { elements },
+        } = e;
+
+        const input = elements.namedItem("coupon") as HTMLInputElement;
+        const text = input.value;
+
+        if (!text) return;
+
+        try {
+          setLoading(true);
+          await onAddCoupon(text);
+        } finally {
+          setLoading(false);
+        }
+      }}
     >
-      {/* <span class="text-sm">Cupom de desconto</span> */}
-      {
-         (
-          <form
-            // class="join"
-            class="flex justify-between items-center"
-            onSubmit={async (e) => {
-              e.preventDefault();
-              const { currentTarget: { elements } } = e;
-
-              const input = elements.namedItem("coupon") as HTMLInputElement;
-              const text = input.value;
-
-              if (!text) return;
-
-              try {
-                setLoading(true);
-                await onAddCoupon(text);
-              } finally {
-                setLoading(false);
-              }
-            }}
-          >
-            <input
-              name="coupon"
-              class="input border-black p-2  w-[259px] h-[35px] text-small focus:outline-none"
-              type="text"
-              value={coupon ?? ""}
-              placeholder={"Cupom de desconto"}
-            />
-            <Button
-              class="bg-black text-white hover:bg-black hover:text-white p-[11.5px] w-[75px] h-[35px] text-small font-normal normal-case 	" 
-              type="submit"
-              htmlFor="coupon"
-              loading={loading}
-            >
-              Aplicar
-            </Button>
-          </form>
-        )
-}
-    </div>
+      <input
+        name="coupon"
+        class="input border-black p-2 col-span-3 h-[35px] text-small focus:outline-none"
+        type="text"
+        value={coupon ?? ""}
+        placeholder={"Cupom de desconto"}
+      />
+      <Button
+        type="submit"
+        htmlFor="coupon"
+        loading={loading.value}
+        class="bg-black text-white hover:bg-black disabled:bg-black hover:text-white !h-[35px] text-small font-normal normal-case col-span-1"
+      >
+        Aplicar
+      </Button>
+    </form>
   );
 }
 
