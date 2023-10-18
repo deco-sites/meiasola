@@ -8,6 +8,7 @@ import Icon from "$store/components/ui/Icon.tsx";
 import Button from "$store/components/ui/Button.tsx";
 import Divider from "$store/components/ui/Divider.tsx";
 import ShippingSimulation from "$store/components/ui/ShippingSimulation.tsx";
+import { FREE_SHIPPING_VALUE } from "$store/components/constants.ts";
 
 import WishlistButton from "$store/islands/WishlistButton.tsx";
 import {
@@ -74,8 +75,7 @@ export function Prices({
   const discountPercentage =
     listPrice && price ? Math.ceil(100 - (price / listPrice) * 100) : 0;
 
-  const freeShippingValue = 100;
-  const showFreeShipping = listPrice >= 100; // get this number from admin, is the same number of free shipping in cart
+  const showFreeShipping = listPrice >= FREE_SHIPPING_VALUE;
 
   return (
     <div class="flex flex-col gap-2">
@@ -109,7 +109,10 @@ export function Prices({
               <br />
               pedidos acima de{" "}
               <strong>
-                {formatPrice(freeShippingValue, product.offers!.priceCurrency!)}
+                {formatPrice(
+                  FREE_SHIPPING_VALUE,
+                  product.offers!.priceCurrency!
+                ).replace(",00", "")}
               </strong>
             </span>
           </button>

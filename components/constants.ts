@@ -1,0 +1,1 @@
+export const FREE_SHIPPING_VALUE = 299
