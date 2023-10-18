@@ -100,12 +100,14 @@ function ProductCard({ product, preload, itemListName }: Props) {
       </div>
 
       {/* Prices & Name */}
-      <div class="flex flex-col gap-3 w-full h-full justify-between">
+      <div class="flex flex-col gap-3 w-full h-full justify-between pr-3">
         <div class="flex flex-col gap-3">
           <p class="text-small text-element-dark leading-none">
             {product.brand?.name}
           </p>
-          <h4 class="text-body line-clamp-2">{isVariantOf?.name ?? name}</h4>
+          <h4 class="text-body line-clamp-2 capitalize">
+            {isVariantOf?.name ?? name}
+          </h4>
         </div>
 
         {discountPercentage > 0 && (
