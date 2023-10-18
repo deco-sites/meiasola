@@ -105,7 +105,7 @@ function ProductCard({ product, preload, itemListName }: Props) {
           <p class="text-small text-element-dark leading-none">
             {product.brand?.name}
           </p>
-          <h4 class="text-body line-clamp-2">{name}</h4>
+          <h4 class="text-body line-clamp-2">{isVariantOf?.name ?? name}</h4>
         </div>
 
         {discountPercentage > 0 && (
