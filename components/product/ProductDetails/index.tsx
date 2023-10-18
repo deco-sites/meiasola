@@ -5,6 +5,7 @@ import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalytic
 
 import { SendEventOnLoad } from "$store/components/Analytics.tsx";
 import Button from "$store/components/ui/Button.tsx";
+import Divider from "$store/components/ui/Divider.tsx";
 
 import { useOffer } from "$store/sdk/useOffer.ts";
 
@@ -58,6 +59,7 @@ function Details({
         <Name {...page} />
         <Prices product={page.product} />
         <Sizes product={page.product} sizeProps={sizeProps} />
+        <Divider className="-mt-4" />
         <Seller product={page.product} />
         <Actions product={page.product} />
         <Colors product={page.product} />
