@@ -30,7 +30,7 @@ import { useOffer } from "$store/sdk/useOffer.ts";
 import { formatPrice } from "$store/sdk/format.ts";
 import { useVariantPossibilities } from "$store/sdk/useVariantPossiblities.ts";
 
-export function Name({ breadcrumbList, product }: ProductDetailsPage) {
+export function Name({ breadcrumbList, product, seo }: ProductDetailsPage) {
   return (
     <div class="flex flex-col gap-4">
       <Breadcrumb
@@ -44,7 +44,7 @@ export function Name({ breadcrumbList, product }: ProductDetailsPage) {
 
       {/* NAME AND WISHLIST */}
       <span class="flex w-full items-center justify-between">
-        <h1 class="text-subtitle font-normal">{product.name}</h1>
+        <h1 class="text-subtitle font-normal">{seo?.title ?? product.name}</h1>
         <WishlistButton
           variant="icon"
           productGroupID={product.isVariantOf?.productGroupID}
@@ -142,11 +142,11 @@ export function Images({
 
   const justOneImage = images.length === 1;
 
-  const imagesList = [...images].slice(0, 4);
+  let imagesList = [...images];
 
-  if (!justOneImage) {
+  if (!justOneImage && images.length < 4) {
     // repeat array to repeat when have just 2 or 3 images
-    imagesList.concat([...images]);
+    imagesList = [...images, ...images].slice(0, 4);
   }
 
   const id = useId();
