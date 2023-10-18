@@ -75,7 +75,7 @@ export function Prices({
   const discountPercentage =
     listPrice && price ? Math.ceil(100 - (price / listPrice) * 100) : 0;
 
-  const showFreeShipping = listPrice >= FREE_SHIPPING_VALUE;
+  const showFreeShipping = price >= FREE_SHIPPING_VALUE;
 
   return (
     <div class="flex flex-col gap-2">
