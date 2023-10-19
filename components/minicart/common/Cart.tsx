@@ -47,7 +47,7 @@ function Cart({
   const newTotal = subtotal - discounts * -1;
 
   return (
-    <div class="flex flex-col justify-center items-center overflow-hidden">
+    <div class="flex flex-col justify-center items-center overflow-hidden text-black">
       {isEmtpy ? (
         <div class="flex flex-col w-[398px] items-center justify-center">
           <span class="font-medium text-2xl">Sua sacola está vazia</span>
