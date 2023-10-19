@@ -1,4 +1,4 @@
-import type { ProductDetailsPage } from "apps/commerce/types.ts";
+import type { ProductDetailsPage, ProductLeaf } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 
 import Image from "$store/components/ui/Image.tsx";
@@ -339,51 +339,41 @@ export function Description({
 }
 
 export function Colors({
-  product,
+  colorVariants,
+  productSku,
 }: {
-  product: ProductDetailsPage["product"];
+  colorVariants: ProductLeaf[];
+  productSku: string;
 }) {
-  const possibilities = useVariantPossibilities(product);
-
-  let colors = null;
-  if (possibilities["Cor"]) {
-    colors = possibilities["Cor"];
-  }
-
-  if (!colors || Object.entries(colors).length <= 1) return null;
+  if (colorVariants.length < 2) return null;
 
   return (
     <div class="flex flex-col gap-4">
       <h4 class="font-bold text-body">Outras Cores:</h4>
 
       <ul class="flex flex-wrap gap-4">
-        {Object.entries(colors).map(([color, [data]]) => {
-          const { url: link, image: images } = data;
-
-          const url = new URL(link);
-          const colorSku = url.searchParams.get("skuId");
-
-          const [image] = images ?? [];
+        {colorVariants.map((variant) => {
+          const [image] = variant.image;
 
           return (
-            <li key={color}>
+            <li key={variant.name}>
               <a
-                href={link}
-                alt={color}
+                href={variant.url}
+                alt={variant.name}
                 class={`block border hover:border-black transition-all duration-300 ease-out w-[64px] h-[72px] bg-grey-1 ${
-                  colorSku === product.sku
+                  variant.sku === productSku
                     ? "border-black"
                     : "border-transparent"
                 }`}
               >
                 <Image
-                  alt={`Imagem da cor ${color}`}
+                  alt={`Imagem da variante: ${variant.name}`}
                   src={image.url!}
                   width={64}
                   height={72}
                   loading="lazy"
                   fetchPriority="low"
-                  className="object-cover w-full h-full mix-blend-multiply"
+                  className="object-contain w-full h-full mix-blend-multiply"
                   fit="contain"
                 />
               </a>

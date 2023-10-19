@@ -4,7 +4,8 @@
 
 import * as $$$0 from "./loaders/Layouts/ProductCard.tsx";
 import * as $$$1 from "./loaders/meiasola/extensionProductListingPage.ts";
-import * as $$$2 from "./loaders/meiasola/myStylePosts.ts";
+import * as $$$2 from "./loaders/meiasola/extensionGetModelVariants.ts";
+import * as $$$3 from "./loaders/meiasola/myStylePosts.ts";
 import * as $$$$$$0 from "./sections/Category/CategoryBanner.tsx";
 import * as $$$$$$1 from "./sections/Category/CategoryList.tsx";
 import * as $$$$$$2 from "./sections/Newsletter/Newsletter.tsx";
@@ -45,8 +46,9 @@ import * as $$$$$$$$$$$1 from "./apps/decohub.ts";
 const manifest = {
   "loaders": {
     "deco-sites/meiasola/loaders/Layouts/ProductCard.tsx": $$$0,
+    "deco-sites/meiasola/loaders/meiasola/extensionGetModelVariants.ts": $$$2,
     "deco-sites/meiasola/loaders/meiasola/extensionProductListingPage.ts": $$$1,
-    "deco-sites/meiasola/loaders/meiasola/myStylePosts.ts": $$$2,
+    "deco-sites/meiasola/loaders/meiasola/myStylePosts.ts": $$$3,
   },
   "sections": {
     "deco-sites/meiasola/sections/Category/CategoryBanner.tsx": $$$$$$0,

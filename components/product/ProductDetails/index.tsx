@@ -1,6 +1,7 @@
 import { Partial } from "$fresh/runtime.ts";
 
-import type { ProductDetailsPage } from "apps/commerce/types.ts";
+import type { ProductDetailsPage, ProductLeaf } from "apps/commerce/types.ts";
+
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 
 import { SendEventOnLoad } from "$store/components/Analytics.tsx";
@@ -25,6 +26,10 @@ import type { Props as SizeGuideProps } from "$store/components/product/ProductD
 
 import ShippingSimulation from "$store/islands/ShippingSimulation.tsx";
 
+type DetailsPageWithColorVariants = ProductListingPage & {
+  colorVariants: ProductLeaf[];
+};
+
 export interface Props {
   /** @title Integration */
   page: ProductDetailsPage | null;
@@ -48,7 +53,7 @@ function Details({
   page,
   sizeProps,
 }: {
-  page: ProductDetailsPage;
+  page: DetailsPageWithColorVariants;
   sizeProps: SizeGuideProps;
 }) {
   const { price = 0, listPrice, seller = "1" } = useOffer(page.product.offers);
@@ -62,7 +67,10 @@ function Details({
         <Divider className="-mt-4" />
         <Seller product={page.product} />
         <Actions product={page.product} />
-        <Colors product={page.product} />
+        <Colors
+          colorVariants={page.colorVariants}
+          productSku={page.product.sku}
+        />
         <Description product={page.product} />
       </Partial>
       <CEP sku={parseInt(page.product.sku)} seller={seller} />
@@ -96,7 +104,7 @@ function ProductDetails({ page, size }: Props) {
         <Partial name="images">
           <Images images={page.product.image} />
         </Partial>
-        <Details page={page} sizeProps={size} />
+        <Details page={page as DetailsPageWithColorVariants} sizeProps={size} />
       </div>
     );
   }
