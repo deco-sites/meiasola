@@ -112,6 +112,7 @@ function Sort({ sortOptions }: Props) {
                 ))}
             </ul>
           </div>
+          <label class="modal-backdrop" for="my_modal_6">Close</label>
         </div>
       </div>
     </>
