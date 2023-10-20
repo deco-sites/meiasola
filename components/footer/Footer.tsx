@@ -37,7 +37,7 @@ function Footer({ head, body, copyright }: Props) {
           <Head {...head} />
           <Divider />
           <Body {...body} />
-          <Copyright copyright={copyright} />
+          <Copyright copyright={copyright}/>
         </div>
         <div class="hidden desktop:flex col-span-1"></div>
       </div>
@@ -50,7 +50,7 @@ export default Footer;
 function Copyright({ copyright }: { copyright: HTMLWidget }) {
   return (
     <div
-      class="text-small text-center tablet:text-left max-w-[688px] leading-snug"
+      class="tablet:-mt-20 text-small text-center tablet:text-left max-w-[688px] leading-snug"
       dangerouslySetInnerHTML={{ __html: copyright }}
     />
   );
