@@ -165,7 +165,7 @@ function Heading({
           </div>
         )}
 
-        <div class="flex gap-4 laptop:w-1/4 laptop:justify-end">
+        <div class="grid grid-cols-2 gap-4 laptop:flex laptop:w-1/4 laptop:justify-end">
           <IslandButtonFilters className="laptop:hidden" />
           <IslandSort sortOptions={sortOptions} />
         </div>
