@@ -37,6 +37,18 @@ function BannerCarousel({ items, interval }: Props) {
         <Slider.NextButton />
       </div>
 
+      {items.length > 1 && (
+        <div class="flex gap-3 tablet:gap-7 absolute bottom-3 tablet:bottom-12 left-1/2 -translate-x-1/2 z-10">
+          {items.map((image, index) => (
+            <Slider.Dot index={index}>
+              <span class="flex h-3 w-3 items-center justify-center">
+                <span class="block h-[6px] w-[6px] rounded-full bg-grey-2 group-disabled:bg-white" />
+              </span>
+            </Slider.Dot>
+          ))}
+        </div>
+      )}
+
       <SliderJS rootId={id} interval={interval && interval * 1e3} infinite />
     </div>
   );
@@ -94,6 +106,7 @@ function Item(props: Video | Image) {
           width={1440}
           height={696}
           loading="lazy"
+          fetchPriority="high"
           sizes="(max-width: 767px) 767px, 1440px"
           class="w-full h-full object-cover absolute top-0 left-0 z-0"
         />

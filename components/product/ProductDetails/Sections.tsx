@@ -54,15 +54,6 @@ export function Name({ breadcrumbList, product, seo }: ProductDetailsPage) {
           productID={product.productID}
         />
       </span>
-
-      <div class="flex gap-3 text-small">
-        <span class="flex gap-1">
-          {[1, 2, 3, 4, 5].map((_) => (
-            <Icon id="Star" strokeWidth={1} class="w-4 h-4" />
-          ))}
-        </span>
-        Avaliação
-      </div>
     </div>
   );
 }
@@ -159,7 +150,7 @@ export function Images({
   return (
     <>
       <div
-        class={`hidden laptop:grid ${
+        class={`hidden h-fit laptop:grid ${
           justOneImage ? "grid-cols-1 grid-rows-1" : "grid-cols-2 grid-rows-2"
         } gap-[2px] col-span-8 pr-5`}
       >

@@ -6,105 +6,70 @@ import { AppContext } from "apps/vtex/mod.ts";
  * @title Meia Sola - Get URL
  * @description Add extra data to your loader. This may harm performance
  */
-const loader = (
-  props: undefined,
-  req: Request,
-  ctx: AppContext,
-): ExtensionOf<ProductListingPage | null> =>
-(page: ProductListingPage | null) => {
-  if (page == null) {
-    return page;
-  }
+const loader =
+  (
+    props: undefined,
+    req: Request,
+    ctx: AppContext
+  ): ExtensionOf<ProductListingPage | null> =>
+  (page: ProductListingPage | null) => {
+    if (page == null) {
+      return page;
+    }
 
-  const { url: baseUrl } = req;
-  const url = new URL(baseUrl);
+    const { url: baseUrl } = req;
+    const url = new URL(baseUrl);
 
-  const filtersWithOutColors = page.filters.filter((filter) =>
-    filter.key !== "cor"
-  );
+    let filters = page.filters;
+    if (url.pathname.includes("/bolsas")) {
+      filters = page.filters.filter((filter) => filter.key !== "tamanho");
+    }
 
-  const productColors: string[] = [];
-
-  page.products.forEach((product) => {
-    (product.isVariantOf?.hasVariant ?? []).forEach((variant) => {
-      const color = variant.additionalProperty?.find((property) =>
-        property.name === "Cor"
-      )?.value;
-
-      if (color) productColors.push(color);
-    });
-  });
-
-  const comingColorFilters = page.filters.find((filter) =>
-    filter.key === "cor"
-  );
-
-  const filteredColorsFilters: Filter = {
-    "@type": "FilterToggle",
-    key: "cor",
-    label: "Cor",
-    quantity: 0,
-    values: [],
-  };
-
-  if (comingColorFilters) {
-    const filteredValues = comingColorFilters.values.filter((option) =>
-      productColors.includes(option.label)
+    const filtersWithOutColors = filters.filter(
+      (filter) => filter.key !== "cor"
     );
 
-    filteredColorsFilters.quantity = filteredValues.length;
-    filteredColorsFilters.values = filteredValues;
-  }
+    const productColors: string[] = [];
 
-  const sellers = [
-    { id: "1", name: "Meia Sola" },
-    { id: "lancaperfume", name: "Lança Perfume" },
-    { id: "Lojamyft", name: "Lojamyft" },
-    { id: "MSL", name: "Lojamyft" },
-  ];
+    page.products.forEach((product) => {
+      (product.isVariantOf?.hasVariant ?? []).forEach((variant) => {
+        const color = variant.additionalProperty?.find(
+          (property) => property.name === "Cor"
+        )?.value;
 
-  const sellerFilter: Filter = {
-    "@type": "FilterToggle",
-    key: "seller",
-    label: "Vendedor",
-    quantity: sellers.length,
-    values: sellers.map((seller) => {
-      const sellerSearchParam = `filter.seller=${seller.id}`;
+        if (color) productColors.push(color);
+      });
+    });
 
-      const searchIsEmpty = url.search === "";
+    const comingColorFilters = page.filters.find(
+      (filter) => filter.key === "cor"
+    );
 
-      let search = searchIsEmpty ? "?" : url.search;
-      const selected = search.includes(sellerSearchParam);
-      if (selected) {
-        search = search.replace(`${sellerSearchParam}`, "");
-      } else {
-        search += "&" + sellerSearchParam;
-      }
+    const filteredColorsFilters: Filter = {
+      "@type": "FilterToggle",
+      key: "cor",
+      label: "Cor",
+      quantity: 0,
+      values: [],
+    };
 
-      search = search.replace("&&", "&");
-      search = search.replace("?&", "?");
+    if (comingColorFilters) {
+      const filteredValues = comingColorFilters.values.filter((option) =>
+        productColors.includes(option.label)
+      );
 
-      return {
-        value: seller.id,
-        selected,
-        url: search === "?" ? "" : search,
-        label: seller.id === "MSL" ? "MSL" : seller.name,
-      };
-    }),
+      filteredColorsFilters.quantity = filteredValues.length;
+      filteredColorsFilters.values = filteredValues;
+    }
+
+    return {
+      ...page,
+      filters: [...filtersWithOutColors, filteredColorsFilters],
+      search: {
+        term: url.searchParams.get("q"),
+        url,
+      },
+    };
   };
-
-  return {
-    ...page,
-    filters: [
-      ...filtersWithOutColors,
-      filteredColorsFilters,
-      sellerFilter,
-    ],
-    search: {
-      term: url.searchParams.get("q"),
-      url
-    },
-  };
-};
 
 export default loader;

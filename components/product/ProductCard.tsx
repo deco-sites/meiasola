@@ -15,6 +15,8 @@ interface Props {
 
   /** @description used for analytics event */
   itemListName?: string;
+
+  small?: boolean;
 }
 
 const relative = (url: string) => {
@@ -22,7 +24,7 @@ const relative = (url: string) => {
   return `${link.pathname}${link.search}`;
 };
 
-function ProductCard({ product, preload, itemListName }: Props) {
+function ProductCard({ product, preload, itemListName, small }: Props) {
   const { url, productID, name, image: images, offers, isVariantOf } = product;
   const id = `product-card-${productID}`;
   const productGroupID = isVariantOf?.productGroupID;
@@ -73,7 +75,11 @@ function ProductCard({ product, preload, itemListName }: Props) {
       />
 
       {/* Product Images */}
-      <div class="relative overflow-hidden bg-element px-4 py-11 shrink-0 h-[345px] items-center flex justify-center object-center">
+      <div
+        class={`relative overflow-hidden bg-element px-4 py-11 ${
+          small ? "h-[264px]" : "h-[345px]"
+        } shrink-0 items-center flex justify-center object-center`}
+      >
         {/* Wishlist button */}
         <div class="absolute top-4 right-4 z-10">
           <WishlistButton
@@ -105,7 +111,7 @@ function ProductCard({ product, preload, itemListName }: Props) {
           height={264}
           fit="contain"
           loading="lazy"
-          fetchPriority="auto"
+          fetchPriority="high"
           src={back?.url ?? front.url!}
           alt={
             back?.alternateName ??

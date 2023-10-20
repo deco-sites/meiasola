@@ -20,6 +20,7 @@ function ProductGallery({ products }: Props) {
             product={product}
             preload={index < 4}
             key={`product-${index}-id-${product.productID}`}
+            small
           />
         </div>
       ))}
