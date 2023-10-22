@@ -56,7 +56,7 @@ function Coupon({ coupon, onAddCoupon }: Props) {
     >
       <input
         name="coupon"
-        class="input border-black p-2 col-span-3 h-[35px] text-small focus:outline-none"
+        class="input border-black p-2 col-span-3 h-[35px] text-small focus:outline-none autofill:bg-white"
         type="text"
         value={coupon ?? ""}
         placeholder={"Cupom de desconto"}

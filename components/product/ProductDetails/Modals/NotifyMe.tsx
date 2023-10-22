@@ -111,7 +111,7 @@ export default function NotifyMeModal() {
 
           <Button
             type="submit"
-            loading={loading}
+            loading={loading.value}
             aria-label="Enviar formulário"
             class="bg-black hover:bg-black text-white w-full !h-[45px] font-normal flex items-center justify-center text-body"
           >
@@ -143,7 +143,7 @@ export function Input({
       <input
         type={type}
         name={name}
-        class="w-full border border-grey-2 text-small text-black placeholder:text-grey-2 placeholder:text-small p-2.5 h-[35px]"
+        class="w-full border border-grey-2 text-small text-black placeholder:text-grey-2 placeholder:text-small p-2.5 h-[35px] autofill:bg-white"
         placeholder={placeholder}
         required
       />

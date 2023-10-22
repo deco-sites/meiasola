@@ -44,7 +44,7 @@ export function SearchbarInput({
       <input
         name={name}
         placeholder={placeholder}
-        class="grow searchbar-input bg-transparent text-small group-[&.isLarge]:text-body text-current leading-none placeholder:text-small placeholder:group-[&.isLarge]:text-body placeholder:text-current focus:outline-none"
+        class="grow searchbar-input bg-transparent autofill:bg-transparent text-small group-[&.isLarge]:text-body text-current leading-none placeholder:text-small placeholder:group-[&.isLarge]:text-body placeholder:text-current focus:outline-none"
       />
       <Button
         type="submit"

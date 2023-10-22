@@ -2,6 +2,8 @@ import { useSignal } from "@preact/signals";
 import { Runtime } from "$store/runtime.ts";
 import type { JSX } from "preact";
 
+import Button from "$store/components/ui/Button.tsx";
+
 export interface Form {
   /**
    * @title Placeholder of Name Input
@@ -54,21 +56,22 @@ function Newsletter({ title, description, form }: Props) {
           <form class="w-full form-control gap-3.5" onSubmit={handleSubmit}>
             <input
               name="name"
-              class="h-8 w-full px-2.5 bg-white placeholder:grey-2 placeholder:text-body"
+              class="h-8 w-full px-2.5 bg-white placeholder:grey-2 placeholder:text-body autofill:bg-white"
               placeholder={form.name_placeholder || "Nome"}
             />
             <input
               name="email"
-              class="h-8 w-full px-2.5 bg-white placeholder:grey-2 placeholder:text-body"
+              class="h-8 w-full px-2.5 bg-white placeholder:grey-2 placeholder:text-body autofill:bg-white"
               placeholder={form.email_placeholder || "E-mail"}
             />
-            <button
+            <Button
               type="submit"
-              class="h-10 w-full bg-black text-white text-body disabled:loading"
-              disabled={loading}
+              class="bg-black hover:bg-black text-white w-full !h-10 font-normal flex items-center justify-center text-body"
+              aria-label="Cadastrar-se na Newsletter"
+              loading={loading.value}
             >
               {form.buttonText || "CADASTRE-SE"}
-            </button>
+            </Button>
           </form>
         </div>
       </div>
@@ -88,21 +91,23 @@ function Newsletter({ title, description, form }: Props) {
           >
             <input
               name="name"
-              class="h-8 w-full px-2.5 bg-white placeholder:text-grey-2 placeholder:text-body"
+              class="h-8 w-full px-2.5 bg-white placeholder:text-grey-2 placeholder:text-body autofill:bg-white"
               placeholder={form.name_placeholder || "Nome"}
             />
             <input
+              type="email"
               name="email"
-              class="h-8 w-full px-2.5 bg-white placeholder:text-grey-2 placeholder:text-body"
+              class="h-8 w-full px-2.5 bg-white placeholder:text-grey-2 placeholder:text-body autofill:bg-white"
               placeholder={form.email_placeholder || "E-mail"}
             />
-            <button
+            <Button
               type="submit"
-              class="h-10 w-full bg-black text-white text-body disabled:loading"
-              disabled={loading}
+              class="bg-black hover:bg-black text-white w-full !h-10 font-normal flex items-center justify-center text-body"
+              aria-label="Cadastrar-se na Newsletter"
+              loading={loading.value}
             >
               {form.buttonText || "CADASTRE-SE"}
-            </button>
+            </Button>
           </form>
           <div class="col-span-1 hidden desktop:flex"></div>
         </div>

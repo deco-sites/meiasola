@@ -125,7 +125,7 @@ export function Input({
   textarea?: boolean;
 }) {
   const styles =
-    "w-full border border-grey-2 text-small text-black placeholder:text-grey-2 placeholder:text-small p-2.5";
+    "w-full border border-grey-2 text-small text-black placeholder:text-grey-2 placeholder:text-small p-2.5 autofill:bg-white";
 
   return (
     <div class="flex flex-col gap-3">
