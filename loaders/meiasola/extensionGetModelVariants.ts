@@ -27,11 +27,26 @@ const loader =
     });
 
     const model = page.product.isVariantOf?.model ?? "";
-    const colorVariants: ProductLeaf[] = [];
 
-    if (!model) {
+    const defaultColorsVariants = [];
+
+    page.product.isVariantOf?.hasVariant.forEach((variant) => {
+      const colorProperty = variant.additionalProperty.find(
+        (property) => property.name?.toLowerCase() === "cor"
+      );
+
+      if (!!colorProperty) {
+        if (!defaultColorsVariants.includes(colorProperty.value)) {
+          defaultColorsVariants.push(colorProperty.value);
+        }
+      }
+    });
+
+    const finalColorVariants: ProductLeaf[] = [];
+
+    if (defaultColorsVariants.length > 1) {
       page.product.isVariantOf?.hasVariant.forEach((p) => {
-        colorVariants.push(p);
+        finalColorVariants.push(p);
       });
     } else {
       const { products: vtexProducts } = await state.vcsDeprecated[
@@ -47,15 +62,18 @@ const loader =
       };
 
       vtexProducts.forEach((p) => {
-        if (p.productReference.slice(0, 10) === model.slice(0, 10)) {
-          colorVariants.push(toProduct(p, p.items[0], 0, options));
+        if (
+          p.productReference &&
+          p.productReference.slice(0, 10) === model.slice(0, 10)
+        ) {
+          finalColorVariants.push(toProduct(p, p.items[0], 0, options));
         }
       });
     }
 
     return {
       ...page,
-      colorVariants,
+      colorVariants: finalColorVariants,
     };
   };
 
