@@ -7,6 +7,7 @@ import type {
   VideoWidget,
 } from "apps/admin/widgets.ts";
 import ImageComponent from "apps/website/components/Image.tsx";
+import { Picture, Source } from "apps/website/components/Picture.tsx";
 
 export interface Props {
   items: Array<Image | Video>;
@@ -100,24 +101,40 @@ function Item(props: Video | Image) {
       </div>
 
       {instanceOfImage(props) ? (
-        <ImageComponent
-          alt={alt}
-          src={props.image}
-          width={1440}
-          height={696}
-          loading="lazy"
-          fetchPriority="high"
-          sizes="(max-width: 767px) 767px, 1440px"
-          class="w-full h-full object-cover absolute top-0 left-0 z-0"
-        />
+        <>
+          <Picture class="w-full" preload={false}>
+            <Source
+              src={props.imageMobile}
+              width={390}
+              height={310}
+              fetchPriority="high"
+              media="(max-width: 767px)"
+            />
+            <Source
+              src={props.imageDesktop}
+              width={1200}
+              height={580}
+              fetchPriority="high"
+              media="(min-width: 768px)"
+            />
+            <img
+              alt={alt}
+              src={props.imageDesktop}
+              class="w-full h-full object-cover absolute top-0 left-0 z-0"
+              loading="lazy"
+            />
+          </Picture>
+        </>
       ) : instanceOfVideo(props) ? (
         <video
           autoPlay
           muted
           loop
+          width={1200}
           class="w-full h-full object-cover absolute top-0 left-0 z-0"
         >
-          <source src={props.video} />
+          <source src={props.videoMobile} media="(max-width: 767px)" />
+          <source src={props.videoDesktop} media="(min-width: 768px)" />
         </video>
       ) : null}
 
@@ -136,18 +153,20 @@ function Item(props: Video | Image) {
 
 // IMAGE
 interface Image extends ItemProps {
-  image: ImageWidget;
+  imageDesktop: ImageWidget;
+  imageMobile: ImageWidget;
 }
 
 export function instanceOfImage(object: ItemProps): object is Image {
-  return "image" in object;
+  return "imageDesktop" in object;
 }
 
 // VIDEO
 interface Video extends ItemProps {
-  video: VideoWidget;
+  videoDesktop: VideoWidget;
+  videoMobile: VideoWidget;
 }
 
 export function instanceOfVideo(object: ItemProps): object is Video {
-  return "video" in object;
+  return "videoDesktop" in object;
 }
