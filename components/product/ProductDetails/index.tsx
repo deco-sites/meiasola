@@ -60,19 +60,19 @@ function Details({
 
   return (
     <div class="col-span-4 flex flex-col gap-8">
-      <Partial name="sections">
-        <Name {...page} />
-        <Prices product={page.product} />
-        <Sizes product={page.product} sizeProps={sizeProps} />
-        <Divider className="-mt-4" />
-        <Seller product={page.product} />
-        <Actions product={page.product} />
-        <Colors
-          colorVariants={page.colorVariants}
-          productSku={page.product.sku}
-        />
-        <Description product={page.product} />
-      </Partial>
+      {/* <Partial name="sections"> */}
+      <Name {...page} />
+      <Prices product={page.product} />
+      <Sizes product={page.product} sizeProps={sizeProps} />
+      <Divider className="-mt-4" />
+      <Seller product={page.product} />
+      <Actions product={page.product} />
+      <Colors
+        colorVariants={page.colorVariants}
+        productSku={page.product.sku}
+      />
+      <Description product={page.product} />
+      {/* </Partial> */}
       <CEP sku={parseInt(page.product.sku)} seller={seller} />
 
       <SendEventOnLoad
@@ -101,9 +101,9 @@ function ProductDetails({ page, size }: Props) {
         class="container grid grid-cols-4 laptop:grid-cols-12 gap-4 desktop:gap-5 pb-6 laptop:py-11 text-black"
         f-client-nav
       >
-        <Partial name="images">
-          <Images images={page.product.image} />
-        </Partial>
+        {/* <Partial name="images"> */}
+        <Images images={page.product.image} />
+        {/* </Partial> */}
         <Details page={page as DetailsPageWithColorVariants} sizeProps={size} />
       </div>
     );

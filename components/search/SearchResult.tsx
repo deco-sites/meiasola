@@ -1,5 +1,3 @@
-import { Partial } from "$fresh/runtime.ts";
-
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import { ProductListingPage } from "apps/commerce/types.ts";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
@@ -89,19 +87,20 @@ function Result({
         </aside>
         <div
           class="col-span-4 laptop:col-span-9 flex flex-col items-center gap-6 laptop:gap-10"
-          f-client-nav
+          // f-client-nav
         >
-          <Partial name="product-listing" mode="append">
-            <ProductGallery products={products} />
-          </Partial>
+          {/* <Partial name="product-listing" mode="append"> */}
+          <ProductGallery products={products} />
+          {/* </Partial> */}
           {pageInfo.nextPage && (
-            <Button
+            <a
+              href={pageInfo.nextPage}
               aria-label="Ver mais produtos"
               class="btn-ghost !border border-black uppercase tracking-large text-small text-black bg-white hover:bg-black hover:text-white disabled:bg-black disabled:text-white font-normal p-2.5 !w-full mobile:!w-fit mt-4 laptop:mt-5"
-              f-partial={`${loadMoreURL.pathname}${loadMoreURL.search}`}
+              // f-partial={`${loadMoreURL.pathname}${loadMoreURL.search}`}
             >
               VER MAIS
-            </Button>
+            </a>
           )}
         </div>
       </div>
