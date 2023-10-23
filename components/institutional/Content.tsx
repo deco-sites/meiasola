@@ -13,11 +13,11 @@ export interface Props {
   menuSection: Section;
   content: HTMLWidget;
   image?: {
-    src: ImageWidget;
+    src?: ImageWidget;
     /**
      * @title Descriptive text for people with visual impairments
      */
-    alt: string;
+    alt?: string;
   };
 }
 
@@ -33,10 +33,10 @@ function Content({ menuSection: { Component, props }, content, image }: Props) {
             dangerouslySetInnerHTML={{ __html: content }}
             class="flex flex-col gap-6 text-black"
           />
-          {image && (
+          {image && image.src && (
             <Image
               src={image.src}
-              alt={image.alt}
+              alt={image.alt ?? ""}
               width={860}
               height={360}
               class="object-cover"
