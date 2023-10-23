@@ -3,7 +3,7 @@ import { ExtensionOf } from "apps/website/loaders/extension.ts";
 import { AppContext } from "apps/vtex/mod.ts";
 
 /**
- * @title Meia Sola - Get URL
+ * @title Meia Sola - Extra Info
  * @description Add extra data to your loader. This may harm performance
  */
 const loader =
@@ -64,7 +64,10 @@ const loader =
 
     return {
       ...page,
-      filters: [...filtersWithOutColors, filteredColorsFilters],
+      filters: [
+        ...filtersWithOutColors,
+        // filteredColorsFilters
+      ],
       search: {
         term: url.searchParams.get("q"),
         url,
