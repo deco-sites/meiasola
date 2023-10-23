@@ -72,7 +72,7 @@ export default function AddToCartButton(props: Props) {
       class={
         props.class
           ? props.class
-          : "flex justify-center gap-2 text-small underline text-black h-fit p-0 font-normal w-full bg-transparent hover:bg-transparent normal-case disabled:bg-transparent"
+          : "flex items-center justify-center gap-2 text-small underline text-black h-fit p-0 font-normal w-full bg-transparent hover:bg-transparent normal-case disabled:bg-transparent"
       }
     >
       {props.children ? (
