@@ -244,9 +244,14 @@ function Sizes({
 
 interface Image {
   /**
-   * @title Image
+   * @title Image Desktop
    */
   src: ImageWidget;
+
+  /**
+   * @title Image Mobile
+   */
+  srcMobile: ImageWidget;
 
   /**
    * @description A RegExp for indentify routes that will use this imagem. Ex: /bolsas
@@ -281,9 +286,9 @@ function Image({
         <Picture>
           <Source
             media="(max-width: 767px)"
-            src={image.src}
+            src={image.srcMobile}
             width={390}
-            height={260}
+            height={310}
           />
           <Source
             media="(min-width: 768px)"
