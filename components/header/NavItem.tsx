@@ -1,4 +1,4 @@
-import Image from "apps/website/components/Image.tsx";
+import Image from "$store/components/ui/Image.tsx";
 
 import Icon from "$store/components/ui/Icon.tsx";
 import type { AvailableIcons } from "$store/components/ui/Icon.tsx";
@@ -84,6 +84,7 @@ function SubMenu({ sections, image }: SubMenuProps) {
               height={400}
               loading="lazy"
               fetchPriority="auto"
+              fit="contain"
               class="h-full w-full object-cover"
             />
           </div>
