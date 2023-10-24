@@ -118,9 +118,6 @@ function CartItem({
               }
             })}
           />
-          {/* <span class="line-through text-base-300 text-sm">
-            {formatPrice(list, currency, locale)}
-          </span> */}
           <span class="text-body text-black font-extrabold">
             {isGift ? "Grátis" : formatPrice(sale, currency, locale)}
           </span>
