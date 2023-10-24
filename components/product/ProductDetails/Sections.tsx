@@ -35,6 +35,8 @@ import { useVariantPossibilities } from "$store/sdk/useVariantPossiblities.ts";
 import ProductImageZoom from "deco-sites/meiasola/components/product/ProductImageZoom.tsx";
 
 export function Name({ breadcrumbList, product, seo }: ProductDetailsPage) {
+  const model = product.isVariantOf?.model ?? "";
+
   return (
     <div class="flex flex-col gap-4">
       <Breadcrumb
@@ -57,6 +59,9 @@ export function Name({ breadcrumbList, product, seo }: ProductDetailsPage) {
           productID={product.productID}
         />
       </span>
+      {model && (
+        <span class="text-small text-grey-2 uppercase">REF: {model}</span>
+      )}
     </div>
   );
 }
