@@ -1,3 +1,5 @@
+import { Head } from "$fresh/runtime.ts";
+
 import Divider from "$store/components/ui/Divider.tsx";
 import ImagesSection, {
   Props as ImagesSectionProps,
@@ -7,17 +9,54 @@ export interface Props {
   categories: LinkMapProps[];
   sections: LinkMapProps[];
   extra: ImagesSectionProps[];
+  routesToShowCategoryList: Route[];
 }
 
-function Body(
-  { categories, sections, extra }: Props,
-) {
+interface Route {
+  /**
+   * @title Path
+   */
+  label: string;
+}
+
+function generatePathVerify(routes: Route[]) {
+  return `
+    window.addEventListener('load', () => {
+      const $div = document.querySelector('#footer-body-categories-list')
+      const $divider = document.querySelector('.footer-body-categories-list-divider')
+      
+      switch (location.pathname) {
+        ${routes.map((route) => `case "${route.label}": break;`)}
+        default: {
+          $div.classList.add('hidden')
+          $divider.classList.add('hidden')
+        }
+      }
+    })
+  `.replaceAll(";,", ";");
+}
+
+function Body({
+  categories,
+  sections,
+  extra,
+  routesToShowCategoryList = [],
+}: Props) {
   return (
     <>
+      <Head>
+        <script
+          type="text/javascript"
+          dangerouslySetInnerHTML={{
+            __html: generatePathVerify(routesToShowCategoryList),
+          }}
+        />
+      </Head>
+
       {/* CATEGORIES */}
       {categories?.length > 0 && (
         <>
-          <div class="group">
+          <div class="group" id="footer-body-categories-list">
             <LinkMapAccordion
               label="Categorias"
               id="categories-accordion"
@@ -26,18 +65,13 @@ function Body(
             <div class="hidden group-[&:has(input:checked)]:flex flex-col gap-3 pt-3 tablet:!grid tablet:grid-cols-10 tablet:gap-5 tablet:pt-0">
               {categories?.map((category) => (
                 <div class="flex flex-col tablet:col-span-2">
-                  <h4 class="tablet:hidden pb-3">
-                    {category.label}
-                  </h4>
-                  <LinkList
-                    {...category}
-                    className="pl-3 tablet:pl-0"
-                  />
+                  <h4 class="tablet:hidden pb-3">{category.label}</h4>
+                  <LinkList {...category} className="pl-3 tablet:pl-0" />
                 </div>
               ))}
             </div>
           </div>
-          <Divider />
+          <Divider className="footer-body-categories-list-divider" />
         </>
       )}
 
@@ -59,7 +93,9 @@ function Body(
           </>
         ))}
         <div class="col-span-2 flex flex-wrap gap-5">
-          {extra.map((section) => <ImagesSection {...section} />)}
+          {extra.map((section) => (
+            <ImagesSection {...section} />
+          ))}
         </div>
       </div>
     </>
@@ -77,20 +113,18 @@ interface LinkMapProps {
   }[];
 }
 
-function LinkList(
-  { items, className }: {
-    items: LinkMapProps["items"];
-    className?: HTMLUListElement["className"];
-  },
-) {
+function LinkList({
+  items,
+  className,
+}: {
+  items: LinkMapProps["items"];
+  className?: HTMLUListElement["className"];
+}) {
   return (
     <ul class={`flex flex-col gap-3 ${className}`}>
       {items.map((item) => (
         <li>
-          <a
-            alt={item.label}
-            href={item.link}
-          >
+          <a alt={item.label} href={item.link}>
             {item.label}
           </a>
         </li>
@@ -99,9 +133,15 @@ function LinkList(
   );
 }
 
-function LinkMapAccordion(
-  { label, id, hideTitle }: { label: string; id: string; hideTitle?: boolean },
-) {
+function LinkMapAccordion({
+  label,
+  id,
+  hideTitle,
+}: {
+  label: string;
+  id: string;
+  hideTitle?: boolean;
+}) {
   return (
     <label
       for={id}
@@ -110,11 +150,7 @@ function LinkMapAccordion(
       } tablet:font-bold cursor-pointer tablet:cursor-default`}
     >
       <h4>{label}</h4>
-      <input
-        id={id}
-        type="checkbox"
-        class="hidden peer tablet:hidden"
-      />
+      <input id={id} type="checkbox" class="hidden peer tablet:hidden" />
       <span class="block peer-checked:hidden tablet:hidden leading-none">
         +
       </span>
