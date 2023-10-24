@@ -9,17 +9,12 @@ function Breadcrumb({ itemListElement = [] }: Props) {
   const filtered = items.filter(({ name, item }) => name && item);
 
   return (
-    <ul class="flex items-center gap-2">
+    <ul class="flex items-center gap-2 text-black">
       {filtered.map(({ name, item }, index) => (
         <>
-          {index !== 0 && <li class="text-small text-grey-2">|</li>}
+          {index !== 0 && <li class="text-small">|</li>}
           <li>
-            <a
-              href={item}
-              class={`uppercase text-small ${
-                index === filtered.length - 1 ? "text-black" : "text-grey-2"
-              }`}
-            >
+            <a aria-label={name} href={item} class="uppercase text-small">
               {name}
             </a>
           </li>
