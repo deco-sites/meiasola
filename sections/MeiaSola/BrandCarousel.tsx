@@ -17,12 +17,24 @@ function FavoriteBrands({ title, brands }: Props) {
       <h3 class="font-bold text-subtitle tracking-widest">{title}</h3>
 
       <div id={id}>
-        <Slider class="carousel carousel-start flex gap-4 laptop:gap-7 overflow-y-hidden">
-          {brands?.map((brand, index) => (
-            <Slider.Item index={index} class="carousel-item">
-              <Brand {...brand} />
-            </Slider.Item>
-          ))}
+        <Slider class="carousel carousel-start flex gap-4 laptop:gap-7 overflow-y-hidden -mx-[24px] mobile:-mx-[50px] laptop:-mx-[70px]">
+          {brands?.map((brand, index) => {
+            const isFirst = index === 0;
+            const isLast = index === brands.length - 1;
+
+            return (
+              <Slider.Item
+                index={index}
+                class={`carousel-item box-border ${
+                  isFirst ? "pl-[24px] mobile:pl-[50px] laptop:pl-[70px]" : ""
+                } ${
+                  isLast ? "pr-[24px] mobile:pr-[50px] laptop:pr-[70px]" : ""
+                }`}
+              >
+                <Brand {...brand} />
+              </Slider.Item>
+            );
+          })}
         </Slider>
 
         <Slider.PrevButton class="absolute left-[25px] top-1/2 z-10" />
@@ -64,7 +76,7 @@ function Brand({ label, link, logo, background }: BrandProps) {
     <a
       href={link}
       aria-label={`Clique e acesse produtos da marca: ${label}`}
-      class="rounded-xl overflow-hidden relative flex items-center justify-center w-[137px] h-[137px]"
+      class="rounded-xl overflow-hidden relative flex items-center justify-center w-[137px] h-[137px] bg-grey-1"
     >
       <Image
         alt={`Logo da marca: ${label}`}
@@ -72,6 +84,7 @@ function Brand({ label, link, logo, background }: BrandProps) {
         width={logo.width}
         height={logo.height}
         loading="lazy"
+        fetchPriority="auto"
         class="flex z-10"
       />
       <Image
@@ -80,6 +93,7 @@ function Brand({ label, link, logo, background }: BrandProps) {
         width={130}
         height={130}
         loading="lazy"
+        fetchPriority="auto"
         class="object-cover w-full h-full absolute top-0 left-0 z-0"
       />
     </a>

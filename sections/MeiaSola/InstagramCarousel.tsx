@@ -7,6 +7,7 @@ import { useId } from "$store/sdk/useId.ts";
 
 export interface Props {
   title: string;
+  instagramLink: string;
 
   images: {
     /**
@@ -18,7 +19,11 @@ export interface Props {
   }[];
 }
 
-export default function InstagramCarousel({ title, images }: Props) {
+export default function InstagramCarousel({
+  title,
+  instagramLink,
+  images,
+}: Props) {
   const id = useId();
   return (
     <section class="pb-6 tablet:pb-10 bg-white text-black">
@@ -32,16 +37,18 @@ export default function InstagramCarousel({ title, images }: Props) {
               index={index}
               class="carousel-item laptop:w-1/4 bg-grey-1"
             >
-              <Image
-                alt={image.label ?? "Imagem do Instagram"}
-                src={image.src}
-                width={360}
-                height={360}
-                loading="lazy"
-                fetchPriority="low"
-                sizes="(max-width: 360px) 160px, 360px"
-                class="object-cover h-[160px] w-[160px] tablet:h-[360px] tablet:w-[360px]"
-              />
+              <a href={instagramLink} alt="Acesse o instagram" class="block">
+                <Image
+                  alt={image.label ?? "Imagem do Instagram"}
+                  src={image.src}
+                  width={360}
+                  height={360}
+                  loading="lazy"
+                  fetchPriority="low"
+                  sizes="(max-width: 360px) 160px, 360px"
+                  class="object-cover h-[160px] w-[160px] tablet:h-[360px] tablet:w-[360px]"
+                />
+              </a>
             </Slider.Item>
           ))}
         </Slider>

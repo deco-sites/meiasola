@@ -30,12 +30,12 @@ function ProductShelf({
 
   return (
     <div
-      class={`w-full ${
+      class={`${
         forceFullWidth ? "" : "container"
       } relative py-6 flex flex-col gap-6 text-black`}
     >
       <div class={`flex justify-between ${forceFullWidth ? "container" : ""}`}>
-        <div class="flex items-end gap-4">
+        <div class="flex flex-col tablet:flex-row tablet:items-end gap-4">
           <h3 class="font-bold text-subtitle tracking-widest leading-none">
             {title}
           </h3>
@@ -55,25 +55,35 @@ function ProductShelf({
       <div id={id}>
         <Slider
           class={`carousel carousel-start flex ${
-            forceFullWidth ? "gap-[2px]" : "gap-4 laptop:gap-5"
+            forceFullWidth
+              ? "gap-[2px]"
+              : "gap-4 laptop:gap-5 -mx-[24px] mobile:-mx-[50px] laptop:-mx-0"
           } overflow-y-hidden`}
         >
-          {products?.map((product, index) => (
-            <Slider.Item
-              index={index}
-              class={`carousel-item w-[310px] desktop:w-[calc((100vw-70px-70px)/4-16px)] monitor:w-[310px] ${
-                forceFullWidth
-                  ? index === 0
-                    ? "snap-start"
-                    : index === products.length - 1
-                    ? "snap-end"
-                    : "snap-center"
-                  : "snap-start"
-              }`}
-            >
-              <ProductCard product={product} itemListName={title} />
-            </Slider.Item>
-          ))}
+          {products?.map((product, index) => {
+            const isFirst = index === 0;
+            const isLast = index === products.length - 1;
+            return (
+              <Slider.Item
+                index={index}
+                class={`carousel-item ${
+                  forceFullWidth ? (isLast ? "snap-end" : "snap-center") : ""
+                } ${
+                  !forceFullWidth && isFirst
+                    ? "pl-[24px] mobile:pl-[50px] laptop:pl-0"
+                    : ""
+                } ${
+                  !forceFullWidth && isLast
+                    ? "pr-[24px] mobile:pr-[50px] laptop:pr-0"
+                    : ""
+                }`}
+              >
+                <div class="w-[310px] desktop:w-[calc((100vw-70px-70px)/4-16px)] monitor:w-[310px]">
+                  <ProductCard product={product} itemListName={title} />
+                </div>
+              </Slider.Item>
+            );
+          })}
         </Slider>
 
         <Slider.PrevButton class="absolute left-[25px] top-1/2 z-10" />

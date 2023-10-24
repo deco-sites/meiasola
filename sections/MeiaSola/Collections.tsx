@@ -19,38 +19,49 @@ function Collections({ variant, collections }: Props) {
   if (variant === "one") {
     return (
       <div class="container py-3 tablet:py-11 text-black">
-        <div class="flex gap-5 overflow-y-hidden overflow-x-scroll snap-x snap-mandatory scrollbar-none">
+        <ul class="flex desktop:justify-center gap-5 overflow-y-hidden carousel carousel-start scrollbar-none -mx-[24px] mobile:-mx-[50px] laptop:-mx-[70px]">
           {collections?.map((collection, index) => {
+            const isFirst = index === 0;
+            const isLast = index === collections.length - 1;
+
             return (
-              <a
+              <li
                 key={"collection-" + index}
-                href={collection.link}
-                aria-label={`Clique para ver produtos de: ${collection.label}`}
-                class="relative flex justify-center items-end p-6 w-[310px] h-[480px] text-body text-white shrink-0 snap-start desktop:shrink"
+                class={`carousel-item box-border ${
+                  isFirst ? "pl-[24px] mobile:pl-[50px] laptop:pl-[70px]" : ""
+                } ${
+                  isLast ? "pr-[24px] mobile:pr-[50px] laptop:pr-[70px]" : ""
+                }`}
               >
-                <p class="z-10 text-center">{collection.label}</p>
-                <div class="h-full w-full bg-grey-1 absolute top-0 left-0 z-0">
-                  <Image
-                    alt="Imagem da coleção"
-                    width={310}
-                    height={480}
-                    loading="lazy"
-                    fetchPriority="auto"
-                    src={collection.image}
-                    class="object-cover h-full w-full"
+                <a
+                  href={collection.link}
+                  aria-label={`Clique para ver produtos de: ${collection.label}`}
+                  class="relative flex justify-center items-end p-6 w-[310px] h-[480px] text-body text-white shrink-0 snap-start desktop:shrink"
+                >
+                  <p class="z-10 text-center">{collection.label}</p>
+                  <div class="h-full w-full bg-grey-1 absolute top-0 left-0 z-0">
+                    <Image
+                      alt="Imagem da coleção"
+                      width={310}
+                      height={480}
+                      loading="lazy"
+                      fetchPriority="auto"
+                      src={collection.image}
+                      class="object-cover h-full w-full"
+                    />
+                  </div>
+                  <div
+                    class="absolute h-full w-full top-0 left-0 z-[1]"
+                    style={{
+                      background:
+                        "linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.00) 100%)",
+                    }}
                   />
-                </div>
-                <div
-                  class="absolute h-full w-full top-0 left-0 z-[1]"
-                  style={{
-                    background:
-                      "linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.00) 100%)",
-                  }}
-                />
-              </a>
+                </a>
+              </li>
             );
           })}
-        </div>
+        </ul>
       </div>
     );
   }
@@ -58,36 +69,47 @@ function Collections({ variant, collections }: Props) {
   if (variant === "two") {
     return (
       <div class="container py-3 mt-3 tablet:mt-7 text-black">
-        <div class="flex desktop:justify-center gap-5 overflow-y-hidden overflow-x-scroll snap-x snap-mandatory scrollbar-none">
+        <ul class="flex desktop:justify-center gap-5 overflow-y-hidden carousel carousel-start scrollbar-none -mx-[24px] mobile:-mx-[50px] laptop:-mx-[70px]">
           {collections?.map((collection, index) => {
+            const isFirst = index === 0;
+            const isLast = index === collections.length - 1;
+
             return (
-              <a
+              <li
                 key={"collection-" + index}
-                href={collection.link}
-                aria-label={`Clique para ver produtos de: ${collection.label}`}
-                class="flex flex-col items-center gap-5 w-[350px] h-[481px] text-body text-black shrink-0 snap-start desktop:shrink group"
+                class={`carousel-item box-border ${
+                  isFirst ? "pl-[24px] mobile:pl-[50px] laptop:pl-[70px]" : ""
+                } ${
+                  isLast ? "pr-[24px] mobile:pr-[50px] laptop:pr-[70px]" : ""
+                }`}
               >
-                <h4 class="text-center text-large tracking-wide font-medium">
-                  {collection.label}
-                </h4>
-                <div class="h-full w-full bg-grey-1">
-                  <Image
-                    alt="Imagem da coleção"
-                    width={350}
-                    height={410}
-                    loading="lazy"
-                    fetchPriority="auto"
-                    src={collection.image}
-                    class="object-cover h-full w-full flex-1"
-                  />
-                </div>
-                <p class="text-center text-small group-hover:underline">
-                  SHOP NOW
-                </p>
-              </a>
+                <a
+                  href={collection.link}
+                  aria-label={`Clique para ver produtos de: ${collection.label}`}
+                  class="flex flex-col items-center gap-5 w-[350px] h-[481px] text-body text-black shrink-0 snap-start desktop:shrink group"
+                >
+                  <h4 class="text-center text-large tracking-wide font-medium">
+                    {collection.label}
+                  </h4>
+                  <div class="h-full w-full bg-grey-1">
+                    <Image
+                      alt="Imagem da coleção"
+                      width={350}
+                      height={410}
+                      loading="lazy"
+                      fetchPriority="auto"
+                      src={collection.image}
+                      class="object-cover h-full w-full flex-1"
+                    />
+                  </div>
+                  <p class="text-center text-small group-hover:underline">
+                    SHOP NOW
+                  </p>
+                </a>
+              </li>
             );
           })}
-        </div>
+        </ul>
       </div>
     );
   }
