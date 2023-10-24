@@ -205,7 +205,7 @@ function ShippingSimulation({ items, gap }: Props & { gap?: boolean }) {
         class={`grid grid-cols-4 ${gap ? "gap-4" : ""}`}
       >
         <input
-          class="border border-black p-2 h-[35px] text-small col-span-3 placeholder:text-small placeholder:text-grey-2 focus:outline-none"
+          class="border border-black p-2 h-[35px] text-small col-span-3 placeholder:text-small rounded-none placeholder:text-grey-2 focus:outline-none"
           placeholder="Informar CEP"
           maxLength={8}
           size={8}
