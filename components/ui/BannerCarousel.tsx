@@ -130,6 +130,7 @@ function Item(props: Video | Image) {
           autoPlay
           muted
           loop
+          playsinline
           width={1200}
           class="w-full h-full object-cover absolute top-0 left-0 z-0"
         >
