@@ -26,19 +26,18 @@ function WishlistButton({
 
   return (
     <Button
-      class={variant === "icon"
-        ? "btn-ghost gap-2"
-        : "btn-primary btn-outline gap-2"}
+      class={
+        variant === "icon" ? "btn-ghost gap-2" : "btn-primary btn-outline gap-2"
+      }
       loading={fetching.value}
       aria-label="Add to wishlist"
-      // onClick={async (e) => {
-      onClick={(e) => {
+      onClick={async (e) => {
         e.stopPropagation();
         e.preventDefault();
 
         if (!isUserLoggedIn) {
           window.alert("Please log in before adding to your wishlist");
-
+          window.location.href = "/login";
           return;
         }
 
@@ -48,18 +47,15 @@ function WishlistButton({
 
         try {
           fetching.value = true;
-          // inWishlist
-          // ? await removeItem({ id: listItem.value!.id }!)
-          // : await addItem(item);
+          inWishlist
+            ? await removeItem({ id: listItem.value!.id }!)
+            : await addItem(item);
         } finally {
           fetching.value = false;
         }
       }}
     >
-      <Icon
-        id="Heart"
-        size={20}
-      />
+      <Icon id="Heart" size={20} />
       {variant === "icon" ? null : inWishlist ? "Remover" : "Favoritar"}
     </Button>
   );
