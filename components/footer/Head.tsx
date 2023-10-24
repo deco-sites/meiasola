@@ -8,24 +8,21 @@ export interface Props {
   social: {
     label: string;
     items: {
-      label:
-        | "Facebook"
-        | "Instagram"
-        | "Tiktok";
+      label: "Facebook" | "Instagram" | "Tiktok";
       link: string;
     }[];
   };
-  app: {
-    label: string;
-    images: {
-      label: string;
-      src: ImageWidget;
-      width: number;
-      height: number;
-      hideOnMobile?: boolean;
-      link?: string;
-    }[];
-  };
+  // app: {
+  //   label: string;
+  //   images: {
+  //     label: string;
+  //     src: ImageWidget;
+  //     width: number;
+  //     height: number;
+  //     hideOnMobile?: boolean;
+  //     link?: string;
+  //   }[];
+  // };
 }
 
 function Head({ social, app }: Props) {
@@ -45,7 +42,7 @@ function Head({ social, app }: Props) {
         <h5>{social?.label}</h5>
         <div class="flex gap-4">
           {social?.items?.map((item) => (
-            <a aria-label={item.label} href={item.link}>
+            <a aria-label={item.label} href={item.link} target="_blank">
               <Icon id={item.label} class="h-6 w-6 desktop:h-8 desktop:w-8" />
             </a>
           ))}
@@ -57,7 +54,7 @@ function Head({ social, app }: Props) {
       </div>
 
       <div class="flex-1 flex items-center justify-between tablet:justify-end gap-5">
-        <h5 class="shrink-0">{app?.label}</h5>
+        {/* <h5 class="shrink-0">{app?.label}</h5>
         <div class="flex gap-4 items-center">
           {app?.images?.map((image) => (
             <a
@@ -76,7 +73,7 @@ function Head({ social, app }: Props) {
               />
             </a>
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );

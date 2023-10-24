@@ -8,20 +8,23 @@ export interface Props {
     src: ImageWidget;
     width: number;
     height: number;
+    link?: string;
   }[];
 }
 
-function ImagesSection(
-  { title = "", images, className }: Props & {
-    className?: HTMLDivElement["className"];
-  },
-) {
+function ImagesSection({
+  title = "",
+  images,
+  className,
+}: Props & {
+  className?: HTMLDivElement["className"];
+}) {
   return (
     <div class={`${className} flex flex-col gap-3 w-full`}>
       <h4 class="font-bold text-large">{title}</h4>
       <ul class="flex flex-wrap gap-3">
-        {images?.map((image) => (
-          <li>
+        {images?.map((image) => {
+          const ImageComponent = () => (
             <Image
               loading="lazy"
               fetchPriority="low"
@@ -31,8 +34,24 @@ function ImagesSection(
               height={image.height}
               class="object-contain"
             />
-          </li>
-        ))}
+          );
+
+          return (
+            <li>
+              {image.link ? (
+                <a
+                  alt={`Clique e acesse ${image.label}`}
+                  target="_blank"
+                  href={image.link}
+                >
+                  <ImageComponent />
+                </a>
+              ) : (
+                <ImageComponent />
+              )}
+            </li>
+          );
+        })}
       </ul>
     </div>
   );

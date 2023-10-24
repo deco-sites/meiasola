@@ -10,6 +10,7 @@ function WhatsApp({ phone }: Props) {
       href={`https://api.whatsapp.com/send/?phone=${phone}&text&type=phone_number&app_absent=0`}
       class="fixed bottom-4 right-4 z-40"
       aria-label="Fale conosco no WhatsApp"
+      target="_blank"
     >
       <button
         aria-label="Abrir WhatsApp"
