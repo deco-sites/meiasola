@@ -13,22 +13,22 @@ export interface Props {
 function FavoriteBrands({ title, brands }: Props) {
   const id = useId();
   return (
-    <div class="py-9 flex flex-col gap-6 text-black">
-      <div class="container">
-        <h3 class="font-bold text-subtitle tracking-widest">{title}</h3>
-      </div>
+    <div class="py-9 flex flex-col gap-6 text-black relative container">
+      <h3 class="font-bold text-subtitle tracking-widest">{title}</h3>
 
-      <div class="container relative" id={id}>
-        <Slider class="flex gap-4 laptop:gap-7 w-full">
+      <div id={id}>
+        <Slider class="carousel carousel-start flex gap-4 laptop:gap-7 overflow-y-hidden">
           {brands?.map((brand, index) => (
             <Slider.Item index={index} class="carousel-item">
               <Brand {...brand} />
             </Slider.Item>
           ))}
         </Slider>
-        <Slider.PrevButton class="absolute left-[25px] top-1/2" />
-        <Slider.NextButton class="absolute right-[25px] top-1/2" />
-        <SliderJS rootId={id} scroll="smooth" />
+
+        <Slider.PrevButton class="absolute left-[25px] top-1/2 z-10" />
+        <Slider.NextButton class="absolute right-[25px] top-1/2 z-10" />
+
+        <SliderJS rootId={id} />
       </div>
     </div>
   );
