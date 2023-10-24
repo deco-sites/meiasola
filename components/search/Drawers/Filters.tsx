@@ -1,5 +1,6 @@
 import { useUI } from "$store/sdk/useUI.ts";
 import { lazy } from "preact/compat";
+import { useEffect } from "preact/hooks";
 
 import Drawer from "$store/components/ui/Drawer.tsx";
 import Aside from "$store/components/ui/Aside.tsx";
@@ -14,19 +15,19 @@ export default function FiltersDrawer(props: Props) {
     displayFilters.value = false;
   };
 
+  useEffect(() => {
+    displayFilters.value = false;
+  }, [props]);
+
   return (
     <Drawer
       open={displayFilters.value}
       onClose={onClose}
       aside={
-        <Aside
-          onClose={onClose}
-          title="Filtro"
-        >
+        <Aside onClose={onClose} title="Filtro">
           {displayFilters.value && <Filters {...props} />}
         </Aside>
       }
-    >
-    </Drawer>
+    ></Drawer>
   );
 }

@@ -75,12 +75,17 @@ function FilterValues({ key, values }: FilterToggle) {
 
 function Filters({ filters }: Props) {
   return (
-    <ul class="flex flex-col gap-6 text-black" f-client-nav>
+    <ul
+      class="flex flex-col gap-6 text-black pt-6 tablet:pt-0 w-full"
+      f-client-nav
+    >
       {filters.filter(isToggle).map((filter, index) => {
         if (filter.quantity > 0) {
           return (
             <>
-              <Divider className={index === 0 ? "hidden laptop:flex" : ""} />
+              <li className={index === 0 ? "hidden laptop:flex" : ""}>
+                <Divider />
+              </li>
               <li class="flex flex-col gap-3">
                 <span class="font-medium text-large">{filter.label}</span>
                 <FilterValues {...filter} />

@@ -84,9 +84,9 @@ function Sort({ sortOptions }: Props) {
       <div class="tablet:hidden w-full">
         <label
           for="my_modal_6"
-          class="flex gap-2 items-center text-small cursor-pointer w-full min-w-[163px] border justify-center p-2"
+          class="flex gap-2 items-center text-small cursor-pointer w-full border justify-center p-2"
         >
-          {portugueseMappings[sort] ?? "Ordenar por"}
+          <p class="truncate">{portugueseMappings[sort] ?? "Ordenar por"}</p>
           <Icon id="ChevronDown" class="w-6 h-6" />
         </label>
 
