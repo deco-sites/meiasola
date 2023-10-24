@@ -288,7 +288,7 @@ function Image({
             media="(max-width: 767px)"
             src={image.srcMobile}
             width={390}
-            height={310}
+            height={260}
           />
           <Source
             media="(min-width: 768px)"
