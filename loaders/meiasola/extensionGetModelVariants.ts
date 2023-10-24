@@ -22,7 +22,7 @@ const loader =
 
     const { state } = VTEX({
       account: "meiasola",
-      publicUrl: "www.meiasola.com.br",
+      publicUrl: "secure.meiasola.com.br",
       platform: "vtex",
     });
 
