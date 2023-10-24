@@ -39,28 +39,37 @@ function MyStyle({ title, posts }: Props) {
                 class="w-[310px] shrink-0 snap-start desktop:shrink flex flex-col gap-3 overflow-clip"
               >
                 <div class="w-[310px] h-[328px] bg-grey-1">
-                  {post.thumbnailUrl && (
+                  {post.image && (
                     <Image
                       alt="Imagem do post"
                       width={310}
                       height={328}
                       loading="lazy"
                       fetchPriority="auto"
-                      src={post.thumbnailUrl}
+                      src={post.image}
                       class="object-cover h-full w-full"
                     />
                   )}
                 </div>
 
-                <div class="flex flex-col justify-end items-start gap-3 flex-1">
+                <div class="flex flex-col justify-between items-start gap-3 flex-1">
                   <h5 class="font-bold text-body">{post.headline}</h5>
-                  <div
-                    class="truncate text-small line-clamp-3 w-full overflow-clip post-content"
-                    dangerouslySetInnerHTML={{ __html: post.description ?? "" }}
-                  />
-                  <a class="underline font-bold text-small" href={post.url}>
-                    LEIA MAIS
-                  </a>
+                  <div class="flex flex-col gap-3">
+                    <div
+                      class="truncate text-small line-clamp-3 w-full overflow-clip post-content"
+                      dangerouslySetInnerHTML={{
+                        __html: post.description ?? "",
+                      }}
+                    />
+                    <a
+                      class="underline font-bold text-small"
+                      href={post.url}
+                      target="_black"
+                      aria-label={`Abrir post: ${post.headline}`}
+                    >
+                      LEIA MAIS
+                    </a>
+                  </div>
                 </div>
               </div>
             );
