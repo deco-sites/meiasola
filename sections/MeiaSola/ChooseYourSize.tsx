@@ -17,7 +17,8 @@ function ChooseYourSize({ title, sizes }: Props) {
         <h4 class="text-large tracking-wide text-center laptop:text-left">
           {title}
         </h4>
-        <ul class="flex flex-wrap justify-center gap-8 laptop:gap-6 desktop:gap-8 mx-10">
+
+        <ul class="grid grid-cols-4 gap-8 tablet:flex-wrap tablet:justify-center tablet:flex laptop:gap-6 desktop:gap-8 mx-10">
           {sizes?.map((size, index) => {
             return (
               <li key={"size-" + index}>
