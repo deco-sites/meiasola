@@ -31,6 +31,9 @@ const blogPostListLoader = async (
         post.image = firstImage.attr("src");
       }
     }
+
+    const $ = cheerio.load(post.description);
+    post.description = $.text();
   });
 
   return posts;

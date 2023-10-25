@@ -44,9 +44,11 @@ function MyStyle({ title, posts }: Props) {
                   isLast ? "pr-[24px] mobile:pr-[50px] laptop:pr-[70px]" : ""
                 }`}
               >
-                <div
-                  key={"post-" + index}
-                  class="w-[310px] desktop:w-[calc((100vw-70px-70px)/4-20px)] monitor:w-[310px] shrink-0 snap-start desktop:shrink flex flex-col gap-3 overflow-clip"
+                <a
+                  href={post.url}
+                  target="_blank"
+                  aria-label={`Abrir post: ${post.headline}`}
+                  class="w-[310px] desktop:w-[calc((100vw-70px-70px)/4-20px)] monitor:w-[310px] flex flex-col gap-3"
                 >
                   <div class="w-full h-[328px] bg-grey-1">
                     {post.image && (
@@ -65,23 +67,15 @@ function MyStyle({ title, posts }: Props) {
                   <div class="flex flex-col justify-between items-start gap-3 flex-1">
                     <h5 class="font-bold text-body">{post.headline}</h5>
                     <div class="flex flex-col gap-3">
-                      <div
-                        class="truncate text-small line-clamp-3 w-full overflow-clip post-content"
-                        dangerouslySetInnerHTML={{
-                          __html: post.description ?? "",
-                        }}
-                      />
-                      <a
-                        class="underline font-bold text-small"
-                        href={post.url}
-                        target="_black"
-                        aria-label={`Abrir post: ${post.headline}`}
-                      >
+                      <div class="text-small line-clamp-3 w-full overflow-clip post-content">
+                        {post.description}
+                      </div>
+                      <span class="underline font-bold text-small">
                         LEIA MAIS
-                      </a>
+                      </span>
                     </div>
                   </div>
-                </div>
+                </a>
               </li>
             );
           })}
