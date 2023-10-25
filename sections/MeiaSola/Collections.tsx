@@ -86,12 +86,12 @@ function Collections({ variant, collections }: Props) {
                 <a
                   href={collection.link}
                   aria-label={`Clique para ver produtos de: ${collection.label}`}
-                  class="flex flex-col items-center gap-5 w-[350px] h-[481px] text-body text-black shrink-0 snap-start desktop:shrink group"
+                  class="flex flex-col items-center gap-5 w-[350px] h-[481px] text-body text-black shrink-0 desktop:shrink group"
                 >
-                  <h4 class="text-center text-large tracking-wide font-medium">
+                  <h4 class="text-center text-large tracking-wide font-medium uppercase">
                     {collection.label}
                   </h4>
-                  <div class="h-full w-full bg-grey-1">
+                  <div class="h-full w-full bg-grey-1 relative">
                     <Image
                       alt="Imagem da coleção"
                       width={350}
@@ -99,10 +99,10 @@ function Collections({ variant, collections }: Props) {
                       loading="lazy"
                       fetchPriority="auto"
                       src={collection.image}
-                      class="object-cover h-full w-full flex-1"
+                      class="object-cover absolute top-0 left-0 h-full w-full"
                     />
                   </div>
-                  <p class="text-center text-small group-hover:underline">
+                  <p class="shrink-0 text-center text-small border-b border-transparent group-hover:border-black">
                     SHOP NOW
                   </p>
                 </a>
