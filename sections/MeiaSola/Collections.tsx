@@ -36,7 +36,7 @@ function Collections({ variant, collections }: Props) {
                 <a
                   href={collection.link}
                   aria-label={`Clique para ver produtos de: ${collection.label}`}
-                  class="relative flex justify-center items-end p-6 w-[310px] h-[480px] text-body text-white shrink-0 snap-start desktop:shrink"
+                  class="relative flex justify-center items-end p-6 w-[310px] desktop:w-[calc((100vw-70px-70px)/4-20px)] monitor:w-[310px] h-[480px] text-body text-white shrink-0 snap-start desktop:shrink"
                 >
                   <p class="z-10 text-center">{collection.label}</p>
                   <div class="h-full w-full bg-grey-1 absolute top-0 left-0 z-0">

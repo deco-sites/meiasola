@@ -46,9 +46,9 @@ function MyStyle({ title, posts }: Props) {
               >
                 <div
                   key={"post-" + index}
-                  class="w-[310px] shrink-0 snap-start desktop:shrink flex flex-col gap-3 overflow-clip"
+                  class="w-[310px] desktop:w-[calc((100vw-70px-70px)/4-20px)] monitor:w-[310px] shrink-0 snap-start desktop:shrink flex flex-col gap-3 overflow-clip"
                 >
-                  <div class="w-[310px] h-[328px] bg-grey-1">
+                  <div class="w-full h-[328px] bg-grey-1">
                     {post.image && (
                       <Image
                         alt="Imagem do post"

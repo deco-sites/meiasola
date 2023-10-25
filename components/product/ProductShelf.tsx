@@ -78,7 +78,7 @@ function ProductShelf({
                     : ""
                 }`}
               >
-                <div class="w-[310px] desktop:w-[calc((100vw-70px-70px)/4-16px)] monitor:w-[310px]">
+                <div class="w-[310px] desktop:w-[calc((100vw-70px-70px)/4-20px)] monitor:w-[310px]">
                   <ProductCard product={product} itemListName={title} />
                 </div>
               </Slider.Item>
