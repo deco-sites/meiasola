@@ -47,7 +47,7 @@ function Cart({
   const newTotal = subtotal - discounts * -1;
 
   return (
-    <div class="flex flex-col justify-center items-center overflow-hidden text-black">
+    <div class="flex flex-col justify-center items-center overflow-y-scroll scrollbar-none text-black">
       {isEmtpy ? (
         <div class="flex flex-col w-[398px] items-center justify-center">
           <span class="font-medium text-2xl">Sua sacola está vazia</span>
@@ -65,7 +65,7 @@ function Cart({
           {/* Cart Items */}
           <ul
             role="list"
-            class="mt-6 px-2 flex-grow overflow-y-auto flex flex-col gap-6 w-full scrollbar-none"
+            class="py-6 px-2 flex-grow overflow-y-auto flex flex-col gap-4 w-full scrollbar-none"
           >
             {items.map((item, index) => (
               <li key={index}>
@@ -94,19 +94,6 @@ function Cart({
             {/* Subtotal */}
             <div class=" py-2 flex flex-col">
               <Coupon onAddCoupon={onAddCoupon} coupon={coupon} />
-              {/* Shipping Simulation */}
-              <div class="mt-5">
-                <ShippingSimulation
-                  items={[
-                    {
-                      id: Number(1),
-                      quantity: 1,
-                      seller: "1",
-                    },
-                  ]}
-                  gap
-                />
-              </div>
             </div>
 
             {/* Total */}

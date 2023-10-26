@@ -48,6 +48,8 @@ function CartItem({
   const isGift = sale < 0.01;
   const [loading, setLoading] = useState(false);
 
+  console.log(item);
+
   const withLoading = useCallback(
     <A,>(cb: (args: A) => Promise<void>) =>
       async (e: A) => {
@@ -68,15 +70,17 @@ function CartItem({
         gridTemplateColumns: "auto 1fr",
       }}
     >
-      <Image
-        {...image}
-        style={{ aspectRatio: "73 / 76" }}
-        width={73}
-        height={76}
-        class="h-full object-contain object-top"
-      />
+      <div class="bg-grey-1 p-1 w-[73px] h-[76px]">
+        <Image
+          {...image}
+          style={{ aspectRatio: "73 / 76" }}
+          width={73}
+          height={76}
+          class="h-full w-full object-cover mix-blend-multiply"
+        />
+      </div>
 
-      <div class="flex flex-col justify-between">
+      <div class="flex flex-col justify-between pb-1">
         <div class="flex justify-between items-start">
           <span class="text-small text-grey-2 w-2/3 line-clamp-2">{name}</span>
           <Button

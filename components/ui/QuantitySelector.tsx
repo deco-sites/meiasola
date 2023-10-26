@@ -19,7 +19,7 @@ function QuantitySelector({ onChange, quantity, disabled, loading }: Props) {
     <div class="flex items-center rounded-none w-min text-small font-normal">
       <span class="mr-2">Quantidade:</span>
       <Button
-        class="join-item h-3 w-3 bg-transparent leading-none"
+        class="join-item h-3 w-3 bg-transparent leading-none font-bold"
         onClick={decrement}
         disabled={disabled}
         loading={loading}
@@ -40,7 +40,7 @@ function QuantitySelector({ onChange, quantity, disabled, loading }: Props) {
         size={3}
       />
       <Button
-        class="h-3 w-3 join-item bg-transparent leading-none"
+        class="h-3 w-3 join-item bg-transparent leading-none font-bold"
         onClick={increment}
         disabled={disabled}
         loading={loading}
