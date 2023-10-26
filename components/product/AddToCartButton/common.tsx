@@ -17,6 +17,7 @@ export interface Props {
 
   class?: string;
   children?: ComponentChildren;
+  goToCheckout?: boolean;
 }
 
 const useAddToCart = ({
@@ -26,6 +27,7 @@ const useAddToCart = ({
   productGroupID,
   productID,
   onAddItem,
+  goToCheckout,
 }: Props) => {
   const [loading, setLoading] = useState(false);
   const { displayCart } = useUI();
@@ -52,7 +54,7 @@ const useAddToCart = ({
         },
       });
 
-      displayCart.value = true;
+      if (!goToCheckout) displayCart.value = true;
     } finally {
       setLoading(false);
     }

@@ -482,19 +482,18 @@ export function Actions({
   if (availability === "https://schema.org/InStock")
     return (
       <div class="flex flex-col gap-2 justify-center">
-        <a alt="Ir para o checkout com esse produto" href="/checkout">
-          <AddToCartButton
-            name={product.name ?? ""}
-            productID={product.productID}
-            productGroupID={productGroupID}
-            price={price}
-            discount={discount}
-            seller={seller}
-            class="bg-black hover:bg-black text-white w-full !h-[45px] font-normal flex items-center justify-center text-body disabled:opacity-50"
-          >
-            COMPRAR
-          </AddToCartButton>
-        </a>
+        <AddToCartButton
+          name={product.name ?? ""}
+          productID={product.productID}
+          productGroupID={productGroupID}
+          price={price}
+          discount={discount}
+          seller={seller}
+          class="bg-black hover:bg-black text-white w-full !h-[45px] font-normal flex items-center justify-center text-body disabled:opacity-50"
+          goToCheckout
+        >
+          COMPRAR
+        </AddToCartButton>
         <AddToCartButton
           name={product.name ?? ""}
           productID={product.productID}
