@@ -39,7 +39,7 @@ function WishlistButton({
 
         if (!isUserLoggedIn) {
           window.alert(
-            "Por favor, faça acesse sua conta antes de adicionar produtos a sua lista de favoritos."
+            "Efetue o login na sua conta antes de adicionar produtos a sua lista de favoritos."
           );
           window.location.href = "/login";
           return;
