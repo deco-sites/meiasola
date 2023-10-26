@@ -43,6 +43,8 @@ function Result({
   const isSearchPage = search && search.term && search.term != "";
 
   const willPaginate = pageInfo.records > pageInfo.recordPerPage;
+  const paginationUrl = new URL(search.url.href);
+  paginationUrl.searchParams.set("page", "pagination-number");
 
   return (
     <>
@@ -91,22 +93,46 @@ function Result({
           {willPaginate && (
             <ul class="flex gap-8">
               {pageInfo.currentPage - 2 > 0 && (
-                <PageLink page={pageInfo.currentPage - 2} />
+                <PageLink
+                  page={pageInfo.currentPage - 2}
+                  href={paginationUrl.href.replace(
+                    "pagination-number",
+                    (pageInfo.currentPage - 2).toString()
+                  )}
+                />
               )}
 
               {pageInfo.previousPage && (
-                <PageLink page={pageInfo.currentPage - 1} />
+                <PageLink
+                  page={pageInfo.currentPage - 1}
+                  href={paginationUrl.href.replace(
+                    "pagination-number",
+                    (pageInfo.currentPage - 1).toString()
+                  )}
+                />
               )}
 
-              <PageLink page={pageInfo.currentPage} isActive />
+              <PageLink page={pageInfo.currentPage} isActive href={"#"} />
 
               {pageInfo.nextPage && (
-                <PageLink page={pageInfo.currentPage + 1} />
+                <PageLink
+                  page={pageInfo.currentPage + 1}
+                  href={paginationUrl.href.replace(
+                    "pagination-number",
+                    (pageInfo.currentPage + 1).toString()
+                  )}
+                />
               )}
 
               {pageInfo.currentPage + 1 * pageInfo.recordPerPage <
                 pageInfo.records && (
-                <PageLink page={pageInfo.currentPage + 2} />
+                <PageLink
+                  page={pageInfo.currentPage + 2}
+                  href={paginationUrl.href.replace(
+                    "pagination-number",
+                    (pageInfo.currentPage + 2).toString()
+                  )}
+                />
               )}
             </ul>
           )}
@@ -337,13 +363,15 @@ function NotFound() {
 function PageLink({
   page,
   isActive = false,
+  href,
 }: {
+  href: string;
   page: number;
   isActive?: boolean;
 }) {
   return (
     <a
-      href={`?page=${page}`}
+      href={href}
       aria-label={`Página ${page}`}
       class={`border border-black h-10 w-10 flex items-center justify-center hover:bg-black hover:text-white ${
         isActive ? "bg-black text-white" : ""
