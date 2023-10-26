@@ -28,7 +28,7 @@ function WishlistButton({
     <Button
       class={
         variant === "icon"
-          ? "btn-ghost gap-2 hover:bg-transparent group"
+          ? "btn-ghost gap-2 hover:bg-transparent group/wishlist"
           : "btn-primary btn-outline gap-2"
       }
       loading={fetching.value}
@@ -60,13 +60,13 @@ function WishlistButton({
       }}
     >
       {inWishlist ? null : (
-        <Icon id="Heart" size={20} class="group-hover:hidden" />
+        <Icon id="Heart" size={20} class="group-hover/wishlist:hidden" />
       )}
 
       <Icon
         id="HeartFilled"
         size={20}
-        class={inWishlist ? "" : "hidden group-hover:block"}
+        class={inWishlist ? "" : "hidden group-hover/wishlist:block"}
       />
 
       {variant === "icon" ? null : inWishlist ? "Remover" : "Favoritar"}
