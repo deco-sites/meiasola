@@ -29,7 +29,6 @@ function ValueItem({
   return (
     <a
       href={url}
-      // f-partial={url}
       class={`text-small ${
         selected
           ? "text-black border rounded-full px-3 py-1 inline-flex items-center gap-2 w-fit"
@@ -75,10 +74,7 @@ function FilterValues({ key, values }: FilterToggle) {
 
 function Filters({ filters }: Props) {
   return (
-    <ul
-      class="flex flex-col gap-6 text-black pt-6 tablet:pt-0 w-full"
-      f-client-nav
-    >
+    <ul class="flex flex-col gap-6 text-black pt-6 tablet:pt-0 w-full">
       {filters.filter(isToggle).map((filter, index) => {
         if (filter.quantity > 0) {
           return (

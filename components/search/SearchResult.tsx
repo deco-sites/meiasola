@@ -41,8 +41,8 @@ function Result({
     page;
 
   const isSearchPage = search && search.term && search.term != "";
-  const loadMoreURL = new URL(search.url.href);
-  loadMoreURL.searchParams.set("page", pageInfo.currentPage + 1);
+
+  const willPaginate = pageInfo.records > pageInfo.recordPerPage;
 
   return (
     <>
@@ -85,22 +85,30 @@ function Result({
             <Filters filters={filters} />
           </div>
         </aside>
-        <div
-          class="col-span-4 laptop:col-span-9 flex flex-col items-center gap-6 laptop:gap-10"
-          // f-client-nav
-        >
-          {/* <Partial name="product-listing" mode="append"> */}
+        <div class="col-span-4 laptop:col-span-9 flex flex-col items-center gap-6 laptop:gap-10">
           <ProductGallery products={products} />
-          {/* </Partial> */}
-          {pageInfo.nextPage && (
-            <a
-              href={pageInfo.nextPage}
-              aria-label="Ver mais produtos"
-              class="btn-ghost !border border-black uppercase tracking-large text-small text-black bg-white hover:bg-black hover:text-white disabled:bg-black disabled:text-white font-normal p-2.5 !w-full mobile:!w-fit mt-4 laptop:mt-5"
-              // f-partial={`${loadMoreURL.pathname}${loadMoreURL.search}`}
-            >
-              VER MAIS
-            </a>
+
+          {willPaginate && (
+            <ul class="flex gap-8">
+              {pageInfo.currentPage - 2 > 0 && (
+                <PageLink page={pageInfo.currentPage - 2} />
+              )}
+
+              {pageInfo.previousPage && (
+                <PageLink page={pageInfo.currentPage - 1} />
+              )}
+
+              <PageLink page={pageInfo.currentPage} isActive />
+
+              {pageInfo.nextPage && (
+                <PageLink page={pageInfo.currentPage + 1} />
+              )}
+
+              {pageInfo.currentPage + 1 * pageInfo.recordPerPage <
+                pageInfo.records && (
+                <PageLink page={pageInfo.currentPage + 2} />
+              )}
+            </ul>
           )}
         </div>
       </div>
@@ -207,7 +215,7 @@ function Sizes({
         <h4 class="text-large tracking-wide text-center laptop:text-left">
           {title}
         </h4>
-        <ul class="grid grid-cols-4 gap-8 tablet:flex-wrap tablet:justify-center laptop:gap-6 desktop:gap-8">
+        <ul class="grid grid-cols-4 gap-8 tablet:flex tablet:flex-wrap tablet:justify-center laptop:gap-6 desktop:gap-8">
           {sizes?.map((size, index) => {
             const sizeUrl = new URL(url.href);
 
@@ -227,7 +235,7 @@ function Sizes({
                 <a
                   href={sizeUrl.href}
                   aria-label={`Numeração ${size.label}`}
-                  class={`border border-white p-2.5 block hover:bg-white hover:text-black ${
+                  class={`border border-white h-10 w-10 flex items-center justify-center hover:bg-white hover:text-black ${
                     isActive ? "bg-white text-black" : ""
                   } transition-all duration-300 ease-out`}
                 >
@@ -323,5 +331,25 @@ function NotFound() {
     <div class="w-full flex justify-center items-center py-10">
       <span>Not Found!</span>
     </div>
+  );
+}
+
+function PageLink({
+  page,
+  isActive = false,
+}: {
+  page: number;
+  isActive?: boolean;
+}) {
+  return (
+    <a
+      href={`?page=${page}`}
+      aria-label={`Página ${page}`}
+      class={`border border-black h-10 w-10 flex items-center justify-center hover:bg-black hover:text-white ${
+        isActive ? "bg-black text-white" : ""
+      } transition-all duration-300 ease-out`}
+    >
+      {page}
+    </a>
   );
 }
