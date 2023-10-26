@@ -14,6 +14,7 @@ export type AvailableIcons =
   | "Bag"
   | "Facebook"
   | "Heart"
+  | "HeartFilled"
   | "Instagram"
   | "Search"
   | "Tiktok"
@@ -25,7 +26,7 @@ export type AvailableIcons =
   | "Ruler"
   | "Location"
   | "Trash"
-  | "Zoom";  
+  | "Zoom";
 
 export interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   /**

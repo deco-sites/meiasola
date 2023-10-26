@@ -27,7 +27,9 @@ function WishlistButton({
   return (
     <Button
       class={
-        variant === "icon" ? "btn-ghost gap-2" : "btn-primary btn-outline gap-2"
+        variant === "icon"
+          ? "btn-ghost gap-2 hover:bg-transparent group"
+          : "btn-primary btn-outline gap-2"
       }
       loading={fetching.value}
       aria-label="Add to wishlist"
@@ -36,7 +38,9 @@ function WishlistButton({
         e.preventDefault();
 
         if (!isUserLoggedIn) {
-          window.alert("Please log in before adding to your wishlist");
+          window.alert(
+            "Por favor, faça acesse sua conta antes de adicionar produtos a sua lista de favoritos."
+          );
           window.location.href = "/login";
           return;
         }
@@ -55,7 +59,16 @@ function WishlistButton({
         }
       }}
     >
-      <Icon id="Heart" size={20} />
+      {inWishlist ? null : (
+        <Icon id="Heart" size={20} class="group-hover:hidden" />
+      )}
+
+      <Icon
+        id="HeartFilled"
+        size={20}
+        class={inWishlist ? "" : "hidden group-hover:block"}
+      />
+
       {variant === "icon" ? null : inWishlist ? "Remover" : "Favoritar"}
     </Button>
   );
