@@ -3,6 +3,7 @@ import { Runtime } from "$store/runtime.ts";
 import type { JSX } from "preact";
 
 import Button from "$store/components/ui/Button.tsx";
+import { useForm } from "$store/sdk/useForm.ts";
 
 export interface Form {
   /**
@@ -25,6 +26,8 @@ export interface Props {
 
 function Newsletter({ title, description, form }: Props) {
   const loading = useSignal(false);
+  const errorMessage = useSignal("");
+  const { validName, validEmail } = useForm();
 
   const handleSubmit: JSX.GenericEventHandler<HTMLFormElement> = async (e) => {
     e.preventDefault();
@@ -34,11 +37,29 @@ function Newsletter({ title, description, form }: Props) {
 
       const name = (e.currentTarget.elements.namedItem("name") as RadioNodeList)
         ?.value;
+
+      if (!validName(name)) {
+        errorMessage.value = "Use um nome válido";
+        return;
+      }
+
       const email = (
         e.currentTarget.elements.namedItem("email") as RadioNodeList
       )?.value;
 
-      await Runtime.vtex.actions.newsletter.subscribe({ name, email });
+      if (!validEmail(email)) {
+        errorMessage.value = "Este é um e-mail inválido";
+        return;
+      }
+
+      await Runtime.vtex.actions.newsletter.subscribe({
+        name,
+        email,
+      });
+
+      errorMessage.value = "";
+    } catch (e) {
+      errorMessage.value = "Houve um erro inesperado";
     } finally {
       loading.value = false;
     }
@@ -72,6 +93,7 @@ function Newsletter({ title, description, form }: Props) {
             >
               {form.buttonText || "CADASTRE-SE"}
             </Button>
+            <p class="text-small text-red">{errorMessage.value}</p>
           </form>
         </div>
       </div>
@@ -108,6 +130,7 @@ function Newsletter({ title, description, form }: Props) {
             >
               {form.buttonText || "CADASTRE-SE"}
             </Button>
+            <p class="text-small text-red">{errorMessage.value}</p>
           </form>
           <div class="col-span-1 hidden desktop:flex"></div>
         </div>
