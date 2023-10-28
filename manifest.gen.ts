@@ -40,6 +40,7 @@ import * as $$$$$$30 from "./sections/Product/ProductDetails.tsx";
 import * as $$$$$$31 from "./sections/Product/SearchResult.tsx";
 import * as $$$$$$32 from "./sections/Product/Wishlist.tsx";
 import * as $$$$$$33 from "./sections/Product/ProductShelf.tsx";
+import * as $$$$$$$$$0 from "./actions/contactUs.ts";
 import * as $$$$$$$$$$$0 from "./apps/site.ts";
 import * as $$$$$$$$$$$1 from "./apps/decohub.ts";
 
@@ -85,6 +86,9 @@ const manifest = {
     "deco-sites/meiasola/sections/Social/InstagramPosts.tsx": $$$$$$4,
     "deco-sites/meiasola/sections/Social/WhatsApp.tsx": $$$$$$3,
     "deco-sites/meiasola/sections/Theme/Theme.tsx": $$$$$$19,
+  },
+  "actions": {
+    "deco-sites/meiasola/actions/contactUs.ts": $$$$$$$$$0,
   },
   "apps": {
     "deco-sites/meiasola/apps/decohub.ts": $$$$$$$$$$$1,

@@ -1,5 +1,7 @@
 import type { JSX } from "preact";
 import { useSignal } from "@preact/signals";
+// import { sendMail, IRequestBody } from "https://deno.land/x/sendgrid/mod.ts";
+import { fetchAPI } from "apps/utils/fetch.ts";
 
 import { Runtime } from "$store/runtime.ts";
 
@@ -8,6 +10,8 @@ import Button from "$store/components/ui/Button.tsx";
 
 export default function ContactUsForm() {
   const loading = useSignal(false);
+
+  // console.log(Runtime.app.actions.contactUs, Runtime.actions.contactUs);
 
   const handleSubmit: JSX.GenericEventHandler<HTMLFormElement> = async (e) => {
     e.preventDefault();
@@ -27,12 +31,52 @@ export default function ContactUsForm() {
         e.currentTarget.elements.namedItem("message") as RadioNodeList
       )?.value;
 
-      await Runtime.vtex.actions.newsletter.subscribe({
-        name,
-        email,
-        // phone,
-        // message,
-      });
+      const body = {
+        personalizations: [
+          {
+            to: [
+              {
+                email: "andre.lucas.medeir+meiasola@gmail.com", //"ecommerce@meiasola.com.br",
+              },
+            ],
+            cc: [
+              {
+                email: props.email,
+              },
+            ],
+          },
+        ],
+        from: {
+          email: "meiasolasendgrid@gmail.com",
+        },
+        subject: `Cliente ${props.name} quer falar com a meiasola`,
+        content: [
+          {
+            type: "text/plain",
+            value: `O Cliente ${props.name}, deseja falar com a Meia Sola.\n\n - Este é o seu telefone para contato: ${props.phone}\n - Este é o seu email: ${props.email}\n\n E esta foi a mensagem que ele deixou:\n${props.message}`,
+          },
+        ],
+      };
+
+      const response = await fetchAPI(
+        "https://api.sendgrid.com/v3/mail/send/",
+        {
+          method: "POST",
+          headers: {
+            Authorization: `Bearer SG.98i_qK1EQxaZV1O08ALx9w._u918R2S0O80TUQ-ujxO04-208PSSc908Gq3fJr2jIM`,
+          },
+          body: JSON.stringify(body),
+        }
+      );
+
+      // const response = await Runtime.app.actions.contactUs({
+      //   name,
+      //   email,
+      //   phone,
+      //   message,
+      // });
+
+      console.log(response);
     } finally {
       loading.value = false;
     }
