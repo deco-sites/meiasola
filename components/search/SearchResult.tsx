@@ -114,7 +114,8 @@ function Result({
 
               <PageLink page={pageInfo.currentPage} isActive href={"#"} />
 
-              {pageInfo.nextPage && (
+              {pageInfo.currentPage * pageInfo.recordPerPage <
+                pageInfo.records && (
                 <PageLink
                   page={pageInfo.currentPage + 1}
                   href={paginationUrl.href.replace(
@@ -124,7 +125,7 @@ function Result({
                 />
               )}
 
-              {pageInfo.currentPage + 1 * pageInfo.recordPerPage <
+              {(pageInfo.currentPage + 1) * pageInfo.recordPerPage <
                 pageInfo.records && (
                 <PageLink
                   page={pageInfo.currentPage + 2}
