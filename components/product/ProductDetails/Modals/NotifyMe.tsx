@@ -3,6 +3,7 @@ import { useSignal } from "@preact/signals";
 
 import { Runtime } from "$store/runtime.ts";
 import { useUI } from "$store/sdk/useUI.ts";
+import { useForm } from "$store/sdk/useForm.ts";
 
 import Modal from "$store/components/ui/Modal.tsx";
 import Button from "$store/components/ui/Button.tsx";
@@ -10,28 +11,50 @@ import Icon from "$store/components/ui/Icon.tsx";
 
 export default function NotifyMeModal() {
   const { displayNotifyMe } = useUI();
+  const { validName, validEmail, validPhone } = useForm();
 
   const loading = useSignal(false);
+  const errorMessage = useSignal("");
 
   const handleSubmit: JSX.GenericEventHandler<HTMLFormElement> = async (e) => {
     e.preventDefault();
 
     try {
-      loading.value = true;
-
       const name = (e.currentTarget.elements.namedItem("name") as RadioNodeList)
         ?.value;
+
+      if (!validName(name)) {
+        errorMessage.value = "Use um nome válido";
+        return;
+      }
+
       const email = (
         e.currentTarget.elements.namedItem("email") as RadioNodeList
       )?.value;
+
+      if (!validEmail(email)) {
+        errorMessage.value = "Use um e-mail válido";
+        return;
+      }
+
       const phone = (
         e.currentTarget.elements.namedItem("phone") as RadioNodeList
       )?.value;
+
+      if (!validPhone(phone)) {
+        errorMessage.value = "Use um telefone válido";
+        return;
+      }
+
+      loading.value = true;
+
       const acceptCommunications = (
         e.currentTarget.elements.namedItem(
           "accept-communications"
         ) as RadioNodeList
       )?.value;
+
+      errorMessage.value = "";
 
       await Runtime.vtex.actions.notifyme({
         skuId: displayNotifyMe.value,
@@ -40,9 +63,14 @@ export default function NotifyMeModal() {
         phone,
         acceptCommunications,
       });
+    } catch (e) {
+      console.log(e);
+      errorMessage.value = "Houve um erro inesperado";
     } finally {
-      loading.value = false;
-      displayNotifyMe.value = undefined;
+      if (!errorMessage.value) {
+        loading.value = false;
+        displayNotifyMe.value = undefined;
+      }
     }
   };
 
@@ -117,6 +145,7 @@ export default function NotifyMeModal() {
           >
             AVISE-ME
           </Button>
+          <p class="text-small text-red">{errorMessage.value}</p>
         </form>
       </div>
     </Modal>

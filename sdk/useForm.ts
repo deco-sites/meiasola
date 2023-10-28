@@ -10,8 +10,9 @@ function validEmail(text: string) {
   );
 }
 
-function validPhone() {
-  let telefone = tel.replace(/\D/g, "");
+function validPhone(text: string) {
+  let telefone = text.replace(/\D/g, "");
+
   if (!(telefone.length >= 10 && telefone.length <= 11)) return false;
 
   if (telefone.length == 11 && parseInt(telefone.substring(2, 3)) != 9)
