@@ -9,17 +9,19 @@ export interface Props extends Omit<BtnProps, "onAddItem" | "platform"> {
 function AddToCartButton(props: Props) {
   const { addItems } = useCart();
   const onAddItem = () => {
-    addItems({
-      orderItems: [
-        {
-          id: props.productID,
-          seller: props.seller,
-          quantity: 1,
-        },
-      ],
-    });
-
-    if (props.goToCheckout) window.location.href = "/checkout";
+    if (props.goToCheckout) {
+      window.location.href = `/checkout/cart/add?sku=${props.productID}&qty=1&seller=${props.seller}&redirect=true&sc=1`;
+    } else {
+      addItems({
+        orderItems: [
+          {
+            id: props.productID,
+            seller: props.seller,
+            quantity: 1,
+          },
+        ],
+      });
+    }
   };
 
   return <Button onAddItem={onAddItem} {...props} />;
