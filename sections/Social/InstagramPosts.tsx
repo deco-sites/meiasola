@@ -27,19 +27,20 @@ export async function loader({ title, facebookToken }: Props, _req: Request) {
   const joinFields = fields.join(",");
   const url = `https://graph.instagram.com/me/media?access_token=${facebookToken}&fields=${joinFields}`;
 
-  const { data } = (await fetch(url)
-    .then((r) => r.json())
-    .catch((err) => {
-      console.error("error fetching posts from instagram", err);
-      return { data: [] };
-    })) as {
-    data: Data[];
-  };
+  try {
+    const { data } = await fetch(url).then((res) => res.json());
 
-  return {
-    title,
-    data: data.slice(0, 8),
-  };
+    return {
+      title,
+      data: data ? data.slice(0, 8) : [],
+    };
+  } catch (err) {
+    console.log("error fetching posts from instagram", err);
+    return {
+      title,
+      data: [],
+    };
+  }
 }
 
 export default function InstagramPosts({
@@ -55,6 +56,7 @@ export default function InstagramPosts({
 }: SectionProps<typeof loader>) {
   const id = useId();
 
+  if (data.length === 0) return null;
   return (
     <section class="pb-6 tablet:pb-10 bg-white text-black">
       <div class="container py-[30px] flex items-center">
