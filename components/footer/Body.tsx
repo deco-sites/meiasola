@@ -28,8 +28,8 @@ function generatePathVerify(routes: Route[]) {
       switch (location.pathname) {
         ${routes.map((route) => `case "${route.label}": break;`)}
         default: {
-          $div.classList.add('hidden')
-          $divider.classList.add('hidden')
+          $div?.classList.add('hidden')
+          $divider?.classList.add('hidden')
         }
       }
     })
