@@ -18,11 +18,7 @@ export interface Props {
    */
   href?: string;
 
-  icon?: {
-    src: AvailableIcons;
-    width: number;
-    height: number;
-  };
+  icon: Icon | NoIcon;
 
   /**
    * @title put a left divider
@@ -30,6 +26,17 @@ export interface Props {
   divider?: boolean;
 
   submenu?: SubMenuProps;
+}
+
+/**
+ * @title NoIcon
+ */
+type NoIcon = undefined;
+
+interface Icon {
+  src: AvailableIcons;
+  width: number;
+  height: number;
 }
 
 function NavItem({ label, href, icon, divider, submenu }: Props) {
