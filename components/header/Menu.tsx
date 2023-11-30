@@ -140,17 +140,17 @@ function MenuItem({
         </li>
       )}
       <li>
-        {!submenu ? (
-          <a href={href} class="my-4 w-fit inline-flex">
-            {content}
-          </a>
-        ) : (
+        {submenu && submenu.sections.length > 0 ? (
           <Button
             onClick={openSubmenu}
             class="py-4 bg-transparent hover:bg-transparent"
           >
             {content}
           </Button>
+        ) : (
+          <a href={href} class="my-4 w-fit inline-flex">
+            {content}
+          </a>
         )}
       </li>
     </>

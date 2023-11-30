@@ -59,7 +59,7 @@ function NavItem({ label, href, icon, divider, submenu }: Props) {
       <li class="cursor-default group/menu h-full flex items-center">
         <a href={href}>{content}</a>
 
-        {submenu && <SubMenu {...submenu} />}
+        {submenu && submenu.sections.length > 0 && <SubMenu {...submenu} />}
       </li>
     </>
   );
