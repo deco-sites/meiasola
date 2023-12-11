@@ -126,17 +126,28 @@ function Item(props: Video | Image) {
           </Picture>
         </>
       ) : instanceOfVideo(props) ? (
-        <video
-          autoPlay
-          muted
-          loop
-          playsinline
-          width={1200}
-          class="w-full h-full object-cover absolute top-0 left-0 z-0"
-        >
-          <source src={props.videoMobile} media="(max-width: 767px)" />
-          <source src={props.videoDesktop} media="(min-width: 768px)" />
-        </video>
+        <>
+          <video
+            autoPlay
+            muted
+            loop
+            playsinline
+            width={1200}
+            class="w-full h-full object-cover absolute top-0 left-0 z-0 block tablet:hidden"
+          >
+            <source src={props.videoMobile} />
+          </video>
+          <video
+            autoPlay
+            muted
+            loop
+            playsinline
+            width={1200}
+            class="w-full h-full object-cover absolute top-0 left-0 z-0 hidden tablet:block"
+          >
+            <source src={props.videoDesktop} />
+          </video>
+        </>
       ) : null}
 
       {gradient && (
