@@ -63,7 +63,10 @@ function FilterValues({ key, values }: FilterToggle) {
 
           return (
             <li key={`key-${key}-value-${index}`}>
-              <ValueItem {...item} showQuantity={key !== "seller"} />
+              <ValueItem
+                {...item}
+                showQuantity={item?.showQuantity !== false && key !== "seller"}
+              />
             </li>
           );
         })}
