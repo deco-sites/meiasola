@@ -29,6 +29,7 @@ function ValueItem({
   return (
     <a
       href={url}
+      rel="nofollowß"
       class={`text-small ${
         selected
           ? "text-black border rounded-full px-3 py-1 inline-flex items-center gap-2 w-fit"
