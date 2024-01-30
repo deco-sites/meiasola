@@ -106,14 +106,14 @@ export function Prices({
             FRETE GRÁTIS
             <Icon id="Info" class="h-3.5 w-3.5 shrink-0" />
             <span class="bg-black rounded-[4px] font-normal text-white hidden group-focus:block absolute top-8 left-1/2 -translate-x-1/2 p-3 text-small w-max">
-              Frete grátis válido para
+              Frete grátis Capitais para
               <br />
               pedidos acima de{" "}
               <strong>
                 {formatPrice(
                   FREE_SHIPPING_VALUE,
                   product.offers!.priceCurrency!
-                ).replace(",00", "")}
+                )}
               </strong>
             </span>
           </button>
