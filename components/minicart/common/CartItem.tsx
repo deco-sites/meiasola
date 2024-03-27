@@ -50,8 +50,6 @@ function CartItem({
   const isGift = sale < 0.01;
   const [loading, setLoading] = useState(false);
 
-  console.log("url ->", detailUrl)
-
   const withLoading = useCallback(
     <A,>(cb: (args: A) => Promise<void>) =>
       async (e: A) => {
