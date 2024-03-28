@@ -82,7 +82,7 @@ function CartItem({
 
       <div class="flex flex-col justify-between pb-1">
         <div class="flex justify-between items-start">
-          <span class="text-small text-grey-2 w-2/3 line-clamp-2">{name}</span>
+          <a href={detailUrl} class="text-small text-grey-2 w-2/3 line-clamp-2">{name}</a>
           <Button
             disabled={loading || isGift}
             loading={loading}
