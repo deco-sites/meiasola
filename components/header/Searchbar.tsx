@@ -42,16 +42,17 @@ export function SearchbarInput({
 }) {
   const searchInputRef = useRef<HTMLInputElement>(null);
   const [mustShowModal, setMustShowModal] = useState<boolean>(false);
+  const [isRecentSearch, setIsRecentSearch] = useState<boolean>(true);
   const { setSearch, suggestions, loading } = useAutocomplete();
   const { products = [], searches = [] } = suggestions.value ?? {};
   const hasProducts = Boolean(products.length);
   const hasTerms = Boolean(searches.length);
   const notFound = !hasProducts && !hasTerms;
-  console.log(">>>>aa", hasProducts, hasTerms, notFound);
 
   useEffect(() => {
-    console.log(">>>>mustShowModal", mustShowModal);
-  }, [mustShowModal]);
+    setSearch("", 7);
+  }, []);
+
   return (
     <div class={"relative"}>
       <form
@@ -66,7 +67,13 @@ export function SearchbarInput({
           onInput={(e) => {
             const value = e.currentTarget.value;
 
-            setSearch(value);
+            if (!value) {
+              setSearch(value, 7);
+              setIsRecentSearch(true);
+            } else {
+              setSearch(value);
+              setIsRecentSearch(false);
+            }
           }}
           onFocus={() => setMustShowModal(true)}
           onBlur={() => setMustShowModal(false)}
@@ -87,7 +94,14 @@ export function SearchbarInput({
 
       {mustShowModal && (
         <AutocompleteModal
-          {...{ notFound, hasTerms, hasProducts, searches, products }}
+          {...{
+            notFound,
+            hasTerms,
+            hasProducts,
+            searches,
+            products,
+            isRecentSearch,
+          }}
         ></AutocompleteModal>
       )}
     </div>
