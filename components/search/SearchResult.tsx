@@ -24,7 +24,6 @@ type ProductListingPageAndSearch = ProductListingPage & {
 export interface Props {
   /** @title Integration */
   page: ProductListingPage | null;
-  notFoundPage: ProductListingPage | null;
   images?: Image[];
   sizes?: {
     title: string;
@@ -32,8 +31,6 @@ export interface Props {
     routesToShow: Route[];
   };
 }
-
-
 
 function Result({
   page,
@@ -350,18 +347,16 @@ function Image({
 }
 
 function SearchResult({ page, ...props }: Props) {
-  if (!page || page.pageInfo.records === 0) return <NotFound {...props} />;
+  if (!page || page.pageInfo.records === 0) return <NotFound />;
   return <Result {...props} page={page as ProductListingPageAndSearch} />;
 }
 
 export default SearchResult;
 
-function NotFound(props:any) {
+function NotFound() {
   return (
     <div class="w-full flex justify-center items-center py-10">
       <span>Not Found!</span>
-      <Result {...props} page={props.notFoundPage as ProductListingPageAndSearch} />
-      
     </div>
   );
 }
