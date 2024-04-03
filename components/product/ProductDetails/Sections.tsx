@@ -11,6 +11,8 @@ import Button from "$store/components/ui/Button.tsx";
 import Divider from "$store/components/ui/Divider.tsx";
 import ShippingSimulation from "$store/islands/ShippingSimulation.tsx";
 import { FREE_SHIPPING_VALUE } from "$store/components/constants.ts";
+import type { VideoWidget } from "apps/admin/widgets.ts";
+import { Head } from "$fresh/runtime.ts";
 
 import WishlistButton from "$store/islands/WishlistButton.tsx";
 import {
@@ -139,8 +141,10 @@ export function Prices({
 
 export function Images({
   images,
+  productVideo,
 }: {
   images: ProductDetailsPage["product"]["image"];
+  productVideo: string;
 }) {
   if (!images || images.length === 0) return null;
 
@@ -154,35 +158,86 @@ export function Images({
   }
 
   const id = useId();
+  console.log(productVideo, "video");
+
+  if (productVideo) {
+    imagesList.splice(2, 0, productVideo);
+  }
+
+  const EmbedVideoUrl = (url: string) => {
+    if (url.includes("vimeo")) {
+      const videoId = url.split("vimeo.com/").pop();
+
+      return `https://player.vimeo.com/video/${videoId}`;
+    }
+
+    if (url.includes("youtube")) {
+      const videoId = new URL(url).searchParams.get("v");
+
+      return `https://www.youtube.com/embed/${videoId}`;
+    }
+
+    if (url.includes("youtu.be")) {
+      const videoId = url.split("/").pop();
+
+      return `https://www.youtube.com/embed/${videoId}`;
+    }
+  };
 
   return (
     <>
+      <Head>
+        <style type="text/css">
+          {`
+          @media screen and (min-width: 1280px) and (max-width: 1315px) {
+            .videoPdp {
+             height: 366px !important;
+            }
+          }        
+        `}
+        </style>
+      </Head>
       <div
-        class={`hidden h-fit laptop:grid ${
+        class={`hidden h-fit laptop:max-w-[590px] desktop:max-w-[801px] laptop:grid ${
           justOneImage ? "grid-cols-1 grid-rows-1" : "grid-cols-2 grid-rows-2"
         } gap-[2px] col-span-8 pr-5`}
       >
-        {imagesList.slice(0, 4).map((image, index) => {
+        {imagesList.slice(0, productVideo ? 5 : 4).map((image, index) => {
           if (!image.url) return null;
 
           return (
             <>
-              <label for="my_modal_6">
+              <label for="my_modal_6" class="max-w-[387px]">
                 <div
-                  class={`bg-grey-1 w-full p-6 ${
-                    justOneImage ? "h-[800px]" : "h-[400px]"
+                  class={`bg-grey-1 w-full ${!productVideo ? "p-6" : "p-0"} ${
+                    justOneImage
+                      ? "h-[800px]"
+                      : "h-[284px] desktop:h-[387px] videoPdp"
                   } flex-1 cursor-zoom-in`}
                   key={`image-${index}`}
                 >
-                  <Image
-                    src={image.url}
-                    width={400}
-                    height={400}
-                    fit="contain"
-                    loading="eager"
-                    fetchPriority="high"
-                    class="mix-blend-multiply h-full w-full object-contain flex-1"
-                  />
+                  {index === 1 && productVideo ? (
+                    <iframe
+                      src={`${EmbedVideoUrl(
+                        productVideo
+                      )}?controls=0&autoplay=1&loop=1&muted=1`}
+                      frameborder="0"
+                      allow="autoplay; fullscreen"
+                      style={{ width: "100%", height: "100%" }}
+                      allowfullscreen
+                      muted
+                    ></iframe>
+                  ) : (
+                    <Image
+                      src={image.url}
+                      width={400}
+                      height={400}
+                      fit="contain"
+                      loading="eager"
+                      fetchPriority="high"
+                      class="mix-blend-multiply h-full w-full object-contain flex-1"
+                    />
+                  )}
                 </div>
               </label>
               <input
@@ -270,16 +325,29 @@ export function Images({
         <Slider class="carousel carousel-start flex gap-4 bg-grey-1">
           {imagesList.map((image, index) => (
             <Slider.Item index={index} class="carousel-item w-full">
-              <div class="bg-grey-1 w-full h-[400px] flex-1">
-                <Image
-                  src={image.url}
-                  width={400}
-                  height={400}
-                  fit="contain"
-                  loading="eager"
-                  fetchPriority="high"
-                  class="mix-blend-multiply h-full w-full object-contain flex-1"
-                />
+              <div class="bg-grey-1 w-full h-auto flex-1">
+                {index === 1 && productVideo ? (
+                  <iframe
+                    src={`${EmbedVideoUrl(
+                      productVideo
+                    )}?controls=0&autoplay=1&loop=1&muted=1`}
+                    frameborder="0"
+                    allow="autoplay; fullscreen"
+                    style={{ width: "100%", height: "100%" }}
+                    allowfullscreen
+                    muted
+                  ></iframe>
+                ) : (
+                  <Image
+                    src={image.url}
+                    width={400}
+                    height={400}
+                    fit="contain"
+                    loading="eager"
+                    fetchPriority="high"
+                    class="mix-blend-multiply h-full w-full object-contain flex-1"
+                  />
+                )}
               </div>
             </Slider.Item>
           ))}
