@@ -54,13 +54,17 @@ export function SearchbarInput({
   }, []);
 
   return (
-    <div class={"relative"}>
+    <div
+      class={"relative"}
+      onMouseLeave={() => {
+        setMustShowModal(false);
+      }}
+    >
       <form
         action={action}
-        class={`group border border-current rounded py-1 px-1.5 h-7 w-full laptop:max-w-[250px] grow flex items-center gap-1.5 ${className}`}
+        class={` border border-current rounded py-1 px-1.5 h-7 w-full laptop:max-w-[250px] grow flex items-center gap-1.5 ${className}`}
       >
         <input
-          // ref={searchInputRef}
           name={name}
           placeholder={placeholder}
           class="grow searchbar-input bg-transparent autofill:bg-transparent text-small group-[&.isLarge]:text-body text-current leading-none placeholder:text-small placeholder:group-[&.isLarge]:text-body placeholder:text-current focus:outline-none"
@@ -76,7 +80,8 @@ export function SearchbarInput({
             }
           }}
           onFocus={() => setMustShowModal(true)}
-          onBlur={() => setMustShowModal(false)}
+          onChange={() => setMustShowModal(true)}
+          // onBlur={() => setMustShowModal(false)}
           defaultValue={query}
           autocomplete="off"
         />

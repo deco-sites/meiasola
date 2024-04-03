@@ -1,5 +1,7 @@
 import ProductCard from "$store/components/product/ProductCard.tsx";
 import Slider from "$store/components/ui/Slider.tsx";
+import SliderJS from "$store/islands/SliderJS.tsx";
+import { useId } from "$store/sdk/useId.ts";
 
 import type { Product, Search } from "apps/commerce/types.ts";
 
@@ -20,21 +22,11 @@ export const AutocompleteModal = ({
   products,
   isRecentSearch,
 }: AutocompleteModalProps) => {
+  const id = useId();
   return (
     <>
       <style type="text/css">
         {`        
-            .autocomplete-carousel {
-              width: 100%;
-              display: flex;
-              align-items: center;
-              justify-content: space-between;
-              overflow:hidden;
-            }
-
-            .autocomplete-carousel-item {
-              margin:0;
-            }
 
             .autocomplete-carousel-item > a {
               width:fit-content;
@@ -57,11 +49,15 @@ export const AutocompleteModal = ({
               object-fit: cover;
           
             }
+
+            .autocomplete-slider-button{
+              display:block;
+            }
         `}
       </style>
       <div
         class={
-          "absolute right-0 top-full mt-[22px] bg-white w-screen max-w-[910px] p-5"
+          "fixed left-0 right-0 overflow-y-auto max-h-[75vh] mx-5 mt-2 w-auto max-w-[991px] text-black bg-white p-5 before:bg-transparent before:h-[22px] before:w-full before:block before:absolute before:top-[-22px] before:left-0 tablet:overflow-y-visible tablet:mt-[22px] laptop:mx-auto  laptop:w-screen  laptop:max-w-[910px] desktop:absolute desktop:right-0 desktop:left-[unset] desktop:top-full  "
         }
       >
         {notFound ? (
@@ -82,8 +78,10 @@ export const AutocompleteModal = ({
           <div class="h-fit overflow-hidden">
             <div
               class={`gap-4 grid ${
-                hasTerms ? "grid-cols-[200px_1fr]" : "grid-cols-1"
-              } sm:grid-rows-1 sm:grid-cols-[150px_1fr]`}
+                hasTerms
+                  ? "grid-rows-[auto_1fr]  grid-cols-1 mobile:grid-rows-[auto] mobile:grid-cols-[150px_1fr] xl:grid-cols-[200px_1fr]"
+                  : "grid-cols-1"
+              } `}
             >
               <div class={hasTerms ? "flex flex-col gap-4" : "hidden"}>
                 <span
@@ -96,7 +94,10 @@ export const AutocompleteModal = ({
                 <ul id="search-suggestion" class="flex flex-col gap-4">
                   {searches.map(({ term }) => (
                     <li>
-                      <a href={`/s?q=${term}`} class="flex gap-4 items-center">
+                      <a
+                        href={`/s?q=${term}`}
+                        class="flex gap-4 items-center text-black"
+                      >
                         <span class={"capitalize"}>{term}</span>
                       </a>
                     </li>
@@ -107,23 +108,22 @@ export const AutocompleteModal = ({
                 <div
                   class={
                     hasProducts
-                      ? "flex flex-col pt-0 md:pt-0 gap-6 overflow-x-hidden"
+                      ? "flex flex-col pt-0 md:pt-0 overflow-x-hidden relative"
                       : "hidden"
                   }
                 >
-                  {/* <span class="font-medium text-xl" role="heading" aria-level={3}>
-                        Produtos sugeridos
-                      </span> */}
-                  <Slider class="carousel autocomplete-carousel">
+                  <Slider class="overflow-y-hidden carousel autocomplete-carousel laptop:mx-auto">
                     {products.slice(0, 4).map((product, index) => (
                       <Slider.Item
                         index={index}
-                        class="carousel-item autocomplete-carousel-item h-full first:ml-4 last:mr-4 min-w-[140px] max-w-[200px]"
+                        class="carousel-item autocomplete-carousel-item h-full mx-1 xl:first:ml-4 xl:last:mr-4 min-w-[140px] max-w-[200px]"
                       >
                         <ProductCard product={product} platform={"vtex"} />
                       </Slider.Item>
                     ))}
                   </Slider>
+
+                  <SliderJS rootId={id} />
                 </div>
               )}
             </div>
