@@ -158,11 +158,6 @@ export function Images({
   }
 
   const id = useId();
-  console.log(productVideo, "video");
-
-  if (productVideo) {
-    imagesList.splice(2, 0, productVideo);
-  }
 
   const EmbedVideoUrl = (url: string) => {
     if (url.includes("vimeo")) {
