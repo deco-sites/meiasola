@@ -1,14 +1,41 @@
-import { BlogPosting } from "https://raw.githubusercontent.com/deco-sites/blog/main/blog/types.ts";
+import type { SectionProps } from "deco/mod.ts";
+
+// import { BlogPost } from "apps/blog/types.ts";
+import { fetchSafe } from "apps/utils/fetch.ts";
 
 import Image from "apps/website/components/Image.tsx";
 import { Head } from "$fresh/runtime.ts";
 
 export interface Props {
   title: string;
-  posts: BlogPosting[] | null;
+  posts: any[] | null;
 }
 
-function MyStyle({ title, posts }: Props) {
+export async function loader({ title, posts }: Props, _req: Request) {
+
+  try {
+    console.log("entrou?", title, posts)
+    const response = await fetchSafe(
+      "https://blog.meiasola.com/mstyle/wp-json/wp/v2/posts?per_page=4"
+    );
+
+    console.log("teste", response)
+
+    const list = await response.json();
+
+    console.log("list", list)
+
+    return {
+      title,
+      posts
+    }
+  } catch (err) {
+    console.log("error fetching posts from instagram", err);
+  }
+}
+
+function MyStyle({ title, posts }: SectionProps<typeof loader>) {
+  console.log("entra aqui?")
   if (!posts || posts.length === 0) return null;
 
   return (

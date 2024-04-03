@@ -1,10 +1,10 @@
 import { fetchSafe } from "apps/utils/fetch.ts";
 
-import * as cheerio from "https://esm.sh/cheerio@1.0.0-rc.12";
+// import * as cheerio from "https://esm.sh/cheerio@1.0.0-rc.12";
 
-import { BlogPosting } from "https://raw.githubusercontent.com/deco-sites/blog/main/blog/types.ts";
-import { BlogPost } from "https://raw.githubusercontent.com/deco-sites/blog/main/packs/wordpress/types.ts";
-import { toBlogPost } from "https://raw.githubusercontent.com/deco-sites/blog/main/packs/wordpress/utils/transform.ts";
+// import { BlogPosting } from "https://raw.githubusercontent.com/deco-sites/blog/main/blog/types.ts";
+// import { BlogPost } from "https://raw.githubusercontent.com/deco-sites/blog/main/packs/wordpress/types.ts";
+// import { toBlogPost } from "https://raw.githubusercontent.com/deco-sites/blog/main/packs/wordpress/utils/transform.ts";
 
 /**
  * @title Meia Sola - Blog Posts from API
@@ -13,30 +13,37 @@ import { toBlogPost } from "https://raw.githubusercontent.com/deco-sites/blog/ma
 const blogPostListLoader = async (
   _props: unknown,
   _req: Request
-): Promise<BlogPosting[] | null> => {
+): Promise<any[] | null> => {
+  console.log("entrou?")
   const response = await fetchSafe(
     "https://blog.meiasola.com/mstyle/wp-json/wp/v2/posts?per_page=4"
   );
+
+  console.log("teste", response)
+
   const list = await response.json();
 
-  const posts = list.map((post: BlogPost) => {
-    return toBlogPost(post);
-  });
+  console.log("list", list)
 
-  posts.forEach((post) => {
-    if (!post.image) {
-      const $ = cheerio.load(post.articleBody);
-      const firstImage = $("img").first();
-      if (firstImage.length > 0) {
-        post.image = firstImage.attr("src");
-      }
-    }
+  // const posts = list.map((post: BlogPost) => {
+  //   return toBlogPost(post);
+  // });
 
-    const $ = cheerio.load(post.description);
-    post.description = $.text();
-  });
+  // posts.forEach((post) => {
+  //   if (!post.image) {
+  //     const $ = cheerio.load(post.articleBody);
+  //     const firstImage = $("img").first();
+  //     if (firstImage.length > 0) {
+  //       post.image = firstImage.attr("src");
+  //     }
+  //   }
 
-  return posts;
+  //   const $ = cheerio.load(post.description);
+  //   post.description = $.text();
+  // });
+
+  // return posts;
+  return null
 };
 
 export default blogPostListLoader;
