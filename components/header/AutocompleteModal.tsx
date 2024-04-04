@@ -57,7 +57,7 @@ export const AutocompleteModal = ({
       </style>
       <div
         class={
-          "fixed left-0 right-0 overflow-y-auto max-h-[75vh] mx-5 mt-2 w-auto max-w-[991px] text-black bg-white p-5 before:bg-transparent before:h-[22px] before:w-full before:block before:absolute before:top-[-22px] before:left-0 tablet:overflow-y-visible tablet:mt-[22px] laptop:mx-auto  laptop:w-screen  laptop:max-w-[910px] desktop:absolute desktop:right-0 desktop:left-[unset] desktop:top-full  "
+          "fixed left-0 right-0 overflow-y-auto max-h-[75vh] mx-5 mt-2 w-auto max-w-[991px] text-black bg-white p-5 before:bg-transparent before:h-[22px] before:w-full before:block before:absolute before:top-[-22px] before:left-0 tablet:overflow-y-visible tablet:mt-[22px] tablet:mx-auto tablet:max-w-[85vw] laptop:mx-auto  laptop:w-screen  laptop:max-w-[910px] desktop:absolute desktop:right-0 desktop:left-[unset] desktop:top-full  "
         }
       >
         {notFound ? (

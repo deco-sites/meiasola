@@ -81,7 +81,7 @@ export function SearchbarInput({
           }}
           onFocus={() => setMustShowModal(true)}
           onChange={() => setMustShowModal(true)}
-          // onBlur={() => setMustShowModal(false)}
+          onClick={() => setMustShowModal(true)}
           defaultValue={query}
           autocomplete="off"
         />
