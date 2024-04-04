@@ -8,6 +8,7 @@ import Image from "apps/website/components/Image.tsx";
 import { useCallback, useState } from "preact/hooks";
 
 export interface Item {
+  detailUrl: string
   image: {
     src: string;
     alt: string;
@@ -40,6 +41,7 @@ function CartItem({
   itemToAnalyticsItem,
 }: Props) {
   const {
+    detailUrl,
     image,
     name,
     price: { sale, list },
@@ -68,7 +70,7 @@ function CartItem({
         gridTemplateColumns: "auto 1fr",
       }}
     >
-      <div class="bg-grey-1 p-1 w-[73px] h-[76px]">
+      <a href={detailUrl} class="bg-grey-1 p-1 w-[73px] h-[76px]">
         <Image
           {...image}
           style={{ aspectRatio: "73 / 76" }}
@@ -76,11 +78,11 @@ function CartItem({
           height={76}
           class="h-full w-full object-cover mix-blend-multiply"
         />
-      </div>
+      </a>
 
       <div class="flex flex-col justify-between pb-1">
         <div class="flex justify-between items-start">
-          <span class="text-small text-grey-2 w-2/3 line-clamp-2">{name}</span>
+          <a href={detailUrl} class="text-small text-grey-2 w-2/3 line-clamp-2">{name}</a>
           <Button
             disabled={loading || isGift}
             loading={loading}

@@ -18,6 +18,7 @@ function Cart() {
     <BaseCart
       installments={installments}
       items={items.map((item) => ({
+        detailUrl: item.detailUrl,
         image: { src: item.imageUrl, alt: item.skuName },
         quantity: item.quantity,
         name: item.name,
