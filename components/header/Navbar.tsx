@@ -1,22 +1,21 @@
 import { Head } from "$fresh/runtime.ts";
 
-import Icon from "$store/components/ui/Icon.tsx";
 import Logo from "$store/components/ui/Logo.tsx";
 
-import NavItem from "$store/components/header/NavItem.tsx";
-import WishListButton from "$store/components/header/Buttons/WishList.tsx";
-import type { Props as WishListButtonProps } from "$store/components/header/Buttons/WishList.tsx";
-import MyAccountButton from "$store/components/header/Buttons/MyAccount.tsx";
 import type { Props as MyAccountButtonProps } from "$store/components/header/Buttons/MyAccount.tsx";
-import { SearchbarInput } from "$store/components/header/Searchbar.tsx";
-import type { Props as SearchProps } from "$store/components/header/Searchbar.tsx";
+import MyAccountButton from "$store/components/header/Buttons/MyAccount.tsx";
+import type { Props as WishListButtonProps } from "$store/components/header/Buttons/WishList.tsx";
+import WishListButton from "$store/components/header/Buttons/WishList.tsx";
 import type { Props as MenuProps } from "$store/components/header/Menu.tsx";
+import NavItem from "$store/components/header/NavItem.tsx";
+import type { Props as SearchProps } from "$store/components/header/Searchbar.tsx";
+import IslandSearchbarInput from "$store/islands/Header/SearchbarInput.tsx";
 
-import IslandSearchbar from "$store/islands/Header/Searchbar.tsx";
 import {
   IslandCartDrawer,
   IslandMenuDrawer,
 } from "$store/islands/Header/Drawers.tsx";
+import IslandSearchbar from "$store/islands/Header/Searchbar.tsx";
 
 import {
   IslandCartButton,
@@ -151,7 +150,7 @@ function Navbar({ menu, wishlist, myaccount, search, colors }: Props) {
           </div>
 
           <div class="col-span-6 desktop:col-span-4 flex gap-8 items-center">
-            <SearchbarInput {...search} />
+            <IslandSearchbarInput {...search} />
             <WishListButton {...wishlist} />
             <MyAccountButton {...myaccount} />
             <IslandCartButton />

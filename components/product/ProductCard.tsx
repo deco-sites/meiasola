@@ -1,8 +1,8 @@
-import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import type { Product } from "apps/commerce/types.ts";
+import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 
-import Image from "$store/components/ui/Image.tsx";
 import { SendEventOnClick } from "$store/components/Analytics.tsx";
+import Image from "$store/components/ui/Image.tsx";
 import WishlistButton from "$store/islands/WishlistButton.tsx";
 import { formatPrice } from "$store/sdk/format.ts";
 import { useOffer } from "$store/sdk/useOffer.ts";
@@ -54,7 +54,7 @@ function ProductCard({ product, preload, itemListName, small }: Props) {
     <a
       id={id}
       href={availableUrl && relative(availableUrl)}
-      class="group flex flex-col gap-4 w-full text-black"
+      class="group/product-card flex flex-col gap-4 w-full text-black"
       data-deco="view-product"
     >
       <SendEventOnClick
@@ -104,7 +104,7 @@ function ProductCard({ product, preload, itemListName, small }: Props) {
           fetchPriority={preload ? "high" : "auto"}
           src={front.url!}
           alt={front.alternateName ?? "Primeira imagem do produto"}
-          className="mix-blend-multiply block group-hover:hidden"
+          className="mix-blend-multiply block group-hover/product-card:hidden"
         />
         <Image
           width={264}
@@ -118,7 +118,7 @@ function ProductCard({ product, preload, itemListName, small }: Props) {
             front.alternateName ??
             "Segunda imagem do produto"
           }
-          className="mix-blend-multiply hidden group-hover:block"
+          className="mix-blend-multiply hidden group-hover/product-card:block"
         />
       </div>
 
