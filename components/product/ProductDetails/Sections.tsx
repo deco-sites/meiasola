@@ -328,7 +328,7 @@ export function Images({
                     )}?controls=0&autoplay=1&loop=1&muted=1`}
                     frameborder="0"
                     allow="autoplay; fullscreen"
-                    style={{ width: "100%", height: "100%" }}
+                    style={{ width: "100%", height: "100%", aspectRatio: "1" }}
                     allowfullscreen
                     muted
                   ></iframe>
