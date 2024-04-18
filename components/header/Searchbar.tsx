@@ -2,6 +2,9 @@ import Button from "$store/components/ui/Button.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
 
 import { useUI } from "$store/sdk/useUI.ts";
+import { useAutocomplete } from "apps/vtex/hooks/useAutocomplete.ts";
+import { AutocompleteModal } from "deco-sites/meiasola/components/header/AutocompleteModal.tsx";
+import { useEffect, useRef, useState } from "preact/compat";
 
 export interface Props {
   /**
@@ -33,30 +36,80 @@ export function SearchbarInput({
   action,
   name,
   className,
+  query,
 }: Props & {
   className?: HTMLFormElement["className"];
 }) {
+  const searchInputRef = useRef<HTMLInputElement>(null);
+  const [mustShowModal, setMustShowModal] = useState<boolean>(false);
+  const [isRecentSearch, setIsRecentSearch] = useState<boolean>(true);
+  const { setSearch, suggestions, loading } = useAutocomplete();
+  const { products = [], searches = [] } = suggestions.value ?? {};
+  const hasProducts = Boolean(products.length);
+  const hasTerms = Boolean(searches.length);
+  const notFound = !hasProducts && !hasTerms;
+
+  useEffect(() => {
+    setSearch("", 7);
+  }, []);
+
   return (
-    <form
-      action={action}
-      class={`group border border-current rounded py-1 px-1.5 h-7 w-full laptop:max-w-[250px] grow flex items-center gap-1.5 ${className}`}
+    <div
+      class={"relative"}
+      onMouseLeave={() => {
+        setMustShowModal(false);
+      }}
     >
-      <input
-        name={name}
-        placeholder={placeholder}
-        class="grow searchbar-input bg-transparent autofill:bg-transparent text-small group-[&.isLarge]:text-body text-current leading-none placeholder:text-small placeholder:group-[&.isLarge]:text-body placeholder:text-current focus:outline-none"
-      />
-      <Button
-        type="submit"
-        aria-label="Pesquisar"
-        class="hover:bg-transparent bg-transparent"
+      <form
+        action={action}
+        class={` border border-current rounded py-1 px-1.5 h-7 w-full laptop:max-w-[250px] grow flex items-center gap-1.5 ${className}`}
       >
-        <Icon
-          id="Search"
-          class="h-4 w-4 group-[&.isLarge]:h-5 group-[&.isLarge]:w-5"
+        <input
+          name={name}
+          placeholder={placeholder}
+          class="grow searchbar-input bg-transparent autofill:bg-transparent text-small group-[&.isLarge]:text-body text-current leading-none placeholder:text-small placeholder:group-[&.isLarge]:text-body placeholder:text-current focus:outline-none"
+          onInput={(e) => {
+            const value = e.currentTarget.value;
+
+            if (!value) {
+              setSearch(value, 7);
+              setIsRecentSearch(true);
+            } else {
+              setSearch(value);
+              setIsRecentSearch(false);
+            }
+          }}
+          onFocus={() => setMustShowModal(true)}
+          onChange={() => setMustShowModal(true)}
+          onClick={() => setMustShowModal(true)}
+          defaultValue={query}
+          autocomplete="off"
         />
-      </Button>
-    </form>
+        <Button
+          type="submit"
+          aria-label="Pesquisar"
+          class="hover:bg-transparent bg-transparent"
+        >
+          <Icon
+            id="Search"
+            class="h-4 w-4 group-[&.isLarge]:h-5 group-[&.isLarge]:w-5"
+          />
+        </Button>
+      </form>
+
+      {mustShowModal && (
+        <AutocompleteModal
+          {...{
+            notFound,
+            hasTerms,
+            hasProducts,
+            searches,
+            products,
+            isRecentSearch,
+          }}
+        ></AutocompleteModal>
+      )}
+    </div>
   );
 }
 
