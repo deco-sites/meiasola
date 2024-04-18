@@ -134,10 +134,16 @@ interface Section {
 }
 
 function Section({ label, items }: Section) {
+  const sectionWithImage = items.some((item) => item.image);
+
   return (
-    <div>
+    <div class={`${sectionWithImage && "w-full"}`}>
       {!items?.[0].image && <p class="font-bold text-subtitle">{label}</p>}
-      <ul class="text-body flex flex-col flex-wrap max-h-full">
+      <ul
+        class={`text-body flex flex-col flex-wrap max-h-full ${
+          sectionWithImage && "w-full gap-x-[60px]"
+        }`}
+      >
         {items?.map((item) => {
           const content = item.image ? (
             <div
@@ -159,7 +165,7 @@ function Section({ label, items }: Section) {
             <li
               class={
                 item.image
-                  ? "flex items-center justify-center px-2 h-12 min-w-[80px] w-auto"
+                  ? "flex items-center justify-start px-2 h-12 min-w-[80px] w-auto"
                   : "mt-8 mr-18"
               }
             >
