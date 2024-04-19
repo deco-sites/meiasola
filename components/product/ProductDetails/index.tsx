@@ -96,13 +96,16 @@ function Details({
 
 function ProductDetails({ page, size }: Props) {
   if (page) {
+    const productVideo = page.product.isVariantOf.additionalProperty.find(
+      ({ name }: { name: string }) => name === "Vídeo"
+    )?.value;
     return (
       <div
         class="container grid grid-cols-4 laptop:grid-cols-12 gap-4 desktop:gap-5 pb-6 laptop:py-11 text-black"
         f-client-nav
       >
         {/* <Partial name="images"> */}
-        <Images images={page.product.image} />
+        <Images images={page.product.image} productVideo={productVideo} />
         {/* </Partial> */}
         <Details page={page as DetailsPageWithColorVariants} sizeProps={size} />
       </div>
