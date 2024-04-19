@@ -1,8 +1,8 @@
 import Image from "$store/components/ui/Image.tsx";
 
-import Icon from "$store/components/ui/Icon.tsx";
-import type { AvailableIcons } from "$store/components/ui/Icon.tsx";
 import Divider from "$store/components/ui/Divider.tsx";
+import type { AvailableIcons } from "$store/components/ui/Icon.tsx";
+import Icon from "$store/components/ui/Icon.tsx";
 
 import { HTMLWidget, ImageWidget } from "apps/admin/widgets.ts";
 
@@ -134,10 +134,16 @@ interface Section {
 }
 
 function Section({ label, items }: Section) {
+  const sectionWithImage = items.some((item) => item.image);
+
   return (
-    <div>
+    <div class={`${sectionWithImage && "w-full"}`}>
       {!items?.[0].image && <p class="font-bold text-subtitle">{label}</p>}
-      <ul class="text-body flex flex-col flex-wrap max-h-full">
+      <ul
+        class={`text-body flex flex-col flex-wrap max-h-full ${
+          sectionWithImage && "w-full gap-x-[60px]"
+        }`}
+      >
         {items?.map((item) => {
           const content = item.image ? (
             <div
@@ -156,7 +162,13 @@ function Section({ label, items }: Section) {
             item.label
           );
           return (
-            <li class={item.image ? "mt-7 mr-12" : "mt-8 mr-18"}>
+            <li
+              class={
+                item.image
+                  ? "flex items-center justify-start px-2 h-12 min-w-[80px] w-auto"
+                  : "mt-8 mr-18"
+              }
+            >
               <a
                 href={item.href}
                 class={`${item.underlined && "underline text-small"}`}
