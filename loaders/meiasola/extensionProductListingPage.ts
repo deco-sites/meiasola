@@ -94,7 +94,7 @@ export const allFilters = [
         showQuantity: false,
         quantity: 2664,
         selected: false,
-        url: "?filter.category-1=bolsas",
+        url: "?filter.category-1=sapatos",
         label: "Sapatos",
       },
       {
@@ -102,7 +102,7 @@ export const allFilters = [
         showQuantity: false,
         quantity: 1340,
         selected: false,
-        url: "?filter.category-1=sapatos",
+        url: "?filter.category-1=bolsas",
         label: "Bolsas",
       },
       {
