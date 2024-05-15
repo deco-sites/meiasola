@@ -66,7 +66,7 @@ function CustomBenefitsBar({ benefits }: Props) {
           </>
         ))}
       </div>
-      {/* Desktop view */}
+      {/* Desktop views */}
       <div className="hidden desktop:flex justify-center flex-wrap mt-[52px] desktop:max-w-[1300px] mx-auto">
         {benefits.map((benefit) => (
           <>
