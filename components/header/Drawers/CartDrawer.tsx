@@ -5,7 +5,13 @@ import Cart from "$store/components/minicart/Cart.tsx";
 
 import Aside from "$store/components/ui/Aside.tsx";
 
-function CartDrawer() {
+import type { Minicart as MinicartProps } from "$store/components/minicart/common/Cart.tsx";
+
+export interface Props {
+  minicart: MinicartProps;
+}
+
+function CartDrawer({ minicart }: Props) {
   const { displayCart } = useUI();
 
   const onClose = () => {
@@ -18,15 +24,11 @@ function CartDrawer() {
       open={displayCart.value !== false}
       onClose={onClose}
       aside={
-        <Aside
-          title="Carrinho"
-          onClose={onClose}
-        >
-          <Cart />
+        <Aside title="Carrinho" onClose={onClose}>
+          <Cart minicart={minicart} />
         </Aside>
       }
-    >
-    </Drawer>
+    ></Drawer>
   );
 }
 

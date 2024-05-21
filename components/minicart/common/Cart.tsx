@@ -7,6 +7,8 @@ import CartItem, { Item, Props as ItemProps } from "./CartItem.tsx";
 import Coupon, { Props as CouponProps } from "./Coupon.tsx";
 import FreeShippingProgressBar from "./FreeShippingProgressBar.tsx";
 import ShippingSimulation from "$store/components/ui/ShippingSimulation.tsx";
+import Image from "$store/components/ui/Image.tsx";
+import { ImageWidget } from "apps/admin/widgets.ts";
 
 interface Props {
   items: Item[];
@@ -23,6 +25,15 @@ interface Props {
   onUpdateQuantity: ItemProps["onUpdateQuantity"];
   itemToAnalyticsItem: ItemProps["itemToAnalyticsItem"];
   installments: number;
+  minicart?: Minicart;
+}
+
+export interface Minicart {
+  backgroundImage?: ImageWidget;
+  emptyTitle?: string;
+  emptyText?: string;
+  buttonText?: string;
+  buttonUrl?: string;
 }
 
 function Cart({
@@ -40,6 +51,7 @@ function Cart({
   onUpdateQuantity,
   onAddCoupon,
   installments,
+  minicart,
 }: Props) {
   const { displayCart } = useUI();
   const isEmtpy = items.length === 0;
@@ -47,19 +59,57 @@ function Cart({
   const newTotal = subtotal - discounts * -1;
 
   return (
-    <div class="flex flex-col justify-center items-center overflow-y-scroll scrollbar-none text-black">
+    <div class="relative flex flex-col justify-center items-center overflow-y-scroll scrollbar-none text-black">
       {isEmtpy ? (
-        <div class="flex flex-col w-[398px] items-center justify-center">
-          <span class="font-medium text-2xl">Sua sacola está vazia</span>
-          <button
-            class="btn-outline btn border-1 border-black mt-4"
-            onClick={() => {
-              displayCart.value = false;
-            }}
-          >
-            Escolher produtos
-          </button>
-        </div>
+        <>
+          <div class="py-[66px] absolute h-full w-full">
+            {minicart?.backgroundImage && (
+              <Image
+                src={minicart?.backgroundImage}
+                width={350}
+                height={586}
+                loading="lazy"
+                fetchPriority="auto"
+                fit="contain"
+                class="h-full w-full object-cover"
+              />
+            )}
+          </div>
+          <div class="relative opacity-[90%] flex flex-col items-center justify-center bg-[#FFFFFF] p-3 m-[18px]">
+            <>
+              {minicart?.emptyTitle ? (
+                <span
+                  class="font-bold text-subtitle uppercase"
+                  dangerouslySetInnerHTML={{ __html: minicart.emptyTitle }}
+                ></span>
+              ) : (
+                <span class="font-bold text-subtitle uppercase">
+                  Sua sacola está vazia
+                </span>
+              )}
+
+              {minicart?.emptyText && (
+                <span
+                  class="font-medium text-body text-center my-3"
+                  dangerouslySetInnerHTML={{ __html: minicart.emptyText }}
+                ></span>
+              )}
+              {minicart?.buttonText && minicart.buttonUrl && (
+                <a href={minicart?.buttonUrl}>
+                  {" "}
+                  <button
+                    class="bg-black text-white text-body uppercase p-[10px]"
+                    onClick={() => {
+                      displayCart.value = false;
+                    }}
+                  >
+                    {minicart?.buttonText}
+                  </button>
+                </a>
+              )}
+            </>
+          </div>
+        </>
       ) : (
         <>
           {/* Cart Items */}

@@ -10,6 +10,7 @@ import type { Props as MenuProps } from "$store/components/header/Menu.tsx";
 import NavItem from "$store/components/header/NavItem.tsx";
 import type { Props as SearchProps } from "$store/components/header/Searchbar.tsx";
 import IslandSearchbarInput from "$store/islands/Header/SearchbarInput.tsx";
+import type { Minicart as MinicartProps } from "$store/components/minicart/common/Cart.tsx";
 
 import {
   IslandCartDrawer,
@@ -28,7 +29,7 @@ export interface Props {
   wishlist: WishListButtonProps;
   myaccount: MyAccountButtonProps;
   search: SearchProps;
-
+  minicart: MinicartProps;
   colors: ColorProps;
 }
 
@@ -107,7 +108,15 @@ function madeNavbarWorksWithScroll(maxScrollInactiveHeight: number) {
   `;
 }
 
-function Navbar({ menu, wishlist, myaccount, search, colors }: Props) {
+function Navbar({
+  menu,
+  wishlist,
+  myaccount,
+  search,
+  minicart,
+  colors,
+}: Props) {
+  console.log(minicart, "so falta aqui po");
   return (
     <>
       <Head>
@@ -164,7 +173,7 @@ function Navbar({ menu, wishlist, myaccount, search, colors }: Props) {
         }}
       />
       <IslandMenuDrawer menu={menu} wishlist={wishlist} myaccount={myaccount} />
-      <IslandCartDrawer />
+      <IslandCartDrawer minicart={minicart} />
     </>
   );
 }
