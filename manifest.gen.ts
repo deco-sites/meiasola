@@ -2,10 +2,13 @@
 // This file SHOULD be checked into source version control.
 // This file is automatically updated during development when running `dev.ts`.
 
+import * as $$$$$$$$$$$0 from "./apps/decohub.ts";
+import * as $$$$$$$$$$$1 from "./apps/site.ts";
 import * as $$$0 from "./loaders/Layouts/ProductCard.tsx";
 import * as $$$1 from "./loaders/meiasola/extensionGetModelVariants.ts";
 import * as $$$2 from "./loaders/meiasola/extensionProductListingPage.ts";
 import * as $$$3 from "./loaders/meiasola/myStylePosts.ts";
+import * as $$$4 from "./loaders/meiasola/notFoundProductListingPage.ts";
 import * as $$$$$$0 from "./sections/Category/CategoryBanner.tsx";
 import * as $$$$$$1 from "./sections/Category/CategoryList.tsx";
 import * as $$$$$$2 from "./sections/Content/Benefits.tsx";
@@ -41,8 +44,6 @@ import * as $$$$$$31 from "./sections/Product/Wishlist.tsx";
 import * as $$$$$$32 from "./sections/Social/InstagramPosts.tsx";
 import * as $$$$$$33 from "./sections/Social/WhatsApp.tsx";
 import * as $$$$$$34 from "./sections/Theme/Theme.tsx";
-import * as $$$$$$$$$$$0 from "./apps/decohub.ts";
-import * as $$$$$$$$$$$1 from "./apps/site.ts";
 
 const manifest = {
   "loaders": {
@@ -50,6 +51,7 @@ const manifest = {
     "deco-sites/meiasola/loaders/meiasola/extensionGetModelVariants.ts": $$$1,
     "deco-sites/meiasola/loaders/meiasola/extensionProductListingPage.ts": $$$2,
     "deco-sites/meiasola/loaders/meiasola/myStylePosts.ts": $$$3,
+    "deco-sites/meiasola/loaders/meiasola/notFoundProductListingPage.ts": $$$4,
   },
   "sections": {
     "deco-sites/meiasola/sections/Category/CategoryBanner.tsx": $$$$$$0,

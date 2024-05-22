@@ -2,23 +2,23 @@ import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalytic
 import { ProductListingPage } from "apps/commerce/types.ts";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
-
 import { SendEventOnLoad } from "$store/components/Analytics.tsx";
 import Breadcrumb from "$store/components/ui/Breadcrumb.tsx";
 import { useOffer } from "$store/sdk/useOffer.ts";
 import ProductGallery from "$store/components/product/ProductGallery.tsx";
 import Filters from "$store/components/search/Filters.tsx";
-import IslandLoadMore from "$store/islands/LoadMore.tsx";
-import Button from "$store/components/ui/Button.tsx";
+import { AppContext } from "apps/vtex/mod.ts";
 
 import {
   IslandButtonFilters,
   IslandFiltersDrawer,
 } from "$store/islands/Drawers.tsx";
 import IslandSort from "$store/islands/Sort.tsx";
+import notFoundProductListingPage from "deco-sites/meiasola/loaders/meiasola/notFoundProductListingPage.ts";
 
 type ProductListingPageAndSearch = ProductListingPage & {
   search: { term: string | null; url: URL };
+  isNotFoundPage?: boolean;
 };
 
 export interface Props {
@@ -42,12 +42,18 @@ function Result({
 
   const isSearchPage = search && search.term && search.term != "";
 
-  const willPaginate = pageInfo.records > pageInfo.recordPerPage;
+  const willPaginate = pageInfo.records! > pageInfo?.recordPerPage!;
   const paginationUrl = new URL(search.url.href);
   paginationUrl.searchParams.set("page", "pagination-number");
 
   return (
     <>
+      {page.isNotFoundPage && (
+        <div class="container relative z-10">
+          <Breadcrumb itemListElement={breadcrumb?.itemListElement} />
+        </div>
+      )}
+
       {!isSearchPage && images && images.length > 0 && (
         <Image
           images={images}
@@ -70,6 +76,7 @@ function Result({
         productsCount={pageInfo.records ?? 0}
         sortOptions={sortOptions}
         searchTerm={search?.term ?? undefined}
+        isNotFoundPage={page.isNotFoundPage}
       />
 
       <IslandFiltersDrawer filters={filters} />
@@ -114,8 +121,8 @@ function Result({
 
               <PageLink page={pageInfo.currentPage} isActive href={"#"} />
 
-              {pageInfo.currentPage * pageInfo.recordPerPage <
-                pageInfo.records && (
+              {pageInfo.currentPage * pageInfo.recordPerPage! <
+                pageInfo.records! && (
                 <PageLink
                   page={pageInfo.currentPage + 1}
                   href={paginationUrl.href.replace(
@@ -125,8 +132,8 @@ function Result({
                 />
               )}
 
-              {(pageInfo.currentPage + 1) * pageInfo.recordPerPage <
-                pageInfo.records && (
+              {(pageInfo.currentPage + 1) * pageInfo.recordPerPage! <
+                pageInfo.records! && (
                 <PageLink
                   page={pageInfo.currentPage + 2}
                   href={paginationUrl.href.replace(
@@ -167,19 +174,33 @@ function Heading({
   productsCount,
   searchTerm,
   title,
+  isNotFoundPage,
 }: {
   searchTerm?: string;
   productsCount: number;
   seo: ProductListingPage["seo"];
   sortOptions: ProductListingPage["sortOptions"];
   title?: string;
+  isNotFoundPage?: boolean;
 }) {
   return (
     <div
-      class={`laptop:border-b laptop:border-grey-1 laptop:pb-10 pt-6 tablet:pt-10 text-black`}
+      class={`${
+        !isNotFoundPage
+          ? "laptop:border-b laptop:border-grey-1 laptop:pb-10"
+          : ""
+      } pt-6 tablet:pt-10 text-black`}
     >
       <div class="container flex flex-col gap-6 laptop:flex-row laptop:justify-between laptop:items-end">
-        {searchTerm ? (
+        {isNotFoundPage && (
+          <div class="flex flex-col gap-8">
+            <h1 class="text-subtile font-normal leading-none">
+              <span class="font-bold text-h2">{searchTerm}</span>
+            </h1>
+          </div>
+        )}
+
+        {searchTerm && !isNotFoundPage ? (
           <div class="flex flex-col gap-8">
             <h1 class="text-subtile font-normal leading-none">
               Você buscou por: <span class="font-bold">{searchTerm}</span>
@@ -189,14 +210,16 @@ function Heading({
             </span>
           </div>
         ) : (
-          <div class="flex flex-col gap-6 laptop:flex-row laptop:w-3/4 laptop:gap-5 laptop:items-center">
-            <h1 class="shrink-0 text-h3 leading-none uppercase font-medium tracking-wide">
-              {(seo?.title ?? "")?.split(" ")[0]}
-            </h1>
-            <p class="laptop:leading-none laptop:line-clamp-2 text-small text-neutral-500">
-              {seo?.description}
-            </p>
-          </div>
+          !isNotFoundPage && (
+            <div class="flex flex-col gap-6 laptop:flex-row laptop:w-3/4 laptop:gap-5 laptop:items-center">
+              <h1 class="shrink-0 text-h3 leading-none uppercase font-medium tracking-wide">
+                {(seo?.title ?? "")?.split(" ")[0]}
+              </h1>
+              <p class="laptop:leading-none laptop:line-clamp-2 text-small text-neutral-500">
+                {seo?.description}
+              </p>
+            </div>
+          )
         )}
 
         <div class="grid grid-cols-2 gap-4 laptop:flex laptop:w-1/4 laptop:justify-end">
@@ -346,8 +369,67 @@ function Image({
   return null;
 }
 
-function SearchResult({ page, ...props }: Props) {
-  if (!page || page.pageInfo.records === 0) return <NotFound />;
+export const loader = async (props: Props, req: Request, ctx: AppContext) => {
+  const { url: baseUrl } = req;
+  const url = new URL(baseUrl);
+
+  const notFoundPage = (await notFoundProductListingPage(
+    {
+      pageHref: `${url.origin}/newin`,
+      query: "",
+      count: props.page?.pageInfo.recordPerPage ?? 24,
+      sort: "release:desc",
+      hideUnavailableItems: true,
+      fuzzy: "automatic",
+    },
+    req,
+    ctx
+  )) as ProductListingPageAndSearch;
+
+  if (notFoundPage) {
+    notFoundPage.isNotFoundPage = true;
+
+    notFoundPage.search = {
+      term: "NEW IN",
+      url: new URL("/newin", url.origin),
+    };
+
+    notFoundPage.breadcrumb = {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          name: "New In",
+          item: `${url.origin}/newin`,
+          position: 1,
+        },
+      ],
+      numberOfItems: 1,
+    };
+  }
+
+  return { ...props, notFoundPage };
+};
+
+function SearchResult({
+  page,
+  notFoundPage,
+  ...props
+}: Props & { notFoundPage: ProductListingPageAndSearch | null }) {
+  if (!page || page.pageInfo.records === 0) {
+    return (
+      <>
+        <NotFound />;
+        {notFoundPage && (
+          <Result
+            {...props}
+            page={notFoundPage as ProductListingPageAndSearch}
+          />
+        )}
+      </>
+    );
+  }
+
   return <Result {...props} page={page as ProductListingPageAndSearch} />;
 }
 
@@ -355,8 +437,16 @@ export default SearchResult;
 
 function NotFound() {
   return (
-    <div class="w-full flex justify-center items-center py-10">
-      <span>Not Found!</span>
+    <div class="w-full py-10 laptop:border-b laptop:border-grey-1">
+      <div class="container flex flex-col gap-[21px] justify-center items-center ">
+        <span class="uppercase font-bold text-h3">
+          Não encontramos o que você buscou
+        </span>
+        <p class="text-body text-black">
+          Desculpe, não encontramos resultados para a sua busca, mas não perca a
+          oportunidade de conferir nossas novidades abaixo.
+        </p>
+      </div>
     </div>
   );
 }
