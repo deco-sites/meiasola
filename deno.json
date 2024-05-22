@@ -2,8 +2,8 @@
   "imports": {
     "deco-sites/meiasola/": "./",
     "$store/": "./",
-    "apps/": "https://denopkg.com/deco-cx/apps@0.30.3/",
-    "deco/": "https://denopkg.com/deco-cx/deco@1.51.6/",
+    "apps/": "https://denopkg.com/deco-cx/apps@0.40.7/",
+    "deco/": "https://denopkg.com/deco-cx/deco@1.66.13/",
     "$fresh/": "https://deno.land/x/fresh@1.5.2/",
     "preact": "https://esm.sh/preact@10.18.1",
     "preact/": "https://esm.sh/preact@10.18.1/",
