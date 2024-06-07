@@ -1,11 +1,10 @@
-// import { BlogPosting } from "https://raw.githubusercontent.com/deco-sites/blog/main/blog/types.ts";
-
 import Image from "apps/website/components/Image.tsx";
 import { Head } from "$fresh/runtime.ts";
+import { BlogPosting } from "deco-sites/meiasola/types/blog.ts";
 
 export interface Props {
   title: string;
-  posts: any[] | null;
+  posts: BlogPosting[] | null;
 }
 
 function MyStyle({ title, posts }: Props) {
@@ -58,7 +57,7 @@ function MyStyle({ title, posts }: Props) {
                         height={328}
                         loading="lazy"
                         fetchPriority="auto"
-                        src={post.image}
+                        src={post.image.url ?? ""}
                         class="object-cover h-full w-full"
                       />
                     )}
