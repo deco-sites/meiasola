@@ -1,11 +1,11 @@
-// import { BlogPosting } from "https://raw.githubusercontent.com/deco-sites/blog/main/blog/types.ts";
+import { BlogPosting } from "https://raw.githubusercontent.com/deco-sites/blog/main/blog/types.ts";
 
 import Image from "apps/website/components/Image.tsx";
 import { Head } from "$fresh/runtime.ts";
 
 export interface Props {
   title: string;
-  posts: any[] | null;
+  posts: BlogPosting[] | null;
 }
 
 function MyStyle({ title, posts }: Props) {
