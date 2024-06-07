@@ -1,10 +1,12 @@
 import { fetchSafe } from "apps/utils/fetch.ts";
 
 import * as cheerio from "https://esm.sh/cheerio@1.0.0-rc.12";
-
-import { BlogPosting } from "https://raw.githubusercontent.com/deco-sites/blog/main/blog/types.ts";
-import { BlogPost } from "https://raw.githubusercontent.com/deco-sites/blog/main/packs/wordpress/types.ts";
-import { toBlogPost } from "https://raw.githubusercontent.com/deco-sites/blog/main/packs/wordpress/utils/transform.ts";
+import {
+  BlogPost,
+  BlogPosting,
+  ImageObject,
+} from "deco-sites/meiasola/types/blog.ts";
+import { toBlogPost } from "deco-sites/meiasola/utils/blog.ts";
 
 /**
  * @title Meia Sola - Blog Posts from API
@@ -19,20 +21,20 @@ const blogPostListLoader = async (
   );
   const list = await response.json();
 
-  const posts = list.map((post: BlogPost) => {
+  const posts: BlogPosting[] = list.map((post: BlogPost) => {
     return toBlogPost(post);
   });
 
   posts.forEach((post) => {
     if (!post.image) {
-      const $ = cheerio.load(post.articleBody);
+      const $ = cheerio.load(post.articleBody ?? "");
       const firstImage = $("img").first();
       if (firstImage.length > 0) {
-        post.image = firstImage.attr("src");
+        post.image = { url: firstImage.attr("src") } as ImageObject;
       }
     }
 
-    const $ = cheerio.load(post.description);
+    const $ = cheerio.load(post.description ?? "");
     post.description = $.text();
   });
 
