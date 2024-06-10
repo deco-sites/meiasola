@@ -465,6 +465,7 @@ function PageLink({
     <a
       href={href}
       aria-label={`Página ${page}`}
+      rel="nofollow"
       class={`border border-black h-10 w-10 flex items-center justify-center hover:bg-black hover:text-white ${
         isActive ? "bg-black text-white" : ""
       } transition-all duration-300 ease-out`}
