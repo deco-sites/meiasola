@@ -285,6 +285,7 @@ function Sizes({
                 <a
                   href={sizeUrl.href}
                   aria-label={`Numeração ${size.label}`}
+                  rel="nofollow"
                   class={`border border-white h-10 w-10 flex items-center justify-center hover:bg-white hover:text-black ${
                     isActive ? "bg-white text-black" : ""
                   } transition-all duration-300 ease-out`}
