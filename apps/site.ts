@@ -21,6 +21,9 @@ export type Props = {
 
 export type Platform = "vtex" | "vnda" | "shopify" | "wake" | "linx" | "custom";
 
+// @ts-ignore somehow deno task check breaks, I have no idea why
+export type AppContext = AC<App>;
+
 export let _platform: Platform = "custom";
 
 const color = (platform: string) => {
