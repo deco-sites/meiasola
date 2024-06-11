@@ -116,7 +116,6 @@ function Navbar({
   minicart,
   colors,
 }: Props) {
-  console.log(minicart, "so falta aqui po");
   return (
     <>
       <Head>
