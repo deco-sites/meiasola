@@ -30,20 +30,26 @@ export interface Props {
     sizes: Size[];
     routesToShow: Route[];
   };
+  isWishlistPage?: boolean;
 }
 
 function Result({
   page,
   images = [],
   sizes,
+  isWishlistPage = false,
 }: Omit<Props, "page"> & { page: ProductListingPageAndSearch }) {
   const { products, filters, breadcrumb, sortOptions, seo, pageInfo, search } =
     page;
 
   const isSearchPage = search && search.term && search.term != "";
 
-  const willPaginate = pageInfo.records! > pageInfo?.recordPerPage!;
-  const paginationUrl = new URL(search.url.href);
+  const willPaginate = search && pageInfo.records! > pageInfo?.recordPerPage!;
+
+  const paginationUrl = !isWishlistPage
+    ? new URL(search.url.href)
+    : new URL("https://meiasola.com.br/wishlist");
+
   paginationUrl.searchParams.set("page", "pagination-number");
 
   return (
@@ -54,7 +60,7 @@ function Result({
         </div>
       )}
 
-      {!isSearchPage && images && images.length > 0 && (
+      {!isWishlistPage && !isSearchPage && images && images.length > 0 && (
         <Image
           images={images}
           breadcrumb={breadcrumb}
@@ -62,7 +68,7 @@ function Result({
         />
       )}
 
-      {!isSearchPage && sizes && sizes.sizes.length > 0 && (
+      {!isWishlistPage && !isSearchPage && sizes && sizes.sizes.length > 0 && (
         <Sizes
           title={sizes.title}
           routes={sizes.routesToShow}

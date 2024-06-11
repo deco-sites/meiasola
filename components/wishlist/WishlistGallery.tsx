@@ -21,7 +21,7 @@ function WishlistGallery(props: Props) {
     );
   }
 
-  return <SearchResult notFoundPage={null} {...props} />;
+  return <SearchResult notFoundPage={null} isWishlistPage {...props} />;
 }
 
 export default WishlistGallery;
