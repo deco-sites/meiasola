@@ -148,6 +148,8 @@ export function Images({
 }) {
   if (!images || images.length === 0) return null;
 
+  console.log(images, 'kkk');
+
   const justOneImage = images.length === 1;
 
   let imagesList = [...images];
@@ -197,7 +199,7 @@ export function Images({
           justOneImage ? "grid-cols-1 grid-rows-1" : "grid-cols-2 grid-rows-2"
         } gap-[2px] col-span-8 pr-5`}
       >
-        {imagesList.slice(0, productVideo ? 5 : 4).map((image, index) => {
+        {imagesList.map((image, index) => {
           if (!image.url) return null;
 
           return (
@@ -253,7 +255,7 @@ export function Images({
                       X
                     </label>
                     <Slider class="carousel carousel-center  w-[90%] items-center ">
-                      {imagesList.slice(0, 4).map((image, index) => (
+                      {imagesList.map((image, index) => (
                         <Slider.Item
                           index={index}
                           class="carousel-item w-full h-full justify-center items-center"
@@ -281,7 +283,7 @@ export function Images({
                     </Slider.NextButton>
 
                     <ul class="flex-1 rounded-none flex-col absolute left-0 top-10 flex gap-2 px-4">
-                      {imagesList.slice(0, 4).map((img, index) => (
+                      {imagesList.map((img, index) => (
                         <>
                           <li class="h-32 border flex justify-center">
                             <Slider.Dot index={index}>
@@ -296,7 +298,7 @@ export function Images({
                               />
                               <span class="fixed bottom-10 end-20 text-h3 z-50 break-keep	">
                                 <p class=" hidden group-disabled:flex">
-                                  {index + 1}/{imagesList.slice(0, 4).length}
+                                  {index + 1}/{imagesList.length}
                                 </p>
                               </span>
                             </Slider.Dot>
