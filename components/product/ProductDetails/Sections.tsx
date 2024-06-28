@@ -148,8 +148,6 @@ export function Images({
 }) {
   if (!images || images.length === 0) return null;
 
-  console.log(images, 'kkk');
-
   const justOneImage = images.length === 1;
 
   let imagesList = [...images];
