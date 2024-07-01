@@ -1,1 +1,1 @@
-export { default } from "$store/components/wishlist/WishlistGallery.tsx";
+export { default, loader } from "$store/components/wishlist/WishlistGallery.tsx";

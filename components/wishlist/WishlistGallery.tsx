@@ -1,3 +1,4 @@
+import { AppContext } from "apps/vtex/mod.ts";
 import SearchResult, {
   Props as SearchResultProps,
 } from "$store/components/search/SearchResult.tsx";
@@ -23,5 +24,28 @@ function WishlistGallery(props: Props) {
 
   return <SearchResult notFoundPage={null} isWishlistPage {...props} />;
 }
+
+async function loader(props: Props, req: Request, ctx: AppContext) {
+  if (!props.page || !props.page.products || props.page.products.length === 0) {
+    return {
+      ...props,
+    };
+  }
+
+  const products = await ctx.invoke.vtex.loaders.intelligentSearch.productList({
+    ids: props.page?.products.map((product) => product.productID),
+  });
+
+  return {
+    ...props,
+    page: {
+      ...props.page,
+      products,
+    },
+    isWishlist: true,
+  };
+}
+
+export { loader };
 
 export default WishlistGallery;
