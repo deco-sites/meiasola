@@ -53,6 +53,13 @@ export function SearchbarInput({
     setSearch("", 7);
   }, []);
 
+  const getRecentSearches = () => {
+    const recentSearches = JSON.parse(
+      localStorage.getItem("recentSearches") || "[]"
+    );
+    return recentSearches;
+  };
+
   return (
     <div
       class={"relative"}
@@ -106,6 +113,7 @@ export function SearchbarInput({
             searches,
             products,
             isRecentSearch,
+            recentSearches: getRecentSearches(),
           }}
         ></AutocompleteModal>
       )}
