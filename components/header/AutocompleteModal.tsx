@@ -12,6 +12,7 @@ interface AutocompleteModalProps {
   searches: Search[];
   products: Product[];
   isRecentSearch: boolean;
+  recentSearches: string[];
 }
 
 export const AutocompleteModal = ({
@@ -21,6 +22,7 @@ export const AutocompleteModal = ({
   searches,
   products,
   isRecentSearch,
+  recentSearches,
 }: AutocompleteModalProps) => {
   const id = useId();
   return (
@@ -92,16 +94,27 @@ export const AutocompleteModal = ({
                   {isRecentSearch ? "Buscas Recentes" : "Sugestões"}
                 </span>
                 <ul id="search-suggestion" class="flex flex-col gap-4">
-                  {searches.map(({ term }) => (
-                    <li>
-                      <a
-                        href={`/s?q=${term}`}
-                        class="flex gap-4 items-center text-black"
-                      >
-                        <span class={"capitalize"}>{term}</span>
-                      </a>
-                    </li>
-                  ))}
+                  {!isRecentSearch
+                    ? searches.map(({ term }) => (
+                        <li>
+                          <a
+                            href={`/s?q=${term}`}
+                            class="flex gap-4 items-center text-black"
+                          >
+                            <span class={"capitalize"}>{term}</span>
+                          </a>
+                        </li>
+                      ))
+                    : recentSearches.map((term) => (
+                        <li>
+                          <a
+                            href={`/s?q=${term}`}
+                            class="flex gap-4 items-center text-black"
+                          >
+                            <span class={"capitalize"}>{term}</span>
+                          </a>
+                        </li>
+                      ))}
                 </ul>
               </div>
               {!isRecentSearch && (

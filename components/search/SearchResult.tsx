@@ -19,8 +19,8 @@ import notFoundProductListingPage from "deco-sites/meiasola/loaders/meiasola/not
 type ProductListingPageAndSearch = ProductListingPage & {
   search: { term: string | null; url: URL };
   isNotFoundPage?: boolean;
+  searchQueryParam?: string;
 };
-
 export interface Props {
   /** @title Integration */
   page: ProductListingPage | null;
@@ -33,11 +33,31 @@ export interface Props {
   isWishlistPage?: boolean;
 }
 
+const updateRecentSearches = (search: string) => {
+  if (!search) {
+    return;
+  }
+
+  const recentSearches = JSON.parse(
+    localStorage.getItem("recentSearches") || "[]"
+  );
+
+  if (!recentSearches.includes(search)) {
+    // maintain only the last 7 searches
+    if (recentSearches.length >= 7) {
+      recentSearches.shift();
+    }
+    recentSearches.push(search);
+    localStorage.setItem("recentSearches", JSON.stringify(recentSearches));
+  }
+};
+
 function Result({
   page,
   images = [],
   sizes,
   isWishlistPage = false,
+  searchQueryParam = "",
 }: Omit<Props, "page"> & { page: ProductListingPageAndSearch }) {
   const { products, filters, breadcrumb, sortOptions, seo, pageInfo, search } =
     page;
@@ -170,6 +190,14 @@ function Result({
           },
         }}
       />
+
+      {isSearchPage && (
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(${updateRecentSearches})("${searchQueryParam}");`,
+          }}
+        />
+      )}
     </>
   );
 }
@@ -379,6 +407,9 @@ export const loader = async (props: Props, req: Request, ctx: AppContext) => {
   const { url: baseUrl } = req;
   const url = new URL(baseUrl);
 
+  const urlSearchParams = new URLSearchParams(url.search);
+  const searchQueryParam = urlSearchParams.get("q") ?? "";
+
   const notFoundPage = (await notFoundProductListingPage(
     {
       pageHref: `${url.origin}/newin`,
@@ -414,7 +445,7 @@ export const loader = async (props: Props, req: Request, ctx: AppContext) => {
     };
   }
 
-  return { ...props, notFoundPage };
+  return { ...props, notFoundPage, searchQueryParam };
 };
 
 function SearchResult({
