@@ -41,9 +41,10 @@ import * as $$$$$$28 from "./sections/Product/ProductDetails.tsx";
 import * as $$$$$$29 from "./sections/Product/ProductShelf.tsx";
 import * as $$$$$$30 from "./sections/Product/SearchResult.tsx";
 import * as $$$$$$31 from "./sections/Product/Wishlist.tsx";
-import * as $$$$$$32 from "./sections/Social/InstagramPosts.tsx";
-import * as $$$$$$33 from "./sections/Social/WhatsApp.tsx";
-import * as $$$$$$34 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$32 from "./sections/ProxyIframe/ProxyIframe.tsx";
+import * as $$$$$$33 from "./sections/Social/InstagramPosts.tsx";
+import * as $$$$$$34 from "./sections/Social/WhatsApp.tsx";
+import * as $$$$$$35 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
   "loaders": {
@@ -86,9 +87,10 @@ const manifest = {
     "deco-sites/meiasola/sections/Product/ProductShelf.tsx": $$$$$$29,
     "deco-sites/meiasola/sections/Product/SearchResult.tsx": $$$$$$30,
     "deco-sites/meiasola/sections/Product/Wishlist.tsx": $$$$$$31,
-    "deco-sites/meiasola/sections/Social/InstagramPosts.tsx": $$$$$$32,
-    "deco-sites/meiasola/sections/Social/WhatsApp.tsx": $$$$$$33,
-    "deco-sites/meiasola/sections/Theme/Theme.tsx": $$$$$$34,
+    "deco-sites/meiasola/sections/ProxyIframe/ProxyIframe.tsx": $$$$$$32,
+    "deco-sites/meiasola/sections/Social/InstagramPosts.tsx": $$$$$$33,
+    "deco-sites/meiasola/sections/Social/WhatsApp.tsx": $$$$$$34,
+    "deco-sites/meiasola/sections/Theme/Theme.tsx": $$$$$$35,
   },
   "apps": {
     "deco-sites/meiasola/apps/decohub.ts": $$$$$$$$$$$0,
