@@ -454,6 +454,7 @@ export function Description({
   if (!product.description) return null;
 
   const clamp = product.description.split(" ").length > 50;
+  console.log(product.description, "descriçaooo");
 
   return (
     <span class="group">
@@ -464,6 +465,7 @@ export function Description({
         dangerouslySetInnerHTML={{
           __html: product.description,
         }}
+        style={{ whiteSpace: "pre-wrap" }}
       >
         <span class="font-bold">Descrição: </span>
       </p>
