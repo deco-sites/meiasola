@@ -461,9 +461,11 @@ export function Description({
         class={`text-small ${
           clamp && "group-[&:not(:has(input:checked))]:line-clamp-4"
         }`}
+        dangerouslySetInnerHTML={{
+          __html: product.description,
+        }}
       >
         <span class="font-bold">Descrição: </span>
-        {product.description}
       </p>
       {clamp && (
         <label
