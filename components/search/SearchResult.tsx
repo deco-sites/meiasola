@@ -1,4 +1,5 @@
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
+import { SectionProps } from "deco/types.ts";
 import { ProductListingPage } from "apps/commerce/types.ts";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
@@ -21,6 +22,7 @@ type ProductListingPageAndSearch = ProductListingPage & {
   isNotFoundPage?: boolean;
   searchQueryParam?: string;
 };
+
 export interface Props {
   /** @title Integration */
   page: ProductListingPage | null;
@@ -58,7 +60,9 @@ function Result({
   sizes,
   isWishlistPage = false,
   searchQueryParam = "",
-}: Omit<Props, "page"> & { page: ProductListingPageAndSearch }) {
+}: Omit<SectionProps<typeof loader>, "page" | "notFoundPage"> & {
+  page: ProductListingPageAndSearch;
+}) {
   const { products, filters, breadcrumb, sortOptions, seo, pageInfo, search } =
     page;
 
@@ -249,7 +253,7 @@ function Heading({
               <h1 class="shrink-0 text-h3 leading-none uppercase font-medium tracking-wide">
                 {(seo?.title ?? "")?.split(" ")[0]}
               </h1>
-              <p class="laptop:leading-none laptop:line-clamp-2 text-small text-neutral-500">
+              <p class="laptop:leading-none text-small text-neutral-500">
                 {seo?.description}
               </p>
             </div>
@@ -452,17 +456,12 @@ function SearchResult({
   page,
   notFoundPage,
   ...props
-}: Props & { notFoundPage: ProductListingPageAndSearch | null }) {
+}: SectionProps<typeof loader>) {
   if (!page || page.pageInfo.records === 0) {
     return (
       <>
-        <NotFound />;
-        {notFoundPage && (
-          <Result
-            {...props}
-            page={notFoundPage as ProductListingPageAndSearch}
-          />
-        )}
+        <NotFound />
+        {notFoundPage && <Result {...props} page={notFoundPage} />}
       </>
     );
   }

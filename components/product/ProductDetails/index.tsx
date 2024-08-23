@@ -66,11 +66,11 @@ function Details({
       <Sizes product={page.product} sizeProps={sizeProps} />
       <Divider className="-mt-4" />
       <Seller product={page.product} />
-      <Actions product={page.product} />
       <Colors
         colorVariants={page.colorVariants}
         productSku={page.product.sku}
       />
+      <Actions product={page.product} />
       <Description product={page.product} />
       {/* </Partial> */}
       <CEP sku={parseInt(page.product.sku)} seller={seller} />
