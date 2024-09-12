@@ -1,4 +1,4 @@
-import { ImageWidget } from "apps/admin/widgets.ts";
+import { ImageWidget, VideoWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 
 export interface Props {
@@ -12,7 +12,9 @@ interface Collection {
    */
   label: string;
   link: string;
-  image: ImageWidget;
+  type?: "image" | "video";
+  image?: ImageWidget;
+  video?: VideoWidget;
 }
 
 function Collections({ variant, collections }: Props) {
@@ -40,15 +42,30 @@ function Collections({ variant, collections }: Props) {
                 >
                   <p class="z-10 text-center">{collection.label}</p>
                   <div class="h-full w-full bg-grey-1 absolute top-0 left-0 z-0">
-                    <Image
-                      alt="Imagem da coleção"
-                      width={310}
-                      height={480}
-                      loading="lazy"
-                      fetchPriority="auto"
-                      src={collection.image}
-                      class="object-cover h-full w-full"
-                    />
+                    {collection.type === "image" || !collection.type ? (
+                      <Image
+                        alt="Imagem da coleção"
+                        width={310}
+                        height={480}
+                        loading="lazy"
+                        fetchPriority="auto"
+                        src={collection.image || ""}
+                        class="object-cover h-full w-full"
+                      />
+                    ) : (
+                      <video
+                        alt="Video da coleção"
+                        autoplay
+                        muted
+                        loop
+                        controls={false}
+                        width={310}
+                        height={480}
+                        src={collection.video}
+                        loading="lazy"
+                        class="object-cover h-full w-full"
+                      />
+                    )}
                   </div>
                   <div
                     class="absolute h-full w-full top-0 left-0 z-[1]"
@@ -92,15 +109,30 @@ function Collections({ variant, collections }: Props) {
                     {collection.label}
                   </h4>
                   <div class="h-full w-full bg-grey-1 relative">
-                    <Image
-                      alt="Imagem da coleção"
-                      width={350}
-                      height={410}
-                      loading="lazy"
-                      fetchPriority="auto"
-                      src={collection.image}
-                      class="object-cover absolute top-0 left-0 h-full w-full"
-                    />
+                    {collection.type === "image" || !collection.type ? (
+                      <Image
+                        alt="Imagem da coleção"
+                        width={350}
+                        height={410}
+                        loading="lazy"
+                        fetchPriority="auto"
+                        src={collection.image || ""}
+                        class="object-cover absolute top-0 left-0 h-full w-full"
+                      />
+                    ) : (
+                      <video
+                        alt="Video da coleção"
+                        width={350}
+                        height={410}
+                        autoplay
+                        muted
+                        loop
+                        controls={false}
+                        src={collection.video}
+                        loading="lazy"
+                        class="object-cover absolute top-0 left-0 h-full w-full"
+                      />
+                    )}
                   </div>
                   <p class="shrink-0 text-center text-small border-b border-transparent group-hover:border-black">
                     SHOP NOW
