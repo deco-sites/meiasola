@@ -32,7 +32,7 @@ export default function ReadMoreText({ maxCharacters, text }: Props) {
       />
       <div
         id={"readMoreText"}
-        class="text-body laptop:text-large font-normal"
+        class="text-body laptop:text-large font-normal [&>p]:my-2"
         dangerouslySetInnerHTML={{
           __html: show,
         }}
