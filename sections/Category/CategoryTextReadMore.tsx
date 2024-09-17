@@ -49,6 +49,7 @@ function CategoryTextReadMore({
           alt={image.alt}
           width={image.width ?? 100}
           height={image.height ?? 100}
+          class="h-max"
         />
       )}
     </div>
