@@ -60,9 +60,9 @@ export default BannerCarousel;
 interface ItemProps {
   content?: HTMLWidget;
 
-  button: {
-    text: string;
-    link: string;
+  button?: {
+    text?: string;
+    link?: string;
   };
 
   /**
@@ -85,7 +85,7 @@ function Item(props: Video | Image) {
       aria-label={
         `Item do carrossel: ${alt}` ?? "Banner com conteúdo, clique e confira!"
       }
-      href={button.link}
+      href={button?.link ?? "#"}
     >
       <div class="container flex flex-col h-full relative z-10">
         <div class="flex-1" />
@@ -95,7 +95,7 @@ function Item(props: Video | Image) {
         />
         <div class="flex-1 flex justify-center items-center">
           <span class="bg-black text-white text-small px-6 py-2.5 rounded-full tablet:bg-transparent tablet:border transition-all duration-300 ease-out tablet:border-white tablet:hover:bg-white tablet:hover:text-black">
-            {button.text}
+            {button?.text}
           </span>
         </div>
       </div>
