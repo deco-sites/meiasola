@@ -1,6 +1,6 @@
 import Image from "apps/website/components/Image.tsx";
 import { Head } from "$fresh/runtime.ts";
-import { BlogPosting } from "deco-sites/meiasola/types/blog.ts";
+import { BlogPosting } from "site/types/blog.ts";
 
 export interface Props {
   title: string;

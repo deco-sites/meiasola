@@ -1,0 +1,1 @@
+{"name":"Login","path":"/user-myaccount","sections":[{"__resolveType":"Header - 02"},{"src":"/login/?returnUrl=%2Faccount","__resolveType":"site/sections/ProxyIframe/ProxyIframe.tsx"},{"__resolveType":"Footer - 01"}],"__resolveType":"website/pages/Page.tsx"}

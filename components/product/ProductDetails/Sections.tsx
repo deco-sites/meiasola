@@ -34,7 +34,7 @@ import { Props as SizeGuideProps } from "$store/components/product/ProductDetail
 import { useOffer } from "$store/sdk/useOffer.ts";
 import { formatPrice } from "$store/sdk/format.ts";
 import { useVariantPossibilities } from "$store/sdk/useVariantPossiblities.ts";
-import ProductImageZoom from "deco-sites/meiasola/components/product/ProductImageZoom.tsx";
+import ProductImageZoom from "site/components/product/ProductImageZoom.tsx";
 
 export function Name({ breadcrumbList, product, seo }: ProductDetailsPage) {
   const model = product.isVariantOf?.model ?? "";

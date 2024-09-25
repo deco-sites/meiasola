@@ -4,7 +4,7 @@ import { ImageWidget, HTMLWidget } from "apps/admin/widgets.ts";
 import Icon from "$store/components/ui/Icon.tsx";
 import type { AvailableIcons } from "$store/components/ui/Icon.tsx";
 
-import IslandContactUsForm from "deco-sites/meiasola/islands/ContactUsForm.tsx";
+import IslandContactUsForm from "site/islands/ContactUsForm.tsx";
 
 export interface Props {
   title: string;

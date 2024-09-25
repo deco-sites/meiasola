@@ -3,7 +3,7 @@ import Icon from "$store/components/ui/Icon.tsx";
 
 import { useUI } from "$store/sdk/useUI.ts";
 import { useAutocomplete } from "apps/vtex/hooks/useAutocomplete.ts";
-import { AutocompleteModal } from "deco-sites/meiasola/components/header/AutocompleteModal.tsx";
+import { AutocompleteModal } from "site/components/header/AutocompleteModal.tsx";
 import { useEffect, useRef, useState } from "preact/compat";
 
 export interface Props {

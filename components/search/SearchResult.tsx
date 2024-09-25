@@ -10,7 +10,7 @@ import Filters from "$store/components/search/Filters.tsx";
 import { AppContext } from "apps/vtex/mod.ts";
 import { IslandButtonFilters, IslandFiltersDrawer, } from "$store/islands/Drawers.tsx";
 import IslandSort from "$store/islands/Sort.tsx";
-import notFoundProductListingPage from "deco-sites/meiasola/loaders/meiasola/notFoundProductListingPage.ts";
+import notFoundProductListingPage from "site/loaders/meiasola/notFoundProductListingPage.ts";
 import { type SectionProps } from "@deco/deco";
 type ProductListingPageAndSearch = ProductListingPage & {
     search: {

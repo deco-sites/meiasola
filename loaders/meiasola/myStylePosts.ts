@@ -5,8 +5,8 @@ import {
   BlogPost,
   BlogPosting,
   ImageObject,
-} from "deco-sites/meiasola/types/blog.ts";
-import { toBlogPost } from "deco-sites/meiasola/utils/blog.ts";
+} from "site/types/blog.ts";
+import { toBlogPost } from "site/utils/blog.ts";
 
 /**
  * @title Meia Sola - Blog Posts from API

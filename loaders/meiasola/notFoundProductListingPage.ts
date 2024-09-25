@@ -9,7 +9,7 @@ import { withIsSimilarTo } from "apps/vtex/utils/similars.ts";
 import { filtersFromURL, mergeFacets, parsePageType, toProduct, } from "apps/vtex/utils/transform.ts";
 import type { Fuzzy, PageType, SelectedFacet, Sort, } from "apps/vtex/utils/types.ts";
 import PLPDefaultPath from "apps/vtex/loaders/paths/PLPDefaultPath.ts";
-import { allFilters } from "deco-sites/meiasola/loaders/meiasola/extensionProductListingPage.ts";
+import { allFilters } from "site/loaders/meiasola/extensionProductListingPage.ts";
 import { redirect } from "@deco/deco";
 /** this type is more friendly user to fuzzy type that is 0, 1 or auto. */
 export type LabelledFuzzy = "automatic" | "disabled" | "enabled";
