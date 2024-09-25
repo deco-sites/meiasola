@@ -16,9 +16,24 @@ const blogPostListLoader = async (
   _props: unknown,
   _req: Request
 ): Promise<BlogPosting[] | null> => {
-  const response = await fetchSafe(
-    "https://blog.meiasola.com/mstyle/wp-json/wp/v2/posts?per_page=4"
-  );
+  
+  const timeout = new Promise<undefined>((resolve) => {
+    setTimeout(() => {
+      resolve(undefined);
+    }, 10_000);
+  });
+
+  const response = await Promise.race([
+    fetchSafe(
+      "https://blog.meiasola.com/mstyle/wp-json/wp/v2/posts?per_page=4",
+    ),
+    timeout,
+  ]);
+
+  if (!response) {
+    return [];
+  }
+
   const list = await response.json();
 
   const posts: BlogPosting[] = list.map((post: BlogPost) => {
