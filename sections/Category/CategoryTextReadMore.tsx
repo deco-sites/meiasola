@@ -1,6 +1,6 @@
 import { HTMLWidget, ImageWidget } from "apps/admin/widgets.ts";
-import Image from "deco-sites/meiasola/components/ui/Image.tsx";
-import ReadMoreText from "deco-sites/meiasola/islands/ReadMoreText.tsx";
+import Image from "site/components/ui/Image.tsx";
+import ReadMoreText from "site/islands/ReadMoreText.tsx";
 import { type SectionProps } from "@deco/deco";
 export interface Media {
     source?: ImageWidget;
