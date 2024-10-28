@@ -1,1 +1,64 @@
-{"seo":{"type":"website","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/6bfb5d98-5750-42cb-9861-45c986d6a823","title":"Meia Sola","favicon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/45a70708-a268-44fb-89a9-e60aee615d3b","canonical":"https://www.meiasola.com.br/","themeColor":"light","description":"A Meia Sola é uma multimarca de moda que oferece as últimas tendências do universo de sapatos, bolsas e acessórios.","__resolveType":"website/sections/Seo/Seo.tsx","titleTemplate":"%s","descriptionTemplate":"%s"},"theme":{"__resolveType":"Meia Sola Theme"},"flavor":{"framework":"fresh"},"global":[{"__resolveType":"WhatsApp Global"},{"__resolveType":"analytics/sections/Analytics/DecoAnalytics.tsx"}],"routes":[{"__resolveType":"vtex/loaders/proxy.ts","includeSiteMap":[],"extraPathsToProxy":[],"includeScriptsToHead":{"includes":[]}},{"__resolveType":"website/loaders/pages.ts"}],"algolia":{"adminAPIKey":"72d4757e3b28da7e2b18ca1c8b96a4e3","searchAPIKey":"f48360f6586a1c440d91fcc3af63db56","applicationId":"ETUYHD7AX5"},"caching":{"directives":[]},"commerce":{"appKey":{"name":"appKey","encrypted":"9a2b1b1990d19bb8314b8180e56fbdfcb6791a59bd47c561c33d401294ad6156","__resolveType":"website/loaders/secret.ts"},"account":"meiasola","appToken":{"name":"appToken","encrypted":"8d7da510d507954918410838e5d6314af5f5f810c7cb394be3db2631b7ee547e2297fd06a26b683d6f9db22e25cb0e57ed6b28dba132d6a97c6570c7cc769e9c2bee7e87e56930bd28620d8c51c546e8e8cf896ed8044e36f111d05d9d1794246fe901b9fef7a0d2ecdfe465624d9b93000fdf40fb09aad07ea2137d368e9f3d8bac8626decd16c9a5e5f515d2f2ceea","__resolveType":"website/loaders/secret.ts"},"platform":"vtex","publicUrl":"secure.meiasola.com.br","salesChannel":"1","defaultSegment":{"channelPrivacy":"public"}},"platform":"vtex","abTesting":{"replaces":[],"includeScriptsToHead":{"includes":[]}},"__resolveType":"site/apps/site.ts","firstByteThresholdMS":false}
+{
+  "seo": {
+    "type": "website",
+    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/6bfb5d98-5750-42cb-9861-45c986d6a823",
+    "title": "Meia Sola",
+    "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/45a70708-a268-44fb-89a9-e60aee615d3b",
+    "canonical": "https://www.meiasola.com.br/",
+    "themeColor": "light",
+    "description": "A Meia Sola é uma multimarca de moda que oferece as últimas tendências do universo de sapatos, bolsas e acessórios.",
+    "__resolveType": "website/sections/Seo/Seo.tsx",
+    "titleTemplate": "%s",
+    "descriptionTemplate": "%s"
+  },
+  "theme": {
+    "__resolveType": "Meia Sola Theme"
+  },
+  "flavor": {
+    "framework": "fresh"
+  },
+  "global": [
+    {
+      "__resolveType": "WhatsApp Global"
+    },
+    {
+      "__resolveType": "analytics/sections/Analytics/DecoAnalytics.tsx"
+    }
+  ],
+  "routes": [
+    {
+      "__resolveType": "vtex/loaders/proxy.ts",
+      "includeSiteMap": [],
+      "extraPathsToProxy": [],
+      "includeScriptsToHead": {
+        "includes": []
+      }
+    },
+    {
+      "__resolveType": "website/loaders/pages.ts"
+    }
+  ],
+  "algolia": {
+    "adminAPIKey": "72d4757e3b28da7e2b18ca1c8b96a4e3",
+    "searchAPIKey": "f48360f6586a1c440d91fcc3af63db56",
+    "applicationId": "ETUYHD7AX5"
+  },
+  "caching": {
+    "directives": []
+  },
+  "commerce": {
+    "platform": "other"
+  },
+  "platform": "vtex",
+  "abTesting": {
+    "replaces": [],
+    "includeScriptsToHead": {
+      "includes": []
+    },
+    "includeScriptsToBody": {
+      "includes": []
+    }
+  },
+  "__resolveType": "site/apps/site.ts",
+  "firstByteThresholdMS": false
+}

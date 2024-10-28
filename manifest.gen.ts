@@ -2,8 +2,12 @@
 // This file SHOULD be checked into source version control.
 // This file is automatically updated during development when running `dev.ts`.
 
-import * as $$$$$$$$$$$0 from "./apps/decohub.ts";
-import * as $$$$$$$$$$$1 from "./apps/site.ts";
+import * as $$$$$$$$$$$0 from "./apps/deco/algolia.ts";
+import * as $$$$$$$$$$$1 from "./apps/deco/analytics.ts";
+import * as $$$$$$$$$$$2 from "./apps/deco/verified-reviews.ts";
+import * as $$$$$$$$$$$3 from "./apps/deco/vtex.ts";
+import * as $$$$$$$$$$$4 from "./apps/deco/workflows.ts";
+import * as $$$$$$$$$$$5 from "./apps/site.ts";
 import * as $$$0 from "./loaders/Layouts/ProductCard.tsx";
 import * as $$$1 from "./loaders/meiasola/extensionGetModelVariants.ts";
 import * as $$$2 from "./loaders/meiasola/extensionProductListingPage.ts";
@@ -95,8 +99,12 @@ const manifest = {
     "site/sections/Theme/Theme.tsx": $$$$$$36,
   },
   "apps": {
-    "site/apps/decohub.ts": $$$$$$$$$$$0,
-    "site/apps/site.ts": $$$$$$$$$$$1,
+    "site/apps/deco/algolia.ts": $$$$$$$$$$$0,
+    "site/apps/deco/analytics.ts": $$$$$$$$$$$1,
+    "site/apps/deco/verified-reviews.ts": $$$$$$$$$$$2,
+    "site/apps/deco/vtex.ts": $$$$$$$$$$$3,
+    "site/apps/deco/workflows.ts": $$$$$$$$$$$4,
+    "site/apps/site.ts": $$$$$$$$$$$5,
   },
   "name": "site",
   "baseUrl": import.meta.url,
