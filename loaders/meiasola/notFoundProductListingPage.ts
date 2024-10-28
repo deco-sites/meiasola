@@ -32,7 +32,7 @@ import type {
 } from "apps/vtex/utils/types.ts";
 import PLPDefaultPath from "apps/vtex/loaders/paths/PLPDefaultPath.ts";
 import { redirect } from "deco/mod.ts";
-import { allFilters } from "deco-sites/meiasola/loaders/meiasola/extensionProductListingPage.ts";
+import { allFilters } from "site/loaders/meiasola/extensionProductListingPage.ts";
 
 /** this type is more friendly user to fuzzy type that is 0, 1 or auto. */
 export type LabelledFuzzy = "automatic" | "disabled" | "enabled";

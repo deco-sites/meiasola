@@ -15,7 +15,7 @@ import {
   IslandFiltersDrawer,
 } from "$store/islands/Drawers.tsx";
 import IslandSort from "$store/islands/Sort.tsx";
-import notFoundProductListingPage from "deco-sites/meiasola/loaders/meiasola/notFoundProductListingPage.ts";
+import notFoundProductListingPage from "site/loaders/meiasola/notFoundProductListingPage.ts";
 
 type ProductListingPageAndSearch = ProductListingPage & {
   search: { term: string | null; url: URL };
