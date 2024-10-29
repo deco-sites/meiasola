@@ -172,7 +172,7 @@ function Cart({
               <a class="" href={checkoutHref}>
                 <Button
                   data-deco="buy-button"
-                  class="btn-primary  p-[18px] w-[167px] h-[46px] text-small text-white normal-case"
+                  class="btn-primary p-[18px] w-[167px] h-[46px] text-small text-white normal-case"
                   disabled={loading || isEmtpy}
                   onClick={() => {
                     sendEvent({

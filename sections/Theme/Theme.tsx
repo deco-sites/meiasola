@@ -5,163 +5,63 @@
  * https://github.com/saadeghi/daisyui/blob/37bca23444bc9e4d304362c14b7088f9a08f1c74/src/docs/src/routes/theme-generator.svelte
  */
 import SiteTheme, { Font } from "apps/website/components/Theme.tsx";
-import { Color } from "https://deno.land/x/color@v0.3.0/mod.ts";
+import Color from "npm:colorjs.io@0.5.2";
+import type { ComponentChildren } from "preact";
+import { clx } from "../../sdk/clx.ts";
 
-export interface MainColors {
+export interface ThemeColors {
   /**
-   * @format color
+   * @format color-input
    * @title Base
-   * @default #FFFFFF
    */
-  "base-100": string;
+  "base-100"?: string;
+  /** @format color-input */
+  "primary"?: string;
+  /** @format color-input */
+  "secondary"?: string;
   /**
-   * @format color
-   * @title Primary
-   * @default #003232
-   */
-  "primary": string;
-  /**
-   * @format color
-   * @title Scondary
-   * @default #8C3D3D
-   */
-  "secondary": string;
-  /**
-   * @format color
-   * @title Tertiary
-   * @default #00FF7F
-   */
-  "tertiary": string;
+   * @title Accent
+   * @format color-input */
+  "tertiary"?: string;
+  /** @format color-input */
+  "neutral"?: string;
+  /** @format color-input */
+  "success"?: string;
+  /** @format color-input */
+  "warning"?: string;
+  /** @format color-input */
+  "error"?: string;
+  /** @format color-input */
+  "info"?: string;
 }
 
 export interface ComplementaryColors {
-  base?: BaseColorOptional;
-  primary?: PrimaryColorOptional;
-  secondary?: SecondaryColorOptional;
-  tertiary?: TertiaryColorOptional;
-}
-
-export interface BaseColorOptional {
-  /**
-   * @format color
-   */
+  /** @format color-input */
   "base-200"?: string;
-  /**
-   * @format color
-   */
+  /** @format color-input */
   "base-300"?: string;
-  /**
-   * @format color
-   */
+  /** @format color-input */
+  "base-400"?: string;
+  /** @format color-input */
   "base-content"?: string;
-}
-
-export interface PrimaryColorOptional {
-  /**
-   * @format color
-   * @title Hover
-   */
-  "primary-focus"?: string;
-  /**
-   * @format color
-   * @title Content
-   */
+  /** @format color-input */
   "primary-content"?: string;
-}
-
-export interface SecondaryColorOptional {
-  /**
-   * @format color
-   * @title Hover
-   */
-  "secondary-focus"?: string;
-  /**
-   * @format color
-   * @title Content
-   */
+  /** @format color-input */
   "secondary-content"?: string;
-}
-
-export interface TertiaryColorOptional {
   /**
-   * @format color
-   * @title Hover
-   */
-  "tertiary-focus"?: string;
-  /**
-   * @format color
-   * @title Content
-   */
+   * @title Accent Content
+   * @format color-input */
   "tertiary-content"?: string;
-}
-
-export interface OtherOptionalColors {
-  /**
-   * @format color
-   * @description Will be a darker tone of neutral if not specified
-   */
-  "neutral-focus"?: string;
-  /**
-   * @format color
-   * @description Will be a readable tone of neutral if not specified
-   */
+  /** @format color-input */
   "neutral-content"?: string;
-
-  /**
-   * @format color
-   * @description Will be a readable success of neutral if not specified
-   */
+  /** @format color-input */
   "success-content"?: string;
-
-  /**
-   * @format color
-   * @description Will be a readable tone of warning if not specified
-   */
+  /** @format color-input */
   "warning-content"?: string;
-
-  /**
-   * @format color
-   * @description Will be a readable tone of error if not specified
-   */
+  /** @format color-input */
   "error-content"?: string;
-
-  /**
-   * @format color
-   * @description Will be a readable tone of info if not specified
-   */
+  /** @format color-input */
   "info-content"?: string;
-}
-
-export interface SystemColors {
-  /**
-   * @format color
-   * @default #333333
-   */
-  "neutral": string;
-
-  /**
-   * @format color
-   * @default #EAFAF2
-   */
-  "success": string;
-
-  /**
-   * @format color
-   * @default #FFF8E6
-   */
-  "warning": string;
-
-  /**
-   * @format color
-   * @default #FFE9E5
-   */
-  "error": string;
-
-  /**
-   * @format color
-   * @default #F0F5FF
-   */
-  "info": string;
 }
 
 export interface Button {
@@ -175,26 +75,21 @@ export interface Button {
    * @title Radius
    * @description Button and similar elements
    */
-  "--rounded-btn": "0" | "0.2rem" | "0.4rem" | "0.8rem" | "2rem";
-  /**
-   * @default normal-case
-   * @title Text transform
-   */
-  "--btn-text-case": "normal-case" | "uppercase" | "lowercase" | "capitalize";
+  "--rounded-btn": "0" | "0.2rem" | "0.4rem" | "0.8rem" | "2rem" | "99999px";
   /**
    * @default 0.95
    * @title Scale on click
    */
   "--btn-focus-scale": "0.9" | "0.95" | "1" | "1.05" | "1.1";
-}
-
-export interface Miscellaneous {
   /**
    * @default 0.25s
    * @title Animation
    * @description Duration when you click
    */
   "--animation-btn": "0.1s" | "0.15s" | "0.2s" | "0.25s" | "0.3s" | "0.35s";
+}
+
+export interface Miscellaneous {
   /**
    * @default 1rem
    * @title Rounded box
@@ -228,61 +123,66 @@ export interface Miscellaneous {
 }
 
 export interface Props {
-  mainColors?: MainColors;
-  /** These colors are automatically generated with darker tons of their originals */
+  /**
+   * @description Set the prefers-color-scheme media query. To support dark mode, create two instances of this block and set this option to light/dark in each instance
+   * @default light
+   */
+  colorScheme?: "light" | "dark" | "any";
+  mainColors?: ThemeColors;
+  /** @description These will be auto-generated to a readable color if not set */
   complementaryColors?: ComplementaryColors;
   buttonStyle?: Button;
+  otherStyles?: Miscellaneous;
   font?: Font;
+  /**
+   * @description This is the admin's color-scheme mode
+   */
+  mode?: "dark" | "light";
 }
 
 type Theme =
-  & MainColors
-  & PrimaryColorOptional
-  & SecondaryColorOptional
-  & TertiaryColorOptional
-  & BaseColorOptional
+  & ThemeColors
+  & ComplementaryColors
   & Button
-  & SystemColors
-  & OtherOptionalColors
   & Miscellaneous;
 
-const darken = (color: string, percentage = 0.2) =>
-  Color.string(color).darken(percentage);
+const darken = (color: string, percentage: number) =>
+  new Color(color).darken(percentage);
+
+const isDark = (c: Color) =>
+  c.contrast("black", "WCAG21") < c.contrast("white", "WCAG21");
 
 const contrasted = (color: string, percentage = 0.8) => {
-  const c = Color.string(color);
+  const c = new Color(color);
 
-  return c.isDark()
-    ? c.mix(Color.rgb(255, 255, 255), percentage).saturate(.1)
-    : c.mix(Color.rgb(0, 0, 0), percentage).saturate(.1);
+  return isDark(c) ? c.mix("white", percentage) : c.mix("black", percentage);
 };
 
-const toVariables = (t: Theme): [string, string][] => {
-  const toValue = (color: string | Color) => {
-    const hsl = typeof color === "string" ? Color.string(color) : color;
-    return `${hsl.hue()} ${hsl.saturation()}% ${hsl.lightness()}%`;
+const toVariables = (
+  t: Theme & Required<ThemeColors>,
+): [string, string][] => {
+  const toValue = (color: string | ReturnType<typeof darken>) => {
+    const [l, c, h] = new Color(color).oklch;
+
+    return `${(l * 100).toFixed(0)}% ${c.toFixed(2)} ${(h || 0).toFixed(0)}deg`;
   };
 
   const colorVariables = Object.entries({
     "--p": t["primary"],
-    "--pf": t["primary-focus"] ?? darken(t["primary"]),
     "--pc": t["primary-content"] ?? contrasted(t["primary"]),
 
     "--s": t["secondary"],
-    "--sf": t["secondary-focus"] ?? darken(t["secondary"]),
     "--sc": t["secondary-content"] ?? contrasted(t["secondary"]),
 
     "--a": t["tertiary"],
-    "--af": t["tertiary-focus"] ?? darken(t["tertiary"]),
     "--ac": t["tertiary-content"] ?? contrasted(t["tertiary"]),
 
     "--n": t["neutral"],
-    "--nf": t["neutral-focus"] ?? darken(t["neutral"]),
     "--nc": t["neutral-content"] ?? contrasted(t["neutral"]),
 
     "--b1": t["base-100"],
-    "--b2": t["base-200"] ?? darken(t["base-100"], 0.1),
-    "--b3": t["base-300"] ?? darken(t["base-100"], 0.5),
+    "--b2": t["base-200"] ?? darken(t["base-100"], 0.07),
+    "--b3": t["base-300"] ?? darken(t["base-100"], 0.14),
     "--bc": t["base-content"] ?? contrasted(t["base-100"]),
 
     "--su": t["success"],
@@ -304,7 +204,6 @@ const toVariables = (t: Theme): [string, string][] => {
     "--rounded-badge": t["--rounded-badge"],
     "--animation-btn": t["--animation-btn"],
     "--animation-input": t["--animation-input"],
-    "--btn-text-case": t["--btn-text-case"],
     "--btn-focus-scale": t["--btn-focus-scale"],
     "--border-btn": t["--border-btn"],
     "--tab-border": t["--tab-border"],
@@ -315,25 +214,21 @@ const toVariables = (t: Theme): [string, string][] => {
 };
 
 const defaultTheme = {
-  "primary": "hsla(209, 28%, 21%, 1)",
-  "primary-content": "hsla(0, 0%, 100%, 1)",
-  "secondary": "hsla(104, 18%, 46%, 1)",
-  "secondary-content": "hsla(0, 0%, 100%, 1)",
-  "tertiary": "hsla(8, 69%, 65%, 1)",
-  "tertiary-content": "hsla(0, 0%, 100%, 1)",
-  "neutral": "hsla(0, 0%, 47%, 1)",
-  "base-100": "hsla(0, 0%, 100%, 1)",
-  "success": "hsl(150 62% 95%)",
-  "warning": "hsl(43 100% 95%)",
-  "error": "hsl(9 100% 95%)",
-  "info": "hsl(220 100% 97%)",
+  "primary": "oklch(1 0 0)",
+  "secondary": "oklch(1 0 0)",
+  "tertiary": "oklch(1 0 0)",
+  "neutral": "oklch(1 0 0)",
+  "base-100": "oklch(1 0 0)",
+  "info": "oklch(1 0 0)",
+  "success": "oklch(0.9054 0.1546 194.7689)",
+  "warning": "oklch(1 0 0)",
+  "error": "oklch(1 0 0)",
 
   "--rounded-box": "1rem", // border radius rounded-box utility class, used in card and other large boxes
   "--rounded-btn": "0.2rem" as const, // border radius rounded-btn utility class, used in buttons and similar element
   "--rounded-badge": "1.9rem", // border radius rounded-badge utility class, used in badges and similar
   "--animation-btn": "0.25s" as const, // duration of animation when you click on button
   "--animation-input": "0.2s", // duration of animation for inputs like checkbox, toggle, radio, etc
-  "--btn-text-case": "uppercase" as const, // set default text transform for buttons
   "--btn-focus-scale": "0.95" as const, // scale transform of button when you focus on it
   "--border-btn": "1px" as const, // border width of buttons
   "--tab-border": "1px", // border width of tabs
@@ -353,16 +248,16 @@ function Section({
   mainColors,
   complementaryColors,
   buttonStyle,
+  otherStyles,
   font,
+  colorScheme,
 }: Props) {
   const theme = {
     ...defaultTheme,
+    ...complementaryColors,
     ...mainColors,
-    ...complementaryColors?.base,
-    ...complementaryColors?.primary,
-    ...complementaryColors?.secondary,
-    ...complementaryColors?.tertiary,
     ...buttonStyle,
+    ...otherStyles,
   };
 
   const variables = [
@@ -375,185 +270,132 @@ function Section({
   ]
     .map(([name, value]) => ({ name, value }));
 
-  return <SiteTheme fonts={font ? [font] : undefined} variables={variables} />;
+  return (
+    <SiteTheme
+      fonts={font ? [font] : undefined}
+      variables={variables}
+      colorScheme={colorScheme === "any" ? undefined : colorScheme}
+    />
+  );
 }
 
 export function Preview(props: Props) {
+  const adminColorMode = props.mode === "dark" ? "dark" : "light";
   return (
     <>
+      {
+        /* This stylesheet is used to simulate the colors from the admin's color schema (admin's light or dark mode), which are not accessible in the site's color schema.
+        * This is a temporary solution until the admin's color schema is accessible.
+        * TODO(@carol): Change this temporary solution.
+       */
+      }
+      <style>
+        {`
+          :root {
+            --admin-color-dark-bg: #0d1717;
+            --admin-color-light-bg: #ffffff;
+            --admin-text-color-dark: #e4e7e7;
+            --admin-text-color-light: #162222;
+            --admin-border-color-light: #c9cfcf;
+            --admin-border-color-dark: #2f3c3c;
+            --admin-border-hover-color-light: #819292;
+            --admin-border-hover-color-dark: #949e9e;
+            --admin-hover-bg-color: #fafafa;
+          }
+
+          .dark {
+            background-color: var(--admin-color-dark-bg);
+            color: var(--admin-text-color-dark);
+          }
+
+          .light {
+            background-color: var(--admin-color-light-bg);
+            color: var(--admin-text-color-light);
+          }
+
+          .btn-outline-light, .btn-outline-dark {
+            background-color: transparent;
+            display: inline-flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            white-space: nowrap;
+            border: 1px solid;
+            border-radius: 0.5rem;
+          }
+
+          .btn-outline-light {
+            color: var(--admin-text-color-light);
+            border-color: var(--admin-border-color-light);
+          }
+
+          .btn-outline-dark {
+            color: var(--admin-text-color-dark);
+            border-color: var(--admin-border-color-dark);
+          }
+
+          .btn-outline-light:hover, .btn-outline-dark:hover {
+            background-color: transparent);
+            display: inline-flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            white-space: nowrap;
+            border-radius: 0.5rem;
+          }
+
+          .btn-outline-light:hover {
+            border-color: var(--admin-border-hover-color-light);
+          }
+
+          .btn-outline-dark:hover {
+            border-color: var(--admin-border-hover-color-dark);
+          }
+
+          .border-color-dark {
+            border-color: var(--admin-border-color-dark);
+          }
+
+          .border-color-light {
+            border-color: var(--admin-border-color-light);
+          }
+        `}
+      </style>
       <Section {...props} />
-      <div class="grid grid-flow-row md:grid-flow-col">
-        <div class="flex flex-col gap-4 p-4 bg-base-100 text-base-content">
-          <div class="text-xl">The quick brown fox jumps over the lazy dog</div>
-          {" "}
-          <button class="btn">Default button</button>{" "}
-          <div class="flex flex-col gap-1">
-            <div class="flex flex-wrap gap-1">
-              <button class="btn btn-sm">A</button>{" "}
-              <button class="btn btn-sm btn-primary">A</button>{" "}
-              <button class="btn btn-sm btn-secondary">A</button>{" "}
-              <button class="btn btn-sm btn-accent">A</button>
-              {" "}
-            </div>
-            <div class="flex flex-wrap gap-1">
-              <button class="btn btn-sm btn-outline">A</button>{" "}
-              <button class="btn btn-sm btn-primary btn-outline">A</button>{" "}
-              <button class="btn btn-sm btn-secondary btn-outline">A</button>
-              {" "}
-              <button class="btn btn-sm btn-accent btn-outline">A</button>
-              {" "}
-            </div>
-            {" "}
-          </div>
-          <div class="flex flex-col gap-2">
-            <span class="badge">Base</span>{" "}
-            <span class="badge badge-primary">Primary</span>{" "}
-            <span class="badge badge-secondary">Secondary</span>{" "}
-            <span class="badge badge-accent">Tertiary</span>
-            {" "}
-          </div>{" "}
-          <div class="flex flex-col">
-            <div class="text-base">Content</div>
-            <div class="text-base text-primary">Primary</div>
-            <div class="text-base text-secondary">Secondary</div>
-            <div class="text-base text-accent">Tertiary</div>
-          </div>
-          {" "}
-        </div>{" "}
-        <div class="flex flex-col gap-4 p-4 bg-base-content text-base-100">
-          <div class="text-xl">The quick brown fox jumps over the lazy dog</div>
-          {" "}
-          <button class="btn">Default button</button>{" "}
-          <div class="flex flex-col gap-1">
-            <div class="flex flex-wrap gap-1">
-              <button class="btn btn-sm">A</button>{" "}
-              <button class="btn btn-sm btn-primary">A</button>{" "}
-              <button class="btn btn-sm btn-secondary">A</button>{" "}
-              <button class="btn btn-sm btn-accent">A</button>
-              {" "}
-            </div>
-            <div class="flex flex-wrap gap-1">
-              <button class="btn btn-sm btn-primary btn-outline">A</button>{" "}
-              <button class="btn btn-sm btn-secondary btn-outline">A</button>
-              {" "}
-              <button class="btn btn-sm btn-accent btn-outline">A</button>
-              {" "}
-            </div>
-            {" "}
-          </div>
-          <div class="flex flex-col gap-2">
-            <span class="badge">Base</span>{" "}
-            <span class="badge badge-primary">Primary</span>{" "}
-            <span class="badge badge-secondary">Secondary</span>{" "}
-            <span class="badge badge-accent">Tertiary</span>
-            {" "}
-          </div>{" "}
-          <div class="flex flex-col">
-            <div class="text-base">Content</div>
-            <div class="text-base text-primary">Primary</div>
-            <div class="text-base text-secondary">Secondary</div>
-            <div class="text-base text-accent">Tertiary</div>
-          </div>
-          {" "}
-        </div>{" "}
-        <div class="flex flex-col gap-4 p-4 bg-primary text-primary-content">
-          <div class="text-xl">The quick brown fox jumps over the lazy dog</div>
-          {" "}
-          <button class="btn">Default button</button>{" "}
-          <div class="flex flex-col gap-1">
-            <div class="flex flex-wrap gap-1">
-              <button class="btn btn-sm">A</button>{" "}
-              <button class="btn btn-sm btn-secondary">A</button>{" "}
-              <button class="btn btn-sm btn-accent">A</button>
-              {" "}
-            </div>
-            <div class="flex flex-wrap gap-1">
-              <button class="btn btn-sm btn-outline">A</button>{" "}
-              <button class="btn btn-sm btn-secondary btn-outline">A</button>
-              {" "}
-              <button class="btn btn-sm btn-accent btn-outline">A</button>
-              {" "}
-            </div>
-            {" "}
-          </div>
-          <div class="flex flex-col gap-2">
-            <span class="badge">Base</span>{" "}
-            <span class="badge badge-secondary">Secondary</span>{" "}
-            <span class="badge badge-accent">Tertiary</span>
-            {" "}
-          </div>{" "}
-          <div class="flex flex-col">
-            <div class="text-base">Content</div>
-            <div class="text-base text-secondary">Secondary</div>
-            <div class="text-base text-accent">Tertiary</div>
-          </div>
-          {" "}
-        </div>{" "}
-        <div class="flex flex-col gap-4 p-4 bg-secondary text-secondary-content">
-          <div class="text-xl">The quick brown fox jumps over the lazy dog</div>
-          {" "}
-          <button class="btn">Default button</button>{" "}
-          <div class="flex flex-col gap-1">
-            <div class="flex flex-wrap gap-1">
-              <button class="btn btn-sm">A</button>{" "}
-              <button class="btn btn-sm btn-primary">A</button>{" "}
-              <button class="btn btn-sm btn-accent">A</button>
-              {" "}
-            </div>
-            <div class="flex flex-wrap gap-1">
-              <button class="btn btn-sm btn-outline">A</button>{" "}
-              <button class="btn btn-sm btn-primary btn-outline">A</button>{" "}
-              <button class="btn btn-sm btn-accent btn-outline">A</button>
-              {" "}
-            </div>
-            {" "}
-          </div>
-          <div class="flex flex-col gap-2">
-            <span class="badge">Base</span>{" "}
-            <span class="badge badge-primary">Primary</span>{" "}
-            <span class="badge badge-accent">Tertiary</span>
-            {" "}
-          </div>{" "}
-          <div class="flex flex-col">
-            <div class="text-base">Content</div>
-            <div class="text-base text-primary">Primary</div>
-            <div class="text-base text-accent">Tertiary</div>
-          </div>
-          {" "}
-        </div>{" "}
-        <div class="flex flex-col gap-4 p-4 bg-accent text-accent-content">
-          <div class="text-xl">The quick brown fox jumps over the lazy dog</div>
-          {" "}
-          <button class="btn">Default button</button>{" "}
-          <div class="flex flex-col gap-1">
-            <div class="flex flex-wrap gap-1">
-              <button class="btn btn-sm">A</button>{" "}
-              <button class="btn btn-sm btn-primary">A</button>{" "}
-              <button class="btn btn-sm btn-secondary">A</button>
-              {" "}
-            </div>
-            <div class="flex flex-wrap gap-1">
-              <button class="btn btn-sm btn-outline">A</button>{" "}
-              <button class="btn btn-sm btn-primary btn-outline">A</button>{" "}
-              <button class="btn btn-sm btn-secondary btn-outline">A</button>
-              {" "}
-            </div>
-            {" "}
-          </div>
-          <div class="flex flex-col gap-2">
-            <span class="badge">Base</span>{" "}
-            <span class="badge badge-primary">Primary</span>{" "}
-            <span class="badge badge-secondary">Secondary</span>
-            {" "}
-          </div>{" "}
-          <div class="flex flex-col">
-            <div class="text-base">Content</div>
-            <div class="text-base text-primary">Primary</div>
-            <div class="text-base text-secondary">Secondary</div>
-          </div>
-          {" "}
+      <div class={`flex flex-col gap-4 text-base w-full ${adminColorMode}`}>
+        <div>Components and styles</div>
+        <div class="flex flex-col w-full gap-2">
+          <PreviewContainer
+            title="Text colors"
+            mode={adminColorMode}
+            codeString={snippets.textColors}
+          >
+            <TextColorsPreview />
+          </PreviewContainer>
+          <PreviewContainer
+            title="Button styles"
+            mode={adminColorMode}
+            codeString={snippets.buttonStyles}
+          >
+            <ButtonStylesPreview />
+          </PreviewContainer>
+          <PreviewContainer
+            title="Button colors"
+            mode={adminColorMode}
+            codeString={snippets.buttonColors}
+          >
+            <ButtonColorsPreview />
+          </PreviewContainer>
+          <PreviewContainer
+            title="Button sizes"
+            mode={adminColorMode}
+            codeString={snippets.buttonSizes}
+          >
+            <ButtonSizesPreview />
+          </PreviewContainer>
         </div>
-        {" "}
       </div>
       {props.font?.family && (
         <div class="text-center py-2">
@@ -563,5 +405,259 @@ export function Preview(props: Props) {
     </>
   );
 }
+
+const ButtonSizesPreview = () => {
+  const buttonSizes = {
+    lg: "Large",
+    md: "Normal",
+    sm: "Small",
+    xs: "Tiny",
+  };
+
+  const buttonStyles = ["", "primary", "secondary", "accent"];
+
+  const renderButtonRow = (style: string) => (
+    <div class="flex flex-row gap-2 items-center">
+      {Object.entries(buttonSizes).map(([sizeCode, sizeText]) => (
+        <button
+          class={`btn capitalize btn-${sizeCode} ${
+            style ? `btn-${style}` : ""
+          }`}
+        >
+          {sizeText}
+        </button>
+      ))}
+    </div>
+  );
+
+  return (
+    <div class="bg-base-100 overflow-x-auto rounded-lg flex flex-col p-2 gap-2">
+      {buttonStyles.map((style) => renderButtonRow(style))}
+    </div>
+  );
+};
+
+const ButtonColorsPreview = () => {
+  const buttonTypesClasses = ["btn", "btn-outline", "btn-ghost", "btn-link"];
+  const buttonColorsClasses = [
+    "",
+    "btn-primary",
+    "btn-secondary",
+    "btn-accent",
+  ];
+
+  const renderButtonRow = (type: string) => (
+    <div class="flex flex-row gap-2">
+      {buttonColorsClasses.map((color) => (
+        <button class={`btn btn-xs md:btn-sm capitalize ${color} ${type}`}>
+          {color ? color.split("-")[1] : "Button"}
+        </button>
+      ))}
+    </div>
+  );
+
+  return (
+    <div class="bg-base-100 overflow-x-auto rounded-lg flex flex-col p-2 gap-2">
+      {buttonTypesClasses.map((type) => renderButtonRow(type))}
+    </div>
+  );
+};
+
+const ButtonStylesPreview = () => {
+  const buttonStylesClasses = ["", "btn-outline", "btn-ghost", "btn-link"];
+
+  return (
+    <div class="bg-base-100 overflow-x-auto rounded-lg flex flex-row p-2 gap-2">
+      {buttonStylesClasses.map((style) => (
+        <button class={`btn btn-xs md:btn-sm capitalize ${style}`}>
+          {style ? style.split("-")[1] : "Button"}
+        </button>
+      ))}
+    </div>
+  );
+};
+
+const TextColorsPreview = () => {
+  const textColorsClasses = [
+    "",
+    "text-primary",
+    "text-secondary",
+    "text-accent",
+  ];
+
+  return (
+    <div class="bg-base-100 overflow-x-auto rounded-lg flex flex-row p-2 gap-2 text-sm md:text-base">
+      {textColorsClasses.map((color) => (
+        <div class={`${color} capitalize`}>
+          {color ? color.split("-")[1] : "Content"}
+        </div>
+      ))}
+    </div>
+  );
+};
+
+const PreviewContainer = (
+  { mode, title, children, codeString }: {
+    mode: string;
+    title: string;
+    children: ComponentChildren;
+    codeString: string;
+  },
+) => {
+  const borderClass = mode === "dark"
+    ? "border-color-dark"
+    : "border-color-light";
+  const btnOutlineClass = mode === "dark"
+    ? "btn-outline-dark"
+    : "btn-outline-light";
+  const checkboxId = `show-code-${title.replace(/\s+/g, "-").toLowerCase()}`;
+  const codeBlockId = `code-block-${title.replace(/\s+/g, "-").toLowerCase()}`;
+
+  // Estilos dinâmicos adicionados para esconder/mostrar labels baseado no estado do checkbox
+  const dynamicStyle = `
+    #${codeBlockId} {
+      display: none;
+    }
+    #${checkboxId}:checked ~ #${codeBlockId} {
+      display: block;
+    }
+    #${checkboxId}:checked ~ .show-label {
+      display: none;
+    }
+    #${checkboxId}:not(:checked) ~ .hide-label {
+      display: none;
+    }
+    #${checkboxId}:checked ~ .hide-label {
+      background-color: ${
+    mode === "dark"
+      ? "var(--admin-hover-bg-color)"
+      : "var(--admin-text-color-light)"
+  };
+      color: ${
+    mode === "dark"
+      ? "var(--admin-text-color-light)"
+      : "var(--admin-hover-bg-color)"
+  };
+    }
+  `;
+
+  return (
+    <>
+      <style>{dynamicStyle}</style>
+      <div
+        class={clx(
+          `border p-4 flex flex-col gap-2 grow relative`,
+          borderClass,
+          `rounded-lg`,
+        )}
+      >
+        <div>
+          <div class="my-1">{title}</div>
+          <div>
+            <input type="checkbox" id={checkboxId} class="sr-only" />
+            {/* Label for "Show code" */}
+            <label
+              htmlFor={checkboxId}
+              class={clx(
+                `btn-sm absolute right-4 top-4`,
+                btnOutlineClass,
+                `show-label`,
+              )}
+            >
+              Show code
+            </label>
+            {/* Label for "Hide code" */}
+            <label
+              htmlFor={checkboxId}
+              class={clx(
+                `btn-sm absolute right-4 top-4`,
+                btnOutlineClass,
+                `hide-label`,
+              )}
+            >
+              Hide code
+            </label>
+            <div
+              id={codeBlockId}
+              class={clx(
+                "mt-4 mb-2 text-xs md:text-sm",
+                mode === "dark" ? "bg-slate-800" : "bg-slate-100",
+              )}
+            >
+              <pre class="p-4 overflow-x-auto">{codeString}</pre>
+            </div>
+          </div>
+        </div>
+        {children}
+      </div>
+    </>
+  );
+};
+
+// TODO(@carol): find a way to make these snippets more dynamic
+const snippets = {
+  textColors: `
+  <div>Content</div>
+  <div class="text-primary">Primary</div>
+  <div class="text-secondary">Secondary</div>
+  <div class="text-accent">Accent</div>`,
+  buttonStyles: `
+  <button class="btn btn-sm">Button</button>
+  <button class="btn btn-sm btn-outline">Outline</button>
+  <button class="btn btn-sm btn-ghost">Ghost</button>
+  <button class="btn btn-sm btn-link">Link</button>`,
+  buttonColors: `
+  {/* First row */}
+  <button class="btn btn-sm">Button</button>
+  <button class="btn btn-sm btn-primary">Primary</button>
+  <button class="btn btn-sm btn-secondary">Secondary</button>
+  <button class="btn btn-sm btn-accent">Accent</button>
+
+  {/* Second row */}
+  <button class="btn btn-sm btn-outline">Button</button>
+  <button class="btn btn-sm btn-primary btn-outline">Primary</button>
+  <button class="btn btn-sm btn-secondary btn-outline">Secondary</button>
+  <button class="btn btn-sm btn-accent btn-outline">Accent</button>
+
+  {/* Third row */}
+  <button class="btn btn-sm btn-ghost">Button</button>
+  <button class="btn btn-sm btn-primary btn-ghost">Primary</button>
+  <button class="btn btn-sm btn-secondary btn-ghost">Secondary</button>
+  <button class="btn btn-sm btn-accent btn-ghost">Accent</button>
+
+  {/* Fourth row */}
+  <button class="btn btn-sm btn-link">Button</button>
+  <button class="btn btn-sm btn-primary btn-link">Primary</button>
+  <button class="btn btn-sm btn-secondary btn-link">Secondary</button>
+  <button class="btn btn-sm btn-accent btn-link">Accent</button>`,
+  buttonSizes: `
+  {/* First row */}
+  <button class="btn btn-lg">Large</button>
+  <button class="btn btn-md">Normal</button>
+  <button class="btn btn-sm">Small</button>
+  <button class="btn btn-xs">Tiny</button>
+
+  {/* Second row */}
+  <button class="btn btn-lg btn-primary">Large</button>
+  <button class="btn btn-md btn-primary">Normal</button>
+  <button class="btn btn-sm btn-primary">Small</button>
+  <button class="btn btn-xs btn-primary">Tiny</button>
+
+  {/* Third row */}
+  <button class="btn btn-lg btn-secondary">Large</button>
+  <button class="btn btn-md btn-secondary">Normal</button>
+  <button class="btn btn-sm btn-secondary">Small</button>
+  <button class="btn btn-xs btn-secondary">Tiny</button>
+  
+  {/* Fourth row */}
+  <button class="btn btn-lg btn-accent">Large</button>
+  <button class="btn btn-md btn-accent">Normal</button>
+  <button class="btn btn-sm btn-accent">Small</button>
+  <button class="btn btn-xs btn-accent">Tiny</button>`,
+};
+
+export const LoadingFallback = () => {
+  throw new Error("Cannot defer theme section");
+};
 
 export default Section;

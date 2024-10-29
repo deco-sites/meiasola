@@ -1,31 +1,74 @@
-import { AppProps } from "$fresh/server.ts";
-import GlobalTags from "$store/components/GlobalTags.tsx";
+import { asset, Head } from "$fresh/runtime.ts";
+import { defineApp } from "$fresh/server.ts";
+import { useScript } from "@deco/deco/hooks";
+import { Context } from "@deco/deco";
 import Theme from "$store/sections/Theme/Theme.tsx";
 
-const sw = () =>
-  addEventListener("load", () =>
-    navigator && navigator.serviceWorker &&
-    navigator.serviceWorker.register("/sw.js"));
-
-function App(props: AppProps) {
+const serviceWorkerScript = () =>
+  addEventListener(
+    "load",
+    () =>
+      navigator &&
+      navigator.serviceWorker &&
+      navigator.serviceWorker.register("/sw.js")
+  );
+export default defineApp(async (_req, ctx) => {
+  const revision = await Context.active().release?.revision();
   return (
     <>
-      {/* Include default fonts and css vars */}
       <Theme />
 
       {/* Include Icons and manifest */}
-      <GlobalTags />
+      <Head>
+        {/* Enable View Transitions API */}
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `@view-transition { navigation: auto; }`,
+          }}
+        />
+
+        {/* Tailwind v3 CSS file */}
+        <link
+          href={asset(`/styles.css?revision=${revision}`)}
+          rel="stylesheet"
+        />
+
+        {/* Web Manifest */}
+        <link rel="manifest" href={asset("/site.webmanifest")} />
+
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+        />
+
+        <script
+          type="text/javascript"
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NJRC6Q2');`,
+          }}
+        />
+      </Head>
+
+      <noscript>
+        <iframe
+          src="https://www.googletagmanager.com/ns.html?id=GTM-NJRC6Q2"
+          height="0"
+          width="0"
+          style="display:none;visibility:hidden"
+        ></iframe>
+      </noscript>
 
       {/* Rest of Preact tree */}
-      <props.Component />
+      <ctx.Component />
 
-      {/* Include service worker */}
       <script
         type="module"
-        dangerouslySetInnerHTML={{ __html: `(${sw})();` }}
+        dangerouslySetInnerHTML={{ __html: useScript(serviceWorkerScript) }}
       />
     </>
   );
-}
-
-export default App;
+});

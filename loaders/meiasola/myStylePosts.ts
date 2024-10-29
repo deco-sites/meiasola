@@ -5,8 +5,8 @@ import {
   BlogPost,
   BlogPosting,
   ImageObject,
-} from "deco-sites/meiasola/types/blog.ts";
-import { toBlogPost } from "deco-sites/meiasola/utils/blog.ts";
+} from "site/types/blog.ts";
+import { toBlogPost } from "site/utils/blog.ts";
 
 /**
  * @title Meia Sola - Blog Posts from API
@@ -34,9 +34,13 @@ const blogPostListLoader = async (
     return [];
   }
 
-  const list = await response.json();
+  const list = await response.text();
 
-  const posts: BlogPosting[] = list.map((post: BlogPost) => {
+  const json = list.indexOf("</script>") === -1
+    ? JSON.parse(String(list))
+    : JSON.parse(String(list.slice(list.indexOf("</script>") + "</script>".length)));
+
+  const posts: BlogPosting[] = json.map((post: BlogPost) => {
     return toBlogPost(post);
   });
 

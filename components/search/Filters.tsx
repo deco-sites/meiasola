@@ -10,7 +10,7 @@ import type {
 import Divider from "$store/components/ui/Divider.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
 import { parseRange } from "apps/commerce/utils/filters.ts";
-import { formatPrice } from "deco-sites/meiasola/sdk/format.ts";
+import { formatPrice } from "site/sdk/format.ts";
 
 export interface Props {
   filters: ProductListingPage["filters"];
