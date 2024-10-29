@@ -1,9 +1,9 @@
 import { useSignal } from "@preact/signals";
-import { Runtime } from "$store/runtime.ts";
 import type { JSX } from "preact";
 
 import Button from "$store/components/ui/Button.tsx";
 import { useForm } from "$store/sdk/useForm.ts";
+import { invoke } from "site/runtime.ts";
 
 export interface Form {
   /**
@@ -52,7 +52,7 @@ function Newsletter({ title, description, form }: Props) {
         return;
       }
 
-      await Runtime.vtex.actions.newsletter.subscribe({
+      await invoke.vtex.actions.newsletter.subscribe({
         name,
         email,
       });

@@ -1,7 +1,7 @@
 import type { JSX } from "preact";
 import { useSignal } from "@preact/signals";
 
-import { Runtime } from "$store/runtime.ts";
+import { invoke } from "$store/runtime.ts";
 
 import { Input } from "$store/sections/MeiaSola/ContactUs.tsx";
 import Button from "$store/components/ui/Button.tsx";
@@ -27,7 +27,7 @@ export default function ContactUsForm() {
         e.currentTarget.elements.namedItem("message") as RadioNodeList
       )?.value;
 
-      await Runtime.vtex.actions.newsletter.subscribe({
+      await invoke.vtex.actions.newsletter.subscribe({
         name,
         email,
         // phone,

@@ -2,11 +2,11 @@ import { useCallback } from "preact/hooks";
 import { useSignal } from "@preact/signals";
 import { IS_BROWSER } from "$fresh/runtime.ts";
 
-import { Runtime } from "../runtime.ts";
 import { Product } from "apps/commerce/types.ts";
 
 import Button from "$store/components/ui/Button.tsx";
 import ProductGallery from "$store/components/product/ProductGallery.tsx";
+import { invoke } from "site/runtime.ts";
 
 export default function LoadMore({ count }: { count: number }) {
   const loading = useSignal(false);
@@ -17,7 +17,7 @@ export default function LoadMore({ count }: { count: number }) {
       loading.value = true;
 
       const page =
-        await Runtime.vtex.loaders.intelligentSearch.productListingPage({
+        await invoke.vtex.loaders.intelligentSearch.productListingPage({
           count,
           page: products.value.length / count + 2,
         });

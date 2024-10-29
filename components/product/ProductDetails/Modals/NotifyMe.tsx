@@ -1,13 +1,13 @@
 import type { JSX } from "preact";
 import { useSignal } from "@preact/signals";
 
-import { Runtime } from "$store/runtime.ts";
 import { useUI } from "$store/sdk/useUI.ts";
 import { useForm } from "$store/sdk/useForm.ts";
 
 import Modal from "$store/components/ui/Modal.tsx";
 import Button from "$store/components/ui/Button.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
+import { invoke } from "site/runtime.ts";
 
 export default function NotifyMeModal() {
   const { displayNotifyMe } = useUI();
@@ -56,7 +56,7 @@ export default function NotifyMeModal() {
 
       errorMessage.value = "";
 
-      await Runtime.vtex.actions.notifyme({
+      await invoke.vtex.actions.notifyme({
         skuId: displayNotifyMe.value,
         name,
         email,
