@@ -1,4 +1,4 @@
-# Meia Sola
+# Meia Sola 
 
 A fully featured starter to help you customize and deploy an ecommerce website
 in minutes. 
