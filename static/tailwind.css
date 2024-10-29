@@ -494,6 +494,10 @@ html {
     line-height: normal;
   }
 
+  .btn-primary {
+    background-color: #090B0A;
+  }
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;

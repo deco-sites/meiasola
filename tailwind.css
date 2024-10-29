@@ -40,6 +40,10 @@
   h1, h2, h3, h3, h5, h6, p, a, span {
     line-height: normal;
   }
+
+  .btn-primary {
+    background-color: #090B0A;
+  }
 }
 
 .group:disabled .group-disabled\:animate-progress {

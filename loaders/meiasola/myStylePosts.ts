@@ -34,9 +34,13 @@ const blogPostListLoader = async (
     return [];
   }
 
-  const list = await response.json();
+  const list = await response.text();
 
-  const posts: BlogPosting[] = list.map((post: BlogPost) => {
+  const json = list.indexOf("</script>") === -1
+    ? JSON.parse(String(list))
+    : JSON.parse(String(list.slice(list.indexOf("</script>") + "</script>".length)));
+
+  const posts: BlogPosting[] = json.map((post: BlogPost) => {
     return toBlogPost(post);
   });
 
