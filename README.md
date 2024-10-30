@@ -2,7 +2,7 @@
 
 A fully featured starter to help you customize and deploy an ecommerce website
 in minutes. 
-
+ 
 <div style="display: flex; justify-content: center; width: 100%">
 <img width="600px" height="147px"
     src="https://cdn.discordapp.com/attachments/1043241080679841793/1083140431556116553/image.png" />
