@@ -67,24 +67,20 @@ export default function AddToCartButton(props: Props) {
   const { loading, onClick } = useAddToCart(props);
 
   return (
-    <Button
-      loading={loading}
+    <button
       onClick={onClick}
       data-deco="add-to-cart"
       class={
         props.class
           ? props.class
-          : "flex items-center justify-center gap-2 text-small underline text-black h-fit p-0 font-normal w-full bg-transparent hover:bg-transparent normal-case disabled:bg-transparent"
+          : "flex items-center justify-center gap-2 text-body text-black h-[45px] p-0 font-normal w-full bg-transparent hover:bg-transparent normal-case border border-black disabled:bg-transparent"
       }
     >
-      {props.children ? (
-        props.children
+      {loading ? (
+        <span class="loading loading-spinner loading-current h-3 w-3" />
       ) : (
-        <>
-          <Icon id={"Bag"} class="h-3 w-3" />
-          Adicionar à sacola
-        </>
+        <>{props.children ? props.children : <>ADICIONAR À SACOLA</>}</>
       )}
-    </Button>
+    </button>
   );
 }
