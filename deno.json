@@ -67,7 +67,9 @@
     "node_modules",
     "static/",
     "README.md",
-    "**/_fresh/*"
+    "_fresh",
+    "**/_fresh/*",
+    ".deco"
   ],
   "lint": {
     "rules": {
@@ -80,7 +82,8 @@
   "nodeModulesDir": true,
   "compilerOptions": {
     "jsx": "react-jsx",
-    "jsxImportSource": "preact"
+    "jsxImportSource": "preact",
+    "experimentalDecorators": true
   },
   "lock": false
 }
