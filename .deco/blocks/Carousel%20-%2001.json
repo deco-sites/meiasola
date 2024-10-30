@@ -1,1 +1,106 @@
-{"items":[{"button":{"link":"/310?map=productClusterIds&O=&sort=release%3Adesc&page","text":"CONFIRA"},"imageMobile":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/26bf873f-b726-41a7-bcd6-d5c663af3e21/promos_banner_mobile---390x310px-(3).jpg","imageDesktop":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/2c54ff91-667c-45f6-b386-96081eea6b30/promos_banner_desktop---1440x696px-(3).jpg"},{"button":{"link":"/312?map=productClusterIds&O=&sort=release%3Adesc&page","text":"CONFIRA"},"imageMobile":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/9c78e2f5-50ab-4756-9cba-ff4baa6f2737/resort_banner_mobile---390x310px-(1)-(3).jpg","imageDesktop":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/500c36cc-7fc4-42b8-9b27-6dc33888e6f8/resort_banner_desktop---1440x696px-(1)-(2).jpg"},{"button":{"link":"/308?map=productClusterIds&O=&sort=release%3Adesc&page","text":"CONFIRA"},"imageMobile":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/c3c1c290-1a27-412f-b1a4-56cd80501a70/promos_banner_mobile---390x310px_sch-compressed.jpg","imageDesktop":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/4635d611-838c-4b07-a131-57a0c7151f8b/promos_banner_desktop---1440x696px_sch-compressed.jpg"},{"button":{"link":"/305?map=productClusterIds&O=&sort=release%3Adesc&page","text":"CONFIRA"},"imageMobile":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/6cb3983b-f13f-4caa-88ae-39ffe5ff0b62/promos_banner_mobile---390x310px-(2).jpg","imageDesktop":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/c82351eb-433e-4050-ba53-4b706645c404/promos_banner_desktop---1440x696px-(2).jpg"},{"button":{"link":"/m-s","text":"CONFIRA"},"imageMobile":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/8918b004-2101-41c0-9c77-76c759d82c42/resort_banner_mobile---390x310px-(1)-(2).jpg","imageDesktop":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/49e9c6f5-5f5a-4de9-ab8f-4aaa361a2556/resort_banner_desktop---1440x696px-(1).jpg"},{"button":{"link":"/newin","text":"CONFIRA"},"imageMobile":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/c0880a47-bfdb-4c26-b3b2-d4889d320ab9/resort_banner_mobile---390x310px-(4)-(1).jpg","imageDesktop":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/c1e4cfe2-9712-4de1-98d9-acb95095a326/resort_banner_desktop---1440x696px-(4).jpg"},{"button":{"link":"/arezzo","text":"CONFIRA"},"imageMobile":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/200364d1-4cbf-449b-9c43-8eaa0abd347e/resort_banner_mobile---390x310px-(3)-(3).jpg","imageDesktop":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/ab4f1598-2902-4ab8-a4d0-95a6159b996a/resort_banner_desktop---1440x696px-(3)-(1).jpg"},{"button":{"link":"/anacapri","text":"CONFIRA"},"imageMobile":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/4164868b-4c56-41a0-8225-4d151bcbaa9f/resort_banner_mobile---390x310px-(5)-(2).jpg","imageDesktop":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f491519c-d23a-4b99-b3cf-1fe7ca4573bd/resort_banner_desktop---1440x696px-(5)-(1).jpg"}],"images":[{"alt":"/feminino","action":{"href":"https://www.deco.cx/","label":"deco.cx","title":"VTEX Store","subTitle":"Visit our site and start building now:"},"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/24278f9e-412d-4a8a-b2d3-57353bb1b368","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/afa2c07c-74f4-496d-8647-5cc58f48117b"},{"alt":"/feminino","action":{"href":"https://www.deco.cx/","label":"deco.cx","title":"VTEX Store","subTitle":"Visit our site and start building now:"},"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/eeaa624c-a3e1-45e8-a6fe-034233cfbcd0","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/7949d031-9a79-4639-b85e-62fd90af85a9"},{"alt":"/feminino","action":{"href":"https://www.deco.cx/","label":"deco.cx","title":"VTEX Store","subTitle":"Visit our site and start building now:"},"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/ae89571c-4a7c-44bf-9aeb-a341fd049d19","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/7ec121e4-5cfe-4b7b-b942-d1ed4493803d"}],"preload":true,"interval":4,"__resolveType":"site/sections/Images/Carousel.tsx"}
+{
+  "items": [
+    {
+      "button": {
+        "link": "/sale",
+        "text": "CONFIRA"
+      },
+      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/66961ff4-efc9-4072-a039-dc7b0fae4330/resort_banner_mobile---390x310px-(1)-(4).jpg",
+      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/ac028901-22a1-43cf-becf-d0f012c1eedd/resort_banner_desktop---1440x696px-(2)-(3).jpg"
+    },
+    {
+      "button": {
+        "link": "/312?map=productClusterIds&O=&sort=release%3Adesc&page",
+        "text": "CONFIRA"
+      },
+      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/9c78e2f5-50ab-4756-9cba-ff4baa6f2737/resort_banner_mobile---390x310px-(1)-(3).jpg",
+      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/500c36cc-7fc4-42b8-9b27-6dc33888e6f8/resort_banner_desktop---1440x696px-(1)-(2).jpg"
+    },
+    {
+      "button": {
+        "link": "/308?map=productClusterIds&O=&sort=release%3Adesc&page",
+        "text": "CONFIRA"
+      },
+      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/c3c1c290-1a27-412f-b1a4-56cd80501a70/promos_banner_mobile---390x310px_sch-compressed.jpg",
+      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/4635d611-838c-4b07-a131-57a0c7151f8b/promos_banner_desktop---1440x696px_sch-compressed.jpg"
+    },
+    {
+      "button": {
+        "link": "/305?map=productClusterIds&O=&sort=release%3Adesc&page",
+        "text": "CONFIRA"
+      },
+      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/6cb3983b-f13f-4caa-88ae-39ffe5ff0b62/promos_banner_mobile---390x310px-(2).jpg",
+      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/c82351eb-433e-4050-ba53-4b706645c404/promos_banner_desktop---1440x696px-(2).jpg"
+    },
+    {
+      "button": {
+        "link": "/m-s",
+        "text": "CONFIRA"
+      },
+      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/8918b004-2101-41c0-9c77-76c759d82c42/resort_banner_mobile---390x310px-(1)-(2).jpg",
+      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/49e9c6f5-5f5a-4de9-ab8f-4aaa361a2556/resort_banner_desktop---1440x696px-(1).jpg"
+    },
+    {
+      "button": {
+        "link": "/newin",
+        "text": "CONFIRA"
+      },
+      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/c0880a47-bfdb-4c26-b3b2-d4889d320ab9/resort_banner_mobile---390x310px-(4)-(1).jpg",
+      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/c1e4cfe2-9712-4de1-98d9-acb95095a326/resort_banner_desktop---1440x696px-(4).jpg"
+    },
+    {
+      "button": {
+        "link": "/arezzo",
+        "text": "CONFIRA"
+      },
+      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/200364d1-4cbf-449b-9c43-8eaa0abd347e/resort_banner_mobile---390x310px-(3)-(3).jpg",
+      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/ab4f1598-2902-4ab8-a4d0-95a6159b996a/resort_banner_desktop---1440x696px-(3)-(1).jpg"
+    },
+    {
+      "button": {
+        "link": "/anacapri",
+        "text": "CONFIRA"
+      },
+      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/4164868b-4c56-41a0-8225-4d151bcbaa9f/resort_banner_mobile---390x310px-(5)-(2).jpg",
+      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f491519c-d23a-4b99-b3cf-1fe7ca4573bd/resort_banner_desktop---1440x696px-(5)-(1).jpg"
+    }
+  ],
+  "images": [
+    {
+      "alt": "/feminino",
+      "action": {
+        "href": "https://www.deco.cx/",
+        "label": "deco.cx",
+        "title": "VTEX Store",
+        "subTitle": "Visit our site and start building now:"
+      },
+      "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/24278f9e-412d-4a8a-b2d3-57353bb1b368",
+      "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/afa2c07c-74f4-496d-8647-5cc58f48117b"
+    },
+    {
+      "alt": "/feminino",
+      "action": {
+        "href": "https://www.deco.cx/",
+        "label": "deco.cx",
+        "title": "VTEX Store",
+        "subTitle": "Visit our site and start building now:"
+      },
+      "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/eeaa624c-a3e1-45e8-a6fe-034233cfbcd0",
+      "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/7949d031-9a79-4639-b85e-62fd90af85a9"
+    },
+    {
+      "alt": "/feminino",
+      "action": {
+        "href": "https://www.deco.cx/",
+        "label": "deco.cx",
+        "title": "VTEX Store",
+        "subTitle": "Visit our site and start building now:"
+      },
+      "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/ae89571c-4a7c-44bf-9aeb-a341fd049d19",
+      "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/7ec121e4-5cfe-4b7b-b942-d1ed4493803d"
+    }
+  ],
+  "preload": true,
+  "interval": 4,
+  "__resolveType": "site/sections/Images/Carousel.tsx"
+}
