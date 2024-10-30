@@ -1711,35 +1711,11 @@
             "items": [
               {
                 "button": {
-                  "link": "/286?map=productClusterIds&O=&sort=release%3Adesc",
+                  "link": "/sale",
                   "text": "CONFIRA"
                 },
-                "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/3cd0d860-dad4-4c24-9f9a-f52ba031f58d",
-                "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/86c70712-9b85-4eb8-8367-233439089c65"
-              },
-              {
-                "button": {
-                  "link": "/287?map=productClusterIds&O=&sort=release%3Adesc",
-                  "text": "CONFIRA"
-                },
-                "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/94a870dc-873d-4792-9a66-56248222602f",
-                "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/b874c05d-6f78-4938-9f62-65e99d7df954"
-              },
-              {
-                "button": {
-                  "link": "/288?map=productClusterIds&O=&sort=release%3Adesc&page",
-                  "text": "CONFIRA"
-                },
-                "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/ea33ff2b-9512-42e1-b046-edea5b1037fd",
-                "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/3289dfe7-5f44-4081-ad81-5b3c476b3e02"
-              },
-              {
-                "button": {
-                  "link": "/newin",
-                  "text": "CONFIRA"
-                },
-                "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/cfb40b01-5bba-45c3-89dc-821511cd86e6",
-                "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/0849b1c4-c9db-4695-97bf-387a458bc606"
+                "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/66961ff4-efc9-4072-a039-dc7b0fae4330/resort_banner_mobile---390x310px-(1)-(4).jpg",
+                "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/ac028901-22a1-43cf-becf-d0f012c1eedd/resort_banner_desktop---1440x696px-(2)-(3).jpg"
               }
             ],
             "images": [
