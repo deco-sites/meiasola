@@ -589,7 +589,7 @@
         "rule": {
           "mobile": true,
           "tablet": true,
-          "desktop": true,
+          "desktop": false,
           "__resolveType": "website/matchers/device.ts"
         },
         "value": [
