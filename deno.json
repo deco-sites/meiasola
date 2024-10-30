@@ -63,9 +63,6 @@
   "githooks": {
     "pre-commit": "check"
   },
-  "caching": {
-    "directives": []
-  },
   "exclude": [
     "node_modules",
     "static/",
