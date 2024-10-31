@@ -1174,7 +1174,7 @@
         "rule": {
           "mobile": false,
           "tablet": false,
-          "desktop": false,
+          "desktop": true,
           "__resolveType": "website/matchers/device.ts"
         },
         "value": [
