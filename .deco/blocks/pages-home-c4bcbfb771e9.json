@@ -1824,6 +1824,12 @@
             "__resolveType": "Collections - Images"
           },
           {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "MyStylePosts"
+            }
+          },
+          {
             "__resolveType": "InstagramPosts - 01"
           },
           {
