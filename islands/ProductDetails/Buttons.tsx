@@ -44,7 +44,7 @@ export function NotifyMeButton({ productID }: { productID: string }) {
 
 export function BuyWithWhatsappButton({ productURL }: { productURL: string }) {
   const encodedUrl = encodeURIComponent(productURL);
-  const baseLink = "https://api.whatsapp.com/send/?phone=5522999505102";
+  const baseLink = "https://api.whatsapp.com/send/?phone=558599909932";
   const text = `Quero%20saber%20mais%20sobre%20o%20produto%0A${encodedUrl}`;
   return (
     <a
