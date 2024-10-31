@@ -794,7 +794,7 @@
                               "label": "Schutz"
                             },
                             {
-                              "href": "m-s",
+                              "href": "/marcas?filter.brand=m-s",
                               "image": {
                                 "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/199818e3-93c1-496d-b998-ca6798990cde",
                                 "width": 36,
