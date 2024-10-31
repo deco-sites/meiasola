@@ -794,7 +794,7 @@
                               "label": "Schutz"
                             },
                             {
-                              "href": "m-s",
+                              "href": "/m-s",
                               "image": {
                                 "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/199818e3-93c1-496d-b998-ca6798990cde",
                                 "width": 36,
@@ -1034,7 +1034,7 @@
                     }
                   },
                   {
-                    "href": "/m-s",
+                    "href": "/s?q=MS",
                     "icon": {
                       "src": "M|S",
                       "width": 29,
