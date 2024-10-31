@@ -1,1 +1,12 @@
-{"image":{"alt":"Imagem da nova coleção ","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/f730d14d-090b-42f7-84aa-47e18d8a0f12"},"button":{"link":"https://celebration.meiasola.com.br/noivas-festas","text":"CELEBRATION"},"content":"<h3 style=\"text-align: center; font-size: 24px; letter-spacing: 5.76px;\" data-mce-style=\"text-align: center; font-size: 24px; letter-spacing: 5.76px;\"><strong><span style=\"vertical-align: inherit;\" data-mce-style=\"vertical-align: inherit;\"><span style=\"vertical-align: inherit;\" data-mce-style=\"vertical-align: inherit;\">CELEBRATION</span></span></strong></h3><p style=\"text-align: center; font-size: 14px;\" data-mce-style=\"text-align: center; font-size: 14px;\">Descubra a elegância que você merece com nossa categoria Celebration. Especialmente projetada para ocasiões memoráveis. De designs clássicos a toques modernos, cada par é cuidadosamente criado para complementar seu visual e tornar seu evento ainda mais especial.</p>","__resolveType":"site/sections/MeiaSola/NewCollection.tsx"}
+{
+  "image": {
+    "alt": "Imagem da nova coleção ",
+    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/6a7c50a1-9a7f-400d-9879-76cd77336315/Produtos-com-ate-40OF.png"
+  },
+  "button": {
+    "link": "https://blackfriday.meiasola.com.br/",
+    "text": "Conferir descontos"
+  },
+  "content": "<h3 style=\"text-align: center; font-size: 24px; letter-spacing: 5.76px;\" data-mce-style=\"text-align: center; font-size: 24px; letter-spacing: 5.76px;\"><strong><span style=\"vertical-align: inherit;\" data-mce-style=\"vertical-align: inherit;\"><span style=\"vertical-align: inherit;\" data-mce-style=\"vertical-align: inherit;\">CELEBRATION</span></span></strong></h3><p style=\"text-align: center; font-size: 14px;\" data-mce-style=\"text-align: center; font-size: 14px;\">Descubra a elegância que você merece com nossa categoria Celebration. Especialmente projetada para ocasiões memoráveis. De designs clássicos a toques modernos, cada par é cuidadosamente criado para complementar seu visual e tornar seu evento ainda mais especial.</p>",
+  "__resolveType": "site/sections/MeiaSola/NewCollection.tsx"
+}
