@@ -2,22 +2,6 @@
   "items": [
     {
       "button": {
-        "link": "/sale",
-        "text": "CONFIRA"
-      },
-      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/66961ff4-efc9-4072-a039-dc7b0fae4330/resort_banner_mobile---390x310px-(1)-(4).jpg",
-      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/ac028901-22a1-43cf-becf-d0f012c1eedd/resort_banner_desktop---1440x696px-(2)-(3).jpg"
-    },
-    {
-      "button": {
-        "link": "/305?map=productClusterIds&O=&sort=release%3Adesc&page",
-        "text": "CONFIRA"
-      },
-      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/6cb3983b-f13f-4caa-88ae-39ffe5ff0b62/promos_banner_mobile---390x310px-(2).jpg",
-      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/c82351eb-433e-4050-ba53-4b706645c404/promos_banner_desktop---1440x696px-(2).jpg"
-    },
-    {
-      "button": {
         "link": "/m-s",
         "text": "CONFIRA"
       },
