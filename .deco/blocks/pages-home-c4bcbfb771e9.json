@@ -1711,19 +1711,19 @@
             "items": [
               {
                 "button": {
+                  "link": "/arezzo",
+                  "text": "CONFIRA"
+                },
+                "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/192a7671-8dc2-4626-a60c-d1af60b66e9a/28.png",
+                "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/219229b3-caa6-4a8f-8954-abed1be5abfc/32.png"
+              },
+              {
+                "button": {
                   "link": "/newin",
                   "text": "CONFIRA"
                 },
                 "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/6a4b9ad7-fce0-4646-80e7-f50981111931/resort_banner_mobile---390x310px-(5).jpg",
                 "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/ba4d7d15-aa9f-4f32-ae54-2e3e55a36f79/resort_banner_desktop---1440x696px-(3).jpg"
-              },
-              {
-                "button": {
-                  "link": "/arezzo",
-                  "text": "CONFIRA"
-                },
-                "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/b17e7260-4c8c-4801-8056-6bd99e80e1a1/resort_banner_mobile---390x310px-(2).jpg",
-                "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/664c17f7-4f65-4940-8037-f86d3ab4b2ce/resort_banner_desktop---1440x696px-(5).jpg"
               },
               {
                 "button": {
