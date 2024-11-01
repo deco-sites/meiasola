@@ -450,7 +450,7 @@
                     }
                   },
                   {
-                    "href": "/m-s",
+                    "href": "/m%7Csm-s",
                     "icon": {
                       "src": "M|S",
                       "width": 29,
