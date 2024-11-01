@@ -19,6 +19,7 @@ import {
   AddToCartButton,
   SizeGuideButton,
   NotifyMeButton,
+  BuyWithWhatsappButton,
 } from "$store/islands/ProductDetails/Buttons.tsx";
 
 import Slider from "$store/components/ui/Slider.tsx";
@@ -566,6 +567,7 @@ export function Actions({
           discount={discount}
           seller={seller}
         />
+        <BuyWithWhatsappButton productURL={product.url} />
       </div>
     );
 

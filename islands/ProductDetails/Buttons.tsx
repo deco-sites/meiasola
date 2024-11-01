@@ -41,3 +41,19 @@ export function NotifyMeButton({ productID }: { productID: string }) {
     </Button>
   );
 }
+
+export function BuyWithWhatsappButton({ productURL }: { productURL: string }) {
+  const encodedUrl = encodeURIComponent(productURL);
+  const baseLink = "https://api.whatsapp.com/send/?phone=558599909932";
+  const text = `Quero%20saber%20mais%20sobre%20o%20produto%0A${encodedUrl}`;
+  return (
+    <a
+      href={`${baseLink}&text=${text}&type=phone_number`}
+      target="_blank"
+      class="flex justify-center items-center gap-2 text-small uppercase text-black h-fit p-0 font-normal bg-transparent hover:bg-transparent disabled:bg-transparent"
+    >
+      <Icon id="WhatsApp" class="h-3 w-3" />
+      Compre pelo WhatsApp
+    </a>
+  );
+}
