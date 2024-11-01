@@ -450,7 +450,7 @@
                     }
                   },
                   {
-                    "href": "/m-s",
+                    "href": "/m%7Csm-s",
                     "icon": {
                       "src": "M|S",
                       "width": 29,
@@ -1711,14 +1711,6 @@
             "items": [
               {
                 "button": {
-                  "link": "/sale",
-                  "text": "CONFIRA"
-                },
-                "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/66961ff4-efc9-4072-a039-dc7b0fae4330/resort_banner_mobile---390x310px-(1)-(4).jpg",
-                "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/ac028901-22a1-43cf-becf-d0f012c1eedd/resort_banner_desktop---1440x696px-(2)-(3).jpg"
-              },
-              {
-                "button": {
                   "link": "/newin",
                   "text": "CONFIRA"
                 },
@@ -1824,10 +1816,13 @@
             "__resolveType": "Collections - Images"
           },
           {
-            "__resolveType": "InstagramPosts - 01"
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "MyStylePosts"
+            }
           },
           {
-            "__resolveType": "MyStylePosts"
+            "__resolveType": "InstagramPosts - 01"
           },
           {
             "__resolveType": "Newsletter - 01"
