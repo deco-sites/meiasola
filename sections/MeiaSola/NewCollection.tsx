@@ -9,7 +9,7 @@ export interface Props {
     alt: string;
     src: ImageWidget;
   };
-  
+
   /** @format rich-text */
   content: string;
   button: {
@@ -31,7 +31,7 @@ function NewCollection({ image, content, button }: Props) {
               height={584}
               loading="lazy"
               fetchPriority="auto"
-              class="w-full h-full object-cover"
+              class="w-full h-full object-cover aspect-square max-h-[584px]"
             />
           </div>
         )}
