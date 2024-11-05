@@ -1,12 +1,12 @@
 {
   "image": {
     "alt": "Imagem da nova coleção ",
-    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/90cf9362-cce9-4ec5-98c1-d0b927aa8153/WhatsApp-Image-2024-10-31-at-09.41.56.jpeg"
+    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/ce1e07a4-80b3-4807-993d-78cbaa7bd688/Produtos-com-ate-40OF-(2).png"
   },
   "button": {
-    "link": "/m%7Cs",
+    "link": "https://blackfriday.meiasola.com.br/",
     "text": "Conferir"
   },
-  "content": "<h3 style=\"text-align: center; font-size: 24px; letter-spacing: 5.76px;\" data-mce-style=\"text-align: center; font-size: 24px; letter-spacing: 5.76px;\"><strong><span style=\"vertical-align: inherit;\" data-mce-style=\"vertical-align: inherit;\"><span style=\"vertical-align: inherit;\" data-mce-style=\"vertical-align: inherit;\">CELEBRATION</span></span></strong></h3><p style=\"text-align: center; font-size: 14px;\" data-mce-style=\"text-align: center; font-size: 14px;\">Descubra a elegância que você merece com nossa categoria Celebration. Especialmente projetada para ocasiões memoráveis. De designs clássicos a toques modernos, cada par é cuidadosamente criado para complementar seu visual e tornar seu evento ainda mais especial.</p>",
+  "content": "<h3 style=\"text-align: center\"><strong><span>BLACK FRIDAY</span></strong></h3><p style=\"text-align: center\">Prepare-se para descontos exclusivos em uma seleção de produtos que vão te surpreender. É a chance de antecipar suas compras e garantir aquele item desejado com preços incríveis antes da grande data.</p>",
   "__resolveType": "site/sections/MeiaSola/NewCollection.tsx"
 }
