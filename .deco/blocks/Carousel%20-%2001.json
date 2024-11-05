@@ -5,16 +5,16 @@
         "link": "/arezzo",
         "text": "CONFIRA"
       },
-      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/192a7671-8dc2-4626-a60c-d1af60b66e9a/28.png",
-      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/219229b3-caa6-4a8f-8954-abed1be5abfc/32.png"
+      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/89e97b9d-0876-4c75-b28f-4b0ae9657a08/resort_banner_mobile---390x310px-(1)-copiar.jpg",
+      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/b14448b4-3631-4a8c-9abe-a1dfcc97c9fa/resort_banner_desktop---1440x696px-(1).jpg"
     },
     {
       "button": {
-        "link": "/anacapri",
+        "link": "/schutz",
         "text": "CONFIRA"
       },
-      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/6f59989c-7b26-4392-ae7a-cd04cae65e9f/full-banner-mobile.png",
-      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/0a47aacd-cf32-4e5e-bfcb-72d7fbedd28a/full-banner-desk-(1).png"
+      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/db5d2892-f028-4d0d-ab6f-13625b5b3ea3/resort_banner_mobile---390x310px-(3)-copiar.jpg",
+      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/18551f45-ca34-4051-a3fd-78f5d425d066/resort_banner_desktop---1440x696px-(2).jpg"
     },
     {
       "button": {
@@ -29,16 +29,16 @@
         "link": "/newin",
         "text": "CONFIRA"
       },
-      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/c0880a47-bfdb-4c26-b3b2-d4889d320ab9/resort_banner_mobile---390x310px-(4)-(1).jpg",
-      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/c1e4cfe2-9712-4de1-98d9-acb95095a326/resort_banner_desktop---1440x696px-(4).jpg"
+      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/a7ff6a57-6d6b-4a37-ac31-68f7c69a21a9/resort_banner_mobile---390x310px-(4)-copiar.jpg",
+      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/549a68e7-1710-4fd0-945b-e5e8e276a570/resort_banner_desktop---1440x696px-(4).jpg"
     },
     {
       "button": {
         "link": "/anacapri",
         "text": "CONFIRA"
       },
-      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/4164868b-4c56-41a0-8225-4d151bcbaa9f/resort_banner_mobile---390x310px-(5)-(2).jpg",
-      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f491519c-d23a-4b99-b3cf-1fe7ca4573bd/resort_banner_desktop---1440x696px-(5)-(1).jpg"
+      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/41ed61d8-04fc-4195-8f8a-54873f1129ae/resort_banner_mobile---390x310px-(2)-copiar.jpg",
+      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/c66b501e-f2ec-4bcb-89cf-4ebd65a51631/resort_banner_desktop---1440x696px-(3).jpg"
     }
   ],
   "images": [
