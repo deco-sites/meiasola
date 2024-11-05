@@ -1,4 +1,4 @@
-import { HTMLWidget, ImageWidget } from "apps/admin/widgets.ts";
+import { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 
 export interface Props {
@@ -9,8 +9,9 @@ export interface Props {
     alt: string;
     src: ImageWidget;
   };
-
-  content: HTMLWidget;
+  
+  /** @format rich-text */
+  content: string;
   button: {
     text: string;
     link: string;

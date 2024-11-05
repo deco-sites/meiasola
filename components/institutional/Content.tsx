@@ -1,4 +1,4 @@
-import { HTMLWidget, ImageWidget } from "apps/admin/widgets.ts";
+import { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import Menu, { Props as MenuProps, } from "$store/components/institutional/Menu.tsx";
 import { type Section } from "@deco/deco/blocks";
@@ -7,7 +7,8 @@ export interface Props {
      * @description put here a Section of Menu Institutional
      */
     menuSection: Section;
-    content: HTMLWidget;
+    /** @format rich-text */
+    content: string;
     image?: {
         src?: ImageWidget;
         /**

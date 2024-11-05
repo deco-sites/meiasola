@@ -1,5 +1,3 @@
-import { HTMLWidget } from "apps/admin/widgets.ts";
-
 import Divider from "$store/components/ui/Divider.tsx";
 
 import Head, { Props as HeadProps } from "$store/components/footer/Head.tsx";
@@ -11,7 +9,8 @@ import ImagesSection, {
 export interface Props {
   head: HeadProps;
   body: BodyProps;
-  copyright: HTMLWidget;
+  /** @format rich-text */
+  copyright: string;
 }
 
 function Footer({ head, body, copyright }: Props) {
@@ -33,7 +32,7 @@ function Footer({ head, body, copyright }: Props) {
 
 export default Footer;
 
-function Copyright({ copyright }: { copyright: HTMLWidget }) {
+function Copyright({ copyright }: { copyright: string }) {
   return (
     <div
       class="tablet:-mt-20 text-small text-center tablet:text-left max-w-[688px] leading-snug"

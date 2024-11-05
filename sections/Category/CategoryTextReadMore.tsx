@@ -1,4 +1,4 @@
-import { HTMLWidget, ImageWidget } from "apps/admin/widgets.ts";
+import { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "site/components/ui/Image.tsx";
 import ReadMoreText from "site/islands/ReadMoreText.tsx";
 import { type SectionProps } from "@deco/deco";
@@ -13,8 +13,11 @@ export interface TextReadMoreSection {
     label: string;
     /** @description Título da seção */
     title?: string;
-    /** @description Texto da seção */
-    text?: HTMLWidget;
+    /**
+     * @description Texto da seção
+     * @format rich-text
+     */
+    text?: string;
     /** @description Quantidade máxima de caracteres do texto até exibir "Leia Mais". */
     maxCharacters?: number;
     image?: Media;
