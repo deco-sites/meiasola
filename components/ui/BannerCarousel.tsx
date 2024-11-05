@@ -2,7 +2,6 @@ import Slider from "$store/components/ui/Slider.tsx";
 import SliderJS from "$store/islands/SliderJS.tsx";
 import { useId } from "$store/sdk/useId.ts";
 import type {
-  HTMLWidget,
   ImageWidget,
   VideoWidget,
 } from "apps/admin/widgets.ts";
@@ -58,7 +57,8 @@ function BannerCarousel({ items, interval }: Props) {
 export default BannerCarousel;
 
 interface ItemProps {
-  content?: HTMLWidget;
+  /** @format rich-text */
+  content?: string;
 
   button?: {
     text?: string;

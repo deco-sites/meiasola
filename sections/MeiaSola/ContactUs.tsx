@@ -1,5 +1,5 @@
 import Image from "apps/website/components/Image.tsx";
-import { ImageWidget, HTMLWidget } from "apps/admin/widgets.ts";
+import { ImageWidget } from "apps/admin/widgets.ts";
 
 import Icon from "$store/components/ui/Icon.tsx";
 import type { AvailableIcons } from "$store/components/ui/Icon.tsx";
@@ -12,16 +12,18 @@ export interface Props {
   /**
    * @title First Subtitle
    * @description The one above the links
+   * @format rich-text
    */
-  subtitle1: HTMLWidget;
+  subtitle1: string;
 
   links: Link[];
 
   /**
    * @title Second Subtitle
    * @description The one below the links
+   * @format rich-text
    */
-  subtitle2?: HTMLWidget;
+  subtitle2?: string;
 
   image: {
     src: ImageWidget;
@@ -67,9 +69,9 @@ export default function ContactUs({ image, ...rest }: Props) {
 
 function TextsAndLinks(props: {
   title: string;
-  subtitle1: HTMLWidget;
+  subtitle1: string;
   links: Link[];
-  subtitle2?: HTMLWidget;
+  subtitle2?: string;
 }) {
   const gapClasses = "flex flex-col gap-4";
 

@@ -4,13 +4,14 @@ import Divider from "$store/components/ui/Divider.tsx";
 import type { AvailableIcons } from "$store/components/ui/Icon.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
 
-import { HTMLWidget, ImageWidget } from "apps/admin/widgets.ts";
+import { ImageWidget } from "apps/admin/widgets.ts";
 
 export interface Props {
   /**
    * @default ""
+   * @format rich-text
    */
-  label: HTMLWidget;
+  label: string;
 
   /**
    * @title Link
