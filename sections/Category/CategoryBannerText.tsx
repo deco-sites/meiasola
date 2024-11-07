@@ -32,7 +32,7 @@ function CategoryBannerText({
   const { title, text = "", image } = matcherSection;
 
   return (
-    <div class="container flex flex-col laptop:flex-row justify-between w-full gap-4 text-black p-0 laptop:px-6 laptop:py-8">
+    <div class="container flex flex-col laptop:flex-row justify-between w-full gap-4 text-black p-0 laptop:px-[70px] laptop:py-8">
       {image?.source && (
         <Image
           src={image.source}
