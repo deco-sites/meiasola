@@ -12,18 +12,14 @@
             "__resolveType": "Header - 02"
           },
           {
-            "__resolveType": "site/sections/Category/CategoryBannerText.tsx",
+            "__resolveType": "site/sections/Category/BrandBanner.tsx",
             "matcherSections": [
               {
-                "title": "Anacapri",
-                "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>",
+                "label": "/anacapri?map=brand",
                 "image": {
-                  "source": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/c978021f-790d-452d-b90f-048b7e5984bc/resort_banner_mobile---390x310px-(1).jpg",
-                  "alt": "Anacapri",
-                  "width": 390,
-                  "height": 310
-                },
-                "label": "/anacapri?map=brand"
+                  "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/96269023-e4ba-4c66-b7e2-91407cd76c2c/PADRAODESK.png",
+                  "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/c978021f-790d-452d-b90f-048b7e5984bc/resort_banner_mobile---390x310px-(1).jpg"
+                }
               }
             ]
           },

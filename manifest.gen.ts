@@ -13,8 +13,8 @@ import * as $$$1 from "./loaders/meiasola/extensionGetModelVariants.ts";
 import * as $$$2 from "./loaders/meiasola/extensionProductListingPage.ts";
 import * as $$$3 from "./loaders/meiasola/myStylePosts.ts";
 import * as $$$4 from "./loaders/meiasola/notFoundProductListingPage.ts";
-import * as $$$$$$0 from "./sections/Category/CategoryBanner.tsx";
-import * as $$$$$$1 from "./sections/Category/CategoryBannerText.tsx";
+import * as $$$$$$0 from "./sections/Category/BrandBanner.tsx";
+import * as $$$$$$1 from "./sections/Category/CategoryBanner.tsx";
 import * as $$$$$$2 from "./sections/Category/CategoryList.tsx";
 import * as $$$$$$3 from "./sections/Category/CategoryTextReadMore.tsx";
 import * as $$$$$$4 from "./sections/Content/Benefits.tsx";
@@ -61,8 +61,8 @@ const manifest = {
     "site/loaders/meiasola/notFoundProductListingPage.ts": $$$4,
   },
   "sections": {
-    "site/sections/Category/CategoryBanner.tsx": $$$$$$0,
-    "site/sections/Category/CategoryBannerText.tsx": $$$$$$1,
+    "site/sections/Category/BrandBanner.tsx": $$$$$$0,
+    "site/sections/Category/CategoryBanner.tsx": $$$$$$1,
     "site/sections/Category/CategoryList.tsx": $$$$$$2,
     "site/sections/Category/CategoryTextReadMore.tsx": $$$$$$3,
     "site/sections/Content/Benefits.tsx": $$$$$$4,

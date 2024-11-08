@@ -6039,13 +6039,6 @@ details.collapse summary::-webkit-details-marker {
   display: none;
 }
 
-@media not all and (min-width: 991px) {
-
-  .max-laptop\:w-full {
-    width: 100%;
-  }
-}
-
 @media (min-width: 360px) {
 
   .micro\:block {
@@ -6508,11 +6501,6 @@ details.collapse summary::-webkit-details-marker {
     padding: 0px;
   }
 
-  .laptop\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
   .laptop\:py-10 {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
@@ -6526,11 +6514,6 @@ details.collapse summary::-webkit-details-marker {
   .laptop\:py-5 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
-  }
-
-  .laptop\:py-8 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
   }
 
   .laptop\:pb-10 {
