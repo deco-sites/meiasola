@@ -1190,7 +1190,7 @@
                   {
                     "href": "/newin",
                     "icon": null,
-                    "label": "new in",
+                    "label": "<p style=\"text-align: center\">new in</p>",
                     "submenu": {
                       "sections": []
                     }
