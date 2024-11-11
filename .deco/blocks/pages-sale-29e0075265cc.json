@@ -1,1 +1,98 @@
-{"name":"Sale","path":"/sale","sections":[{"__resolveType":"Header - 02"},{"page":{"data":{"sort":"release:desc","count":24,"fuzzy":"automatic","__resolveType":"vtex/loaders/intelligentSearch/productListingPage.ts","selectedFacets":[{"key":"productClusterIds","value":"151"}]},"extensions":[{"__resolveType":"site/loaders/meiasola/extensionProductListingPage.ts"}],"__resolveType":"commerce/loaders/product/productListingPage.ts"},"sizes":{"sizes":[{"label":"33"},{"label":"34"},{"label":"35"},{"label":"36"},{"label":"37"},{"label":"38"},{"label":"39"},{"label":"40"}],"title":"ESCOLHA SUA NUMERAÇÃO","routesToShow":[{"label":"/sale"}]},"images":[{"alt":"Schutz Off Summer Week","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/a37b7e83-5ce5-478c-a071-7dfda950d47f","route":"/","srcMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/6b908fde-0846-4db6-b439-6340881afeb3"}],"__resolveType":"site/sections/Product/SearchResult.tsx"},{"__resolveType":"Footer - 02"},{"type":"website","title":"Sale","jsonLD":{"sort":"release:desc","count":24,"fuzzy":"automatic","__resolveType":"vtex/loaders/intelligentSearch/productListingPage.ts","selectedFacets":[{"key":"productClusterIds","value":"151"}],"hideUnavailableItems":true},"__resolveType":"commerce/sections/Seo/SeoPLP.tsx","titleTemplate":"%s","descriptionTemplate":"%s"}],"__resolveType":"website/pages/Page.tsx"}
+{
+  "name": "Sale",
+  "path": "/sale",
+  "sections": [
+    {
+      "__resolveType": "Header - 02"
+    },
+    {
+      "page": {
+        "data": {
+          "sort": "release:desc",
+          "count": 24,
+          "fuzzy": "automatic",
+          "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+          "selectedFacets": [
+            {
+              "key": "productClusterIds",
+              "value": "151"
+            }
+          ]
+        },
+        "extensions": [
+          {
+            "__resolveType": "site/loaders/meiasola/extensionProductListingPage.ts"
+          }
+        ],
+        "__resolveType": "commerce/loaders/product/productListingPage.ts"
+      },
+      "sizes": {
+        "sizes": [
+          {
+            "label": "33"
+          },
+          {
+            "label": "34"
+          },
+          {
+            "label": "35"
+          },
+          {
+            "label": "36"
+          },
+          {
+            "label": "37"
+          },
+          {
+            "label": "38"
+          },
+          {
+            "label": "39"
+          },
+          {
+            "label": "40"
+          }
+        ],
+        "title": "ESCOLHA SUA NUMERAÇÃO",
+        "routesToShow": [
+          {
+            "label": "/sale"
+          }
+        ]
+      },
+      "images": [
+        {
+          "alt": "Schutz Off Summer Week",
+          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/0515469d-fd39-4f0c-85e2-5a4dfbd93734/resort_banner_desktop---1440x696px-(1).jpg",
+          "route": "/sale?sort=discount%3Adesc",
+          "srcMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/a961bb54-9028-4db5-a802-a4c6da841477/resort_banner_mobile---390x310px-(1)-copiar.jpg"
+        }
+      ],
+      "__resolveType": "site/sections/Product/SearchResult.tsx"
+    },
+    {
+      "__resolveType": "Footer - 02"
+    },
+    {
+      "type": "website",
+      "title": "Sale",
+      "jsonLD": {
+        "sort": "release:desc",
+        "count": 24,
+        "fuzzy": "automatic",
+        "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+        "selectedFacets": [
+          {
+            "key": "productClusterIds",
+            "value": "151"
+          }
+        ],
+        "hideUnavailableItems": true
+      },
+      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx",
+      "titleTemplate": "%s",
+      "descriptionTemplate": "%s"
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx"
+}
