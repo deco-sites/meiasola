@@ -1575,6 +1575,15 @@
                                 "height": 10
                               },
                               "label": "Carmem Dalessandro"
+                            },
+                            {
+                              "href": "/soleah",
+                              "image": {
+                                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/75409780-7e75-4574-942b-be9c88e427a7/full-banner-mobile.png",
+                                "width": 163,
+                                "height": 10
+                              },
+                              "label": "Soleah"
                             }
                           ],
                           "label": "Marcas"
