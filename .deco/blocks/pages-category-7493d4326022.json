@@ -13,15 +13,7 @@
           },
           {
             "__resolveType": "site/sections/Category/BrandBanner.tsx",
-            "matcherSections": [
-              {
-                "label": "/anacapri?map=brand",
-                "image": {
-                  "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/96269023-e4ba-4c66-b7e2-91407cd76c2c/PADRAODESK.png",
-                  "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/c978021f-790d-452d-b90f-048b7e5984bc/resort_banner_mobile---390x310px-(1).jpg"
-                }
-              }
-            ]
+            "matcherSections": []
           },
           {
             "__resolveType": "site/sections/Product/SearchResult.tsx",
