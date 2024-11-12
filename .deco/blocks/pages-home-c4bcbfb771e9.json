@@ -1728,6 +1728,14 @@
               },
               {
                 "button": {
+                  "link": "/soleah",
+                  "text": "CONFIRA"
+                },
+                "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/944dab79-9772-4f15-941b-37f06c4fecee/soleah_banner_mobile---390x310px1.jpg",
+                "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/7bfc93f4-5629-4b55-a05e-82cd663d7e2a/soleah_banner_desktop---1440x696px2.jpg"
+              },
+              {
+                "button": {
                   "link": "/arezzo",
                   "text": "CONFIRA"
                 },
