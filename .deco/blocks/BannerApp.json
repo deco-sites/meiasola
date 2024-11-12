@@ -2,20 +2,20 @@
   "items": [
     {
       "button": {
-        "link": "/sale?sort=discount%3Adesc",
-        "text": "Confira"
-      },
-      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/a961bb54-9028-4db5-a802-a4c6da841477/resort_banner_mobile---390x310px-(1)-copiar.jpg",
-      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/a961bb54-9028-4db5-a802-a4c6da841477/resort_banner_mobile---390x310px-(1)-copiar.jpg",
-      "alt": "Banner"
-    },
-    {
-      "button": {
         "link": "/soleah",
         "text": "Confira"
       },
       "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/944dab79-9772-4f15-941b-37f06c4fecee/soleah_banner_mobile---390x310px1.jpg",
       "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/944dab79-9772-4f15-941b-37f06c4fecee/soleah_banner_mobile---390x310px1.jpg",
+      "alt": "Banner"
+    },
+    {
+      "button": {
+        "link": "/sale?sort=discount%3Adesc",
+        "text": "Confira"
+      },
+      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/a961bb54-9028-4db5-a802-a4c6da841477/resort_banner_mobile---390x310px-(1)-copiar.jpg",
+      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/a961bb54-9028-4db5-a802-a4c6da841477/resort_banner_mobile---390x310px-(1)-copiar.jpg",
       "alt": "Banner"
     },
     {
