@@ -572,9 +572,6 @@
             "__resolveType": "InstagramPosts - 01"
           },
           {
-            "__resolveType": "MyStylePosts"
-          },
-          {
             "__resolveType": "Newsletter - 01"
           },
           {
@@ -1155,9 +1152,6 @@
           },
           {
             "__resolveType": "InstagramPosts - 01"
-          },
-          {
-            "__resolveType": "MyStylePosts"
           },
           {
             "__resolveType": "Newsletter - 01"
@@ -1839,12 +1833,6 @@
           },
           {
             "__resolveType": "Collections - Images"
-          },
-          {
-            "__resolveType": "website/sections/Rendering/Lazy.tsx",
-            "section": {
-              "__resolveType": "MyStylePosts"
-            }
           },
           {
             "__resolveType": "InstagramPosts - 01"
