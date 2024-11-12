@@ -7,6 +7,6 @@
     "link": "/soleah",
     "text": "Conferir"
   },
-  "content": "<h3 style=\"text-align: center\"><strong>SOLEAH</strong></h3><p style=\"text-align: center\">A SOLEAH é uma marca que esbanja inovação e personalidade em cada peça, reconhecida por seu design moderno e único. Ideal para quem deseja elevar o estilo com sofisticação e autenticidade, a SOLEAH chega ao nosso portfólio hoje, trazendo opções exclusivas e inspiradoras para os verdadeiros amantes de moda.</p>",
+  "content": "<h3 style=\"text-align: center\"><strong>SOLEAH</strong></h3><p style=\"text-align: center\">A SOLEAH é uma marca que esbanja inovação e personalidade em cada peça, reconhecida por seu design moderno e único. Ideal para quem deseja elevar o estilo com sofisticação e autenticidade, a SOLEAH chega hoje, trazendo opções exclusivas e inspiradoras para os verdadeiros amantes de moda.</p>",
   "__resolveType": "site/sections/MeiaSola/NewCollection.tsx"
 }
