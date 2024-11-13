@@ -1,1 +1,26 @@
-{"variant":"two","collections":[{"link":"/schutz","type":"image","image":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/ab432162-74c9-4928-aa3c-5f5dec865692/POST-INSTA-(108).jpeg","label":"schutz"},{"link":"/arezzo","type":"image","image":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/620a9183-1811-4ba4-b922-0975558efbf9/ARZ_25_AV_CAMPANHA_POST5.jpeg","label":"arezzo ","video":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/1ad27360-e8d3-4fc2-9122-a367f30295b1/Video-sem-titulo--Feito-com-o-Clipchamp-(4).mp4"},{"link":"/anacapri","type":"image","image":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/cfe26c79-7fed-4a72-9ecc-7789adf342f6/1.jpeg","label":"anacapri","video":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/03da15db-90f7-414c-8481-e7fbac960b15/Video-sem-titulo--Feito-com-o-Clipchamp-(5).mp4"}],"__resolveType":"site/sections/MeiaSola/Collections.tsx"}
+{
+  "variant": "two",
+  "collections": [
+    {
+      "link": "/schutz",
+      "type": "image",
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/ab432162-74c9-4928-aa3c-5f5dec865692/POST-INSTA-(108).jpeg",
+      "label": "schutz"
+    },
+    {
+      "link": "/arezzo",
+      "type": "video",
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/620a9183-1811-4ba4-b922-0975558efbf9/ARZ_25_AV_CAMPANHA_POST5.jpeg",
+      "label": "arezzo ",
+      "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f1853648-79a2-4466-8ae1-6be2f52c8f58/AREZZO---Summer-Hits-2_9x16-(1).mp4"
+    },
+    {
+      "link": "/anacapri",
+      "type": "image",
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/cfe26c79-7fed-4a72-9ecc-7789adf342f6/1.jpeg",
+      "label": "anacapri",
+      "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/03da15db-90f7-414c-8481-e7fbac960b15/Video-sem-titulo--Feito-com-o-Clipchamp-(5).mp4"
+    }
+  ],
+  "__resolveType": "site/sections/MeiaSola/Collections.tsx"
+}
