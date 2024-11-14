@@ -1668,15 +1668,6 @@
                     "submenu": {
                       "sections": []
                     }
-                  },
-                  {
-                    "href": "/responsabilidade",
-                    "icon": null,
-                    "label": "<p>MS DO BEM</p>",
-                    "divider": true,
-                    "submenu": {
-                      "sections": []
-                    }
                   }
                 ]
               },
