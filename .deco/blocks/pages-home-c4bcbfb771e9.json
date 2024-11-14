@@ -1738,22 +1738,6 @@
               },
               {
                 "button": {
-                  "link": "/anacapri",
-                  "text": "CONFIRA"
-                },
-                "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/41ed61d8-04fc-4195-8f8a-54873f1129ae/resort_banner_mobile---390x310px-(2)-copiar.jpg",
-                "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/c66b501e-f2ec-4bcb-89cf-4ebd65a51631/resort_banner_desktop---1440x696px-(3).jpg"
-              },
-              {
-                "button": {
-                  "link": "/newin",
-                  "text": "CONFIRA"
-                },
-                "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/6a4b9ad7-fce0-4646-80e7-f50981111931/resort_banner_mobile---390x310px-(5).jpg",
-                "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/ba4d7d15-aa9f-4f32-ae54-2e3e55a36f79/resort_banner_desktop---1440x696px-(3).jpg"
-              },
-              {
-                "button": {
                   "link": "/newin",
                   "text": "CONFIRA"
                 },
