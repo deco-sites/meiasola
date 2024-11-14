@@ -460,22 +460,13 @@
           }
         },
         {
-          "href": "/responsabilidade",
-          "icon": null,
-          "label": "<p>MS DO BEM</p>",
-          "divider": true,
-          "submenu": {
-            "sections": []
-          }
-        },
-        {
           "href": "/sale",
           "icon": null,
-          "color": "#e50000",
           "label": "<p style=\"text-align: center\"><strong><span style=\"color: rgb(255, 26, 26)\">BLACK FRIDAY</span></strong></p>",
           "submenu": {
             "sections": []
-          }
+          },
+          "color": "#e50000"
         }
       ]
     },
