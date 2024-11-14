@@ -18,22 +18,6 @@
     },
     {
       "button": {
-        "link": "/schutz",
-        "text": "CONFIRA"
-      },
-      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/db5d2892-f028-4d0d-ab6f-13625b5b3ea3/resort_banner_mobile---390x310px-(3)-copiar.jpg",
-      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/18551f45-ca34-4051-a3fd-78f5d425d066/resort_banner_desktop---1440x696px-(2).jpg"
-    },
-    {
-      "button": {
-        "link": "/m-s",
-        "text": "CONFIRA"
-      },
-      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/8918b004-2101-41c0-9c77-76c759d82c42/resort_banner_mobile---390x310px-(1)-(2).jpg",
-      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/49e9c6f5-5f5a-4de9-ab8f-4aaa361a2556/resort_banner_desktop---1440x696px-(1).jpg"
-    },
-    {
-      "button": {
         "link": "/312?map=productClusterIds&O=&sort=release%3Adesc&page",
         "text": "CONFIRA"
       },
@@ -42,11 +26,11 @@
     },
     {
       "button": {
-        "link": "/anacapri",
+        "link": "/schutz",
         "text": "CONFIRA"
       },
-      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/41ed61d8-04fc-4195-8f8a-54873f1129ae/resort_banner_mobile---390x310px-(2)-copiar.jpg",
-      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/c66b501e-f2ec-4bcb-89cf-4ebd65a51631/resort_banner_desktop---1440x696px-(3).jpg"
+      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/db5d2892-f028-4d0d-ab6f-13625b5b3ea3/resort_banner_mobile---390x310px-(3)-copiar.jpg",
+      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/18551f45-ca34-4051-a3fd-78f5d425d066/resort_banner_desktop---1440x696px-(2).jpg"
     }
   ],
   "images": [
