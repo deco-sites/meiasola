@@ -8,13 +8,13 @@
       "label": "CASHBACK"
     },
     {
-      "link": "/newin",
+      "link": "/sapatos?filter.category-1=sapatos&filter.category-2=scarpin",
       "type": "image",
       "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/eedf1c74-fb4e-40f4-86d1-31fa5b0bcdfd/50.png",
       "label": "DESCONTO NO PIX"
     },
     {
-      "link": "/newin",
+      "link": "/s?q=papete",
       "type": "image",
       "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/6b8d98a1-4eb1-40ad-aa36-6ebef8e4c661/49.png",
       "label": "GARANTA SEU DESCONTO"
