@@ -192,7 +192,7 @@
                         {
                           "items": [
                             {
-                              "href": "/marcas?filter.brand=arezzo",
+                              "href": "/arezzo?map=brand",
                               "image": {
                                 "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/2c71af46-3ede-47dc-8c37-33caf8ed39d1",
                                 "width": 83,
