@@ -4052,14 +4052,14 @@ details.collapse summary::-webkit-details-marker {
 .max-h-\[80px\] {
   max-height: 80px;
 }
-.max-h-\[855px\] {
-  max-height: 855px;
-}
 .max-h-\[90\%\] {
   max-height: 90%;
 }
 .max-h-full {
   max-height: 100%;
+}
+.max-h-screen {
+  max-height: 100vh;
 }
 .min-h-\[100px\] {
   min-height: 100px;

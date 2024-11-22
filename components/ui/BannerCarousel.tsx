@@ -80,7 +80,7 @@ function Item(props: Video | Image) {
 
   return (
     <a
-      class="w-full h-full max-h-[855px] relative"
+      class="w-full h-full max-h-screen relative"
       aria-label={
         `Item do carrossel: ${alt}` ?? "Banner com conteúdo, clique e confira!"
       }
@@ -101,11 +101,11 @@ function Item(props: Video | Image) {
 
       {instanceOfImage(props) ? (
         <>
-          <Picture class="w-full h-full max-h-[855px]" preload={false}>
+          <Picture class="w-full h-full max-h-screen" preload={false}>
             <Source
               src={props.imageMobile}
-              width={813}
-              height={610}
+              width={780}
+              height={1320}
               fetchPriority="high"
               media="(max-width: 767px)"
             />
@@ -118,8 +118,8 @@ function Item(props: Video | Image) {
             />
             <img
               alt={alt}
-              src={props.imageDesktop}
-              class="w-full h-full max-h-[855px] object-cover top-0 left-0 z-0"
+              src={props.imageMobile}
+              class="w-full h-full max-h-screen object-cover top-0 left-0 z-0"
               loading="lazy"
             />
           </Picture>
@@ -132,7 +132,7 @@ function Item(props: Video | Image) {
             loop
             playsinline
             width={1200}
-            class="w-full h-full object-cover max-h-[855px] top-0 left-0 z-0 block tablet:hidden"
+            class="w-full h-full object-cover max-h-screen top-0 left-0 z-0 block tablet:hidden"
           >
             <source src={props.videoMobile} />
           </video>
@@ -142,7 +142,7 @@ function Item(props: Video | Image) {
             loop
             playsinline
             width={1200}
-            class="w-full h-full object-cover max-h-[855px] top-0 left-0 z-0 hidden tablet:block"
+            class="w-full h-full object-cover max-h-screen top-0 left-0 z-0 hidden tablet:block"
           >
             <source src={props.videoDesktop} />
           </video>
