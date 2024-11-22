@@ -1708,7 +1708,7 @@
                   "link": "/sale",
                   "text": "CONFIRA"
                 },
-                "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/0c235c74-90db-40f8-ba77-07f0463600b4/BANNER-BF-DESLTOP-1520-X-610).png",
+                "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/be9ba9e9-05f2-46ba-956a-1153c4cc7ef1/BANNER-BF-MOBILE--(813-x-610).png",
                 "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/0c235c74-90db-40f8-ba77-07f0463600b4/BANNER-BF-DESLTOP-1520-X-610).png"
               },
               {
@@ -1724,8 +1724,16 @@
                   "link": "/312?map=productClusterIds&O=&sort=release%3Adesc&page=3",
                   "text": "CONFIRA"
                 },
-                "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/5b8934d0-f6a5-42d7-a2bc-bf9305ac7c39/ac_esquenta_black.jpg",
-                "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/2f514035-7e0a-4d06-8c69-18602d605413/ac_black_com_banner_desktop---1440x696px.jpg"
+                "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/1c6f24af-fbb6-4a52-b0ef-ea5248797c6f/ac_black_813x610.jpg",
+                "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/01ca7b8e-e0fd-4d12-9e5e-08d04480d00d/ac_black_1520x855.jpg"
+              },
+              {
+                "button": {
+                  "link": "/308?map=productClusterIds&O=&sort=release%3Adesc&page=3",
+                  "text": "CONFIRA"
+                },
+                "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/e050270c-12ea-4527-a89d-c67b993036fc/sch_black_mobile_813X610.jpg",
+                "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/a0ceec1c-ff84-4e2c-8ec8-f83695ae3ea2/sch_black_desktop_1520X855.jpg"
               },
               {
                 "button": {
