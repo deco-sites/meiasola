@@ -3948,9 +3948,6 @@ details.collapse summary::-webkit-details-marker {
 .h-\[284px\] {
   height: 284px;
 }
-.h-\[310px\] {
-  height: 310px;
-}
 .h-\[328px\] {
   height: 328px;
 }
@@ -3983,6 +3980,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .h-\[52px\] {
   height: 52px;
+}
+.h-\[610px\] {
+  height: 610px;
 }
 .h-\[6px\] {
   height: 6px;
@@ -4049,14 +4049,14 @@ details.collapse summary::-webkit-details-marker {
 .max-h-\[584px\] {
   max-height: 584px;
 }
-.max-h-\[696px\] {
-  max-height: 696px;
-}
 .max-h-\[75vh\] {
   max-height: 75vh;
 }
 .max-h-\[80px\] {
   max-height: 80px;
+}
+.max-h-\[855px\] {
+  max-height: 855px;
 }
 .max-h-\[90\%\] {
   max-height: 90%;

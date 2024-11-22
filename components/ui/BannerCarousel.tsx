@@ -81,7 +81,7 @@ function Item(props: Video | Image) {
 
   return (
     <a
-      class="w-full h-[310px] tablet:h-screen max-h-[696px] relative"
+      class="w-full h-[610px] tablet:h-screen max-h-[855px] relative"
       aria-label={
         `Item do carrossel: ${alt}` ?? "Banner com conteúdo, clique e confira!"
       }
@@ -105,15 +105,15 @@ function Item(props: Video | Image) {
           <Picture class="w-full" preload={false}>
             <Source
               src={props.imageMobile}
-              width={390}
-              height={310}
+              width={813}
+              height={610}
               fetchPriority="high"
               media="(max-width: 767px)"
             />
             <Source
               src={props.imageDesktop}
-              width={1200}
-              height={580}
+              width={1520}
+              height={855}
               fetchPriority="high"
               media="(min-width: 768px)"
             />
