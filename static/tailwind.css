@@ -3981,9 +3981,6 @@ details.collapse summary::-webkit-details-marker {
 .h-\[52px\] {
   height: 52px;
 }
-.h-\[610px\] {
-  height: 610px;
-}
 .h-\[6px\] {
   height: 6px;
 }
@@ -6184,10 +6181,6 @@ details.collapse summary::-webkit-details-marker {
 
   .tablet\:h-\[360px\] {
     height: 360px;
-  }
-
-  .tablet\:h-screen {
-    height: 100vh;
   }
 
   .tablet\:w-\[360px\] {

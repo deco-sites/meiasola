@@ -5,7 +5,6 @@ import type {
   ImageWidget,
   VideoWidget,
 } from "apps/admin/widgets.ts";
-import ImageComponent from "apps/website/components/Image.tsx";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
 
 export interface Props {
@@ -24,7 +23,7 @@ function BannerCarousel({ items, interval }: Props) {
     <div id={id} class="relative w-full h-fit">
       <Slider class="carousel carousel-center w-full col-span-full row-span-full">
         {items?.map((item, index) => (
-          <Slider.Item index={index} class="carousel-item w-full">
+          <Slider.Item index={index} class="carousel-item w-full h-full">
             <Item {...item} />
           </Slider.Item>
         ))}
@@ -81,13 +80,13 @@ function Item(props: Video | Image) {
 
   return (
     <a
-      class="w-full h-[610px] tablet:h-screen max-h-[855px] relative"
+      class="w-full h-full max-h-[855px] relative"
       aria-label={
         `Item do carrossel: ${alt}` ?? "Banner com conteúdo, clique e confira!"
       }
       href={button?.link ?? "#"}
     >
-      <div class="container flex flex-col h-full relative z-10">
+      <div class="container absolute left-1/2 -translate-x-1/2 flex flex-col h-full z-10">
         <div class="flex-1" />
         <div
           class="flex-1 flex flex-col gap-3 justify-center"
@@ -102,7 +101,7 @@ function Item(props: Video | Image) {
 
       {instanceOfImage(props) ? (
         <>
-          <Picture class="w-full" preload={false}>
+          <Picture class="w-full h-full max-h-[855px]" preload={false}>
             <Source
               src={props.imageMobile}
               width={813}
@@ -120,7 +119,7 @@ function Item(props: Video | Image) {
             <img
               alt={alt}
               src={props.imageDesktop}
-              class="w-full h-full object-cover absolute top-0 left-0 z-0"
+              class="w-full h-full max-h-[855px] object-cover top-0 left-0 z-0"
               loading="lazy"
             />
           </Picture>
@@ -133,7 +132,7 @@ function Item(props: Video | Image) {
             loop
             playsinline
             width={1200}
-            class="w-full h-full object-cover absolute top-0 left-0 z-0 block tablet:hidden"
+            class="w-full h-full object-cover max-h-[855px] top-0 left-0 z-0 block tablet:hidden"
           >
             <source src={props.videoMobile} />
           </video>
@@ -143,7 +142,7 @@ function Item(props: Video | Image) {
             loop
             playsinline
             width={1200}
-            class="w-full h-full object-cover absolute top-0 left-0 z-0 hidden tablet:block"
+            class="w-full h-full object-cover max-h-[855px] top-0 left-0 z-0 hidden tablet:block"
           >
             <source src={props.videoDesktop} />
           </video>
