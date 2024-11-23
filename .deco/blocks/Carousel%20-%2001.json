@@ -20,7 +20,8 @@
       "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/7c992e73-fd0c-4cba-b743-7912cf095a09/deskzz.jpg",
       "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/2bc497b1-d062-49a0-a848-6ebb55a2328f/mobzz.jpg",
       "button": {
-        "text": "Confira"
+        "text": "Confira",
+        "link": "/310?map=productClusterIds&O=&sort=release%3Adesc&page"
       }
     },
     {
