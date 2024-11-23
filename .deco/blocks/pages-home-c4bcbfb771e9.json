@@ -1168,7 +1168,7 @@
         "rule": {
           "mobile": false,
           "tablet": false,
-          "desktop": true,
+          "desktop": false,
           "__resolveType": "website/matchers/device.ts"
         },
         "value": [
