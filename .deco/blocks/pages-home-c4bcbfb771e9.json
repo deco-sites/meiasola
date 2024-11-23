@@ -586,7 +586,7 @@
         "rule": {
           "mobile": true,
           "tablet": true,
-          "desktop": true,
+          "desktop": false,
           "__resolveType": "website/matchers/device.ts"
         },
         "value": [
@@ -1703,14 +1703,6 @@
           },
           {
             "items": [
-              {
-                "button": {
-                  "link": "/312?map=productClusterIds&O=&sort=release%3Adesc&page=",
-                  "text": "CONFIRA"
-                },
-                "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/01ca7b8e-e0fd-4d12-9e5e-08d04480d00d/ac_black_1520x855.jpg",
-                "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/1c6f24af-fbb6-4a52-b0ef-ea5248797c6f/ac_black_813x610.jpg"
-              },
               {
                 "button": {
                   "link": "/308?map=productClusterIds&O=&sort=release%3Adesc&page=3",
