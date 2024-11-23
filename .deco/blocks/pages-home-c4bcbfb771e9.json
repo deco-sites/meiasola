@@ -1705,7 +1705,7 @@
             "items": [
               {
                 "button": {
-                  "link": "/308?map=productClusterIds&O=&sort=release%3Adesc&page=",
+                  "link": "/308?map=productClusterIds&O=&sort=release%3Adesc&page=1",
                   "text": "CONFIRA"
                 },
                 "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/e050270c-12ea-4527-a89d-c67b993036fc/sch_black_mobile_813X610.jpg",
