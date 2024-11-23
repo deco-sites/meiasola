@@ -3716,6 +3716,10 @@ details.collapse summary::-webkit-details-marker {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
@@ -3981,9 +3985,6 @@ details.collapse summary::-webkit-details-marker {
 .h-\[52px\] {
   height: 52px;
 }
-.h-\[610px\] {
-  height: 610px;
-}
 .h-\[6px\] {
   height: 6px;
 }
@@ -4055,14 +4056,14 @@ details.collapse summary::-webkit-details-marker {
 .max-h-\[80px\] {
   max-height: 80px;
 }
-.max-h-\[855px\] {
-  max-height: 855px;
-}
 .max-h-\[90\%\] {
   max-height: 90%;
 }
 .max-h-full {
   max-height: 100%;
+}
+.max-h-screen {
+  max-height: 100vh;
 }
 .min-h-\[100px\] {
   min-height: 100px;
@@ -6184,10 +6185,6 @@ details.collapse summary::-webkit-details-marker {
 
   .tablet\:h-\[360px\] {
     height: 360px;
-  }
-
-  .tablet\:h-screen {
-    height: 100vh;
   }
 
   .tablet\:w-\[360px\] {
