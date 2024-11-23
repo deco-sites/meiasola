@@ -1705,7 +1705,7 @@
             "items": [
               {
                 "button": {
-                  "link": "/312?map=productClusterIds&O=&sort=release%3Adesc&page=3",
+                  "link": "/312?map=productClusterIds&O=&sort=release%3Adesc&page=",
                   "text": "CONFIRA"
                 },
                 "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/01ca7b8e-e0fd-4d12-9e5e-08d04480d00d/ac_black_1520x855.jpg",
