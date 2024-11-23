@@ -14,6 +14,13 @@
       "button": {
         "link": "/sale"
       }
+    },
+    {
+      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/30c4ad93-0243-4432-8c71-ebb95599d99c/deskac.jpg",
+      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/76dd4a6f-bd8c-4e72-b96e-1bcf9a50116c/mobac.jpg",
+      "button": {
+        "link": "/312?map=productClusterIds&O=&sort=release%3Adesc&page"
+      }
     }
   ],
   "images": [
