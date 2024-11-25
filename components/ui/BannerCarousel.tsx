@@ -111,8 +111,8 @@ function Item(props: Video | Image) {
             />
             <Source
               src={props.imageDesktop}
-              width={1520}
-              height={855}
+              width={1903}
+              height={872}
               fetchPriority="high"
               media="(min-width: 768px)"
             />
