@@ -17,16 +17,16 @@
       }
     },
     {
-      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/dcb9a498-e603-4446-8607-3e82d4d29a10/desk-esquenta.jpg",
-      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/76dd4a6f-bd8c-4e72-b96e-1bcf9a50116c/mobac.jpg",
+      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/2a142cfc-e8d7-44ae-adec-fb4207b97eba/ac_black_2880x1320-copiar.jpg",
+      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/ebfc9a0d-8bfc-4273-a059-3c0e8e999625/ac_black_780x1320px-copiar.jpg",
       "button": {
         "text": "Confira",
         "link": "/312?map=productClusterIds&O=&sort=release%3Adesc&page"
       }
     },
     {
-      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/7c992e73-fd0c-4cba-b743-7912cf095a09/deskzz.jpg",
-      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/2bc497b1-d062-49a0-a848-6ebb55a2328f/mobzz.jpg",
+      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/2d4fd9d1-ca04-479f-bd8b-cdae222f4415/zz_black_desktop_2880x1320-copiar.jpg",
+      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/1a33b790-c1e1-4a66-8703-10b7aff39f70/zz_black_mobile_780x1320px-copiar.jpg",
       "button": {
         "text": "Confira",
         "link": "/310?map=productClusterIds&O=&sort=release%3Adesc&page"
