@@ -1074,7 +1074,7 @@
                     "href": "/sale",
                     "icon": null,
                     "color": "#e50000",
-                    "label": "<p><span id=\"_mce_caret\" data-mce-bogus=\"1\" data-mce-type=\"format-caret\"><span style=\"color: rgb(229, 0, 0);\" data-mce-style=\"color: rgb(229, 0, 0);\"><strong>sale﻿</strong></span></span></p>",
+                    "label": "<p style=\"text-align: center\"><strong><span style=\"color: rgb(229, 0, 0)\">BLACK FRIDAY</span></strong></p>",
                     "submenu": {
                       "sections": []
                     }
