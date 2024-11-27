@@ -9,7 +9,7 @@
         "height": 80
       },
       "label": "Alexandre Birman",
-      "background": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/805ac39f-4808-4a1a-9fd1-8dd76c4e0a3a/ICONS-DESK-1920X700-compressed.jpg"
+      "background": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/a015d2c1-b1ed-456f-8789-28725b9f642c/4.png"
     },
     {
       "link": "/marcas?filter.brand=arezzo",
@@ -19,7 +19,7 @@
         "height": 15
       },
       "label": "AREZZO",
-      "background": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/e1f94146-1163-4fb4-bc76-36904f5474b9/ARZ_25_V2_LIVIA_POSTS_FRQ_22.jpeg"
+      "background": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/4f9cf4c0-b316-46a8-bf04-9c063d024b89/1.png"
     },
     {
       "link": "/marcas?filter.brand=vicenza",
@@ -29,7 +29,7 @@
         "height": 25
       },
       "label": "Vicenza",
-      "background": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/c7342b69-cabf-4c10-9262-96bdbc5d879c/Snapinsta.app_457793574_18454917997059632_3046300020568798886_n_1080.jpg"
+      "background": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/facb9dbb-439e-4ea7-8f5f-d09413824440/5.png"
     },
     {
       "link": "/marcas?filter.brand=brizza",
@@ -39,7 +39,7 @@
         "height": 15
       },
       "label": "Brizza",
-      "background": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/69d3fdb3-2546-4615-9459-52a0da61c40e/3-(1).jpeg"
+      "background": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/9c05c986-b6cc-459b-9bc6-e4d134932cee/7.png"
     },
     {
       "link": "/marcas?filter.brand=schutz",
@@ -49,7 +49,7 @@
         "height": 19
       },
       "label": "SCHUTZ",
-      "background": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/0cf1544d-4c71-4656-97b1-8c4ac44d89f4/STORY-INSTA-(41).jpeg"
+      "background": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/cde1c90a-e079-49fa-926c-96cf012b1023/3.png"
     },
     {
       "link": "/marcas?filter.brand=anacapri",
@@ -59,7 +59,7 @@
         "height": 21
       },
       "label": "Anacapri",
-      "background": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/86c3cf9c-44f6-4f65-9dab-75c7442629b8/1-(3).jpeg"
+      "background": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/921ac8c3-07e8-40a1-a440-076072647156/2.png"
     },
     {
       "link": "/m%7Cs",
@@ -69,7 +69,7 @@
         "height": 47
       },
       "label": "meia sola",
-      "background": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/d020f818-88c4-4557-868a-d5fad4b7eb50/_MS_0217.jpg"
+      "background": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/a308a6b2-9680-441c-b062-f122f8dd58ca/6.png"
     },
     {
       "link": "/carrano?map=brand",
@@ -79,7 +79,7 @@
         "height": 25
       },
       "label": "cARRANO",
-      "background": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/72494414-9030-42f8-b30d-c417eac89c0f/_MS_0090.jpg"
+      "background": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/32ca988b-f38f-408c-9a7e-433ebf7ea48c/8.png"
     }
   ],
   "__resolveType": "site/sections/MeiaSola/BrandCarousel.tsx"
