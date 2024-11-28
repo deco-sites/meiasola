@@ -1,12 +1,12 @@
 {
   "image": {
     "alt": "Imagem da nova coleção ",
-    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/c44441ee-e079-4c25-97b4-983fb7c651f3/2024-11-05-16.24.00.jpg"
+    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/b6f1b678-1a8b-4c5e-857a-76d040b28f84/_meiasola_0379.jpg"
   },
   "button": {
-    "link": "/soleah",
+    "link": "/m%7Cs",
     "text": "Conferir"
   },
-  "content": "<h3 style=\"text-align: center\"><strong>SOLEAH</strong></h3><p style=\"text-align: center\">A SOLEAH é uma marca que esbanja inovação e personalidade em cada peça, reconhecida por seu design moderno e único. Ideal para quem deseja elevar o estilo com sofisticação e autenticidade, a SOLEAH chega hoje, trazendo opções exclusivas e inspiradoras para os verdadeiros amantes de moda.</p>",
+  "content": "<h3 style=\"text-align: center\"><strong>M|S</strong></h3><p style=\"text-align: center\">Nossas bolsas e calçados unem design sofisticado, funcionalidade e conforto para acompanhar você em todos os momentos. Descubra peças exclusivas que celebram sua personalidade com autenticidade e charme.</p>",
   "__resolveType": "site/sections/MeiaSola/NewCollection.tsx"
 }

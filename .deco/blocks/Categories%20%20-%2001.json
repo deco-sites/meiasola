@@ -1,1 +1,46 @@
-{"title":"CATEGORIAS","categories":[{"link":"https://www.meiasola.com.br/sapatos?filter.category-1=sapatos&filter.category-2=sandalia","image":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/cdbf18d3-e8fe-40ce-8fcd-52b1b415f25e/25.png","label":"Sandálias"},{"link":"https://www.meiasola.com.br/sapatos?filter.category-1=sapatos&filter.category-2=tenis","image":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/ae8f1e20-9d4b-470b-8319-2ad9a5997418/26.png","label":"Tênis"},{"link":"https://www.meiasola.com.br/s?q=papete","image":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/9f52e6a1-1b91-4b8d-bc0e-c1596b44840c/27.png","label":"Papetes"},{"link":"https://www.meiasola.com.br/sapatos?filter.category-1=sapatos&filter.category-2=sapatilha","image":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/26345db2-ee24-4e52-8804-f129056a29aa/28.png","label":"Sapatilha"},{"link":"https://www.meiasola.com.br/s?q=PLATAFORMA","image":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/a1f67842-4f38-4e0e-9575-f9fdd203bd89/31.png","label":"Plataforma"},{"link":"/sapatos?filter.category-1=sapatos&filter.category-2=rasteira","image":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/ae2da9a4-14fd-453f-bf3e-363aa5a58526/29.png","label":"Rasteiras"},{"link":"https://www.meiasola.com.br/sapatos?filter.category-1=sapatos&filter.category-2=mule","image":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/0ac3f8b8-c7db-47eb-9222-afc4196667c1/ARZ_25_V2_RAFFIA_CIRCLE_POSTS_FRQ22.jpeg","label":"mule"},{"link":"https://www.meiasola.com.br/bolsas","image":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/d12ca392-3d10-481f-8c62-a84578cd2006/32.png","label":"Bolsas"}],"__resolveType":"site/sections/MeiaSola/Categories.tsx"}
+{
+  "title": "CATEGORIAS",
+  "categories": [
+    {
+      "link": "https://www.meiasola.com.br/sapatos?filter.category-1=sapatos&filter.category-2=sandalia",
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/3066991f-d28e-4a3d-97ae-47cc4817e89d/2.png",
+      "label": "Sandálias"
+    },
+    {
+      "link": "https://www.meiasola.com.br/sapatos?filter.category-1=sapatos&filter.category-2=tenis",
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/94ef94b0-bf08-4e80-ac36-02bd6d28b66d/8.png",
+      "label": "Tênis"
+    },
+    {
+      "link": "https://www.meiasola.com.br/s?q=papete",
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/a054e04c-f5c2-4957-a44e-a74c4e995036/3.png",
+      "label": "Papetes"
+    },
+    {
+      "link": "https://www.meiasola.com.br/sapatos?filter.category-1=sapatos&filter.category-2=sapatilha",
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/45bf117e-d880-44d7-a2a2-ccc6fea4531b/6.png",
+      "label": "Sapatilha"
+    },
+    {
+      "link": "https://www.meiasola.com.br/s?q=PLATAFORMA",
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/2288faab-ce0e-48a8-b5bf-5d4fd12dbba8/7.png",
+      "label": "Plataforma"
+    },
+    {
+      "link": "/sapatos?filter.category-1=sapatos&filter.category-2=rasteira",
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/71e4587e-009e-4c0d-a14d-5864bc4864a3/4.png",
+      "label": "Rasteiras"
+    },
+    {
+      "link": "https://www.meiasola.com.br/sapatos?filter.category-1=sapatos&filter.category-2=mule",
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/a52b01c5-492a-4c4e-90a9-55e0196fb6af/9.png",
+      "label": "mule"
+    },
+    {
+      "link": "https://www.meiasola.com.br/bolsas",
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/595bfcf6-fd78-4a9f-b0d9-e3e07b408696/5.png",
+      "label": "Bolsas"
+    }
+  ],
+  "__resolveType": "site/sections/MeiaSola/Categories.tsx"
+}
