@@ -46,8 +46,14 @@ export function Name({ breadcrumbList, product, seo }: ProductDetailsPage) {
         itemListElement={breadcrumbList?.itemListElement.slice(0, 2)}
       />
 
-      <div data-trustvox-product-code={product.productID}></div>
-
+      <a
+        class="trustvox-fluid-jump trustvox-widget-rating"
+        href="#trustvox-reviews"
+        title="Pergunte e veja opiniões de quem já comprou"
+      >
+        <div data-trustvox-product-code={product.productID}></div>
+      </a>
+      
       {/* BRAND */}
       {product.brand?.name && (
         <h4 class="text-large font-bold">{product.brand.name}</h4>

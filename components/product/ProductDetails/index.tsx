@@ -151,7 +151,7 @@ function ProductDetails({ page, size }: Props) {
             sizeProps={size}
           />
 
-          <div class="col-span-full my-9">
+          <div id="trustvox-reviews" class="col-span-full my-9">
             <div id="_trustvox_widget"></div>
 
             <div id="_trustvox_colt"></div>
