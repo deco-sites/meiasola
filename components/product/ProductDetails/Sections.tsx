@@ -46,6 +46,8 @@ export function Name({ breadcrumbList, product, seo }: ProductDetailsPage) {
         itemListElement={breadcrumbList?.itemListElement.slice(0, 2)}
       />
 
+      <div data-trustvox-product-code={product.productID}></div>
+
       {/* BRAND */}
       {product.brand?.name && (
         <h4 class="text-large font-bold">{product.brand.name}</h4>
@@ -455,7 +457,6 @@ export function Description({
   if (!product.description) return null;
 
   const clamp = product.description.split(" ").length > 50;
-  console.log(product.description, "descriçaooo");
 
   return (
     <span class="group">

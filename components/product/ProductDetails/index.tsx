@@ -1,4 +1,4 @@
-import { Partial } from "$fresh/runtime.ts";
+import { Head, Partial } from "$fresh/runtime.ts";
 
 import type { ProductDetailsPage, ProductLeaf } from "apps/commerce/types.ts";
 
@@ -100,15 +100,64 @@ function ProductDetails({ page, size }: Props) {
       ({ name }: { name: string }) => name === "Vídeo"
     )?.value;
     return (
-      <div
-        class="container grid grid-cols-4 laptop:grid-cols-12 gap-4 desktop:gap-5 pb-6 laptop:py-11 text-black"
-        f-client-nav
-      >
-        {/* <Partial name="images"> */}
-        <Images images={page.product.image} productVideo={productVideo} />
-        {/* </Partial> */}
-        <Details page={page as DetailsPageWithColorVariants} sizeProps={size} />
-      </div>
+      <>
+        <Head>
+          <script
+            type="text/javascript"
+            src="//colt.trustvox.com.br/colt.min.js"
+          ></script>
+
+          <script
+            type="text/javascript"
+            dangerouslySetInnerHTML={{
+              __html: `
+                window._trustvox = []; _trustvox.push(['_storeId', '123680']);
+                _trustvox.push(['_productId', ${page.product.productID}]);
+                _trustvox.push(['_productName', "${page.product.name}"]);
+                _trustvox.push(['_productPhotos', ${
+                  page.product?.image
+                    ? `["${page.product.image[0].url}"]`
+                    : "[]"
+                }]);
+
+                var _trustvox_shelf_rate = _trustvox_shelf_rate || [];
+                _trustvox_shelf_rate.push(['_storeId', '123680']);
+
+                var _trustvox_colt = _trustvox_colt || [];
+                _trustvox_colt.push(['_storeId', '123680'], ['_limit', '7']);
+              `,
+            }}
+          />
+          <script
+            async
+            type="text/javascript"
+            src="//static.trustvox.com.br/sincero/sincero.js"
+          ></script>
+          <script
+            type="text/javascript"
+            async
+            src="//rate.trustvox.com.br/widget.js"
+          ></script>
+        </Head>
+        <div
+          class="container grid grid-cols-4 laptop:grid-cols-12 gap-4 desktop:gap-5 pb-6 laptop:py-11 text-black"
+          f-client-nav
+        >
+          {/* <Partial name="images"> */}
+          <Images images={page.product.image} productVideo={productVideo} />
+          {/* </Partial> */}
+          <Details
+            page={page as DetailsPageWithColorVariants}
+            sizeProps={size}
+          />
+
+          <div class="col-span-full my-9">
+            <div id="_trustvox_widget"></div>
+
+            <div id="_trustvox_colt"></div>
+          </div>
+        </div>
+      </>
     );
   }
 

@@ -3716,6 +3716,10 @@ details.collapse summary::-webkit-details-marker {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+.my-9 {
+  margin-top: 2.25rem;
+  margin-bottom: 2.25rem;
+}
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
