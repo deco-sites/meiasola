@@ -51,6 +51,7 @@ import * as $$$$$$34 from "./sections/ProxyIframe/ProxyIframe.tsx";
 import * as $$$$$$35 from "./sections/Social/InstagramPosts.tsx";
 import * as $$$$$$36 from "./sections/Social/WhatsApp.tsx";
 import * as $$$$$$37 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$38 from "./sections/TrustvoxReviewsCarousel.tsx";
 
 const manifest = {
   "loaders": {
@@ -99,6 +100,7 @@ const manifest = {
     "site/sections/Social/InstagramPosts.tsx": $$$$$$35,
     "site/sections/Social/WhatsApp.tsx": $$$$$$36,
     "site/sections/Theme/Theme.tsx": $$$$$$37,
+    "site/sections/TrustvoxReviewsCarousel.tsx": $$$$$$38,
   },
   "apps": {
     "site/apps/deco/algolia.ts": $$$$$$$$$$$0,

@@ -122,9 +122,6 @@ function ProductDetails({ page, size }: Props) {
 
                 var _trustvox_shelf_rate = _trustvox_shelf_rate || [];
                 _trustvox_shelf_rate.push(['_storeId', '123680']);
-
-                var _trustvox_colt = _trustvox_colt || [];
-                _trustvox_colt.push(['_storeId', '123680'], ['_limit', '7']);
               `,
             }}
           />
@@ -153,8 +150,6 @@ function ProductDetails({ page, size }: Props) {
 
           <div id="trustvox-reviews" class="col-span-full my-9">
             <div id="_trustvox_widget"></div>
-
-            <div id="_trustvox_colt"></div>
           </div>
         </div>
       </>

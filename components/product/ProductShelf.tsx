@@ -31,6 +31,22 @@ function ProductShelf({
 
   return (
     <>
+      <Head>
+        <script
+          type="text/javascript"
+          dangerouslySetInnerHTML={{
+            __html: `
+              var _trustvox_shelf_rate = _trustvox_shelf_rate || [];
+              _trustvox_shelf_rate.push(['_storeId', '123680']);
+          `,
+          }}
+        />
+        <script
+          type="text/javascript"
+          async
+          src="//rate.trustvox.com.br/widget.js"
+        ></script>
+      </Head>
       <div
         class={`${
           forceFullWidth ? "" : "container"
