@@ -15,6 +15,11 @@ export interface Props {
   seeMoreUrl?: string;
   products: Product[] | null;
   forceFullWidth?: boolean;
+  /**
+   * @title Autoplay interval
+   * @description time (in seconds) to start the carousel autoplay
+   */
+  interval?: number;
 }
 
 function ProductShelf({
@@ -23,6 +28,7 @@ function ProductShelf({
   seeMoreUrl,
   products,
   forceFullWidth,
+  interval
 }: Props) {
   const id = useId();
 
@@ -89,7 +95,7 @@ function ProductShelf({
         <Slider.PrevButton class="absolute left-[25px] top-1/2 -translate-y-1/2 z-10" />
         <Slider.NextButton class="absolute right-[25px] top-1/2 -translate-y-1/2 z-10" />
 
-        <SliderJS rootId={id} />
+        <SliderJS rootId={id} interval={interval && interval * 1e3} />
 
         <SendEventOnLoad
           event={{
