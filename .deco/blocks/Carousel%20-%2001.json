@@ -2,11 +2,11 @@
   "items": [
     {
       "button": {
-        "link": "/310?map=productClusterIds&O=&sort=release%3Adesc&page",
+        "link": "/m-s",
         "text": "Confira"
       },
-      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/1a33b790-c1e1-4a66-8703-10b7aff39f70/zz_black_mobile_780x1320px-copiar.jpg",
-      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/2d4fd9d1-ca04-479f-bd8b-cdae222f4415/zz_black_desktop_2880x1320-copiar.jpg"
+      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/940e8187-2e57-42f4-a5b2-de4d8923ad1a/ms_813x610.png",
+      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/bf59af8b-1208-48f9-825d-150195148da9/ms_1520x855.png"
     },
     {
       "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/919da5e0-10be-467e-8f7e-d81f412afdb0/2880x1320-copiar.jpg",
