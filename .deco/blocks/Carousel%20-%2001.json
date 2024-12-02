@@ -7,38 +7,6 @@
       },
       "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/940e8187-2e57-42f4-a5b2-de4d8923ad1a/ms_813x610.png",
       "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/bf59af8b-1208-48f9-825d-150195148da9/ms_1520x855.png"
-    },
-    {
-      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/66887f61-a3f9-4047-b892-b9a59ea8c73a/zz_1520x855.png",
-      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/b7579c19-0191-4bd3-bf4c-b5e3ced9d136/zz_813x610.png",
-      "button": {
-        "text": "Confira",
-        "link": "/arezzo"
-      }
-    },
-    {
-      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/dd8f8adc-f79d-4e5c-8d25-cb1e70d1257f/sch_1520x855.png",
-      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/78021027-8d06-4182-9244-51b759fa1c65/sch_813x610.png",
-      "button": {
-        "text": "CONFIRA",
-        "link": "/schutz"
-      }
-    },
-    {
-      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/0f679369-a19c-4cd5-9ecd-e59256312d49/ac_1520x855.png",
-      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/4e857b54-679c-46b6-b2c9-01f8605ba12b/ac_813x610.png",
-      "button": {
-        "text": "CONFIRA",
-        "link": "/anacapri"
-      }
-    },
-    {
-      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/042fc379-d6e1-47ee-9121-7ee0a63b3ea0/fg_1520x855.png",
-      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/a70da731-5dd7-4de9-9190-1449cfdcf716/fg_813x610.png",
-      "button": {
-        "text": "Confira",
-        "link": "/newin"
-      }
     }
   ],
   "images": [
