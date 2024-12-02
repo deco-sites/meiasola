@@ -17,11 +17,11 @@
       }
     },
     {
-      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/4e357e07-6f2a-4efa-b9cc-52a0a3ec2d7f/sch_black_desktop_2880x1320-copiar-(2).jpg",
-      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/4e357e07-6f2a-4efa-b9cc-52a0a3ec2d7f/sch_black_desktop_2880x1320-copiar-(2).jpg",
+      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/dd8f8adc-f79d-4e5c-8d25-cb1e70d1257f/sch_1520x855.png",
+      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/78021027-8d06-4182-9244-51b759fa1c65/sch_813x610.png",
       "button": {
         "text": "CONFIRA",
-        "link": "/308?map=productClusterIds&O=&sort=release%3Adesc&page"
+        "link": "/schutz"
       }
     },
     {
