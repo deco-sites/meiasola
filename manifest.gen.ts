@@ -4,11 +4,10 @@
 
 import * as $$$$$$$$$$$0 from "./apps/deco/algolia.ts";
 import * as $$$$$$$$$$$1 from "./apps/deco/analytics.ts";
-import * as $$$$$$$$$$$2 from "./apps/deco/ra-trustvox.ts";
-import * as $$$$$$$$$$$3 from "./apps/deco/verified-reviews.ts";
-import * as $$$$$$$$$$$4 from "./apps/deco/vtex.ts";
-import * as $$$$$$$$$$$5 from "./apps/deco/workflows.ts";
-import * as $$$$$$$$$$$6 from "./apps/site.ts";
+import * as $$$$$$$$$$$2 from "./apps/deco/verified-reviews.ts";
+import * as $$$$$$$$$$$3 from "./apps/deco/vtex.ts";
+import * as $$$$$$$$$$$4 from "./apps/deco/workflows.ts";
+import * as $$$$$$$$$$$5 from "./apps/site.ts";
 import * as $$$0 from "./loaders/Layouts/ProductCard.tsx";
 import * as $$$1 from "./loaders/meiasola/extensionGetModelVariants.ts";
 import * as $$$2 from "./loaders/meiasola/extensionProductListingPage.ts";
@@ -52,6 +51,7 @@ import * as $$$$$$34 from "./sections/ProxyIframe/ProxyIframe.tsx";
 import * as $$$$$$35 from "./sections/Social/InstagramPosts.tsx";
 import * as $$$$$$36 from "./sections/Social/WhatsApp.tsx";
 import * as $$$$$$37 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$38 from "./sections/TrustvoxReviewsCarousel.tsx";
 
 const manifest = {
   "loaders": {
@@ -100,15 +100,15 @@ const manifest = {
     "site/sections/Social/InstagramPosts.tsx": $$$$$$35,
     "site/sections/Social/WhatsApp.tsx": $$$$$$36,
     "site/sections/Theme/Theme.tsx": $$$$$$37,
+    "site/sections/TrustvoxReviewsCarousel.tsx": $$$$$$38,
   },
   "apps": {
     "site/apps/deco/algolia.ts": $$$$$$$$$$$0,
     "site/apps/deco/analytics.ts": $$$$$$$$$$$1,
-    "site/apps/deco/ra-trustvox.ts": $$$$$$$$$$$2,
-    "site/apps/deco/verified-reviews.ts": $$$$$$$$$$$3,
-    "site/apps/deco/vtex.ts": $$$$$$$$$$$4,
-    "site/apps/deco/workflows.ts": $$$$$$$$$$$5,
-    "site/apps/site.ts": $$$$$$$$$$$6,
+    "site/apps/deco/verified-reviews.ts": $$$$$$$$$$$2,
+    "site/apps/deco/vtex.ts": $$$$$$$$$$$3,
+    "site/apps/deco/workflows.ts": $$$$$$$$$$$4,
+    "site/apps/site.ts": $$$$$$$$$$$5,
   },
   "name": "site",
   "baseUrl": import.meta.url,

@@ -1139,6 +1139,12 @@
             "__resolveType": "ProductShelf - Mais Vendidos"
           },
           {
+            "__resolveType": "site/sections/TrustvoxReviewsCarousel.tsx",
+            "title": "NOSSAS AVALIAÇÕES",
+            "subTitle": "Veja o que falam da nossa loja",
+            "centerTitle": true
+          },
+          {
             "__resolveType": "Collections - Images"
           },
           {

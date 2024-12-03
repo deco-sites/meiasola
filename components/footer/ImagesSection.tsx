@@ -10,11 +10,13 @@ export interface Props {
     height: number;
     link?: string;
   }[];
+  trustvoxStamp?: boolean;
 }
 
 function ImagesSection({
   title = "",
   images,
+  trustvoxStamp,
   className,
 }: Props & {
   className?: HTMLDivElement["className"];
@@ -52,6 +54,12 @@ function ImagesSection({
             </li>
           );
         })}
+
+        {trustvoxStamp && (
+          <li>
+            <div data-trustvox-certificate-fixed="data-trustvox-certificate-fixed"></div>
+          </li>
+        )}
       </ul>
     </div>
   );

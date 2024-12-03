@@ -131,6 +131,8 @@ function ProductCard({ product, preload, itemListName, small }: Props) {
           <h4 class="text-body line-clamp-2 capitalize">
             {isVariantOf?.name.toLowerCase() ?? name.toLowerCase()}
           </h4>
+
+          <div data-trustvox-product-code={productID}></div>
         </div>
 
         {discountPercentage > 0 && (
