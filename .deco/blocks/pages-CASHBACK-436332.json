@@ -1,0 +1,29 @@
+{
+  "__resolveType": "website/pages/Page.tsx",
+  "sections": [
+    {
+      "__resolveType": "Header - 02"
+    },
+    {
+      "image": {
+        "alt": "Menina sentada em uma cadeira e atrás um fundo rosa"
+      },
+      "content": "<h3>CASHBACK</h3><p></p>",
+      "menuSection": {
+        "__resolveType": "Institutional Menu - 01"
+      },
+      "__resolveType": "site/sections/MeiaSola/InstitutionalContent.tsx"
+    },
+    {
+      "__resolveType": "Footer - 02"
+    },
+    {
+      "__resolveType": "WhatsApp Global"
+    },
+    {
+      "__resolveType": "SEO"
+    }
+  ],
+  "name": "CASHBACK",
+  "path": "/CASHACK"
+}
