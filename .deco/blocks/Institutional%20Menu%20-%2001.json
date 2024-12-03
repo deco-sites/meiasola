@@ -1,1 +1,57 @@
-{"sections":[{"links":[{"link":"/institucional/sobre-nos","label":"Sobre o grupo Meia Sola"},{"link":"https://grupomeiasola.vagas.solides.com.br/","label":"Trabalhe Conosco "},{"link":"/institucional/programa-fidelidade","label":"Programa Fidelidade MS Life"}]},{"links":[{"link":"/institucional/fale-conosco","label":"Central de Atendimento"},{"link":"/institucional/prazo-de-entrega","label":"Política de Frete Grátis"},{"link":"/institucional/trocas-e-devolucoes","label":"Trocas e Devoluções"},{"link":"/institucional/formas-pagamento","label":"Formas de Pagamento"}]},{"links":[{"link":"/institucional/politicas-do-site","label":"Politicas do Site"},{"link":"/institucional/privacidade","label":"Privacidade"}]}],"__resolveType":"site/sections/MeiaSola/InstitutionalMenu.tsx"}
+{
+  "sections": [
+    {
+      "links": [
+        {
+          "link": "/institucional/sobre-nos",
+          "label": "Sobre o grupo Meia Sola"
+        },
+        {
+          "link": "https://grupomeiasola.vagas.solides.com.br/",
+          "label": "Trabalhe Conosco "
+        },
+        {
+          "link": "/institucional/programa-fidelidade",
+          "label": "Programa Fidelidade MS Life"
+        },
+        {
+          "link": "/institucional/cashback",
+          "label": "cashback"
+        }
+      ]
+    },
+    {
+      "links": [
+        {
+          "link": "/institucional/fale-conosco",
+          "label": "Central de Atendimento"
+        },
+        {
+          "link": "/institucional/prazo-de-entrega",
+          "label": "Política de Frete Grátis"
+        },
+        {
+          "link": "/institucional/trocas-e-devolucoes",
+          "label": "Trocas e Devoluções"
+        },
+        {
+          "link": "/institucional/formas-pagamento",
+          "label": "Formas de Pagamento"
+        }
+      ]
+    },
+    {
+      "links": [
+        {
+          "link": "/institucional/politicas-do-site",
+          "label": "Politicas do Site"
+        },
+        {
+          "link": "/institucional/privacidade",
+          "label": "Privacidade"
+        }
+      ]
+    }
+  ],
+  "__resolveType": "site/sections/MeiaSola/InstitutionalMenu.tsx"
+}
