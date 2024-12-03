@@ -7,6 +7,14 @@
       },
       "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/940e8187-2e57-42f4-a5b2-de4d8923ad1a/ms_813x610.png",
       "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/bf59af8b-1208-48f9-825d-150195148da9/ms_1520x855.png"
+    },
+    {
+      "button": {
+        "text": "Confira",
+        "link": "/arezzo"
+      },
+      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/46cbb615-61ef-48f4-97df-910877d6daba/zz_813x610-(1).png",
+      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/9a64d506-000b-4ed7-b642-befcf92a2423/zz_1520x855-(1).png"
     }
   ],
   "images": [
