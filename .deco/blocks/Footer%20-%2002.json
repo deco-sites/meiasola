@@ -88,6 +88,10 @@
           {
             "link": "/institucional/programa-fidelidade",
             "label": "Programa Fidelidade MS Life"
+          },
+          {
+            "link": "/institucional/cashback",
+            "label": "Cashback"
           }
         ],
         "label": "Institucional"
