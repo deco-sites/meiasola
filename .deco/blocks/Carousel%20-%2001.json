@@ -23,6 +23,14 @@
       },
       "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/5f17602a-4ac4-48ea-b3a4-70be838db9a2/sch_780x1320.png",
       "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/c1cb2dc5-8910-4660-afa4-7456b499715a/sch_2880x1320.png"
+    },
+    {
+      "button": {
+        "text": "Confira",
+        "link": "/anacapri"
+      },
+      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/59544064-4c49-42a3-83e0-166032cf81b2/ac_780x1320.png",
+      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/110b6616-e597-4351-9434-5104b7517da7/ac_2880x1320.png"
     }
   ],
   "images": [
