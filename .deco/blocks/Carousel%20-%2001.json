@@ -3,6 +3,14 @@
     {
       "button": {
         "text": "Confira",
+        "link": "/newin"
+      },
+      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/08ad3c2b-bbed-4cdd-b652-33a8cf97fe7c/fg_780x1320.png",
+      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/fb4f17ca-1d0f-4207-a40d-2c3623a92551/fg_2880x1320.png"
+    },
+    {
+      "button": {
+        "text": "Confira",
         "link": "/arezzo"
       },
       "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/1a3d4f57-8571-40d0-96e1-eca5216c93b3/zz_780x1320.png",
