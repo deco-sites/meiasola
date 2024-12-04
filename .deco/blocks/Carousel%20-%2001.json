@@ -15,6 +15,14 @@
       },
       "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/c27239b9-da00-465d-94c7-d467b9327369/ms_780x1320.png",
       "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/5c991dd0-120e-48ad-80e2-28df85934af7/ms_2880x1320.png"
+    },
+    {
+      "button": {
+        "text": "Confira",
+        "link": "/schutz"
+      },
+      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/5f17602a-4ac4-48ea-b3a4-70be838db9a2/sch_780x1320.png",
+      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/c1cb2dc5-8910-4660-afa4-7456b499715a/sch_2880x1320.png"
     }
   ],
   "images": [
