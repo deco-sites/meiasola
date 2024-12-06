@@ -9,10 +9,10 @@
       "label": "sandálias"
     },
     {
-      "link": "/anacapri",
+      "link": "/sapatos?sort=price%3Aasc&filter.category-1=sapatos&filter.category-2=tenis&filter.price=159%3A899",
       "type": "image",
       "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/aeb4373d-4171-4282-bad7-917bc3556378/tenis-a-partir-de.gif",
-      "label": "anacapri",
+      "label": "Tênis",
       "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/03da15db-90f7-414c-8481-e7fbac960b15/Video-sem-titulo--Feito-com-o-Clipchamp-(5).mp4"
     },
     {
