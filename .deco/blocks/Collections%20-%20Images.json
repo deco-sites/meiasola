@@ -4,26 +4,26 @@
     {
       "link": "/newin",
       "type": "image",
-      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/e40449e4-c06e-45a4-9c91-5e28051a5d53/ABAIXO-FULL-BANNERAPP-(2).png",
-      "label": "CASHBACK"
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/0085e16e-0b7e-4dea-9ab3-dcc0614aa3bb/8.png",
+      "label": "PRESENTES"
     },
     {
-      "link": "/sapatos?filter.category-1=sapatos&filter.category-2=scarpin",
+      "link": "/schutz",
       "type": "image",
-      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/cfbbad75-6cf6-4b6f-822a-b9d96dba5e84/ABAIXO-FULL-BANNERAPP.png",
-      "label": "DESCONTO NO PIX"
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/938ed733-033a-43bf-8d5b-74084240a738/9.png",
+      "label": "SCHUTZ"
     },
     {
-      "link": "/s?q=papete",
+      "link": "/anacapri",
       "type": "image",
-      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/6b6909ac-0cd1-4b8c-80d3-0c1ed5c6ad7b/ABAIXO-FULL-BANNERAPP-(3).png",
-      "label": "GARANTA SEU DESCONTO"
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/a8d04022-01a7-414c-9f12-29d57a426657/10.png",
+      "label": "ANACAPRI"
     },
     {
-      "link": "/newin",
+      "link": "/arezzo",
       "type": "image",
-      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/2e8bbd82-96c1-49c4-a887-a9ab624e490a/ABAIXO-FULL-BANNERAPP-(1).png",
-      "label": "PARCELAMENTO"
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/78f250be-6137-482b-9627-f6c48b027ee5/11.png",
+      "label": "arezzo"
     }
   ],
   "__resolveType": "site/sections/MeiaSola/Collections.tsx"
