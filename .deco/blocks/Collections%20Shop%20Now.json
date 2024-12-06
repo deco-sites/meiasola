@@ -2,17 +2,11 @@
   "variant": "two",
   "collections": [
     {
-      "link": "/arezzo",
+      "link": "/sapatos?sort=price%3Aasc&filter.category-1=sapatos&filter.category-2=rasteira&filter.price=99%3A999",
       "type": "image",
-      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/a9dad910-ff94-4299-abf9-e15024ede667/GIFarezzo.gif.gif",
-      "label": "arezzo ",
-      "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f1853648-79a2-4466-8ae1-6be2f52c8f58/AREZZO---Summer-Hits-2_9x16-(1).mp4"
-    },
-    {
-      "link": "/schutz",
-      "type": "image",
-      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f10f6634-8329-449c-87ef-33f5ccd84d01/GIFschutz.gif.gif",
-      "label": "schutz"
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/956823bf-0a41-4fc1-a21e-6c40bdc99ea1/rasteiras-a-partir-de-(2).gif",
+      "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f1853648-79a2-4466-8ae1-6be2f52c8f58/AREZZO---Summer-Hits-2_9x16-(1).mp4",
+      "label": "sandálias"
     },
     {
       "link": "/anacapri",
@@ -20,6 +14,12 @@
       "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/318d6ccc-59fa-459d-8af3-2902abbc0937/GIFanacapri.gif.gif",
       "label": "anacapri",
       "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/03da15db-90f7-414c-8481-e7fbac960b15/Video-sem-titulo--Feito-com-o-Clipchamp-(5).mp4"
+    },
+    {
+      "link": "/bolsas?sort=price%3Aasc&filter.category-1=bolsas&filter.price=159%3A2999",
+      "type": "image",
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/2ef699f0-e3d5-46d6-9b33-5a3ba65041e1/bolsas-a-partir-de-(1).gif",
+      "label": "bolsas"
     }
   ],
   "__resolveType": "site/sections/MeiaSola/Collections.tsx"
