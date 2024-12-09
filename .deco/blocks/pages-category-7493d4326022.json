@@ -13,7 +13,15 @@
           },
           {
             "__resolveType": "site/sections/Category/BrandBanner.tsx",
-            "matcherSections": []
+            "matcherSections": [
+              {
+                "image": {
+                  "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/9ea22c24-2416-4c64-a2c3-35a5113f18e3/15.png",
+                  "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/8c114250-87e5-475f-b085-3bcb40e1c6a9/26.png"
+                },
+                "label": "/arezzo?map=brand"
+              }
+            ]
           },
           {
             "__resolveType": "site/sections/Product/SearchResult.tsx",
