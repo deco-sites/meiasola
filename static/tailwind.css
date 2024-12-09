@@ -456,20 +456,20 @@ video {
 html {
   -webkit-tap-highlight-color: transparent;
 }
-
   /* Allow changing font family via CMS */
   html {
     font-family: var(--font-family);
+    scroll-behavior: smooth;
   }
-  
+
   body {
     overflow-x: hidden;
     max-width: 100vw;
   }
 
   /** Remove default styles from input[type=number] */
-  input[type=number]::-webkit-inner-spin-button,
-  input[type=number]::-webkit-outer-spin-button {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
   }
@@ -486,16 +486,50 @@ html {
     max-width: 1440px !important;
   }
 
-  h1, h2, h3 {
+  h1,
+  h2,
+  h3 {
     font-weight: bold;
   }
 
-  h1, h2, h3, h3, h5, h6, p, a, span {
+  h1,
+  h2,
+  h3,
+  h3,
+  h5,
+  h6,
+  p,
+  a,
+  span {
     line-height: normal;
   }
 
   .btn-primary {
-    background-color: #090B0A;
+    background-color: #090b0a;
+  }
+
+  .trustvox-widget-rating,
+  .trustvox-widget-rating .ts-shelf-container,
+  .trustvox-widget-rating .trustvox-shelf-container,
+  .trustvox-widget-rating .ts-rate {
+    display: flex;
+    align-items: center;
+  }
+
+  .trustvox-widget-rating span.rating-click-here {
+    display: flex;
+    color: #daa81d;
+  }
+
+  .trustvox-widget-rating:hover span.rating-click-here {
+    text-decoration: underline;
+  }
+
+  .trustvox-shelf-container,
+  .ts-shelf-container,
+  .ts-rate {
+    display: flex !important;
+    align-items: center;
   }
 
 *, ::before, ::after {
@@ -3716,9 +3750,9 @@ details.collapse summary::-webkit-details-marker {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+.my-9 {
+  margin-top: 2.25rem;
+  margin-bottom: 2.25rem;
 }
 .my-auto {
   margin-top: auto;
@@ -5571,16 +5605,16 @@ details.collapse summary::-webkit-details-marker {
 }
 
 .group:disabled .group-disabled\:animate-progress {
-  animation: progress-frame ease normal
+  animation: progress-frame ease normal;
 }
 
 @keyframes progress-frame {
   0% {
-    --dot-progress: 0%
+    --dot-progress: 0%;
   }
 
   to {
-    --dot-progress: 100%
+    --dot-progress: 100%;
   }
 }
 

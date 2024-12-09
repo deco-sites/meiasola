@@ -1,5 +1,5 @@
 import Divider from "$store/components/ui/Divider.tsx";
-
+import { Head as HeadTag } from "$fresh/runtime.ts";
 import Head, { Props as HeadProps } from "$store/components/footer/Head.tsx";
 import Body, { Props as BodyProps } from "$store/components/footer/Body.tsx";
 import ImagesSection, {
@@ -11,22 +11,33 @@ export interface Props {
   body: BodyProps;
   /** @format rich-text */
   copyright: string;
+  enableTrustvoxStamp?: boolean;
 }
 
-function Footer({ head, body, copyright }: Props) {
+function Footer({ head, body, copyright, enableTrustvoxStamp = false }: Props) {
   return (
-    <footer class="bg-black text-white text-body py-9">
-      <div class="container grid grid-cols-4 gap-4 tablet:grid-cols-12 tablet:gap-5">
-        <div class="hidden desktop:flex col-span-1"></div>
-        <div class="col-span-4 tablet:col-span-12 desktop:col-span-10 flex flex-col gap-6">
-          <Head {...head} />
-          <Divider />
-          <Body {...body} />
-          <Copyright copyright={copyright} />
+    <>
+      {enableTrustvoxStamp && (
+        <HeadTag>
+          <script
+            type="text/javascript"
+            src="//certificate.trustvox.com.br/widget.js"
+          ></script>
+        </HeadTag>
+      )}
+      <footer class="bg-black text-white text-body py-9">
+        <div class="container grid grid-cols-4 gap-4 tablet:grid-cols-12 tablet:gap-5">
+          <div class="hidden desktop:flex col-span-1"></div>
+          <div class="col-span-4 tablet:col-span-12 desktop:col-span-10 flex flex-col gap-6">
+            <Head {...head} />
+            <Divider />
+            <Body {...body} />
+            <Copyright copyright={copyright} />
+          </div>
+          <div class="hidden desktop:flex col-span-1"></div>
         </div>
-        <div class="hidden desktop:flex col-span-1"></div>
-      </div>
-    </footer>
+      </footer>
+    </>
   );
 }
 
