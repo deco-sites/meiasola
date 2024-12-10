@@ -39,9 +39,9 @@
       "images": [
         {
           "alt": "Imagem de Sapatos",
-          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/3f519000-61d0-445e-9303-41aba6538ba1/10DESK.png",
+          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/57df4c0a-93eb-4722-86f6-73199a0cb8ec/UTILIZE-O-CUPOM-LIVELO-E-GANHE-5-PONTOS-PARA-CLUBE-E-4-PONTOS-PARA-NAO-CLUBE-A-CADA-1-REAL-GASTO.png",
           "route": "/livelo",
-          "srcMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/23c09582-4ee3-41a6-9906-acd4a6150abf/10mobille.png"
+          "srcMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f672b02a-7a3a-43da-91ef-9805628d7324/FULL-BANNER-NO-APLICATIVO-(2).png"
         }
       ],
       "__resolveType": "site/sections/Product/SearchResult.tsx"
