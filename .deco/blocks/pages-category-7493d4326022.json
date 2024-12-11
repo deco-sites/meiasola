@@ -27,6 +27,13 @@
                   "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f1b4392d-4102-4e0c-b0e5-b935da34e624/16.png"
                 },
                 "label": "/anacapri?map=brand"
+              },
+              {
+                "image": {
+                  "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/7aa48451-ace6-4065-a0a8-722e26a0e978/birman.png",
+                  "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/263dc8d1-e2ff-4a5c-86ff-f089ecccb1db/13.png"
+                },
+                "label": "/alexandre-birman?map=brand"
               }
             ]
           },
