@@ -83,6 +83,13 @@
                   "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/65ae42fc-6d46-496c-9f9a-4b215e98c3db/8.png"
                 },
                 "label": "/la-spezia?map=brand"
+              },
+              {
+                "image": {
+                  "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/fcd1c706-a6f0-4298-9417-98146fa3d3b9/lorraci.png",
+                  "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/e4c36d04-ce27-441a-b6ea-5dfa7e97bcfd/7.png"
+                },
+                "label": "/lorraci?map=brand"
               }
             ]
           },
