@@ -41,6 +41,13 @@
                   "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/e7d79191-c1df-4bd8-9a20-78ffb7513581/3.png"
                 },
                 "label": "/brizza?map=brand"
+              },
+              {
+                "image": {
+                  "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/0de093a7-8d7b-4f17-a2e6-818d352051fb/carano.png",
+                  "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/93c34f71-9477-4765-bdbc-204516918587/17.png"
+                },
+                "label": "/carrano?map=brand"
               }
             ]
           },
