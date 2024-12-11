@@ -132,6 +132,13 @@
                   "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/870000a2-48c0-4419-b263-643eaebd6429/6.png"
                 },
                 "label": "/wai-wai?map=brand"
+              },
+              {
+                "image": {
+                  "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/c58553f3-3a3c-4681-9d4f-e3baebc5ed9d/Design-sem-nome.png",
+                  "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/5460104c-9cc9-46f7-bd30-f2f1d2fa3911/12.png"
+                },
+                "label": "/vicenza?map=brand"
               }
             ]
           },
