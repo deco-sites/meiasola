@@ -24,10 +24,9 @@
               {
                 "image": {
                   "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f41a128e-5995-4574-9c3e-2c62d517bc4b/anacapri.png",
-                  "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f1b4392d-4102-4e0c-b0e5-b935da34e624/16.png",
-                  "alt": "/anacapri"
+                  "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f1b4392d-4102-4e0c-b0e5-b935da34e624/16.png"
                 },
-                "label": "/arezzo?map=brand"
+                "label": "/anacapri?map=brand"
               }
             ]
           },
