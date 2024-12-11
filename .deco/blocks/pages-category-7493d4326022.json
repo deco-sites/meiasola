@@ -104,6 +104,13 @@
                   "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/3959596b-1ef3-424c-b14a-8beb5638061b/1.png"
                 },
                 "label": "/m%7Cs?map=brand"
+              },
+              {
+                "image": {
+                  "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/2bd008f5-3749-409c-a3fd-26aa0c331a3c/ryzi.png",
+                  "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/2b89393c-8e3d-4664-96b0-826d502b23d2/5.png"
+                },
+                "label": "/ryzi?map=brand"
               }
             ]
           },
