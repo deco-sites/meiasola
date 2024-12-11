@@ -69,6 +69,13 @@
                   "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/50f62d9d-9d2c-4dfb-a35c-c6c1e7e10d89/9.png"
                 },
                 "label": "/guilhermina?map=brand"
+              },
+              {
+                "image": {
+                  "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/e3a1b72d-0708-4909-b7cd-a8afbcf08c45/isla.png",
+                  "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/4ef089fe-ce2c-4b3d-b325-c95cce6008cd/11.png"
+                },
+                "label": "/isla?map=brand"
               }
             ]
           },
