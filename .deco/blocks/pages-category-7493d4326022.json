@@ -118,6 +118,13 @@
                   "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/1b36cf16-50d7-445d-8857-22e1f6fd51d0/14.png"
                 },
                 "label": "/schutz?map=brand"
+              },
+              {
+                "image": {
+                  "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/9c92101a-7708-4ca2-b185-f5a21cd122ad/soleah.png",
+                  "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/7e8b30dc-efa3-42e9-8856-a7d56804937f/4.png"
+                },
+                "label": "/soleah?map=brand"
               }
             ]
           },
