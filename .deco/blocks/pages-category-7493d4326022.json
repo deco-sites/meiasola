@@ -76,6 +76,13 @@
                   "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/4ef089fe-ce2c-4b3d-b325-c95cce6008cd/11.png"
                 },
                 "label": "/isla?map=brand"
+              },
+              {
+                "image": {
+                  "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f951811a-113d-4623-ace2-8bcc6e711996/la-spezia.png",
+                  "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/65ae42fc-6d46-496c-9f9a-4b215e98c3db/8.png"
+                },
+                "label": "/la-spezia?map=brand"
               }
             ]
           },
