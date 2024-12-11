@@ -48,6 +48,13 @@
                   "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/93c34f71-9477-4765-bdbc-204516918587/17.png"
                 },
                 "label": "/carrano?map=brand"
+              },
+              {
+                "image": {
+                  "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/2ec5ba8b-7daa-47d4-aeb7-f0d57813a02a/confraria.png",
+                  "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/fe94ab2a-d6a7-495a-84e0-64e84d44b0cb/10.png"
+                },
+                "label": "/confraria?map=brand"
               }
             ]
           },
