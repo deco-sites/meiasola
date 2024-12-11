@@ -55,6 +55,13 @@
                   "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/fe94ab2a-d6a7-495a-84e0-64e84d44b0cb/10.png"
                 },
                 "label": "/confraria?map=brand"
+              },
+              {
+                "image": {
+                  "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/440f9b2c-ace0-4211-94f7-d0df47bd674c/follis.png",
+                  "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/68500595-bcda-42eb-ab89-dfd69fb6ca80/2.png"
+                },
+                "label": "/follis?map=brand"
               }
             ]
           },
