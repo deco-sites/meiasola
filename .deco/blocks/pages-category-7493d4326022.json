@@ -34,6 +34,13 @@
                   "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/263dc8d1-e2ff-4a5c-86ff-f089ecccb1db/13.png"
                 },
                 "label": "/alexandre-birman?map=brand"
+              },
+              {
+                "image": {
+                  "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/5ab48fab-6038-4924-aee9-6a33e41fa54b/brizza.png",
+                  "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/e7d79191-c1df-4bd8-9a20-78ffb7513581/3.png"
+                },
+                "label": "/brizza?map=brand"
               }
             ]
           },
