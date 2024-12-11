@@ -125,6 +125,13 @@
                   "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/7e8b30dc-efa3-42e9-8856-a7d56804937f/4.png"
                 },
                 "label": "/soleah?map=brand"
+              },
+              {
+                "image": {
+                  "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/e56f51b7-fdfd-48ca-b3fe-a68a33836b4f/waiwai.png",
+                  "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/870000a2-48c0-4419-b263-643eaebd6429/6.png"
+                },
+                "label": "/wai-wai?map=brand"
               }
             ]
           },
