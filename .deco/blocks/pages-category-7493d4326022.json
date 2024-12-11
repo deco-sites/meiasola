@@ -90,6 +90,13 @@
                   "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/e4c36d04-ce27-441a-b6ea-5dfa7e97bcfd/7.png"
                 },
                 "label": "/lorraci?map=brand"
+              },
+              {
+                "image": {
+                  "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/1c949e38-4791-41cb-a14c-619ab226e607/luz-da-lua.png",
+                  "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/ef2423ab-3d76-46d0-bcc5-84ff90744fe4/18.png"
+                },
+                "label": "/luz-da-lua?map=brand"
               }
             ]
           },
