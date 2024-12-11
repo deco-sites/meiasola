@@ -62,6 +62,13 @@
                   "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/68500595-bcda-42eb-ab89-dfd69fb6ca80/2.png"
                 },
                 "label": "/follis?map=brand"
+              },
+              {
+                "image": {
+                  "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/6f3263c5-feaa-412c-a2e1-55c1c6a5f3a9/guilhermina.png",
+                  "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/50f62d9d-9d2c-4dfb-a35c-c6c1e7e10d89/9.png"
+                },
+                "label": "/guilhermina?map=brand"
               }
             ]
           },
