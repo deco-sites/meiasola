@@ -2,24 +2,24 @@
   "variant": "two",
   "collections": [
     {
-      "link": "/sapatos?sort=price%3Aasc&filter.category-1=sapatos&filter.category-2=rasteira&filter.price=99%3A999",
+      "link": "/schutz",
       "type": "image",
-      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/a38d2404-5a79-4a8e-9641-2bffb8824533/rasteiras-a-partir.gif",
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/97bd8373-4edc-4c32-a8f2-4393fc527688/gif.schutz.gif",
       "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f1853648-79a2-4466-8ae1-6be2f52c8f58/AREZZO---Summer-Hits-2_9x16-(1).mp4",
-      "label": "sandálias"
+      "label": "PRESENTES SCHUTZ"
     },
     {
-      "link": "/sapatos?sort=price%3Aasc&filter.category-1=sapatos&filter.category-2=tenis&filter.price=159%3A899",
+      "link": "/AREZZO",
       "type": "image",
-      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/d849b94c-0305-42a9-b50d-3d58422661ae/tenis-a-partir.gif",
-      "label": "Tênis",
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/c3b15bf9-7923-4ecd-8fd7-61d15b7ecf13/gif.arezzo.gif",
+      "label": "PRESENTES AREZZO",
       "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/03da15db-90f7-414c-8481-e7fbac960b15/Video-sem-titulo--Feito-com-o-Clipchamp-(5).mp4"
     },
     {
-      "link": "/bolsas?sort=price%3Aasc&filter.category-1=bolsas&filter.price=159%3A2999",
+      "link": "/arezzo",
       "type": "image",
-      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/6d492996-1a13-453d-aaa3-f148cb70b664/bolsas-a-partir.gif",
-      "label": "bolsas"
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/c793feca-f96b-48f0-ab10-a4291c9153d7/gif.anacapri.gif",
+      "label": "PRESENTES AREZZO"
     }
   ],
   "__resolveType": "site/sections/MeiaSola/Collections.tsx"
