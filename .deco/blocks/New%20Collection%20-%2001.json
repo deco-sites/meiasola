@@ -1,12 +1,12 @@
 {
   "image": {
     "alt": "Imagem da nova coleção ",
-    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/b6f1b678-1a8b-4c5e-857a-76d040b28f84/_meiasola_0379.jpg"
+    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/5f971d62-dc64-4351-a428-b1d35a3246a2/POST-FEED-(30).jpeg"
   },
   "button": {
     "link": "/m%7Cs",
     "text": "Conferir"
   },
-  "content": "<h3 style=\"text-align: center\"><strong>M|S</strong></h3><p style=\"text-align: center\">Nossas bolsas e calçados unem design sofisticado, funcionalidade e conforto para acompanhar você em todos os momentos. Descubra peças exclusivas que celebram sua personalidade com autenticidade e charme.</p>",
+  "content": "<h3 style=\"text-align: center\">Escolha o seu presente</h3><p style=\"text-align: center\">Para celebrar este momento especial, selecionamos produtos repletos de elegância e beleza. Transforme seu final de ano em uma ocasião inesquecível e leve alegria para quem você ama. </p>",
   "__resolveType": "site/sections/MeiaSola/NewCollection.tsx"
 }
