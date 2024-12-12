@@ -4,26 +4,26 @@
     {
       "link": "/newin",
       "type": "image",
-      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/ffcab855-5964-4478-ba38-227626347ce5/ABAIXO-FULL-BANNERAPP.png",
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/12595a6c-aa3f-4de4-953b-0246eb06c0e5/15.png",
       "label": "PRESENTES"
     },
     {
-      "link": "/schutz",
+      "link": "/bolsas?sort=price%3Aasc&filter.category-1=bolsas&filter.price=299%3A9999",
       "type": "image",
-      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/938ed733-033a-43bf-8d5b-74084240a738/9.png",
-      "label": "SCHUTZ"
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/ac791b31-7b35-48d2-9c1c-703e8c7bcf4e/12.png",
+      "label": "BOLSAS"
     },
     {
-      "link": "/anacapri",
+      "link": "/sapatos?sort=price%3Aasc&filter.category-1=sapatos&filter.category-2=sandalia&filter.price=199%3A9999",
       "type": "image",
-      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/a8d04022-01a7-414c-9f12-29d57a426657/10.png",
-      "label": "ANACAPRI"
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/0e861c93-8e39-4303-a7c2-8427b9046e5c/14.png",
+      "label": "SANDALIAS"
     },
     {
-      "link": "/arezzo",
+      "link": "/s?q=papete&sort=price%3Aasc&filter.price=179%3A999",
       "type": "image",
-      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/78f250be-6137-482b-9627-f6c48b027ee5/11.png",
-      "label": "arezzo"
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/800331ad-462a-490d-a6c1-5ee5388f7d65/13.png",
+      "label": "PAPETES"
     }
   ],
   "__resolveType": "site/sections/MeiaSola/Collections.tsx"
