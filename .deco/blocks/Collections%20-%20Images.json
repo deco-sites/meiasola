@@ -4,25 +4,25 @@
     {
       "link": "/newin",
       "type": "image",
-      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/12595a6c-aa3f-4de4-953b-0246eb06c0e5/15.png",
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/be771d36-aa3d-4ac4-8174-0de4a56d34ac/15.png",
       "label": "PRESENTES"
     },
     {
       "link": "/bolsas?sort=price%3Aasc&filter.category-1=bolsas&filter.price=299%3A9999",
       "type": "image",
-      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/ac791b31-7b35-48d2-9c1c-703e8c7bcf4e/12.png",
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/fe8cbd2b-238a-45be-a962-f00d8d5b69ec/12.png",
       "label": "BOLSAS"
     },
     {
       "link": "/sapatos?sort=price%3Aasc&filter.category-1=sapatos&filter.category-2=sandalia&filter.price=199%3A9999",
       "type": "image",
-      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/0e861c93-8e39-4303-a7c2-8427b9046e5c/14.png",
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/ebdb9802-d20f-471f-8077-9b7a193afa4f/14.png",
       "label": "SANDALIAS"
     },
     {
       "link": "/s?q=papete&sort=price%3Aasc&filter.price=179%3A999",
       "type": "image",
-      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/800331ad-462a-490d-a6c1-5ee5388f7d65/13.png",
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/88efbcf3-4ffc-44a4-baff-52e57f513a9c/13.png",
       "label": "PAPETES"
     }
   ],
