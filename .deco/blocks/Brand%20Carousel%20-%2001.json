@@ -9,47 +9,7 @@
         "height": 80
       },
       "label": "Alexandre Birman",
-      "background": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/a015d2c1-b1ed-456f-8789-28725b9f642c/4.png"
-    },
-    {
-      "link": "/marcas?filter.brand=arezzo",
-      "logo": {
-        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/b7c85dab-0d99-43f7-8a5c-57008af9d675",
-        "width": 82,
-        "height": 15
-      },
-      "label": "AREZZO",
-      "background": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/4f9cf4c0-b316-46a8-bf04-9c063d024b89/1.png"
-    },
-    {
-      "link": "/marcas?filter.brand=vicenza",
-      "logo": {
-        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/588570ed-417e-44fa-a1ff-c2373eec7fe6",
-        "width": 95,
-        "height": 25
-      },
-      "label": "Vicenza",
-      "background": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/facb9dbb-439e-4ea7-8f5f-d09413824440/5.png"
-    },
-    {
-      "link": "/marcas?filter.brand=brizza",
-      "logo": {
-        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/b8a768d3-f500-4a0b-a54b-686aaee90544",
-        "width": 101,
-        "height": 15
-      },
-      "label": "Brizza",
-      "background": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/9c05c986-b6cc-459b-9bc6-e4d134932cee/7.png"
-    },
-    {
-      "link": "/marcas?filter.brand=schutz",
-      "logo": {
-        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/22d5701d-bc0b-4578-b77f-96594c526882",
-        "width": 80,
-        "height": 19
-      },
-      "label": "SCHUTZ",
-      "background": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/cde1c90a-e079-49fa-926c-96cf012b1023/3.png"
+      "background": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/9155f6a6-8a44-4115-9ce4-0d229d5fda1d/birman.png"
     },
     {
       "link": "/marcas?filter.brand=anacapri",
@@ -59,17 +19,27 @@
         "height": 21
       },
       "label": "Anacapri",
-      "background": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/921ac8c3-07e8-40a1-a440-076072647156/2.png"
+      "background": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/8a4428f5-24b1-40e4-8e61-897a18f07362/ac.png"
     },
     {
-      "link": "/m%7Cs",
+      "link": "/marcas?filter.brand=arezzo",
       "logo": {
-        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/4c4d37c0-eea6-4f5d-a299-039da2a1a0ea",
-        "width": 92,
-        "height": 47
+        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/b7c85dab-0d99-43f7-8a5c-57008af9d675",
+        "width": 82,
+        "height": 15
       },
-      "label": "meia sola",
-      "background": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/a308a6b2-9680-441c-b062-f122f8dd58ca/6.png"
+      "label": "AREZZO",
+      "background": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/0b0429dc-6773-43be-b2ec-e185d193d6ff/arezzo.png"
+    },
+    {
+      "link": "/marcas?filter.brand=brizza",
+      "logo": {
+        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/b8a768d3-f500-4a0b-a54b-686aaee90544",
+        "width": 101,
+        "height": 15
+      },
+      "label": "Brizza",
+      "background": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/89649401-5206-428a-b4b0-b1bb36e59d63/brizza.png"
     },
     {
       "link": "/carrano?map=brand",
@@ -79,7 +49,37 @@
         "height": 25
       },
       "label": "cARRANO",
-      "background": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/32ca988b-f38f-408c-9a7e-433ebf7ea48c/8.png"
+      "background": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/02d6fc5e-1e05-459a-af62-e9e718d52f8d/carrano.png"
+    },
+    {
+      "link": "/m%7Cs",
+      "logo": {
+        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/4c4d37c0-eea6-4f5d-a299-039da2a1a0ea",
+        "width": 92,
+        "height": 47
+      },
+      "label": "meia sola",
+      "background": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/987150ae-bcf1-4214-9083-90cc0a087382/ms.png"
+    },
+    {
+      "link": "/marcas?filter.brand=schutz",
+      "logo": {
+        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/22d5701d-bc0b-4578-b77f-96594c526882",
+        "width": 80,
+        "height": 19
+      },
+      "label": "SCHUTZ",
+      "background": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/52efb077-e995-4907-b41a-652a43e9f953/shutz.png"
+    },
+    {
+      "link": "/marcas?filter.brand=vicenza",
+      "logo": {
+        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/588570ed-417e-44fa-a1ff-c2373eec7fe6",
+        "width": 95,
+        "height": 25
+      },
+      "label": "Vicenza",
+      "background": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/a9ee1286-ab67-43ed-98c0-b6a4fcb04b97/vicenza.png"
     }
   ],
   "__resolveType": "site/sections/MeiaSola/BrandCarousel.tsx"
