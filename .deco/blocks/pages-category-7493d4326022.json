@@ -200,15 +200,15 @@
             "images": [
               {
                 "alt": "Imagem de um sapato salto alto",
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/fda8865f-3f34-424d-8b2f-5536e56068a7/4.png",
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/e2062956-8f79-42c8-aa1a-bb0eded9c13b/SAPATO.png",
                 "route": "/sapatos",
-                "srcMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/70064829-e857-42c9-a1bd-fe013e06ce34/4.png"
+                "srcMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/c34df86c-cd1d-4474-abd5-b0392d26ceb4/4.png"
               },
               {
                 "alt": "Imagem de bolsas",
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/85e90d32-fd39-4d4a-ad76-18e0be038db3/UTILIZE-O-CUPOM-LIVELO-E-GANHE-5-PONTOS-PARA-CLUBE-E-4-PONTOS-PARA-NAO-CLUBE-A-CADA-1-REAL-GASTO.png",
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/91cf7674-e76e-4050-810b-43dc9d808c40/BOLSA.png",
                 "route": "/bolsas",
-                "srcMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/d4f403d2-1534-4af5-a916-fb8c12a75c70/categoria-mobile.png"
+                "srcMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/1af987e7-2718-4e54-8a82-d628302ed653/5.png"
               },
               {
                 "alt": "Imagem de pulseira dourada",
@@ -218,9 +218,9 @@
               },
               {
                 "alt": "Imagem de Sandálias ",
-                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/6a65bbde-21d2-458d-8b25-9b390df91ab1/3.png",
+                "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/8c976c3a-4496-4f86-b12f-db77e2685e79/NEW-IN.png",
                 "route": "/sapatos/sandalia",
-                "srcMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/fdce21e8-4c83-43ad-b713-d28b23297ddf/3.png"
+                "srcMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/02c73dac-d03f-4930-aa5a-474dc72a78b1/6.png"
               }
             ],
             "notFoundPage": {
