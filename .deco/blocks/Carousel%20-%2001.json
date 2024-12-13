@@ -3,6 +3,14 @@
     {
       "button": {
         "text": "Confira",
+        "link": "/bolsas"
+      },
+      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/28104f52-6fbc-4c05-9c87-7f534b197d52/banner-ms-(780x1320)2.jpg",
+      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/b4f1ec54-ce2a-4bd5-a0ab-30edc7fe38cd/banner-ms-(2880x1320)1.jpg"
+    },
+    {
+      "button": {
+        "text": "Confira",
         "link": "/newin"
       },
       "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/08ad3c2b-bbed-4cdd-b652-33a8cf97fe7c/fg_780x1320.png",
