@@ -1151,6 +1151,12 @@
             "__resolveType": "InstagramPosts - 01"
           },
           {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "BlogPosts"
+            }
+          },
+          {
             "__resolveType": "Newsletter - 01"
           },
           {
