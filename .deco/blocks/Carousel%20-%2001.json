@@ -11,6 +11,14 @@
     {
       "button": {
         "text": "Confira",
+        "link": "/newin"
+      },
+      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/8a0c5457-3d7e-4919-acad-b8c439bc5cf3/full-banner-mobile-(1).png",
+      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/355864f9-8faa-4258-b155-95be50c50fdc/full-banner-desktop-site-(3).png"
+    },
+    {
+      "button": {
+        "text": "Confira",
         "link": "/anacapri"
       },
       "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/8308deae-6d46-4195-8bd4-7bf4c60e2e07/1.png",
@@ -31,14 +39,6 @@
       },
       "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/1c47f81e-69c9-4a33-ba20-66e581e3015f/2.png",
       "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/2a325d85-2a15-4543-83a5-f8c598b87a38/FULL-BANNER-NO-APLICATIVO-(4).png"
-    },
-    {
-      "button": {
-        "text": "Confira",
-        "link": "/newin"
-      },
-      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/8a0c5457-3d7e-4919-acad-b8c439bc5cf3/full-banner-mobile-(1).png",
-      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/355864f9-8faa-4258-b155-95be50c50fdc/full-banner-desktop-site-(3).png"
     },
     {
       "button": {
