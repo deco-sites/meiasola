@@ -139,6 +139,27 @@
                   "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/5460104c-9cc9-46f7-bd30-f2f1d2fa3911/12.png"
                 },
                 "label": "/vicenza?map=brand"
+              },
+              {
+                "image": {
+                  "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/8c976c3a-4496-4f86-b12f-db77e2685e79/NEW-IN.png",
+                  "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/5460104c-9cc9-46f7-bd30-f2f1d2fa3911/12.png"
+                },
+                "label": "/newin"
+              },
+              {
+                "image": {
+                  "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/91cf7674-e76e-4050-810b-43dc9d808c40/BOLSA.png",
+                  "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/5460104c-9cc9-46f7-bd30-f2f1d2fa3911/12.png"
+                },
+                "label": "/bolsas"
+              },
+              {
+                "image": {
+                  "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/e2062956-8f79-42c8-aa1a-bb0eded9c13b/SAPATO.png",
+                  "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/5460104c-9cc9-46f7-bd30-f2f1d2fa3911/12.png"
+                },
+                "label": "/sandalias"
               }
             ]
           },
