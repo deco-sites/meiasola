@@ -85,6 +85,6 @@
     }
   ],
   "preload": true,
-  "interval": 4,
-  "__resolveType": "site/sections/Images/Carousel.tsx"
+  "__resolveType": "site/sections/Images/Carousel.tsx",
+  "interval": 5
 }
