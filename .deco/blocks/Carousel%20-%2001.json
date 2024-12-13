@@ -11,6 +11,30 @@
     {
       "button": {
         "text": "Confira",
+        "link": "/anacapri"
+      },
+      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/8308deae-6d46-4195-8bd4-7bf4c60e2e07/1.png",
+      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/0376b514-ee38-4d9d-829c-b3b2c000d29d/full-banner-desktop-site.png"
+    },
+    {
+      "button": {
+        "text": "Confira",
+        "link": "/schutz"
+      },
+      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/3a66b12a-ea24-488a-9a18-d38c17fecf43/3.png",
+      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/7883991f-4583-408f-b0de-55d3b7541c37/1.png"
+    },
+    {
+      "button": {
+        "text": "Confira",
+        "link": "/arezzo"
+      },
+      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/1c47f81e-69c9-4a33-ba20-66e581e3015f/2.png",
+      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/168d9575-0916-4c06-a9a2-23cbca8d49a6/2.png"
+    },
+    {
+      "button": {
+        "text": "Confira",
         "link": "/newin"
       },
       "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/08ad3c2b-bbed-4cdd-b652-33a8cf97fe7c/fg_780x1320.png",
@@ -23,30 +47,6 @@
       },
       "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/c27239b9-da00-465d-94c7-d467b9327369/ms_780x1320.png",
       "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/5c991dd0-120e-48ad-80e2-28df85934af7/ms_2880x1320.png"
-    },
-    {
-      "button": {
-        "text": "Confira",
-        "link": "/arezzo"
-      },
-      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/1a3d4f57-8571-40d0-96e1-eca5216c93b3/zz_780x1320.png",
-      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/4119cd32-fa5d-4ad8-8c13-28c498165e88/zz_2880x1320.png"
-    },
-    {
-      "button": {
-        "text": "Confira",
-        "link": "/schutz"
-      },
-      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/5f17602a-4ac4-48ea-b3a4-70be838db9a2/sch_780x1320.png",
-      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/c1cb2dc5-8910-4660-afa4-7456b499715a/sch_2880x1320.png"
-    },
-    {
-      "button": {
-        "text": "Confira",
-        "link": "/anacapri"
-      },
-      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/59544064-4c49-42a3-83e0-166032cf81b2/ac_780x1320.png",
-      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/110b6616-e597-4351-9434-5104b7517da7/ac_2880x1320.png"
     }
   ],
   "images": [
