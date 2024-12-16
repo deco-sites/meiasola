@@ -45,7 +45,7 @@ export function Name({ breadcrumbList, product, seo }: ProductDetailsPage) {
       <Breadcrumb
         itemListElement={breadcrumbList?.itemListElement.slice(0, 2)}
       />
-      
+
       <a
         class="trustvox-fluid-jump trustvox-widget-rating"
         href="#trustvox-reviews"
@@ -53,13 +53,13 @@ export function Name({ breadcrumbList, product, seo }: ProductDetailsPage) {
       >
         <div
           class="trustvox-shelf-container"
-          data-trustvox-product-code-js={product.productID}
+          data-trustvox-product-code-js={product.inProductGroupWithID}
           data-trustvox-should-skip-filter="true"
           data-trustvox-display-rate-schema="true"
         />
         <span class="rating-click-here">Clique e veja!</span>
       </a>
-      
+
       {/* BRAND */}
       {product.brand?.name && (
         <h4 class="text-large font-bold">{product.brand.name}</h4>

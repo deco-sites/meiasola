@@ -112,7 +112,7 @@ function ProductDetails({ page, size }: Props) {
             dangerouslySetInnerHTML={{
               __html: `
                 window._trustvox = []; _trustvox.push(['_storeId', '123680']);
-                _trustvox.push(['_productId', ${page.product.productID}]);
+                _trustvox.push(['_productId', ${page.product.inProductGroupWithID}]);
                 _trustvox.push(['_productName', "${page.product.name}"]);
                 _trustvox.push(['_productPhotos', ${
                   page.product?.image
