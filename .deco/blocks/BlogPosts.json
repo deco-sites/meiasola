@@ -1,1 +1,7 @@
-{"posts":{"__resolveType":"site/loaders/meiasola/myStylePosts.ts"},"title":"Blog","__resolveType":"site/sections/MeiaSola/MyStyle.tsx"}
+{
+  "title": "Blog",
+  "__resolveType": "site/sections/MeiaSola/blog.meiasola.tsx",
+  "posts": {
+    "__resolveType": "site/loaders/meiasola/blog.meiasola.ts"
+  }
+}
