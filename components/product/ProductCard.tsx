@@ -139,7 +139,9 @@ function ProductCard({ product, preload, itemListName, small }: Props) {
               alignItems: small ? "flex-start" : "center",
             }}
           >
-            <div data-trustvox-product-code={productID}></div>
+            <div
+              data-trustvox-product-code={product.inProductGroupWithID}
+            ></div>
           </div>
         </div>
 
