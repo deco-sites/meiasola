@@ -25,7 +25,7 @@ const blogPostListLoader = async (
 
   const response = await Promise.race([
     fetchSafe(
-      "https://blog.meiasola.com/mstyle/wp-json/wp/v2/posts?per_page=4",
+      "https://blog.meiasola.com/wp-json/wp/v2/posts?per_page=4&_embed",
     ),
     timeout,
   ]);
