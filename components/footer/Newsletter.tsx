@@ -108,6 +108,7 @@ function Newsletter({ title, description, form }: Props) {
           </div>
           <div class="col-span-1 flex"></div>
           <form
+            id="newsletterForm"
             class="col-span-5 desktop:col-span-4 w-full form-control justify-center gap-3.5"
             onSubmit={handleSubmit}
           >
