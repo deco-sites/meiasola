@@ -51,6 +51,42 @@ export default defineApp(async (_req, ctx) => {
         })(window,document,'script','dataLayer','GTM-NJRC6Q2');`,
           }}
         />
+
+        <script type="text/javascript" dangerouslySetInnerHTML={{__html:
+          `
+          (function (srcjs) {
+              window._edrone = window._edrone || {};
+              _edrone.app_id = '674f57637f948'; // YOUR APP_ID
+              _edrone.version = '1.0.0';
+              _edrone.platform_version = '1.0.0';
+              _edrone.platform = 'custom';
+              var doc = document.createElement('script');
+              doc.type = 'text/javascript';
+              doc.async = true;
+              doc.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + srcjs;
+              var s = document.getElementsByTagName('script')[0];
+              s.parentNode.insertBefore(doc, s);
+          })("//d3bo67muzbfgtl.cloudfront.net/edrone_2_0.js?app_id=674f57637f948");
+
+            window._edrone = window._edrone || {};
+            let newsletterForm = document.querySelector('#newsletterForm')
+            if (newsletterForm) {
+              newsletterForm.addEventListener('submit', (event) => {
+                event.preventDefault();
+                _edrone.customer_tags = 'Footer'; // You can use different tags for different forms.
+                const emailInput = newsletterForm.querySelector('input[type="email"]');
+                const nameInput = newsletterForm.querySelector('input[name="name"]');
+                if (emailInput && nameInput) {
+                  _edrone.email = emailInput.value;
+                  _edrone.first_name = nameInput.value;
+                  _edrone.action_type = 'subscribe';
+                  _edrone.init();
+                }
+              });
+            }
+          `
+        }} />
+
       </Head>
 
       <noscript>

@@ -99,6 +99,15 @@ function ProductDetails({ page, size }: Props) {
     const productVideo = page.product.isVariantOf.additionalProperty.find(
       ({ name }: { name: string }) => name === "Vídeo"
     )?.value;
+
+    const { availability } = useOffer(page.product.offers);
+
+    const encodedProductName = encodeURIComponent(
+      page.product.isVariantOf?.name ?? page.product.name ?? ""
+    );
+    const encodedProductUrl = encodeURIComponent(page.product.url ?? "");
+    const productCategories = page.product.category?.replaceAll(">", "~") ?? "";
+
     return (
       <>
         <Head>
@@ -112,7 +121,9 @@ function ProductDetails({ page, size }: Props) {
             dangerouslySetInnerHTML={{
               __html: `
                 window._trustvox = []; _trustvox.push(['_storeId', '123680']);
-                _trustvox.push(['_productId', ${page.product.inProductGroupWithID}]);
+                _trustvox.push(['_productId', ${
+                  page.product.inProductGroupWithID
+                }]);
                 _trustvox.push(['_productName', "${page.product.name}"]);
                 _trustvox.push(['_productPhotos', ${
                   page.product?.image
@@ -152,6 +163,36 @@ function ProductDetails({ page, size }: Props) {
             <div id="_trustvox_widget"></div>
           </div>
         </div>
+
+        <script
+          type="text/javascript"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window._edrone = window._edrone || {};
+              _edrone.product_skus = '${page.product.sku}';
+              _edrone.product_ids = '${page.product.inProductGroupWithID}';
+              _edrone.product_titles = '${encodedProductName}'; // use url_encode
+              _edrone.product_images = '${
+                page.product?.image ? page.product.image[0].url : ""
+              }'; // use url_encode 
+              _edrone.product_urls = '${encodedProductUrl}'; // use url_encode 
+              _edrone.product_availability = '${availability}';
+              // _edrone.product_category_ids = "12~24~36" // use "~" sign to separate values from each other 
+              _edrone.product_category_names = '${productCategories}' // use "~" sign to separate values from each other and url_encode on single value
+              _edrone.action_type = 'product_view';
+
+              let addToCartButtonList = document.querySelectorAll("[data-deco='add-to-cart']");
+              addToCartButtonList.forEach((button) => {
+                if (button) {
+                  button.addEventListener("click", () => {
+                    _edrone.action_type = "add_to_cart"
+                    _edrone.init()
+                  })
+                }
+              })
+        `,
+          }}
+        />
       </>
     );
   }

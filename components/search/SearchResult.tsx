@@ -68,6 +68,14 @@ function Result({
     ? new URL(search.url.href)
     : new URL("https://meiasola.com.br/wishlist");
   paginationUrl.searchParams.set("page", "pagination-number");
+
+  const edroneCategories = breadcrumb.itemListElement
+    .map(({ name }) => encodeURIComponent(name ?? ""))
+    .join("~");
+  const edroneCategoriesId = breadcrumb.itemListElement
+    .map(({ item }) => item)
+    .join("~");
+
   return (
     <>
       <Head>
@@ -200,6 +208,18 @@ function Result({
               })
             ),
           },
+        }}
+      />
+
+      <script
+        type="text/javascript"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window._edrone = window._edrone || {};
+            _edrone.product_category_ids = "${edroneCategoriesId}" // use "~" sign to separate values from each other 
+            _edrone.product_category_names = "${edroneCategories}" // use "~" sign to separate values from each other and url_encode on single value
+            _edrone.action_type = 'category_view';
+          `,
         }}
       />
 
