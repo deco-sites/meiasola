@@ -2,28 +2,28 @@
   "variant": "two",
   "collections": [
     {
-      "link": "/newin",
+      "link": "/s?q=DOURADO",
       "type": "image",
-      "image": "https://data.decoassets.com/meiasola/912d53aa-9041-45a3-a2f8-6839cf70a66f/9.png",
+      "image": "https://data.decoassets.com/meiasola/52257ea3-b8af-46d6-9e74-b4ad1ee19c3d/8.png",
       "label": "PRESENTES"
     },
     {
       "link": "/bolsas?sort=price%3Aasc&filter.category-1=bolsas&filter.price=299%3A9999",
       "type": "image",
-      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/fe8cbd2b-238a-45be-a962-f00d8d5b69ec/12.png",
+      "image": "https://data.decoassets.com/meiasola/eb5c8e23-64e5-4305-ad17-282399db01e2/9.png",
       "label": "BOLSAS"
     },
     {
       "link": "/sapatos?sort=price%3Aasc&filter.category-1=sapatos&filter.category-2=sandalia&filter.price=199%3A9999",
       "type": "image",
-      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/ebdb9802-d20f-471f-8077-9b7a193afa4f/14.png",
+      "image": "https://data.decoassets.com/meiasola/1370a7e5-5e6e-4a09-86d1-7eb66b47f42e/7.png",
       "label": "SANDALIAS"
     },
     {
-      "link": "/s?q=papete&sort=price%3Aasc&filter.price=179%3A999",
+      "link": "/sapatos?filter.category-1=sapatos&filter.category-2=rasteira",
       "type": "image",
-      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/88efbcf3-4ffc-44a4-baff-52e57f513a9c/13.png",
-      "label": "PAPETES"
+      "image": "https://data.decoassets.com/meiasola/79841a3e-71a5-41a5-9655-9683d8157e81/6.png",
+      "label": "RASTEIRAS"
     }
   ],
   "__resolveType": "site/sections/MeiaSola/Collections.tsx"
