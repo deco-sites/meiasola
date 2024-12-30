@@ -585,6 +585,12 @@
             "section": {
               "__resolveType": "BlogPosts"
             }
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "MyStylePosts"
+            }
           }
         ]
       },
@@ -1168,7 +1174,7 @@
           {
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
             "section": {
-              "__resolveType": "BlogPosts"
+              "__resolveType": "MyStylePosts"
             }
           }
         ]
