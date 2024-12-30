@@ -11,14 +11,6 @@
     {
       "button": {
         "text": "Confira",
-        "link": "/anacapri"
-      },
-      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/8308deae-6d46-4195-8bd4-7bf4c60e2e07/1.png",
-      "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/19670c6f-83bb-4cf2-9d33-e65f52bdceee/FULL-BANNER-NO-APLICATIVO-(5).png"
-    },
-    {
-      "button": {
-        "text": "Confira",
         "link": "/schutz"
       },
       "imageMobile": "https://data.decoassets.com/meiasola/a901c49e-6890-47c4-a9e8-584837ee3ff2/banner-ms-(780x1320)-4.jpg",
