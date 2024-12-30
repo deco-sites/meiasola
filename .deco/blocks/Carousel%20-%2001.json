@@ -3,18 +3,18 @@
     {
       "button": {
         "text": "Confira",
-        "link": "/newin"
+        "link": "/m%7Cs"
       },
-      "imageMobile": "https://data.decoassets.com/meiasola/ac5ac346-d71d-4e39-8199-23080b5aff48/1.png",
-      "imageDesktop": "https://data.decoassets.com/meiasola/642d652a-89c4-44fa-a998-6f28276a0556/banner-ms-(2880x1320)-5.jpg"
+      "imageMobile": "https://data.decoassets.com/meiasola/dec7bee5-b8da-4dba-a6e1-ad227c278236/2.png",
+      "imageDesktop": "https://data.decoassets.com/meiasola/85eb1bab-1d58-4212-8cb5-bf536d1fe255/banner-ms-(2880x1320)-1.jpg"
     },
     {
       "button": {
         "text": "Confira",
-        "link": "/m%7Cs"
+        "link": "/newin"
       },
-      "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/02fc1390-c875-41e1-ba79-b2ac68ee85bf/full-banner-mobile.png",
-      "imageDesktop": "https://data.decoassets.com/meiasola/85eb1bab-1d58-4212-8cb5-bf536d1fe255/banner-ms-(2880x1320)-1.jpg"
+      "imageMobile": "https://data.decoassets.com/meiasola/aa6213d3-6aca-49f1-a041-7ed8ca3b65f9/1.png",
+      "imageDesktop": "https://data.decoassets.com/meiasola/642d652a-89c4-44fa-a998-6f28276a0556/banner-ms-(2880x1320)-5.jpg"
     },
     {
       "button": {
