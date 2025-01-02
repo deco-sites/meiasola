@@ -3,10 +3,26 @@
     {
       "button": {
         "text": "Confira",
-        "link": "/m%7Cs"
+        "link": "/322?map=productClusterIds&O=&sort=release%3Adesc&page"
       },
-      "imageMobile": "https://data.decoassets.com/meiasola/dec7bee5-b8da-4dba-a6e1-ad227c278236/2.png",
-      "imageDesktop": "https://data.decoassets.com/meiasola/85eb1bab-1d58-4212-8cb5-bf536d1fe255/banner-ms-(2880x1320)-1.jpg"
+      "imageMobile": "https://data.decoassets.com/meiasola/e79ab6ea-8b28-446c-ad24-b8d145dff0fd/780x1320px-copiar.jpg",
+      "imageDesktop": "https://data.decoassets.com/meiasola/80ccdcf6-25e8-44dd-9308-c22332ed6383/2880x1320-copiar.jpg"
+    },
+    {
+      "button": {
+        "text": "Confira",
+        "link": "/321?map=productClusterIds&O=&sort=release%3Adesc&page"
+      },
+      "imageMobile": "https://data.decoassets.com/meiasola/3a2a55f4-7a84-4a28-8b76-a96ab86f7347/780x1320px_zz.jpg",
+      "imageDesktop": "https://data.decoassets.com/meiasola/23427071-c18f-40ce-a85e-8a746e6c35aa/2880x1320_ZZ.jpg"
+    },
+    {
+      "button": {
+        "text": "Confira",
+        "link": "/323?map=productClusterIds&O=&sort=release%3Adesc&page"
+      },
+      "imageMobile": "https://data.decoassets.com/meiasola/8f1e86b2-871a-4f36-915d-c550513c20ba/780x1320px_sch.jpg",
+      "imageDesktop": "https://data.decoassets.com/meiasola/e4e4276b-1b04-421b-a487-cf1c492d6c9e/2880x1320_SCH.jpg"
     },
     {
       "button": {
@@ -15,22 +31,6 @@
       },
       "imageMobile": "https://data.decoassets.com/meiasola/aa6213d3-6aca-49f1-a041-7ed8ca3b65f9/1.png",
       "imageDesktop": "https://data.decoassets.com/meiasola/642d652a-89c4-44fa-a998-6f28276a0556/banner-ms-(2880x1320)-5.jpg"
-    },
-    {
-      "button": {
-        "text": "Confira",
-        "link": "/arezzo"
-      },
-      "imageMobile": "https://data.decoassets.com/meiasola/fff36b4b-17d7-42d4-b389-0d855a444219/2.png",
-      "imageDesktop": "https://data.decoassets.com/meiasola/996b2076-7f71-443e-8057-6505c826d992/banner-ms-(2880x1320)-2.jpg"
-    },
-    {
-      "button": {
-        "text": "Confira",
-        "link": "/schutz"
-      },
-      "imageMobile": "https://data.decoassets.com/meiasola/a901c49e-6890-47c4-a9e8-584837ee3ff2/banner-ms-(780x1320)-4.jpg",
-      "imageDesktop": "https://data.decoassets.com/meiasola/9590b257-9094-4946-9070-54a4c4f560b6/banner-ms-(2880x1320)-4.jpg"
     }
   ],
   "images": [
