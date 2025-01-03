@@ -2,27 +2,27 @@
   "variant": "two",
   "collections": [
     {
-      "link": "/s?q=DOURADO",
-      "type": "image",
-      "image": "https://data.decoassets.com/meiasola/52257ea3-b8af-46d6-9e74-b4ad1ee19c3d/8.png",
-      "label": "PRESENTES"
-    },
-    {
       "link": "/bolsas?sort=price%3Aasc&filter.category-1=bolsas&filter.price=299%3A9999",
       "type": "image",
-      "image": "https://data.decoassets.com/meiasola/eb5c8e23-64e5-4305-ad17-282399db01e2/9.png",
+      "image": "https://data.decoassets.com/meiasola/d7967b51-c0d8-44ab-a0b5-52182f42127c/15.png",
       "label": "BOLSAS"
     },
     {
       "link": "/sapatos?sort=price%3Aasc&filter.category-1=sapatos&filter.category-2=sandalia&filter.price=199%3A9999",
       "type": "image",
-      "image": "https://data.decoassets.com/meiasola/1370a7e5-5e6e-4a09-86d1-7eb66b47f42e/7.png",
+      "image": "https://data.decoassets.com/meiasola/71f29e8c-2e51-4d58-a42f-419424e2d684/18.png",
       "label": "SANDALIAS"
+    },
+    {
+      "link": "/newin",
+      "type": "image",
+      "image": "https://data.decoassets.com/meiasola/8aaf3578-8021-42bc-8cfb-e4efc9ea5430/17.png",
+      "label": "new in"
     },
     {
       "link": "/sapatos?filter.category-1=sapatos&filter.category-2=rasteira",
       "type": "image",
-      "image": "https://data.decoassets.com/meiasola/79841a3e-71a5-41a5-9655-9683d8157e81/6.png",
+      "image": "https://data.decoassets.com/meiasola/ff9f289f-59c5-4436-afb2-88c6cfe408da/16.png",
       "label": "RASTEIRAS"
     }
   ],
