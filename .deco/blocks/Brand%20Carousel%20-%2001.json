@@ -9,7 +9,17 @@
         "height": 80
       },
       "label": "Alexandre Birman",
-      "background": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/9155f6a6-8a44-4115-9ce4-0d229d5fda1d/birman.png"
+      "background": "https://data.decoassets.com/meiasola/7486e1ee-c797-4004-a18a-2383bd45e28e/4.png"
+    },
+    {
+      "link": "/isla?map=brand",
+      "logo": {
+        "src": "https://data.decoassets.com/meiasola/253e1830-8aa7-4eb2-8dc8-61d429c94ecc/banners-de-marcas-no-app.png",
+        "width": 300,
+        "height": 80
+      },
+      "label": "Isla",
+      "background": "https://data.decoassets.com/meiasola/f192eb5d-6f7c-4535-be6a-2ab6dd5de1df/9.png"
     },
     {
       "link": "/marcas?filter.brand=anacapri",
@@ -19,7 +29,7 @@
         "height": 21
       },
       "label": "Anacapri",
-      "background": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/8a4428f5-24b1-40e4-8e61-897a18f07362/ac.png"
+      "background": "https://data.decoassets.com/meiasola/b700c2fe-3dfa-4915-a5b2-8e66867cc47b/2.png"
     },
     {
       "link": "/marcas?filter.brand=arezzo",
@@ -29,27 +39,7 @@
         "height": 15
       },
       "label": "AREZZO",
-      "background": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/0b0429dc-6773-43be-b2ec-e185d193d6ff/arezzo.png"
-    },
-    {
-      "link": "/marcas?filter.brand=brizza",
-      "logo": {
-        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/b8a768d3-f500-4a0b-a54b-686aaee90544",
-        "width": 101,
-        "height": 15
-      },
-      "label": "Brizza",
-      "background": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/89649401-5206-428a-b4b0-b1bb36e59d63/brizza.png"
-    },
-    {
-      "link": "/carrano?map=brand",
-      "logo": {
-        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/2a5a4f47-2b2e-4749-a4a8-27f5bb25bcab",
-        "width": 95,
-        "height": 25
-      },
-      "label": "cARRANO",
-      "background": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/02d6fc5e-1e05-459a-af62-e9e718d52f8d/carrano.png"
+      "background": "https://data.decoassets.com/meiasola/d38e159e-a83a-4c1f-bf47-aa840da778f7/1.png"
     },
     {
       "link": "/m%7Cs",
@@ -59,7 +49,7 @@
         "height": 47
       },
       "label": "meia sola",
-      "background": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/987150ae-bcf1-4214-9083-90cc0a087382/ms.png"
+      "background": "https://data.decoassets.com/meiasola/5bbe6b97-634d-437e-9d4c-91395dd936c9/6.png"
     },
     {
       "link": "/marcas?filter.brand=schutz",
@@ -69,7 +59,7 @@
         "height": 19
       },
       "label": "SCHUTZ",
-      "background": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/52efb077-e995-4907-b41a-652a43e9f953/shutz.png"
+      "background": "https://data.decoassets.com/meiasola/47993cff-6750-4b58-b64a-d4fe26f31324/3.png"
     },
     {
       "link": "/marcas?filter.brand=vicenza",
@@ -79,7 +69,27 @@
         "height": 25
       },
       "label": "Vicenza",
-      "background": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/a9ee1286-ab67-43ed-98c0-b6a4fcb04b97/vicenza.png"
+      "background": "https://data.decoassets.com/meiasola/9c75272d-b1e7-4280-a41b-9de851e1d5ef/5.png"
+    },
+    {
+      "link": "/marcas?filter.brand=brizza",
+      "logo": {
+        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/b8a768d3-f500-4a0b-a54b-686aaee90544",
+        "width": 101,
+        "height": 15
+      },
+      "label": "Brizza",
+      "background": "https://data.decoassets.com/meiasola/64558606-6107-4ea1-bf65-d1d3e499e72e/7.png"
+    },
+    {
+      "logo": {
+        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/2a5a4f47-2b2e-4749-a4a8-27f5bb25bcab",
+        "width": 95,
+        "height": 25
+      },
+      "link": "/carrano?map=brand",
+      "label": "cARRANO",
+      "background": "https://data.decoassets.com/meiasola/42976993-3d79-4961-ab9c-552c362c5763/8.png"
     }
   ],
   "__resolveType": "site/sections/MeiaSola/BrandCarousel.tsx"
