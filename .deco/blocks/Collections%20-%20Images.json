@@ -4,8 +4,7 @@
     {
       "link": "/bolsas?sort=price%3Aasc&filter.category-1=bolsas&filter.price=299%3A9999",
       "type": "image",
-      "image": "https://data.decoassets.com/meiasola/d7967b51-c0d8-44ab-a0b5-52182f42127c/15.png",
-      "label": "BOLSAS"
+      "image": "https://data.decoassets.com/meiasola/d7967b51-c0d8-44ab-a0b5-52182f42127c/15.png"
     },
     {
       "link": "/sapatos?sort=price%3Aasc&filter.category-1=sapatos&filter.category-2=sandalia&filter.price=199%3A9999",
