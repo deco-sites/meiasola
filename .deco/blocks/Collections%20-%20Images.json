@@ -4,25 +4,22 @@
     {
       "link": "/bolsas?sort=price%3Aasc&filter.category-1=bolsas&filter.price=299%3A9999",
       "type": "image",
-      "image": "https://data.decoassets.com/meiasola/d7967b51-c0d8-44ab-a0b5-52182f42127c/15.png"
+      "image": "https://data.decoassets.com/meiasola/59b3a604-b0db-46d3-adf9-6c09a9a1ca82/1.png"
     },
     {
-      "link": "/sapatos?sort=price%3Aasc&filter.category-1=sapatos&filter.category-2=sandalia&filter.price=199%3A9999",
+      "link": "/sapatos?filter.category-1=sapatos&filter.category-2=sandalia",
       "type": "image",
-      "image": "https://data.decoassets.com/meiasola/71f29e8c-2e51-4d58-a42f-419424e2d684/18.png",
-      "label": "SANDALIAS"
+      "image": "https://data.decoassets.com/meiasola/d7afdde7-7346-468f-a590-23901cabf9e4/3.png"
     },
     {
-      "link": "/newin",
+      "link": "/sapatos?filter.category-1=sapatos&filter.category-2=sapatilha",
       "type": "image",
-      "image": "https://data.decoassets.com/meiasola/8aaf3578-8021-42bc-8cfb-e4efc9ea5430/17.png",
-      "label": "new in"
+      "image": "https://data.decoassets.com/meiasola/8b3615ab-6b50-4fa7-9d3d-23a58f6cecd8/4.png"
     },
     {
-      "link": "/sapatos?filter.category-1=sapatos&filter.category-2=rasteira",
+      "link": "/s?q=papete",
       "type": "image",
-      "image": "https://data.decoassets.com/meiasola/ff9f289f-59c5-4436-afb2-88c6cfe408da/16.png",
-      "label": "RASTEIRAS"
+      "image": "https://data.decoassets.com/meiasola/033900b6-57aa-4224-a453-0e3463eaec91/5.png"
     }
   ],
   "__resolveType": "site/sections/MeiaSola/Collections.tsx"
