@@ -39,9 +39,9 @@
       "images": [
         {
           "alt": "Imagem de Sapatos",
-          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/ca0c12b0-294d-4a14-8f30-9776df35cfca/2pontosdesk.png",
+          "src": "https://data.decoassets.com/meiasola/0c4d589c-0b7b-44ad-aa41-2813c45cab66/10pontosdesk.png",
           "route": "/livelo",
-          "srcMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/e8a56ebd-9a9e-4359-adc9-aa9cba81d0c3/2pontosmob.png"
+          "srcMobile": "https://data.decoassets.com/meiasola/fbadc4a8-05f2-46bf-bbe6-c1aeab684bb2/10pontosmob.png"
         },
         {
           "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/4c8430d8-dbf9-4971-8a33-1592d3eaafa3/10pontosdesk.png",
