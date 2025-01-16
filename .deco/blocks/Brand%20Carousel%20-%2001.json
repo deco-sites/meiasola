@@ -2,6 +2,46 @@
   "title": "MARCAS FAVORITAS",
   "brands": [
     {
+      "link": "/m%7Cs",
+      "logo": {
+        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/4c4d37c0-eea6-4f5d-a299-039da2a1a0ea",
+        "width": 92,
+        "height": 47
+      },
+      "label": "meia sola",
+      "background": "https://data.decoassets.com/meiasola/5bbe6b97-634d-437e-9d4c-91395dd936c9/6.png"
+    },
+    {
+      "link": "/marcas?filter.brand=arezzo",
+      "logo": {
+        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/b7c85dab-0d99-43f7-8a5c-57008af9d675",
+        "width": 82,
+        "height": 15
+      },
+      "label": "AREZZO",
+      "background": "https://data.decoassets.com/meiasola/d38e159e-a83a-4c1f-bf47-aa840da778f7/1.png"
+    },
+    {
+      "link": "/marcas?filter.brand=schutz",
+      "logo": {
+        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/22d5701d-bc0b-4578-b77f-96594c526882",
+        "width": 80,
+        "height": 19
+      },
+      "label": "SCHUTZ",
+      "background": "https://data.decoassets.com/meiasola/47993cff-6750-4b58-b64a-d4fe26f31324/3.png"
+    },
+    {
+      "link": "/marcas?filter.brand=vicenza",
+      "logo": {
+        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/588570ed-417e-44fa-a1ff-c2373eec7fe6",
+        "width": 95,
+        "height": 25
+      },
+      "label": "Vicenza",
+      "background": "https://data.decoassets.com/meiasola/9c75272d-b1e7-4280-a41b-9de851e1d5ef/5.png"
+    },
+    {
       "link": "/marcas?filter.brand=alexandre-birman",
       "logo": {
         "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/3a46defa-599b-4fee-b0d9-756647bdb50b",
@@ -30,46 +70,6 @@
       },
       "label": "Anacapri",
       "background": "https://data.decoassets.com/meiasola/b700c2fe-3dfa-4915-a5b2-8e66867cc47b/2.png"
-    },
-    {
-      "link": "/marcas?filter.brand=arezzo",
-      "logo": {
-        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/b7c85dab-0d99-43f7-8a5c-57008af9d675",
-        "width": 82,
-        "height": 15
-      },
-      "label": "AREZZO",
-      "background": "https://data.decoassets.com/meiasola/d38e159e-a83a-4c1f-bf47-aa840da778f7/1.png"
-    },
-    {
-      "link": "/m%7Cs",
-      "logo": {
-        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/4c4d37c0-eea6-4f5d-a299-039da2a1a0ea",
-        "width": 92,
-        "height": 47
-      },
-      "label": "meia sola",
-      "background": "https://data.decoassets.com/meiasola/5bbe6b97-634d-437e-9d4c-91395dd936c9/6.png"
-    },
-    {
-      "link": "/marcas?filter.brand=schutz",
-      "logo": {
-        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/22d5701d-bc0b-4578-b77f-96594c526882",
-        "width": 80,
-        "height": 19
-      },
-      "label": "SCHUTZ",
-      "background": "https://data.decoassets.com/meiasola/47993cff-6750-4b58-b64a-d4fe26f31324/3.png"
-    },
-    {
-      "link": "/marcas?filter.brand=vicenza",
-      "logo": {
-        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/588570ed-417e-44fa-a1ff-c2373eec7fe6",
-        "width": 95,
-        "height": 25
-      },
-      "label": "Vicenza",
-      "background": "https://data.decoassets.com/meiasola/9c75272d-b1e7-4280-a41b-9de851e1d5ef/5.png"
     },
     {
       "link": "/marcas?filter.brand=brizza",
