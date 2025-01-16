@@ -2,24 +2,24 @@
   "variant": "two",
   "collections": [
     {
+      "link": "/newin",
+      "type": "image",
+      "image": "https://data.decoassets.com/meiasola/6df9dde4-7490-438d-80f0-1e0a9b5340a6/8.png"
+    },
+    {
       "link": "/bolsas?sort=price%3Aasc&filter.category-1=bolsas&filter.price=299%3A9999",
       "type": "image",
-      "image": "https://data.decoassets.com/meiasola/59b3a604-b0db-46d3-adf9-6c09a9a1ca82/1.png"
+      "image": "https://data.decoassets.com/meiasola/ae408117-1169-4440-9057-249ae2f652fb/6.png"
     },
     {
       "link": "/sapatos?filter.category-1=sapatos&filter.category-2=sandalia",
       "type": "image",
-      "image": "https://data.decoassets.com/meiasola/d7afdde7-7346-468f-a590-23901cabf9e4/3.png"
+      "image": "https://data.decoassets.com/meiasola/4247b37a-2355-4750-84a6-c8972004049e/7.png"
     },
     {
-      "link": "/sapatos?filter.category-1=sapatos&filter.category-2=sapatilha",
+      "link": "/bolsas",
       "type": "image",
-      "image": "https://data.decoassets.com/meiasola/8b3615ab-6b50-4fa7-9d3d-23a58f6cecd8/4.png"
-    },
-    {
-      "link": "/s?q=papete",
-      "type": "image",
-      "image": "https://data.decoassets.com/meiasola/033900b6-57aa-4224-a453-0e3463eaec91/5.png"
+      "image": "https://data.decoassets.com/meiasola/de02f4e9-5165-47b0-aa9e-8e6e3c6a5c07/9.png"
     }
   ],
   "__resolveType": "site/sections/MeiaSola/Collections.tsx"
