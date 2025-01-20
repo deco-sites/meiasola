@@ -32,9 +32,6 @@
       "imageDesktop": "https://data.decoassets.com/meiasola/e4e4276b-1b04-421b-a487-cf1c492d6c9e/2880x1320_SCH.jpg"
     },
     {
-      "button": {}
-    },
-    {
       "button": {
         "text": "Confira",
         "link": "/newin"
