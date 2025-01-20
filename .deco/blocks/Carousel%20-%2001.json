@@ -7,8 +7,8 @@
     },
     {
       "button": {
-        "link": "/m%7Cs",
-        "text": "CONFIRA"
+        "text": "CONFIRA",
+        "link": "/m%7Cs"
       },
       "imageMobile": "https://data.decoassets.com/meiasola/eba6f97c-ca7b-4f75-a27e-926c770777d0/CONHECA-A-NOVA-COLECAO.png",
       "imageDesktop": "https://data.decoassets.com/meiasola/70903ce5-1494-41bd-8873-a6e614e6b17b/FULL-BANNER-NO-APLICATIVO.png"
