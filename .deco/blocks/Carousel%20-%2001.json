@@ -1,7 +1,10 @@
 {
   "items": [
     {
-      "button": {},
+      "button": {
+        "text": "Confira",
+        "link": "/325?map=productClusterIds&O=&sort=release%3Adesc&page"
+      },
       "imageMobile": "https://data.decoassets.com/meiasola/b2b4ef7d-1d66-4ffd-88e5-d22557a0e7de/780x1320px_SCH2.jpg",
       "imageDesktop": "https://data.decoassets.com/meiasola/3266e70a-9855-4acb-bd51-fcd7d3f91023/2880x1320_SCH2-(1).jpg"
     },
