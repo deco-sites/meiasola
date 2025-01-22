@@ -2,7 +2,6 @@ import Slider from "$store/components/ui/Slider.tsx";
 import SliderJS from "$store/islands/SliderJS.tsx";
 import { useId } from "$store/sdk/useId.ts";
 import type {
-  ImageWidget,
   VideoWidget,
 } from "apps/admin/widgets.ts";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
@@ -164,8 +163,14 @@ function Item(props: Video | Image) {
 
 // IMAGE
 interface Image extends ItemProps {
-  imageDesktop: ImageWidget;
-  imageMobile: ImageWidget;
+  /**
+   * @format image-uri
+   */
+  imageDesktop: string;
+  /**
+   * @format image-uri
+   */
+  imageMobile: string;
 }
 
 export function instanceOfImage(object: ItemProps): object is Image {
