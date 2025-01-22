@@ -11,6 +11,14 @@
     {
       "button": {
         "text": "Confira",
+        "link": "/m%7Cs"
+      },
+      "imageDesktop": "https://data.decoassets.com/meiasola/70903ce5-1494-41bd-8873-a6e614e6b17b/FULL-BANNER-NO-APLICATIVO.png",
+      "imageMobile": "https://data.decoassets.com/meiasola/eba6f97c-ca7b-4f75-a27e-926c770777d0/CONHECA-A-NOVA-COLECAO.png"
+    },
+    {
+      "button": {
+        "text": "Confira",
         "link": "/newin"
       },
       "imageDesktop": "https://data.decoassets.com/meiasola/642d652a-89c4-44fa-a998-6f28276a0556/banner-ms-(2880x1320)-5.jpg",
@@ -25,11 +33,11 @@
       "imageMobile": "https://data.decoassets.com/meiasola/3a2a55f4-7a84-4a28-8b76-a96ab86f7347/780x1320px_zz.jpg"
     },
     {
+      "imageDesktop": "https://data.decoassets.com/meiasola/4304a445-1c46-40d3-a316-3b807670fff5/2880x1320_SCH-copiar-(2).jpg",
+      "imageMobile": "https://data.decoassets.com/meiasola/15d5e483-f36e-4ab4-a4ab-6dc2e71307d1/780x1320px-copiar-(1).jpg",
       "button": {
         "text": "Confira"
-      },
-      "imageDesktop": "https://data.decoassets.com/meiasola/4304a445-1c46-40d3-a316-3b807670fff5/2880x1320_SCH-copiar-(2).jpg",
-      "imageMobile": "https://data.decoassets.com/meiasola/15d5e483-f36e-4ab4-a4ab-6dc2e71307d1/780x1320px-copiar-(1).jpg"
+      }
     },
     {
       "imageDesktop": "https://data.decoassets.com/meiasola/65fe3e39-cef4-4d6a-96ff-40ed719f2ee2/2880x1320_AC.jpg",
