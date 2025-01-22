@@ -1,1 +1,45 @@
-{"benefits":[{"id":"benefit1","text":"Nas compras acima de R$ 699","image":{"alt":"Ícone de carrinho","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/53c7c86f-7f2c-422c-a3d8-2f709dfb2872"},"title":"Frete Grátis Brasil","desktopText":"Nas compras <br> acima de R$ 699"},{"id":"benefit1","text":"Nas compras <br> acima de R$299","image":{"alt":"Ícone de carrinho","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/53c7c86f-7f2c-422c-a3d8-2f709dfb2872"},"title":"Frete Grátis Capitais","desktopText":"Nas compras <br> acima de R$299"},{"id":"benefit2","text":"Dentro do prazo de 30 dias","image":{"alt":"Ícone primeira troca grátis","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/3fd6e1a1-3465-4118-9866-73e3108ebcd6"},"title":"1º Troca Grátis","desktopText":"Dentro do prazo <br> de 30 dias"},{"id":"benefit3","text":"5% off pagando via pix  *exceto remarcados","image":{"alt":"Ícone 10% off","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/1961db0d-f49c-43b9-88d1-fd7a5412cb5d"},"title":"Desconto via pix ","desktopText":"5% off pagando via pix <br> *exceto remarcados"}],"__resolveType":"site/sections/Content/CustomBenefitsBar.tsx"}
+{
+  "benefits": [
+    {
+      "id": "benefit1",
+      "text": "Nas compras acima de R$ 699",
+      "image": {
+        "alt": "Ícone de carrinho",
+        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/53c7c86f-7f2c-422c-a3d8-2f709dfb2872"
+      },
+      "title": "Frete Grátis Brasil",
+      "desktopText": "Nas compras <br> acima de R$ 699"
+    },
+    {
+      "id": "benefit1",
+      "text": "Nas compras <br> acima de R$399",
+      "image": {
+        "alt": "Ícone de carrinho",
+        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/53c7c86f-7f2c-422c-a3d8-2f709dfb2872"
+      },
+      "title": "Frete Grátis Capitais",
+      "desktopText": "Nas compras <br> acima de R$399"
+    },
+    {
+      "id": "benefit2",
+      "text": "Dentro do prazo de 30 dias",
+      "image": {
+        "alt": "Ícone primeira troca grátis",
+        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/3fd6e1a1-3465-4118-9866-73e3108ebcd6"
+      },
+      "title": "1º Troca Grátis",
+      "desktopText": "Dentro do prazo <br> de 30 dias"
+    },
+    {
+      "id": "benefit3",
+      "text": "5% off pagando via pix  *exceto remarcados",
+      "image": {
+        "alt": "Ícone 10% off",
+        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/1961db0d-f49c-43b9-88d1-fd7a5412cb5d"
+      },
+      "title": "Desconto via pix ",
+      "desktopText": "5% off pagando via pix <br> *exceto remarcados"
+    }
+  ],
+  "__resolveType": "site/sections/Content/CustomBenefitsBar.tsx"
+}
