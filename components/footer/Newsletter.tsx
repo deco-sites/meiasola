@@ -42,8 +42,6 @@ function Newsletter({ title, description, form }: Props) {
   const handleDateChange: JSX.GenericEventHandler<HTMLInputElement> = (e) => {
     let value = e.currentTarget.value;
 
-    console.log(value, "k1");
-
     value = value.replace(/\D/g, "");
 
     if (value.length > 8) value = value.slice(0, 8);
@@ -55,7 +53,6 @@ function Newsletter({ title, description, form }: Props) {
       value = value.replace(/^(\d{2})(\d{0,2})$/, "$1/$2");
     }
 
-    console.log(value, "iish");
     date.value = value;
     e.currentTarget.value = value;
   };
