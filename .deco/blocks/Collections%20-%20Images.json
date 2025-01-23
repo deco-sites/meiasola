@@ -2,27 +2,27 @@
   "variant": "two",
   "collections": [
     {
-      "link": "/bolsas",
-      "type": "image",
-      "image": "https://data.decoassets.com/meiasola/88a7a731-48ce-4471-bcb1-80608773b254/9.png",
-      "label": "FRETE GRÁTIS"
-    },
-    {
       "link": "/bolsas?sort=price%3Aasc&filter.category-1=bolsas&filter.price=299%3A9999",
       "type": "image",
-      "image": "https://data.decoassets.com/meiasola/7fa581e7-39ed-4f08-993c-e40e4cb3e1e5/6.png",
+      "image": "https://data.decoassets.com/meiasola/d9abfa64-1095-49d9-aab4-2890b9ecf61e/carrossel-deskmob-(1).png",
       "label": "DESCONTO NA PRIMEIRA "
+    },
+    {
+      "link": "/bolsas",
+      "type": "image",
+      "image": "https://data.decoassets.com/meiasola/25888a2f-0d0d-4564-a563-8dda73bbf68a/10.png",
+      "label": "FRETE GRÁTIS"
     },
     {
       "link": "/newin",
       "type": "image",
-      "image": "https://data.decoassets.com/meiasola/80e59cf0-c696-44c8-8e36-e2b29fc4364b/8.png",
+      "image": "https://data.decoassets.com/meiasola/dd436174-06ff-4bce-bf0f-5a9387fbbc4c/11.png",
       "label": "CASHBACK"
     },
     {
       "link": "/sapatos?filter.category-1=sapatos&filter.category-2=sandalia",
       "type": "image",
-      "image": "https://data.decoassets.com/meiasola/3cc3cd56-dc7c-4e08-9935-a0d1584a3658/7.png",
+      "image": "https://data.decoassets.com/meiasola/5dda82bf-9252-477f-bc14-b5bfdac14c0a/9.png",
       "label": "DESCONTO NO PIX"
     }
   ],
