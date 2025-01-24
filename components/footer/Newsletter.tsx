@@ -131,7 +131,7 @@ function Newsletter({ title, description, form }: Props) {
               maxLength={10}
               inputMode="numeric"
               class="h-8 w-full px-2.5 bg-white placeholder:grey-2 placeholder:text-body autofill:bg-white"
-              placeholder={form.date_placeholder || "Data de Nascimento"}
+              placeholder={form.date_placeholder || "Seu Aniversário"}
             />
             <Button
               type="submit"
@@ -180,7 +180,7 @@ function Newsletter({ title, description, form }: Props) {
               maxLength={10}
               inputMode="numeric"
               class="h-8 w-full px-2.5 bg-white placeholder:text-grey-2 placeholder:text-body autofill:bg-white"
-              placeholder={form.date_placeholder || "Data de Nascimento"}
+              placeholder={form.date_placeholder || "Seu Aniversário"}
             />
             <Button
               type="submit"
