@@ -1,6 +1,11 @@
 {
   "items": [
     {
+      "button": {},
+      "imageDesktop": "https://data.decoassets.com/meiasola/e9969423-9fc4-48f2-8e18-73214cdf492f/Banner-brindes-(2880-x-1230-px)-(3).gif",
+      "imageMobile": "https://data.decoassets.com/meiasola/03e2300c-f52c-4bfd-8a40-76b342b1fd67/HOT-SUMMER-(780-x-1320-px)-(1).gif"
+    },
+    {
       "button": {
         "text": "Confira",
         "link": "/schutz?map=brand"
@@ -25,12 +30,12 @@
       "imageMobile": "https://data.decoassets.com/meiasola/aa6213d3-6aca-49f1-a041-7ed8ca3b65f9/1.png"
     },
     {
+      "imageDesktop": "https://data.decoassets.com/meiasola/23427071-c18f-40ce-a85e-8a746e6c35aa/2880x1320_ZZ.jpg",
+      "imageMobile": "https://data.decoassets.com/meiasola/3a2a55f4-7a84-4a28-8b76-a96ab86f7347/780x1320px_zz.jpg",
       "button": {
         "text": "Confira",
         "link": "/321?map=productClusterIds&O=&sort=release%3Adesc&page"
-      },
-      "imageDesktop": "https://data.decoassets.com/meiasola/23427071-c18f-40ce-a85e-8a746e6c35aa/2880x1320_ZZ.jpg",
-      "imageMobile": "https://data.decoassets.com/meiasola/3a2a55f4-7a84-4a28-8b76-a96ab86f7347/780x1320px_zz.jpg"
+      }
     },
     {
       "imageDesktop": "https://data.decoassets.com/meiasola/4304a445-1c46-40d3-a316-3b807670fff5/2880x1320_SCH-copiar-(2).jpg",
@@ -40,16 +45,11 @@
       }
     },
     {
-      "imageDesktop": "https://data.decoassets.com/meiasola/65fe3e39-cef4-4d6a-96ff-40ed719f2ee2/2880x1320_AC.jpg",
-      "imageMobile": "https://data.decoassets.com/meiasola/56979ff8-16ce-4922-8e20-024a02ff9911/780x1320px_ac.jpg",
       "button": {
         "text": "Confira"
-      }
-    },
-    {
-      "button": {},
-      "imageDesktop": "https://data.decoassets.com/meiasola/a20cca09-a094-4144-93a1-23fb460eced8/Banner-brindes-(2880-x-1230-px)-(1)-(1).gif",
-      "imageMobile": "https://data.decoassets.com/meiasola/03e2300c-f52c-4bfd-8a40-76b342b1fd67/HOT-SUMMER-(780-x-1320-px)-(1).gif"
+      },
+      "imageDesktop": "https://data.decoassets.com/meiasola/65fe3e39-cef4-4d6a-96ff-40ed719f2ee2/2880x1320_AC.jpg",
+      "imageMobile": "https://data.decoassets.com/meiasola/56979ff8-16ce-4922-8e20-024a02ff9911/780x1320px_ac.jpg"
     }
   ],
   "images": [
