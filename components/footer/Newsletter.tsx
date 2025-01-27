@@ -14,6 +14,14 @@ export interface Form {
    * @title Placeholder of Email Input
    */
   email_placeholder?: string;
+  /**
+   * @title Placeholder of Birth Date Input
+   */
+  date_placeholder?: string;
+  /**
+   * @title Form Submit Success Message
+   */
+  success_message?: string;
   buttonText?: string;
 }
 
@@ -27,9 +35,29 @@ export interface Props {
 function Newsletter({ title, description, form }: Props) {
   const loading = useSignal(false);
   const errorMessage = useSignal("");
-  const { validName, validEmail } = useForm();
+  const successMessage = useSignal("");
+  const date = useSignal("");
+  const { validName, validEmail, validBirthDate } = useForm();
 
-  const handleSubmit: JSX.GenericEventHandler<HTMLFormElement> = async (e) => {
+  const handleDateChange: JSX.GenericEventHandler<HTMLInputElement> = (e) => {
+    let value = e.currentTarget.value;
+
+    value = value.replace(/\D/g, "");
+
+    if (value.length > 8) value = value.slice(0, 8);
+
+    // Adiciona as barras (/) para o formato DD/MM/AAAA
+    if (value.length >= 5) {
+      value = value.replace(/^(\d{2})(\d{2})(\d{0,4})$/, "$1/$2/$3");
+    } else if (value.length >= 3) {
+      value = value.replace(/^(\d{2})(\d{0,2})$/, "$1/$2");
+    }
+
+    date.value = value;
+    e.currentTarget.value = value;
+  };
+
+  const handleSubmit: JSX.SubmitEventHandler<HTMLFormElement> = async (e) => {
     e.preventDefault();
 
     try {
@@ -52,12 +80,23 @@ function Newsletter({ title, description, form }: Props) {
         return;
       }
 
-      await invoke.vtex.actions.newsletter.subscribe({
-        name,
-        email,
+      if (!validBirthDate(date.value)) {
+        errorMessage.value = "Use uma data válida";
+        return;
+      }
+
+      await invoke.vtex.actions.masterdata.createDocument({
+        acronym: "CN",
+        data: {
+          m3ClientEmail: email,
+          m3ClientName: name,
+          clientBirthDate: date.value,
+        },
       });
 
       errorMessage.value = "";
+      successMessage.value =
+        form.success_message || "E-mail cadastrado com sucesso!";
     } catch (e) {
       errorMessage.value = "Houve um erro inesperado";
     } finally {
@@ -85,6 +124,15 @@ function Newsletter({ title, description, form }: Props) {
               class="h-8 w-full px-2.5 bg-white placeholder:grey-2 placeholder:text-body autofill:bg-white"
               placeholder={form.email_placeholder || "E-mail"}
             />
+            <input
+              name="date"
+              onChange={handleDateChange}
+              value={date.value}
+              maxLength={10}
+              inputMode="numeric"
+              class="h-8 w-full px-2.5 bg-white placeholder:grey-2 placeholder:text-body autofill:bg-white"
+              placeholder={form.date_placeholder || "Seu Aniversário"}
+            />
             <Button
               type="submit"
               class="bg-black hover:bg-black text-white w-full !h-10 font-normal flex items-center justify-center text-body"
@@ -93,6 +141,7 @@ function Newsletter({ title, description, form }: Props) {
             >
               {form.buttonText || "CADASTRE-SE"}
             </Button>
+            <p class="text-small">{successMessage.value}</p>
             <p class="text-small text-red">{errorMessage.value}</p>
           </form>
         </div>
@@ -123,6 +172,16 @@ function Newsletter({ title, description, form }: Props) {
               class="h-8 w-full px-2.5 bg-white placeholder:text-grey-2 placeholder:text-body autofill:bg-white"
               placeholder={form.email_placeholder || "E-mail"}
             />
+            <input
+              type="text"
+              name="date"
+              value={date.value}
+              onChange={handleDateChange}
+              maxLength={10}
+              inputMode="numeric"
+              class="h-8 w-full px-2.5 bg-white placeholder:text-grey-2 placeholder:text-body autofill:bg-white"
+              placeholder={form.date_placeholder || "Seu Aniversário"}
+            />
             <Button
               type="submit"
               class="bg-black hover:bg-black text-white w-full !h-10 font-normal flex items-center justify-center text-body"
@@ -131,6 +190,7 @@ function Newsletter({ title, description, form }: Props) {
             >
               {form.buttonText || "CADASTRE-SE"}
             </Button>
+            <p class="text-small">{successMessage.value}</p>
             <p class="text-small text-red">{errorMessage.value}</p>
           </form>
           <div class="col-span-1 hidden desktop:flex"></div>

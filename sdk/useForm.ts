@@ -10,6 +10,37 @@ function validEmail(text: string) {
   );
 }
 
+function validBirthDate(date: string): boolean {
+  // Verifica se a data tem o formato DD/MM/AAAA
+  if (date.length !== 10 || date[2] !== "/" || date[5] !== "/") {
+    return false;
+  }
+
+  // Extrai dia, mês e ano da string
+  const day = parseInt(date.slice(0, 2), 10);
+  const month = parseInt(date.slice(3, 5), 10);
+  const year = parseInt(date.slice(6, 10), 10);
+
+  // Verifica se o ano está dentro de uma faixa razoável
+  const currentYear = new Date().getFullYear();
+  if (year < 1900 || year > currentYear) {
+    return false;
+  }
+
+  // Verifica se o mês é válido
+  if (month < 1 || month > 12) {
+    return false;
+  }
+
+  // Verifica se o dia é válido para o mês e ano
+  const daysInMonth = new Date(year, month, 0).getDate();
+  if (day < 1 || day > daysInMonth) {
+    return false;
+  }
+
+  return true;
+}
+
 function validPhone(text: string) {
   let telefone = text.replace(/\D/g, "");
 
@@ -50,6 +81,7 @@ const state = {
   validName,
   validEmail,
   validPhone,
+  validBirthDate,
 };
 
 export const useForm = () => state;
