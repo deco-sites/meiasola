@@ -11,10 +11,26 @@
     {
       "button": {
         "text": "Confira",
+        "link": "/newin"
+      },
+      "imageMobile": "https://data.decoassets.com/meiasola/54279377-4a6e-4889-9181-f09aeb82da30/APP_24-JAN-780x1320px.jpg",
+      "imageDesktop": "https://data.decoassets.com/meiasola/2c22418e-c0ac-4089-97e5-be8fba7957dd/APP_24-JAN-2880x1320.jpg"
+    },
+    {
+      "button": {
+        "text": "Confira",
+        "link": "/newin"
+      },
+      "imageMobile": "https://data.decoassets.com/meiasola/54279377-4a6e-4889-9181-f09aeb82da30/APP_24-JAN-780x1320px.jpg",
+      "imageDesktop": "https://data.decoassets.com/meiasola/48d2a969-b1e1-4511-8259-f88f88c3046a/AC_24-JAN-2880x1320-2-copiar.jpg"
+    },
+    {
+      "button": {
+        "text": "Confira",
         "link": "/arezzo?map=brand"
       },
-      "imageMobile": "https://data.decoassets.com/meiasola/eba6f97c-ca7b-4f75-a27e-926c770777d0/CONHECA-A-NOVA-COLECAO.png",
-      "imageDesktop": "https://data.decoassets.com/meiasola/70903ce5-1494-41bd-8873-a6e614e6b17b/FULL-BANNER-NO-APLICATIVO.png"
+      "imageDesktop": "https://data.decoassets.com/meiasola/70903ce5-1494-41bd-8873-a6e614e6b17b/FULL-BANNER-NO-APLICATIVO.png",
+      "imageMobile": "https://data.decoassets.com/meiasola/eba6f97c-ca7b-4f75-a27e-926c770777d0/CONHECA-A-NOVA-COLECAO.png"
     },
     {
       "button": {
@@ -32,20 +48,20 @@
       "alt": "/324?map=productClusterIds&O=&sort=release%3Adesc&page"
     },
     {
+      "imageDesktop": "https://data.decoassets.com/meiasola/4304a445-1c46-40d3-a316-3b807670fff5/2880x1320_SCH-copiar-(2).jpg",
+      "imageMobile": "https://data.decoassets.com/meiasola/7b041b9d-a317-4736-b9e3-518557a3a072/780x1320px-copiar-(1).jpg",
       "button": {
         "text": "Confira",
         "link": "/323?map=productClusterIds&O=&sort=release%3Adesc&page"
-      },
-      "imageMobile": "https://data.decoassets.com/meiasola/7b041b9d-a317-4736-b9e3-518557a3a072/780x1320px-copiar-(1).jpg",
-      "imageDesktop": "https://data.decoassets.com/meiasola/4304a445-1c46-40d3-a316-3b807670fff5/2880x1320_SCH-copiar-(2).jpg"
+      }
     },
     {
+      "imageDesktop": "https://data.decoassets.com/meiasola/23427071-c18f-40ce-a85e-8a746e6c35aa/2880x1320_ZZ.jpg",
+      "imageMobile": "https://data.decoassets.com/meiasola/3a2a55f4-7a84-4a28-8b76-a96ab86f7347/780x1320px_zz.jpg",
       "button": {
         "text": "Confira",
         "link": "/321?map=productClusterIds&O=&sort=release%3Adesc&page"
-      },
-      "imageDesktop": "https://data.decoassets.com/meiasola/23427071-c18f-40ce-a85e-8a746e6c35aa/2880x1320_ZZ.jpg",
-      "imageMobile": "https://data.decoassets.com/meiasola/3a2a55f4-7a84-4a28-8b76-a96ab86f7347/780x1320px_zz.jpg"
+      }
     },
     {
       "imageDesktop": "https://data.decoassets.com/meiasola/642d652a-89c4-44fa-a998-6f28276a0556/banner-ms-(2880x1320)-5.jpg",
