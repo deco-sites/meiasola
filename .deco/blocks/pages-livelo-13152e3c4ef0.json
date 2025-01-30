@@ -44,8 +44,8 @@
           "srcMobile": "https://data.decoassets.com/meiasola/229daba9-0605-4fef-902a-20094bc49252/5pontosmob.png"
         },
         {
-          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/4c8430d8-dbf9-4971-8a33-1592d3eaafa3/10pontosdesk.png",
-          "srcMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/6c2b65ec-9457-4029-bc93-c0c506d75411/10pontosmob-(2).png"
+          "src": "https://data.decoassets.com/meiasola/7acc0ac4-f932-4a47-9fb4-d49f15c4de0c/2pontosdesk.png",
+          "srcMobile": "https://data.decoassets.com/meiasola/4be2cc35-d80a-4e41-9cf2-06cdaece42e6/2pontosmob.png"
         }
       ],
       "__resolveType": "site/sections/Product/SearchResult.tsx"
