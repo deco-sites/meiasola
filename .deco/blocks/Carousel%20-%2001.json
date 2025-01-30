@@ -41,7 +41,8 @@
     },
     {
       "button": {
-        "text": "Confira"
+        "text": "Confira",
+        "link": "/323?map=productClusterIds&O=&sort=release%3Adesc&page="
       },
       "imageMobile": "https://data.decoassets.com/meiasola/8f1e86b2-871a-4f36-915d-c550513c20ba/780x1320px_sch.jpg",
       "imageDesktop": "https://data.decoassets.com/meiasola/e4e4276b-1b04-421b-a487-cf1c492d6c9e/2880x1320_SCH.jpg"
