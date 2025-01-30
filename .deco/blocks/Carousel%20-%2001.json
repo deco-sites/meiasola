@@ -65,8 +65,8 @@
       }
     },
     {
-      "imageDesktop": "https://data.decoassets.com/meiasola/80ccdcf6-25e8-44dd-9308-c22332ed6383/2880x1320-copiar.jpg",
-      "imageMobile": "https://data.decoassets.com/meiasola/e79ab6ea-8b28-446c-ad24-b8d145dff0fd/780x1320px-copiar.jpg",
+      "imageDesktop": "https://data.decoassets.com/meiasola/4872e168-6f1d-4a0c-a7e0-ba9429370819/2880x1320_ms.jpg",
+      "imageMobile": "https://data.decoassets.com/meiasola/8f826fbe-406f-4e59-bd1e-d60fd4d028f1/780x1320px_ms.jpg",
       "button": {
         "text": "Confira",
         "link": "/322?map=productClusterIds&O=&sort=release%3Adesc&page="
