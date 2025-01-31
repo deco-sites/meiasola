@@ -77,6 +77,9 @@ export interface Props {
 
 function Item(props: BannerItem) {
   const instance = props.type === "image" ? props.image : props.video;
+
+  if (!instance) return null;
+
   const { content, button, gradient, alt } = instance;
 
   return (

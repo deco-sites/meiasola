@@ -4,22 +4,22 @@
     {
       "link": "/s?q=lenny",
       "type": "image",
-      "image": "https://data.decoassets.com/meiasola/c4978a50-1a2f-4ec6-858b-a339a816b78a/ARZ_25_PF_THERESA_POSTS_FRQ_EDITORIAL.jpeg",
+      "image": "https://data.decoassets.com/meiasola/a813172f-f01b-4a29-8495-72ef1733a47f/1234.jpg",
       "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/03da15db-90f7-414c-8481-e7fbac960b15/Video-sem-titulo--Feito-com-o-Clipchamp-(5).mp4",
       "label": "AREZZO"
     },
     {
-      "link": "/anacapri",
+      "link": "/schutz",
       "type": "image",
-      "image": "https://data.decoassets.com/meiasola/e9c5941e-7c7c-4f3a-a053-335879864df6/6.png",
-      "label": "ANACAPRI",
+      "image": "https://data.decoassets.com/meiasola/eebb8bdd-8978-43d4-9420-ab7afbcc4e08/POST-FEED-(1).jpeg",
+      "label": "SCHUTZ",
       "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f1853648-79a2-4466-8ae1-6be2f52c8f58/AREZZO---Summer-Hits-2_9x16-(1).mp4"
     },
     {
-      "link": "/schutz",
+      "link": "/anacapri",
       "type": "image",
-      "image": "https://data.decoassets.com/meiasola/c00adc74-5c41-451a-acc9-2b5ec5624de3/7.png",
-      "label": "SCHUTZ",
+      "image": "https://data.decoassets.com/meiasola/92c5ceee-52f5-4d0b-a356-aa0f31b20846/Snapinst.app_475289493_18488933341055168_8771818660858194378_n_1080.jpg",
+      "label": "ANACAPRI",
       "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f1853648-79a2-4466-8ae1-6be2f52c8f58/AREZZO---Summer-Hits-2_9x16-(1).mp4"
     }
   ],
