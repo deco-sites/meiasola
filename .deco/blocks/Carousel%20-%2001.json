@@ -10,7 +10,8 @@
       "button": {
         "text": "Confira",
         "link": "//heylink.me/meiasola/"
-      }
+      },
+      "content": "<p></p>"
     },
     {
       "button": {
@@ -35,14 +36,6 @@
         "imageMobile": "https://data.decoassets.com/meiasola/79f46a7b-8172-4989-b9e4-eee4b298747b/24-JAN-780x1320px.jpg",
         "imageDesktop": "https://data.decoassets.com/meiasola/12af10b2-72ba-4cce-9974-1fa6e6690de4/24-JAN-2880x1320-2.jpg"
       }
-    },
-    {
-      "button": {
-        "text": "Confira",
-        "link": "/arezzo"
-      },
-      "imageMobile": "https://data.decoassets.com/meiasola/79f46a7b-8172-4989-b9e4-eee4b298747b/24-JAN-780x1320px.jpg",
-      "imageDesktop": "https://data.decoassets.com/meiasola/12af10b2-72ba-4cce-9974-1fa6e6690de4/24-JAN-2880x1320-2.jpg"
     },
     {
       "button": {
@@ -108,15 +101,15 @@
     },
     {
       "button": {
-        "text": "Confira"
+        "text": "Confira",
+        "link": "/324?map=productClusterIds&O=&sort=release%3Adesc&page"
       },
       "type": "image",
       "video": {},
       "image": {
         "imageDesktop": "https://data.decoassets.com/meiasola/65fe3e39-cef4-4d6a-96ff-40ed719f2ee2/2880x1320_AC.jpg",
         "imageMobile": "https://data.decoassets.com/meiasola/56979ff8-16ce-4922-8e20-024a02ff9911/780x1320px_ac.jpg"
-      },
-      "alt": "/324?map=productClusterIds&O=&sort=release%3Adesc&page"
+      }
     },
     {
       "type": "image",

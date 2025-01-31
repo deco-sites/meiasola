@@ -23,7 +23,7 @@ interface ItemProps {
   gradient?: boolean;
 }
 
-interface Image extends ItemProps {
+interface Image {
   /**
    * @format image-uri
    * @title Image Desktop
@@ -36,7 +36,7 @@ interface Image extends ItemProps {
   imageMobile?: string;
 }
 
-interface Video extends ItemProps {
+interface Video {
   /**
    * @format video-uri
    * @title Video Desktop
@@ -49,7 +49,7 @@ interface Video extends ItemProps {
   videoMobile?: string;
 }
 
-interface BannerItem {
+interface BannerItem extends ItemProps {
   /**
    * @title Tipo de item
    * @description Escolha se é um item de imagem ou vídeo
@@ -80,7 +80,7 @@ function Item(props: BannerItem) {
 
   if (!instance) return null;
 
-  const { content, button, gradient, alt } = instance;
+  const { content, button, gradient, alt } = props;
 
   return (
     <a
