@@ -27,9 +27,9 @@
       "label": "Plataforma"
     },
     {
-      "link": "/sapatos?filter.category-1=sapatos&filter.category-2=rasteira",
       "image": "https://data.decoassets.com/meiasola/ac7563f3-aea9-4e9b-a3c9-eee1892b6f26/14.png",
-      "label": "Rasteiras"
+      "label": "Rasteiras",
+      "link": "/sapatos?filter.category-1=sapatos&filter.category-2=RASTEIRAS"
     },
     {
       "link": "https://www.meiasola.com.br/sapatos?filter.category-1=sapatos&filter.category-2=mule",
