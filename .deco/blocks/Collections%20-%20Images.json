@@ -2,10 +2,10 @@
   "variant": "two",
   "collections": [
     {
-      "link": "/324?map=productClusterIds&O=&sort=release%3Adesc&page",
+      "link": "/321?map=productClusterIds&O=&sort=release%3Adesc&page",
       "type": "image",
-      "image": "https://data.decoassets.com/meiasola/ac62e64a-2740-410d-88b7-a0b8a4806bc0/banner-promo-4.jpg",
-      "label": "SALE ANACAPRI"
+      "image": "https://data.decoassets.com/meiasola/86b63f0e-01c2-466d-860b-4621db004e20/banner-promo-1.jpg",
+      "label": "SALE AREZZO"
     },
     {
       "link": "/323?map=productClusterIds&O=&sort=release%3Adesc&page",
@@ -20,10 +20,10 @@
       "label": "SALE MEIA SOLA"
     },
     {
-      "link": "/321?map=productClusterIds&O=&sort=release%3Adesc&page",
+      "link": "/324?map=productClusterIds&O=&sort=release%3Adesc&page",
       "type": "image",
-      "image": "https://data.decoassets.com/meiasola/86b63f0e-01c2-466d-860b-4621db004e20/banner-promo-1.jpg",
-      "label": "SALE AREZZO"
+      "image": "https://data.decoassets.com/meiasola/ac62e64a-2740-410d-88b7-a0b8a4806bc0/banner-promo-4.jpg",
+      "label": "SALE ANACAPRI"
     }
   ],
   "__resolveType": "site/sections/MeiaSola/Collections.tsx"
