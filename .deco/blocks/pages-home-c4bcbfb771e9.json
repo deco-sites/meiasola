@@ -1130,7 +1130,7 @@
             "__resolveType": "CustomBenefitHome"
           },
           {
-            "__resolveType": "Collections Shop Now"
+            "__resolveType": "Collections - Images"
           },
           {
             "__resolveType": "Brand Carousel - 01"
@@ -1157,7 +1157,7 @@
             "centerTitle": true
           },
           {
-            "__resolveType": "Collections - Images"
+            "__resolveType": "Collections Shop Now"
           },
           {
             "__resolveType": "website/sections/Rendering/Lazy.tsx",

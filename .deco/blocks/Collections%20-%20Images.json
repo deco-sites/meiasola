@@ -2,28 +2,28 @@
   "variant": "two",
   "collections": [
     {
-      "link": "/sapatos?filter.category-1=sapatos&filter.category-2=sandalia",
+      "link": "/324?map=productClusterIds&O=&sort=release%3Adesc&page",
       "type": "image",
-      "image": "https://data.decoassets.com/meiasola/89eded9c-24ee-4c58-8c9e-2882050a6274/carrossel-deskmob-(5).png",
-      "label": "DESCONTO NO PIX"
+      "image": "https://data.decoassets.com/meiasola/ac62e64a-2740-410d-88b7-a0b8a4806bc0/banner-promo-4.jpg",
+      "label": "SALE ANACAPRI"
     },
     {
-      "link": "/bolsas",
+      "link": "/323?map=productClusterIds&O=&sort=release%3Adesc&page",
       "type": "image",
-      "image": "https://data.decoassets.com/meiasola/bd9c4a76-e2ff-4c5c-841c-666596f562ec/12.png",
-      "label": "FRETE GRÁTIS"
+      "image": "https://data.decoassets.com/meiasola/63068e6b-fad4-46df-b5ff-ad4290fa3137/banner-promo-2.jpg",
+      "label": "SALE SCHUTZ"
     },
     {
-      "link": "/newin",
+      "link": "/322?map=productClusterIds&O=&sort=release%3Adesc&page=",
       "type": "image",
-      "image": "https://data.decoassets.com/meiasola/3e5f84e4-5133-48c0-b4c0-a1b83f869680/14.png",
-      "label": "CASHBACK"
+      "image": "https://data.decoassets.com/meiasola/d6109862-332d-4994-8c6d-afd290fc74c9/banner-promo-3.jpg",
+      "label": "SALE MEIA SOLA"
     },
     {
-      "link": "/bolsas?sort=price%3Aasc&filter.category-1=bolsas&filter.price=299%3A9999",
+      "link": "/321?map=productClusterIds&O=&sort=release%3Adesc&page",
       "type": "image",
-      "image": "https://data.decoassets.com/meiasola/ec9280b0-b207-40a9-a05c-52bb720be5b3/16.png",
-      "label": "DESCONTO NA PRIMEIRA "
+      "image": "https://data.decoassets.com/meiasola/86b63f0e-01c2-466d-860b-4621db004e20/banner-promo-1.jpg",
+      "label": "SALE AREZZO"
     }
   ],
   "__resolveType": "site/sections/MeiaSola/Collections.tsx"
