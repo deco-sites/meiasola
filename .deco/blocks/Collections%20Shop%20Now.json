@@ -2,9 +2,9 @@
   "variant": "two",
   "collections": [
     {
-      "link": "/schutz",
+      "link": "/323?map=productClusterIds&O=&sort=release%3Adesc",
       "type": "image",
-      "image": "https://data.decoassets.com/meiasola/f9e1cb84-7a4e-46d6-978e-ef66c87eceb6/POST-FEED.jpeg",
+      "image": "https://data.decoassets.com/meiasola/b3af60c9-096e-48eb-9d5f-c0b917a8117f/banner-promo-5.jpg",
       "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f1853648-79a2-4466-8ae1-6be2f52c8f58/AREZZO---Summer-Hits-2_9x16-(1).mp4",
       "label": "SCHUTZ"
     },
