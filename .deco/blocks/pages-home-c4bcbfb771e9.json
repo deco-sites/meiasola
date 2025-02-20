@@ -1130,7 +1130,7 @@
             "__resolveType": "CustomBenefitHome"
           },
           {
-            "__resolveType": "Collections - Images"
+            "__resolveType": "Collections Shop Now"
           },
           {
             "__resolveType": "Brand Carousel - 01"
@@ -1151,19 +1151,13 @@
             "__resolveType": "ProductShelf - Mais Vendidos"
           },
           {
+            "__resolveType": "Collections - Images"
+          },
+          {
             "__resolveType": "site/sections/TrustvoxReviewsCarousel.tsx",
             "title": "NOSSAS AVALIAÇÕES",
             "subTitle": "Veja o que falam da nossa loja",
             "centerTitle": true
-          },
-          {
-            "__resolveType": "Collections Shop Now"
-          },
-          {
-            "__resolveType": "website/sections/Rendering/Lazy.tsx",
-            "section": {
-              "__resolveType": "Collections - Images"
-            }
           },
           {
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
