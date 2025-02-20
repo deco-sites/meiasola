@@ -2,28 +2,28 @@
   "variant": "two",
   "collections": [
     {
-      "link": "/321?map=productClusterIds&O=&sort=release%3Adesc&page",
+      "link": "/s?q=DOURADO",
       "type": "image",
-      "image": "https://data.decoassets.com/meiasola/86b63f0e-01c2-466d-860b-4621db004e20/banner-promo-1.jpg",
-      "label": "SALE AREZZO"
+      "image": "https://data.decoassets.com/meiasola/a1913057-b941-42a1-b0f8-6d9bde32211b/FULL-BANNER-NO-APLICATIVO-(350-x-410-px).png",
+      "label": "CARNAVAL'25"
     },
     {
-      "link": "/323?map=productClusterIds&O=&sort=release%3Adesc&page",
+      "link": "/sapatos?filter.category-1=sapatos&filter.category-2=tenis",
       "type": "image",
-      "image": "https://data.decoassets.com/meiasola/b3af60c9-096e-48eb-9d5f-c0b917a8117f/banner-promo-5.jpg",
-      "label": "SALE SCHUTZ"
+      "image": "https://data.decoassets.com/meiasola/a3288418-aa89-424e-a40f-db042e6aa226/carrossel-deskmob-(8).png",
+      "label": "TÊNIS"
     },
     {
-      "link": "/322?map=productClusterIds&O=&sort=release%3Adesc&page=",
+      "link": "/s?q=SANDALIA+PRATA",
       "type": "image",
-      "image": "https://data.decoassets.com/meiasola/d6109862-332d-4994-8c6d-afd290fc74c9/banner-promo-3.jpg",
-      "label": "SALE MEIA SOLA"
+      "image": "https://data.decoassets.com/meiasola/05606d8a-5100-461f-a0a8-d176c9335ff5/carrossel-deskmob-(7).png",
+      "label": "SANDÁLIAS"
     },
     {
-      "link": "/324?map=productClusterIds&O=&sort=release%3Adesc&page",
+      "link": "/s?q=BOLSA+PRATA",
       "type": "image",
-      "image": "https://data.decoassets.com/meiasola/ac62e64a-2740-410d-88b7-a0b8a4806bc0/banner-promo-4.jpg",
-      "label": "SALE ANACAPRI"
+      "image": "https://data.decoassets.com/meiasola/f517665d-57b6-4126-82f0-df6e0696084c/carrossel-deskmob-(3).png",
+      "label": "BOLSA"
     }
   ],
   "__resolveType": "site/sections/MeiaSola/Collections.tsx"
