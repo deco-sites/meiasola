@@ -2,23 +2,23 @@
   "variant": "two",
   "collections": [
     {
+      "link": "/321?map=productClusterIds&O=&sort=release%3Adesc",
+      "type": "image",
+      "image": "https://data.decoassets.com/meiasola/79193db0-8285-4a6f-ad51-b77753ee8cba/banner-promo-1.jpg",
+      "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/03da15db-90f7-414c-8481-e7fbac960b15/Video-sem-titulo--Feito-com-o-Clipchamp-(5).mp4",
+      "label": "AREZZO"
+    },
+    {
       "link": "/323?map=productClusterIds&O=&sort=release%3Adesc",
       "type": "image",
       "image": "https://data.decoassets.com/meiasola/b3af60c9-096e-48eb-9d5f-c0b917a8117f/banner-promo-5.jpg",
-      "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f1853648-79a2-4466-8ae1-6be2f52c8f58/AREZZO---Summer-Hits-2_9x16-(1).mp4",
-      "label": "SCHUTZ"
+      "label": "SCHUTZ",
+      "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f1853648-79a2-4466-8ae1-6be2f52c8f58/AREZZO---Summer-Hits-2_9x16-(1).mp4"
     },
     {
-      "link": "/s?q=lenny",
+      "link": "/324?map=productClusterIds&O=&sort=release%3Adesc",
       "type": "image",
-      "image": "https://data.decoassets.com/meiasola/79193db0-8285-4a6f-ad51-b77753ee8cba/banner-promo-1.jpg",
-      "label": "AREZZO",
-      "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/03da15db-90f7-414c-8481-e7fbac960b15/Video-sem-titulo--Feito-com-o-Clipchamp-(5).mp4"
-    },
-    {
-      "link": "/anacapri",
-      "type": "image",
-      "image": "https://data.decoassets.com/meiasola/752bafb7-6233-4cf8-9c61-aef9726b50ce/21.jpeg",
+      "image": "https://data.decoassets.com/meiasola/ac62e64a-2740-410d-88b7-a0b8a4806bc0/banner-promo-4.jpg",
       "label": "ANACAPRI",
       "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f1853648-79a2-4466-8ae1-6be2f52c8f58/AREZZO---Summer-Hits-2_9x16-(1).mp4"
     }
