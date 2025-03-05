@@ -2,18 +2,18 @@
   "variant": "two",
   "collections": [
     {
-      "link": "/arezzo",
-      "type": "image",
-      "image": "https://data.decoassets.com/meiasola/b6b6817f-5620-4978-8445-bc24b33d038b/ARZ_25_PF_SOHO_SNEAKERS_POSTS_FRQ_EDITORIAL_02.jpeg",
-      "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/03da15db-90f7-414c-8481-e7fbac960b15/Video-sem-titulo--Feito-com-o-Clipchamp-(5).mp4",
-      "label": "AREZZO"
-    },
-    {
       "link": "/schutz",
       "type": "image",
       "image": "https://data.decoassets.com/meiasola/809b1d65-6133-409b-9a5a-3f055418a71e/Snapinsta.app_481391382_18489056764054156_5848349138305243497_n_1080-(1).jpg",
-      "label": "SCHUTZ",
-      "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f1853648-79a2-4466-8ae1-6be2f52c8f58/AREZZO---Summer-Hits-2_9x16-(1).mp4"
+      "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f1853648-79a2-4466-8ae1-6be2f52c8f58/AREZZO---Summer-Hits-2_9x16-(1).mp4",
+      "label": "SCHUTZ"
+    },
+    {
+      "link": "/arezzo",
+      "type": "image",
+      "image": "https://data.decoassets.com/meiasola/b6b6817f-5620-4978-8445-bc24b33d038b/ARZ_25_PF_SOHO_SNEAKERS_POSTS_FRQ_EDITORIAL_02.jpeg",
+      "label": "AREZZO",
+      "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/03da15db-90f7-414c-8481-e7fbac960b15/Video-sem-titulo--Feito-com-o-Clipchamp-(5).mp4"
     },
     {
       "link": "/anacapri",
