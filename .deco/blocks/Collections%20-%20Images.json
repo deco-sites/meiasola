@@ -2,28 +2,28 @@
   "variant": "two",
   "collections": [
     {
-      "link": "/s?q=DOURADO",
+      "link": "/sapatos",
       "type": "image",
-      "image": "https://data.decoassets.com/meiasola/a1913057-b941-42a1-b0f8-6d9bde32211b/FULL-BANNER-NO-APLICATIVO-(350-x-410-px).png",
-      "label": "CARNAVAL'25"
+      "image": "https://data.decoassets.com/meiasola/83b7da1d-6666-4f14-90d9-5650afbcf6a1/10.png",
+      "label": "frete grátis"
     },
     {
-      "link": "/sapatos?filter.category-1=sapatos&filter.category-2=tenis",
+      "link": "/m%7Cs",
       "type": "image",
-      "image": "https://data.decoassets.com/meiasola/a3288418-aa89-424e-a40f-db042e6aa226/carrossel-deskmob-(8).png",
-      "label": "TÊNIS"
+      "image": "https://data.decoassets.com/meiasola/5c3ef3f4-e2bd-41ad-9283-29dda622f6b7/9.png",
+      "label": "5% OFF"
     },
     {
-      "link": "/s?q=SANDALIA+PRATA",
+      "link": "/sapatos?filter.category-1=sapatos&filter.category-2=sandalia",
       "type": "image",
-      "image": "https://data.decoassets.com/meiasola/05606d8a-5100-461f-a0a8-d176c9335ff5/carrossel-deskmob-(7).png",
-      "label": "SANDÁLIAS"
+      "image": "https://data.decoassets.com/meiasola/8f434ee8-bfdb-4910-9c10-b8c04abad8bd/11.png",
+      "label": "12% de cashback"
     },
     {
-      "link": "/s?q=BOLSA+PRATA",
+      "link": "/bolsas",
       "type": "image",
-      "image": "https://data.decoassets.com/meiasola/f517665d-57b6-4126-82f0-df6e0696084c/carrossel-deskmob-(3).png",
-      "label": "BOLSA"
+      "image": "https://data.decoassets.com/meiasola/c3b1cdb0-445c-4e55-ba4f-d88ef1a2a383/12.png",
+      "label": "10% off"
     }
   ],
   "__resolveType": "site/sections/MeiaSola/Collections.tsx"
