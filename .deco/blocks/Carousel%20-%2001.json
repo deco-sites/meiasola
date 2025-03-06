@@ -4,12 +4,26 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://data.decoassets.com/meiasola/2c22418e-c0ac-4089-97e5-be8fba7957dd/APP_24-JAN-2880x1320.jpg",
-        "imageMobile": "https://data.decoassets.com/meiasola/54279377-4a6e-4889-9181-f09aeb82da30/APP_24-JAN-780x1320px.jpg"
+        "imageDesktop": "https://data.decoassets.com/meiasola/81431f0a-f235-492d-af59-91fcaef71fe5/Surpreenda-quem-voce-admira-todos-os-dias!.png",
+        "imageMobile": "https://data.decoassets.com/meiasola/cc37699a-3e8e-4a6a-bd9c-7ae398473624/confira-aqui-(780-x-1322-px).png"
       },
       "button": {
         "text": "Confira",
+        "link": "/newin"
+      },
+      "imageDesktop": "https://data.decoassets.com/meiasola/e3fb6945-8190-4ac4-9e09-0344a56e83c3/fg-2880x1320.jpg",
+      "imageMobile": "https://data.decoassets.com/meiasola/2b1cf211-f1e8-47be-a229-21f71dc42913/FG-780x1320px.jpg"
+    },
+    {
+      "button": {
+        "text": "Confira",
         "link": "//heylink.me/meiasola/"
+      },
+      "type": "image",
+      "video": {},
+      "image": {
+        "imageMobile": "https://data.decoassets.com/meiasola/54279377-4a6e-4889-9181-f09aeb82da30/APP_24-JAN-780x1320px.jpg",
+        "imageDesktop": "https://data.decoassets.com/meiasola/2c22418e-c0ac-4089-97e5-be8fba7957dd/APP_24-JAN-2880x1320.jpg"
       },
       "content": "<p></p>"
     },
@@ -46,8 +60,8 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageMobile": "https://data.decoassets.com/meiasola/912ff596-ebbf-42b5-8dcd-68c9c0291562/sch_prefall-780x1320px.jpg",
-        "imageDesktop": "https://data.decoassets.com/meiasola/bba1af53-fb9d-4e5c-83ee-ea16f3776595/sch_pre-fall--2880x1320.jpg"
+        "imageDesktop": "https://data.decoassets.com/meiasola/bba1af53-fb9d-4e5c-83ee-ea16f3776595/sch_pre-fall--2880x1320.jpg",
+        "imageMobile": "https://data.decoassets.com/meiasola/912ff596-ebbf-42b5-8dcd-68c9c0291562/sch_prefall-780x1320px.jpg"
       }
     },
     {
@@ -58,8 +72,8 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://data.decoassets.com/meiasola/fbc46c15-9933-40f6-98bd-64ac7d9684f9/AC_pre_fall-2880x1320.jpg",
-        "imageMobile": "https://data.decoassets.com/meiasola/16ca0b05-1d09-4967-8b75-5e8822da9200/ac_prefall-780x1320px.jpg"
+        "imageMobile": "https://data.decoassets.com/meiasola/16ca0b05-1d09-4967-8b75-5e8822da9200/ac_prefall-780x1320px.jpg",
+        "imageDesktop": "https://data.decoassets.com/meiasola/fbc46c15-9933-40f6-98bd-64ac7d9684f9/AC_pre_fall-2880x1320.jpg"
       }
     },
     {
@@ -70,23 +84,9 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageMobile": "https://data.decoassets.com/meiasola/318f6f3c-91a5-4a68-8c2e-129cff8db03c/ms_prefall-780x1320px.jpg",
-        "imageDesktop": "https://data.decoassets.com/meiasola/89b70cc4-1669-49b4-9e46-b9ec8718355b/pre-fall--2880x1320.jpg"
+        "imageDesktop": "https://data.decoassets.com/meiasola/89b70cc4-1669-49b4-9e46-b9ec8718355b/pre-fall--2880x1320.jpg",
+        "imageMobile": "https://data.decoassets.com/meiasola/318f6f3c-91a5-4a68-8c2e-129cff8db03c/ms_prefall-780x1320px.jpg"
       }
-    },
-    {
-      "button": {
-        "text": "Confira",
-        "link": "/newin"
-      },
-      "type": "image",
-      "video": {},
-      "image": {
-        "imageDesktop": "https://data.decoassets.com/meiasola/81431f0a-f235-492d-af59-91fcaef71fe5/Surpreenda-quem-voce-admira-todos-os-dias!.png",
-        "imageMobile": "https://data.decoassets.com/meiasola/cc37699a-3e8e-4a6a-bd9c-7ae398473624/confira-aqui-(780-x-1322-px).png"
-      },
-      "imageDesktop": "https://data.decoassets.com/meiasola/e3fb6945-8190-4ac4-9e09-0344a56e83c3/fg-2880x1320.jpg",
-      "imageMobile": "https://data.decoassets.com/meiasola/2b1cf211-f1e8-47be-a229-21f71dc42913/FG-780x1320px.jpg"
     }
   ],
   "images": [
