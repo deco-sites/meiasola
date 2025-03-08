@@ -17,6 +17,20 @@
     {
       "button": {
         "text": "Confira",
+        "link": "/newin"
+      },
+      "type": "image",
+      "video": {},
+      "image": {
+        "imageMobile": "https://data.decoassets.com/meiasola/b38d6c55-8fe4-4e7d-b784-3d06b014401f/WhatsApp-Image-2025-03-08-at-12.08.09-(1).jpeg",
+        "imageDesktop": "https://data.decoassets.com/meiasola/1415ae5d-f66b-469f-9371-1d96db4b9652/WhatsApp-Image-2025-03-08-at-12.08.09.jpeg"
+      },
+      "imageDesktop": "https://data.decoassets.com/meiasola/e3fb6945-8190-4ac4-9e09-0344a56e83c3/fg-2880x1320.jpg",
+      "imageMobile": "https://data.decoassets.com/meiasola/2b1cf211-f1e8-47be-a229-21f71dc42913/FG-780x1320px.jpg"
+    },
+    {
+      "button": {
+        "text": "Confira",
         "link": "//heylink.me/meiasola/"
       },
       "type": "image",
@@ -48,8 +62,8 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageMobile": "https://data.decoassets.com/meiasola/4b64e648-b2de-4a37-a862-24ffdbee4d60/zz_prefall-780x1320px.jpg",
-        "imageDesktop": "https://data.decoassets.com/meiasola/ca184bf0-bf64-48c5-8eef-15e745c04517/zz_pre-fall--2880x1320.jpg"
+        "imageDesktop": "https://data.decoassets.com/meiasola/ca184bf0-bf64-48c5-8eef-15e745c04517/zz_pre-fall--2880x1320.jpg",
+        "imageMobile": "https://data.decoassets.com/meiasola/4b64e648-b2de-4a37-a862-24ffdbee4d60/zz_prefall-780x1320px.jpg"
       }
     },
     {
@@ -60,8 +74,8 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://data.decoassets.com/meiasola/bba1af53-fb9d-4e5c-83ee-ea16f3776595/sch_pre-fall--2880x1320.jpg",
-        "imageMobile": "https://data.decoassets.com/meiasola/912ff596-ebbf-42b5-8dcd-68c9c0291562/sch_prefall-780x1320px.jpg"
+        "imageMobile": "https://data.decoassets.com/meiasola/912ff596-ebbf-42b5-8dcd-68c9c0291562/sch_prefall-780x1320px.jpg",
+        "imageDesktop": "https://data.decoassets.com/meiasola/bba1af53-fb9d-4e5c-83ee-ea16f3776595/sch_pre-fall--2880x1320.jpg"
       }
     },
     {
@@ -72,20 +86,20 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageMobile": "https://data.decoassets.com/meiasola/16ca0b05-1d09-4967-8b75-5e8822da9200/ac_prefall-780x1320px.jpg",
-        "imageDesktop": "https://data.decoassets.com/meiasola/fbc46c15-9933-40f6-98bd-64ac7d9684f9/AC_pre_fall-2880x1320.jpg"
+        "imageDesktop": "https://data.decoassets.com/meiasola/fbc46c15-9933-40f6-98bd-64ac7d9684f9/AC_pre_fall-2880x1320.jpg",
+        "imageMobile": "https://data.decoassets.com/meiasola/16ca0b05-1d09-4967-8b75-5e8822da9200/ac_prefall-780x1320px.jpg"
       }
     },
     {
-      "button": {
-        "text": "Confira",
-        "link": "/arezzo?map=brand"
-      },
       "type": "image",
       "video": {},
       "image": {
         "imageDesktop": "https://data.decoassets.com/meiasola/89b70cc4-1669-49b4-9e46-b9ec8718355b/pre-fall--2880x1320.jpg",
         "imageMobile": "https://data.decoassets.com/meiasola/318f6f3c-91a5-4a68-8c2e-129cff8db03c/ms_prefall-780x1320px.jpg"
+      },
+      "button": {
+        "text": "Confira",
+        "link": "/arezzo?map=brand"
       }
     }
   ],
