@@ -2,28 +2,28 @@
   "variant": "two",
   "collections": [
     {
-      "link": "/sapatos",
-      "type": "image",
-      "image": "https://data.decoassets.com/meiasola/83b7da1d-6666-4f14-90d9-5650afbcf6a1/10.png",
-      "label": "frete grátis"
-    },
-    {
-      "link": "/m%7Cs",
-      "type": "image",
-      "image": "https://data.decoassets.com/meiasola/5c3ef3f4-e2bd-41ad-9283-29dda622f6b7/9.png",
-      "label": "5% OFF"
-    },
-    {
       "link": "/sapatos?filter.category-1=sapatos&filter.category-2=sandalia",
       "type": "image",
-      "image": "https://data.decoassets.com/meiasola/8f434ee8-bfdb-4910-9c10-b8c04abad8bd/11.png",
-      "label": "12% de cashback"
+      "image": "https://data.decoassets.com/meiasola/6316a43c-44f5-48bf-adbd-90713a58c510/15.png",
+      "label": "favoritas"
     },
     {
       "link": "/bolsas",
       "type": "image",
-      "image": "https://data.decoassets.com/meiasola/c3b1cdb0-445c-4e55-ba4f-d88ef1a2a383/12.png",
-      "label": "10% off"
+      "image": "https://data.decoassets.com/meiasola/a343d7e3-7f13-4105-86a4-a38f6e4893d2/14.png",
+      "label": "aproveite agora"
+    },
+    {
+      "link": "/sapatos?filter.category-1=sapatos&filter.category-2=sapatilha",
+      "type": "image",
+      "image": "https://data.decoassets.com/meiasola/64296b04-1fb1-40e1-a8b6-e855794c8e75/16.png",
+      "label": "para compor o look"
+    },
+    {
+      "link": "/sapatos?filter.category-1=sapatos&filter.category-2=mule",
+      "type": "image",
+      "image": "https://data.decoassets.com/meiasola/1ffc9ad5-8581-46fd-bcb0-d176ef781568/confira-aqui-(1).png",
+      "label": "novidades "
     }
   ],
   "__resolveType": "site/sections/MeiaSola/Collections.tsx"
