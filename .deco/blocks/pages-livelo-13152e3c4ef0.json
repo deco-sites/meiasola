@@ -28,7 +28,9 @@
         "__resolveType": "commerce/loaders/product/productListingPage.ts"
       },
       "sizes": {
-        "sizes": [],
+        "sizes": [
+          {}
+        ],
         "title": "ESCOLHA SUA NUMERAÇÃO",
         "routesToShow": [
           {
@@ -44,8 +46,8 @@
           "srcMobile": "https://data.decoassets.com/meiasola/794ad375-aaa8-4558-82dd-7e0f93483a5e/2pontosmob.png"
         },
         {
-          "src": "https://data.decoassets.com/meiasola/16fc372a-4424-4280-9c78-97e4b23e7769/2pontosdesk.png",
-          "srcMobile": "https://data.decoassets.com/meiasola/56a51f18-0def-4d88-a59b-528ab00e94ee/2pontosmob.png"
+          "src": "https://data.decoassets.com/meiasola/842c074c-8ebf-4b81-8b8c-4b5a5eeeaedc/5pontosdesk.png",
+          "srcMobile": "https://data.decoassets.com/meiasola/52d7c6b1-be76-45e9-8a78-1d00ef1eb5a1/5pontosmob-(1).png"
         }
       ],
       "__resolveType": "site/sections/Product/SearchResult.tsx"
