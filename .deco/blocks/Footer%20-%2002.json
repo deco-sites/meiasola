@@ -208,6 +208,6 @@
       }
     ]
   },
-  "copyright": "<p>A inclusão no carrinho não garante o preço e/ou a disponibilidade do produto.&nbsp;Caso os produtos apresentem divergências de valores, o preço válido é o exibido no checkout. Vendas sujeitas a disponibilidade de estoque.<br>MEIA SOLA ACESSÓRIOS DE MODA LTDA. Av. Dom Luis, 1037, Loja 1, Fortaleza, Ceará - 60863-280.</p>",
+  "copyright": "<p>A inclusão no carrinho não garante o preço e/ou a disponibilidade do produto.&nbsp;Caso os produtos apresentem divergências de valores, o preço válido é o exibido no checkout. Vendas sujeitas a disponibilidade de estoque.<br>MEIA SOLA ACESSÓRIOS DE MODA LTDA. Av. Dom Luis, 1037, Loja 1, Fortaleza, Ceará - 60863-280. </p>",
   "__resolveType": "site/sections/Footer/Footer.tsx"
 }
