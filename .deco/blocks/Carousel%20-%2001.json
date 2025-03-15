@@ -27,13 +27,13 @@
     {
       "button": {
         "text": "Confira",
-        "link": "/arezzo"
+        "link": "/m%7Cs"
       },
       "type": "image",
       "video": {},
       "image": {
-        "imageMobile": "https://data.decoassets.com/meiasola/4b64e648-b2de-4a37-a862-24ffdbee4d60/zz_prefall-780x1320px.jpg",
-        "imageDesktop": "https://data.decoassets.com/meiasola/057f4045-a927-48e1-9d07-01403f33aec4/zz_pre-fall--2880x1320.jpg"
+        "imageMobile": "https://data.decoassets.com/meiasola/b39b94f4-cb3c-46db-a702-b3cb50515b37/ms_fall-780x1320px.jpg",
+        "imageDesktop": "https://data.decoassets.com/meiasola/8c46895a-480a-4c83-8cd8-1eab909e7af3/fall--2880x1320.jpg"
       }
     },
     {
