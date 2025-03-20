@@ -1127,6 +1127,9 @@
             "__resolveType": "Carousel - 01"
           },
           {
+            "__resolveType": "ChooseYourSize - 01"
+          },
+          {
             "__resolveType": "CustomBenefitHome"
           },
           {
@@ -1134,9 +1137,6 @@
           },
           {
             "__resolveType": "Brand Carousel - 01"
-          },
-          {
-            "__resolveType": "ChooseYourSize - 01"
           },
           {
             "__resolveType": "Categories  - 01"
