@@ -41,13 +41,13 @@
       "images": [
         {
           "alt": "Imagem de Sapatos",
-          "src": "https://data.decoassets.com/meiasola/6803f8e1-0fbb-4dea-8b6f-d30c74235365/2pontosdesk.png",
+          "src": "https://assets.decocache.com/meiasola/5c089adc-0c66-4c86-b435-66a530b959e2/UTILIZE-O-CUPOM-LIVELO-E-GANHE-5-PONTOS-PARA-CLUBE-E-4-PONTOS-PARA-NAO-CLUBE-A-CADA-1-REAL-GASTO.png",
           "route": "/livelo",
-          "srcMobile": "https://data.decoassets.com/meiasola/97aaec66-c4d0-41f8-9dcc-058714fab15a/2pontosmob.png"
+          "srcMobile": "https://assets.decocache.com/meiasola/f9828d87-3d99-44ca-9420-0ba8c86532f2/5pontosmob.png"
         },
         {
-          "src": "https://data.decoassets.com/meiasola/ca0b6f69-7e19-468c-95a6-7b2636b10c1a/2pontosdesk.png",
-          "srcMobile": "https://data.decoassets.com/meiasola/794ad375-aaa8-4558-82dd-7e0f93483a5e/2pontosmob.png"
+          "src": "https://assets.decocache.com/meiasola/5c089adc-0c66-4c86-b435-66a530b959e2/UTILIZE-O-CUPOM-LIVELO-E-GANHE-5-PONTOS-PARA-CLUBE-E-4-PONTOS-PARA-NAO-CLUBE-A-CADA-1-REAL-GASTO.png",
+          "srcMobile": "https://assets.decocache.com/meiasola/f9828d87-3d99-44ca-9420-0ba8c86532f2/5pontosmob.png"
         }
       ],
       "__resolveType": "site/sections/Product/SearchResult.tsx"
