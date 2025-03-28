@@ -2,24 +2,24 @@
   "variant": "two",
   "collections": [
     {
-      "link": "/schutz",
-      "type": "image",
-      "image": "https://data.decoassets.com/meiasola/287f5d2e-e938-40fe-93b7-b5e40903ed5c/confira-aqui-(2).png",
-      "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f1853648-79a2-4466-8ae1-6be2f52c8f58/AREZZO---Summer-Hits-2_9x16-(1).mp4",
-      "label": "SCHUTZ"
-    },
-    {
       "link": "/arezzo",
       "type": "image",
-      "image": "https://data.decoassets.com/meiasola/a7b2155f-957c-4a86-ad1a-3a52d7a5c033/confira-aqui-(7).png",
-      "label": "AREZZO",
-      "video": "https://data.decoassets.com/meiasola/47d32975-2ab5-441c-ba41-899d239df236/confira-aqui.mp4"
+      "image": "https://assets.decocache.com/meiasola/52ad2b60-486b-49e2-add7-bd8bb82e9047/26.png",
+      "video": "https://data.decoassets.com/meiasola/47d32975-2ab5-441c-ba41-899d239df236/confira-aqui.mp4",
+      "label": "AREZZO"
     },
     {
       "link": "/anacapri",
       "type": "image",
-      "image": "https://data.decoassets.com/meiasola/5e134fbb-7dd7-4e6b-a37e-e53a89a6b8b6/Snapinsta.app_475455808_18496304650055168_9027028234125516676_n_1080.jpg",
+      "image": "https://assets.decocache.com/meiasola/09507c77-ada6-4d33-bea6-6b87bb6ef581/27.png",
       "label": "ANACAPRI",
+      "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f1853648-79a2-4466-8ae1-6be2f52c8f58/AREZZO---Summer-Hits-2_9x16-(1).mp4"
+    },
+    {
+      "link": "/schutz",
+      "type": "image",
+      "image": "https://assets.decocache.com/meiasola/4bd0b599-181a-4ccd-98a9-b1b6eab7730a/25.png",
+      "label": "SCHUTZ",
       "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f1853648-79a2-4466-8ae1-6be2f52c8f58/AREZZO---Summer-Hits-2_9x16-(1).mp4"
     }
   ],
