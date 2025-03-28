@@ -2,28 +2,28 @@
   "variant": "two",
   "collections": [
     {
-      "link": "/sapatos?filter.category-1=sapatos&filter.category-2=sandalia",
+      "link": "/sapatos?filter.category-1=sapatos&filter.category-2=mule",
       "type": "image",
-      "image": "https://data.decoassets.com/meiasola/6316a43c-44f5-48bf-adbd-90713a58c510/15.png",
-      "label": "favoritas"
+      "image": "https://assets.decocache.com/meiasola/8a119be1-cc91-42b6-a531-8a598fdefba4/15.png",
+      "label": "novidades "
+    },
+    {
+      "link": "/sapatos?filter.category-1=sapatos&filter.category-2=tenis",
+      "type": "image",
+      "image": "https://assets.decocache.com/meiasola/888e37ba-d550-426e-8270-c08fdf2917b9/17.png",
+      "label": "para compor o look"
     },
     {
       "link": "/bolsas",
       "type": "image",
-      "image": "https://data.decoassets.com/meiasola/a343d7e3-7f13-4105-86a4-a38f6e4893d2/14.png",
+      "image": "https://assets.decocache.com/meiasola/55b11eb5-b901-427c-9554-e2a659491bbb/14.png",
       "label": "aproveite agora"
     },
     {
-      "link": "/sapatos?filter.category-1=sapatos&filter.category-2=sapatilha",
+      "link": "/sapatos?filter.category-1=sapatos&filter.category-2=sandalia",
       "type": "image",
-      "image": "https://data.decoassets.com/meiasola/64296b04-1fb1-40e1-a8b6-e855794c8e75/16.png",
-      "label": "para compor o look"
-    },
-    {
-      "link": "/sapatos?filter.category-1=sapatos&filter.category-2=mule",
-      "type": "image",
-      "image": "https://data.decoassets.com/meiasola/1ffc9ad5-8581-46fd-bcb0-d176ef781568/confira-aqui-(1).png",
-      "label": "novidades "
+      "image": "https://assets.decocache.com/meiasola/12dc7d04-dd09-477a-a25f-c4c155bd654f/16.png",
+      "label": "favoritas"
     }
   ],
   "__resolveType": "site/sections/MeiaSola/Collections.tsx"
