@@ -14,13 +14,13 @@
       "label": "5%off pagando via pix"
     },
     {
-      "link": "/bolsas",
+      "link": "/sapatos?filter.category-1=sapatos&filter.category-2=sandalia",
       "type": "image",
       "image": "https://assets.decocache.com/meiasola/3790d591-c343-4fff-a25f-da4e22b0f228/40.jpg",
       "label": "aproveite 12% de cashback"
     },
     {
-      "link": "/sapatos?filter.category-1=sapatos&filter.category-2=sandalia",
+      "link": "/bolsas",
       "type": "image",
       "image": "https://assets.decocache.com/meiasola/70c6bfba-f75f-4074-aba3-0e35b5157413/38.jpg",
       "label": "10%off na primeira "
