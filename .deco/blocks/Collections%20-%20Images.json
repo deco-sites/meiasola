@@ -2,28 +2,28 @@
   "variant": "two",
   "collections": [
     {
-      "link": "/sapatos?filter.category-1=sapatos&filter.category-2=mule",
+      "link": "/newin",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/8a119be1-cc91-42b6-a531-8a598fdefba4/15.png",
-      "label": "novidades "
+      "image": "https://assets.decocache.com/meiasola/4b35c1a2-e707-40bb-bce4-1d3a2967f3c7/37.jpg",
+      "label": "ganhe frete grátis"
     },
     {
-      "link": "/sapatos?filter.category-1=sapatos&filter.category-2=tenis",
+      "link": "/sapatos?filter.category-1=sapatos&filter.category-2=scarpin",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/888e37ba-d550-426e-8270-c08fdf2917b9/17.png",
-      "label": "para compor o look"
+      "image": "https://assets.decocache.com/meiasola/97f71821-9d7c-48b1-ace3-2466b86d7eec/39.jpg",
+      "label": "5%off pagando via pix"
     },
     {
       "link": "/bolsas",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/55b11eb5-b901-427c-9554-e2a659491bbb/14.png",
-      "label": "aproveite agora"
+      "image": "https://assets.decocache.com/meiasola/3790d591-c343-4fff-a25f-da4e22b0f228/40.jpg",
+      "label": "aproveite 12% de cashback"
     },
     {
       "link": "/sapatos?filter.category-1=sapatos&filter.category-2=sandalia",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/12dc7d04-dd09-477a-a25f-c4c155bd654f/16.png",
-      "label": "favoritas"
+      "image": "https://assets.decocache.com/meiasola/70c6bfba-f75f-4074-aba3-0e35b5157413/38.jpg",
+      "label": "10%off na primeira "
     }
   ],
   "__resolveType": "site/sections/MeiaSola/Collections.tsx"
