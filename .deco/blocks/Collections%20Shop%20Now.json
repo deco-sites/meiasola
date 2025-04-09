@@ -2,24 +2,24 @@
   "variant": "two",
   "collections": [
     {
-      "link": "/arezzo",
+      "link": "/sapatos?sort=release%3Adesc&filter.category-1=sapatos&filter.category-2=sandalia&filter.brand=arezzo",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/5615f716-e1c9-4ce8-8ce8-5c9b0fb4d079/confira-aqui-(2).png",
+      "image": "https://assets.decocache.com/meiasola/0b5937a0-83be-44fd-9fab-be7fb85bc711/confira-aqui-(2).jpg",
       "video": "https://data.decoassets.com/meiasola/47d32975-2ab5-441c-ba41-899d239df236/confira-aqui.mp4",
-      "label": "AREZZO"
+      "label": "sandálias"
     },
     {
-      "link": "/anacapri",
+      "link": "/sapatos?sort=release%3Adesc&filter.category-1=sapatos&filter.category-2=sapatilha&filter.brand=schutz",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/09507c77-ada6-4d33-bea6-6b87bb6ef581/27.png",
-      "label": "ANACAPRI",
+      "image": "https://assets.decocache.com/meiasola/a061019c-7ff9-40b2-ae01-439bf27ea380/confira-aqui-(4).gif",
+      "label": "sapatilhas",
       "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f1853648-79a2-4466-8ae1-6be2f52c8f58/AREZZO---Summer-Hits-2_9x16-(1).mp4"
     },
     {
-      "link": "/schutz",
+      "link": "/bolsas?sort=release%3Adesc&filter.category-1=bolsas&filter.brand=anacapri",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/4bd0b599-181a-4ccd-98a9-b1b6eab7730a/25.png",
-      "label": "SCHUTZ",
+      "image": "https://assets.decocache.com/meiasola/48a07a7a-83a3-4226-8c3e-696fb7ffed84/confira-aqui-(1).jpg",
+      "label": "bolsas",
       "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f1853648-79a2-4466-8ae1-6be2f52c8f58/AREZZO---Summer-Hits-2_9x16-(1).mp4"
     }
   ],
