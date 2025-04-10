@@ -4,24 +4,12 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://data.decoassets.com/meiasola/b7236177-9ce6-48fe-bed9-8766540f4d42/ms_compre_e_ganhe-2880x1320-2.jpg",
-        "imageMobile": "https://data.decoassets.com/meiasola/dc7621fe-b05d-4051-acc6-66e2f3a975ef/compre_e_ganhe-780x1320px-(1).jpg"
+        "imageDesktop": "https://assets.decocache.com/meiasola/02263824-7aea-4bfd-b5a3-e5ea63d8f143/zz_2880x1320-copiar.jpg",
+        "imageMobile": "https://assets.decocache.com/meiasola/9b371b2c-d37d-4653-9527-4b327f592ab6/zz_780x1320px-copiar.jpg"
       },
-      "button": {
-        "text": "Confira",
-        "link": "/m%7Cs"
-      }
-    },
-    {
       "button": {
         "text": "Confira",
         "link": "/arezzo"
-      },
-      "type": "image",
-      "video": {},
-      "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/9b371b2c-d37d-4653-9527-4b327f592ab6/zz_780x1320px-copiar.jpg",
-        "imageDesktop": "https://assets.decocache.com/meiasola/02263824-7aea-4bfd-b5a3-e5ea63d8f143/zz_2880x1320-copiar.jpg"
       }
     },
     {
@@ -56,8 +44,8 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/f9050110-66d1-447e-89b0-14820377d18e/ac_2880x1320-copiar.jpg",
-        "imageMobile": "https://assets.decocache.com/meiasola/2195b188-b530-4cd1-aacb-bdc22cb0ad35/ac_780x1320px-copiar.jpg"
+        "imageMobile": "https://assets.decocache.com/meiasola/2195b188-b530-4cd1-aacb-bdc22cb0ad35/ac_780x1320px-copiar.jpg",
+        "imageDesktop": "https://assets.decocache.com/meiasola/f9050110-66d1-447e-89b0-14820377d18e/ac_2880x1320-copiar.jpg"
       }
     },
     {
@@ -68,8 +56,8 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageMobile": "https://data.decoassets.com/meiasola/2b1cf211-f1e8-47be-a229-21f71dc42913/FG-780x1320px.jpg",
-        "imageDesktop": "https://data.decoassets.com/meiasola/e3fb6945-8190-4ac4-9e09-0344a56e83c3/fg-2880x1320.jpg"
+        "imageDesktop": "https://data.decoassets.com/meiasola/e3fb6945-8190-4ac4-9e09-0344a56e83c3/fg-2880x1320.jpg",
+        "imageMobile": "https://data.decoassets.com/meiasola/2b1cf211-f1e8-47be-a229-21f71dc42913/FG-780x1320px.jpg"
       },
       "content": "<p></p>"
     }
