@@ -329,40 +329,46 @@ export function Images({
         })}
       </div>
       <div
-        id={id}
+        id={id + "-mobile"}
         class="relative laptop:hidden col-span-4 -mx-6 mobile:-mx-[50px]"
       >
         <Slider class="carousel carousel-start flex gap-4 bg-grey-1">
           {imagesList.map((image, index) => (
             <Slider.Item index={index} class="carousel-item w-full">
-              <div class="bg-grey-1 w-full h-auto flex-1">
-                {index === 1 && productVideo ? (
-                  <iframe
-                    src={`${EmbedVideoUrl(
-                      productVideo
-                    )}?controls=0&autoplay=1&loop=1&muted=1`}
-                    frameborder="0"
-                    allow="autoplay; fullscreen"
-                    style={{ width: "100%", height: "100%", aspectRatio: "1" }}
-                    allowfullscreen
-                    muted
-                  ></iframe>
-                ) : (
-                  <Image
-                    src={image.url}
-                    width={400}
-                    height={400}
-                    fit="contain"
-                    loading="eager"
-                    fetchPriority="high"
-                    class="mix-blend-multiply h-full w-full object-contain flex-1"
-                  />
-                )}
-              </div>
+              <label for="my_modal_7" class="block w-full h-full">
+                <div class="bg-grey-1 w-full h-auto flex-1">
+                  {index === 1 && productVideo ? (
+                    <iframe
+                      src={`${EmbedVideoUrl(
+                        productVideo
+                      )}?controls=0&autoplay=1&loop=1&muted=1`}
+                      frameborder="0"
+                      allow="autoplay; fullscreen"
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        aspectRatio: "1",
+                      }}
+                      allowfullscreen
+                      muted
+                    ></iframe>
+                  ) : (
+                    <Image
+                      src={image.url}
+                      width={400}
+                      height={400}
+                      fit="contain"
+                      loading="eager"
+                      fetchPriority="high"
+                      class="mix-blend-multiply h-full w-full object-contain flex-1"
+                    />
+                  )}
+                </div>
+              </label>
             </Slider.Item>
           ))}
         </Slider>
-
+        <SliderJS rootId={id + "-mobile"} />
         {!justOneImage && (
           <div class="flex gap-8 absolute bottom-6 left-1/2 -translate-x-1/2">
             {imagesList.map((image, index) => (
@@ -373,7 +379,75 @@ export function Images({
           </div>
         )}
 
-        <SliderJS rootId={id} />
+        <input type="checkbox" id="my_modal_7" class="modal-toggle p-0 " />
+        <div class=" modal max-w-full rounded-none p-0">
+          <div
+            id={id + "-mobile-modal"}
+            class=" p-0 m-0 modal-box w-full h-full max-w-full max-h-full rounded-none"
+          >
+            <div class=" modal-action max-w-[90%] max-h-[90%]">
+              <label
+                for="my_modal_7"
+                class="btn btn-sm btn-circle btn-outline absolute right-10 top-10 z-20"
+              >
+                X
+              </label>
+              <Slider class="carousel carousel-center  w-[90%] items-center ">
+                {imagesList.map((image, index) => (
+                  <Slider.Item
+                    index={index}
+                    class="carousel-item w-full h-full justify-center items-center"
+                  >
+                    <Image
+                      // style={{ aspectRatio: `${1800} / ${1800}` }}
+                      fit="contain"
+                      src={image.url!}
+                      alt={image.alternateName}
+                      width={900}
+                      height={900}
+                      class="h-full w-auto object-contain flex-1"
+                      sizes="(max-width: 640px) 100vw, 40vw"
+                    />
+                  </Slider.Item>
+                ))}
+              </Slider>
+
+              <Slider.PrevButton class="absolute bottom-10 right-32 btn btn-sm btn-circle btn-outline col-start-1 col-end-2 row-start-1 row-span-full">
+                <Icon size={32} id="ChevronLeft" strokeWidth={3} />
+              </Slider.PrevButton>
+
+              <Slider.NextButton class="absolute bottom-10 right-10 btn btn-sm btn-circle btn-outline col-start-3 col-end-4 row-start-1 row-span-full">
+                <Icon size={32} id="ChevronRight" strokeWidth={3} />
+              </Slider.NextButton>
+
+              <ul class="flex-1 rounded-none absolute left-0 top-2/4 flex gap-2 px-4 m-0">
+                {imagesList.map((img, index) => (
+                  <>
+                    <li class="h-32 border flex justify-center">
+                      <Slider.Dot index={index}>
+                        <Image
+                          // style={{ aspectRatio: ASPECT_RATIO }}
+                          class="group-disabled:border-base-300  rounded-none flex-1"
+                          width={85}
+                          height={125}
+                          src={img.url!}
+                          alt={img.alternateName}
+                          fit="contain"
+                        />
+                        <span class="fixed bottom-10 end-20 text-h3 z-50 break-keep	">
+                          <p class=" hidden group-disabled:flex">
+                            {index + 1}/{imagesList.length}
+                          </p>
+                        </span>
+                      </Slider.Dot>
+                    </li>
+                  </>
+                ))}
+                <SliderJS rootId={id + "-mobile-modal"} />
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

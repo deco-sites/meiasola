@@ -3604,6 +3604,9 @@ details.collapse summary::-webkit-details-marker {
 .top-2 {
   top: 0.5rem;
 }
+.top-2\/4 {
+  top: 50%;
+}
 .top-4 {
   top: 1rem;
 }
