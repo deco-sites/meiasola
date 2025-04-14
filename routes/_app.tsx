@@ -36,10 +36,7 @@ export default defineApp(async (_req, ctx) => {
         {/* Web Manifest */}
         <link rel="manifest" href={asset("/site.webmanifest")} />
 
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
-        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <script
           type="text/javascript"
@@ -52,8 +49,10 @@ export default defineApp(async (_req, ctx) => {
           }}
         />
 
-        <script type="text/javascript" dangerouslySetInnerHTML={{__html:
-          `
+        <script
+          type="text/javascript"
+          dangerouslySetInnerHTML={{
+            __html: `
           (function (srcjs) {
               window._edrone = window._edrone || {};
               _edrone.app_id = '674f57637f948'; // YOUR APP_ID
@@ -84,9 +83,9 @@ export default defineApp(async (_req, ctx) => {
                 }
               });
             }
-          `
-        }} />
-
+          `,
+          }}
+        />
       </Head>
 
       <noscript>
