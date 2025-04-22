@@ -2,28 +2,28 @@
   "variant": "two",
   "collections": [
     {
-      "link": "/newin",
+      "link": "/262?map=productClusterIds&O=&sort=release%3Adesc&page",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/4b35c1a2-e707-40bb-bce4-1d3a2967f3c7/37.jpg",
-      "label": "ganhe frete grátis"
+      "image": "https://assets.decocache.com/meiasola/a12bd366-a56f-4cc8-b3f5-35817956490b/43.png",
+      "label": "mãe fashion"
     },
     {
-      "link": "/sapatos?filter.category-1=sapatos&filter.category-2=scarpin",
+      "link": "/259?map=productClusterIds&O=&sort=release%3Adesc&page",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/97f71821-9d7c-48b1-ace3-2466b86d7eec/39.jpg",
-      "label": "5%off pagando via pix"
+      "image": "https://assets.decocache.com/meiasola/b36eccf9-3ce4-4a77-82d3-8a1c330772be/45.png",
+      "label": "mãe elegante"
     },
     {
-      "link": "/sapatos?filter.category-1=sapatos&filter.category-2=sandalia",
+      "link": "/258?map=productClusterIds&O=&sort=release%3Adesc&page",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/3790d591-c343-4fff-a25f-da4e22b0f228/40.jpg",
-      "label": "aproveite 12% de cashback"
+      "image": "https://assets.decocache.com/meiasola/70ccbb23-0b65-41f2-96fe-d7ffb342c56e/44.png",
+      "label": "mãe confort"
     },
     {
-      "link": "/bolsas",
+      "link": "/260?map=productClusterIds&O=&sort=release%3Adesc&page",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/70c6bfba-f75f-4074-aba3-0e35b5157413/38.jpg",
-      "label": "10%off na primeira "
+      "image": "https://assets.decocache.com/meiasola/bb6a7e95-9428-4b69-9bf1-13df30aeb1e4/46.png",
+      "label": "mãe clássica"
     }
   ],
   "__resolveType": "site/sections/MeiaSola/Collections.tsx"
