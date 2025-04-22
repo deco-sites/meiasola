@@ -2,24 +2,24 @@
   "variant": "two",
   "collections": [
     {
-      "link": "/sapatos?sort=release%3Adesc&filter.category-1=sapatos&filter.category-2=sandalia&filter.brand=arezzo",
+      "link": "/newin?filter.price=299%3A550&sort=price%3Aasc",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/e65bda6c-65ee-41f3-ac35-06140d184ce9/confira-aqui-(7).jpg",
-      "video": "https://data.decoassets.com/meiasola/47d32975-2ab5-441c-ba41-899d239df236/confira-aqui.mp4",
-      "label": "sandálias"
+      "image": "https://assets.decocache.com/meiasola/c1839eb6-1a4a-49db-9e2b-68f62fd1d5cb/ARZ_25_IN_MAES_CAMPANHA_POSTS_FRQ_STILL_2.jpeg",
+      "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f1853648-79a2-4466-8ae1-6be2f52c8f58/AREZZO---Summer-Hits-2_9x16-(1).mp4",
+      "label": "presentes a partir de 299"
     },
     {
-      "link": "/sapatos?sort=release%3Adesc&filter.category-1=sapatos&filter.category-2=sapatilha&filter.brand=schutz",
+      "link": "/newin?filter.price=599%3A899&sort=price%3Aasc",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/966b986d-7640-4f24-9efa-bf1ca467dbae/confira-aqui-(8).jpg",
-      "label": "sapatilhas",
-      "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f1853648-79a2-4466-8ae1-6be2f52c8f58/AREZZO---Summer-Hits-2_9x16-(1).mp4"
+      "image": "https://assets.decocache.com/meiasola/b377853d-e76f-4e6b-891e-3855c52fb615/ARZ_25_IN_MAES_CAMPANHA_POSTS_FRQ_STILL_6.jpeg",
+      "label": "presentes a partir de 599",
+      "video": "https://data.decoassets.com/meiasola/47d32975-2ab5-441c-ba41-899d239df236/confira-aqui.mp4"
     },
     {
-      "link": "/bolsas?sort=release%3Adesc&filter.category-1=bolsas&filter.brand=anacapri",
+      "link": "/newin?filter.price=899%3A2222&sort=price%3Aasc",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/ef2eb2f5-875c-45f8-bdbe-b3f1ccea62d5/confira-aqui-(5).jpg",
-      "label": "bolsas",
+      "image": "https://assets.decocache.com/meiasola/7d47597e-944e-42b4-b93c-8fb5f0bcb932/ARZ_25_IN_MAES_CAMPANHA_POSTS_FRQ_STILL_.jpeg",
+      "label": "presentes a partir de 899",
       "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f1853648-79a2-4466-8ae1-6be2f52c8f58/AREZZO---Summer-Hits-2_9x16-(1).mp4"
     }
   ],
