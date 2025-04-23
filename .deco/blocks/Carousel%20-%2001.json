@@ -4,12 +4,24 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/4110d67d-fb98-4595-906e-c56377d0975f/deskmaes.jpg",
-        "imageMobile": "https://assets.decocache.com/meiasola/a9b8bda3-4d73-4dd9-b605-62695337f694/dias-das-maes-2025-(780-x-1320-px).jpg"
+        "imageDesktop": "https://assets.decocache.com/meiasola/dc572413-cd58-4063-a59c-9f0b8382887e/MSCARRANO_2880x1320-copiar-(1).jpg",
+        "imageMobile": "https://assets.decocache.com/meiasola/b799896e-de6c-45e2-a431-92d1caa8a905/MSCARRANO_780x1320px-copiar.jpg"
       },
       "button": {
         "text": "Confira",
+        "link": "/carrano"
+      }
+    },
+    {
+      "button": {
+        "text": "Confira",
         "link": "/newin"
+      },
+      "type": "image",
+      "video": {},
+      "image": {
+        "imageMobile": "https://assets.decocache.com/meiasola/a9b8bda3-4d73-4dd9-b605-62695337f694/dias-das-maes-2025-(780-x-1320-px).jpg",
+        "imageDesktop": "https://assets.decocache.com/meiasola/4110d67d-fb98-4595-906e-c56377d0975f/deskmaes.jpg"
       }
     },
     {
@@ -44,20 +56,20 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/4d73e8dd-b2e6-451d-9e3b-ec44900fc557/sch_780x1320px-copiar.jpg",
-        "imageDesktop": "https://assets.decocache.com/meiasola/9c29875f-fec5-42c4-be0b-4c7c083f64e9/sch_2880x1320-copiar.jpg"
+        "imageDesktop": "https://assets.decocache.com/meiasola/9c29875f-fec5-42c4-be0b-4c7c083f64e9/sch_2880x1320-copiar.jpg",
+        "imageMobile": "https://assets.decocache.com/meiasola/4d73e8dd-b2e6-451d-9e3b-ec44900fc557/sch_780x1320px-copiar.jpg"
       }
     },
     {
-      "button": {
-        "text": "Confira",
-        "link": "/anacapri"
-      },
       "type": "image",
       "video": {},
       "image": {
         "imageDesktop": "https://assets.decocache.com/meiasola/f9050110-66d1-447e-89b0-14820377d18e/ac_2880x1320-copiar.jpg",
         "imageMobile": "https://assets.decocache.com/meiasola/2195b188-b530-4cd1-aacb-bdc22cb0ad35/ac_780x1320px-copiar.jpg"
+      },
+      "button": {
+        "text": "Confira",
+        "link": "/anacapri"
       }
     },
     {
