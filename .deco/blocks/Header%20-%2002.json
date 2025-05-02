@@ -18,7 +18,7 @@
         {
           "href": "/bolsas",
           "icon": null,
-          "label": "bolsas",
+          "label": "<p>bolsas</p>",
           "submenu": {
             "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/70284360-4c99-4dbc-8630-4f12911b53b4/ARZ_25_V_NATAL24_POCKET_MOOD1_POSTS_FRQ_53.jpeg",
             "sections": [
