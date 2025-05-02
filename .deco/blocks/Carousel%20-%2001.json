@@ -4,24 +4,36 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/4110d67d-fb98-4595-906e-c56377d0975f/deskmaes.jpg",
-        "imageMobile": "https://assets.decocache.com/meiasola/a9b8bda3-4d73-4dd9-b605-62695337f694/dias-das-maes-2025-(780-x-1320-px).jpg"
+        "imageDesktop": "https://assets.decocache.com/meiasola/d96526dc-1b65-4dd9-8d05-f11b18983728/MS_2880x1320.jpg",
+        "imageMobile": "https://assets.decocache.com/meiasola/c5b77b33-26f6-4b65-b186-8d8d6bc94364/MS_780x1320px.jpg"
       },
       "button": {
         "text": "Confira",
-        "link": "/newin"
+        "link": "/m%7Cs"
       }
     },
     {
       "button": {
         "text": "Confira",
-        "link": "/carrano"
+        "link": "/newin"
       },
       "type": "image",
       "video": {},
       "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/b799896e-de6c-45e2-a431-92d1caa8a905/MSCARRANO_780x1320px-copiar.jpg",
-        "imageDesktop": "https://assets.decocache.com/meiasola/dc572413-cd58-4063-a59c-9f0b8382887e/MSCARRANO_2880x1320-copiar-(1).jpg"
+        "imageMobile": "https://assets.decocache.com/meiasola/a9b8bda3-4d73-4dd9-b605-62695337f694/dias-das-maes-2025-(780-x-1320-px).jpg",
+        "imageDesktop": "https://assets.decocache.com/meiasola/4110d67d-fb98-4595-906e-c56377d0975f/deskmaes.jpg"
+      }
+    },
+    {
+      "button": {
+        "text": "Confira",
+        "link": "/schutz?map=brand"
+      },
+      "type": "image",
+      "video": {},
+      "image": {
+        "imageMobile": "https://assets.decocache.com/meiasola/6fe3a775-6e74-426e-9ab5-2d972c7641e3/ZZ_780x1320px.jpg",
+        "imageDesktop": "https://assets.decocache.com/meiasola/3badb064-360f-4011-b844-5bcca317e017/ZZ_2880x1320-(1).jpg"
       }
     },
     {
@@ -39,37 +51,13 @@
     {
       "button": {
         "text": "Confira",
-        "link": "/m%7Cs"
+        "link": "/anacapri"
       },
-      "type": "image",
-      "video": {},
-      "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/c5b77b33-26f6-4b65-b186-8d8d6bc94364/MS_780x1320px.jpg",
-        "imageDesktop": "https://assets.decocache.com/meiasola/d96526dc-1b65-4dd9-8d05-f11b18983728/MS_2880x1320.jpg"
-      }
-    },
-    {
-      "button": {
-        "text": "Confira",
-        "link": "/schutz?map=brand"
-      },
-      "type": "image",
-      "video": {},
-      "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/9c29875f-fec5-42c4-be0b-4c7c083f64e9/sch_2880x1320-copiar.jpg",
-        "imageMobile": "https://assets.decocache.com/meiasola/4d73e8dd-b2e6-451d-9e3b-ec44900fc557/sch_780x1320px-copiar.jpg"
-      }
-    },
-    {
       "type": "image",
       "video": {},
       "image": {
         "imageDesktop": "https://assets.decocache.com/meiasola/8d501eff-cb47-4e9c-b60d-58c24316a1a9/AC_2880x1320.jpg",
         "imageMobile": "https://assets.decocache.com/meiasola/5a53b873-1d1f-447d-875b-0cb179ee2b33/AC_780x1320px.jpg"
-      },
-      "button": {
-        "text": "Confira",
-        "link": "/anacapri"
       }
     },
     {
@@ -82,6 +70,18 @@
       "button": {
         "text": "Confira",
         "link": "/m%7Cs"
+      }
+    },
+    {
+      "type": "image",
+      "video": {},
+      "image": {
+        "imageDesktop": "https://assets.decocache.com/meiasola/dc572413-cd58-4063-a59c-9f0b8382887e/MSCARRANO_2880x1320-copiar-(1).jpg",
+        "imageMobile": "https://assets.decocache.com/meiasola/b799896e-de6c-45e2-a431-92d1caa8a905/MSCARRANO_780x1320px-copiar.jpg"
+      },
+      "button": {
+        "text": "Confira",
+        "link": "/carrano"
       }
     }
   ],
