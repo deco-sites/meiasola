@@ -2,24 +2,24 @@
   "variant": "two",
   "collections": [
     {
-      "link": "/newin?filter.price=299%3A550&sort=price%3Aasc",
+      "link": "/arezzo",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/c1839eb6-1a4a-49db-9e2b-68f62fd1d5cb/ARZ_25_IN_MAES_CAMPANHA_POSTS_FRQ_STILL_2.jpeg",
+      "image": "https://assets.decocache.com/meiasola/29f5bbc7-2caf-4938-b9ec-7cc9bdeec414/ARZ_25_IN_MAES_CAMPANHA_POSTS_FRQ_EDITORIAL3.jpeg",
       "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f1853648-79a2-4466-8ae1-6be2f52c8f58/AREZZO---Summer-Hits-2_9x16-(1).mp4",
-      "label": "presentes a partir de 299"
+      "label": "AREZZO"
     },
     {
-      "link": "/newin?filter.price=599%3A899&sort=price%3Aasc",
+      "link": "/schutz",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/b377853d-e76f-4e6b-891e-3855c52fb615/ARZ_25_IN_MAES_CAMPANHA_POSTS_FRQ_STILL_6.jpeg",
-      "label": "presentes a partir de 599",
+      "image": "https://assets.decocache.com/meiasola/ba7782c4-5787-4157-8db4-8449fc2fad85/POST-FEED-(1).jpeg",
+      "label": "SCHUTZ",
       "video": "https://data.decoassets.com/meiasola/47d32975-2ab5-441c-ba41-899d239df236/confira-aqui.mp4"
     },
     {
-      "link": "/newin?filter.price=899%3A2222&sort=price%3Aasc",
+      "link": "/anacapri",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/7d47597e-944e-42b4-b93c-8fb5f0bcb932/ARZ_25_IN_MAES_CAMPANHA_POSTS_FRQ_STILL_.jpeg",
-      "label": "presentes a partir de 899",
+      "image": "https://assets.decocache.com/meiasola/3649cfe6-c9dd-45d6-b3f7-0d5e41d59a19/FEED-SEMPRE-A-18.png",
+      "label": "anacapri",
       "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f1853648-79a2-4466-8ae1-6be2f52c8f58/AREZZO---Summer-Hits-2_9x16-(1).mp4"
     }
   ],
