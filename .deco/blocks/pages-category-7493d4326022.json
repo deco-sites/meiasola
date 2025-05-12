@@ -202,25 +202,25 @@
                 "alt": "Imagem de um sapato salto alto",
                 "src": "https://assets.decocache.com/meiasola/f84d239d-9c70-4e34-88f0-820fa6e4ae83/newin.png",
                 "route": "/sapatos",
-                "srcMobile": "https://assets.decocache.com/meiasola/f5077e59-3835-41e8-a022-ba6bfb78e95c/newin.png"
+                "srcMobile": "https://assets.decocache.com/meiasola/de887e69-830e-4b69-92a7-1dd48a14c0d4/newin.png"
               },
               {
                 "alt": "Imagem de bolsas",
                 "src": "https://assets.decocache.com/meiasola/d6b66aaf-ca41-4199-86db-75e4b3ea8b90/bolsas.png",
                 "route": "/bolsas",
-                "srcMobile": "https://assets.decocache.com/meiasola/0d2072c2-6f71-41e0-8cd3-5e360eb924ff/bolsas.png"
+                "srcMobile": "https://assets.decocache.com/meiasola/0332a870-4ec1-494d-92a2-3fec62b5f976/bolsas.png"
               },
               {
                 "alt": "Imagem de pulseira dourada",
                 "src": "https://assets.decocache.com/meiasola/07d08755-1f34-4b90-ae03-0ff93becbe7a/acessorios.png",
                 "route": "/acessorios",
-                "srcMobile": "https://assets.decocache.com/meiasola/6578079d-72c0-459b-9966-f337fa2079b5/ace.png"
+                "srcMobile": "https://assets.decocache.com/meiasola/e324ae4e-94a3-4a70-96c4-d78224f96ca8/ace.png"
               },
               {
                 "alt": "Imagem de Sandálias ",
                 "src": "https://assets.decocache.com/meiasola/dd4aa5f0-1164-400e-8b66-a15d388c9c7a/sapatos.png",
                 "route": "/sapatos/sandalia",
-                "srcMobile": "https://assets.decocache.com/meiasola/abed31b0-6ad0-4f8a-8b2d-91f656f732a7/sapatos.png"
+                "srcMobile": "https://assets.decocache.com/meiasola/e0dae616-fdba-4ca5-b877-175b6ebc1dec/sapatos.png"
               }
             ],
             "notFoundPage": {
