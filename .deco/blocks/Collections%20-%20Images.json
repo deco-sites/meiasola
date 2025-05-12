@@ -2,28 +2,28 @@
   "variant": "two",
   "collections": [
     {
-      "link": "/262?map=productClusterIds&O=&sort=release%3Adesc&page",
+      "link": "/sapatos?filter.category-1=sapatos&filter.category-2=mocassim",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/9b30d942-e644-4c2e-83a1-6075a658bfa3/confira-aqui.png",
-      "label": "mãe fashion"
+      "image": "https://assets.decocache.com/meiasola/410a392c-7337-4504-b25d-8f24a7045bc7/casuak.png",
+      "label": "Confira"
     },
     {
-      "link": "/259?map=productClusterIds&O=&sort=release%3Adesc&page",
+      "link": "/sapatos?filter.category-1=sapatos&filter.category-2=scarpin",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/b36eccf9-3ce4-4a77-82d3-8a1c330772be/45.png",
-      "label": "mãe elegante"
+      "image": "https://assets.decocache.com/meiasola/cd8a6646-a705-4753-b851-3818daf4f623/elegante.png",
+      "label": "mood"
     },
     {
-      "link": "/258?map=productClusterIds&O=&sort=release%3Adesc&page",
+      "link": "/sapatos?filter.category-1=sapatos&filter.category-2=tenis",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/70ccbb23-0b65-41f2-96fe-d7ffb342c56e/44.png",
-      "label": "mãe confort"
+      "image": "https://assets.decocache.com/meiasola/b4b6a6f4-47b6-4577-a459-89837304aba0/despojado.png",
+      "label": "pra você"
     },
     {
-      "link": "/260?map=productClusterIds&O=&sort=release%3Adesc&page",
+      "link": "/sapatos?filter.category-1=sapatos&filter.category-2=sapatilha",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/bb6a7e95-9428-4b69-9bf1-13df30aeb1e4/46.png",
-      "label": "mãe clássica"
+      "image": "https://assets.decocache.com/meiasola/c0b168a6-f65d-4692-90a7-f2047df2c3db/classico.png",
+      "label": "não pode faltar"
     }
   ],
   "__resolveType": "site/sections/MeiaSola/Collections.tsx"
