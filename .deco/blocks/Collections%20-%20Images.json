@@ -5,13 +5,13 @@
       "link": "/sapatos?filter.category-1=sapatos&filter.category-2=mocassim",
       "type": "image",
       "image": "https://assets.decocache.com/meiasola/410a392c-7337-4504-b25d-8f24a7045bc7/casuak.png",
-      "label": "Confira"
+      "label": "escolha"
     },
     {
       "link": "/sapatos?filter.category-1=sapatos&filter.category-2=scarpin",
       "type": "image",
       "image": "https://assets.decocache.com/meiasola/cd8a6646-a705-4753-b851-3818daf4f623/elegante.png",
-      "label": "mood"
+      "label": "um mood"
     },
     {
       "link": "/sapatos?filter.category-1=sapatos&filter.category-2=tenis",
@@ -23,7 +23,7 @@
       "link": "/sapatos?filter.category-1=sapatos&filter.category-2=sapatilha",
       "type": "image",
       "image": "https://assets.decocache.com/meiasola/c0b168a6-f65d-4692-90a7-f2047df2c3db/classico.png",
-      "label": "não pode faltar"
+      "label": "brilhar ainda mais!"
     }
   ],
   "__resolveType": "site/sections/MeiaSola/Collections.tsx"
