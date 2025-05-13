@@ -59,6 +59,18 @@
         "imageDesktop": "https://assets.decocache.com/meiasola/dc572413-cd58-4063-a59c-9f0b8382887e/MSCARRANO_2880x1320-copiar-(1).jpg",
         "imageMobile": "https://assets.decocache.com/meiasola/b799896e-de6c-45e2-a431-92d1caa8a905/MSCARRANO_780x1320px-copiar.jpg"
       }
+    },
+    {
+      "type": "image",
+      "video": {},
+      "image": {
+        "imageDesktop": "https://assets.decocache.com/meiasola/ec702eab-8806-4ee7-86a3-da013220b0b2/fg-2880x1320.jpg",
+        "imageMobile": "https://assets.decocache.com/meiasola/756116b0-8a4f-4467-a4bf-15cd82104c39/FG_780x1320px.jpg"
+      },
+      "button": {
+        "text": "Confira",
+        "link": "/newin"
+      }
     }
   ],
   "images": [
