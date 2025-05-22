@@ -4,12 +4,24 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/dbf179eb-58ad-496c-a0d7-e6640b1ae2c7/ZZ_2880x1320-(2).jpg",
-        "imageMobile": "https://assets.decocache.com/meiasola/7697a365-35fb-4f33-a5d0-1f5e132b9308/ZZ_780x1320px-(1).jpg"
+        "imageDesktop": "https://assets.decocache.com/meiasola/10ff42c3-5e0f-4537-b6bb-d475b5d3811f/PROO-AC.jpg",
+        "imageMobile": "https://assets.decocache.com/meiasola/168d805b-5075-4da0-8391-b7ad1388da13/ac_780x1320px-(2).jpg"
       },
       "button": {
         "text": "Confira",
+        "link": "/sapatos?sort=release%3Adesc&filter.category-1=sapatos&filter.brand=anacapri&filter.category-2=sapatilha&filter.price=199%3A699"
+      }
+    },
+    {
+      "button": {
+        "text": "Confira",
         "link": "/arezzo"
+      },
+      "type": "image",
+      "video": {},
+      "image": {
+        "imageMobile": "https://assets.decocache.com/meiasola/7697a365-35fb-4f33-a5d0-1f5e132b9308/ZZ_780x1320px-(1).jpg",
+        "imageDesktop": "https://assets.decocache.com/meiasola/dbf179eb-58ad-496c-a0d7-e6640b1ae2c7/ZZ_2880x1320-(2).jpg"
       }
     },
     {
@@ -44,20 +56,20 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/9f4ed7c3-04a1-4ed8-97dd-2ca715061856/compre_e_ganhe-780x1320px-(3).jpg",
-        "imageDesktop": "https://assets.decocache.com/meiasola/01b7a6d9-fca8-4f32-98cf-d75b0ddc0723/ms_compre_e_ganhe-2880x1320-(1).jpg"
+        "imageDesktop": "https://assets.decocache.com/meiasola/01b7a6d9-fca8-4f32-98cf-d75b0ddc0723/ms_compre_e_ganhe-2880x1320-(1).jpg",
+        "imageMobile": "https://assets.decocache.com/meiasola/9f4ed7c3-04a1-4ed8-97dd-2ca715061856/compre_e_ganhe-780x1320px-(3).jpg"
       }
     },
     {
-      "button": {
-        "text": "Confira",
-        "link": "/carrano"
-      },
       "type": "image",
       "video": {},
       "image": {
         "imageDesktop": "https://assets.decocache.com/meiasola/dc572413-cd58-4063-a59c-9f0b8382887e/MSCARRANO_2880x1320-copiar-(1).jpg",
         "imageMobile": "https://assets.decocache.com/meiasola/b799896e-de6c-45e2-a431-92d1caa8a905/MSCARRANO_780x1320px-copiar.jpg"
+      },
+      "button": {
+        "text": "Confira",
+        "link": "/carrano"
       }
     },
     {
