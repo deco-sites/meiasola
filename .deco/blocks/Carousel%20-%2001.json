@@ -4,12 +4,24 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/75270dab-c4f3-4320-9c18-dac87a7bb1ff/MS_2880x1320-(1).jpg",
-        "imageMobile": "https://assets.decocache.com/meiasola/798d2ba1-f706-4947-b581-35b67190feab/MS_780x1320px-(2).jpg"
+        "imageDesktop": "https://assets.decocache.com/meiasola/23d6eea6-5704-475a-afe5-de0651bb2307/zz_30_2880x1320.jpg",
+        "imageMobile": "https://assets.decocache.com/meiasola/4f9d3478-f627-44c9-a3cd-ffec708ca79e/zz_30_780x1320px.jpg"
       },
       "button": {
         "text": "Confira",
+        "link": "/339?map=productClusterIds&O=&sort=release%3Adesc&page"
+      }
+    },
+    {
+      "button": {
+        "text": "Confira",
         "link": "/m%7Cs"
+      },
+      "type": "image",
+      "video": {},
+      "image": {
+        "imageMobile": "https://assets.decocache.com/meiasola/798d2ba1-f706-4947-b581-35b67190feab/MS_780x1320px-(2).jpg",
+        "imageDesktop": "https://assets.decocache.com/meiasola/75270dab-c4f3-4320-9c18-dac87a7bb1ff/MS_2880x1320-(1).jpg"
       }
     },
     {
@@ -44,20 +56,20 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/205fa004-8d52-4208-a740-fbb1be0425b1/ZZ_780x1320px-(2).jpg",
-        "imageDesktop": "https://assets.decocache.com/meiasola/18b6b15a-9570-43fc-882b-6a6e804c42ce/ZZ_2880x1320-(3).jpg"
+        "imageDesktop": "https://assets.decocache.com/meiasola/18b6b15a-9570-43fc-882b-6a6e804c42ce/ZZ_2880x1320-(3).jpg",
+        "imageMobile": "https://assets.decocache.com/meiasola/205fa004-8d52-4208-a740-fbb1be0425b1/ZZ_780x1320px-(2).jpg"
       }
     },
     {
-      "button": {
-        "text": "Confira",
-        "link": "/schutz"
-      },
       "type": "image",
       "video": {},
       "image": {
         "imageDesktop": "https://assets.decocache.com/meiasola/3659059e-d807-4258-992f-d12054bb81f0/SCH_2880x1320-(2).jpg",
         "imageMobile": "https://assets.decocache.com/meiasola/e4ba1e7a-707a-4f14-82ad-b8eab077c355/SCH_780x1320px-(3).jpg"
+      },
+      "button": {
+        "text": "Confira",
+        "link": "/schutz"
       }
     },
     {
