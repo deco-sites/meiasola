@@ -2,27 +2,27 @@
   "variant": "two",
   "collections": [
     {
-      "link": "/sapatos?filter.category-1=sapatos&filter.category-2=mocassim",
+      "link": "/sapatos?filter.category-1=sapatos&filter.category-2=sandalia",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/410a392c-7337-4504-b25d-8f24a7045bc7/casuak.png",
+      "image": "https://assets.decocache.com/meiasola/235c5f68-ba86-4315-97b7-9c6fef1ed21b/SnapInsta.to_501202120_18511761148004210_4413398541087151965_n.jpg",
       "label": "escolha"
     },
     {
       "link": "/sapatos?filter.category-1=sapatos&filter.category-2=scarpin",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/cd8a6646-a705-4753-b851-3818daf4f623/elegante.png",
+      "image": "https://assets.decocache.com/meiasola/933999d1-ee6a-45f8-a6bb-7b5eda783376/POST-FEED-(231).jpeg",
       "label": "um mood"
     },
     {
       "link": "/sapatos?filter.category-1=sapatos&filter.category-2=tenis",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/b4b6a6f4-47b6-4577-a459-89837304aba0/despojado.png",
+      "image": "https://assets.decocache.com/meiasola/19862064-0a0d-44c3-bed4-ce6376394c06/SnapInsta.to_502970990_18513651340055168_7603035734456257282_n.jpg",
       "label": "para você"
     },
     {
-      "link": "/sapatos?filter.category-1=sapatos&filter.category-2=sapatilha",
+      "link": "/bolsas",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/c0b168a6-f65d-4692-90a7-f2047df2c3db/classico.png",
+      "image": "https://assets.decocache.com/meiasola/49c3a02b-8b80-4d36-b5b4-8a8e55668e14/SnapInsta.to_503353706_18512924197004210_7779727639951032899_n.jpg",
       "label": "brilhar ainda mais!"
     }
   ],
