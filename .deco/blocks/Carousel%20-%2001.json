@@ -15,18 +15,6 @@
     {
       "button": {
         "text": "Confira",
-        "link": "/m%7Cs"
-      },
-      "type": "image",
-      "video": {},
-      "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/798d2ba1-f706-4947-b581-35b67190feab/MS_780x1320px-(2).jpg",
-        "imageDesktop": "https://assets.decocache.com/meiasola/75270dab-c4f3-4320-9c18-dac87a7bb1ff/MS_2880x1320-(1).jpg"
-      }
-    },
-    {
-      "button": {
-        "text": "Confira",
         "link": "/sapatos?sort=release%3Adesc&filter.category-1=sapatos&filter.brand=anacapri&filter.category-2=sapatilha&filter.price=199%3A699"
       },
       "type": "image",
@@ -56,20 +44,20 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/3659059e-d807-4258-992f-d12054bb81f0/SCH_2880x1320-(2).jpg",
-        "imageMobile": "https://assets.decocache.com/meiasola/e4ba1e7a-707a-4f14-82ad-b8eab077c355/SCH_780x1320px-(3).jpg"
+        "imageMobile": "https://assets.decocache.com/meiasola/e4ba1e7a-707a-4f14-82ad-b8eab077c355/SCH_780x1320px-(3).jpg",
+        "imageDesktop": "https://assets.decocache.com/meiasola/3659059e-d807-4258-992f-d12054bb81f0/SCH_2880x1320-(2).jpg"
       }
     },
     {
+      "button": {
+        "text": "Confira",
+        "link": "/anacapri"
+      },
       "type": "image",
       "video": {},
       "image": {
         "imageDesktop": "https://assets.decocache.com/meiasola/78939a33-d2b9-45a6-914f-8216b826eed0/AC_2880x1320-(2).jpg",
         "imageMobile": "https://assets.decocache.com/meiasola/6fb663c0-6cc8-428f-94f9-4e67d4ebb596/AC_780x1320px-(4).jpg"
-      },
-      "button": {
-        "text": "Confira",
-        "link": "/anacapri"
       }
     },
     {
