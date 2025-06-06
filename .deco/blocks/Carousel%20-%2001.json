@@ -4,12 +4,24 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/e6a773e0-d88d-4f8d-806b-ad7b7b91dc9d/namorados_2880x1320_ms.jpg",
-        "imageMobile": "https://assets.decocache.com/meiasola/8fd1ca6d-fce1-4e7a-8766-28ed0fc2989a/namorados_780x1320px-copiar_ms.jpg"
+        "imageDesktop": "https://assets.decocache.com/meiasola/23d6eea6-5704-475a-afe5-de0651bb2307/zz_30_2880x1320.jpg",
+        "imageMobile": "https://assets.decocache.com/meiasola/4f9d3478-f627-44c9-a3cd-ffec708ca79e/zz_30_780x1320px.jpg"
       },
       "button": {
         "text": "Confira",
         "link": "/m%7Cs"
+      }
+    },
+    {
+      "button": {
+        "text": "Confira",
+        "link": "/m%7Cs"
+      },
+      "type": "image",
+      "video": {},
+      "image": {
+        "imageMobile": "https://assets.decocache.com/meiasola/8fd1ca6d-fce1-4e7a-8766-28ed0fc2989a/namorados_780x1320px-copiar_ms.jpg",
+        "imageDesktop": "https://assets.decocache.com/meiasola/e6a773e0-d88d-4f8d-806b-ad7b7b91dc9d/namorados_2880x1320_ms.jpg"
       }
     },
     {
@@ -44,20 +56,20 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/771885ef-4091-4a91-8471-c6f065551763/namorados_780x1320px_sch.jpg",
-        "imageDesktop": "https://assets.decocache.com/meiasola/1b017970-0bea-4af7-810b-527f25b00a57/namorados_2880x1320_sch.jpg"
+        "imageDesktop": "https://assets.decocache.com/meiasola/1b017970-0bea-4af7-810b-527f25b00a57/namorados_2880x1320_sch.jpg",
+        "imageMobile": "https://assets.decocache.com/meiasola/771885ef-4091-4a91-8471-c6f065551763/namorados_780x1320px_sch.jpg"
       }
     },
     {
-      "button": {
-        "text": "Confira",
-        "link": "/m%7Cs"
-      },
       "type": "image",
       "video": {},
       "image": {
         "imageDesktop": "https://assets.decocache.com/meiasola/01b7a6d9-fca8-4f32-98cf-d75b0ddc0723/ms_compre_e_ganhe-2880x1320-(1).jpg",
         "imageMobile": "https://assets.decocache.com/meiasola/9f4ed7c3-04a1-4ed8-97dd-2ca715061856/compre_e_ganhe-780x1320px-(3).jpg"
+      },
+      "button": {
+        "text": "Confira",
+        "link": "/m%7Cs"
       }
     },
     {
