@@ -51,25 +51,13 @@
     {
       "button": {
         "text": "Confira",
-        "link": "/anacapri"
+        "link": "/m%7Cs"
       },
-      "type": "image",
-      "video": {},
-      "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/78939a33-d2b9-45a6-914f-8216b826eed0/AC_2880x1320-(2).jpg",
-        "imageMobile": "https://assets.decocache.com/meiasola/6fb663c0-6cc8-428f-94f9-4e67d4ebb596/AC_780x1320px-(4).jpg"
-      }
-    },
-    {
       "type": "image",
       "video": {},
       "image": {
         "imageDesktop": "https://assets.decocache.com/meiasola/01b7a6d9-fca8-4f32-98cf-d75b0ddc0723/ms_compre_e_ganhe-2880x1320-(1).jpg",
         "imageMobile": "https://assets.decocache.com/meiasola/9f4ed7c3-04a1-4ed8-97dd-2ca715061856/compre_e_ganhe-780x1320px-(3).jpg"
-      },
-      "button": {
-        "text": "Confira",
-        "link": "/m%7Cs"
       }
     },
     {
