@@ -830,15 +830,6 @@
                               "label": "Vicenza"
                             },
                             {
-                              "href": "/marcas?filter.brand=luz-da-lua",
-                              "image": {
-                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/6c651fd1-58f9-4b03-804c-daf94896658f",
-                                "width": 125,
-                                "height": 17
-                              },
-                              "label": "Luz da Lua"
-                            },
-                            {
                               "href": "/marcas?filter.brand=anacapri",
                               "image": {
                                 "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/49bf5bea-b2a6-4620-8d55-fc455ad7cf86",
