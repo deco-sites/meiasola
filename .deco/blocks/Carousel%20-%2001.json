@@ -15,18 +15,6 @@
     {
       "button": {
         "text": "Confira",
-        "link": "/339?map=productClusterIds&O=&sort=release%3Adesc&page"
-      },
-      "type": "image",
-      "video": {},
-      "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/4f9d3478-f627-44c9-a3cd-ffec708ca79e/zz_30_780x1320px.jpg",
-        "imageDesktop": "https://assets.decocache.com/meiasola/23d6eea6-5704-475a-afe5-de0651bb2307/zz_30_2880x1320.jpg"
-      }
-    },
-    {
-      "button": {
-        "text": "Confira",
         "link": "/m%7Cs"
       },
       "type": "image",
@@ -56,20 +44,20 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/d3d14040-ae89-45ed-8b86-fff7e075a90f/namorados_2880x1320_ac.jpg",
-        "imageMobile": "https://assets.decocache.com/meiasola/816536e0-af74-4747-bc19-581d91d03d0e/namorados_780x1320px_ac.jpg"
+        "imageMobile": "https://assets.decocache.com/meiasola/816536e0-af74-4747-bc19-581d91d03d0e/namorados_780x1320px_ac.jpg",
+        "imageDesktop": "https://assets.decocache.com/meiasola/d3d14040-ae89-45ed-8b86-fff7e075a90f/namorados_2880x1320_ac.jpg"
       }
     },
     {
+      "button": {
+        "text": "Confira",
+        "link": "/schutz"
+      },
       "type": "image",
       "video": {},
       "image": {
         "imageDesktop": "https://assets.decocache.com/meiasola/1b017970-0bea-4af7-810b-527f25b00a57/namorados_2880x1320_sch.jpg",
         "imageMobile": "https://assets.decocache.com/meiasola/771885ef-4091-4a91-8471-c6f065551763/namorados_780x1320px_sch.jpg"
-      },
-      "button": {
-        "text": "Confira",
-        "link": "/schutz"
       }
     },
     {
