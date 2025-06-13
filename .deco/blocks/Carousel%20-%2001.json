@@ -8,7 +8,8 @@
         "imageMobile": "https://assets.decocache.com/meiasola/73531a94-7116-4bb8-adab-0512582b9574/ZZ_SALE780x1320px.jpg"
       },
       "button": {
-        "link": "/339?map=productClusterIds&O=&sort=release%3Adesc&page"
+        "link": "/339?map=productClusterIds&O=&sort=release%3Adesc&page",
+        "text": "Confira"
       }
     },
     {
