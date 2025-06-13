@@ -27,6 +27,18 @@
     {
       "button": {
         "text": "Confira",
+        "link": "/344?map=productClusterIds&O=&sort=release%3Adesc&page"
+      },
+      "type": "image",
+      "video": {},
+      "image": {
+        "imageMobile": "https://assets.decocache.com/meiasola/073b6eb5-993e-4070-b923-e058a506580f/MS_SALE780x1320px-copiar.jpg",
+        "imageDesktop": "https://assets.decocache.com/meiasola/3be56721-e3e5-4b78-9039-cb874dfc4642/MS_SALE_2880x1320-copiar.jpg"
+      }
+    },
+    {
+      "button": {
+        "text": "Confira",
         "link": "/m%7Cs"
       },
       "type": "image",
@@ -44,20 +56,20 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/5aad00eb-b8eb-4ac6-bda4-2354a0a26fb7/namorados_780x1320px_zz.jpg",
-        "imageDesktop": "https://assets.decocache.com/meiasola/fd54fa07-6eb7-4e29-b6de-1d62335f975c/namorados_2880x1320_zz.jpg"
+        "imageDesktop": "https://assets.decocache.com/meiasola/fd54fa07-6eb7-4e29-b6de-1d62335f975c/namorados_2880x1320_zz.jpg",
+        "imageMobile": "https://assets.decocache.com/meiasola/5aad00eb-b8eb-4ac6-bda4-2354a0a26fb7/namorados_780x1320px_zz.jpg"
       }
     },
     {
-      "button": {
-        "text": "Confira",
-        "link": "/sapatos?sort=release%3Adesc&filter.category-1=sapatos&filter.brand=anacapri&filter.category-2=sapatilha&filter.price=199%3A699"
-      },
       "type": "image",
       "video": {},
       "image": {
         "imageDesktop": "https://assets.decocache.com/meiasola/d3d14040-ae89-45ed-8b86-fff7e075a90f/namorados_2880x1320_ac.jpg",
         "imageMobile": "https://assets.decocache.com/meiasola/816536e0-af74-4747-bc19-581d91d03d0e/namorados_780x1320px_ac.jpg"
+      },
+      "button": {
+        "text": "Confira",
+        "link": "/sapatos?sort=release%3Adesc&filter.category-1=sapatos&filter.brand=anacapri&filter.category-2=sapatilha&filter.price=199%3A699"
       }
     },
     {
@@ -80,8 +92,8 @@
         "imageMobile": "https://assets.decocache.com/meiasola/9f4ed7c3-04a1-4ed8-97dd-2ca715061856/compre_e_ganhe-780x1320px-(3).jpg"
       },
       "button": {
-        "text": "Confira",
-        "link": "/m%7Cs"
+        "link": "/m%7Cs",
+        "text": "Confira"
       }
     },
     {
