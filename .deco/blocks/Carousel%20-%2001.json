@@ -15,18 +15,6 @@
     {
       "button": {
         "text": "Confira",
-        "link": "/342?map=productClusterIds&O=&sort=release%3Adesc&page"
-      },
-      "type": "image",
-      "video": {},
-      "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/996e5571-128a-4170-a2d0-671a7b5528b2/SCH_780x1320px-copiar.jpg",
-        "imageDesktop": "https://assets.decocache.com/meiasola/050b594c-e4a8-4bc1-8d1f-d3c2484a82e4/SCH_2880x1320-copiar.jpg"
-      }
-    },
-    {
-      "button": {
-        "text": "Confira",
         "link": "/343?map=productClusterIds&O=&sort=release%3Adesc&page"
       },
       "type": "image",
@@ -56,20 +44,20 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/e6a773e0-d88d-4f8d-806b-ad7b7b91dc9d/namorados_2880x1320_ms.jpg",
-        "imageMobile": "https://assets.decocache.com/meiasola/8fd1ca6d-fce1-4e7a-8766-28ed0fc2989a/namorados_780x1320px-copiar_ms.jpg"
+        "imageMobile": "https://assets.decocache.com/meiasola/8fd1ca6d-fce1-4e7a-8766-28ed0fc2989a/namorados_780x1320px-copiar_ms.jpg",
+        "imageDesktop": "https://assets.decocache.com/meiasola/e6a773e0-d88d-4f8d-806b-ad7b7b91dc9d/namorados_2880x1320_ms.jpg"
       }
     },
     {
+      "button": {
+        "text": "Confira",
+        "link": "/arezzo"
+      },
       "type": "image",
       "video": {},
       "image": {
         "imageDesktop": "https://assets.decocache.com/meiasola/fd54fa07-6eb7-4e29-b6de-1d62335f975c/namorados_2880x1320_zz.jpg",
         "imageMobile": "https://assets.decocache.com/meiasola/5aad00eb-b8eb-4ac6-bda4-2354a0a26fb7/namorados_780x1320px_zz.jpg"
-      },
-      "button": {
-        "text": "Confira",
-        "link": "/arezzo"
       }
     },
     {
@@ -92,8 +80,8 @@
         "imageMobile": "https://assets.decocache.com/meiasola/771885ef-4091-4a91-8471-c6f065551763/namorados_780x1320px_sch.jpg"
       },
       "button": {
-        "link": "/schutz",
-        "text": "Confira"
+        "text": "Confira",
+        "link": "/schutz"
       }
     },
     {
