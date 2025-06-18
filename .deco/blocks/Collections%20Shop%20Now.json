@@ -2,23 +2,23 @@
   "variant": "two",
   "collections": [
     {
-      "link": "/schutz",
+      "link": "/347?map=productClusterIds&O=&sort=release%3Adesc&page",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/c46f57db-3064-4fb0-9dbd-3d577edae954/POST-FEED-(234).jpeg",
-      "video": "https://data.decoassets.com/meiasola/47d32975-2ab5-441c-ba41-899d239df236/confira-aqui.mp4",
-      "label": "SCHUTZ"
+      "image": "https://assets.decocache.com/meiasola/dda5c747-b525-44e4-93f6-fa4ebf487001/ARZ_26_CC_GYPSY_FRINGES_POSTS23.jpeg",
+      "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f1853648-79a2-4466-8ae1-6be2f52c8f58/AREZZO---Summer-Hits-2_9x16-(1).mp4",
+      "label": "CRUISE COLLECTION"
     },
     {
-      "link": "/arezzo",
+      "link": "/schutz",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/e86c2894-a5de-44cb-b636-f8842cf8d7e9/SnapInsta.to_500948069_18511745248004210_1670646634863415061_n.jpg",
-      "label": "AREZZO",
-      "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f1853648-79a2-4466-8ae1-6be2f52c8f58/AREZZO---Summer-Hits-2_9x16-(1).mp4"
+      "image": "https://assets.decocache.com/meiasola/259431d9-7871-41ca-86e7-320d6c67f254/POST-FEED.jpeg",
+      "label": "SCHUTZ",
+      "video": "https://data.decoassets.com/meiasola/47d32975-2ab5-441c-ba41-899d239df236/confira-aqui.mp4"
     },
     {
       "link": "/anacapri",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/2347992c-ba58-435e-a4f6-4f29d30bf108/Tem-presente-que-diz-eu-te-amo-com-palavras.-E-tem-o-A'25-que-diz-isso-com-design-personalidade-e-um-kit-pra-deixar-a-cara-de-quem-voce-ama.--TenisA25-DiaDosNamorados25Ref--C305790012---R26990.jpg",
+      "image": "https://assets.decocache.com/meiasola/72eba711-e3d4-488e-aa77-565370834bdc/FEED_ESTILOBOHOPrancheta-17.png",
       "label": "anacapri",
       "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f1853648-79a2-4466-8ae1-6be2f52c8f58/AREZZO---Summer-Hits-2_9x16-(1).mp4"
     }
