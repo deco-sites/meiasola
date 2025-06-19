@@ -4,25 +4,25 @@
     {
       "link": "/sapatos?filter.category-1=sapatos&filter.category-2=sandalia",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/235c5f68-ba86-4315-97b7-9c6fef1ed21b/SnapInsta.to_501202120_18511761148004210_4413398541087151965_n.jpg",
+      "image": "https://assets.decocache.com/meiasola/b0a4031b-9cfc-40e9-b1ab-417e034329ab/Screenshot_2.jpg",
       "label": "escolha"
-    },
-    {
-      "link": "/sapatos?filter.category-1=sapatos&filter.category-2=scarpin",
-      "type": "image",
-      "image": "https://assets.decocache.com/meiasola/933999d1-ee6a-45f8-a6bb-7b5eda783376/POST-FEED-(231).jpeg",
-      "label": "um mood"
     },
     {
       "link": "/sapatos?filter.category-1=sapatos&filter.category-2=tenis",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/19862064-0a0d-44c3-bed4-ce6376394c06/SnapInsta.to_502970990_18513651340055168_7603035734456257282_n.jpg",
+      "image": "https://assets.decocache.com/meiasola/36b580bb-cefc-4ecd-a5e8-f9a272c98d91/POST-FEED-(3).jpeg",
       "label": "para você"
+    },
+    {
+      "link": "/sapatos?filter.category-1=sapatos&filter.category-2=scarpin",
+      "type": "image",
+      "image": "https://assets.decocache.com/meiasola/4f271a31-4ca9-4ebd-a9e2-4238b0b36319/Design-sem-nome-(1).png",
+      "label": "um mood para"
     },
     {
       "link": "/bolsas",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/49c3a02b-8b80-4d36-b5b4-8a8e55668e14/SnapInsta.to_503353706_18512924197004210_7779727639951032899_n.jpg",
+      "image": "https://assets.decocache.com/meiasola/eacb9a05-8d16-49be-883a-e06bbce65a91/FEED_ESTILOBOHOPrancheta-1.png",
       "label": "brilhar ainda mais!"
     }
   ],
