@@ -217,15 +217,6 @@
                     "label": "Alexandre Birman"
                   },
                   {
-                    "href": "/marcas?filter.brand=luz-da-lua",
-                    "image": {
-                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/6c651fd1-58f9-4b03-804c-daf94896658f",
-                      "width": 125,
-                      "height": 17
-                    },
-                    "label": "Luz da Lua"
-                  },
-                  {
                     "href": "/vicenza?map=brand",
                     "image": {
                       "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/a6534511-38a9-4665-8124-a85834d8407d",
