@@ -64,48 +64,12 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/e6a773e0-d88d-4f8d-806b-ad7b7b91dc9d/namorados_2880x1320_ms.jpg",
-        "imageMobile": "https://assets.decocache.com/meiasola/8fd1ca6d-fce1-4e7a-8766-28ed0fc2989a/namorados_780x1320px-copiar_ms.jpg"
-      },
-      "button": {
-        "text": "Confira",
-        "link": "/m%7Cs"
-      }
-    },
-    {
-      "type": "image",
-      "video": {},
-      "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/fd54fa07-6eb7-4e29-b6de-1d62335f975c/namorados_2880x1320_zz.jpg",
-        "imageMobile": "https://assets.decocache.com/meiasola/5aad00eb-b8eb-4ac6-bda4-2354a0a26fb7/namorados_780x1320px_zz.jpg"
-      },
-      "button": {
-        "text": "Confira",
-        "link": "/arezzo"
-      }
-    },
-    {
-      "type": "image",
-      "video": {},
-      "image": {
         "imageDesktop": "https://assets.decocache.com/meiasola/d3d14040-ae89-45ed-8b86-fff7e075a90f/namorados_2880x1320_ac.jpg",
         "imageMobile": "https://assets.decocache.com/meiasola/816536e0-af74-4747-bc19-581d91d03d0e/namorados_780x1320px_ac.jpg"
       },
       "button": {
-        "link": "/sapatos?sort=release%3Adesc&filter.category-1=sapatos&filter.brand=anacapri&filter.category-2=sapatilha&filter.price=199%3A699",
-        "text": "Confira"
-      }
-    },
-    {
-      "type": "image",
-      "video": {},
-      "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/1b017970-0bea-4af7-810b-527f25b00a57/namorados_2880x1320_sch.jpg",
-        "imageMobile": "https://assets.decocache.com/meiasola/771885ef-4091-4a91-8471-c6f065551763/namorados_780x1320px_sch.jpg"
-      },
-      "button": {
-        "link": "/schutz",
-        "text": "Confira"
+        "text": "Confira",
+        "link": "/sapatos?sort=release%3Adesc&filter.category-1=sapatos&filter.brand=anacapri&filter.category-2=sapatilha&filter.price=199%3A699"
       }
     },
     {
@@ -116,8 +80,8 @@
         "imageMobile": "https://assets.decocache.com/meiasola/9f4ed7c3-04a1-4ed8-97dd-2ca715061856/compre_e_ganhe-780x1320px-(3).jpg"
       },
       "button": {
-        "link": "/m%7Cs",
-        "text": "Confira"
+        "text": "Confira",
+        "link": "/m%7Cs"
       }
     },
     {
