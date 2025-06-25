@@ -51,25 +51,13 @@
     {
       "button": {
         "text": "Confira",
-        "link": "/348?map=productClusterIds&O=&sort=release%3Adesc&page"
+        "link": "/sapatos?sort=release%3Adesc&filter.category-1=sapatos&filter.brand=anacapri&filter.category-2=sapatilha&filter.price=199%3A699"
       },
-      "type": "image",
-      "video": {},
-      "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/a84e46ad-1f21-4abd-9a3b-bacace922c7f/MS_SALE_2880x1320-copiar.jpg",
-        "imageMobile": "https://assets.decocache.com/meiasola/9416dcfd-45e6-4c02-8bb2-40a3c4040bee/MS_SALE780x1320px-copiar.jpg"
-      }
-    },
-    {
       "type": "image",
       "video": {},
       "image": {
         "imageDesktop": "https://assets.decocache.com/meiasola/d3d14040-ae89-45ed-8b86-fff7e075a90f/namorados_2880x1320_ac.jpg",
         "imageMobile": "https://assets.decocache.com/meiasola/816536e0-af74-4747-bc19-581d91d03d0e/namorados_780x1320px_ac.jpg"
-      },
-      "button": {
-        "text": "Confira",
-        "link": "/sapatos?sort=release%3Adesc&filter.category-1=sapatos&filter.brand=anacapri&filter.category-2=sapatilha&filter.price=199%3A699"
       }
     },
     {
@@ -92,8 +80,8 @@
         "imageMobile": "https://assets.decocache.com/meiasola/756116b0-8a4f-4467-a4bf-15cd82104c39/FG_780x1320px.jpg"
       },
       "button": {
-        "link": "/newin",
-        "text": "Confira"
+        "text": "Confira",
+        "link": "/newin"
       }
     }
   ],
