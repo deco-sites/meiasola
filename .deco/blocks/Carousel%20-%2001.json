@@ -64,18 +64,6 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/d3d14040-ae89-45ed-8b86-fff7e075a90f/namorados_2880x1320_ac.jpg",
-        "imageMobile": "https://assets.decocache.com/meiasola/816536e0-af74-4747-bc19-581d91d03d0e/namorados_780x1320px_ac.jpg"
-      },
-      "button": {
-        "text": "Confira",
-        "link": "/sapatos?sort=release%3Adesc&filter.category-1=sapatos&filter.brand=anacapri&filter.category-2=sapatilha&filter.price=199%3A699"
-      }
-    },
-    {
-      "type": "image",
-      "video": {},
-      "image": {
         "imageDesktop": "https://assets.decocache.com/meiasola/01b7a6d9-fca8-4f32-98cf-d75b0ddc0723/ms_compre_e_ganhe-2880x1320-(1).jpg",
         "imageMobile": "https://assets.decocache.com/meiasola/9f4ed7c3-04a1-4ed8-97dd-2ca715061856/compre_e_ganhe-780x1320px-(3).jpg"
       },
