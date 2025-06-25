@@ -15,6 +15,18 @@
     {
       "button": {
         "text": "Confira",
+        "link": "/348?map=productClusterIds&O=&sort=release%3Adesc&page"
+      },
+      "type": "image",
+      "video": {},
+      "image": {
+        "imageMobile": "https://assets.decocache.com/meiasola/9416dcfd-45e6-4c02-8bb2-40a3c4040bee/MS_SALE780x1320px-copiar.jpg",
+        "imageDesktop": "https://assets.decocache.com/meiasola/a84e46ad-1f21-4abd-9a3b-bacace922c7f/MS_SALE_2880x1320-copiar.jpg"
+      }
+    },
+    {
+      "button": {
+        "text": "Confira",
         "link": "/339?map=productClusterIds&O=&sort=release%3Adesc&page"
       },
       "type": "image",
@@ -44,20 +56,8 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/a11052f4-3bf6-4e84-9bc0-d239c78f268d/AC_SALE780x1320px-copiar-(1).jpg",
-        "imageDesktop": "https://assets.decocache.com/meiasola/18a0ad9c-6398-4e44-9d66-8b288c7ea58a/AC_SALE_2880x1320-copiar-(1).jpg"
-      }
-    },
-    {
-      "button": {
-        "text": "Confira",
-        "link": "/348?map=productClusterIds&O=&sort=release%3Adesc&page"
-      },
-      "type": "image",
-      "video": {},
-      "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/a84e46ad-1f21-4abd-9a3b-bacace922c7f/MS_SALE_2880x1320-copiar.jpg",
-        "imageMobile": "https://assets.decocache.com/meiasola/9416dcfd-45e6-4c02-8bb2-40a3c4040bee/MS_SALE780x1320px-copiar.jpg"
+        "imageDesktop": "https://assets.decocache.com/meiasola/18a0ad9c-6398-4e44-9d66-8b288c7ea58a/AC_SALE_2880x1320-copiar-(1).jpg",
+        "imageMobile": "https://assets.decocache.com/meiasola/a11052f4-3bf6-4e84-9bc0-d239c78f268d/AC_SALE780x1320px-copiar-(1).jpg"
       }
     },
     {
