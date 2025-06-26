@@ -31,9 +31,9 @@
       "images": [
         {
           "alt": "Imagem de Sapatos",
-          "src": "https://assets.decocache.com/meiasola/dd4aa5f0-1164-400e-8b66-a15d388c9c7a/sapatos.png",
+          "src": "https://assets.decocache.com/meiasola/fd551b69-3722-4b91-9dea-31107cd2174e/sapatos.png",
           "route": "/",
-          "srcMobile": "https://assets.decocache.com/meiasola/e0dae616-fdba-4ca5-b877-175b6ebc1dec/sapatos.png"
+          "srcMobile": "https://assets.decocache.com/meiasola/581f2c91-8424-46cd-bff1-532897851110/sapatos.png"
         }
       ],
       "__resolveType": "site/sections/Product/SearchResult.tsx"
