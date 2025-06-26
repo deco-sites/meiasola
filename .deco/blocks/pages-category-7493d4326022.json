@@ -206,21 +206,21 @@
               },
               {
                 "alt": "Imagem de bolsas",
-                "src": "https://assets.decocache.com/meiasola/d6b66aaf-ca41-4199-86db-75e4b3ea8b90/bolsas.png",
+                "src": "https://assets.decocache.com/meiasola/a71f7920-2e48-412d-adbe-02fbaca798ea/bolsas.png",
                 "route": "/bolsas",
-                "srcMobile": "https://assets.decocache.com/meiasola/0332a870-4ec1-494d-92a2-3fec62b5f976/bolsas.png"
+                "srcMobile": "https://assets.decocache.com/meiasola/06e75f58-a105-4f5d-9465-a9083c84ea12/bolsas.png"
               },
               {
                 "alt": "Imagem de pulseira dourada",
-                "src": "https://assets.decocache.com/meiasola/07d08755-1f34-4b90-ae03-0ff93becbe7a/acessorios.png",
+                "src": "https://assets.decocache.com/meiasola/80b177f8-414b-40fb-8075-313589cd9e5b/acessorios.png",
                 "route": "/acessorios",
-                "srcMobile": "https://assets.decocache.com/meiasola/e324ae4e-94a3-4a70-96c4-d78224f96ca8/ace.png"
+                "srcMobile": "https://assets.decocache.com/meiasola/a76829d1-15a0-4794-88c6-4608e5d808f2/ace.png"
               },
               {
                 "alt": "Imagem de Sandálias ",
-                "src": "https://assets.decocache.com/meiasola/dd4aa5f0-1164-400e-8b66-a15d388c9c7a/sapatos.png",
+                "src": "https://assets.decocache.com/meiasola/fd551b69-3722-4b91-9dea-31107cd2174e/sapatos.png",
                 "route": "/sapatos/sandalia",
-                "srcMobile": "https://assets.decocache.com/meiasola/e0dae616-fdba-4ca5-b877-175b6ebc1dec/sapatos.png"
+                "srcMobile": "https://assets.decocache.com/meiasola/581f2c91-8424-46cd-bff1-532897851110/sapatos.png"
               }
             ],
             "notFoundPage": {
