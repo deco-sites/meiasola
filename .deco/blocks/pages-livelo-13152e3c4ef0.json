@@ -64,13 +64,13 @@
       "images": [
         {
           "alt": "Imagem de Sapatos",
-          "src": "https://assets.decocache.com/meiasola/56a3af3a-0e2b-4718-8c50-65ee2630d976/livelodesk7.png",
+          "src": "https://assets.decocache.com/meiasola/f9a6f37e-0f36-4ea6-ac39-f5476720cada/livelodesk2.png",
           "route": "/livelo",
-          "srcMobile": "https://assets.decocache.com/meiasola/6981d070-3685-43bb-8a23-70e20ae8aa63/livelomob7pontos.png"
+          "srcMobile": "https://assets.decocache.com/meiasola/53fde2ab-675f-4b37-b574-35eeee3828d0/livelomob2pontos.png"
         },
         {
-          "src": "https://assets.decocache.com/meiasola/56a3af3a-0e2b-4718-8c50-65ee2630d976/livelodesk7.png",
-          "srcMobile": "https://assets.decocache.com/meiasola/6981d070-3685-43bb-8a23-70e20ae8aa63/livelomob7pontos.png"
+          "src": "https://assets.decocache.com/meiasola/f9a6f37e-0f36-4ea6-ac39-f5476720cada/livelodesk2.png",
+          "srcMobile": "https://assets.decocache.com/meiasola/53fde2ab-675f-4b37-b574-35eeee3828d0/livelomob2pontos.png"
         }
       ],
       "__resolveType": "site/sections/Product/SearchResult.tsx"
