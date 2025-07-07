@@ -69,8 +69,8 @@
           "srcMobile": "https://assets.decocache.com/meiasola/6981d070-3685-43bb-8a23-70e20ae8aa63/livelomob7pontos.png"
         },
         {
-          "src": "https://assets.decocache.com/meiasola/74667975-7868-4563-8aef-5398f2fda6fb/livelodesk7.png",
-          "srcMobile": "https://assets.decocache.com/meiasola/310dc04a-5b20-46bc-81ad-1d5242a00ab8/livelomob7pontos.png"
+          "src": "https://assets.decocache.com/meiasola/56a3af3a-0e2b-4718-8c50-65ee2630d976/livelodesk7.png",
+          "srcMobile": "https://assets.decocache.com/meiasola/6981d070-3685-43bb-8a23-70e20ae8aa63/livelomob7pontos.png"
         }
       ],
       "__resolveType": "site/sections/Product/SearchResult.tsx"
