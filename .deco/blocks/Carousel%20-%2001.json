@@ -27,13 +27,13 @@
     {
       "button": {
         "text": "Confira",
-        "link": "/339?map=productClusterIds&O=&sort=release%3Adesc&page"
+        "link": "/364?map=productClusterIds&O=&sort=release%3Adesc&page"
       },
       "type": "image",
       "video": {},
       "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/73531a94-7116-4bb8-adab-0512582b9574/ZZ_SALE780x1320px.jpg",
-        "imageDesktop": "https://assets.decocache.com/meiasola/8a2f1764-6093-429f-b99e-485e830b589a/ZZ_SALE_2880x1320-copiar.jpg"
+        "imageMobile": "https://assets.decocache.com/meiasola/59ebdac3-b52c-4f9d-8e4f-9662b791798f/ZZ_SALE780x1320px-copiar.jpg",
+        "imageDesktop": "https://assets.decocache.com/meiasola/c4ff6584-893e-45f6-8964-3cc8df48f3bc/ZZ_SALE_2880x1320-copiar.jpg"
       }
     },
     {
