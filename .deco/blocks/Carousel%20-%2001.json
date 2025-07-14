@@ -15,6 +15,18 @@
     {
       "button": {
         "text": "Confira",
+        "link": "/schutz"
+      },
+      "type": "image",
+      "video": {},
+      "image": {
+        "imageMobile": "https://assets.decocache.com/meiasola/8864eaf3-862e-4e8e-b6a8-2e007d75ad20/SCH-RESORT-780x1320px.jpg",
+        "imageDesktop": "https://assets.decocache.com/meiasola/151bd674-b516-459b-addd-267428d2246a/SCH-RESORT-2880x1320.jpg"
+      }
+    },
+    {
+      "button": {
+        "text": "Confira",
         "link": "/344?map=productClusterIds&O=&sort=release%3Adesc&page"
       },
       "type": "image",
@@ -44,20 +56,20 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/8ae6c021-3978-43a5-b1f9-b5e8d7f379ad/SCH_SALE780x1320px-copiar.jpg",
-        "imageDesktop": "https://assets.decocache.com/meiasola/e13279d4-8236-4e8f-92c7-550401df2623/SCH_SALE_2880x1320-copiar.jpg"
+        "imageDesktop": "https://assets.decocache.com/meiasola/e13279d4-8236-4e8f-92c7-550401df2623/SCH_SALE_2880x1320-copiar.jpg",
+        "imageMobile": "https://assets.decocache.com/meiasola/8ae6c021-3978-43a5-b1f9-b5e8d7f379ad/SCH_SALE780x1320px-copiar.jpg"
       }
     },
     {
-      "button": {
-        "text": "Confira",
-        "link": "/343?map=productClusterIds&O=&sort=release%3Adesc&page"
-      },
       "type": "image",
       "video": {},
       "image": {
         "imageDesktop": "https://assets.decocache.com/meiasola/18a0ad9c-6398-4e44-9d66-8b288c7ea58a/AC_SALE_2880x1320-copiar-(1).jpg",
         "imageMobile": "https://assets.decocache.com/meiasola/a11052f4-3bf6-4e84-9bc0-d239c78f268d/AC_SALE780x1320px-copiar-(1).jpg"
+      },
+      "button": {
+        "text": "Confira",
+        "link": "/343?map=productClusterIds&O=&sort=release%3Adesc&page"
       }
     },
     {
