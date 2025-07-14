@@ -15,6 +15,18 @@
     {
       "button": {
         "text": "Confira",
+        "link": "/arezzo"
+      },
+      "type": "image",
+      "video": {},
+      "image": {
+        "imageMobile": "https://assets.decocache.com/meiasola/1c6d7ef6-44ca-4a58-84ef-80ea844f88b8/ZZ-RESORT-780x1320px-copiar.jpg",
+        "imageDesktop": "https://assets.decocache.com/meiasola/f26fea2a-43b5-4487-81bf-50b1e8081c45/ZZ-RESORT-2880x1320-copiar.jpg"
+      }
+    },
+    {
+      "button": {
+        "text": "Confira",
         "link": "/schutz"
       },
       "type": "image",
@@ -44,20 +56,20 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/59ebdac3-b52c-4f9d-8e4f-9662b791798f/ZZ_SALE780x1320px-copiar.jpg",
-        "imageDesktop": "https://assets.decocache.com/meiasola/c4ff6584-893e-45f6-8964-3cc8df48f3bc/ZZ_SALE_2880x1320-copiar.jpg"
+        "imageDesktop": "https://assets.decocache.com/meiasola/c4ff6584-893e-45f6-8964-3cc8df48f3bc/ZZ_SALE_2880x1320-copiar.jpg",
+        "imageMobile": "https://assets.decocache.com/meiasola/59ebdac3-b52c-4f9d-8e4f-9662b791798f/ZZ_SALE780x1320px-copiar.jpg"
       }
     },
     {
-      "button": {
-        "text": "Confira",
-        "link": "/345?map=productClusterIds&O=&sort=release%3Adesc&page"
-      },
       "type": "image",
       "video": {},
       "image": {
         "imageDesktop": "https://assets.decocache.com/meiasola/e13279d4-8236-4e8f-92c7-550401df2623/SCH_SALE_2880x1320-copiar.jpg",
         "imageMobile": "https://assets.decocache.com/meiasola/8ae6c021-3978-43a5-b1f9-b5e8d7f379ad/SCH_SALE780x1320px-copiar.jpg"
+      },
+      "button": {
+        "text": "Confira",
+        "link": "/345?map=productClusterIds&O=&sort=release%3Adesc&page"
       }
     },
     {
