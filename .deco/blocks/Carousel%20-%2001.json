@@ -158,5 +158,5 @@
   ],
   "preload": true,
   "__resolveType": "site/sections/Images/Carousel.tsx",
-  "interval": 6
+  "interval": 7
 }
