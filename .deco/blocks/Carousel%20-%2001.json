@@ -4,48 +4,36 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/05596c64-35e5-46fd-b9a7-d98c1b3bad3a/RESORT-2880x1320-copiar.jpg",
-        "imageMobile": "https://assets.decocache.com/meiasola/e626e682-dafa-41f4-95bc-ab9945d8f18f/RESORT-780x1320px-copiar.jpg"
+        "imageDesktop": "https://assets.decocache.com/meiasola/7834b79f-9962-4b96-82fa-b847fddfda48/ZZ_SALE_2880x1320-copiar.jpg",
+        "imageMobile": "https://assets.decocache.com/meiasola/a0dc2c8e-0acb-466c-ad3e-27a8f7c89f95/ZZ_SALE780x1320px-copiar.jpg"
       },
       "button": {
-        "link": "/newin",
+        "link": "/339?map=productClusterIds&O=&sort=release%3Adesc&page",
         "text": "Confira"
       }
     },
     {
       "button": {
         "text": "Confira",
-        "link": "/arezzo"
+        "link": "/345?map=productClusterIds&O=&sort=release%3Adesc&page"
       },
       "type": "image",
       "video": {},
       "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/1c6d7ef6-44ca-4a58-84ef-80ea844f88b8/ZZ-RESORT-780x1320px-copiar.jpg",
-        "imageDesktop": "https://assets.decocache.com/meiasola/f26fea2a-43b5-4487-81bf-50b1e8081c45/ZZ-RESORT-2880x1320-copiar.jpg"
+        "imageMobile": "https://assets.decocache.com/meiasola/4a6d3915-2d65-4cf6-9cfe-0ccbc61929c9/SCH_SALE780x1320px-copiar.jpg",
+        "imageDesktop": "https://assets.decocache.com/meiasola/c7c50074-487a-45a6-938e-8a3ed2d43ba2/SCH_SALE_2880x1320-copiar.jpg"
       }
     },
     {
       "button": {
         "text": "Confira",
-        "link": "/schutz"
+        "link": "/343?map=productClusterIds&O=&sort=release%3Adesc&page"
       },
       "type": "image",
       "video": {},
       "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/8864eaf3-862e-4e8e-b6a8-2e007d75ad20/SCH-RESORT-780x1320px.jpg",
-        "imageDesktop": "https://assets.decocache.com/meiasola/151bd674-b516-459b-addd-267428d2246a/SCH-RESORT-2880x1320.jpg"
-      }
-    },
-    {
-      "button": {
-        "text": "Confira",
-        "link": "/anacapri"
-      },
-      "type": "image",
-      "video": {},
-      "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/59750430-f772-43a8-a30b-5619ee7bda79/AC-RESORT-780x1320px-copiar.jpg",
-        "imageDesktop": "https://assets.decocache.com/meiasola/47d3e5b8-de3d-4260-ad4b-20234196c81c/AC-RESORT-2880x1320-copiar.jpg"
+        "imageMobile": "https://assets.decocache.com/meiasola/90a996c1-64cd-4134-9507-63cc53b67d2a/AC_SALE780x1320px-copiar.jpg",
+        "imageDesktop": "https://assets.decocache.com/meiasola/72db7bd9-7398-4ca2-b56f-f37846e8a5ad/AC_SALE_2880x1320-copiar.jpg"
       }
     },
     {
@@ -56,44 +44,56 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/b0737bc6-095c-486b-9293-780224a0fb87/MS_SALE_2880x1320-copiar.jpg",
-        "imageMobile": "https://assets.decocache.com/meiasola/9d9acd78-686c-420d-892a-8412162af763/MS_SALE780x1320px-copiar.jpg"
+        "imageMobile": "https://assets.decocache.com/meiasola/9d9acd78-686c-420d-892a-8412162af763/MS_SALE780x1320px-copiar.jpg",
+        "imageDesktop": "https://assets.decocache.com/meiasola/b0737bc6-095c-486b-9293-780224a0fb87/MS_SALE_2880x1320-copiar.jpg"
+      }
+    },
+    {
+      "button": {
+        "text": "Confira",
+        "link": "/newin"
+      },
+      "type": "image",
+      "video": {},
+      "image": {
+        "imageDesktop": "https://assets.decocache.com/meiasola/05596c64-35e5-46fd-b9a7-d98c1b3bad3a/RESORT-2880x1320-copiar.jpg",
+        "imageMobile": "https://assets.decocache.com/meiasola/e626e682-dafa-41f4-95bc-ab9945d8f18f/RESORT-780x1320px-copiar.jpg"
       }
     },
     {
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/7834b79f-9962-4b96-82fa-b847fddfda48/ZZ_SALE_2880x1320-copiar.jpg",
-        "imageMobile": "https://assets.decocache.com/meiasola/a0dc2c8e-0acb-466c-ad3e-27a8f7c89f95/ZZ_SALE780x1320px-copiar.jpg"
+        "imageDesktop": "https://assets.decocache.com/meiasola/47d3e5b8-de3d-4260-ad4b-20234196c81c/AC-RESORT-2880x1320-copiar.jpg",
+        "imageMobile": "https://assets.decocache.com/meiasola/59750430-f772-43a8-a30b-5619ee7bda79/AC-RESORT-780x1320px-copiar.jpg"
       },
       "button": {
         "text": "Confira",
-        "link": "/339?map=productClusterIds&O=&sort=release%3Adesc&page"
+        "link": "/anacapri"
       }
     },
     {
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/c7c50074-487a-45a6-938e-8a3ed2d43ba2/SCH_SALE_2880x1320-copiar.jpg",
-        "imageMobile": "https://assets.decocache.com/meiasola/4a6d3915-2d65-4cf6-9cfe-0ccbc61929c9/SCH_SALE780x1320px-copiar.jpg"
+        "imageDesktop": "https://assets.decocache.com/meiasola/f26fea2a-43b5-4487-81bf-50b1e8081c45/ZZ-RESORT-2880x1320-copiar.jpg",
+        "imageMobile": "https://assets.decocache.com/meiasola/1c6d7ef6-44ca-4a58-84ef-80ea844f88b8/ZZ-RESORT-780x1320px-copiar.jpg"
       },
       "button": {
         "text": "Confira",
-        "link": "/345?map=productClusterIds&O=&sort=release%3Adesc&page"
+        "link": "/arezzo"
       }
     },
     {
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/72db7bd9-7398-4ca2-b56f-f37846e8a5ad/AC_SALE_2880x1320-copiar.jpg",
-        "imageMobile": "https://assets.decocache.com/meiasola/90a996c1-64cd-4134-9507-63cc53b67d2a/AC_SALE780x1320px-copiar.jpg"
+        "imageDesktop": "https://assets.decocache.com/meiasola/151bd674-b516-459b-addd-267428d2246a/SCH-RESORT-2880x1320.jpg",
+        "imageMobile": "https://assets.decocache.com/meiasola/8864eaf3-862e-4e8e-b6a8-2e007d75ad20/SCH-RESORT-780x1320px.jpg"
       },
       "button": {
         "text": "Confira",
-        "link": "/343?map=productClusterIds&O=&sort=release%3Adesc&page"
+        "link": "/schutz"
       }
     },
     {
