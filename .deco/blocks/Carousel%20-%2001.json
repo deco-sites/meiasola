@@ -64,6 +64,18 @@
       "type": "image",
       "video": {},
       "image": {
+        "imageDesktop": "https://assets.decocache.com/meiasola/de3ec978-5b0e-4354-9852-cdb0030e73cc/banner---site-2.png",
+        "imageMobile": "https://assets.decocache.com/meiasola/a0a30245-b4e3-4711-aacd-7d2382d04901/APP.png"
+      },
+      "button": {
+        "text": "Confira",
+        "link": "/m%7Cs"
+      }
+    },
+    {
+      "type": "image",
+      "video": {},
+      "image": {
         "imageDesktop": "https://assets.decocache.com/meiasola/47d3e5b8-de3d-4260-ad4b-20234196c81c/AC-RESORT-2880x1320-copiar.jpg",
         "imageMobile": "https://assets.decocache.com/meiasola/59750430-f772-43a8-a30b-5619ee7bda79/AC-RESORT-780x1320px-copiar.jpg"
       },
