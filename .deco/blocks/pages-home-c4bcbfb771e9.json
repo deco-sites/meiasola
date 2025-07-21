@@ -620,64 +620,6 @@
                     }
                   },
                   {
-                    "href": "/bolsas",
-                    "icon": null,
-                    "label": "bolsas",
-                    "submenu": {
-                      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/70284360-4c99-4dbc-8630-4f12911b53b4/ARZ_25_V_NATAL24_POCKET_MOOD1_POSTS_FRQ_53.jpeg",
-                      "sections": [
-                        {
-                          "items": [
-                            {
-                              "href": "/bolsas?filter.category-1=bolsas&filter.category-2=tiracolo",
-                              "label": "Tiracolo"
-                            },
-                            {
-                              "href": "/bolsas?filter.category-1=bolsas&filter.category-2=shopping",
-                              "label": "Shopping"
-                            },
-                            {
-                              "href": "/bolsas?filter.category-1=bolsas&filter.category-2=tote",
-                              "label": "Tote"
-                            },
-                            {
-                              "href": "/bolsas?filter.category-1=bolsas&filter.category-2=crossbody",
-                              "label": "Crossbody"
-                            },
-                            {
-                              "href": "/bolsas?filter.category-1=bolsas&filter.category-2=mochila",
-                              "label": "Mochilas"
-                            },
-                            {
-                              "href": "/bolsas",
-                              "label": "VER TUDO",
-                              "underlined": true
-                            }
-                          ],
-                          "label": "Bolsas"
-                        },
-                        {
-                          "items": [
-                            {
-                              "href": "/bolsas?q=pequena",
-                              "label": "Pequena"
-                            },
-                            {
-                              "href": "/bolsas?q=media",
-                              "label": "Média"
-                            },
-                            {
-                              "href": "/bolsas?q=grande",
-                              "label": "Grande"
-                            }
-                          ],
-                          "label": "Tamanho",
-                          "hideSectionOnMobile": true
-                        }
-                      ]
-                    }
-                  },
-                  {
                     "href": "/sapatos",
                     "icon": null,
                     "label": "sapatos",
@@ -770,10 +712,104 @@
                             }
                           ],
                           "label": "Numeração",
-                          "showItemsAsSquare": true,
+                          "hideSectionOnMobile": true,
+                          "showItemsAsSquare": true
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "href": "/bolsas",
+                    "icon": null,
+                    "label": "bolsas",
+                    "submenu": {
+                      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/70284360-4c99-4dbc-8630-4f12911b53b4/ARZ_25_V_NATAL24_POCKET_MOOD1_POSTS_FRQ_53.jpeg",
+                      "sections": [
+                        {
+                          "items": [
+                            {
+                              "href": "/bolsas?filter.category-1=bolsas&filter.category-2=tiracolo",
+                              "label": "Tiracolo"
+                            },
+                            {
+                              "href": "/bolsas?filter.category-1=bolsas&filter.category-2=shopping",
+                              "label": "Shopping"
+                            },
+                            {
+                              "href": "/bolsas?filter.category-1=bolsas&filter.category-2=tote",
+                              "label": "Tote"
+                            },
+                            {
+                              "href": "/bolsas?filter.category-1=bolsas&filter.category-2=crossbody",
+                              "label": "Crossbody"
+                            },
+                            {
+                              "href": "/bolsas?filter.category-1=bolsas&filter.category-2=mochila",
+                              "label": "Mochilas"
+                            },
+                            {
+                              "href": "/bolsas",
+                              "label": "VER TUDO",
+                              "underlined": true
+                            }
+                          ],
+                          "label": "Bolsas"
+                        },
+                        {
+                          "items": [
+                            {
+                              "href": "/bolsas?q=pequena",
+                              "label": "Pequena"
+                            },
+                            {
+                              "href": "/bolsas?q=media",
+                              "label": "Média"
+                            },
+                            {
+                              "href": "/bolsas?q=grande",
+                              "label": "Grande"
+                            }
+                          ],
+                          "label": "Tamanho",
                           "hideSectionOnMobile": true
                         }
                       ]
+                    }
+                  },
+                  {
+                    "href": "/acessorios",
+                    "icon": null,
+                    "label": "acessórios",
+                    "submenu": {
+                      "sections": [
+                        {
+                          "items": [
+                            {
+                              "href": "/acessorios?filter.category-1=acessorios&filter.category-2=carteiras",
+                              "label": "Carteiras"
+                            },
+                            {
+                              "href": "/acessorios?filter.category-1=acessorios&filter.category-2=cinto",
+                              "label": "Cinto"
+                            },
+                            {
+                              "href": "/acessorios?filter.category-1=acessorios&filter.category-2=chaveiro",
+                              "label": "Chaveiro"
+                            },
+                            {
+                              "href": "/acessorios?filter.category-1=acessorios&filter.category-2=necessaire",
+                              "label": "Necessaire"
+                            },
+                            {
+                              "href": "/acessorios",
+                              "label": "VER TUDO",
+                              "underlined": true
+                            }
+                          ],
+                          "label": "Acessórios"
+                        }
+                      ],
+                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/dbfd19ff-076e-458f-b36f-b60e770fc506"
                     }
                   },
                   {
@@ -786,48 +822,48 @@
                           "items": [
                             {
                               "href": "/arezzo?map=brand",
+                              "label": "Arezzo",
                               "image": {
                                 "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/2c71af46-3ede-47dc-8c37-33caf8ed39d1",
                                 "width": 83,
                                 "height": 16
-                              },
-                              "label": "Arezzo"
+                              }
                             },
                             {
                               "href": "/marcas?filter.brand=schutz",
+                              "label": "Schutz",
                               "image": {
                                 "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/fc1ed9b8-e3e0-46c7-8cf7-50e5c8c26200",
                                 "width": 63,
                                 "height": 16
-                              },
-                              "label": "Schutz"
+                              }
                             },
                             {
                               "href": "/m-s",
+                              "label": "M|S",
                               "image": {
                                 "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/199818e3-93c1-496d-b998-ca6798990cde",
                                 "width": 36,
                                 "height": 19
-                              },
-                              "label": "M|S"
+                              }
                             },
                             {
                               "href": "/marcas?filter.brand=alexandre-birman",
+                              "label": "Alexandre Birman",
                               "image": {
                                 "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/ef3b2a0e-9a2b-4f38-8c99-d0387003713f",
                                 "width": 87,
                                 "height": 22
-                              },
-                              "label": "Alexandre Birman"
+                              }
                             },
                             {
                               "href": "/marcas?filter.brand=vicenza",
+                              "label": "Vicenza",
                               "image": {
                                 "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/a6534511-38a9-4665-8124-a85834d8407d",
                                 "width": 69,
                                 "height": 20
-                              },
-                              "label": "Vicenza"
+                              }
                             },
                             {
                               "href": "/marcas?filter.brand=anacapri",
@@ -993,42 +1029,6 @@
                             }
                           ],
                           "label": "Marcas"
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "href": "/acessorios",
-                    "icon": null,
-                    "label": "acessórios",
-                    "submenu": {
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/dbfd19ff-076e-458f-b36f-b60e770fc506",
-                      "sections": [
-                        {
-                          "items": [
-                            {
-                              "href": "/acessorios?filter.category-1=acessorios&filter.category-2=carteiras",
-                              "label": "Carteiras"
-                            },
-                            {
-                              "href": "/acessorios?filter.category-1=acessorios&filter.category-2=cinto",
-                              "label": "Cinto"
-                            },
-                            {
-                              "href": "/acessorios?filter.category-1=acessorios&filter.category-2=chaveiro",
-                              "label": "Chaveiro"
-                            },
-                            {
-                              "href": "/acessorios?filter.category-1=acessorios&filter.category-2=necessaire",
-                              "label": "Necessaire"
-                            },
-                            {
-                              "href": "/acessorios",
-                              "label": "VER TUDO",
-                              "underlined": true
-                            }
-                          ],
-                          "label": "Acessórios"
                         }
                       ]
                     }
