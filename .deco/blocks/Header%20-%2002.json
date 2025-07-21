@@ -16,6 +16,105 @@
           }
         },
         {
+          "href": "/sapatos",
+          "icon": null,
+          "label": "sapatos",
+          "submenu": {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/16692afb-cc4f-4a23-828b-185a127a0013/ARZ_25_V_NATAL24_POCKET_MOOD3_POSTS_FRQ27.jpeg",
+            "sections": [
+              {
+                "items": [
+                  {
+                    "href": "/sapatos?filter.category-1=sapatos&filter.category-2=sandalia",
+                    "label": "Sandálias"
+                  },
+                  {
+                    "href": "/sapatos?filter.category-1=sapatos&filter.category-2=mocassim",
+                    "label": "Mocassins"
+                  },
+                  {
+                    "href": "/sapatos?filter.category-1=sapatos&filter.category-2=tenis",
+                    "label": "Tênis"
+                  },
+                  {
+                    "href": "/sapatos?filter.category-1=sapatos&filter.category-2=scarpin",
+                    "label": "Scarpins"
+                  },
+                  {
+                    "href": "/sapatos?filter.category-1=sapatos&filter.category-2=mule",
+                    "label": "Mule"
+                  },
+                  {
+                    "href": "/sapatos?filter.category-1=sapatos&filter.category-2=sapatilha",
+                    "label": "Sapatilhas"
+                  },
+                  {
+                    "label": "Botas",
+                    "href": "/sapatos?filter.category-1=sapatos&filter.category-2=bota"
+                  },
+                  {
+                    "label": "Papetes",
+                    "href": "/s?q=papete"
+                  },
+                  {
+                    "label": "Rasteiras",
+                    "href": "/sapatos?filter.category-1=sapatos&filter.category-2=rasteiras"
+                  },
+                  {
+                    "label": "Infantil",
+                    "href": "/infantil"
+                  },
+                  {
+                    "label": "VER TUDO",
+                    "href": "/sapatos",
+                    "underlined": true
+                  }
+                ],
+                "label": "Sapatos"
+              },
+              {
+                "items": [
+                  {
+                    "href": "/sapatos?filter.tamanho=33",
+                    "label": "33"
+                  },
+                  {
+                    "href": "/sapatos?filter.tamanho=34",
+                    "label": "34"
+                  },
+                  {
+                    "href": "/sapatos?filter.tamanho=35",
+                    "label": "35"
+                  },
+                  {
+                    "label": "36",
+                    "href": "/sapatos?filter.tamanho=36"
+                  },
+                  {
+                    "label": "37",
+                    "href": "/sapatos?filter.tamanho=37"
+                  },
+                  {
+                    "label": "38",
+                    "href": "/sapatos?filter.tamanho=38"
+                  },
+                  {
+                    "label": "39",
+                    "href": "/sapatos?filter.tamanho=39"
+                  },
+                  {
+                    "label": "40",
+                    "href": "/sapatos?filter.tamanho=40"
+                  }
+                ],
+                "label": "Numeração",
+                "hideSectionOnMobile": true,
+                "showItemsAsSquare": true
+              }
+            ]
+          }
+        },
+        {
           "href": "/bolsas",
           "icon": null,
           "label": "<p>bolsas</p>",
@@ -74,313 +173,10 @@
           }
         },
         {
-          "href": "/sapatos",
-          "icon": null,
-          "label": "sapatos",
-          "submenu": {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/16692afb-cc4f-4a23-828b-185a127a0013/ARZ_25_V_NATAL24_POCKET_MOOD3_POSTS_FRQ27.jpeg",
-            "sections": [
-              {
-                "items": [
-                  {
-                    "href": "/sapatos?filter.category-1=sapatos&filter.category-2=sandalia",
-                    "label": "Sandálias"
-                  },
-                  {
-                    "href": "/sapatos?filter.category-1=sapatos&filter.category-2=mocassim",
-                    "label": "Mocassins"
-                  },
-                  {
-                    "href": "/sapatos?filter.category-1=sapatos&filter.category-2=tenis",
-                    "label": "Tênis"
-                  },
-                  {
-                    "href": "/sapatos?filter.category-1=sapatos&filter.category-2=scarpin",
-                    "label": "Scarpins"
-                  },
-                  {
-                    "href": "/sapatos?filter.category-1=sapatos&filter.category-2=mule",
-                    "label": "Mule"
-                  },
-                  {
-                    "href": "/sapatos?filter.category-1=sapatos&filter.category-2=sapatilha",
-                    "label": "Sapatilhas"
-                  },
-                  {
-                    "href": "/sapatos?filter.category-1=sapatos&filter.category-2=bota",
-                    "label": "Botas"
-                  },
-                  {
-                    "href": "/s?q=papete",
-                    "label": "Papetes"
-                  },
-                  {
-                    "href": "/sapatos?filter.category-1=sapatos&filter.category-2=rasteiras",
-                    "label": "Rasteiras"
-                  },
-                  {
-                    "href": "/infantil",
-                    "label": "Infantil"
-                  },
-                  {
-                    "href": "/sapatos",
-                    "label": "VER TUDO",
-                    "underlined": true
-                  }
-                ],
-                "label": "Sapatos"
-              },
-              {
-                "items": [
-                  {
-                    "href": "/sapatos?filter.tamanho=33",
-                    "label": "33"
-                  },
-                  {
-                    "href": "/sapatos?filter.tamanho=34",
-                    "label": "34"
-                  },
-                  {
-                    "href": "/sapatos?filter.tamanho=35",
-                    "label": "35"
-                  },
-                  {
-                    "href": "/sapatos?filter.tamanho=36",
-                    "label": "36"
-                  },
-                  {
-                    "href": "/sapatos?filter.tamanho=37",
-                    "label": "37"
-                  },
-                  {
-                    "href": "/sapatos?filter.tamanho=38",
-                    "label": "38"
-                  },
-                  {
-                    "href": "/sapatos?filter.tamanho=39",
-                    "label": "39"
-                  },
-                  {
-                    "href": "/sapatos?filter.tamanho=40",
-                    "label": "40"
-                  }
-                ],
-                "label": "Numeração",
-                "showItemsAsSquare": true,
-                "hideSectionOnMobile": true
-              }
-            ]
-          }
-        },
-        {
-          "href": "/",
-          "icon": null,
-          "label": "marcas",
-          "submenu": {
-            "sections": [
-              {
-                "items": [
-                  {
-                    "href": "/arezzo?map=brand",
-                    "image": {
-                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/2c71af46-3ede-47dc-8c37-33caf8ed39d1",
-                      "width": 83,
-                      "height": 16
-                    },
-                    "label": "Arezzo"
-                  },
-                  {
-                    "href": "/schutz?map=brand",
-                    "image": {
-                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/fc1ed9b8-e3e0-46c7-8cf7-50e5c8c26200",
-                      "width": 63,
-                      "height": 16
-                    },
-                    "label": "Schutz"
-                  },
-                  {
-                    "href": "/m%7Cs",
-                    "image": {
-                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/199818e3-93c1-496d-b998-ca6798990cde",
-                      "width": 36,
-                      "height": 19
-                    },
-                    "label": "M|S"
-                  },
-                  {
-                    "href": "/alexandre-birman?map=brand",
-                    "image": {
-                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/ef3b2a0e-9a2b-4f38-8c99-d0387003713f",
-                      "width": 87,
-                      "height": 22
-                    },
-                    "label": "Alexandre Birman"
-                  },
-                  {
-                    "href": "/vicenza?map=brand",
-                    "image": {
-                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/a6534511-38a9-4665-8124-a85834d8407d",
-                      "width": 69,
-                      "height": 20
-                    },
-                    "label": "Vicenza"
-                  },
-                  {
-                    "href": "/anacapri?map=brand",
-                    "image": {
-                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/49bf5bea-b2a6-4620-8d55-fc455ad7cf86",
-                      "width": 67,
-                      "height": 16
-                    },
-                    "label": "Anacapri"
-                  },
-                  {
-                    "href": "/carmem-dalessandro?map=brand",
-                    "image": {
-                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/9a2eabb9-04bc-4716-b291-72500a3210b3",
-                      "width": 163,
-                      "height": 10
-                    },
-                    "label": "Carmem Dalessandro"
-                  },
-                  {
-                    "href": "/confraria?map=brand",
-                    "image": {
-                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/60303a97-a2fb-4272-b076-e18175f5695a",
-                      "width": 68,
-                      "height": 20
-                    },
-                    "label": "Confraria"
-                  },
-                  {
-                    "href": "/elisa-atheniense?map=brand",
-                    "image": {
-                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/748621c9-c66f-42ac-8c9f-0012a232fab3",
-                      "width": 140,
-                      "height": 13
-                    },
-                    "label": "Elisa Atheniense"
-                  },
-                  {
-                    "href": "/follis?map=brand",
-                    "image": {
-                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/4b2f593a-f547-4586-bcaf-1f10c30d91a1",
-                      "width": 93,
-                      "height": 18
-                    },
-                    "label": "Follis"
-                  },
-                  {
-                    "href": "/carrano?map=brand",
-                    "image": {
-                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/d55b5888-96b3-40a3-88fc-4b34276be40d",
-                      "width": 59,
-                      "height": 22
-                    },
-                    "label": "Carrano"
-                  },
-                  {
-                    "href": "/guilhermina?map=brand",
-                    "image": {
-                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/60813857-dcd8-4305-a735-14e0984d5030",
-                      "width": 64,
-                      "height": 22
-                    },
-                    "label": "Guilhermina"
-                  },
-                  {
-                    "href": "/isla?map=brand",
-                    "image": {
-                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/152e331e-cfaa-426d-a568-aa84c3b737b2",
-                      "width": 51,
-                      "height": 18
-                    },
-                    "label": "Isla"
-                  },
-                  {
-                    "href": "/la-spezia?map=brand",
-                    "image": {
-                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/d32679bf-7565-4995-a891-f24107ec705f",
-                      "width": 66,
-                      "height": 21
-                    },
-                    "label": "La Spezia"
-                  },
-                  {
-                    "href": "/lorraci?map=brand",
-                    "image": {
-                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/9a6c91d8-56ff-4b85-a343-70a037e9084d",
-                      "width": 108,
-                      "height": 18
-                    },
-                    "label": "Lorraci"
-                  },
-                  {
-                    "href": "/ryzi?map=brand",
-                    "image": {
-                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/d22588ac-040c-4815-9987-31d2fe90c8ef",
-                      "width": 38,
-                      "height": 17
-                    },
-                    "label": "Ryzi"
-                  },
-                  {
-                    "href": "/serpui?map=brand",
-                    "image": {
-                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/55eadcc7-b31f-4195-916f-7774ba8d6d0c",
-                      "width": 96,
-                      "height": 16
-                    },
-                    "label": "Serpui"
-                  },
-                  {
-                    "href": "/wai-wai?map=brand",
-                    "image": {
-                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/e83441d8-626e-45be-9e1e-4ce47917e207",
-                      "width": 76,
-                      "height": 17
-                    },
-                    "label": "Wai Wai"
-                  },
-                  {
-                    "href": "/brizza?map=brand",
-                    "image": {
-                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/28c1695e-c06c-4296-8633-815bdab1ae66",
-                      "width": 101,
-                      "height": 14
-                    },
-                    "label": "Brizza"
-                  },
-                  {
-                    "href": "/debora-germani",
-                    "image": {
-                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/add8acd6-7fed-44a1-855b-4273a9e78fe3",
-                      "width": 59,
-                      "height": 22
-                    },
-                    "label": "Debora Germani"
-                  },
-                  {
-                    "href": "/soleah",
-                    "image": {
-                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/75409780-7e75-4574-942b-be9c88e427a7/full-banner-mobile.png",
-                      "width": 59,
-                      "height": 22
-                    },
-                    "label": "Soleah"
-                  }
-                ],
-                "label": "Marcas"
-              }
-            ]
-          }
-        },
-        {
           "href": "/acessorios",
           "icon": null,
           "label": "acessórios",
           "submenu": {
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/63fab2cc-1edb-40f0-89bc-0f7888271267",
             "sections": [
               {
                 "items": [
@@ -407,6 +203,210 @@
                   }
                 ],
                 "label": "Acessórios"
+              }
+            ],
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/63fab2cc-1edb-40f0-89bc-0f7888271267"
+          }
+        },
+        {
+          "href": "/",
+          "icon": null,
+          "label": "marcas",
+          "submenu": {
+            "sections": [
+              {
+                "items": [
+                  {
+                    "href": "/arezzo?map=brand",
+                    "label": "Arezzo",
+                    "image": {
+                      "width": 83,
+                      "height": 16,
+                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/2c71af46-3ede-47dc-8c37-33caf8ed39d1"
+                    }
+                  },
+                  {
+                    "href": "/schutz?map=brand",
+                    "label": "Schutz",
+                    "image": {
+                      "width": 63,
+                      "height": 16,
+                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/fc1ed9b8-e3e0-46c7-8cf7-50e5c8c26200"
+                    }
+                  },
+                  {
+                    "href": "/m%7Cs",
+                    "label": "M|S",
+                    "image": {
+                      "width": 36,
+                      "height": 19,
+                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/199818e3-93c1-496d-b998-ca6798990cde"
+                    }
+                  },
+                  {
+                    "href": "/alexandre-birman?map=brand",
+                    "label": "Alexandre Birman",
+                    "image": {
+                      "width": 87,
+                      "height": 22,
+                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/ef3b2a0e-9a2b-4f38-8c99-d0387003713f"
+                    }
+                  },
+                  {
+                    "href": "/vicenza?map=brand",
+                    "label": "Vicenza",
+                    "image": {
+                      "width": 69,
+                      "height": 20,
+                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/a6534511-38a9-4665-8124-a85834d8407d"
+                    }
+                  },
+                  {
+                    "label": "Anacapri",
+                    "href": "/anacapri?map=brand",
+                    "image": {
+                      "width": 67,
+                      "height": 16,
+                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/49bf5bea-b2a6-4620-8d55-fc455ad7cf86"
+                    }
+                  },
+                  {
+                    "label": "Carmem Dalessandro",
+                    "href": "/carmem-dalessandro?map=brand",
+                    "image": {
+                      "width": 163,
+                      "height": 10,
+                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/9a2eabb9-04bc-4716-b291-72500a3210b3"
+                    }
+                  },
+                  {
+                    "label": "Confraria",
+                    "href": "/confraria?map=brand",
+                    "image": {
+                      "width": 68,
+                      "height": 20,
+                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/60303a97-a2fb-4272-b076-e18175f5695a"
+                    }
+                  },
+                  {
+                    "label": "Elisa Atheniense",
+                    "href": "/elisa-atheniense?map=brand",
+                    "image": {
+                      "width": 140,
+                      "height": 13,
+                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/748621c9-c66f-42ac-8c9f-0012a232fab3"
+                    }
+                  },
+                  {
+                    "label": "Follis",
+                    "href": "/follis?map=brand",
+                    "image": {
+                      "width": 93,
+                      "height": 18,
+                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/4b2f593a-f547-4586-bcaf-1f10c30d91a1"
+                    }
+                  },
+                  {
+                    "label": "Carrano",
+                    "href": "/carrano?map=brand",
+                    "image": {
+                      "width": 59,
+                      "height": 22,
+                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/d55b5888-96b3-40a3-88fc-4b34276be40d"
+                    }
+                  },
+                  {
+                    "label": "Guilhermina",
+                    "href": "/guilhermina?map=brand",
+                    "image": {
+                      "width": 64,
+                      "height": 22,
+                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/60813857-dcd8-4305-a735-14e0984d5030"
+                    }
+                  },
+                  {
+                    "label": "Isla",
+                    "href": "/isla?map=brand",
+                    "image": {
+                      "width": 51,
+                      "height": 18,
+                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/152e331e-cfaa-426d-a568-aa84c3b737b2"
+                    }
+                  },
+                  {
+                    "label": "La Spezia",
+                    "href": "/la-spezia?map=brand",
+                    "image": {
+                      "width": 66,
+                      "height": 21,
+                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/d32679bf-7565-4995-a891-f24107ec705f"
+                    }
+                  },
+                  {
+                    "label": "Lorraci",
+                    "href": "/lorraci?map=brand",
+                    "image": {
+                      "width": 108,
+                      "height": 18,
+                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/9a6c91d8-56ff-4b85-a343-70a037e9084d"
+                    }
+                  },
+                  {
+                    "label": "Ryzi",
+                    "href": "/ryzi?map=brand",
+                    "image": {
+                      "width": 38,
+                      "height": 17,
+                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/d22588ac-040c-4815-9987-31d2fe90c8ef"
+                    }
+                  },
+                  {
+                    "label": "Serpui",
+                    "href": "/serpui?map=brand",
+                    "image": {
+                      "width": 96,
+                      "height": 16,
+                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/55eadcc7-b31f-4195-916f-7774ba8d6d0c"
+                    }
+                  },
+                  {
+                    "label": "Wai Wai",
+                    "href": "/wai-wai?map=brand",
+                    "image": {
+                      "width": 76,
+                      "height": 17,
+                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/e83441d8-626e-45be-9e1e-4ce47917e207"
+                    }
+                  },
+                  {
+                    "label": "Brizza",
+                    "href": "/brizza?map=brand",
+                    "image": {
+                      "width": 101,
+                      "height": 14,
+                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/28c1695e-c06c-4296-8633-815bdab1ae66"
+                    }
+                  },
+                  {
+                    "label": "Debora Germani",
+                    "href": "/debora-germani",
+                    "image": {
+                      "width": 59,
+                      "height": 22,
+                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/add8acd6-7fed-44a1-855b-4273a9e78fe3"
+                    }
+                  },
+                  {
+                    "label": "Soleah",
+                    "href": "/soleah",
+                    "image": {
+                      "width": 59,
+                      "height": 22,
+                      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/75409780-7e75-4574-942b-be9c88e427a7/full-banner-mobile.png"
+                    }
+                  }
+                ],
+                "label": "Marcas"
               }
             ]
           }
