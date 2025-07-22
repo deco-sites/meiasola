@@ -1,1 +1,29 @@
-{"name":"Carreiras","path":"/institucional/carreiras","sections":[{"__resolveType":"Header - 02"},{"image":{"alt":"Menina sentada em uma cadeira e atrás um fundo rosa"},"content":"<h3 style=\"font-size: 24px;\" data-mce-style=\"font-size: 24px;\">CARREIRAS</h3><p>Reconhecido como vanguardista no varejo de moda premium da região Nordeste, o Grupo Meia Sola percorre uma trajetória de mais 30 anos, alicerçada em produtos de alta qualidade, atendimento de excelência e forte presença nas tendências mundiais.</p><p>Especializada no segmento de calçados, bolsas e acessórios femininos, está presente através de lojas próprias multimarcas que levam seu nome, fruto de um cuidadoso trabalho de curadoria onde se destacam atributos ligados a qualidade, design, conforto e modernidade.</p><p>Além da marca própria, é um dos mais relevantes franqueados do Grupo Arezzo&amp;Co no Brasil e das outras marcas do grupo da família Birman, Schutz, Ana Capri e Arezzo, totalizando a administração de 17 lojas, sendo duas no Interior e as demais na Capital, além da sede corporativa e centro de distribuição e nosso e-commerce com entrega em todo território nacional.</p><p>O Grupo Meia Sola reflete seu DNA focado em proporcionar um ambiente de trabalho saudável e de desenvolvimento para seus colaboradores.</p><p>Validando assim o lema “Um passo à frente, fazendo sempre mais”.</p><p>Confira nossa&nbsp;<span style=\"text-decoration: underline;\" data-mce-style=\"text-decoration: underline;\"><a class=\"text-red-500 underline\" href=\"http://meiasola.webhop.biz:58080/fortesrh/externo/logoutExterno.action?empresaId=4\" target=\"_blank\" rel=\"noopener\" data-mce-href=\"http://meiasola.webhop.biz:58080/fortesrh/externo/logoutExterno.action?empresaId=4\" data-mce-selected=\"inline-boundary\">Página de Carreiras﻿</a></span> e inscreva-se na vaga desejada.</p>","menuSection":{"__resolveType":"Institutional Menu - 01"},"__resolveType":"site/sections/MeiaSola/InstitutionalContent.tsx"},{"__resolveType":"Footer - 02"},{"__resolveType":"WhatsApp Global"},{"__resolveType":"SEO"}],"__resolveType":"website/pages/Page.tsx"}
+{
+  "name": "Carreiras",
+  "path": "/institucional/carreiras",
+  "sections": [
+    {
+      "__resolveType": "Header - 02"
+    },
+    {
+      "image": {
+        "alt": "Menina sentada em uma cadeira e atrás um fundo rosa"
+      },
+      "content": "<h3 style=\"font-size: 24px;\" data-mce-style=\"font-size: 24px;\">CARREIRAS</h3><p>Reconhecido como vanguardista no varejo de moda premium da região Nordeste, o Grupo Meia Sola percorre uma trajetória de mais 30 anos, alicerçada em produtos de alta qualidade, atendimento de excelência e forte presença nas tendências mundiais.</p><p>Especializada no segmento de calçados, bolsas e acessórios femininos, está presente através de lojas próprias multimarcas que levam seu nome, fruto de um cuidadoso trabalho de curadoria onde se destacam atributos ligados a qualidade, design, conforto e modernidade.</p><p>Além da marca própria, é um dos mais relevantes franqueados do Grupo Arezzo&amp;Co no Brasil e das outras marcas do grupo da família Birman, Schutz, Ana Capri e Arezzo, totalizando a administração de 17 lojas, sendo duas no Interior e as demais na Capital, além da sede corporativa e centro de distribuição e nosso e-commerce com entrega em todo território nacional.</p><p>O Grupo Meia Sola reflete seu DNA focado em proporcionar um ambiente de trabalho saudável e de desenvolvimento para seus colaboradores.</p><p>Validando assim o lema “Um passo à frente, fazendo sempre mais”.</p><p>Confira nossa&nbsp;<span style=\"text-decoration: underline;\" data-mce-style=\"text-decoration: underline;\"><a class=\"text-red-500 underline\" href=\"http://meiasola.webhop.biz:58080/fortesrh/externo/logoutExterno.action?empresaId=4\" target=\"_blank\" rel=\"noopener\" data-mce-href=\"http://meiasola.webhop.biz:58080/fortesrh/externo/logoutExterno.action?empresaId=4\" data-mce-selected=\"inline-boundary\">Página de Carreiras﻿</a></span> e inscreva-se na vaga desejada.</p>",
+      "menuSection": {
+        "__resolveType": "Institutional Menu - 01"
+      },
+      "__resolveType": "site/sections/MeiaSola/InstitutionalContent.tsx"
+    },
+    {
+      "__resolveType": "Footer - 02"
+    },
+    {
+      "__resolveType": "WhatsApp Global"
+    },
+    {
+      "__resolveType": "SEO"
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx"
+}
