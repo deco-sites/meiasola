@@ -87,7 +87,7 @@ export const allFilters = [
     "@type": "FilterToggle",
     key: "category-1",
     label: "Departamento",
-    quantity: 6,
+    quantity: 5,
     values: [
       {
         value: "sapatos",
@@ -112,14 +112,6 @@ export const allFilters = [
         selected: false,
         url: "?filter.category-1=acessorios",
         label: "Acessórios",
-      },
-      {
-        value: "empty",
-        showQuantity: false,
-        quantity: 36,
-        selected: false,
-        url: "?filter.category-1=empty",
-        label: "Empty",
       },
       {
         value: "infantil",
