@@ -76,18 +76,6 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/b0737bc6-095c-486b-9293-780224a0fb87/MS_SALE_2880x1320-copiar.jpg",
-        "imageMobile": "https://assets.decocache.com/meiasola/9d9acd78-686c-420d-892a-8412162af763/MS_SALE780x1320px-copiar.jpg"
-      },
-      "button": {
-        "text": "Confira",
-        "link": "/344?map=productClusterIds&O=&sort=release%3Adesc&page"
-      }
-    },
-    {
-      "type": "image",
-      "video": {},
-      "image": {
         "imageDesktop": "https://assets.decocache.com/meiasola/05596c64-35e5-46fd-b9a7-d98c1b3bad3a/RESORT-2880x1320-copiar.jpg",
         "imageMobile": "https://assets.decocache.com/meiasola/e626e682-dafa-41f4-95bc-ab9945d8f18f/RESORT-780x1320px-copiar.jpg"
       },
