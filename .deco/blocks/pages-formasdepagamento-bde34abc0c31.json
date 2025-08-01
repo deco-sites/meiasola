@@ -1,1 +1,29 @@
-{"name":"Formas de Pagamento","path":"/institucional/formas-pagamento","sections":[{"__resolveType":"Header - 02"},{"image":{"alt":"Menina sentada em uma cadeira e atrás um fundo rosa"},"content":"<h3 style=\"font-size: 24px;\" data-mce-style=\"font-size: 24px;\">FORMAS DE PAGAMENTO</h3><p style=\"font-size: 14px;\" data-mce-style=\"font-size: 14px;\">Oferecemos a opção de parcelamento em até <strong>10 vezes sem juros</strong> para compras realizadas com cartão de crédito. Cada parcela deve ser no valor mínimo de<strong> R$ 80,00</strong>. Esta flexibilidade visa proporcionar a você mais opções na hora de efetuar suas compras.<br>Para assegurar a proteção de nossos clientes, realizamos uma validação cadastral, que pode levar até 48 horas para a confirmação e conclusão do pedido. O processo é realizado por meio de contato telefônico ou SMS.<br></p>","menuSection":{"__resolveType":"Institutional Menu - 01"},"__resolveType":"site/sections/MeiaSola/InstitutionalContent.tsx"},{"__resolveType":"Footer - 02"},{"__resolveType":"WhatsApp Global"},{"__resolveType":"SEO"}],"__resolveType":"website/pages/Page.tsx"}
+{
+  "name": "Formas de Pagamento",
+  "path": "/institucional/formas-pagamento",
+  "sections": [
+    {
+      "__resolveType": "Header - 02"
+    },
+    {
+      "image": {
+        "alt": "Menina sentada em uma cadeira e atrás um fundo rosa"
+      },
+      "content": "<h3>FORMAS DE PAGAMENTO</h3><p>Oferecemos a opção de parcelamento em até <strong>10 vezes sem juros</strong> para compras realizadas com cartão de crédito. Cada parcela deve ser no valor mínimo de<strong> R$ 60,00</strong>. Esta flexibilidade visa proporcionar a você mais opções na hora de efetuar suas compras.<br>Para assegurar a proteção de nossos clientes, realizamos uma validação cadastral, que pode levar até 48 horas para a confirmação e conclusão do pedido. O processo é realizado por meio de contato telefônico ou SMS.<br></p>",
+      "menuSection": {
+        "__resolveType": "Institutional Menu - 01"
+      },
+      "__resolveType": "site/sections/MeiaSola/InstitutionalContent.tsx"
+    },
+    {
+      "__resolveType": "Footer - 02"
+    },
+    {
+      "__resolveType": "WhatsApp Global"
+    },
+    {
+      "__resolveType": "SEO"
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx"
+}
