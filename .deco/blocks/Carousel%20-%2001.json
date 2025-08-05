@@ -15,18 +15,6 @@
     {
       "button": {
         "text": "Confira",
-        "link": "/339?map=productClusterIds&O=&sort=release%3Adesc&page"
-      },
-      "type": "image",
-      "video": {},
-      "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/0d8c8324-4944-4d79-81cc-55ea24f012cf/ZZ_SALE780x1320px-copiar.jpg",
-        "imageDesktop": "https://assets.decocache.com/meiasola/98136d08-9e83-4a83-bf60-54560150b1aa/ZZ_SALE_2880x1320-copiar.jpg"
-      }
-    },
-    {
-      "button": {
-        "text": "Confira",
         "link": "/343?map=productClusterIds&O=&sort=release%3Adesc&page"
       },
       "type": "image",
@@ -39,49 +27,37 @@
     {
       "button": {
         "text": "Confira",
-        "link": "/344?map=productClusterIds&O=&sort=release%3Adesc&page"
-      },
-      "type": "image",
-      "video": {},
-      "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/9d9acd78-686c-420d-892a-8412162af763/MS_SALE780x1320px-copiar.jpg",
-        "imageDesktop": "https://assets.decocache.com/meiasola/b0737bc6-095c-486b-9293-780224a0fb87/MS_SALE_2880x1320-copiar.jpg"
-      }
-    },
-    {
-      "button": {
-        "text": "Confira",
         "link": "/sale?sort=price%3Adesc&filter.productClusterIds=151&filter.price=0%3A399"
       },
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/9d575af4-2fc1-4c4e-9a53-27e13388413b/ms_sale_ate399_banner_desktop.jpg",
-        "imageMobile": "https://assets.decocache.com/meiasola/4a9418f5-1ca9-4b30-a439-5457be0fdf13/ms_sale_ate399_banner_780x1320px.jpg"
+        "imageMobile": "https://assets.decocache.com/meiasola/4a9418f5-1ca9-4b30-a439-5457be0fdf13/ms_sale_ate399_banner_780x1320px.jpg",
+        "imageDesktop": "https://assets.decocache.com/meiasola/9d575af4-2fc1-4c4e-9a53-27e13388413b/ms_sale_ate399_banner_desktop.jpg"
       }
     },
     {
-      "type": "image",
-      "video": {},
-      "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/05596c64-35e5-46fd-b9a7-d98c1b3bad3a/RESORT-2880x1320-copiar.jpg",
-        "imageMobile": "https://assets.decocache.com/meiasola/e626e682-dafa-41f4-95bc-ab9945d8f18f/RESORT-780x1320px-copiar.jpg"
-      },
       "button": {
         "text": "Confira",
         "link": "/newin"
+      },
+      "type": "image",
+      "video": {},
+      "image": {
+        "imageMobile": "https://assets.decocache.com/meiasola/e626e682-dafa-41f4-95bc-ab9945d8f18f/RESORT-780x1320px-copiar.jpg",
+        "imageDesktop": "https://assets.decocache.com/meiasola/05596c64-35e5-46fd-b9a7-d98c1b3bad3a/RESORT-2880x1320-copiar.jpg"
       }
     },
     {
+      "button": {
+        "text": "Confira",
+        "link": "/m%7Cs"
+      },
       "type": "image",
       "video": {},
       "image": {
         "imageDesktop": "https://assets.decocache.com/meiasola/de3ec978-5b0e-4354-9852-cdb0030e73cc/banner---site-2.png",
         "imageMobile": "https://assets.decocache.com/meiasola/a0a30245-b4e3-4711-aacd-7d2382d04901/APP.png"
-      },
-      "button": {
-        "text": "Confira",
-        "link": "/m%7Cs"
       }
     },
     {
