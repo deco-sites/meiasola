@@ -2,25 +2,25 @@
   "variant": "two",
   "collections": [
     {
-      "link": "/347?map=productClusterIds&O=&sort=release%3Adesc&page",
+      "link": "/bolsas?sort=release%3Adesc&filter.category-1=bolsas&filter.brand=arezzo",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/e936204e-05a8-4cc0-a944-03fffbb86ff1/ARZ_26_CC_BOHO_GEMS_POSTS21.jpeg",
+      "image": "https://assets.decocache.com/meiasola/10fbd139-49a2-466b-a2d0-f86011239b7e/3.png",
       "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f1853648-79a2-4466-8ae1-6be2f52c8f58/AREZZO---Summer-Hits-2_9x16-(1).mp4",
-      "label": "AREZZO"
+      "label": "habitat_natural"
     },
     {
-      "link": "/schutz",
+      "link": "/bolsas?sort=release%3Adesc&filter.category-1=bolsas&filter.brand=anacapri",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/dc4290d5-ffea-4c13-9be0-4da27c282ca4/O-centro-de-Menorca-cativa-com-seu-charme-e-detalhes.-SchutzTrip-SchutzResort26.jpg",
-      "label": "SCHUTZ",
-      "video": "https://data.decoassets.com/meiasola/47d32975-2ab5-441c-ba41-899d239df236/confira-aqui.mp4"
-    },
-    {
-      "link": "/anacapri",
-      "type": "image",
-      "image": "https://assets.decocache.com/meiasola/061d461c-8aea-4aa7-b167-5b9f0e0a6084/FEED_ESTILOBOHOPrancheta-13.png",
-      "label": "anacapri",
+      "image": "https://assets.decocache.com/meiasola/c60d0415-a50d-4da8-84fd-0ea5be4f8689/1.png",
+      "label": "verão 26",
       "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f1853648-79a2-4466-8ae1-6be2f52c8f58/AREZZO---Summer-Hits-2_9x16-(1).mp4"
+    },
+    {
+      "link": "/bolsas?sort=release%3Adesc&filter.category-1=bolsas&filter.brand=schutz",
+      "type": "image",
+      "image": "https://assets.decocache.com/meiasola/1cb4b28a-3bb5-478a-8341-260f94c30884/2.png",
+      "label": "bag loved",
+      "video": "https://data.decoassets.com/meiasola/47d32975-2ab5-441c-ba41-899d239df236/confira-aqui.mp4"
     }
   ],
   "__resolveType": "site/sections/MeiaSola/Collections.tsx"
