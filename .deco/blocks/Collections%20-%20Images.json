@@ -17,13 +17,13 @@
       "link": "/vicenza?map=brand",
       "type": "image",
       "image": "https://assets.decocache.com/meiasola/d07d27cf-bf45-4f4b-a7a1-b3c9459951c3/2.png",
-      "label": "brilhar ainda mais!"
+      "label": "um mood para"
     },
     {
       "link": "/isla?map=brand",
       "type": "image",
       "image": "https://assets.decocache.com/meiasola/3d9445e1-3c96-4fe7-b034-4e9f1ae50662/3.png",
-      "label": "um mood para"
+      "label": "brilhar ainda mais!"
     }
   ],
   "__resolveType": "site/sections/MeiaSola/Collections.tsx"
