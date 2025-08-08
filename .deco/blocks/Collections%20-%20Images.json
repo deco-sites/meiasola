@@ -2,28 +2,28 @@
   "variant": "two",
   "collections": [
     {
-      "link": "/sapatos?filter.category-1=sapatos&filter.category-2=sandalia",
+      "link": "/carrano?map=brand",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/b0a4031b-9cfc-40e9-b1ab-417e034329ab/Screenshot_2.jpg",
+      "image": "https://assets.decocache.com/meiasola/bc609215-0919-45b3-8670-b65cfc040cb5/1.png",
       "label": "escolha"
     },
     {
-      "link": "/sapatos?filter.category-1=sapatos&filter.category-2=tenis",
+      "link": "/alexandre-birman?map=brand",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/36b580bb-cefc-4ecd-a5e8-f9a272c98d91/POST-FEED-(3).jpeg",
+      "image": "https://assets.decocache.com/meiasola/045fc4fc-3f5f-4635-af8a-27313b3faf96/4.png",
       "label": "para você"
     },
     {
-      "link": "/sapatos?filter.category-1=sapatos&filter.category-2=scarpin",
+      "link": "/vicenza?map=brand",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/4f271a31-4ca9-4ebd-a9e2-4238b0b36319/Design-sem-nome-(1).png",
-      "label": "um mood para"
+      "image": "https://assets.decocache.com/meiasola/d07d27cf-bf45-4f4b-a7a1-b3c9459951c3/2.png",
+      "label": "brilhar ainda mais!"
     },
     {
-      "link": "/bolsas",
+      "link": "/isla?map=brand",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/eacb9a05-8d16-49be-883a-e06bbce65a91/FEED_ESTILOBOHOPrancheta-1.png",
-      "label": "brilhar ainda mais!"
+      "image": "https://assets.decocache.com/meiasola/3d9445e1-3c96-4fe7-b034-4e9f1ae50662/3.png",
+      "label": "um mood para"
     }
   ],
   "__resolveType": "site/sections/MeiaSola/Collections.tsx"
