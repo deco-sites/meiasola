@@ -4,36 +4,12 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/e3b45cf0-8f39-4218-b73d-773b511ed458/SCH_SALE_2880x1320_SHOES_BAGS--bolsas.jpg",
-        "imageMobile": "https://assets.decocache.com/meiasola/64fab8ea-2548-4960-bf5d-b873d6791ce9/SCH_SALE_ST-sapat_bolsas.jpg"
+        "imageDesktop": "https://assets.decocache.com/meiasola/05596c64-35e5-46fd-b9a7-d98c1b3bad3a/RESORT-2880x1320-copiar.jpg",
+        "imageMobile": "https://assets.decocache.com/meiasola/e626e682-dafa-41f4-95bc-ab9945d8f18f/RESORT-780x1320px-copiar.jpg"
       },
       "button": {
-        "link": "/345?map=productClusterIds&O=&sort=release%3Adesc&page",
+        "link": "/newin",
         "text": "Confira"
-      }
-    },
-    {
-      "button": {
-        "text": "Confira",
-        "link": "/sale?sort=price%3Adesc&filter.productClusterIds=151&filter.price=0%3A399"
-      },
-      "type": "image",
-      "video": {},
-      "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/4a9418f5-1ca9-4b30-a439-5457be0fdf13/ms_sale_ate399_banner_780x1320px.jpg",
-        "imageDesktop": "https://assets.decocache.com/meiasola/9d575af4-2fc1-4c4e-9a53-27e13388413b/ms_sale_ate399_banner_desktop.jpg"
-      }
-    },
-    {
-      "button": {
-        "text": "Confira",
-        "link": "/newin"
-      },
-      "type": "image",
-      "video": {},
-      "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/e626e682-dafa-41f4-95bc-ab9945d8f18f/RESORT-780x1320px-copiar.jpg",
-        "imageDesktop": "https://assets.decocache.com/meiasola/05596c64-35e5-46fd-b9a7-d98c1b3bad3a/RESORT-2880x1320-copiar.jpg"
       }
     },
     {
@@ -56,20 +32,32 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/47d3e5b8-de3d-4260-ad4b-20234196c81c/AC-RESORT-2880x1320-copiar.jpg",
-        "imageMobile": "https://assets.decocache.com/meiasola/59750430-f772-43a8-a30b-5619ee7bda79/AC-RESORT-780x1320px-copiar.jpg"
+        "imageMobile": "https://assets.decocache.com/meiasola/59750430-f772-43a8-a30b-5619ee7bda79/AC-RESORT-780x1320px-copiar.jpg",
+        "imageDesktop": "https://assets.decocache.com/meiasola/47d3e5b8-de3d-4260-ad4b-20234196c81c/AC-RESORT-2880x1320-copiar.jpg"
       }
     },
     {
-      "type": "image",
-      "video": {},
-      "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/f26fea2a-43b5-4487-81bf-50b1e8081c45/ZZ-RESORT-2880x1320-copiar.jpg",
-        "imageMobile": "https://assets.decocache.com/meiasola/1c6d7ef6-44ca-4a58-84ef-80ea844f88b8/ZZ-RESORT-780x1320px-copiar.jpg"
-      },
       "button": {
         "text": "Confira",
         "link": "/arezzo"
+      },
+      "type": "image",
+      "video": {},
+      "image": {
+        "imageMobile": "https://assets.decocache.com/meiasola/1c6d7ef6-44ca-4a58-84ef-80ea844f88b8/ZZ-RESORT-780x1320px-copiar.jpg",
+        "imageDesktop": "https://assets.decocache.com/meiasola/f26fea2a-43b5-4487-81bf-50b1e8081c45/ZZ-RESORT-2880x1320-copiar.jpg"
+      }
+    },
+    {
+      "button": {
+        "text": "Confira",
+        "link": "/sale?sort=price%3Adesc&filter.productClusterIds=151&filter.price=0%3A399"
+      },
+      "type": "image",
+      "video": {},
+      "image": {
+        "imageDesktop": "https://assets.decocache.com/meiasola/9d575af4-2fc1-4c4e-9a53-27e13388413b/ms_sale_ate399_banner_desktop.jpg",
+        "imageMobile": "https://assets.decocache.com/meiasola/4a9418f5-1ca9-4b30-a439-5457be0fdf13/ms_sale_ate399_banner_780x1320px.jpg"
       }
     },
     {
