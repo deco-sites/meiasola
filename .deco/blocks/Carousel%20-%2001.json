@@ -71,6 +71,18 @@
         "text": "Confira",
         "link": "/newin"
       }
+    },
+    {
+      "type": "image",
+      "video": {},
+      "image": {
+        "imageDesktop": "https://assets.decocache.com/meiasola/f32fb08f-e1d8-4cef-b9f5-4be3482c5e54/BANNER-SITE---SALE---PECA-2.png",
+        "imageMobile": "https://assets.decocache.com/meiasola/df98b867-7028-4fe7-b712-77b19f3ed071/BANNER-APP---PECA-2.png"
+      },
+      "button": {
+        "text": "Confira",
+        "link": "/sale"
+      }
     }
   ],
   "images": [
