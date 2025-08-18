@@ -13,12 +13,7 @@
           "fuzzy": "automatic",
           "query": " ",
           "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
-          "selectedFacets": [
-            {
-              "key": "productClusterIds",
-              "value": "152"
-            }
-          ],
+          "selectedFacets": [],
           "hideUnavailableItems": true
         },
         "extensions": [
@@ -60,12 +55,7 @@
         "count": 24,
         "fuzzy": "automatic",
         "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
-        "selectedFacets": [
-          {
-            "key": "productClusterIds",
-            "value": "152"
-          }
-        ],
+        "selectedFacets": [],
         "hideUnavailableItems": true
       },
       "__resolveType": "commerce/sections/Seo/SeoPLP.tsx",
