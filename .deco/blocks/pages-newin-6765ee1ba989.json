@@ -16,8 +16,7 @@
           "selectedFacets": [
             {
               "key": "productClusterIds",
-              "value": "151",
-              "operator": "not"
+              "value": "152"
             }
           ],
           "hideUnavailableItems": true
@@ -64,8 +63,7 @@
         "selectedFacets": [
           {
             "key": "productClusterIds",
-            "value": "151",
-            "operator": "not"
+            "value": "152"
           }
         ],
         "hideUnavailableItems": true
