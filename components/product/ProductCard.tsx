@@ -31,6 +31,12 @@ function ProductCard({ product, preload, itemListName, small }: Props) {
   const [front, back] = images ?? [];
   const { listPrice, price, availability } = useOffer(offers);
 
+  // Fallback para imagens quebradas
+  const handleImageError = (e: Event) => {
+    const img = e.target as HTMLImageElement;
+    img.style.display = 'none';
+  };
+
   const discountPercentage =
     listPrice && price ? Math.ceil(100 - (price / listPrice) * 100) : 0;
 
@@ -105,13 +111,15 @@ function ProductCard({ product, preload, itemListName, small }: Props) {
           src={front.url!}
           alt={front.alternateName ?? "Primeira imagem do produto"}
           className="mix-blend-multiply block group-hover/product-card:hidden"
+          sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 264px"
+          decoding="async"
         />
         <Image
           width={264}
           height={264}
           fit="contain"
           loading="lazy"
-          fetchPriority="high"
+          fetchPriority="low"
           src={back?.url ?? front.url!}
           alt={
             back?.alternateName ??
@@ -119,6 +127,8 @@ function ProductCard({ product, preload, itemListName, small }: Props) {
             "Segunda imagem do produto"
           }
           className="mix-blend-multiply hidden group-hover/product-card:block"
+          sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 264px"
+          decoding="async"
         />
       </div>
 

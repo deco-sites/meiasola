@@ -13,7 +13,13 @@
           "fuzzy": "automatic",
           "query": " ",
           "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
-          "selectedFacets": [],
+          "selectedFacets": [
+            {
+              "key": "productClusterIds",
+              "value": "151",
+              "operator": "not"
+            }
+          ],
           "hideUnavailableItems": true
         },
         "extensions": [
@@ -41,18 +47,7 @@
     {
       "__resolveType": "site/sections/Category/CategoryTextReadMore.tsx",
       "matcherSections": [
-        {
-          "text": "<p><strong>New In - Novidades em Calçados e Acessórios Femininos</strong></p><p>Descubra as últimas tendências em moda feminina na nossa seção New In! Aqui você encontra os lançamentos mais recentes em sapatos, bolsas e acessórios das marcas mais desejadas do mercado.</p><p>Seja a primeira a usar as novidades da temporada com peças que combinam estilo, conforto e qualidade. Nossa curadoria especial traz o que há de mais moderno e sofisticado para complementar seu guarda-roupa com elegância e personalidade.</p><p>Explore nossa seleção de novidades e mantenha-se sempre na vanguarda da moda. Aproveite o frete grátis e parcelamento em até 10x sem juros!</p>",
-          "image": {
-            "alt": "Novidades em moda feminina",
-            "width": 531,
-            "height": 484,
-            "source": "https://assets.decocache.com/meiasola/6146ea2f-d487-4a88-bbbe-74aeabf0b060/newin.png"
-          },
-          "label": "/newin",
-          "title": "Descubra as Últimas Tendências em Moda Feminina!",
-          "maxCharacters": 300
-        }
+        {}
       ]
     },
     {
@@ -66,7 +61,13 @@
         "count": 24,
         "fuzzy": "automatic",
         "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
-        "selectedFacets": [],
+        "selectedFacets": [
+          {
+            "key": "productClusterIds",
+            "value": "151",
+            "operator": "not"
+          }
+        ],
         "hideUnavailableItems": true
       },
       "__resolveType": "commerce/sections/Seo/SeoPLP.tsx",
