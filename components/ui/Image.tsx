@@ -4,24 +4,26 @@ import { forwardRef } from "preact/compat";
 import { Manifest } from "apps/website/manifest.gen.ts";
 
 export const PATH: `/live/invoke/${keyof Manifest["loaders"]}` =
-  "https://storefront.deco.site/live/invoke/website/loaders/image.ts";
+  "/live/invoke/website/loaders/image.ts";
 
-export type Props = Omit<
-  JSX.IntrinsicElements["img"],
-  "width" | "height" | "preload"
-> & {
-  src: string;
-  /** @description Improves Web Vitals (CLS|LCP) */
-  width: number;
-  /** @description Improves Web Vitals (CLS|LCP) */
-  height?: number;
-  /** @description Web Vitals (LCP). Adds a link[rel="preload"] tag in head. Use one preload per page for better performance */
-  preload?: boolean;
-  /** @description Improves Web Vitals (LCP). Use high for LCP image. Auto for other images */
-  fetchPriority?: "high" | "low" | "auto";
-  /** @description Object-fit */
-  fit?: FitOptions;
-};
+export type Props =
+  & Omit<
+    JSX.IntrinsicElements["img"],
+    "width" | "height" | "preload"
+  >
+  & {
+    src: string;
+    /** @description Improves Web Vitals (CLS|LCP) */
+    width: number;
+    /** @description Improves Web Vitals (CLS|LCP) */
+    height?: number;
+    /** @description Web Vitals (LCP). Adds a link[rel="preload"] tag in head. Use one preload per page for better performance */
+    preload?: boolean;
+    /** @description Improves Web Vitals (LCP). Use high for LCP image. Auto for other images */
+    fetchPriority?: "high" | "low" | "auto";
+    /** @description Object-fit */
+    fit?: FitOptions;
+  };
 
 const FACTORS = [1, 2];
 
@@ -54,17 +56,19 @@ export const getSrcSet = (
   src: string,
   width: number,
   height?: number,
-  fit?: FitOptions
+  fit?: FitOptions,
 ) =>
   FACTORS.map(
     (factor) =>
-      `${getOptimizedMediaUrl({
-        originalSrc: src,
-        width,
-        height,
-        factor,
-        fit,
-      })} ${Math.trunc(factor * width)}w`
+      `${
+        getOptimizedMediaUrl({
+          originalSrc: src,
+          width,
+          height,
+          factor,
+          fit,
+        })
+      } ${Math.trunc(factor * width)}w`,
   ).join(", ");
 
 const Image = forwardRef<HTMLImageElement, Props>((props, ref) => {
@@ -72,7 +76,7 @@ const Image = forwardRef<HTMLImageElement, Props>((props, ref) => {
 
   if (!props.height) {
     console.warn(
-      `Missing height. This image will NOT be optimized: ${props.src}`
+      `Missing height. This image will NOT be optimized: ${props.src}`,
     );
   }
 
