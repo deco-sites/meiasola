@@ -83,6 +83,18 @@
         "text": "Confira",
         "link": "/sale"
       }
+    },
+    {
+      "type": "image",
+      "video": {},
+      "image": {
+        "imageDesktop": "https://assets.decocache.com/meiasola/3b31ccd9-3d66-4d0b-b702-b6d551f127b8/BANNER-DE-SITE-(1).png",
+        "imageMobile": "https://assets.decocache.com/meiasola/f292352c-e262-4b3c-8101-e5c8a6f86a82/BANNER-APP.png"
+      },
+      "button": {
+        "text": "Confira",
+        "link": "/bolsas?sort=release%3Adesc&filter.category-1=bolsas&filter.price=499%3A9999"
+      }
     }
   ],
   "images": [
