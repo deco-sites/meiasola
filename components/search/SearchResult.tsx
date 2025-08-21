@@ -5,69 +5,53 @@ import type { ImageWidget } from "apps/admin/widgets.ts";
 import { SendEventOnLoad } from "$store/components/Analytics.tsx";
 import Breadcrumb from "$store/components/ui/Breadcrumb.tsx";
 import { useOffer } from "$store/sdk/useOffer.ts";
-import ProductGallery from "$store/components/product/ProductGallery.tsx";
 import Filters from "$store/components/search/Filters.tsx";
 import { AppContext } from "apps/vtex/mod.ts";
-import {
-  IslandButtonFilters,
-  IslandFiltersDrawer,
-} from "$store/islands/Drawers.tsx";
-import IslandSort from "$store/islands/Sort.tsx";
+import { IslandFiltersDrawer } from "$store/islands/Drawers.tsx";
 import notFoundProductListingPage from "site/loaders/meiasola/notFoundProductListingPage.ts";
 import { type SectionProps } from "@deco/deco";
 import { Head } from "$fresh/runtime.ts";
-type ProductListingPageAndSearch = ProductListingPage & {
-  search: {
-    term: string | null;
-    url: URL;
-  };
-  isNotFoundPage?: boolean;
-  searchQueryParam?: string;
-};
+import {
+  ProductListingPageAndSearch,
+  Route,
+  Size,
+} from "site/components/search/types.ts";
+import { updateRecentSearches } from "site/sdk/updateRecentSearches.ts";
+import { Heading } from "site/components/search/Heading.tsx";
+import { Sizes } from "site/components/search/Sizes.tsx";
+import { NotFound } from "site/components/search/NotFound.tsx";
+import InfiniteScrollContainer from "site/islands/InfiniteScrollContainer.tsx";
+
 export interface Props {
   /** @title Integration */
   page: ProductListingPage | null;
   images?: Image[];
+  pageOptionalDescription?: string;
   sizes?: {
     title: string;
     sizes: Size[];
     routesToShow: Route[];
   };
   isWishlistPage?: boolean;
+  /** @title Enable Infinite Scroll */
+  enableInfiniteScroll?: boolean;
 }
-const updateRecentSearches = (search: string) => {
-  if (!search) {
-    return;
-  }
-  const recentSearches = JSON.parse(
-    localStorage.getItem("recentSearches") || "[]"
-  );
-  if (!recentSearches.includes(search)) {
-    // maintain only the last 7 searches
-    if (recentSearches.length >= 7) {
-      recentSearches.shift();
-    }
-    recentSearches.push(search);
-    localStorage.setItem("recentSearches", JSON.stringify(recentSearches));
-  }
-};
+
 function Result({
   page,
   images = [],
+  pageOptionalDescription,
   sizes,
   isWishlistPage = false,
   searchQueryParam = "",
+  enableInfiniteScroll = false,
 }: Omit<SectionProps<typeof loader>, "page" | "notFoundPage"> & {
   page: ProductListingPageAndSearch;
+  enableInfiniteScroll?: boolean;
 }) {
   const { products, filters, breadcrumb, sortOptions, seo, pageInfo, search } =
     page;
   const isSearchPage = search && search.term && search.term != "";
-  const willPaginate = search && pageInfo.records! > pageInfo?.recordPerPage!;
-  const paginationUrl = !isWishlistPage
-    ? new URL(search.url.href)
-    : new URL("https://meiasola.com.br/wishlist");
-  paginationUrl.searchParams.set("page", "pagination-number");
 
   const edroneCategories = breadcrumb.itemListElement
     .map(({ name }) => encodeURIComponent(name ?? ""))
@@ -94,6 +78,7 @@ function Result({
           src="//rate.trustvox.com.br/widget.js"
         ></script>
       </Head>
+
       {page.isNotFoundPage && (
         <div class="container relative z-10">
           <Breadcrumb itemListElement={breadcrumb?.itemListElement} />
@@ -119,6 +104,7 @@ function Result({
 
       <Heading
         seo={seo}
+        pageOptionalDescription={pageOptionalDescription}
         productsCount={pageInfo.records ?? 0}
         sortOptions={sortOptions}
         searchTerm={search?.term ?? undefined}
@@ -140,56 +126,16 @@ function Result({
             <Filters filters={filters} />
           </div>
         </aside>
-        <div class="col-span-4 laptop:col-span-9 flex flex-col items-center gap-6 laptop:gap-10">
-          <ProductGallery products={products} />
 
-          {willPaginate && (
-            <ul class="flex gap-8">
-              {pageInfo.currentPage - 2 > 0 && (
-                <PageLink
-                  page={pageInfo.currentPage - 2}
-                  href={paginationUrl.href.replace(
-                    "pagination-number",
-                    (pageInfo.currentPage - 2).toString()
-                  )}
-                />
-              )}
-
-              {pageInfo.previousPage && (
-                <PageLink
-                  page={pageInfo.currentPage - 1}
-                  href={paginationUrl.href.replace(
-                    "pagination-number",
-                    (pageInfo.currentPage - 1).toString()
-                  )}
-                />
-              )}
-
-              <PageLink page={pageInfo.currentPage} isActive href={"#"} />
-
-              {pageInfo.currentPage * pageInfo.recordPerPage! <
-                pageInfo.records! && (
-                <PageLink
-                  page={pageInfo.currentPage + 1}
-                  href={paginationUrl.href.replace(
-                    "pagination-number",
-                    (pageInfo.currentPage + 1).toString()
-                  )}
-                />
-              )}
-
-              {(pageInfo.currentPage + 1) * pageInfo.recordPerPage! <
-                pageInfo.records! && (
-                <PageLink
-                  page={pageInfo.currentPage + 2}
-                  href={paginationUrl.href.replace(
-                    "pagination-number",
-                    (pageInfo.currentPage + 2).toString()
-                  )}
-                />
-              )}
-            </ul>
-          )}
+        <div
+          id="infinite_scroll_container"
+          class="col-span-4 laptop:col-span-9 flex flex-col items-center gap-6 laptop:gap-10"
+        >
+          <InfiniteScrollContainer
+            page={page}
+            enableInfiniteScroll={enableInfiniteScroll}
+            isWishlistPage={isWishlistPage}
+          />
         </div>
       </div>
 
@@ -233,130 +179,7 @@ function Result({
     </>
   );
 }
-function Heading({
-  seo,
-  sortOptions,
-  productsCount,
-  searchTerm,
-  title,
-  isNotFoundPage,
-}: {
-  searchTerm?: string;
-  productsCount: number;
-  seo: ProductListingPage["seo"];
-  sortOptions: ProductListingPage["sortOptions"];
-  title?: string;
-  isNotFoundPage?: boolean;
-}) {
-  return (
-    <div
-      class={`${
-        !isNotFoundPage
-          ? "laptop:border-b laptop:border-grey-1 laptop:pb-10"
-          : ""
-      } pt-6 tablet:pt-10 text-black`}
-    >
-      <div class="container flex flex-col gap-6 laptop:flex-row laptop:justify-between laptop:items-end">
-        {isNotFoundPage && (
-          <div class="flex flex-col gap-8">
-            <h1 class="text-subtile font-normal leading-none">
-              <span class="font-bold text-h2">{searchTerm}</span>
-            </h1>
-          </div>
-        )}
 
-        {searchTerm && !isNotFoundPage ? (
-          <div class="flex flex-col gap-8">
-            <h1 class="text-subtile font-normal leading-none">
-              Você buscou por: <span class="font-bold">{searchTerm}</span>
-            </h1>
-            <span class="uppercase text-small font-bold hidden laptop:block">
-              {productsCount} itens
-            </span>
-          </div>
-        ) : (
-          !isNotFoundPage && (
-            <div class="flex flex-col gap-6 laptop:flex-row laptop:w-3/4 laptop:gap-5 laptop:items-center">
-              <h1 class="shrink-0 text-h3 leading-none uppercase font-medium tracking-wide">
-                {(seo?.title ?? "")?.split(" ")[0]}
-              </h1>
-              <p class="laptop:leading-none text-small text-neutral-500">
-                {seo?.description}
-              </p>
-            </div>
-          )
-        )}
-
-        <div class="grid grid-cols-2 gap-4 laptop:flex laptop:w-1/4 laptop:justify-end">
-          <IslandButtonFilters className="laptop:hidden" />
-          <IslandSort sortOptions={sortOptions} />
-        </div>
-      </div>
-    </div>
-  );
-}
-interface Route {
-  /**
-   * @title Route
-   */
-  label: string;
-}
-interface Size {
-  /**
-   * @title Size
-   */
-  label: string;
-}
-function Sizes({
-  title,
-  routes,
-  sizes,
-  url,
-}: {
-  title: string;
-  routes: Route[];
-  sizes: Size[];
-  url: URL;
-}) {
-  if (!routes.findLast((route) => url.pathname.includes(route.label)))
-    return null;
-  return (
-    <div class="bg-black text-white text-large py-6 laptop:py-5">
-      <div class="container flex flex-col items-center gap-8 laptop:flex-row laptop:justify-between">
-        <h4 class="text-large tracking-wide text-center laptop:text-left">
-          {title}
-        </h4>
-        <ul class="grid grid-cols-4 gap-8 tablet:flex tablet:flex-wrap tablet:justify-center laptop:gap-6 desktop:gap-8">
-          {sizes?.map((size, index) => {
-            const sizeUrl = new URL(url.href);
-            const isActive = sizeUrl.search.includes(
-              `filter.tamanho=${size.label}`
-            );
-            if (isActive) sizeUrl.searchParams.delete("filter.tamanho");
-            else {
-              if (sizeUrl.searchParams.get("filter.tamanho"))
-                sizeUrl.searchParams.set("filter.tamanho", size.label);
-              else sizeUrl.searchParams.append("filter.tamanho", size.label);
-            }
-            return (
-              <li key={"size-" + index}>
-                <a
-                  href={sizeUrl.href}
-                  aria-label={`Numeração ${size.label}`}
-                  class={`border border-white h-10 w-10 flex items-center justify-center hover:bg-white hover:text-black ${
-                    isActive ? "bg-white text-black" : ""
-                  } transition-all duration-300 ease-out`}
-                >
-                  {size.label}
-                </a>
-              </li>
-            );
-          })}
-        </ul>
-      </div>
-    </div>
-  );
-}
 interface Image {
   /**
    * @title Image Desktop
@@ -457,55 +280,35 @@ export const loader = async (props: Props, req: Request, ctx: AppContext) => {
   }
   return { ...props, notFoundPage, searchQueryParam };
 };
+
 function SearchResult({
   page,
   notFoundPage,
+  enableInfiniteScroll = false,
   ...props
-}: SectionProps<typeof loader>) {
+}: SectionProps<typeof loader> & { enableInfiniteScroll?: boolean }) {
   if (!page || page.pageInfo.records === 0) {
     return (
       <>
         <NotFound />
-        {notFoundPage && <Result {...props} page={notFoundPage} />}
+        {notFoundPage && (
+          <Result
+            {...props}
+            page={notFoundPage}
+            enableInfiniteScroll={enableInfiniteScroll}
+          />
+        )}
       </>
     );
   }
-  return <Result {...props} page={page as ProductListingPageAndSearch} />;
+
+  return (
+    <Result
+      {...props}
+      page={page as ProductListingPageAndSearch}
+      enableInfiniteScroll={enableInfiniteScroll}
+    />
+  );
 }
+
 export default SearchResult;
-function NotFound() {
-  return (
-    <div class="w-full py-10 laptop:border-b laptop:border-grey-1">
-      <div class="container flex flex-col gap-[21px] justify-center items-center ">
-        <span class="uppercase font-bold text-h3">
-          Não encontramos o que você buscou
-        </span>
-        <p class="text-body text-black">
-          Desculpe, não encontramos resultados para a sua busca, mas não perca a
-          oportunidade de conferir nossas novidades abaixo.
-        </p>
-      </div>
-    </div>
-  );
-}
-function PageLink({
-  page,
-  isActive = false,
-  href,
-}: {
-  href: string;
-  page: number;
-  isActive?: boolean;
-}) {
-  return (
-    <a
-      href={href}
-      aria-label={`Página ${page}`}
-      class={`border border-black h-10 w-10 flex items-center justify-center hover:bg-black hover:text-white ${
-        isActive ? "bg-black text-white" : ""
-      } transition-all duration-300 ease-out`}
-    >
-      {page}
-    </a>
-  );
-}

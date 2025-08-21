@@ -36,7 +36,8 @@
           "srcMobile": "https://assets.decocache.com/meiasola/581f2c91-8424-46cd-bff1-532897851110/sapatos.png"
         }
       ],
-      "__resolveType": "site/sections/Product/SearchResult.tsx"
+      "__resolveType": "site/sections/Product/SearchResult.tsx",
+      "pageOptionalDescription": "Descrição teste para página de coleção específica"
     },
     {
       "__resolveType": "site/sections/Category/CategoryTextReadMore.tsx",
