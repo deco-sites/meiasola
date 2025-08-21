@@ -4796,6 +4796,9 @@ details.collapse summary::-webkit-details-marker {
 .border-b {
   border-bottom-width: 1px;
 }
+.border-b-2 {
+  border-bottom-width: 2px;
+}
 .border-r-\[1px\] {
   border-right-width: 1px;
 }
@@ -5566,6 +5569,11 @@ details.collapse summary::-webkit-details-marker {
 }
 .transition-all {
   transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
