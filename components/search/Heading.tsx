@@ -4,6 +4,7 @@ import IslandSort from "$store/islands/Sort.tsx";
 
 export function Heading({
   seo,
+  pageOptionalDescription,
   sortOptions,
   productsCount,
   searchTerm,
@@ -50,7 +51,7 @@ export function Heading({
                 {(seo?.title ?? "")?.split(" ")[0]}
               </h1>
               <p class="laptop:leading-none text-small text-neutral-500">
-                {seo?.description}
+                {seo?.description ? seo?.description : pageOptionalDescription}
               </p>
             </div>
           )

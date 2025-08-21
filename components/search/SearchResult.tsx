@@ -26,6 +26,7 @@ export interface Props {
   /** @title Integration */
   page: ProductListingPage | null;
   images?: Image[];
+  pageOptionalDescription?: string;
   sizes?: {
     title: string;
     sizes: Size[];
@@ -39,6 +40,7 @@ export interface Props {
 function Result({
   page,
   images = [],
+  pageOptionalDescription,
   sizes,
   isWishlistPage = false,
   searchQueryParam = "",
@@ -102,6 +104,7 @@ function Result({
 
       <Heading
         seo={seo}
+        pageOptionalDescription={pageOptionalDescription}
         productsCount={pageInfo.records ?? 0}
         sortOptions={sortOptions}
         searchTerm={search?.term ?? undefined}
