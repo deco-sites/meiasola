@@ -33,7 +33,7 @@
           "alt": "Imagem de Sapatos",
           "src": "https://assets.decocache.com/meiasola/c39cbd91-b617-4e2b-8351-2a032ae43887/2.png",
           "route": "/",
-          "srcMobile": "https://assets.decocache.com/meiasola/581f2c91-8424-46cd-bff1-532897851110/sapatos.png"
+          "srcMobile": "https://assets.decocache.com/meiasola/66dbf88c-b302-48dc-aafc-dfc977097517/2.png"
         }
       ],
       "__resolveType": "site/sections/Product/SearchResult.tsx"
