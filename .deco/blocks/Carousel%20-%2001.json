@@ -4,12 +4,24 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/3b31ccd9-3d66-4d0b-b702-b6d551f127b8/BANNER-DE-SITE-(1).png",
-        "imageMobile": "https://assets.decocache.com/meiasola/f292352c-e262-4b3c-8101-e5c8a6f86a82/BANNER-APP.png"
+        "imageDesktop": "https://assets.decocache.com/meiasola/1ab73246-eff5-4444-9b86-96771e373c04/banners-summer.png",
+        "imageMobile": "https://assets.decocache.com/meiasola/65a47695-31f8-4a34-8b0e-20f2931f88b4/2.png"
       },
       "button": {
-        "link": "/bolsas?sort=release%3Adesc&filter.category-1=bolsas&filter.price=499%3A9999",
+        "link": "/m%7Cs",
         "text": "Confira"
+      }
+    },
+    {
+      "button": {
+        "text": "Confira",
+        "link": "/bolsas?sort=release%3Adesc&filter.category-1=bolsas&filter.price=499%3A9999"
+      },
+      "type": "image",
+      "video": {},
+      "image": {
+        "imageMobile": "https://assets.decocache.com/meiasola/f292352c-e262-4b3c-8101-e5c8a6f86a82/BANNER-APP.png",
+        "imageDesktop": "https://assets.decocache.com/meiasola/3b31ccd9-3d66-4d0b-b702-b6d551f127b8/BANNER-DE-SITE-(1).png"
       }
     },
     {
@@ -22,18 +34,6 @@
       "image": {
         "imageMobile": "https://assets.decocache.com/meiasola/6dcf5f35-566a-4aee-8bf2-ce99eb506508/banner_780x1320px_ms.jpg",
         "imageDesktop": "https://assets.decocache.com/meiasola/3ab6264d-e0e5-4eb1-bbea-b7df1a1e067f/banner_2880x1320_ms.jpg"
-      }
-    },
-    {
-      "button": {
-        "text": "Confira",
-        "link": "/m%7Cs"
-      },
-      "type": "image",
-      "video": {},
-      "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/65a47695-31f8-4a34-8b0e-20f2931f88b4/2.png",
-        "imageDesktop": "https://assets.decocache.com/meiasola/1ab73246-eff5-4444-9b86-96771e373c04/banners-summer.png"
       }
     },
     {
