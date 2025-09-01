@@ -9,6 +9,7 @@ import * as $Header_Buttons from "./islands/Header/Buttons.tsx";
 import * as $Header_Drawers from "./islands/Header/Drawers.tsx";
 import * as $Header_Searchbar from "./islands/Header/Searchbar.tsx";
 import * as $Header_SearchbarInput from "./islands/Header/SearchbarInput.tsx";
+import * as $InfiniteScrollContainer from "./islands/InfiniteScrollContainer.tsx";
 import * as $LoadMore from "./islands/LoadMore.tsx";
 import * as $Newsletter from "./islands/Newsletter.tsx";
 import * as $ProductDetails_Buttons from "./islands/ProductDetails/Buttons.tsx";
@@ -33,6 +34,7 @@ const manifest = {
     "./islands/Header/Drawers.tsx": $Header_Drawers,
     "./islands/Header/Searchbar.tsx": $Header_Searchbar,
     "./islands/Header/SearchbarInput.tsx": $Header_SearchbarInput,
+    "./islands/InfiniteScrollContainer.tsx": $InfiniteScrollContainer,
     "./islands/LoadMore.tsx": $LoadMore,
     "./islands/Newsletter.tsx": $Newsletter,
     "./islands/ProductDetails/Buttons.tsx": $ProductDetails_Buttons,
