@@ -37,7 +37,8 @@
         }
       ],
       "__resolveType": "site/sections/Product/SearchResult.tsx",
-      "pageOptionalDescription": "Descrição teste para página de coleção específica"
+      "isWishlistPage": false,
+      "enableInfiniteScroll": true
     },
     {
       "__resolveType": "site/sections/Category/CategoryTextReadMore.tsx",
