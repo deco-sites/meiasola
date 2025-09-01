@@ -38,7 +38,7 @@
       ],
       "__resolveType": "site/sections/Product/SearchResult.tsx",
       "isWishlistPage": false,
-      "enableInfiniteScroll": false
+      "enableInfiniteScroll": true
     },
     {
       "__resolveType": "site/sections/Category/CategoryTextReadMore.tsx",

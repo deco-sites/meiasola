@@ -35,12 +35,32 @@ export default function InfiniteScrollContainer({
       const nextPage = currentPage.value + 1;
       const url = new URL(page.search.url);
       url.searchParams.set("page", nextPage.toString());
+      let selectedFacets = null;
+
+      if (url.pathname.includes("/sale")) {
+        selectedFacets = [
+          {
+            key: "productClusterIds",
+            value: "151",
+          },
+        ];
+      }
+
+      const isNewIn = url.pathname.includes("/newin");
 
       const data =
         await invoke.vtex.loaders.intelligentSearch.productListingPage({
           count: page?.pageInfo.recordPerPage,
-          pageHref: url.toString(),
+          ...(!isNewIn
+            ? { pageHref: url.toString() }
+            : {
+                query: " ",
+                page: nextPage - 1,
+                hideUnavailableItems: true,
+                fuzzy: "automatic",
+              }),
           sort: (url.searchParams.get("sort") as Sort) ?? "release:desc",
+          ...(selectedFacets != null ? { selectedFacets } : {}),
         });
 
       if (!data) {

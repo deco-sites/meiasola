@@ -68,7 +68,8 @@
           "route": "/"
         }
       ],
-      "__resolveType": "site/sections/Product/SearchResult.tsx"
+      "__resolveType": "site/sections/Product/SearchResult.tsx",
+      "enableInfiniteScroll": true
     },
     {
       "__resolveType": "Footer - 02"
