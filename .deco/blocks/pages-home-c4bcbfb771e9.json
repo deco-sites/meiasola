@@ -965,15 +965,6 @@
                               "label": "Ryzi"
                             },
                             {
-                              "href": "/marcas?filter.brand=serpui",
-                              "image": {
-                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/55eadcc7-b31f-4195-916f-7774ba8d6d0c",
-                                "width": 96,
-                                "height": 16
-                              },
-                              "label": "Serpui"
-                            },
-                            {
                               "href": "/marcas?filter.brand=wai-wai",
                               "image": {
                                 "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/e83441d8-626e-45be-9e1e-4ce47917e207",
@@ -981,33 +972,6 @@
                                 "height": 17
                               },
                               "label": "Wai Wai"
-                            },
-                            {
-                              "href": "/marcas?filter.brand=lanca-perfume",
-                              "image": {
-                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/66f22b71-4bc9-4acc-a138-3a8b36b6cf22",
-                                "width": 114,
-                                "height": 14
-                              },
-                              "label": "Lança Perfume"
-                            },
-                            {
-                              "href": "/marcas?filter.brand=my-favorite-things",
-                              "image": {
-                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/d0a262d2-eff8-476f-86d9-84225650b6fb",
-                                "width": 59,
-                                "height": 22
-                              },
-                              "label": "My Favorite Things"
-                            },
-                            {
-                              "href": "/marcas?filter.brand=paula-bahia",
-                              "image": {
-                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/2f18ab8b-1c0b-4069-9bba-aeb931440506",
-                                "width": 53,
-                                "height": 48
-                              },
-                              "label": "Paula Bahia"
                             },
                             {
                               "href": "/debora-germani",
