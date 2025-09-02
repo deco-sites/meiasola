@@ -69,7 +69,8 @@
         }
       ],
       "__resolveType": "site/sections/Product/SearchResult.tsx",
-      "enableInfiniteScroll": true
+      "enableInfiniteScroll": true,
+      "pageOptionalDescription": "Os seus favoritos com preços ainda mais irresistíveis! Aproveite a seleção especial de peças com desconto e garanta já aquele item que você ama, antes que acabe!"
     },
     {
       "__resolveType": "Footer - 02"
