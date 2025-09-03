@@ -4,12 +4,24 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/1ab73246-eff5-4444-9b86-96771e373c04/banners-summer.png",
-        "imageMobile": "https://assets.decocache.com/meiasola/65a47695-31f8-4a34-8b0e-20f2931f88b4/2.png"
+        "imageDesktop": "https://assets.decocache.com/meiasola/59081720-7990-4c60-88b0-d91a8ebff41c/banner_vicenza_2880x1320_2.jpg",
+        "imageMobile": "https://assets.decocache.com/meiasola/e8bb0a1d-ce86-42ec-9143-2af2e16998cb/banner_vicenza_2_780x1320px.jpg"
       },
       "button": {
-        "link": "/m%7Cs",
+        "link": "/374",
         "text": "Confira"
+      }
+    },
+    {
+      "button": {
+        "text": "Confira",
+        "link": "/m%7Cs"
+      },
+      "type": "image",
+      "video": {},
+      "image": {
+        "imageMobile": "https://assets.decocache.com/meiasola/65a47695-31f8-4a34-8b0e-20f2931f88b4/2.png",
+        "imageDesktop": "https://assets.decocache.com/meiasola/1ab73246-eff5-4444-9b86-96771e373c04/banners-summer.png"
       }
     },
     {
@@ -44,20 +56,20 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/ab1745e5-ecfa-4e27-8178-4ed9e2f73722/banner_780x1320px_zz.jpg",
-        "imageDesktop": "https://assets.decocache.com/meiasola/1cf93d26-96af-423e-a3b7-3dfed8fc9dce/banner_2880x1320_zz.jpg"
+        "imageDesktop": "https://assets.decocache.com/meiasola/1cf93d26-96af-423e-a3b7-3dfed8fc9dce/banner_2880x1320_zz.jpg",
+        "imageMobile": "https://assets.decocache.com/meiasola/ab1745e5-ecfa-4e27-8178-4ed9e2f73722/banner_780x1320px_zz.jpg"
       }
     },
     {
-      "button": {
-        "text": "Confira",
-        "link": "/schutz"
-      },
       "type": "image",
       "video": {},
       "image": {
         "imageDesktop": "https://assets.decocache.com/meiasola/1f3af15b-b32e-4c07-9e4b-1cd97ce6e66e/banner_2880x1320_sch.jpg",
         "imageMobile": "https://assets.decocache.com/meiasola/06e99b7d-1083-4b53-8959-e0785f28010e/banner_780x1320px_sch.jpg"
+      },
+      "button": {
+        "text": "Confira",
+        "link": "/schutz"
       }
     },
     {
