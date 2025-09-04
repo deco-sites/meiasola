@@ -200,27 +200,27 @@
             "images": [
               {
                 "alt": "Imagem de um sapato salto alto",
-                "src": "https://assets.decocache.com/meiasola/2a3967e5-80b1-40ee-93e8-48972f495a55/3.png",
+                "src": "https://assets.decocache.com/meiasola/4e8d9e19-7065-4860-809a-2eb30090b00e/Newin.png",
                 "route": "/sapatos",
-                "srcMobile": "https://assets.decocache.com/meiasola/903c3e5a-463e-418f-863f-7c30d062a573/3.png"
+                "srcMobile": "https://assets.decocache.com/meiasola/64c5bffe-3731-47af-99ec-0ac9a0ec2695/Newin.png"
               },
               {
                 "alt": "Imagem de bolsas",
-                "src": "https://assets.decocache.com/meiasola/2af49898-7be8-42df-be17-52cb514a28a0/4.png",
+                "src": "https://assets.decocache.com/meiasola/6c3125b2-817d-4fb9-a550-dcd679a20709/Bolsas.png",
                 "route": "/bolsas",
-                "srcMobile": "https://assets.decocache.com/meiasola/0c8e47f4-661e-4d4d-b0ea-99725d114ee4/4.png"
+                "srcMobile": "https://assets.decocache.com/meiasola/e2e71d95-4569-4f6b-9961-4b5772f45b88/Bolsas.png"
               },
               {
                 "alt": "Imagem de pulseira dourada",
-                "src": "https://assets.decocache.com/meiasola/e50dd61a-d7cb-473f-a246-7c6bba7de131/1.png",
+                "src": "https://assets.decocache.com/meiasola/89d64ee3-0b78-409e-bac4-e4f0fee5c39c/Acessorios.png",
                 "route": "/acessorios",
-                "srcMobile": "https://assets.decocache.com/meiasola/bbddfad2-f177-4e3e-975d-24f38e8083f2/1.png"
+                "srcMobile": "https://assets.decocache.com/meiasola/0412911f-0bde-475b-a24b-9d2a42e32b42/Acessorios.png"
               },
               {
                 "alt": "Imagem de Sandálias ",
-                "src": "https://assets.decocache.com/meiasola/4c572b5a-b882-4289-b0d0-acf50f463eaa/2.png",
+                "src": "https://assets.decocache.com/meiasola/58ec013d-f30f-4fde-8f7d-f4945662a389/Sapatos.png",
                 "route": "/sapatos/sandalia",
-                "srcMobile": "https://assets.decocache.com/meiasola/66dbf88c-b302-48dc-aafc-dfc977097517/2.png"
+                "srcMobile": "https://assets.decocache.com/meiasola/ea5511f3-2f09-4154-98f6-0568f2e18d50/Sapatos.png"
               }
             ],
             "notFoundPage": {
