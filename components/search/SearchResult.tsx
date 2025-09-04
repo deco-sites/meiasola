@@ -26,6 +26,7 @@ export interface Props {
   /** @title Integration */
   page: ProductListingPage | null;
   images?: Image[];
+  pageOptionalTitle?: string;
   pageOptionalDescription?: string;
   sizes?: {
     title: string;
@@ -40,6 +41,7 @@ export interface Props {
 function Result({
   page,
   images = [],
+  pageOptionalTitle,
   pageOptionalDescription,
   sizes,
   isWishlistPage = false,
@@ -104,6 +106,7 @@ function Result({
 
       <Heading
         seo={seo}
+        pageOptionalTitle={pageOptionalTitle}
         pageOptionalDescription={pageOptionalDescription}
         productsCount={pageInfo.records ?? 0}
         sortOptions={sortOptions}
