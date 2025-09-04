@@ -4,6 +4,7 @@ import IslandSort from "$store/islands/Sort.tsx";
 
 export function Heading({
   seo,
+  pageOptionalTitle,
   pageOptionalDescription,
   sortOptions,
   productsCount,
@@ -11,6 +12,8 @@ export function Heading({
   title,
   isNotFoundPage,
 }: {
+  pageOptionalTitle?: string;
+  pageOptionalDescription?: string;
   searchTerm?: string;
   productsCount: number;
   seo: ProductListingPage["seo"];
@@ -48,10 +51,16 @@ export function Heading({
           !isNotFoundPage && (
             <div class="flex flex-col gap-6 laptop:flex-row laptop:w-3/4 laptop:gap-5 laptop:items-center">
               <h1 class="shrink-0 text-h3 leading-none uppercase font-medium tracking-wide">
-                {(seo?.title ?? "")?.split(" ")[0]}
+                {
+                  (pageOptionalTitle ? pageOptionalTitle : seo?.title)?.split(
+                    " "
+                  )[0]
+                }
               </h1>
               <p class="laptop:leading-none text-small text-neutral-500">
-                {seo?.description ? seo?.description : pageOptionalDescription}
+                {pageOptionalDescription
+                  ? pageOptionalDescription
+                  : seo?.description}
               </p>
             </div>
           )
