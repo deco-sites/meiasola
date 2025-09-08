@@ -15,6 +15,18 @@
     {
       "button": {
         "text": "Confira",
+        "link": "/newin?filter.price=27.96%3A300"
+      },
+      "type": "image",
+      "video": {},
+      "image": {
+        "imageMobile": "https://assets.decocache.com/meiasola/2c52dddc-46ac-4ebc-827f-dfc71c56e6ad/banner_ate-299_780x1320px.jpg",
+        "imageDesktop": "https://assets.decocache.com/meiasola/a5d703af-1637-4e7b-b862-19432980fa97/banner_ate-299_2880x1320.jpg"
+      }
+    },
+    {
+      "button": {
+        "text": "Confira",
         "link": "/m%7Cs"
       },
       "type": "image",
@@ -44,20 +56,20 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/3bf429ae-65b7-4067-9728-74006a2f5b8a/banner_780x1320px_ac.jpg",
-        "imageDesktop": "https://assets.decocache.com/meiasola/941f3b70-1a97-403d-8a57-d31b246162fb/banner_2880x1320_ac.jpg"
+        "imageDesktop": "https://assets.decocache.com/meiasola/941f3b70-1a97-403d-8a57-d31b246162fb/banner_2880x1320_ac.jpg",
+        "imageMobile": "https://assets.decocache.com/meiasola/3bf429ae-65b7-4067-9728-74006a2f5b8a/banner_780x1320px_ac.jpg"
       }
     },
     {
-      "button": {
-        "text": "Confira",
-        "link": "/arezzo"
-      },
       "type": "image",
       "video": {},
       "image": {
         "imageDesktop": "https://assets.decocache.com/meiasola/1cf93d26-96af-423e-a3b7-3dfed8fc9dce/banner_2880x1320_zz.jpg",
         "imageMobile": "https://assets.decocache.com/meiasola/ab1745e5-ecfa-4e27-8178-4ed9e2f73722/banner_780x1320px_zz.jpg"
+      },
+      "button": {
+        "text": "Confira",
+        "link": "/arezzo"
       }
     },
     {
