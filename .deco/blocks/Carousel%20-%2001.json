@@ -15,18 +15,6 @@
     {
       "button": {
         "text": "Confira",
-        "link": "/newin?filter.price=27.96%3A300"
-      },
-      "type": "image",
-      "video": {},
-      "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/2c52dddc-46ac-4ebc-827f-dfc71c56e6ad/banner_ate-299_780x1320px.jpg",
-        "imageDesktop": "https://assets.decocache.com/meiasola/a5d703af-1637-4e7b-b862-19432980fa97/banner_ate-299_2880x1320.jpg"
-      }
-    },
-    {
-      "button": {
-        "text": "Confira",
         "link": "/m%7Cs"
       },
       "type": "image",
@@ -39,25 +27,49 @@
     {
       "button": {
         "text": "Confira",
-        "link": "/newin"
+        "link": "/newin?filter.price=27.96%3A300"
       },
       "type": "image",
       "video": {},
       "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/6dcf5f35-566a-4aee-8bf2-ce99eb506508/banner_780x1320px_ms.jpg",
-        "imageDesktop": "https://assets.decocache.com/meiasola/3ab6264d-e0e5-4eb1-bbea-b7df1a1e067f/banner_2880x1320_ms.jpg"
+        "imageMobile": "https://assets.decocache.com/meiasola/2c52dddc-46ac-4ebc-827f-dfc71c56e6ad/banner_ate-299_780x1320px.jpg",
+        "imageDesktop": "https://assets.decocache.com/meiasola/a5d703af-1637-4e7b-b862-19432980fa97/banner_ate-299_2880x1320.jpg"
       }
     },
     {
       "button": {
         "text": "Confira",
-        "link": "/anacapri"
+        "link": "/sale?sort=price%3Adesc&filter.productClusterIds=151&filter.price=31.96%3A200"
       },
+      "type": "image",
+      "video": {},
+      "image": {
+        "imageMobile": "https://assets.decocache.com/meiasola/36d88216-ed60-49b5-8d6f-71620e40d3ce/banner_ate-209_780x1320px.jpg",
+        "imageDesktop": "https://assets.decocache.com/meiasola/b11f2339-f1cf-4f1e-9cbc-01b49dd271b4/banner_ate-209_2880x1320.jpg"
+      }
+    },
+    {
+      "button": {
+        "text": "Confira",
+        "link": "/newin"
+      },
+      "type": "image",
+      "video": {},
+      "image": {
+        "imageDesktop": "https://assets.decocache.com/meiasola/3ab6264d-e0e5-4eb1-bbea-b7df1a1e067f/banner_2880x1320_ms.jpg",
+        "imageMobile": "https://assets.decocache.com/meiasola/6dcf5f35-566a-4aee-8bf2-ce99eb506508/banner_780x1320px_ms.jpg"
+      }
+    },
+    {
       "type": "image",
       "video": {},
       "image": {
         "imageDesktop": "https://assets.decocache.com/meiasola/941f3b70-1a97-403d-8a57-d31b246162fb/banner_2880x1320_ac.jpg",
         "imageMobile": "https://assets.decocache.com/meiasola/3bf429ae-65b7-4067-9728-74006a2f5b8a/banner_780x1320px_ac.jpg"
+      },
+      "button": {
+        "text": "Confira",
+        "link": "/anacapri"
       }
     },
     {
@@ -94,18 +106,6 @@
       "button": {
         "text": "Confira",
         "link": "/newin"
-      }
-    },
-    {
-      "type": "image",
-      "video": {},
-      "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/b11f2339-f1cf-4f1e-9cbc-01b49dd271b4/banner_ate-209_2880x1320.jpg",
-        "imageMobile": "https://assets.decocache.com/meiasola/36d88216-ed60-49b5-8d6f-71620e40d3ce/banner_ate-209_780x1320px.jpg"
-      },
-      "button": {
-        "text": "Confira",
-        "link": "/sale?sort=price%3Adesc&filter.productClusterIds=151&filter.price=31.96%3A200"
       }
     }
   ],
