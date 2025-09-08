@@ -88,12 +88,12 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/f32fb08f-e1d8-4cef-b9f5-4be3482c5e54/BANNER-SITE---SALE---PECA-2.png",
-        "imageMobile": "https://assets.decocache.com/meiasola/df98b867-7028-4fe7-b712-77b19f3ed071/BANNER-APP---PECA-2.png"
+        "imageDesktop": "https://assets.decocache.com/meiasola/b11f2339-f1cf-4f1e-9cbc-01b49dd271b4/banner_ate-209_2880x1320.jpg",
+        "imageMobile": "https://assets.decocache.com/meiasola/36d88216-ed60-49b5-8d6f-71620e40d3ce/banner_ate-209_780x1320px.jpg"
       },
       "button": {
         "text": "Confira",
-        "link": "/sale"
+        "link": "/sale?sort=price%3Adesc&filter.productClusterIds=151&filter.price=31.96%3A200"
       }
     }
   ],
