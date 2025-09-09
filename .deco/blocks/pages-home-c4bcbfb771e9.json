@@ -614,7 +614,7 @@
                   {
                     "href": "/newin",
                     "icon": null,
-                    "label": "new in",
+                    "label": "<p>new in</p>",
                     "submenu": {
                       "sections": []
                     }
