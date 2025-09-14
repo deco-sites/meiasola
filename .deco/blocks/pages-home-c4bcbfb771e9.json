@@ -1089,18 +1089,6 @@
                       "type": "image",
                       "video": {},
                       "image": {
-                        "imageDesktop": "https://assets.decocache.com/meiasola/7639e669-a51d-4088-aa86-dcfece94200f/BANNER-SITE.png",
-                        "imageMobile": "https://assets.decocache.com/meiasola/67635ffc-5dd7-4bea-8673-65f270a171e0/STORY.png"
-                      },
-                      "button": {
-                        "link": "/newin",
-                        "text": "Confira"
-                      }
-                    },
-                    {
-                      "type": "image",
-                      "video": {},
-                      "image": {
                         "imageDesktop": "https://assets.decocache.com/meiasola/59081720-7990-4c60-88b0-d91a8ebff41c/banner_vicenza_2880x1320_2.jpg",
                         "imageMobile": "https://assets.decocache.com/meiasola/e8bb0a1d-ce86-42ec-9143-2af2e16998cb/banner_vicenza_2_780x1320px.jpg"
                       },
@@ -1117,8 +1105,8 @@
                         "imageMobile": "https://assets.decocache.com/meiasola/90f03ab5-9c9e-4d6c-a992-ed43892e63e1/199-(3).png"
                       },
                       "button": {
-                        "text": "Confira",
-                        "link": "/newin?filter.price=27.96%3A300"
+                        "link": "/newin?filter.price=27.96%3A300",
+                        "text": "Confira"
                       }
                     },
                     {
