@@ -1083,6 +1083,14 @@
             "variants": [
               {
                 "value": {
+                  "__resolveType": "Carousel - 01"
+                },
+                "rule": {
+                  "__resolveType": "website/matchers/always.ts"
+                }
+              },
+              {
+                "value": {
                   "__resolveType": "site/sections/Images/Carousel.tsx",
                   "items": [
                     {
@@ -1221,15 +1229,9 @@
                   "preload": true
                 },
                 "rule": {
-                  "__resolveType": "website/matchers/always.ts"
-                }
-              },
-              {
-                "value": {
-                  "__resolveType": "Carousel - 01"
-                },
-                "rule": {
-                  "__resolveType": "website/matchers/always.ts"
+                  "__resolveType": "website/matchers/date.ts",
+                  "start": "2025-09-15T03:00:00.000Z",
+                  "end": "2025-09-16T02:59:00.000Z"
                 }
               }
             ]
