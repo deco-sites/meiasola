@@ -1109,12 +1109,24 @@
                       "type": "image",
                       "video": {},
                       "image": {
+                        "imageDesktop": "https://assets.decocache.com/meiasola/1ca00ba1-0d71-4e0e-b295-38768cca550b/banner-site.png",
+                        "imageMobile": "https://assets.decocache.com/meiasola/605caa6b-e940-41c9-b820-30436886336b/banner-app.png"
+                      },
+                      "button": {
+                        "link": "/bolsas?sort=price%3Aasc&filter.category-1=bolsas&filter.price=599%3A33333",
+                        "text": "Confira"
+                      }
+                    },
+                    {
+                      "type": "image",
+                      "video": {},
+                      "image": {
                         "imageDesktop": "https://assets.decocache.com/meiasola/3af5fae5-553c-4586-ae10-6d522cce1d5b/199-(4).png",
                         "imageMobile": "https://assets.decocache.com/meiasola/90f03ab5-9c9e-4d6c-a992-ed43892e63e1/199-(3).png"
                       },
                       "button": {
-                        "link": "/newin?filter.price=27.96%3A300",
-                        "text": "Confira"
+                        "text": "Confira",
+                        "link": "/newin?filter.price=27.96%3A300"
                       }
                     },
                     {
@@ -1127,6 +1139,18 @@
                       "button": {
                         "text": "Confira",
                         "link": "/sale?sort=price%3Adesc&filter.productClusterIds=151&filter.price=31.96%3A200"
+                      }
+                    },
+                    {
+                      "type": "image",
+                      "video": {},
+                      "image": {
+                        "imageDesktop": "https://assets.decocache.com/meiasola/1ab73246-eff5-4444-9b86-96771e373c04/banners-summer.png",
+                        "imageMobile": "https://assets.decocache.com/meiasola/65a47695-31f8-4a34-8b0e-20f2931f88b4/2.png"
+                      },
+                      "button": {
+                        "text": "Confira",
+                        "link": "/m%7Cs"
                       }
                     },
                     {
