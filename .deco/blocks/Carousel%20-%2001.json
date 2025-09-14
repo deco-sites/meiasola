@@ -15,13 +15,13 @@
     {
       "button": {
         "text": "Confira",
-        "link": "/bolsas?sort=price%3Aasc&filter.category-1=bolsas&filter.price=599%3A33333"
+        "link": "/newin"
       },
       "type": "image",
       "video": {},
       "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/605caa6b-e940-41c9-b820-30436886336b/banner-app.png",
-        "imageDesktop": "https://assets.decocache.com/meiasola/1ca00ba1-0d71-4e0e-b295-38768cca550b/banner-site.png"
+        "imageMobile": "https://assets.decocache.com/meiasola/67635ffc-5dd7-4bea-8673-65f270a171e0/STORY.png",
+        "imageDesktop": "https://assets.decocache.com/meiasola/7639e669-a51d-4088-aa86-dcfece94200f/BANNER-SITE.png"
       }
     },
     {
