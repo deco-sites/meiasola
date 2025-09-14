@@ -15,6 +15,18 @@
     {
       "button": {
         "text": "Confira",
+        "link": "/vicenza"
+      },
+      "type": "image",
+      "video": {},
+      "image": {
+        "imageMobile": "https://assets.decocache.com/meiasola/67635ffc-5dd7-4bea-8673-65f270a171e0/STORY.png",
+        "imageDesktop": "https://assets.decocache.com/meiasola/7639e669-a51d-4088-aa86-dcfece94200f/BANNER-SITE.png"
+      }
+    },
+    {
+      "button": {
+        "text": "Confira",
         "link": "/m%7Cs"
       },
       "type": "image",
@@ -44,20 +56,20 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/90f03ab5-9c9e-4d6c-a992-ed43892e63e1/199-(3).png",
-        "imageDesktop": "https://assets.decocache.com/meiasola/3af5fae5-553c-4586-ae10-6d522cce1d5b/199-(4).png"
+        "imageDesktop": "https://assets.decocache.com/meiasola/3af5fae5-553c-4586-ae10-6d522cce1d5b/199-(4).png",
+        "imageMobile": "https://assets.decocache.com/meiasola/90f03ab5-9c9e-4d6c-a992-ed43892e63e1/199-(3).png"
       }
     },
     {
-      "button": {
-        "text": "Confira",
-        "link": "/sale?sort=price%3Adesc&filter.productClusterIds=151&filter.price=31.96%3A200"
-      },
       "type": "image",
       "video": {},
       "image": {
         "imageDesktop": "https://assets.decocache.com/meiasola/7b1e5da4-877a-4a48-b64f-97a7e5c12943/199-(1).png",
         "imageMobile": "https://assets.decocache.com/meiasola/acf30863-4a5d-47e5-86b5-4b6091db3cb9/199-(2).png"
+      },
+      "button": {
+        "text": "Confira",
+        "link": "/sale?sort=price%3Adesc&filter.productClusterIds=151&filter.price=31.96%3A200"
       }
     },
     {
