@@ -1097,11 +1097,11 @@
                       "type": "image",
                       "video": {},
                       "image": {
-                        "imageDesktop": "https://assets.decocache.com/meiasola/59081720-7990-4c60-88b0-d91a8ebff41c/banner_vicenza_2880x1320_2.jpg",
-                        "imageMobile": "https://assets.decocache.com/meiasola/e8bb0a1d-ce86-42ec-9143-2af2e16998cb/banner_vicenza_2_780x1320px.jpg"
+                        "imageDesktop": "https://assets.decocache.com/meiasola/7639e669-a51d-4088-aa86-dcfece94200f/BANNER-SITE.png",
+                        "imageMobile": "https://assets.decocache.com/meiasola/67635ffc-5dd7-4bea-8673-65f270a171e0/STORY.png"
                       },
                       "button": {
-                        "link": "/vicenza",
+                        "link": "/newin",
                         "text": "Confira"
                       }
                     },
@@ -1121,24 +1121,23 @@
                       "type": "image",
                       "video": {},
                       "image": {
-                        "imageDesktop": "https://assets.decocache.com/meiasola/7639e669-a51d-4088-aa86-dcfece94200f/BANNER-SITE.png",
-                        "imageMobile": "https://assets.decocache.com/meiasola/67635ffc-5dd7-4bea-8673-65f270a171e0/STORY.png"
-                      },
-                      "button": {
-                        "text": "Confira",
-                        "link": "/newin"
-                      }
-                    },
-                    {
-                      "type": "image",
-                      "video": {},
-                      "image": {
                         "imageDesktop": "https://assets.decocache.com/meiasola/7b1e5da4-877a-4a48-b64f-97a7e5c12943/199-(1).png",
                         "imageMobile": "https://assets.decocache.com/meiasola/acf30863-4a5d-47e5-86b5-4b6091db3cb9/199-(2).png"
                       },
                       "button": {
                         "text": "Confira",
                         "link": "/sale?sort=price%3Adesc&filter.productClusterIds=151&filter.price=31.96%3A200"
+                      }
+                    },
+                    {
+                      "type": "image",
+                      "video": {},
+                      "image": {
+                        "imageDesktop": "https://assets.decocache.com/meiasola/5e6a7794-c9ea-4592-92ca-8800e7b3cbd6/banner_lenco_vvz_2880x1320.jpg",
+                        "imageMobile": "https://assets.decocache.com/meiasola/5053a761-104f-4083-a1ef-f2147e393212/banner_lemco_vcz_780x1320px.jpg"
+                      },
+                      "button": {
+                        "link": "/vicenza"
                       }
                     },
                     {
