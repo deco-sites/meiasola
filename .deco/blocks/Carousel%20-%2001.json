@@ -4,24 +4,24 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/59081720-7990-4c60-88b0-d91a8ebff41c/banner_vicenza_2880x1320_2.jpg",
-        "imageMobile": "https://assets.decocache.com/meiasola/e8bb0a1d-ce86-42ec-9143-2af2e16998cb/banner_vicenza_2_780x1320px.jpg"
+        "imageDesktop": "https://assets.decocache.com/meiasola/7639e669-a51d-4088-aa86-dcfece94200f/BANNER-SITE.png",
+        "imageMobile": "https://assets.decocache.com/meiasola/67635ffc-5dd7-4bea-8673-65f270a171e0/STORY.png"
       },
       "button": {
-        "link": "/vicenza",
+        "link": "/newin",
         "text": "Confira"
       }
     },
     {
       "button": {
         "text": "Confira",
-        "link": "/bolsas?sort=price%3Aasc&filter.category-1=bolsas&filter.price=599%3A33333"
+        "link": "/vicenza"
       },
       "type": "image",
       "video": {},
       "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/605caa6b-e940-41c9-b820-30436886336b/banner-app.png",
-        "imageDesktop": "https://assets.decocache.com/meiasola/1ca00ba1-0d71-4e0e-b295-38768cca550b/banner-site.png"
+        "imageMobile": "https://assets.decocache.com/meiasola/34901b21-faaa-4112-8d89-8db759955e45/banner_lemco_vcz_780x1320px.jpg",
+        "imageDesktop": "https://assets.decocache.com/meiasola/ba9b24f8-4751-4824-9667-ed9a8d5342f6/banner_lenco_vvz_2880x1320.jpg"
       }
     },
     {
