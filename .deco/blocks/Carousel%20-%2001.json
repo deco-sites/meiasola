@@ -4,12 +4,24 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/3213ac6d-1e73-43b1-b914-de3b00c5a379/BANNER-SITE.png",
-        "imageMobile": "https://assets.decocache.com/meiasola/9bd93635-d864-45b5-a0cc-6853ba0a9ca2/BANNER-APP.png"
+        "imageDesktop": "https://assets.decocache.com/meiasola/d0ddeeea-25be-431b-b4fe-30eefb2ec339/DIA-DO-CLIENTE-SCHUTZ---BANNER-SITE.png",
+        "imageMobile": "https://assets.decocache.com/meiasola/003db3d1-bcb5-4155-81ab-0cc8579e4a77/DIA-DO-CLIENTE-SCHUTZ.png"
       },
       "button": {
-        "link": "/newin",
+        "link": "/schutz",
         "text": "Confira"
+      }
+    },
+    {
+      "button": {
+        "text": "Confira",
+        "link": "/newin"
+      },
+      "type": "image",
+      "video": {},
+      "image": {
+        "imageMobile": "https://assets.decocache.com/meiasola/9bd93635-d864-45b5-a0cc-6853ba0a9ca2/BANNER-APP.png",
+        "imageDesktop": "https://assets.decocache.com/meiasola/3213ac6d-1e73-43b1-b914-de3b00c5a379/BANNER-SITE.png"
       }
     },
     {
@@ -44,20 +56,20 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/acf30863-4a5d-47e5-86b5-4b6091db3cb9/199-(2).png",
-        "imageDesktop": "https://assets.decocache.com/meiasola/7b1e5da4-877a-4a48-b64f-97a7e5c12943/199-(1).png"
+        "imageDesktop": "https://assets.decocache.com/meiasola/7b1e5da4-877a-4a48-b64f-97a7e5c12943/199-(1).png",
+        "imageMobile": "https://assets.decocache.com/meiasola/acf30863-4a5d-47e5-86b5-4b6091db3cb9/199-(2).png"
       }
     },
     {
-      "button": {
-        "text": "Confira",
-        "link": "/m%7Cs"
-      },
       "type": "image",
       "video": {},
       "image": {
         "imageDesktop": "https://assets.decocache.com/meiasola/1ab73246-eff5-4444-9b86-96771e373c04/banners-summer.png",
         "imageMobile": "https://assets.decocache.com/meiasola/65a47695-31f8-4a34-8b0e-20f2931f88b4/2.png"
+      },
+      "button": {
+        "text": "Confira",
+        "link": "/m%7Cs"
       }
     },
     {
