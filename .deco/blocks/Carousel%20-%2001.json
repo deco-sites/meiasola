@@ -51,13 +51,25 @@
     {
       "button": {
         "text": "Confira",
-        "link": "/sale?sort=price%3Adesc&filter.productClusterIds=151&filter.price=31.96%3A200"
+        "link": "/newin"
       },
+      "type": "image",
+      "video": {},
+      "image": {
+        "imageDesktop": "https://assets.decocache.com/meiasola/6a5bb6b6-7a3c-4007-be5b-20463ff9af98/banner-site-(1).png",
+        "imageMobile": "https://assets.decocache.com/meiasola/71e1313f-6dad-4489-9fc0-16938ffdd3ac/banner-app-(1).png"
+      }
+    },
+    {
       "type": "image",
       "video": {},
       "image": {
         "imageDesktop": "https://assets.decocache.com/meiasola/7b1e5da4-877a-4a48-b64f-97a7e5c12943/199-(1).png",
         "imageMobile": "https://assets.decocache.com/meiasola/acf30863-4a5d-47e5-86b5-4b6091db3cb9/199-(2).png"
+      },
+      "button": {
+        "text": "Confira",
+        "link": "/sale?sort=price%3Adesc&filter.productClusterIds=151&filter.price=31.96%3A200"
       }
     },
     {
@@ -118,18 +130,6 @@
       "button": {
         "text": "Confira",
         "link": "/schutz"
-      }
-    },
-    {
-      "type": "image",
-      "video": {},
-      "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/44c39b8d-ee7f-4e02-8b00-86a27bfb70b9/fg-2880x1320.jpg",
-        "imageMobile": "https://assets.decocache.com/meiasola/95344a2a-dc27-402c-a0b0-9542f29f9798/FG-780x1320px.jpg"
-      },
-      "button": {
-        "text": "Confira",
-        "link": "/newin"
       }
     }
   ],
