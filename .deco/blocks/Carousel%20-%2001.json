@@ -4,12 +4,24 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/e196679d-3009-472b-941a-33104e45c847/BANNER-SITE.png",
-        "imageMobile": "https://assets.decocache.com/meiasola/bbd5eabd-4680-4a51-93fb-3ee3b6461a41/BANNER-APP.png"
+        "imageDesktop": "https://assets.decocache.com/meiasola/0b11dbf8-6af0-4f6e-962e-6c7b6187d2ac/banner-site-(progressiva-MS).png",
+        "imageMobile": "https://assets.decocache.com/meiasola/03291314-3256-41a9-90f9-a8a1395847c2/banner-app-(progressiva-MS).png"
       },
       "button": {
         "link": "/newin",
         "text": "Confira"
+      }
+    },
+    {
+      "button": {
+        "text": "Confira",
+        "link": "/newin"
+      },
+      "type": "image",
+      "video": {},
+      "image": {
+        "imageMobile": "https://assets.decocache.com/meiasola/bbd5eabd-4680-4a51-93fb-3ee3b6461a41/BANNER-APP.png",
+        "imageDesktop": "https://assets.decocache.com/meiasola/e196679d-3009-472b-941a-33104e45c847/BANNER-SITE.png"
       }
     },
     {
@@ -44,20 +56,20 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/acf30863-4a5d-47e5-86b5-4b6091db3cb9/199-(2).png",
-        "imageDesktop": "https://assets.decocache.com/meiasola/7b1e5da4-877a-4a48-b64f-97a7e5c12943/199-(1).png"
+        "imageDesktop": "https://assets.decocache.com/meiasola/7b1e5da4-877a-4a48-b64f-97a7e5c12943/199-(1).png",
+        "imageMobile": "https://assets.decocache.com/meiasola/acf30863-4a5d-47e5-86b5-4b6091db3cb9/199-(2).png"
       }
     },
     {
-      "button": {
-        "text": "Confira",
-        "link": "/m%7Cs"
-      },
       "type": "image",
       "video": {},
       "image": {
         "imageDesktop": "https://assets.decocache.com/meiasola/1ab73246-eff5-4444-9b86-96771e373c04/banners-summer.png",
         "imageMobile": "https://assets.decocache.com/meiasola/65a47695-31f8-4a34-8b0e-20f2931f88b4/2.png"
+      },
+      "button": {
+        "text": "Confira",
+        "link": "/m%7Cs"
       }
     },
     {
