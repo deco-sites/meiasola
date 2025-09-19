@@ -1,1 +1,1476 @@
-{"name":"forms","path":"/teste-forms","sections":{"variants":[{"rule":{"__resolveType":"website/matchers/never.ts"},"value":[{"alert":{"hide":false,"text":"<p style=\"text-align: center;\" data-mce-style=\"text-align: center;\"><strong><span style=\"color: rgb(255, 26, 26);\" data-mce-style=\"color: rgb(255, 26, 26);\">FRETE GRÁTIS</span> <span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\">PARA TODO O <span style=\"color: rgb(236, 240, 241);\" data-mce-style=\"color: rgb(236, 240, 241);\">BRASIL </span>NAS COMPRAS A PARTIR DE R$699 </span>🚚﻿</strong></p>","label":"Liquida de Inverno com até 60% Off 🔥","background":"#aa0017"},"navbar":{"menu":{"items":[{"href":"/newin","icon":null,"label":"new in","submenu":{"sections":[]}},{"href":"/bolsas","icon":null,"label":"bolsas","submenu":{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/7b1da2d3-0ad4-45e0-b4fa-2362071f0578","sections":[{"items":[{"href":"/bolsas?filter.category-1=bolsas&filter.category-2=tiracolo","label":"Tiracolo"},{"href":"/bolsas?filter.category-1=bolsas&filter.category-2=shopping","label":"Shopping"},{"href":"/bolsas?filter.category-1=bolsas&filter.category-2=tote","label":"Tote"},{"href":"/bolsas?filter.category-1=bolsas&filter.category-2=crossbody","label":"Crossbody"},{"href":"/bolsas?filter.category-1=bolsas&filter.category-2=mochila","label":"Mochilas"},{"href":"/bolsas","label":"VER TUDO","underlined":true}],"label":"Bolsas"},{"items":[{"href":"/bolsas?q=pequena","label":"Pequena"},{"href":"/bolsas?q=media","label":"Média"},{"href":"/bolsas?q=grande","label":"Grande"}],"label":"Tamanho","hideSectionOnMobile":true}]}},{"href":"/sapatos","icon":null,"label":"sapatos","submenu":{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/7e8740bc-9525-4b29-874c-494abdf5413a","sections":[{"items":[{"href":"/sapatos?filter.category-1=sapatos&filter.category-2=sandalia","label":"Sandálias"},{"href":"/sapatos?filter.category-1=sapatos&filter.category-2=mocassim","label":"Mocassins"},{"href":"/sapatos?filter.category-1=sapatos&filter.category-2=tenis","label":"Tênis"},{"href":"/sapatos?filter.category-1=sapatos&filter.category-2=scarpin","label":"Scarpins"},{"href":"/sapatos?filter.category-1=sapatos&filter.category-2=mule","label":"Mule"},{"href":"/sapatos?filter.category-1=sapatos&filter.category-2=sapatilha","label":"Sapatilhas"},{"href":"/sapatos?filter.category-1=sapatos&filter.category-2=bota","label":"Botas"},{"href":"/s?q=papete","label":"Papetes"},{"href":"/sapatos?filter.category-1=sapatos&filter.category-2=rasteira","label":"Rasteiras"},{"href":"/infantil","label":"Infantil"},{"href":"/sapatos","label":"VER TUDO","underlined":true}],"label":"Sapatos"},{"items":[{"href":"/sapatos?filter.tamanho=33","label":"33"},{"href":"/sapatos?filter.tamanho=34","label":"34"},{"href":"/sapatos?filter.tamanho=35","label":"35"},{"href":"/sapatos?filter.tamanho=36","label":"36"},{"href":"/sapatos?filter.tamanho=37","label":"37"},{"href":"/sapatos?filter.tamanho=38","label":"38"},{"href":"/sapatos?filter.tamanho=39","label":"39"},{"href":"/sapatos?filter.tamanho=40","label":"40"}],"label":"Numeração","showItemsAsSquare":true,"hideSectionOnMobile":true}]}},{"href":"/","icon":null,"label":"marcas","submenu":{"sections":[{"items":[{"href":"/arezzo?map=brand","image":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/2c71af46-3ede-47dc-8c37-33caf8ed39d1","width":83,"height":16},"label":"Arezzo"},{"href":"/schutz?map=brand","image":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/fc1ed9b8-e3e0-46c7-8cf7-50e5c8c26200","width":63,"height":16},"label":"Schutz"},{"href":"m-s","image":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/199818e3-93c1-496d-b998-ca6798990cde","width":36,"height":19},"label":"M|S"},{"href":"/alexandre-birman?map=brand","image":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/ef3b2a0e-9a2b-4f38-8c99-d0387003713f","width":87,"height":22},"label":"Alexandre Birman"},{"href":"/marcas?filter.brand=luz-da-lua","image":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/6c651fd1-58f9-4b03-804c-daf94896658f","width":125,"height":17},"label":"Luz da Lua"},{"href":"/vicenza?map=brand","image":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/a6534511-38a9-4665-8124-a85834d8407d","width":69,"height":20},"label":"Vicenza"},{"href":"/anacapri?map=brand","image":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/49bf5bea-b2a6-4620-8d55-fc455ad7cf86","width":67,"height":16},"label":"Anacapri"},{"href":"/carmem-dalessandro?map=brand","image":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/9a2eabb9-04bc-4716-b291-72500a3210b3","width":163,"height":10},"label":"Carmem Dalessandro"},{"href":"/confraria?map=brand","image":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/60303a97-a2fb-4272-b076-e18175f5695a","width":68,"height":20},"label":"Confraria"},{"href":"/elisa-atheniense?map=brand","image":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/748621c9-c66f-42ac-8c9f-0012a232fab3","width":140,"height":13},"label":"Elisa Atheniense"},{"href":"/follis?map=brand","image":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/4b2f593a-f547-4586-bcaf-1f10c30d91a1","width":93,"height":18},"label":"Follis"},{"href":"/carrano?map=brand","image":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/d55b5888-96b3-40a3-88fc-4b34276be40d","width":59,"height":22},"label":"Carrano"},{"href":"/guilhermina?map=brand","image":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/60813857-dcd8-4305-a735-14e0984d5030","width":64,"height":22},"label":"Guilhermina"},{"href":"/isla?map=brand","image":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/152e331e-cfaa-426d-a568-aa84c3b737b2","width":51,"height":18},"label":"Isla"},{"href":"/la-spezia?map=brand","image":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/d32679bf-7565-4995-a891-f24107ec705f","width":66,"height":21},"label":"La Spezia"},{"href":"/lorraci?map=brand","image":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/9a6c91d8-56ff-4b85-a343-70a037e9084d","width":108,"height":18},"label":"Lorraci"},{"href":"/ryzi?map=brand","image":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/d22588ac-040c-4815-9987-31d2fe90c8ef","width":38,"height":17},"label":"Ryzi"},{"href":"/serpui?map=brand","image":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/55eadcc7-b31f-4195-916f-7774ba8d6d0c","width":96,"height":16},"label":"Serpui"},{"href":"/wai-wai?map=brand","image":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/e83441d8-626e-45be-9e1e-4ce47917e207","width":76,"height":17},"label":"Wai Wai"},{"href":"/brizza?map=brand","image":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/28c1695e-c06c-4296-8633-815bdab1ae66","width":101,"height":14},"label":"Brizza"},{"href":"/lanca-perfume?map=brand","image":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/66f22b71-4bc9-4acc-a138-3a8b36b6cf22","width":114,"height":14},"label":"Lança Perfume"},{"href":"/marcas?filter.brand=my-favorite-things","image":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/d0a262d2-eff8-476f-86d9-84225650b6fb","width":59,"height":22},"label":"My Favorite Things"},{"href":"/debora-germani","image":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/add8acd6-7fed-44a1-855b-4273a9e78fe3","width":59,"height":22},"label":"Debora Germani"}],"label":"Marcas"}]}},{"href":"/acessorios","icon":null,"label":"acessórios","submenu":{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/63fab2cc-1edb-40f0-89bc-0f7888271267","sections":[{"items":[{"href":"/acessorios?filter.category-1=acessorios&filter.category-2=carteiras","label":"Carteiras"},{"href":"/acessorios?filter.category-1=acessorios&filter.category-2=cinto","label":"Cinto"},{"href":"/acessorios?filter.category-1=acessorios&filter.category-2=chaveiro","label":"Chaveiro"},{"href":"/acessorios?filter.category-1=acessorios&filter.category-2=necessaire","label":"Necessaire"},{"href":"/acessorios","label":"VER TUDO","underlined":true}],"label":"Acessórios"}]}},{"href":"/m-s","icon":{"src":"M|S","width":29,"height":15},"label":"M|S","submenu":{"sections":[]}},{"href":"/297?map=productClusterIds&O=&sort=release%3Adesc","icon":null,"label":"<p>Celebration</p>","submenu":{"sections":[{"items":[{"href":"/297?map=productClusterIds&O=&sort=release%3Adesc","label":"Noivas "},{"href":"293?map=productClusterIds&O=&sort=release%3Adesc","label":"Festa"},{"href":"297?map=productClusterIds&O=&sort=release%3Adesc","label":"VER TUDO","underlined":true}],"label":"Celebration"}]}},{"href":"/responsabilidade","icon":null,"label":"<p>MS DO BEM</p>","divider":true,"submenu":{"sections":[]}},{"href":"/sale","icon":null,"color":"#e50000","label":"<p><strong><span style=\"color: rgb(255, 26, 26);\" data-mce-style=\"color: rgb(255, 26, 26);\">sale</span></strong></p>","submenu":{"sections":[]}}]},"colors":{"text_top":"#ffffff","text_body":"#ffffff","background_top":"#a90017","background_body":"#aa021a"},"search":{"name":"q","action":"/s","placeholder":"BUSCAR"},"minicart":{"buttonUrl":"/newin","emptyText":"Temos certeza que podemos mudar isso com o produto certo para você! <br>Confira nossas novidades.","buttonText":"Conferir New In","emptyTitle":"Sua sacola está vazia","backgroundImage":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/c6dc1da1-455e-4243-a35e-7274c6b3bf5c"},"wishlist":{"href":"/wishlist","label":"Favoritos"},"myaccount":{"href":"/login","label":"Entre ou Cadastra-se"}},"__resolveType":"site/sections/Header/Header.tsx"},{"items":[{"button":{"link":"/m-s","text":"CONFIRA"},"imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/e16a3d43-cc1a-4ffb-88d2-8cdc2408fd3c","imageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/4466dff2-2cac-473f-a0be-516beed12756"},{"button":{"link":"/arezzo","text":"CONFIRA"},"imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/0a5d45a7-976d-4b78-ba1e-d9f3ac3466a9","imageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/08116732-5858-4b84-8574-5043a7591678"},{"button":{"link":"/schutz","text":"CONFIRA"},"imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/f7e944d9-9e10-4e60-ba18-5144706c3832","imageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/e1c275d5-ba8b-4da4-9587-7e9a49aa0d58"},{"button":{"link":"/anacapri","text":"CONFIRA"},"videoMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/f9ca1f66-23b9-42eb-9d92-f906878057d3","videoDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/f7d66b6b-0d02-4464-88eb-7ea5ed1307d3"},{"button":{"link":"/vicenza","text":"CONFIRA"},"imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/2f1705b3-8289-4963-9b7f-5729a1db6d6a","imageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/0d5a98be-e84b-485e-9def-3f8ea45bb7cb"},{"button":{"link":"/newin","text":"CONFIRA"},"imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/2520cce9-1ddd-4a01-bd8d-c8dc1b5cf094","imageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/db53bf30-78b6-447b-abf1-fbed37a54c4a"}],"images":[{"alt":"/feminino","action":{"href":"https://www.deco.cx/","label":"deco.cx","title":"VTEX Store","subTitle":"Visit our site and start building now:"},"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/24278f9e-412d-4a8a-b2d3-57353bb1b368","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/afa2c07c-74f4-496d-8647-5cc58f48117b"},{"alt":"/feminino","action":{"href":"https://www.deco.cx/","label":"deco.cx","title":"VTEX Store","subTitle":"Visit our site and start building now:"},"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/eeaa624c-a3e1-45e8-a6fe-034233cfbcd0","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/7949d031-9a79-4639-b85e-62fd90af85a9"},{"alt":"/feminino","action":{"href":"https://www.deco.cx/","label":"deco.cx","title":"VTEX Store","subTitle":"Visit our site and start building now:"},"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/ae89571c-4a7c-44bf-9aeb-a341fd049d19","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/7ec121e4-5cfe-4b7b-b942-d1ed4493803d"}],"preload":true,"interval":5,"__resolveType":"site/sections/Images/Carousel.tsx"},{"link":{"href":"/newin","text":"Ver presentes"},"text":"<p>Ainda da tempo de escolher o presente do seu mozão!</p>","labels":{"hours":"Hr","minutes":"Mn","seconds":"Sc"},"layout":{"textPosition":"After counter"},"expiresAt":"2024-06-13T02:50:00.000Z","__resolveType":"site/sections/Miscellaneous/CampaignTimer.tsx"},{"list":[{"href":"https://www.meiasola.com.br/260?map=productClusterIds&O=&sort=release%3Adesc","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/4bc04f53-ba68-4800-b576-fd4f85d923c2","label":"Clássica"},{"href":"https://www.meiasola.com.br/261?map=productClusterIds&O=&sort=release%3Adesc","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/aaf05e8b-89c8-4c56-b478-ef9b393e2e2e","label":"Romântica"},{"href":"/https://www.meiasola.com.br/262?map=productClusterIds&O=&sort=release%3Adesc&page=2","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/5f692669-2334-4983-a942-732e3751af19","label":"Moderna"},{"href":"https://www.meiasola.com.br/schutz?map=brand","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/f0506247-7590-467b-9f6c-47de6c0d0538","label":"Casual"},{"href":"https://www.meiasola.com.br/260?map=productClusterIds&O=&sort=release%3Adesc","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/ac1248ec-9fa2-4007-8ca4-9fce71a8d106","label":"Elegante"}],"header":{"description":"Qual o estilo do seu amor?"},"layout":{"categoryCard":{"textPosition":"top","textAlignment":"center"},"headerAlignment":"center"},"__resolveType":"site/sections/Category/CategoryList.tsx"},{"page":{"data":{"sort":"release:desc","count":36,"fuzzy":"automatic","__resolveType":"vtex/loaders/intelligentSearch/productListingPage.ts","selectedFacets":[{"key":"productClusterIds","value":"250"}],"hideUnavailableItems":true},"extensions":[{"__resolveType":"site/loaders/meiasola/extensionProductListingPage.ts"}],"__resolveType":"commerce/loaders/product/productListingPage.ts"},"sizes":{"sizes":[],"title":"ESCOLHA SUA NUMERAÇÃO","routesToShow":[{"label":"livelo"}]},"images":[{"alt":"Imagem de Sapatos","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/23a0d4bc-4e13-4089-836c-36665e348158","route":"/livelo","srcMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/4448b280-b2e8-4d79-b643-d51e7409127a"}],"__resolveType":"site/sections/Product/SearchResult.tsx"},{"__resolveType":"Footer - 02"},{"type":"website","title":"New in","jsonLD":{"sort":"release:desc","count":24,"fuzzy":"automatic","__resolveType":"vtex/loaders/intelligentSearch/productListingPage.ts","selectedFacets":[],"hideUnavailableItems":true},"__resolveType":"commerce/sections/Seo/SeoPLP.tsx","titleTemplate":"%s","descriptionTemplate":"%s"}]},{"rule":{"__resolveType":"website/matchers/always.ts"},"value":[{"alert":{"hide":false,"text":"<p style=\"text-align: center;\" data-mce-style=\"text-align: center;\"><strong><span style=\"color: rgb(255, 26, 26);\" data-mce-style=\"color: rgb(255, 26, 26);\">FRETE GRÁTIS</span> <span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\">PARA TODO O <span style=\"color: rgb(236, 240, 241);\" data-mce-style=\"color: rgb(236, 240, 241);\">BRASIL </span>NAS COMPRAS A PARTIR DE R$699 </span>🚚﻿</strong></p>","label":"Liquida de Inverno com até 60% Off 🔥","background":"#aa0017"},"navbar":{"menu":{"items":[{"href":"/newin","icon":null,"label":"new in","submenu":{"sections":[]}},{"href":"/bolsas","icon":null,"label":"bolsas","submenu":{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/7b1da2d3-0ad4-45e0-b4fa-2362071f0578","sections":[{"items":[{"href":"/bolsas?filter.category-1=bolsas&filter.category-2=tiracolo","label":"Tiracolo"},{"href":"/bolsas?filter.category-1=bolsas&filter.category-2=shopping","label":"Shopping"},{"href":"/bolsas?filter.category-1=bolsas&filter.category-2=tote","label":"Tote"},{"href":"/bolsas?filter.category-1=bolsas&filter.category-2=crossbody","label":"Crossbody"},{"href":"/bolsas?filter.category-1=bolsas&filter.category-2=mochila","label":"Mochilas"},{"href":"/bolsas","label":"VER TUDO","underlined":true}],"label":"Bolsas"},{"items":[{"href":"/bolsas?q=pequena","label":"Pequena"},{"href":"/bolsas?q=media","label":"Média"},{"href":"/bolsas?q=grande","label":"Grande"}],"label":"Tamanho","hideSectionOnMobile":true}]}},{"href":"/sapatos","icon":null,"label":"sapatos","submenu":{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/7e8740bc-9525-4b29-874c-494abdf5413a","sections":[{"items":[{"href":"/sapatos?filter.category-1=sapatos&filter.category-2=sandalia","label":"Sandálias"},{"href":"/sapatos?filter.category-1=sapatos&filter.category-2=mocassim","label":"Mocassins"},{"href":"/sapatos?filter.category-1=sapatos&filter.category-2=tenis","label":"Tênis"},{"href":"/sapatos?filter.category-1=sapatos&filter.category-2=scarpin","label":"Scarpins"},{"href":"/sapatos?filter.category-1=sapatos&filter.category-2=mule","label":"Mule"},{"href":"/sapatos?filter.category-1=sapatos&filter.category-2=sapatilha","label":"Sapatilhas"},{"href":"/sapatos?filter.category-1=sapatos&filter.category-2=bota","label":"Botas"},{"href":"/s?q=papete","label":"Papetes"},{"href":"/sapatos?filter.category-1=sapatos&filter.category-2=rasteira","label":"Rasteiras"},{"href":"/infantil","label":"Infantil"},{"href":"/sapatos","label":"VER TUDO","underlined":true}],"label":"Sapatos"},{"items":[{"href":"/sapatos?filter.tamanho=33","label":"33"},{"href":"/sapatos?filter.tamanho=34","label":"34"},{"href":"/sapatos?filter.tamanho=35","label":"35"},{"href":"/sapatos?filter.tamanho=36","label":"36"},{"href":"/sapatos?filter.tamanho=37","label":"37"},{"href":"/sapatos?filter.tamanho=38","label":"38"},{"href":"/sapatos?filter.tamanho=39","label":"39"},{"href":"/sapatos?filter.tamanho=40","label":"40"}],"label":"Numeração","showItemsAsSquare":true,"hideSectionOnMobile":true}]}},{"href":"/","icon":null,"label":"marcas","submenu":{"sections":[{"items":[{"href":"/arezzo?map=brand","image":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/2c71af46-3ede-47dc-8c37-33caf8ed39d1","width":83,"height":16},"label":"Arezzo"},{"href":"/schutz?map=brand","image":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/fc1ed9b8-e3e0-46c7-8cf7-50e5c8c26200","width":63,"height":16},"label":"Schutz"},{"href":"m-s","image":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/199818e3-93c1-496d-b998-ca6798990cde","width":36,"height":19},"label":"M|S"},{"href":"/alexandre-birman?map=brand","image":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/ef3b2a0e-9a2b-4f38-8c99-d0387003713f","width":87,"height":22},"label":"Alexandre Birman"},{"href":"/marcas?filter.brand=luz-da-lua","image":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/6c651fd1-58f9-4b03-804c-daf94896658f","width":125,"height":17},"label":"Luz da Lua"},{"href":"/vicenza?map=brand","image":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/a6534511-38a9-4665-8124-a85834d8407d","width":69,"height":20},"label":"Vicenza"},{"href":"/anacapri?map=brand","image":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/49bf5bea-b2a6-4620-8d55-fc455ad7cf86","width":67,"height":16},"label":"Anacapri"},{"href":"/carmem-dalessandro?map=brand","image":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/9a2eabb9-04bc-4716-b291-72500a3210b3","width":163,"height":10},"label":"Carmem Dalessandro"},{"href":"/confraria?map=brand","image":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/60303a97-a2fb-4272-b076-e18175f5695a","width":68,"height":20},"label":"Confraria"},{"href":"/elisa-atheniense?map=brand","image":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/748621c9-c66f-42ac-8c9f-0012a232fab3","width":140,"height":13},"label":"Elisa Atheniense"},{"href":"/follis?map=brand","image":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/4b2f593a-f547-4586-bcaf-1f10c30d91a1","width":93,"height":18},"label":"Follis"},{"href":"/carrano?map=brand","image":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/d55b5888-96b3-40a3-88fc-4b34276be40d","width":59,"height":22},"label":"Carrano"},{"href":"/guilhermina?map=brand","image":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/60813857-dcd8-4305-a735-14e0984d5030","width":64,"height":22},"label":"Guilhermina"},{"href":"/isla?map=brand","image":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/152e331e-cfaa-426d-a568-aa84c3b737b2","width":51,"height":18},"label":"Isla"},{"href":"/la-spezia?map=brand","image":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/d32679bf-7565-4995-a891-f24107ec705f","width":66,"height":21},"label":"La Spezia"},{"href":"/lorraci?map=brand","image":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/9a6c91d8-56ff-4b85-a343-70a037e9084d","width":108,"height":18},"label":"Lorraci"},{"href":"/ryzi?map=brand","image":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/d22588ac-040c-4815-9987-31d2fe90c8ef","width":38,"height":17},"label":"Ryzi"},{"href":"/serpui?map=brand","image":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/55eadcc7-b31f-4195-916f-7774ba8d6d0c","width":96,"height":16},"label":"Serpui"},{"href":"/wai-wai?map=brand","image":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/e83441d8-626e-45be-9e1e-4ce47917e207","width":76,"height":17},"label":"Wai Wai"},{"href":"/brizza?map=brand","image":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/28c1695e-c06c-4296-8633-815bdab1ae66","width":101,"height":14},"label":"Brizza"},{"href":"/lanca-perfume?map=brand","image":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/66f22b71-4bc9-4acc-a138-3a8b36b6cf22","width":114,"height":14},"label":"Lança Perfume"},{"href":"/marcas?filter.brand=my-favorite-things","image":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/d0a262d2-eff8-476f-86d9-84225650b6fb","width":59,"height":22},"label":"My Favorite Things"},{"href":"/debora-germani","image":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/add8acd6-7fed-44a1-855b-4273a9e78fe3","width":59,"height":22},"label":"Debora Germani"}],"label":"Marcas"}]}},{"href":"/acessorios","icon":null,"label":"acessórios","submenu":{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/63fab2cc-1edb-40f0-89bc-0f7888271267","sections":[{"items":[{"href":"/acessorios?filter.category-1=acessorios&filter.category-2=carteiras","label":"Carteiras"},{"href":"/acessorios?filter.category-1=acessorios&filter.category-2=cinto","label":"Cinto"},{"href":"/acessorios?filter.category-1=acessorios&filter.category-2=chaveiro","label":"Chaveiro"},{"href":"/acessorios?filter.category-1=acessorios&filter.category-2=necessaire","label":"Necessaire"},{"href":"/acessorios","label":"VER TUDO","underlined":true}],"label":"Acessórios"}]}},{"href":"/m-s","icon":{"src":"M|S","width":29,"height":15},"label":"M|S","submenu":{"sections":[]}},{"href":"/297?map=productClusterIds&O=&sort=release%3Adesc","icon":null,"label":"<p>Celebration</p>","submenu":{"sections":[{"items":[{"href":"/297?map=productClusterIds&O=&sort=release%3Adesc","label":"Noivas "},{"href":"293?map=productClusterIds&O=&sort=release%3Adesc","label":"Festa"},{"href":"297?map=productClusterIds&O=&sort=release%3Adesc","label":"VER TUDO","underlined":true}],"label":"Celebration"}]}},{"href":"/responsabilidade","icon":null,"label":"<p>MS DO BEM</p>","divider":true,"submenu":{"sections":[]}},{"href":"/sale","icon":null,"color":"#e50000","label":"<p><strong><span style=\"color: rgb(255, 26, 26);\" data-mce-style=\"color: rgb(255, 26, 26);\">sale</span></strong></p>","submenu":{"sections":[]}}]},"colors":{"text_top":"#ffffff","text_body":"#ffffff","background_top":"#a90017","background_body":"#aa021a"},"search":{"name":"q","action":"/s","placeholder":"BUSCAR"},"minicart":{"buttonUrl":"/newin","emptyText":"Temos certeza que podemos mudar isso com o produto certo para você! <br>Confira nossas novidades.","buttonText":"Conferir New In","emptyTitle":"Sua sacola está vazia","backgroundImage":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/c6dc1da1-455e-4243-a35e-7274c6b3bf5c"},"wishlist":{"href":"/wishlist","label":"Favoritos"},"myaccount":{"href":"/login","label":"Entre ou Cadastra-se"}},"__resolveType":"site/sections/Header/Header.tsx"},{"items":[{"button":{"link":"/m-s","text":"CONFIRA"},"imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/e16a3d43-cc1a-4ffb-88d2-8cdc2408fd3c","imageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/4466dff2-2cac-473f-a0be-516beed12756"},{"button":{"link":"/arezzo","text":"CONFIRA"},"imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/0a5d45a7-976d-4b78-ba1e-d9f3ac3466a9","imageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/08116732-5858-4b84-8574-5043a7591678"},{"button":{"link":"/schutz","text":"CONFIRA"},"imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/f7e944d9-9e10-4e60-ba18-5144706c3832","imageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/e1c275d5-ba8b-4da4-9587-7e9a49aa0d58"},{"button":{"link":"/anacapri","text":"CONFIRA"},"videoMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/f9ca1f66-23b9-42eb-9d92-f906878057d3","videoDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/f7d66b6b-0d02-4464-88eb-7ea5ed1307d3"},{"button":{"link":"/vicenza","text":"CONFIRA"},"imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/2f1705b3-8289-4963-9b7f-5729a1db6d6a","imageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/0d5a98be-e84b-485e-9def-3f8ea45bb7cb"},{"button":{"link":"/newin","text":"CONFIRA"},"imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/2520cce9-1ddd-4a01-bd8d-c8dc1b5cf094","imageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/db53bf30-78b6-447b-abf1-fbed37a54c4a"}],"images":[{"alt":"/feminino","action":{"href":"https://www.deco.cx/","label":"deco.cx","title":"VTEX Store","subTitle":"Visit our site and start building now:"},"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/24278f9e-412d-4a8a-b2d3-57353bb1b368","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/afa2c07c-74f4-496d-8647-5cc58f48117b"},{"alt":"/feminino","action":{"href":"https://www.deco.cx/","label":"deco.cx","title":"VTEX Store","subTitle":"Visit our site and start building now:"},"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/eeaa624c-a3e1-45e8-a6fe-034233cfbcd0","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/7949d031-9a79-4639-b85e-62fd90af85a9"},{"alt":"/feminino","action":{"href":"https://www.deco.cx/","label":"deco.cx","title":"VTEX Store","subTitle":"Visit our site and start building now:"},"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/ae89571c-4a7c-44bf-9aeb-a341fd049d19","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/7ec121e4-5cfe-4b7b-b942-d1ed4493803d"}],"preload":true,"interval":5,"__resolveType":"site/sections/Images/Carousel.tsx"},{"link":{"href":"/newin","text":"Ver presentes"},"text":"<p>Ainda da tempo de escolher o presente do seu mozão!</p>","labels":{"hours":"Hr","minutes":"Mn","seconds":"Sc"},"layout":{"textPosition":"After counter"},"expiresAt":"2024-06-13T02:50:00.000Z","__resolveType":"site/sections/Miscellaneous/CampaignTimer.tsx"},{"list":[{"href":"https://www.meiasola.com.br/260?map=productClusterIds&O=&sort=release%3Adesc","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/4bc04f53-ba68-4800-b576-fd4f85d923c2","label":"Clássica"},{"href":"https://www.meiasola.com.br/261?map=productClusterIds&O=&sort=release%3Adesc","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/aaf05e8b-89c8-4c56-b478-ef9b393e2e2e","label":"Romântica"},{"href":"/https://www.meiasola.com.br/262?map=productClusterIds&O=&sort=release%3Adesc&page=2","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/5f692669-2334-4983-a942-732e3751af19","label":"Moderna"},{"href":"https://www.meiasola.com.br/schutz?map=brand","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/f0506247-7590-467b-9f6c-47de6c0d0538","label":"Casual"},{"href":"https://www.meiasola.com.br/260?map=productClusterIds&O=&sort=release%3Adesc","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/ac1248ec-9fa2-4007-8ca4-9fce71a8d106","label":"Elegante"}],"header":{"description":"Qual o estilo do seu amor?"},"layout":{"categoryCard":{"textPosition":"top","textAlignment":"center"},"headerAlignment":"center"},"__resolveType":"site/sections/Category/CategoryList.tsx"},{"page":{"data":{"sort":"release:desc","count":36,"fuzzy":"automatic","__resolveType":"vtex/loaders/intelligentSearch/productListingPage.ts","selectedFacets":[{"key":"productClusterIds","value":"250"}],"hideUnavailableItems":true},"extensions":[{"__resolveType":"site/loaders/meiasola/extensionProductListingPage.ts"}],"__resolveType":"commerce/loaders/product/productListingPage.ts"},"sizes":{"sizes":[],"title":"ESCOLHA SUA NUMERAÇÃO","routesToShow":[{"label":"livelo"}]},"images":[{"alt":"Imagem de Sapatos","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/23a0d4bc-4e13-4089-836c-36665e348158","route":"/livelo","srcMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/4448b280-b2e8-4d79-b643-d51e7409127a"}],"__resolveType":"site/sections/Product/SearchResult.tsx"},{"__resolveType":"Footer - 02"},{"type":"website","title":"New in","jsonLD":{"sort":"release:desc","count":24,"fuzzy":"automatic","__resolveType":"vtex/loaders/intelligentSearch/productListingPage.ts","selectedFacets":[],"hideUnavailableItems":true},"__resolveType":"commerce/sections/Seo/SeoPLP.tsx","titleTemplate":"%s","descriptionTemplate":"%s"}]}],"__resolveType":"website/flags/multivariate.ts"},"__resolveType":"website/pages/Page.tsx"}
+{
+  "name": "forms",
+  "path": "/teste-forms",
+  "sections": {
+    "variants": [
+      {
+        "rule": {
+          "__resolveType": "website/matchers/never.ts"
+        },
+        "value": [
+          {
+            "alert": {
+              "hide": false,
+              "text": "<p style=\"text-align: center;\" data-mce-style=\"text-align: center;\"><strong><span style=\"color: rgb(255, 26, 26);\" data-mce-style=\"color: rgb(255, 26, 26);\">FRETE GRÁTIS</span> <span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\">PARA TODO O <span style=\"color: rgb(236, 240, 241);\" data-mce-style=\"color: rgb(236, 240, 241);\">BRASIL </span>NAS COMPRAS A PARTIR DE R$699 </span>🚚﻿</strong></p>",
+              "label": "Liquida de Inverno com até 60% Off 🔥",
+              "background": "#aa0017"
+            },
+            "navbar": {
+              "menu": {
+                "items": [
+                  {
+                    "href": "/newin",
+                    "icon": null,
+                    "label": "new in",
+                    "submenu": {
+                      "sections": []
+                    }
+                  },
+                  {
+                    "href": "/bolsas",
+                    "icon": null,
+                    "label": "bolsas",
+                    "submenu": {
+                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/7b1da2d3-0ad4-45e0-b4fa-2362071f0578",
+                      "sections": [
+                        {
+                          "items": [
+                            {
+                              "href": "/bolsas?filter.category-1=bolsas&filter.category-2=tiracolo",
+                              "label": "Tiracolo"
+                            },
+                            {
+                              "href": "/bolsas?filter.category-1=bolsas&filter.category-2=shopping",
+                              "label": "Shopping"
+                            },
+                            {
+                              "href": "/bolsas?filter.category-1=bolsas&filter.category-2=tote",
+                              "label": "Tote"
+                            },
+                            {
+                              "href": "/bolsas?filter.category-1=bolsas&filter.category-2=crossbody",
+                              "label": "Crossbody"
+                            },
+                            {
+                              "href": "/bolsas?filter.category-1=bolsas&filter.category-2=mochila",
+                              "label": "Mochilas"
+                            },
+                            {
+                              "href": "/bolsas",
+                              "label": "VER TUDO",
+                              "underlined": true
+                            }
+                          ],
+                          "label": "Bolsas"
+                        },
+                        {
+                          "items": [
+                            {
+                              "href": "/bolsas?q=pequena",
+                              "label": "Pequena"
+                            },
+                            {
+                              "href": "/bolsas?q=media",
+                              "label": "Média"
+                            },
+                            {
+                              "href": "/bolsas?q=grande",
+                              "label": "Grande"
+                            }
+                          ],
+                          "label": "Tamanho",
+                          "hideSectionOnMobile": true
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "href": "/sapatos",
+                    "icon": null,
+                    "label": "sapatos",
+                    "submenu": {
+                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/7e8740bc-9525-4b29-874c-494abdf5413a",
+                      "sections": [
+                        {
+                          "items": [
+                            {
+                              "href": "/sapatos?filter.category-1=sapatos&filter.category-2=sandalia",
+                              "label": "Sandálias"
+                            },
+                            {
+                              "href": "/sapatos?filter.category-1=sapatos&filter.category-2=mocassim",
+                              "label": "Mocassins"
+                            },
+                            {
+                              "href": "/sapatos?filter.category-1=sapatos&filter.category-2=tenis",
+                              "label": "Tênis"
+                            },
+                            {
+                              "href": "/sapatos?filter.category-1=sapatos&filter.category-2=scarpin",
+                              "label": "Scarpins"
+                            },
+                            {
+                              "href": "/sapatos?filter.category-1=sapatos&filter.category-2=mule",
+                              "label": "Mule"
+                            },
+                            {
+                              "href": "/sapatos?filter.category-1=sapatos&filter.category-2=sapatilha",
+                              "label": "Sapatilhas"
+                            },
+                            {
+                              "href": "/sapatos?filter.category-1=sapatos&filter.category-2=bota",
+                              "label": "Botas"
+                            },
+                            {
+                              "href": "/s?q=papete",
+                              "label": "Papetes"
+                            },
+                            {
+                              "href": "/sapatos?filter.category-1=sapatos&filter.category-2=rasteira",
+                              "label": "Rasteiras"
+                            },
+                            {
+                              "href": "/infantil",
+                              "label": "Infantil"
+                            },
+                            {
+                              "href": "/sapatos",
+                              "label": "VER TUDO",
+                              "underlined": true
+                            }
+                          ],
+                          "label": "Sapatos"
+                        },
+                        {
+                          "items": [
+                            {
+                              "href": "/sapatos?filter.tamanho=33",
+                              "label": "33"
+                            },
+                            {
+                              "href": "/sapatos?filter.tamanho=34",
+                              "label": "34"
+                            },
+                            {
+                              "href": "/sapatos?filter.tamanho=35",
+                              "label": "35"
+                            },
+                            {
+                              "href": "/sapatos?filter.tamanho=36",
+                              "label": "36"
+                            },
+                            {
+                              "href": "/sapatos?filter.tamanho=37",
+                              "label": "37"
+                            },
+                            {
+                              "href": "/sapatos?filter.tamanho=38",
+                              "label": "38"
+                            },
+                            {
+                              "href": "/sapatos?filter.tamanho=39",
+                              "label": "39"
+                            },
+                            {
+                              "href": "/sapatos?filter.tamanho=40",
+                              "label": "40"
+                            }
+                          ],
+                          "label": "Numeração",
+                          "showItemsAsSquare": true,
+                          "hideSectionOnMobile": true
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "href": "/",
+                    "icon": null,
+                    "label": "marcas",
+                    "submenu": {
+                      "sections": [
+                        {
+                          "items": [
+                            {
+                              "href": "/arezzo?map=brand",
+                              "image": {
+                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/2c71af46-3ede-47dc-8c37-33caf8ed39d1",
+                                "width": 83,
+                                "height": 16
+                              },
+                              "label": "Arezzo"
+                            },
+                            {
+                              "href": "/schutz?map=brand",
+                              "image": {
+                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/fc1ed9b8-e3e0-46c7-8cf7-50e5c8c26200",
+                                "width": 63,
+                                "height": 16
+                              },
+                              "label": "Schutz"
+                            },
+                            {
+                              "href": "m-s",
+                              "image": {
+                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/199818e3-93c1-496d-b998-ca6798990cde",
+                                "width": 36,
+                                "height": 19
+                              },
+                              "label": "M|S"
+                            },
+                            {
+                              "href": "/alexandre-birman?map=brand",
+                              "image": {
+                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/ef3b2a0e-9a2b-4f38-8c99-d0387003713f",
+                                "width": 87,
+                                "height": 22
+                              },
+                              "label": "Alexandre Birman"
+                            },
+                            {
+                              "href": "/marcas?filter.brand=luz-da-lua",
+                              "image": {
+                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/6c651fd1-58f9-4b03-804c-daf94896658f",
+                                "width": 125,
+                                "height": 17
+                              },
+                              "label": "Luz da Lua"
+                            },
+                            {
+                              "href": "/vicenza?map=brand",
+                              "image": {
+                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/a6534511-38a9-4665-8124-a85834d8407d",
+                                "width": 69,
+                                "height": 20
+                              },
+                              "label": "Vicenza"
+                            },
+                            {
+                              "href": "/anacapri?map=brand",
+                              "image": {
+                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/49bf5bea-b2a6-4620-8d55-fc455ad7cf86",
+                                "width": 67,
+                                "height": 16
+                              },
+                              "label": "Anacapri"
+                            },
+                            {
+                              "href": "/carmem-dalessandro?map=brand",
+                              "image": {
+                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/9a2eabb9-04bc-4716-b291-72500a3210b3",
+                                "width": 163,
+                                "height": 10
+                              },
+                              "label": "Carmem Dalessandro"
+                            },
+                            {
+                              "href": "/confraria?map=brand",
+                              "image": {
+                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/60303a97-a2fb-4272-b076-e18175f5695a",
+                                "width": 68,
+                                "height": 20
+                              },
+                              "label": "Confraria"
+                            },
+                            {
+                              "href": "/elisa-atheniense?map=brand",
+                              "image": {
+                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/748621c9-c66f-42ac-8c9f-0012a232fab3",
+                                "width": 140,
+                                "height": 13
+                              },
+                              "label": "Elisa Atheniense"
+                            },
+                            {
+                              "href": "/follis?map=brand",
+                              "image": {
+                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/4b2f593a-f547-4586-bcaf-1f10c30d91a1",
+                                "width": 93,
+                                "height": 18
+                              },
+                              "label": "Follis"
+                            },
+                            {
+                              "href": "/carrano?map=brand",
+                              "image": {
+                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/d55b5888-96b3-40a3-88fc-4b34276be40d",
+                                "width": 59,
+                                "height": 22
+                              },
+                              "label": "Carrano"
+                            },
+                            {
+                              "href": "/guilhermina?map=brand",
+                              "image": {
+                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/60813857-dcd8-4305-a735-14e0984d5030",
+                                "width": 64,
+                                "height": 22
+                              },
+                              "label": "Guilhermina"
+                            },
+                            {
+                              "href": "/isla?map=brand",
+                              "image": {
+                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/152e331e-cfaa-426d-a568-aa84c3b737b2",
+                                "width": 51,
+                                "height": 18
+                              },
+                              "label": "Isla"
+                            },
+                            {
+                              "href": "/la-spezia?map=brand",
+                              "image": {
+                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/d32679bf-7565-4995-a891-f24107ec705f",
+                                "width": 66,
+                                "height": 21
+                              },
+                              "label": "La Spezia"
+                            },
+                            {
+                              "href": "/lorraci?map=brand",
+                              "image": {
+                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/9a6c91d8-56ff-4b85-a343-70a037e9084d",
+                                "width": 108,
+                                "height": 18
+                              },
+                              "label": "Lorraci"
+                            },
+                            {
+                              "href": "/ryzi?map=brand",
+                              "image": {
+                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/d22588ac-040c-4815-9987-31d2fe90c8ef",
+                                "width": 38,
+                                "height": 17
+                              },
+                              "label": "Ryzi"
+                            },
+                            {
+                              "href": "/serpui?map=brand",
+                              "image": {
+                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/55eadcc7-b31f-4195-916f-7774ba8d6d0c",
+                                "width": 96,
+                                "height": 16
+                              },
+                              "label": "Serpui"
+                            },
+                            {
+                              "href": "/wai-wai?map=brand",
+                              "image": {
+                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/e83441d8-626e-45be-9e1e-4ce47917e207",
+                                "width": 76,
+                                "height": 17
+                              },
+                              "label": "Wai Wai"
+                            },
+                            {
+                              "href": "/brizza?map=brand",
+                              "image": {
+                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/28c1695e-c06c-4296-8633-815bdab1ae66",
+                                "width": 101,
+                                "height": 14
+                              },
+                              "label": "Brizza"
+                            },
+                            {
+                              "href": "/lanca-perfume?map=brand",
+                              "image": {
+                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/66f22b71-4bc9-4acc-a138-3a8b36b6cf22",
+                                "width": 114,
+                                "height": 14
+                              },
+                              "label": "Lança Perfume"
+                            },
+                            {
+                              "href": "/marcas?filter.brand=my-favorite-things",
+                              "image": {
+                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/d0a262d2-eff8-476f-86d9-84225650b6fb",
+                                "width": 59,
+                                "height": 22
+                              },
+                              "label": "My Favorite Things"
+                            },
+                            {
+                              "href": "/debora-germani",
+                              "image": {
+                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/add8acd6-7fed-44a1-855b-4273a9e78fe3",
+                                "width": 59,
+                                "height": 22
+                              },
+                              "label": "Debora Germani"
+                            }
+                          ],
+                          "label": "Marcas"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "href": "/acessorios",
+                    "icon": null,
+                    "label": "acessórios",
+                    "submenu": {
+                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/63fab2cc-1edb-40f0-89bc-0f7888271267",
+                      "sections": [
+                        {
+                          "items": [
+                            {
+                              "href": "/acessorios?filter.category-1=acessorios&filter.category-2=carteiras",
+                              "label": "Carteiras"
+                            },
+                            {
+                              "href": "/acessorios?filter.category-1=acessorios&filter.category-2=cinto",
+                              "label": "Cinto"
+                            },
+                            {
+                              "href": "/acessorios?filter.category-1=acessorios&filter.category-2=chaveiro",
+                              "label": "Chaveiro"
+                            },
+                            {
+                              "href": "/acessorios?filter.category-1=acessorios&filter.category-2=necessaire",
+                              "label": "Necessaire"
+                            },
+                            {
+                              "href": "/acessorios",
+                              "label": "VER TUDO",
+                              "underlined": true
+                            }
+                          ],
+                          "label": "Acessórios"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "href": "/m-s",
+                    "icon": {
+                      "src": "M|S",
+                      "width": 29,
+                      "height": 15
+                    },
+                    "label": "M|S",
+                    "submenu": {
+                      "sections": []
+                    }
+                  },
+                  {
+                    "href": "/297?map=productClusterIds&O=&sort=release%3Adesc",
+                    "icon": null,
+                    "label": "<p>Celebration</p>",
+                    "submenu": {
+                      "sections": [
+                        {
+                          "items": [
+                            {
+                              "href": "/297?map=productClusterIds&O=&sort=release%3Adesc",
+                              "label": "Noivas "
+                            },
+                            {
+                              "href": "293?map=productClusterIds&O=&sort=release%3Adesc",
+                              "label": "Festa"
+                            },
+                            {
+                              "href": "297?map=productClusterIds&O=&sort=release%3Adesc",
+                              "label": "VER TUDO",
+                              "underlined": true
+                            }
+                          ],
+                          "label": "Celebration"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "href": "/responsabilidade",
+                    "icon": null,
+                    "label": "<p>MS DO BEM</p>",
+                    "divider": true,
+                    "submenu": {
+                      "sections": []
+                    }
+                  },
+                  {
+                    "href": "/sale",
+                    "icon": null,
+                    "color": "#e50000",
+                    "label": "<p><strong><span style=\"color: rgb(255, 26, 26);\" data-mce-style=\"color: rgb(255, 26, 26);\">sale</span></strong></p>",
+                    "submenu": {
+                      "sections": []
+                    }
+                  }
+                ]
+              },
+              "colors": {
+                "text_top": "#ffffff",
+                "text_body": "#ffffff",
+                "background_top": "#a90017",
+                "background_body": "#aa021a"
+              },
+              "search": {
+                "name": "q",
+                "action": "/s",
+                "placeholder": "BUSCAR"
+              },
+              "minicart": {
+                "buttonUrl": "/newin",
+                "emptyText": "Temos certeza que podemos mudar isso com o produto certo para você! <br>Confira nossas novidades.",
+                "buttonText": "Conferir New In",
+                "emptyTitle": "Sua sacola está vazia",
+                "backgroundImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/c6dc1da1-455e-4243-a35e-7274c6b3bf5c"
+              },
+              "wishlist": {
+                "href": "/wishlist",
+                "label": "Favoritos"
+              },
+              "myaccount": {
+                "href": "/login",
+                "label": "Entre ou Cadastra-se"
+              }
+            },
+            "__resolveType": "site/sections/Header/Header.tsx"
+          },
+          {
+            "items": [
+              {
+                "button": {
+                  "link": "/m-s",
+                  "text": "CONFIRA"
+                },
+                "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/e16a3d43-cc1a-4ffb-88d2-8cdc2408fd3c",
+                "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/4466dff2-2cac-473f-a0be-516beed12756"
+              },
+              {
+                "button": {
+                  "link": "/arezzo",
+                  "text": "CONFIRA"
+                },
+                "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/0a5d45a7-976d-4b78-ba1e-d9f3ac3466a9",
+                "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/08116732-5858-4b84-8574-5043a7591678"
+              },
+              {
+                "button": {
+                  "link": "/schutz",
+                  "text": "CONFIRA"
+                },
+                "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/f7e944d9-9e10-4e60-ba18-5144706c3832",
+                "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/e1c275d5-ba8b-4da4-9587-7e9a49aa0d58"
+              },
+              {
+                "button": {
+                  "link": "/anacapri",
+                  "text": "CONFIRA"
+                },
+                "videoMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/f9ca1f66-23b9-42eb-9d92-f906878057d3",
+                "videoDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/f7d66b6b-0d02-4464-88eb-7ea5ed1307d3"
+              },
+              {
+                "button": {
+                  "link": "/vicenza",
+                  "text": "CONFIRA"
+                },
+                "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/2f1705b3-8289-4963-9b7f-5729a1db6d6a",
+                "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/0d5a98be-e84b-485e-9def-3f8ea45bb7cb"
+              },
+              {
+                "button": {
+                  "link": "/newin",
+                  "text": "CONFIRA"
+                },
+                "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/2520cce9-1ddd-4a01-bd8d-c8dc1b5cf094",
+                "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/db53bf30-78b6-447b-abf1-fbed37a54c4a"
+              }
+            ],
+            "images": [
+              {
+                "alt": "/feminino",
+                "action": {
+                  "href": "https://www.deco.cx/",
+                  "label": "deco.cx",
+                  "title": "VTEX Store",
+                  "subTitle": "Visit our site and start building now:"
+                },
+                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/24278f9e-412d-4a8a-b2d3-57353bb1b368",
+                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/afa2c07c-74f4-496d-8647-5cc58f48117b"
+              },
+              {
+                "alt": "/feminino",
+                "action": {
+                  "href": "https://www.deco.cx/",
+                  "label": "deco.cx",
+                  "title": "VTEX Store",
+                  "subTitle": "Visit our site and start building now:"
+                },
+                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/eeaa624c-a3e1-45e8-a6fe-034233cfbcd0",
+                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/7949d031-9a79-4639-b85e-62fd90af85a9"
+              },
+              {
+                "alt": "/feminino",
+                "action": {
+                  "href": "https://www.deco.cx/",
+                  "label": "deco.cx",
+                  "title": "VTEX Store",
+                  "subTitle": "Visit our site and start building now:"
+                },
+                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/ae89571c-4a7c-44bf-9aeb-a341fd049d19",
+                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/7ec121e4-5cfe-4b7b-b942-d1ed4493803d"
+              }
+            ],
+            "preload": true,
+            "interval": 5,
+            "__resolveType": "site/sections/Images/Carousel.tsx"
+          },
+          {
+            "link": {
+              "href": "/newin",
+              "text": "Ver presentes"
+            },
+            "text": "<p>Ainda da tempo de escolher o presente do seu mozão!</p>",
+            "labels": {
+              "hours": "Hr",
+              "minutes": "Mn",
+              "seconds": "Sc"
+            },
+            "layout": {
+              "textPosition": "After counter"
+            },
+            "expiresAt": "2024-06-13T02:50:00.000Z",
+            "__resolveType": "site/sections/Miscellaneous/CampaignTimer.tsx"
+          },
+          {
+            "list": [
+              {
+                "href": "https://www.meiasola.com.br/260?map=productClusterIds&O=&sort=release%3Adesc",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/4bc04f53-ba68-4800-b576-fd4f85d923c2",
+                "label": "Clássica"
+              },
+              {
+                "href": "https://www.meiasola.com.br/261?map=productClusterIds&O=&sort=release%3Adesc",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/aaf05e8b-89c8-4c56-b478-ef9b393e2e2e",
+                "label": "Romântica"
+              },
+              {
+                "href": "/https://www.meiasola.com.br/262?map=productClusterIds&O=&sort=release%3Adesc&page=2",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/5f692669-2334-4983-a942-732e3751af19",
+                "label": "Moderna"
+              },
+              {
+                "href": "https://www.meiasola.com.br/schutz?map=brand",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/f0506247-7590-467b-9f6c-47de6c0d0538",
+                "label": "Casual"
+              },
+              {
+                "href": "https://www.meiasola.com.br/260?map=productClusterIds&O=&sort=release%3Adesc",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/ac1248ec-9fa2-4007-8ca4-9fce71a8d106",
+                "label": "Elegante"
+              }
+            ],
+            "header": {
+              "description": "Qual o estilo do seu amor?"
+            },
+            "layout": {
+              "categoryCard": {
+                "textPosition": "top",
+                "textAlignment": "center"
+              },
+              "headerAlignment": "center"
+            },
+            "__resolveType": "site/sections/Category/CategoryList.tsx"
+          },
+          {
+            "page": {
+              "data": {
+                "sort": "release:desc",
+                "count": 36,
+                "fuzzy": "automatic",
+                "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                "selectedFacets": [
+                  {
+                    "key": "productClusterIds",
+                    "value": "250"
+                  }
+                ],
+                "hideUnavailableItems": true
+              },
+              "extensions": [
+                {
+                  "__resolveType": "site/loaders/meiasola/extensionProductListingPage.ts"
+                }
+              ],
+              "__resolveType": "commerce/loaders/product/productListingPage.ts"
+            },
+            "sizes": {
+              "sizes": [],
+              "title": "ESCOLHA SUA NUMERAÇÃO",
+              "routesToShow": [
+                {
+                  "label": "livelo"
+                }
+              ]
+            },
+            "images": [
+              {
+                "alt": "Imagem de Sapatos",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/23a0d4bc-4e13-4089-836c-36665e348158",
+                "route": "/livelo",
+                "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/4448b280-b2e8-4d79-b643-d51e7409127a"
+              }
+            ],
+            "__resolveType": "site/sections/Product/SearchResult.tsx"
+          },
+          {
+            "__resolveType": "Footer - 02"
+          },
+          {
+            "type": "website",
+            "title": "New in",
+            "jsonLD": {
+              "sort": "release:desc",
+              "count": 24,
+              "fuzzy": "automatic",
+              "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+              "selectedFacets": [],
+              "hideUnavailableItems": true
+            },
+            "__resolveType": "commerce/sections/Seo/SeoPLP.tsx",
+            "titleTemplate": "%s",
+            "descriptionTemplate": "%s"
+          }
+        ]
+      },
+      {
+        "rule": {
+          "__resolveType": "website/matchers/always.ts"
+        },
+        "value": [
+          {
+            "alert": {
+              "hide": false,
+              "text": "<p style=\"text-align: center;\" data-mce-style=\"text-align: center;\"><strong><span style=\"color: rgb(255, 26, 26);\" data-mce-style=\"color: rgb(255, 26, 26);\">FRETE GRÁTIS</span> <span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\">PARA TODO O <span style=\"color: rgb(236, 240, 241);\" data-mce-style=\"color: rgb(236, 240, 241);\">BRASIL </span>NAS COMPRAS A PARTIR DE R$699 </span>🚚﻿</strong></p>",
+              "label": "Liquida de Inverno com até 60% Off 🔥",
+              "background": "#aa0017"
+            },
+            "navbar": {
+              "menu": {
+                "items": [
+                  {
+                    "href": "/newin",
+                    "icon": null,
+                    "label": "new in",
+                    "submenu": {
+                      "sections": []
+                    }
+                  },
+                  {
+                    "href": "/bolsas",
+                    "icon": null,
+                    "label": "bolsas",
+                    "submenu": {
+                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/7b1da2d3-0ad4-45e0-b4fa-2362071f0578",
+                      "sections": [
+                        {
+                          "items": [
+                            {
+                              "href": "/bolsas?filter.category-1=bolsas&filter.category-2=tiracolo",
+                              "label": "Tiracolo"
+                            },
+                            {
+                              "href": "/bolsas?filter.category-1=bolsas&filter.category-2=shopping",
+                              "label": "Shopping"
+                            },
+                            {
+                              "href": "/bolsas?filter.category-1=bolsas&filter.category-2=tote",
+                              "label": "Tote"
+                            },
+                            {
+                              "href": "/bolsas?filter.category-1=bolsas&filter.category-2=crossbody",
+                              "label": "Crossbody"
+                            },
+                            {
+                              "href": "/bolsas?filter.category-1=bolsas&filter.category-2=mochila",
+                              "label": "Mochilas"
+                            },
+                            {
+                              "href": "/bolsas",
+                              "label": "VER TUDO",
+                              "underlined": true
+                            }
+                          ],
+                          "label": "Bolsas"
+                        },
+                        {
+                          "items": [
+                            {
+                              "href": "/bolsas?q=pequena",
+                              "label": "Pequena"
+                            },
+                            {
+                              "href": "/bolsas?q=media",
+                              "label": "Média"
+                            },
+                            {
+                              "href": "/bolsas?q=grande",
+                              "label": "Grande"
+                            }
+                          ],
+                          "label": "Tamanho",
+                          "hideSectionOnMobile": true
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "href": "/sapatos",
+                    "icon": null,
+                    "label": "sapatos",
+                    "submenu": {
+                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/7e8740bc-9525-4b29-874c-494abdf5413a",
+                      "sections": [
+                        {
+                          "items": [
+                            {
+                              "href": "/sapatos?filter.category-1=sapatos&filter.category-2=sandalia",
+                              "label": "Sandálias"
+                            },
+                            {
+                              "href": "/sapatos?filter.category-1=sapatos&filter.category-2=mocassim",
+                              "label": "Mocassins"
+                            },
+                            {
+                              "href": "/sapatos?filter.category-1=sapatos&filter.category-2=tenis",
+                              "label": "Tênis"
+                            },
+                            {
+                              "href": "/sapatos?filter.category-1=sapatos&filter.category-2=scarpin",
+                              "label": "Scarpins"
+                            },
+                            {
+                              "href": "/sapatos?filter.category-1=sapatos&filter.category-2=mule",
+                              "label": "Mule"
+                            },
+                            {
+                              "href": "/sapatos?filter.category-1=sapatos&filter.category-2=sapatilha",
+                              "label": "Sapatilhas"
+                            },
+                            {
+                              "href": "/sapatos?filter.category-1=sapatos&filter.category-2=bota",
+                              "label": "Botas"
+                            },
+                            {
+                              "href": "/s?q=papete",
+                              "label": "Papetes"
+                            },
+                            {
+                              "href": "/sapatos?filter.category-1=sapatos&filter.category-2=rasteira",
+                              "label": "Rasteiras"
+                            },
+                            {
+                              "href": "/infantil",
+                              "label": "Infantil"
+                            },
+                            {
+                              "href": "/sapatos",
+                              "label": "VER TUDO",
+                              "underlined": true
+                            }
+                          ],
+                          "label": "Sapatos"
+                        },
+                        {
+                          "items": [
+                            {
+                              "href": "/sapatos?filter.tamanho=33",
+                              "label": "33"
+                            },
+                            {
+                              "href": "/sapatos?filter.tamanho=34",
+                              "label": "34"
+                            },
+                            {
+                              "href": "/sapatos?filter.tamanho=35",
+                              "label": "35"
+                            },
+                            {
+                              "href": "/sapatos?filter.tamanho=36",
+                              "label": "36"
+                            },
+                            {
+                              "href": "/sapatos?filter.tamanho=37",
+                              "label": "37"
+                            },
+                            {
+                              "href": "/sapatos?filter.tamanho=38",
+                              "label": "38"
+                            },
+                            {
+                              "href": "/sapatos?filter.tamanho=39",
+                              "label": "39"
+                            },
+                            {
+                              "href": "/sapatos?filter.tamanho=40",
+                              "label": "40"
+                            }
+                          ],
+                          "label": "Numeração",
+                          "showItemsAsSquare": true,
+                          "hideSectionOnMobile": true
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "href": "/",
+                    "icon": null,
+                    "label": "marcas",
+                    "submenu": {
+                      "sections": [
+                        {
+                          "items": [
+                            {
+                              "href": "/arezzo?map=brand",
+                              "image": {
+                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/2c71af46-3ede-47dc-8c37-33caf8ed39d1",
+                                "width": 83,
+                                "height": 16
+                              },
+                              "label": "Arezzo"
+                            },
+                            {
+                              "href": "/schutz?map=brand",
+                              "image": {
+                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/fc1ed9b8-e3e0-46c7-8cf7-50e5c8c26200",
+                                "width": 63,
+                                "height": 16
+                              },
+                              "label": "Schutz"
+                            },
+                            {
+                              "href": "m-s",
+                              "image": {
+                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/199818e3-93c1-496d-b998-ca6798990cde",
+                                "width": 36,
+                                "height": 19
+                              },
+                              "label": "M|S"
+                            },
+                            {
+                              "href": "/alexandre-birman?map=brand",
+                              "image": {
+                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/ef3b2a0e-9a2b-4f38-8c99-d0387003713f",
+                                "width": 87,
+                                "height": 22
+                              },
+                              "label": "Alexandre Birman"
+                            },
+                            {
+                              "href": "/marcas?filter.brand=luz-da-lua",
+                              "image": {
+                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/6c651fd1-58f9-4b03-804c-daf94896658f",
+                                "width": 125,
+                                "height": 17
+                              },
+                              "label": "Luz da Lua"
+                            },
+                            {
+                              "href": "/vicenza?map=brand",
+                              "image": {
+                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/a6534511-38a9-4665-8124-a85834d8407d",
+                                "width": 69,
+                                "height": 20
+                              },
+                              "label": "Vicenza"
+                            },
+                            {
+                              "href": "/anacapri?map=brand",
+                              "image": {
+                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/49bf5bea-b2a6-4620-8d55-fc455ad7cf86",
+                                "width": 67,
+                                "height": 16
+                              },
+                              "label": "Anacapri"
+                            },
+                            {
+                              "href": "/carmem-dalessandro?map=brand",
+                              "image": {
+                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/9a2eabb9-04bc-4716-b291-72500a3210b3",
+                                "width": 163,
+                                "height": 10
+                              },
+                              "label": "Carmem Dalessandro"
+                            },
+                            {
+                              "href": "/confraria?map=brand",
+                              "image": {
+                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/60303a97-a2fb-4272-b076-e18175f5695a",
+                                "width": 68,
+                                "height": 20
+                              },
+                              "label": "Confraria"
+                            },
+                            {
+                              "href": "/elisa-atheniense?map=brand",
+                              "image": {
+                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/748621c9-c66f-42ac-8c9f-0012a232fab3",
+                                "width": 140,
+                                "height": 13
+                              },
+                              "label": "Elisa Atheniense"
+                            },
+                            {
+                              "href": "/follis?map=brand",
+                              "image": {
+                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/4b2f593a-f547-4586-bcaf-1f10c30d91a1",
+                                "width": 93,
+                                "height": 18
+                              },
+                              "label": "Follis"
+                            },
+                            {
+                              "href": "/carrano?map=brand",
+                              "image": {
+                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/d55b5888-96b3-40a3-88fc-4b34276be40d",
+                                "width": 59,
+                                "height": 22
+                              },
+                              "label": "Carrano"
+                            },
+                            {
+                              "href": "/guilhermina?map=brand",
+                              "image": {
+                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/60813857-dcd8-4305-a735-14e0984d5030",
+                                "width": 64,
+                                "height": 22
+                              },
+                              "label": "Guilhermina"
+                            },
+                            {
+                              "href": "/isla?map=brand",
+                              "image": {
+                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/152e331e-cfaa-426d-a568-aa84c3b737b2",
+                                "width": 51,
+                                "height": 18
+                              },
+                              "label": "Isla"
+                            },
+                            {
+                              "href": "/la-spezia?map=brand",
+                              "image": {
+                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/d32679bf-7565-4995-a891-f24107ec705f",
+                                "width": 66,
+                                "height": 21
+                              },
+                              "label": "La Spezia"
+                            },
+                            {
+                              "href": "/lorraci?map=brand",
+                              "image": {
+                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/9a6c91d8-56ff-4b85-a343-70a037e9084d",
+                                "width": 108,
+                                "height": 18
+                              },
+                              "label": "Lorraci"
+                            },
+                            {
+                              "href": "/ryzi?map=brand",
+                              "image": {
+                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/d22588ac-040c-4815-9987-31d2fe90c8ef",
+                                "width": 38,
+                                "height": 17
+                              },
+                              "label": "Ryzi"
+                            },
+                            {
+                              "href": "/serpui?map=brand",
+                              "image": {
+                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/55eadcc7-b31f-4195-916f-7774ba8d6d0c",
+                                "width": 96,
+                                "height": 16
+                              },
+                              "label": "Serpui"
+                            },
+                            {
+                              "href": "/wai-wai?map=brand",
+                              "image": {
+                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/e83441d8-626e-45be-9e1e-4ce47917e207",
+                                "width": 76,
+                                "height": 17
+                              },
+                              "label": "Wai Wai"
+                            },
+                            {
+                              "href": "/brizza?map=brand",
+                              "image": {
+                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/28c1695e-c06c-4296-8633-815bdab1ae66",
+                                "width": 101,
+                                "height": 14
+                              },
+                              "label": "Brizza"
+                            },
+                            {
+                              "href": "/lanca-perfume?map=brand",
+                              "image": {
+                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/66f22b71-4bc9-4acc-a138-3a8b36b6cf22",
+                                "width": 114,
+                                "height": 14
+                              },
+                              "label": "Lança Perfume"
+                            },
+                            {
+                              "href": "/marcas?filter.brand=my-favorite-things",
+                              "image": {
+                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/d0a262d2-eff8-476f-86d9-84225650b6fb",
+                                "width": 59,
+                                "height": 22
+                              },
+                              "label": "My Favorite Things"
+                            },
+                            {
+                              "href": "/debora-germani",
+                              "image": {
+                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/add8acd6-7fed-44a1-855b-4273a9e78fe3",
+                                "width": 59,
+                                "height": 22
+                              },
+                              "label": "Debora Germani"
+                            }
+                          ],
+                          "label": "Marcas"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "href": "/acessorios",
+                    "icon": null,
+                    "label": "acessórios",
+                    "submenu": {
+                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/63fab2cc-1edb-40f0-89bc-0f7888271267",
+                      "sections": [
+                        {
+                          "items": [
+                            {
+                              "href": "/acessorios?filter.category-1=acessorios&filter.category-2=carteiras",
+                              "label": "Carteiras"
+                            },
+                            {
+                              "href": "/acessorios?filter.category-1=acessorios&filter.category-2=cinto",
+                              "label": "Cinto"
+                            },
+                            {
+                              "href": "/acessorios?filter.category-1=acessorios&filter.category-2=chaveiro",
+                              "label": "Chaveiro"
+                            },
+                            {
+                              "href": "/acessorios?filter.category-1=acessorios&filter.category-2=necessaire",
+                              "label": "Necessaire"
+                            },
+                            {
+                              "href": "/acessorios",
+                              "label": "VER TUDO",
+                              "underlined": true
+                            }
+                          ],
+                          "label": "Acessórios"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "href": "/m-s",
+                    "icon": {
+                      "src": "M|S",
+                      "width": 29,
+                      "height": 15
+                    },
+                    "label": "M|S",
+                    "submenu": {
+                      "sections": []
+                    }
+                  },
+                  {
+                    "href": "/297?map=productClusterIds&O=&sort=release%3Adesc",
+                    "icon": null,
+                    "label": "<p>Celebration</p>",
+                    "submenu": {
+                      "sections": [
+                        {
+                          "items": [
+                            {
+                              "href": "/297?map=productClusterIds&O=&sort=release%3Adesc",
+                              "label": "Noivas "
+                            },
+                            {
+                              "href": "293?map=productClusterIds&O=&sort=release%3Adesc",
+                              "label": "Festa"
+                            },
+                            {
+                              "href": "297?map=productClusterIds&O=&sort=release%3Adesc",
+                              "label": "VER TUDO",
+                              "underlined": true
+                            }
+                          ],
+                          "label": "Celebration"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "href": "/responsabilidade",
+                    "icon": null,
+                    "label": "<p>MS DO BEM</p>",
+                    "divider": true,
+                    "submenu": {
+                      "sections": []
+                    }
+                  },
+                  {
+                    "href": "/sale",
+                    "icon": null,
+                    "color": "#e50000",
+                    "label": "<p><strong><span style=\"color: rgb(255, 26, 26);\" data-mce-style=\"color: rgb(255, 26, 26);\">sale</span></strong></p>",
+                    "submenu": {
+                      "sections": []
+                    }
+                  }
+                ]
+              },
+              "colors": {
+                "text_top": "#ffffff",
+                "text_body": "#ffffff",
+                "background_top": "#a90017",
+                "background_body": "#aa021a"
+              },
+              "search": {
+                "name": "q",
+                "action": "/s",
+                "placeholder": "BUSCAR"
+              },
+              "minicart": {
+                "buttonUrl": "/newin",
+                "emptyText": "Temos certeza que podemos mudar isso com o produto certo para você! <br>Confira nossas novidades.",
+                "buttonText": "Conferir New In",
+                "emptyTitle": "Sua sacola está vazia",
+                "backgroundImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/c6dc1da1-455e-4243-a35e-7274c6b3bf5c"
+              },
+              "wishlist": {
+                "href": "/wishlist",
+                "label": "Favoritos"
+              },
+              "myaccount": {
+                "href": "/login",
+                "label": "Entre ou Cadastra-se"
+              }
+            },
+            "__resolveType": "site/sections/Header/Header.tsx"
+          },
+          {
+            "items": [
+              {
+                "button": {
+                  "link": "/m-s",
+                  "text": "CONFIRA"
+                },
+                "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/e16a3d43-cc1a-4ffb-88d2-8cdc2408fd3c",
+                "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/4466dff2-2cac-473f-a0be-516beed12756"
+              },
+              {
+                "button": {
+                  "link": "/arezzo",
+                  "text": "CONFIRA"
+                },
+                "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/0a5d45a7-976d-4b78-ba1e-d9f3ac3466a9",
+                "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/08116732-5858-4b84-8574-5043a7591678"
+              },
+              {
+                "button": {
+                  "link": "/schutz",
+                  "text": "CONFIRA"
+                },
+                "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/f7e944d9-9e10-4e60-ba18-5144706c3832",
+                "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/e1c275d5-ba8b-4da4-9587-7e9a49aa0d58"
+              },
+              {
+                "button": {
+                  "link": "/anacapri",
+                  "text": "CONFIRA"
+                },
+                "videoMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/f9ca1f66-23b9-42eb-9d92-f906878057d3",
+                "videoDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/f7d66b6b-0d02-4464-88eb-7ea5ed1307d3"
+              },
+              {
+                "button": {
+                  "link": "/vicenza",
+                  "text": "CONFIRA"
+                },
+                "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/2f1705b3-8289-4963-9b7f-5729a1db6d6a",
+                "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/0d5a98be-e84b-485e-9def-3f8ea45bb7cb"
+              },
+              {
+                "button": {
+                  "link": "/newin",
+                  "text": "CONFIRA"
+                },
+                "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/2520cce9-1ddd-4a01-bd8d-c8dc1b5cf094",
+                "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/db53bf30-78b6-447b-abf1-fbed37a54c4a"
+              }
+            ],
+            "images": [
+              {
+                "alt": "/feminino",
+                "action": {
+                  "href": "https://www.deco.cx/",
+                  "label": "deco.cx",
+                  "title": "VTEX Store",
+                  "subTitle": "Visit our site and start building now:"
+                },
+                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/24278f9e-412d-4a8a-b2d3-57353bb1b368",
+                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/afa2c07c-74f4-496d-8647-5cc58f48117b"
+              },
+              {
+                "alt": "/feminino",
+                "action": {
+                  "href": "https://www.deco.cx/",
+                  "label": "deco.cx",
+                  "title": "VTEX Store",
+                  "subTitle": "Visit our site and start building now:"
+                },
+                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/eeaa624c-a3e1-45e8-a6fe-034233cfbcd0",
+                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/7949d031-9a79-4639-b85e-62fd90af85a9"
+              },
+              {
+                "alt": "/feminino",
+                "action": {
+                  "href": "https://www.deco.cx/",
+                  "label": "deco.cx",
+                  "title": "VTEX Store",
+                  "subTitle": "Visit our site and start building now:"
+                },
+                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/ae89571c-4a7c-44bf-9aeb-a341fd049d19",
+                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/7ec121e4-5cfe-4b7b-b942-d1ed4493803d"
+              }
+            ],
+            "preload": true,
+            "interval": 5,
+            "__resolveType": "site/sections/Images/Carousel.tsx"
+          },
+          {
+            "link": {
+              "href": "/newin",
+              "text": "Ver presentes"
+            },
+            "text": "<p>Ainda da tempo de escolher o presente do seu mozão!</p>",
+            "labels": {
+              "hours": "Hr",
+              "minutes": "Mn",
+              "seconds": "Sc"
+            },
+            "layout": {
+              "textPosition": "After counter"
+            },
+            "expiresAt": "2024-06-13T02:50:00.000Z",
+            "__resolveType": "site/sections/Miscellaneous/CampaignTimer.tsx"
+          },
+          {
+            "list": [
+              {
+                "href": "https://www.meiasola.com.br/260?map=productClusterIds&O=&sort=release%3Adesc",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/4bc04f53-ba68-4800-b576-fd4f85d923c2",
+                "label": "Clássica"
+              },
+              {
+                "href": "https://www.meiasola.com.br/261?map=productClusterIds&O=&sort=release%3Adesc",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/aaf05e8b-89c8-4c56-b478-ef9b393e2e2e",
+                "label": "Romântica"
+              },
+              {
+                "href": "/https://www.meiasola.com.br/262?map=productClusterIds&O=&sort=release%3Adesc&page=2",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/5f692669-2334-4983-a942-732e3751af19",
+                "label": "Moderna"
+              },
+              {
+                "href": "https://www.meiasola.com.br/schutz?map=brand",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/f0506247-7590-467b-9f6c-47de6c0d0538",
+                "label": "Casual"
+              },
+              {
+                "href": "https://www.meiasola.com.br/260?map=productClusterIds&O=&sort=release%3Adesc",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/ac1248ec-9fa2-4007-8ca4-9fce71a8d106",
+                "label": "Elegante"
+              }
+            ],
+            "header": {
+              "description": "Qual o estilo do seu amor?"
+            },
+            "layout": {
+              "categoryCard": {
+                "textPosition": "top",
+                "textAlignment": "center"
+              },
+              "headerAlignment": "center"
+            },
+            "__resolveType": "site/sections/Category/CategoryList.tsx"
+          },
+          {
+            "page": {
+              "data": {
+                "sort": "release:desc",
+                "count": 36,
+                "fuzzy": "automatic",
+                "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                "selectedFacets": [
+                  {
+                    "key": "productClusterIds",
+                    "value": "250"
+                  }
+                ],
+                "hideUnavailableItems": true
+              },
+              "extensions": [
+                {
+                  "__resolveType": "site/loaders/meiasola/extensionProductListingPage.ts"
+                }
+              ],
+              "__resolveType": "commerce/loaders/product/productListingPage.ts"
+            },
+            "sizes": {
+              "sizes": [],
+              "title": "ESCOLHA SUA NUMERAÇÃO",
+              "routesToShow": [
+                {
+                  "label": "livelo"
+                }
+              ]
+            },
+            "images": [
+              {
+                "alt": "Imagem de Sapatos",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/23a0d4bc-4e13-4089-836c-36665e348158",
+                "route": "/livelo",
+                "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/4448b280-b2e8-4d79-b643-d51e7409127a"
+              }
+            ],
+            "__resolveType": "site/sections/Product/SearchResult.tsx"
+          },
+          {
+            "__resolveType": "Footer - 02"
+          },
+          {
+            "type": "website",
+            "title": "New in",
+            "jsonLD": {
+              "sort": "release:desc",
+              "count": 24,
+              "fuzzy": "automatic",
+              "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+              "selectedFacets": [],
+              "hideUnavailableItems": true
+            },
+            "__resolveType": "commerce/sections/Seo/SeoPLP.tsx",
+            "titleTemplate": "%s",
+            "descriptionTemplate": "%s"
+          }
+        ]
+      }
+    ],
+    "__resolveType": "website/flags/multivariate.ts"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}
