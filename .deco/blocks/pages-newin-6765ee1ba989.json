@@ -8,17 +8,20 @@
     {
       "page": {
         "data": {
-          "sort": "release:desc",
+          "sort": "price:desc",
           "count": 24,
-          "fuzzy": "automatic",
-          "query": " ",
           "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+          "advancedConfigs": {
+            "includeOriginalAttributes": []
+          },
+          "fuzzy": "automatic",
           "selectedFacets": [
             {
               "key": "productClusterIds",
               "value": "338"
             }
           ],
+          "simulationBehavior": "default",
           "hideUnavailableItems": true
         },
         "extensions": [
