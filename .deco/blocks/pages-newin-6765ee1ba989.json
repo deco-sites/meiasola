@@ -13,7 +13,12 @@
           "fuzzy": "automatic",
           "query": " ",
           "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
-          "selectedFacets": [],
+          "selectedFacets": [
+            {
+              "key": "productClusterIds",
+              "value": "338"
+            }
+          ],
           "hideUnavailableItems": true
         },
         "extensions": [
