@@ -15,12 +15,7 @@
             "includeOriginalAttributes": []
           },
           "fuzzy": "automatic",
-          "selectedFacets": [
-            {
-              "key": "productClusterIds",
-              "value": "338"
-            }
-          ],
+          "selectedFacets": [],
           "simulationBehavior": "default",
           "hideUnavailableItems": true
         },
