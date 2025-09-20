@@ -235,7 +235,7 @@
                     }
                   },
                   {
-                    "href": "/m%7Cs",
+                    "href": "/ms",
                     "label": "M|S",
                     "image": {
                       "width": 36,
@@ -412,13 +412,13 @@
           }
         },
         {
-          "href": "/m%7Cs",
+          "href": "/ms",
           "icon": {
             "src": "M|S",
             "width": 29,
             "height": 15
           },
-          "label": "M|S",
+          "label": "<p>M|S</p>",
           "submenu": {
             "sections": []
           }

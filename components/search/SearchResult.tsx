@@ -250,37 +250,44 @@ export const loader = async (props: Props, req: Request, ctx: AppContext) => {
   const url = new URL(baseUrl);
   const urlSearchParams = new URLSearchParams(url.search);
   const searchQueryParam = urlSearchParams.get("q") ?? "";
-  const notFoundPage = (await notFoundProductListingPage(
-    {
-      pageHref: `${url.origin}/newin`,
-      query: "",
-      count: props.page?.pageInfo.recordPerPage ?? 24,
-      sort: "release:desc",
-      hideUnavailableItems: true,
-      fuzzy: "automatic",
-    },
-    req,
-    ctx
-  )) as ProductListingPageAndSearch;
-  if (notFoundPage) {
-    notFoundPage.isNotFoundPage = true;
-    notFoundPage.search = {
-      term: "NEW IN",
-      url: new URL("/newin", url.origin),
-    };
-    notFoundPage.breadcrumb = {
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          name: "New In",
-          item: `${url.origin}/newin`,
-          position: 1,
-        },
-      ],
-      numberOfItems: 1,
-    };
+
+  let notFoundPage = null;
+
+  if(!props.page || props.page.products.length === 0) {
+    notFoundPage = (await notFoundProductListingPage(
+      {
+        pageHref: `${url.origin}/newin`,
+        query: "",
+        count: props.page?.pageInfo.recordPerPage ?? 24,
+        sort: "release:desc",
+        hideUnavailableItems: true,
+        fuzzy: "automatic",
+      },
+      req,
+      ctx
+    )) as ProductListingPageAndSearch;
+  
+    if (notFoundPage) {
+      notFoundPage.isNotFoundPage = true;
+      notFoundPage.search = {
+        term: "NEW IN",
+        url: new URL("/newin", url.origin),
+      };
+      notFoundPage.breadcrumb = {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            name: "New In",
+            item: `${url.origin}/newin`,
+            position: 1,
+          },
+        ],
+        numberOfItems: 1,
+      };
+    }
   }
+
   return { ...props, notFoundPage, searchQueryParam };
 };
 

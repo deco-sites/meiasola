@@ -1,6 +1,6 @@
 {
-  "name": "Category",
-  "path": "/*",
+  "name": "MS",
+  "path": "/ms",
   "sections": {
     "variants": [
       {
@@ -146,13 +146,17 @@
             "__resolveType": "site/sections/Product/SearchResult.tsx",
             "page": {
               "data": {
-                "sort": "OrderByPriceDESC",
-                "count": 24,
-                "__resolveType": "vtex/loaders/legacy/productListingPage.ts",
-                "filters": "dynamic",
-                "advancedConfigs": {
-                  "includeOriginalAttributes": []
-                }
+                "sort": "release:desc",
+                "fuzzy": "automatic",
+                "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                "selectedFacets": [
+                  {
+                    "key": "brand",
+                    "value": "m-s"
+                  }
+                ],
+                "hideUnavailableItems": true,
+                "count": 100
               },
               "extensions": [
                 {
