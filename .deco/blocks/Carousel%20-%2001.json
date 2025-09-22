@@ -4,12 +4,24 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/c2e5a232-358e-4cb0-8c85-f7a638f92936/BANNER-SITE-(2).png",
-        "imageMobile": "https://assets.decocache.com/meiasola/973584c3-7de9-4128-9964-c91d4a6d85bc/BANNER-APP-(2).png"
+        "imageDesktop": "https://assets.decocache.com/meiasola/70e12782-c4f2-4928-8b73-b49d1295f6e7/banner-site.png",
+        "imageMobile": "https://assets.decocache.com/meiasola/2ff37947-eb7b-4d3c-9526-8d4f78d2729c/banner-app.png"
       },
       "button": {
         "link": "/newin",
         "text": "Confira"
+      }
+    },
+    {
+      "button": {
+        "text": "Confira",
+        "link": "/newin"
+      },
+      "type": "image",
+      "video": {},
+      "image": {
+        "imageMobile": "https://assets.decocache.com/meiasola/973584c3-7de9-4128-9964-c91d4a6d85bc/BANNER-APP-(2).png",
+        "imageDesktop": "https://assets.decocache.com/meiasola/c2e5a232-358e-4cb0-8c85-f7a638f92936/BANNER-SITE-(2).png"
       }
     },
     {
@@ -44,20 +56,20 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/90f03ab5-9c9e-4d6c-a992-ed43892e63e1/199-(3).png",
-        "imageDesktop": "https://assets.decocache.com/meiasola/3af5fae5-553c-4586-ae10-6d522cce1d5b/199-(4).png"
+        "imageDesktop": "https://assets.decocache.com/meiasola/3af5fae5-553c-4586-ae10-6d522cce1d5b/199-(4).png",
+        "imageMobile": "https://assets.decocache.com/meiasola/90f03ab5-9c9e-4d6c-a992-ed43892e63e1/199-(3).png"
       }
     },
     {
-      "button": {
-        "text": "Confira",
-        "link": "/sale?sort=price%3Adesc&filter.productClusterIds=151&filter.price=31.96%3A200"
-      },
       "type": "image",
       "video": {},
       "image": {
         "imageDesktop": "https://assets.decocache.com/meiasola/7b1e5da4-877a-4a48-b64f-97a7e5c12943/199-(1).png",
         "imageMobile": "https://assets.decocache.com/meiasola/acf30863-4a5d-47e5-86b5-4b6091db3cb9/199-(2).png"
+      },
+      "button": {
+        "text": "Confira",
+        "link": "/sale?sort=price%3Adesc&filter.productClusterIds=151&filter.price=31.96%3A200"
       }
     },
     {
