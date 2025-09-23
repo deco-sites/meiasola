@@ -1,6 +1,6 @@
 {
-  "name": "vicenzanew",
-  "path": "/vicenza-new",
+  "name": "progressiva ",
+  "path": "/375",
   "sections": {
     "variants": [
       {
@@ -153,10 +153,11 @@
                 "selectedFacets": [
                   {
                     "key": "productClusterIds",
-                    "value": "374"
+                    "value": "375"
                   }
                 ],
-                "hideUnavailableItems": true
+                "hideUnavailableItems": true,
+                "useCollectionName": false
               },
               "extensions": [
                 {
@@ -250,7 +251,7 @@
             },
             "enableInfiniteScroll": true,
             "isWishlistPage": false,
-            "pageOptionalTitle": "Vicenza"
+            "pageOptionalTitle": "Progressiva Meia Sola"
           },
           {
             "__resolveType": "site/sections/Category/CategoryTextReadMore.tsx",
