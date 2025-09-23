@@ -2,23 +2,23 @@
   "variant": "two",
   "collections": [
     {
-      "link": "/bolsas?sort=release%3Adesc&filter.category-1=bolsas&filter.brand=arezzo",
+      "link": "/sapatos?filter.category-1=sapatos&filter.category-2=mocassim",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/86ef5571-7d7a-41d6-b51f-283fa6547d01/ARZ_26_V1_SUMMER_SPECIAL_EDITORIAL_POSTS6.jpeg",
-      "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f1853648-79a2-4466-8ae1-6be2f52c8f58/AREZZO---Summer-Hits-2_9x16-(1).mp4",
-      "label": "summer special"
+      "image": "https://assets.decocache.com/meiasola/0a57d78d-1e7c-43a9-84fe-4136396bcc3f/LET-THE-SUN-IN-(3).png",
+      "video": "https://data.decoassets.com/meiasola/47d32975-2ab5-441c-ba41-899d239df236/confira-aqui.mp4",
+      "label": "LET THE SUN IN"
     },
     {
-      "link": "/bolsas?sort=release%3Adesc&filter.category-1=bolsas&filter.brand=schutz",
+      "link": "/arezzo",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/0d28ce25-de2d-4fea-9aae-f8dfd4a90b60/Design-sem-nome-(2).png",
-      "label": "bag loved",
-      "video": "https://data.decoassets.com/meiasola/47d32975-2ab5-441c-ba41-899d239df236/confira-aqui.mp4"
+      "image": "https://assets.decocache.com/meiasola/7cc54930-5fce-4d96-bcd4-cffeae9b51d4/POR-..png",
+      "label": "versão em tramas 26",
+      "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f1853648-79a2-4466-8ae1-6be2f52c8f58/AREZZO---Summer-Hits-2_9x16-(1).mp4"
     },
     {
-      "link": "/bolsas?sort=release%3Adesc&filter.category-1=bolsas&filter.brand=anacapri",
+      "link": "/sapatos?sort=release%3Adesc&filter.category-1=sapatos&filter.category-2=tenis&filter.brand=anacapri",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/3b45da70-13ff-4fc6-bacb-cc1f743f1e74/Design-sem-nome.png",
+      "image": "https://assets.decocache.com/meiasola/6d2623ab-b8a4-4fd6-b9dc-d29c1e9f8278/13.-30.09.png",
       "label": "verão 26",
       "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f1853648-79a2-4466-8ae1-6be2f52c8f58/AREZZO---Summer-Hits-2_9x16-(1).mp4"
     }
