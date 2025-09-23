@@ -2,27 +2,27 @@
   "variant": "two",
   "collections": [
     {
-      "link": "/carrano?map=brand",
+      "link": "/bolsas?sort=release%3Adesc&filter.category-1=bolsas&filter.category-2=shopping",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/bc609215-0919-45b3-8670-b65cfc040cb5/1.png",
+      "image": "https://assets.decocache.com/meiasola/74d4e6d1-6a41-4381-91ef-89fdd0653873/casuak-(2).png",
       "label": "escolha"
     },
     {
-      "link": "/alexandre-birman?map=brand",
+      "link": "/bolsas?sort=release%3Adesc&filter.category-1=bolsas&filter.category-2=tiracolo",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/045fc4fc-3f5f-4635-af8a-27313b3faf96/4.png",
+      "image": "https://assets.decocache.com/meiasola/0387f8be-cfcf-4c8d-8514-47784635bc58/confira-aqui-(2).png",
       "label": "um mood"
     },
     {
-      "link": "/vicenza?map=brand",
+      "link": "/bolsas?sort=release%3Adesc&filter.category-1=bolsas&filter.category-2=hobo",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/d07d27cf-bf45-4f4b-a7a1-b3c9459951c3/2.png",
+      "image": "https://assets.decocache.com/meiasola/71fce0cf-1c6e-436d-a841-14a24109489d/casuak.png",
       "label": "para você"
     },
     {
-      "link": "/isla?map=brand",
+      "link": "/bolsas?sort=release%3Adesc&filter.category-1=bolsas&filter.category-2=bucket",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/3d9445e1-3c96-4fe7-b034-4e9f1ae50662/3.png",
+      "image": "https://assets.decocache.com/meiasola/6387bf32-6264-42a0-a170-d022ef8479c3/confira-aqui-(1).png",
       "label": "brilhar ainda mais!"
     }
   ],
