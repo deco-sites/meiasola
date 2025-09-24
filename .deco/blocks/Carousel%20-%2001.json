@@ -4,12 +4,12 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/70e12782-c4f2-4928-8b73-b49d1295f6e7/banner-site.png",
-        "imageMobile": "https://assets.decocache.com/meiasola/2ff37947-eb7b-4d3c-9526-8d4f78d2729c/banner-app.png"
+        "imageDesktop": "https://assets.decocache.com/meiasola/939c2641-ffe8-4cd5-a743-3cf9b896f33d/IMG_9255.png",
+        "imageMobile": "https://assets.decocache.com/meiasola/516abce9-628d-4188-a5f7-90e3820b7473/IMG_9254.png"
       },
       "button": {
-        "link": "/newin",
-        "text": "Confira"
+        "text": "Confira",
+        "link": "/375?map=productClusterIds&O=&sort=release%3Adesc&page="
       }
     },
     {
