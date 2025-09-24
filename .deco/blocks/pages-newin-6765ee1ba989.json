@@ -8,7 +8,7 @@
     {
       "page": {
         "data": {
-          "sort": "price:desc",
+          "sort": "release:desc",
           "count": 24,
           "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
           "advancedConfigs": {
