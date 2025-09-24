@@ -17,7 +17,8 @@
           "fuzzy": "automatic",
           "selectedFacets": [],
           "simulationBehavior": "default",
-          "hideUnavailableItems": true
+          "hideUnavailableItems": true,
+          "query": " "
         },
         "extensions": [
           {
