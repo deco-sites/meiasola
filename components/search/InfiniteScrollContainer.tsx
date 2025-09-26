@@ -46,6 +46,15 @@ export default function InfiniteScrollContainer({
         ];
       }
 
+      if (url.pathname.includes("/ms")) {
+        selectedFacets = [
+          {
+            key: "brand",
+            value: "m-s",
+          },
+        ];
+      }
+
       const isNewIn = url.pathname.includes("/newin");
 
       const data =
