@@ -249,7 +249,9 @@
               "__resolveType": "commerce/loaders/product/productListingPage.ts"
             },
             "enableInfiniteScroll": true,
-            "isWishlistPage": false
+            "isWishlistPage": false,
+            "pageOptionalDescription": "Um espaço onde moda, exclusividade e elegância se encontram. Cada detalhe é pensado para traduzir desejo, autenticidade e peças que celebram seu estilo único.",
+            "pageOptionalTitle": "M|S"
           },
           {
             "__resolveType": "site/sections/Category/CategoryTextReadMore.tsx",

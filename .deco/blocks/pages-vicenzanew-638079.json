@@ -147,7 +147,6 @@
             "page": {
               "data": {
                 "sort": "release:desc",
-                "count": 24,
                 "fuzzy": "automatic",
                 "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
                 "selectedFacets": [
@@ -157,7 +156,8 @@
                   }
                 ],
                 "hideUnavailableItems": true,
-                "useCollectionName": false
+                "useCollectionName": false,
+                "count": 24
               },
               "extensions": [
                 {
