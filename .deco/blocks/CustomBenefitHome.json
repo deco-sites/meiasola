@@ -2,23 +2,23 @@
   "benefits": [
     {
       "id": "benefit1",
-      "text": "Nas compras acima de R$ 499",
+      "text": "Nas compras acima de R$ 599",
       "image": {
         "alt": "Ícone de carrinho",
         "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/53c7c86f-7f2c-422c-a3d8-2f709dfb2872"
       },
       "title": "Frete Grátis Brasil",
-      "desktopText": "Nas compras <br> acima de R$ 499"
+      "desktopText": "Nas compras <br> acima de R$ 599"
     },
     {
       "id": "benefit1",
-      "text": "Nas compras <br> acima de R$249",
+      "text": "Nas compras <br> acima de R$399",
       "image": {
         "alt": "Ícone de carrinho",
         "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/53c7c86f-7f2c-422c-a3d8-2f709dfb2872"
       },
       "title": "Frete Grátis Capitais",
-      "desktopText": "Nas compras <br> acima de R$249"
+      "desktopText": "Nas compras <br> acima de R$399"
     },
     {
       "id": "benefit2",
