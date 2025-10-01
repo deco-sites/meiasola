@@ -15,6 +15,18 @@
     {
       "button": {
         "text": "Confira",
+        "link": "/vicenza"
+      },
+      "type": "image",
+      "video": {},
+      "image": {
+        "imageMobile": "https://assets.decocache.com/meiasola/34901b21-faaa-4112-8d89-8db759955e45/banner_lemco_vcz_780x1320px.jpg",
+        "imageDesktop": "https://assets.decocache.com/meiasola/ba9b24f8-4751-4824-9667-ed9a8d5342f6/banner_lenco_vvz_2880x1320.jpg"
+      }
+    },
+    {
+      "button": {
+        "text": "Confira",
         "link": "/m%7Cs"
       },
       "type": "image",
@@ -44,20 +56,20 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/fa054565-705c-4934-a783-7e8d95baeafd/IMG_9257.jpeg",
-        "imageDesktop": "https://assets.decocache.com/meiasola/a0752fe6-6490-41d5-b6f5-20bc56241a87/IMG_9256.jpeg"
+        "imageDesktop": "https://assets.decocache.com/meiasola/a0752fe6-6490-41d5-b6f5-20bc56241a87/IMG_9256.jpeg",
+        "imageMobile": "https://assets.decocache.com/meiasola/fa054565-705c-4934-a783-7e8d95baeafd/IMG_9257.jpeg"
       }
     },
     {
-      "button": {
-        "text": "Confira",
-        "link": "/schutz"
-      },
       "type": "image",
       "video": {},
       "image": {
         "imageDesktop": "https://assets.decocache.com/meiasola/30effbb8-6f0c-4b73-acd6-60510ab215da/banner_nova_colecao_sch_2880x1320.jpg",
         "imageMobile": "https://assets.decocache.com/meiasola/4a9c251a-47b0-471b-8ca8-1c2e9243a6ad/banner_nova_colecao_sch_780x1320px.jpg"
+      },
+      "button": {
+        "text": "Confira",
+        "link": "/schutz"
       }
     }
   ],
