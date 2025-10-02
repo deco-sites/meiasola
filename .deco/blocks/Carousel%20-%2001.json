@@ -76,12 +76,12 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/433a06ed-c31c-40f1-bf8b-0206c962a4b3/banner-site.png",
+        "imageDesktop": "https://assets.decocache.com/meiasola/ef1369c5-b4b4-4bf9-b088-7208bf3fa34a/banner-site-frete-gratis.png",
         "imageMobile": "https://assets.decocache.com/meiasola/218d59c4-5395-4fa7-84fd-709aeeb4dd5d/banner-app.png"
       },
       "button": {
         "text": "Confira",
-        "link": "/vicenza"
+        "link": "/newin"
       }
     }
   ],
