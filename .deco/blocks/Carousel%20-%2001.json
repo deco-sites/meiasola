@@ -15,6 +15,18 @@
     {
       "button": {
         "text": "Confira",
+        "link": "/bolsas?sort=price%3Aasc&filter.category-1=bolsas&filter.price=499%3A4444"
+      },
+      "type": "image",
+      "video": {},
+      "image": {
+        "imageMobile": "https://assets.decocache.com/meiasola/f292352c-e262-4b3c-8101-e5c8a6f86a82/BANNER-APP.png",
+        "imageDesktop": "https://assets.decocache.com/meiasola/3b31ccd9-3d66-4d0b-b702-b6d551f127b8/BANNER-DE-SITE-(1).png"
+      }
+    },
+    {
+      "button": {
+        "text": "Confira",
         "link": "/m%7Cs"
       },
       "type": "image",
@@ -44,20 +56,20 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/cea446dd-ac70-464b-a588-fb419b44ecb4/banner_nova_colecao_sch_780x1320px.jpg",
-        "imageDesktop": "https://assets.decocache.com/meiasola/809ba962-576a-4d20-a707-a6a006fcbc39/banner_nova_colecao_sch_2880x1320.jpg"
+        "imageDesktop": "https://assets.decocache.com/meiasola/809ba962-576a-4d20-a707-a6a006fcbc39/banner_nova_colecao_sch_2880x1320.jpg",
+        "imageMobile": "https://assets.decocache.com/meiasola/cea446dd-ac70-464b-a588-fb419b44ecb4/banner_nova_colecao_sch_780x1320px.jpg"
       }
     },
     {
-      "button": {
-        "text": "Confira",
-        "link": "/anacapri"
-      },
       "type": "image",
       "video": {},
       "image": {
         "imageDesktop": "https://assets.decocache.com/meiasola/34671f42-2506-4ab6-94a6-d9ba183cfd98/banner_nova_colecao_AC_2880x1320.jpg",
         "imageMobile": "https://assets.decocache.com/meiasola/4fe179f9-5e17-4f7e-bbd0-8453262aca15/_.jpg"
+      },
+      "button": {
+        "text": "Confira",
+        "link": "/anacapri"
       }
     },
     {
@@ -82,18 +94,6 @@
       "button": {
         "text": "Confira",
         "link": "/newin"
-      }
-    },
-    {
-      "type": "image",
-      "video": {},
-      "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/3b31ccd9-3d66-4d0b-b702-b6d551f127b8/BANNER-DE-SITE-(1).png",
-        "imageMobile": "https://assets.decocache.com/meiasola/f292352c-e262-4b3c-8101-e5c8a6f86a82/BANNER-APP.png"
-      },
-      "button": {
-        "text": "Confira",
-        "link": "/bolsas?sort=price%3Aasc&filter.category-1=bolsas&filter.price=499%3A4444"
       }
     }
   ],
