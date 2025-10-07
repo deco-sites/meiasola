@@ -27,6 +27,18 @@
     {
       "button": {
         "text": "Confira",
+        "link": "/sapatos?sort=price%3Adesc&filter.category-1=sapatos&filter.category-2=rasteiras&filter.category-2=papetes&filter.category-2=anabela&filter.price=99%3A499"
+      },
+      "type": "image",
+      "video": {},
+      "image": {
+        "imageMobile": "https://assets.decocache.com/meiasola/6f62f136-041d-42a1-8ace-4c5a6882f57c/banner-app.png",
+        "imageDesktop": "https://assets.decocache.com/meiasola/18db947f-95c8-4b61-862f-0d3f14171212/banner-site.png"
+      }
+    },
+    {
+      "button": {
+        "text": "Confira",
         "link": "/bolsas?sort=price%3Aasc&filter.category-1=bolsas&filter.price=499%3A4444"
       },
       "type": "image",
@@ -44,20 +56,20 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/121412ca-2ec8-41a0-a9c9-ec53eefdd460/banner-app.png",
-        "imageDesktop": "https://assets.decocache.com/meiasola/1172fd78-f23a-4a2f-98e7-f6bc34ca3c13/banner-site.png"
+        "imageDesktop": "https://assets.decocache.com/meiasola/1172fd78-f23a-4a2f-98e7-f6bc34ca3c13/banner-site.png",
+        "imageMobile": "https://assets.decocache.com/meiasola/121412ca-2ec8-41a0-a9c9-ec53eefdd460/banner-app.png"
       }
     },
     {
-      "button": {
-        "text": "Confira",
-        "link": "/m%7Cs"
-      },
       "type": "image",
       "video": {},
       "image": {
         "imageDesktop": "https://assets.decocache.com/meiasola/1ab73246-eff5-4444-9b86-96771e373c04/banners-summer.png",
         "imageMobile": "https://assets.decocache.com/meiasola/65a47695-31f8-4a34-8b0e-20f2931f88b4/2.png"
+      },
+      "button": {
+        "text": "Confira",
+        "link": "/m%7Cs"
       }
     },
     {
