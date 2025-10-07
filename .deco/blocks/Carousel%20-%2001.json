@@ -15,6 +15,18 @@
     {
       "button": {
         "text": "Confira",
+        "link": "/newin?filter.price=27.96%3A499"
+      },
+      "type": "image",
+      "video": {},
+      "image": {
+        "imageMobile": "https://assets.decocache.com/meiasola/905e74c5-94ef-44bf-8e43-4b4bcff419c3/banner-app.png",
+        "imageDesktop": "https://assets.decocache.com/meiasola/2b5f3353-00cf-4029-9209-c11edeae4296/banner-site.png"
+      }
+    },
+    {
+      "button": {
+        "text": "Confira",
         "link": "/bolsas?sort=price%3Aasc&filter.category-1=bolsas&filter.price=499%3A4444"
       },
       "type": "image",
@@ -44,20 +56,20 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/65a47695-31f8-4a34-8b0e-20f2931f88b4/2.png",
-        "imageDesktop": "https://assets.decocache.com/meiasola/1ab73246-eff5-4444-9b86-96771e373c04/banners-summer.png"
+        "imageDesktop": "https://assets.decocache.com/meiasola/1ab73246-eff5-4444-9b86-96771e373c04/banners-summer.png",
+        "imageMobile": "https://assets.decocache.com/meiasola/65a47695-31f8-4a34-8b0e-20f2931f88b4/2.png"
       }
     },
     {
-      "button": {
-        "text": "Confira",
-        "link": "/arezzo"
-      },
       "type": "image",
       "video": {},
       "image": {
         "imageDesktop": "https://assets.decocache.com/meiasola/a0752fe6-6490-41d5-b6f5-20bc56241a87/IMG_9256.jpeg",
         "imageMobile": "https://assets.decocache.com/meiasola/fa054565-705c-4934-a783-7e8d95baeafd/IMG_9257.jpeg"
+      },
+      "button": {
+        "text": "Confira",
+        "link": "/arezzo"
       }
     },
     {
