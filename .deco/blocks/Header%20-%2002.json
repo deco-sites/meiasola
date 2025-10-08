@@ -2,7 +2,14 @@
   "alert": {
     "text": "<p style=\"text-align: center;\" data-mce-style=\"text-align: center;\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: rgb(0, 0, 0);\"><strong><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\">FINALIZE SEU PEDIDO E</span> <span style=\"color: rgb(242, 11, 11);\" data-mce-style=\"color: rgb(242, 11, 11);\">GANHE 12%</span> <span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\"><span style=\"color: rgb(242, 11, 11);\" data-mce-style=\"color: rgb(242, 11, 11);\">DE CASHBACK</span> PARA A SUA PRÓXIMA COMPRA</span> 🚚﻿</strong></span></p>",
     "label": "Liquida de Inverno com até 60% Off 🔥",
-    "background": "#000000"
+    "background": "#000000",
+    "items": [
+      {
+        "background": "#090B0A",
+        "text": "<p style=\"text-align: center;\" data-mce-style=\"text-align: center;\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: rgb(0, 0, 0);\"><strong><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\">FINALIZE SEU PEDIDO E</span> <span style=\"color: rgb(242, 11, 11);\" data-mce-style=\"color: rgb(242, 11, 11);\">GANHE 12%</span> <span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\"><span style=\"color: rgb(242, 11, 11);\" data-mce-style=\"color: rgb(242, 11, 11);\">DE CASHBACK</span> PARA A SUA PRÓXIMA COMPRA</span> 🚚﻿</strong></span></p>"
+      }
+    ],
+    "interval": 5
   },
   "navbar": {
     "menu": {

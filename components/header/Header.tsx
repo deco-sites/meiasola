@@ -8,10 +8,7 @@ export interface Props {
   navbar: NavbarProps;
 }
 
-function Header({
-  alert,
-  navbar,
-}: Props) {
+function Header({ alert, navbar }: Props) {
   return (
     <header
       class={navbar.colors.startWithtransparent ? "h-0" : "h-[calc(43px+73px)]"}

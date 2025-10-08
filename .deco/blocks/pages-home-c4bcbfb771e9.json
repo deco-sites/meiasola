@@ -13,7 +13,17 @@
             "alert": {
               "text": "<p style=\"text-align: center;\" data-mce-style=\"text-align: center;\"><a data-mce-href=\"https://heylink.me/meiasola/\" href=\"https://heylink.me/meiasola/\" data-mce-selected=\"inline-boundary\"><span style=\"font-size: 8pt;\" data-mce-style=\"font-size: 8pt;\"><strong><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: rgb(0, 0, 0);\"><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\">UTILIZE O CUPOM</span><span style=\"color: rgb(224, 62, 45);\" data-mce-style=\"color: rgb(224, 62, 45);\"> APP10</span></span><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: rgb(0, 0, 0);\"><span style=\"color: rgb(224, 62, 45);\" data-mce-style=\"color: rgb(224, 62, 45);\"> </span><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\">E GANHE 10% OFF NA SUA PRIMEIRA COMPRA EM NOSSO APP 🥳 *EXCETO REMARCADOS</span></span></span></strong></span></a></p>",
               "label": "Liquida de Inverno com até 60% Off 🔥",
-              "background": "#090B0A"
+              "background": "#090B0A",
+              "items": [
+                {
+                  "background": "#090B0A",
+                  "text": "<p>Teste 1</p>"
+                },
+                {
+                  "background": "#090B0A",
+                  "text": "<p>Teste 2</p>"
+                }
+              ]
             },
             "navbar": {
               "menu": {
@@ -606,7 +616,17 @@
             "alert": {
               "text": "<p style=\"text-align: center;\" data-mce-style=\"text-align: center;\"><a data-mce-href=\"https://heylink.me/meiasola/\" href=\"https://heylink.me/meiasola/\" data-mce-selected=\"inline-boundary\"><span style=\"font-size: 8pt;\" data-mce-style=\"font-size: 8pt;\"><strong><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: rgb(0, 0, 0);\"><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\">UTILIZE O CUPOM</span><span style=\"color: rgb(224, 62, 45);\" data-mce-style=\"color: rgb(224, 62, 45);\"> APP10</span></span><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: rgb(0, 0, 0);\"><span style=\"color: rgb(224, 62, 45);\" data-mce-style=\"color: rgb(224, 62, 45);\"> </span><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\">E GANHE 10% OFF NA SUA PRIMEIRA COMPRA EM NOSSO APP 🥳 *EXCETO REMARCADOS</span></span></span></strong></span></a></p>",
               "label": "Liquida de Inverno com até 60% Off 🔥",
-              "background": "#090B0A"
+              "background": "#090B0A",
+              "items": [
+                {
+                  "background": "#090B0A",
+                  "text": "<p style=\"text-align: center;\" data-mce-style=\"text-align: center;\"><a data-mce-href=\"https://heylink.me/meiasola/\" href=\"https://heylink.me/meiasola/\" data-mce-selected=\"inline-boundary\"><span style=\"font-size: 8pt;\" data-mce-style=\"font-size: 8pt;\"><strong><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: rgb(0, 0, 0);\"><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\">UTILIZE O CUPOM</span><span style=\"color: rgb(224, 62, 45);\" data-mce-style=\"color: rgb(224, 62, 45);\"> APP10</span></span><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: rgb(0, 0, 0);\"><span style=\"color: rgb(224, 62, 45);\" data-mce-style=\"color: rgb(224, 62, 45);\"> </span><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\">E GANHE 10% OFF NA SUA PRIMEIRA COMPRA EM NOSSO APP 🥳 *EXCETO REMARCADOS</span></span></span></strong></span></a></p>"
+                },
+                {
+                  "background": "#090B0A",
+                  "text": "<p>Novo texto</p>"
+                }
+              ]
             },
             "navbar": {
               "menu": {

@@ -4,6 +4,7 @@ import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalytic
 import { SendEventOnClick } from "$store/components/Analytics.tsx";
 import Image from "$store/components/ui/Image.tsx";
 import WishlistButton from "$store/islands/WishlistButton.tsx";
+import { AddToCartButton } from "$store/islands/ProductDetails/Buttons.tsx";
 import { formatPrice } from "$store/sdk/format.ts";
 import { useOffer } from "$store/sdk/useOffer.ts";
 import { useVariantPossibilities } from "$store/sdk/useVariantPossiblities.ts";
@@ -29,16 +30,12 @@ function ProductCard({ product, preload, itemListName, small }: Props) {
   const id = `product-card-${productID}`;
   const productGroupID = isVariantOf?.productGroupID;
   const [front, back] = images ?? [];
-  const { listPrice, price, availability } = useOffer(offers);
-
-  // Fallback para imagens quebradas
-  const handleImageError = (e: Event) => {
-    const img = e.target as HTMLImageElement;
-    img.style.display = 'none';
-  };
+  const { listPrice, price, availability, seller = "1" } = useOffer(offers);
 
   const discountPercentage =
     listPrice && price ? Math.ceil(100 - (price / listPrice) * 100) : 0;
+
+  const discount = price && listPrice ? listPrice - price : 0;
 
   let availableUrl = url;
 
@@ -95,6 +92,25 @@ function ProductCard({ product, preload, itemListName, small }: Props) {
           />
         </div>
 
+        {/* Add to cart */}
+        <div class="hidden absolute bottom-4 left-1/2 -translate-x-1/2 z-10 opacity-0 group-hover/product-card:opacity-100 transition-opacity duration-300">
+          {availability === "https://schema.org/InStock" && (
+            <div onClick={(e) => e.preventDefault()}>
+              <AddToCartButton
+                name={name ?? ""}
+                productID={productID}
+                productGroupID={productGroupID ?? ""}
+                price={price || 0}
+                discount={discount}
+                seller={seller}
+                class="bg-black hover:bg-black text-white px-4 py-2 text-body font-normal flex items-center justify-center disabled:opacity-50 rounded w-max"
+              >
+                ADICIONAR À SACOLA
+              </AddToCartButton>
+            </div>
+          )}
+        </div>
+
         {/* Percentage Tag */}
         {discountPercentage > 0 ? (
           <div class="bg-black text-white text-small font-bold p-1 absolute top-4 left-4 z-10">
@@ -139,7 +155,8 @@ function ProductCard({ product, preload, itemListName, small }: Props) {
             {product.brand?.name}
           </p>
           <h4 class="text-body line-clamp-2 capitalize">
-            {isVariantOf?.name.toLowerCase() ?? name.toLowerCase()}
+            {(isVariantOf?.name?.toLowerCase() ?? name?.toLowerCase()) ||
+              "Produto"}
           </h4>
 
           <div
