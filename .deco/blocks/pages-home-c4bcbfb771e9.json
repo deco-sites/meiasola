@@ -624,7 +624,7 @@
                     "icon": null,
                     "label": "sapatos",
                     "submenu": {
-                      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/16692afb-cc4f-4a23-828b-185a127a0013/ARZ_25_V_NATAL24_POCKET_MOOD3_POSTS_FRQ27.jpeg",
+                      "image": "https://assets.decocache.com/meiasola/817a52b1-feec-4e73-a6e4-d88820069cb9/Sapatos.png",
                       "sections": [
                         {
                           "items": [
@@ -723,7 +723,7 @@
                     "icon": null,
                     "label": "bolsas",
                     "submenu": {
-                      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/70284360-4c99-4dbc-8630-4f12911b53b4/ARZ_25_V_NATAL24_POCKET_MOOD1_POSTS_FRQ_53.jpeg",
+                      "image": "https://assets.decocache.com/meiasola/cb7f4932-6cb8-498f-a964-25e7e1033a37/Bolsas.png",
                       "sections": [
                         {
                           "items": [
@@ -809,7 +809,7 @@
                           "label": "Acessórios"
                         }
                       ],
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/dbfd19ff-076e-458f-b36f-b60e770fc506"
+                      "image": "https://assets.decocache.com/meiasola/a508b7d6-6828-49ed-8724-33350c7892de/Acessorios.png"
                     }
                   },
                   {
