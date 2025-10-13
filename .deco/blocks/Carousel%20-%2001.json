@@ -39,37 +39,25 @@
     {
       "button": {
         "text": "Confira",
-        "link": "/bolsas?sort=price%3Aasc&filter.category-1=bolsas&filter.price=499%3A4444"
-      },
-      "type": "image",
-      "video": {},
-      "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/4fd1c688-e108-4417-b52f-028f6f657bfe/banner-app.png",
-        "imageDesktop": "https://assets.decocache.com/meiasola/1cd4823b-f033-4dc2-be33-410b8b1f2d04/banner-site.png"
-      }
-    },
-    {
-      "button": {
-        "text": "Confira",
         "link": "/sale?sort=release%3Adesc&filter.productClusterIds=151&filter.price=31.96%3A299"
       },
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/1172fd78-f23a-4a2f-98e7-f6bc34ca3c13/banner-site.png",
-        "imageMobile": "https://assets.decocache.com/meiasola/121412ca-2ec8-41a0-a9c9-ec53eefdd460/banner-app.png"
+        "imageMobile": "https://assets.decocache.com/meiasola/121412ca-2ec8-41a0-a9c9-ec53eefdd460/banner-app.png",
+        "imageDesktop": "https://assets.decocache.com/meiasola/1172fd78-f23a-4a2f-98e7-f6bc34ca3c13/banner-site.png"
       }
     },
     {
+      "button": {
+        "text": "Confira",
+        "link": "/m%7Cs"
+      },
       "type": "image",
       "video": {},
       "image": {
         "imageDesktop": "https://assets.decocache.com/meiasola/1ab73246-eff5-4444-9b86-96771e373c04/banners-summer.png",
         "imageMobile": "https://assets.decocache.com/meiasola/65a47695-31f8-4a34-8b0e-20f2931f88b4/2.png"
-      },
-      "button": {
-        "text": "Confira",
-        "link": "/m%7Cs"
       }
     },
     {
