@@ -252,7 +252,7 @@
             "enableInfiniteScroll": true,
             "isWishlistPage": false,
             "pageOptionalTitle": "Flash sale",
-            "pageOptionalDescription": "Produtos selecionados com o melhor preço pra você!"
+            "pageOptionalDescription": "Peças selecionadas com preço especial para você!"
           },
           {
             "__resolveType": "site/sections/Category/CategoryTextReadMore.tsx",
