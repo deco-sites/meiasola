@@ -1,0 +1,303 @@
+{
+  "name": "flats até 499",
+  "path": "/flats",
+  "sections": {
+    "variants": [
+      {
+        "rule": {
+          "__resolveType": "website/matchers/always.ts"
+        },
+        "value": [
+          {
+            "__resolveType": "Header - 02"
+          },
+          {
+            "__resolveType": "site/sections/Category/BrandBanner.tsx",
+            "matcherSections": [
+              {
+                "image": {
+                  "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/b2a86b8e-7f7b-41e1-8e9e-8498d8945769/azz.png",
+                  "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/b2c8fc09-d2e2-4f4e-b3fc-80a92f2918d1/15.png"
+                },
+                "label": "/arezzo?map=brand"
+              },
+              {
+                "image": {
+                  "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f41a128e-5995-4574-9c3e-2c62d517bc4b/anacapri.png",
+                  "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f1b4392d-4102-4e0c-b0e5-b935da34e624/16.png"
+                },
+                "label": "/anacapri?map=brand"
+              },
+              {
+                "image": {
+                  "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/7aa48451-ace6-4065-a0a8-722e26a0e978/birman.png",
+                  "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/263dc8d1-e2ff-4a5c-86ff-f089ecccb1db/13.png"
+                },
+                "label": "/alexandre-birman?map=brand"
+              },
+              {
+                "image": {
+                  "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/5ab48fab-6038-4924-aee9-6a33e41fa54b/brizza.png",
+                  "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/e7d79191-c1df-4bd8-9a20-78ffb7513581/3.png"
+                },
+                "label": "/brizza?map=brand"
+              },
+              {
+                "image": {
+                  "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/0de093a7-8d7b-4f17-a2e6-818d352051fb/carano.png",
+                  "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/93c34f71-9477-4765-bdbc-204516918587/17.png"
+                },
+                "label": "/carrano?map=brand"
+              },
+              {
+                "image": {
+                  "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/2ec5ba8b-7daa-47d4-aeb7-f0d57813a02a/confraria.png",
+                  "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/fe94ab2a-d6a7-495a-84e0-64e84d44b0cb/10.png"
+                },
+                "label": "/confraria?map=brand"
+              },
+              {
+                "image": {
+                  "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/440f9b2c-ace0-4211-94f7-d0df47bd674c/follis.png",
+                  "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/68500595-bcda-42eb-ab89-dfd69fb6ca80/2.png"
+                },
+                "label": "/follis?map=brand"
+              },
+              {
+                "image": {
+                  "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/6f3263c5-feaa-412c-a2e1-55c1c6a5f3a9/guilhermina.png",
+                  "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/50f62d9d-9d2c-4dfb-a35c-c6c1e7e10d89/9.png"
+                },
+                "label": "/guilhermina?map=brand"
+              },
+              {
+                "image": {
+                  "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/e3a1b72d-0708-4909-b7cd-a8afbcf08c45/isla.png",
+                  "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/4ef089fe-ce2c-4b3d-b325-c95cce6008cd/11.png"
+                },
+                "label": "/isla?map=brand"
+              },
+              {
+                "image": {
+                  "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f951811a-113d-4623-ace2-8bcc6e711996/la-spezia.png",
+                  "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/65ae42fc-6d46-496c-9f9a-4b215e98c3db/8.png"
+                },
+                "label": "/la-spezia?map=brand"
+              },
+              {
+                "image": {
+                  "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/fcd1c706-a6f0-4298-9417-98146fa3d3b9/lorraci.png",
+                  "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/e4c36d04-ce27-441a-b6ea-5dfa7e97bcfd/7.png"
+                },
+                "label": "/lorraci?map=brand"
+              },
+              {
+                "image": {
+                  "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/1c949e38-4791-41cb-a14c-619ab226e607/luz-da-lua.png",
+                  "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/ef2423ab-3d76-46d0-bcc5-84ff90744fe4/18.png"
+                },
+                "label": "/luz-da-lua?map=brand"
+              },
+              {
+                "image": {
+                  "desktop": "https://assets.decocache.com/meiasola/7211695a-83c0-49ea-ab2c-5ffa21e3f4e1/banner-de-marcas--desktop.png",
+                  "mobile": "https://assets.decocache.com/meiasola/d8a70f47-46fe-4741-ade1-b0f3c1d0f337/_MAU8623.jpg"
+                },
+                "label": "/m%7Cs"
+              },
+              {
+                "image": {
+                  "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/2bd008f5-3749-409c-a3fd-26aa0c331a3c/ryzi.png",
+                  "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/2b89393c-8e3d-4664-96b0-826d502b23d2/5.png"
+                },
+                "label": "/ryzi?map=brand"
+              },
+              {
+                "image": {
+                  "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/37ba7094-9612-4b65-b593-c657a0de9e20/schutz.png",
+                  "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/1b36cf16-50d7-445d-8857-22e1f6fd51d0/14.png"
+                },
+                "label": "/schutz?map=brand"
+              },
+              {
+                "image": {
+                  "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/9c92101a-7708-4ca2-b185-f5a21cd122ad/soleah.png",
+                  "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/7e8b30dc-efa3-42e9-8856-a7d56804937f/4.png"
+                },
+                "label": "/soleah?map=brand"
+              },
+              {
+                "image": {
+                  "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/e56f51b7-fdfd-48ca-b3fe-a68a33836b4f/waiwai.png",
+                  "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/870000a2-48c0-4419-b263-643eaebd6429/6.png"
+                },
+                "label": "/wai-wai?map=brand"
+              },
+              {
+                "image": {
+                  "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/c58553f3-3a3c-4681-9d4f-e3baebc5ed9d/Design-sem-nome.png",
+                  "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/5460104c-9cc9-46f7-bd30-f2f1d2fa3911/12.png"
+                },
+                "label": "/vicenza?map=brand"
+              }
+            ]
+          },
+          {
+            "__resolveType": "site/sections/Product/SearchResult.tsx",
+            "page": {
+              "data": {
+                "sort": "release:desc",
+                "fuzzy": "automatic",
+                "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                "selectedFacets": [
+                  {
+                    "key": "productClusterIds",
+                    "value": "378"
+                  }
+                ],
+                "hideUnavailableItems": true,
+                "useCollectionName": false,
+                "count": 24
+              },
+              "extensions": [
+                {
+                  "__resolveType": "site/loaders/meiasola/extensionProductListingPage.ts"
+                }
+              ],
+              "__resolveType": "commerce/loaders/product/productListingPage.ts"
+            },
+            "sizes": {
+              "sizes": [
+                {
+                  "label": "33"
+                },
+                {
+                  "label": "34"
+                },
+                {
+                  "label": "35"
+                },
+                {
+                  "label": "36"
+                },
+                {
+                  "label": "37"
+                },
+                {
+                  "label": "38"
+                },
+                {
+                  "label": "39"
+                },
+                {
+                  "label": "40"
+                }
+              ],
+              "title": "ESCOLHA SUA NUMERAÇÃO",
+              "routesToShow": [
+                {
+                  "label": "/sapatos"
+                },
+                {
+                  "label": "/sale"
+                }
+              ]
+            },
+            "images": [
+              {
+                "alt": "Imagem de um sapato salto alto",
+                "src": "https://assets.decocache.com/meiasola/4e8d9e19-7065-4860-809a-2eb30090b00e/Newin.png",
+                "route": "/sapatos",
+                "srcMobile": "https://assets.decocache.com/meiasola/64c5bffe-3731-47af-99ec-0ac9a0ec2695/Newin.png"
+              },
+              {
+                "alt": "Imagem de bolsas",
+                "src": "https://assets.decocache.com/meiasola/6c3125b2-817d-4fb9-a550-dcd679a20709/Bolsas.png",
+                "route": "/bolsas",
+                "srcMobile": "https://assets.decocache.com/meiasola/e2e71d95-4569-4f6b-9961-4b5772f45b88/Bolsas.png"
+              },
+              {
+                "alt": "Imagem de pulseira dourada",
+                "src": "https://assets.decocache.com/meiasola/89d64ee3-0b78-409e-bac4-e4f0fee5c39c/Acessorios.png",
+                "route": "/acessorios",
+                "srcMobile": "https://assets.decocache.com/meiasola/0412911f-0bde-475b-a24b-9d2a42e32b42/Acessorios.png"
+              },
+              {
+                "alt": "Imagem de Sandálias ",
+                "src": "https://assets.decocache.com/meiasola/58ec013d-f30f-4fde-8f7d-f4945662a389/Sapatos.png",
+                "route": "/sapatos/sandalia",
+                "srcMobile": "https://assets.decocache.com/meiasola/ea5511f3-2f09-4154-98f6-0568f2e18d50/Sapatos.png"
+              }
+            ],
+            "notFoundPage": {
+              "data": {
+                "sort": "price:desc",
+                "count": 24,
+                "fuzzy": "automatic",
+                "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                "selectedFacets": [
+                  {
+                    "key": "productClusterIds",
+                    "value": "151"
+                  }
+                ]
+              },
+              "extensions": [
+                {
+                  "__resolveType": "site/loaders/meiasola/extensionProductListingPage.ts"
+                }
+              ],
+              "__resolveType": "commerce/loaders/product/productListingPage.ts"
+            },
+            "enableInfiniteScroll": true,
+            "isWishlistPage": false,
+            "pageOptionalTitle": "Flats",
+            "pageOptionalDescription": "Sofisticação e conforto em modelos até R$499, pensados para acompanhar você com leveza e elegância."
+          },
+          {
+            "__resolveType": "site/sections/Category/CategoryTextReadMore.tsx",
+            "matcherSections": [
+              {
+                "text": "<p class=\"MsoNormal\"><span style=\"font-size: 10pt;\" data-mce-style=\"font-size: 10pt;\"><strong>Bolsa Feminina Grande:&nbsp;</strong></span></p><p class=\"MsoNormal\"><span style=\"font-size: 10pt;\" data-mce-style=\"font-size: 10pt;\">A bolsa grande feminina é um acessório que une funcionalidade e estilo em uma única peça. Na Meia Sola, você encontra uma ampla variedade de bolsas em matelassê estampa animal. Aprimore seu look com praticidade e elegância.</span></p><p class=\"MsoNormal\"><span style=\"font-size: 10pt;\" data-mce-style=\"font-size: 10pt;\"><strong>Bolsa Feminina Média</strong>: </span></p><p class=\"MsoNormal\"><span style=\"font-size: 10pt;\" data-mce-style=\"font-size: 10pt;\">Em um equilíbrio ideal entre praticidade e elegância, as bolsas de tamanho médio trazem as últimas tendências da moda diretamente para o seu guarda-roupa, com designs, cores e materiais que acrescentam sofisticação a qualquer look. Adquira já a sua bolsa e arrase no visual!</span></p><p class=\"MsoNormal\"><span style=\"font-size: 10pt;\" data-mce-style=\"font-size: 10pt;\"><strong>Bolsa Feminina Pequena</strong>: </span></p><p class=\"MsoNormal\"><span style=\"font-size: 10pt;\" data-mce-style=\"font-size: 10pt;\">Explore a nossa seleção de bolsas pequenas e encontre o modelo ideal para complementar o seu look. Com opções em couro, tecido, e outros materiais, oferecemos uma variedade de escolhas para atender a todos os estilos e gostos. Garanta já a sua bolsa pequena e adicione um toque de sofisticação e modernidade às suas produções. Aproveite o frete grátis e parcelamento em até 10x. Compre agora!</span></p><p class=\"MsoNormal\"><span style=\"font-size: 10pt;\" data-mce-style=\"font-size: 10pt;\"><strong>Bolsa Tote Feminina</strong>: <span style=\"mso-spacerun: yes;\" data-mce-style=\"mso-spacerun: yes;\">&nbsp;</span></span></p><p class=\"MsoNormal\"><span style=\"font-size: 10pt;\" data-mce-style=\"font-size: 10pt;\">Bolsa tote é a escolha perfeita para a mulher contemporânea que está sempre em movimento, seja no trabalho ou em eventos formais. Com um toque de sofisticação e originalidade, ela adiciona um toque de ousadia a qualquer look.</span></p><p class=\"MsoNormal\"><span style=\"font-size: 10pt;\" data-mce-style=\"font-size: 10pt;\">Cada coleção é cuidadosamente elaborada para criar peças marcantes, cheias de estilo e que se mantêm icônicas ao longo dos anos. Explore nossa variedade de bolsas tote e garanta a sua agora!</span></p><p class=\"MsoNormal\"><span style=\"font-size: 10pt;\" data-mce-style=\"font-size: 10pt;\"><strong>Bolsa Tiracolo Feminina</strong>: </span></p><p class=\"MsoNormal\"><span style=\"font-size: 10pt;\" data-mce-style=\"font-size: 10pt;\">A bolsa tiracolo com mais glamour, mantendo sua praticidade e conforto. Com design elegante e autêntico, ela é essencial para looks deslumbrantes que vão te fazer se destacar.</span></p><p class=\"MsoNormal\"><span style=\"font-size: 10pt;\" data-mce-style=\"font-size: 10pt;\">Não se limite à tradicional bolsa tiracolo preta. Temos opções metalizadas, com correntes e formatos divertidos que capturam o estilo urban chic da cidade. Seja arrojada e esteja sempre em destaque!</span></p><p class=\"MsoNormal\"><span style=\"font-size: 10pt;\" data-mce-style=\"font-size: 10pt;\"><strong>Bolsa shopping Feminina</strong>: </span></p><p class=\"MsoNormal\"><span style=\"font-size: 10pt;\" data-mce-style=\"font-size: 10pt;\">A bolsa shopping não é apenas uma tendência, é a escolha ideal para quem vive uma vida agitada. Com um design contemporâneo, sofisticado e versátil, ela permite que você esteja preparada para qualquer situação sem trocar de bolsa.</span></p><p class=\"MsoNormal\"><span style=\"font-size: 10pt;\" data-mce-style=\"font-size: 10pt;\">Seja para um encontro casual ou um compromisso de trabalho, a bolsa shopping reflete a essência ousada, moderna e cativante que todas as mulheres possuem. Confira as opções e entre na tendência!</span></p><p class=\"MsoNormal\"><span style=\"font-size: 10pt;\" data-mce-style=\"font-size: 10pt;\"><strong>Pochete Feminina</strong>: </span></p><p class=\"MsoNormal\"><span style=\"font-size: 10pt;\" data-mce-style=\"font-size: 10pt;\">A pochete, tão querida nos festivais, é um item essencial para as fashionistas que valorizam funcionalidade, conforto e estilo. Disponíveis em diversas cores, formatos e texturas. Combine a sua pochete com uma jaqueta puffer, meia calça-arrastão e correntes para brilhar em todos os eventos. É a combinação perfeita para um look cheio de personalidade e estilo!</span></p><p class=\"MsoNormal\"><span style=\"font-size: 10pt;\" data-mce-style=\"font-size: 10pt;\"><strong><span style=\"vertical-align: inherit;\" data-mce-style=\"vertical-align: inherit;\"><span style=\"vertical-align: inherit;\" data-mce-style=\"vertical-align: inherit;\">Bolsa de embreagem</span></span></strong><span style=\"vertical-align: inherit;\" data-mce-style=\"vertical-align: inherit;\"><span style=\"vertical-align: inherit;\" data-mce-style=\"vertical-align: inherit;\"> :</span></span></span></p><p class=\"MsoNormal\"><span style=\"font-size: 10pt;\" data-mce-style=\"font-size: 10pt;\">Você já conhece nossas clutches é o toque de sofisticação que toda mulher poderosa e antenada em moda precisa ter em seu guarda-roupa. Do casual ao formal, ela eleva qualquer look, transformando momentos simples em memórias inesquecíveis.</span></p><p class=\"MsoNormal\"><span style=\"font-size: 10pt;\" data-mce-style=\"font-size: 10pt;\">Disponíveis em couro, metal e strass, as clutches chegam em diversas cores e formatos para você combinar com o seu estilo do dia.</span></p><p class=\"MsoNormal\"><span style=\"font-size: 10pt;\" data-mce-style=\"font-size: 10pt;\"><strong>Mala e mochila Feminina</strong>: </span></p><p class=\"MsoNormal\"><span style=\"font-size: 10pt;\" data-mce-style=\"font-size: 10pt;\">Se você está em busca de bolsas estilosas para arrasar no look de viagem, não precisa mais procurar. Nossa seleção exclusiva de malas e mochilas une praticidade, organização e tendência em modelos super estilosos.</span></p><p class=\"MsoNormal\"><span style=\"font-size: 10pt;\" data-mce-style=\"font-size: 10pt;\">Das malas de mão às de rodinha, todas possuem o tamanho ideal para serem levadas na cabine do avião, garantindo que você tenha tudo o que precisa consigo. Explore nossos modelos, escolha o look perfeito e divirta-se.</span></p><p class=\"MsoNormal\"><br data-mce-bogus=\"1\"></p>",
+                "image": {
+                  "alt": "Tendência em bolsas femininas",
+                  "width": 531,
+                  "height": 484,
+                  "source": "https://data.decoassets.com/meiasola/a3bf16e0-ec0c-4905-8a88-05d154989010/9.jpeg"
+                },
+                "label": "/bolsas",
+                "title": "Tendência em bolsas femininas que trazem autenticidade!",
+                "maxCharacters": 870
+              }
+            ]
+          },
+          {
+            "__resolveType": "Footer - 01"
+          },
+          {
+            "__resolveType": "commerce/sections/Seo/SeoPLP.tsx",
+            "type": "website",
+            "jsonLD": {
+              "sort": "release:desc",
+              "count": 24,
+              "fuzzy": "automatic",
+              "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+              "selectedFacets": [],
+              "hideUnavailableItems": true
+            },
+            "titleTemplate": "%s",
+            "descriptionTemplate": "%s"
+          },
+          {
+            "__resolveType": "Analytics - GTM-NJRC6Q2"
+          }
+        ]
+      }
+    ],
+    "__resolveType": "website/flags/multivariate.ts"
+  },
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

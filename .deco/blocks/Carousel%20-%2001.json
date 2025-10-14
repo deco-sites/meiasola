@@ -4,12 +4,24 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/2397a7cc-acc5-4b63-bc80-299150f6aaed/banner_nova_colecao_2880x1320.jpg",
-        "imageMobile": "https://assets.decocache.com/meiasola/a7433165-a23c-41a0-96d7-ce3f78e75843/banner_nova_colecao_780x1320px.jpg"
+        "imageDesktop": "https://assets.decocache.com/meiasola/1172fd78-f23a-4a2f-98e7-f6bc34ca3c13/banner-site.png",
+        "imageMobile": "https://assets.decocache.com/meiasola/121412ca-2ec8-41a0-a9c9-ec53eefdd460/banner-app.png"
       },
       "button": {
         "text": "Confira",
+        "link": "/sale?sort=release%3Adesc&filter.productClusterIds=151&filter.price=31.96%3A299"
+      }
+    },
+    {
+      "button": {
+        "text": "Confira",
         "link": "/newin"
+      },
+      "type": "image",
+      "video": {},
+      "image": {
+        "imageMobile": "https://assets.decocache.com/meiasola/a7433165-a23c-41a0-96d7-ce3f78e75843/banner_nova_colecao_780x1320px.jpg",
+        "imageDesktop": "https://assets.decocache.com/meiasola/2397a7cc-acc5-4b63-bc80-299150f6aaed/banner_nova_colecao_2880x1320.jpg"
       }
     },
     {
@@ -39,37 +51,13 @@
     {
       "button": {
         "text": "Confira",
-        "link": "/bolsas?sort=price%3Aasc&filter.category-1=bolsas&filter.price=499%3A4444"
+        "link": "/m%7Cs"
       },
-      "type": "image",
-      "video": {},
-      "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/f292352c-e262-4b3c-8101-e5c8a6f86a82/BANNER-APP.png",
-        "imageDesktop": "https://assets.decocache.com/meiasola/3b31ccd9-3d66-4d0b-b702-b6d551f127b8/BANNER-DE-SITE-(1).png"
-      }
-    },
-    {
-      "button": {
-        "text": "Confira",
-        "link": "/sale?sort=release%3Adesc&filter.productClusterIds=151&filter.price=31.96%3A299"
-      },
-      "type": "image",
-      "video": {},
-      "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/1172fd78-f23a-4a2f-98e7-f6bc34ca3c13/banner-site.png",
-        "imageMobile": "https://assets.decocache.com/meiasola/121412ca-2ec8-41a0-a9c9-ec53eefdd460/banner-app.png"
-      }
-    },
-    {
       "type": "image",
       "video": {},
       "image": {
         "imageDesktop": "https://assets.decocache.com/meiasola/1ab73246-eff5-4444-9b86-96771e373c04/banners-summer.png",
         "imageMobile": "https://assets.decocache.com/meiasola/65a47695-31f8-4a34-8b0e-20f2931f88b4/2.png"
-      },
-      "button": {
-        "text": "Confira",
-        "link": "/m%7Cs"
       }
     },
     {
