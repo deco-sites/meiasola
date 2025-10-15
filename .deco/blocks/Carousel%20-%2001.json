@@ -15,6 +15,18 @@
     {
       "button": {
         "text": "Confira",
+        "link": "/carrano"
+      },
+      "type": "image",
+      "video": {},
+      "image": {
+        "imageMobile": "https://assets.decocache.com/meiasola/2ccbae10-58da-472d-b5bd-8e33755cb60c/banner-app-(2).png",
+        "imageDesktop": "https://assets.decocache.com/meiasola/94e5785c-3c1e-47f8-8745-288841871799/banner-site-(1).png"
+      }
+    },
+    {
+      "button": {
+        "text": "Confira",
         "link": "/sale?sort=release%3Adesc&filter.productClusterIds=151&filter.price=31.96%3A299"
       },
       "type": "image",
@@ -44,20 +56,20 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/905e74c5-94ef-44bf-8e43-4b4bcff419c3/banner-app.png",
-        "imageDesktop": "https://assets.decocache.com/meiasola/2b5f3353-00cf-4029-9209-c11edeae4296/banner-site.png"
+        "imageDesktop": "https://assets.decocache.com/meiasola/2b5f3353-00cf-4029-9209-c11edeae4296/banner-site.png",
+        "imageMobile": "https://assets.decocache.com/meiasola/905e74c5-94ef-44bf-8e43-4b4bcff419c3/banner-app.png"
       }
     },
     {
-      "button": {
-        "text": "Confira",
-        "link": "/sapatos?sort=price%3Adesc&filter.category-1=sapatos&filter.category-2=rasteiras&filter.category-2=papetes&filter.category-2=anabela&filter.price=99%3A499"
-      },
       "type": "image",
       "video": {},
       "image": {
         "imageDesktop": "https://assets.decocache.com/meiasola/18db947f-95c8-4b61-862f-0d3f14171212/banner-site.png",
         "imageMobile": "https://assets.decocache.com/meiasola/6f62f136-041d-42a1-8ace-4c5a6882f57c/banner-app.png"
+      },
+      "button": {
+        "text": "Confira",
+        "link": "/sapatos?sort=price%3Adesc&filter.category-1=sapatos&filter.category-2=rasteiras&filter.category-2=papetes&filter.category-2=anabela&filter.price=99%3A499"
       }
     },
     {
