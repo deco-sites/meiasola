@@ -1,8 +1,7 @@
 import Slider from "$store/components/ui/Slider.tsx";
 import SliderJS from "$store/islands/SliderJS.tsx";
 import { useId } from "$store/sdk/useId.ts";
-import { Picture, Source } from "apps/website/components/Picture.tsx";
-import { useDevice, useSetEarlyHints } from "@deco/deco/hooks";
+import Image from "apps/website/components/Image.tsx";
 
 interface ItemProps {
   /** @format rich-text */
@@ -69,12 +68,6 @@ interface BannerItem extends ItemProps {
 
 export interface Props {
   items: BannerItem[];
-
-  /**
-   * @description Check this option when this banner is the biggest image on the screen for image optimizations
-   */
-  preload?: boolean;
-
   /**
    * @title Autoplay interval
    * @description time (in seconds) to start the carousel autoplay
@@ -82,14 +75,12 @@ export interface Props {
   interval?: number;
 }
 
-function Item(props: BannerItem & { lcp?: boolean }) {
+function Item(props: BannerItem) {
   const instance = props.type === "image" ? props.image : props.video;
 
   if (!instance) return null;
 
   const { content, button, gradient, alt } = props;
-  const setEarlyHint = useSetEarlyHints();
-  const device = useDevice();
 
   return (
     <a
@@ -113,31 +104,26 @@ function Item(props: BannerItem & { lcp?: boolean }) {
       </div>
 
       {props.type === "image" ? (
-        <Picture class="w-full h-full max-h-screen" preload={props.lcp}>
-          <Source
-            src={props.image.imageMobile ?? ""}
-            width={780}
-            height={1320}
-            fetchPriority={props.lcp ? "high" : "auto"}
-            media="(max-width: 767px)"
-            setEarlyHint={device === "mobile" ? setEarlyHint : undefined}
-          />
-          <Source
+        <div class="w-full h-full max-h-screen">
+          <Image
+            alt={"Banner carousel"}
             src={props.image.imageDesktop ?? ""}
-            width={1903}
-            height={872}
-            fetchPriority={props.lcp ? "high" : "auto"}
-            media="(min-width: 768px)"
-            setEarlyHint={device === "desktop" ? setEarlyHint : undefined}
+            width={951}
+            height={436}
+            class="hidden tablet:block w-full h-full max-h-screen object-cover top-0 left-0 z-0"
+            loading="eager"
+            fetchPriority="high"
           />
-          <img
-            alt={alt}
-            loading={props.lcp ? "eager" : "lazy"}
-            fetchpriority={props.lcp ? "high" : "auto"}
-            src={props.image.imageMobile ?? props.image.imageDesktop ?? ""}
-            class="w-full h-full max-h-screen object-cover top-0 left-0 z-0"
+          <Image
+            alt={"Banner carousel"}
+            src={props.image.imageMobile ?? ""}
+            width={390}
+            height={660}
+            class="w-full h-full max-h-screen object-cover top-0 left-0 z-0 tablet:hidden"
+            loading="eager"
+            fetchPriority="high"
           />
-        </Picture>
+        </div>
       ) : props.type === "video" ? (
         <>
           <video
@@ -165,7 +151,7 @@ function Item(props: BannerItem & { lcp?: boolean }) {
 
       {gradient && (
         <div
-          class="w-full h-full absolute top-0 left-0 z-0"
+          class="w-full h-full absolute top-0 left-0 z-0 "
           style={{
             background:
               "linear-gradient(180deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.00) 100%)",
@@ -176,7 +162,7 @@ function Item(props: BannerItem & { lcp?: boolean }) {
   );
 }
 
-function BannerCarousel({ items, preload, interval }: Props) {
+function BannerCarousel({ items, interval }: Props) {
   const id = useId();
 
   return (
@@ -184,7 +170,7 @@ function BannerCarousel({ items, preload, interval }: Props) {
       <Slider class="carousel carousel-center w-full col-span-full row-span-full">
         {items?.map((item, index) => (
           <Slider.Item index={index} class="carousel-item w-full h-full">
-            <Item {...item} lcp={index === 0 && preload} />
+            <Item {...item} />
           </Slider.Item>
         ))}
       </Slider>

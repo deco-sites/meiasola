@@ -4,24 +4,24 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/94e5785c-3c1e-47f8-8745-288841871799/banner-site-(1).png",
-        "imageMobile": "https://assets.decocache.com/meiasola/2ccbae10-58da-472d-b5bd-8e33755cb60c/banner-app-(2).png"
+        "imageDesktop": "https://assets.decocache.com/meiasola/3a880c22-90f4-4872-935c-f692fe13e220/banner-site.png",
+        "imageMobile": "https://assets.decocache.com/meiasola/ed6e0645-0358-46c6-b7ed-e7d1355f93a7/banner-app-(1).png"
       },
       "button": {
         "text": "Confira",
-        "link": "/carrano"
+        "link": "/newin"
       }
     },
     {
       "button": {
         "text": "Confira",
-        "link": "/newin"
+        "link": "/carrano"
       },
       "type": "image",
       "video": {},
       "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/ed6e0645-0358-46c6-b7ed-e7d1355f93a7/banner-app-(1).png",
-        "imageDesktop": "https://assets.decocache.com/meiasola/3a880c22-90f4-4872-935c-f692fe13e220/banner-site.png"
+        "imageMobile": "https://assets.decocache.com/meiasola/2ccbae10-58da-472d-b5bd-8e33755cb60c/banner-app-(2).png",
+        "imageDesktop": "https://assets.decocache.com/meiasola/94e5785c-3c1e-47f8-8745-288841871799/banner-site-(1).png"
       }
     },
     {
