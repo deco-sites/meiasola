@@ -2,6 +2,7 @@ import Slider from "$store/components/ui/Slider.tsx";
 import SliderJS from "$store/islands/SliderJS.tsx";
 import { useId } from "$store/sdk/useId.ts";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
+import { useDevice, useSetEarlyHints } from "@deco/deco/hooks";
 
 interface ItemProps {
   /** @format rich-text */
@@ -68,6 +69,12 @@ interface BannerItem extends ItemProps {
 
 export interface Props {
   items: BannerItem[];
+
+  /**
+   * @description Check this option when this banner is the biggest image on the screen for image optimizations
+   */
+  preload?: boolean;
+
   /**
    * @title Autoplay interval
    * @description time (in seconds) to start the carousel autoplay
@@ -75,12 +82,14 @@ export interface Props {
   interval?: number;
 }
 
-function Item(props: BannerItem) {
+function Item(props: BannerItem & { lcp?: boolean }) {
   const instance = props.type === "image" ? props.image : props.video;
 
   if (!instance) return null;
 
   const { content, button, gradient, alt } = props;
+  const setEarlyHint = useSetEarlyHints();
+  const device = useDevice();
 
   return (
     <a
@@ -104,26 +113,29 @@ function Item(props: BannerItem) {
       </div>
 
       {props.type === "image" ? (
-        <Picture class="w-full h-full max-h-screen" preload={false}>
+        <Picture class="w-full h-full max-h-screen" preload={props.lcp}>
           <Source
             src={props.image.imageMobile ?? ""}
             width={780}
             height={1320}
-            fetchPriority="high"
+            fetchPriority={props.lcp ? "high" : "auto"}
             media="(max-width: 767px)"
+            setEarlyHint={device === "mobile" ? setEarlyHint : undefined}
           />
           <Source
-            src={props.image.imageDesktop ?? props.image.imageMobile ?? ""}
+            src={props.image.imageDesktop ?? ""}
             width={1903}
             height={872}
-            fetchPriority="high"
+            fetchPriority={props.lcp ? "high" : "auto"}
             media="(min-width: 768px)"
+            setEarlyHint={device === "desktop" ? setEarlyHint : undefined}
           />
           <img
             alt={alt}
-            src={props.image.imageMobile}
+            loading={props.lcp ? "eager" : "lazy"}
+            fetchpriority={props.lcp ? "high" : "auto"}
+            src={props.image.imageMobile ?? props.image.imageDesktop ?? ""}
             class="w-full h-full max-h-screen object-cover top-0 left-0 z-0"
-            loading="lazy"
           />
         </Picture>
       ) : props.type === "video" ? (
@@ -153,7 +165,7 @@ function Item(props: BannerItem) {
 
       {gradient && (
         <div
-          class="w-full h-full absolute top-0 left-0 z-0 "
+          class="w-full h-full absolute top-0 left-0 z-0"
           style={{
             background:
               "linear-gradient(180deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.00) 100%)",
@@ -164,7 +176,7 @@ function Item(props: BannerItem) {
   );
 }
 
-function BannerCarousel({ items, interval }: Props) {
+function BannerCarousel({ items, preload, interval }: Props) {
   const id = useId();
 
   return (
@@ -172,7 +184,7 @@ function BannerCarousel({ items, interval }: Props) {
       <Slider class="carousel carousel-center w-full col-span-full row-span-full">
         {items?.map((item, index) => (
           <Slider.Item index={index} class="carousel-item w-full h-full">
-            <Item {...item} />
+            <Item {...item} lcp={index === 0 && preload} />
           </Slider.Item>
         ))}
       </Slider>
