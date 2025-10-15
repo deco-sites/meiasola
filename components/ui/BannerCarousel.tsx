@@ -166,36 +166,56 @@ function BannerCarousel({ items, interval }: Props) {
   const id = useId();
 
   return (
-    <div id={id} class="relative w-full h-fit">
-      <Slider class="carousel carousel-center w-full col-span-full row-span-full">
-        {items?.map((item, index) => (
-          <Slider.Item index={index} class="carousel-item w-full h-full">
-            <Item {...item} />
-          </Slider.Item>
-        ))}
-      </Slider>
-
-      <div class="absolute left-0 top-0 h-full w-[15%] flex items-center justify-center z-20">
-        <Slider.PrevButton />
-      </div>
-      <div class="absolute right-0 top-0 h-full w-[15%] flex items-center justify-center z-20">
-        <Slider.NextButton />
-      </div>
-
-      {items.length > 1 && (
-        <div class="flex gap-3 tablet:gap-7 absolute bottom-3 tablet:bottom-12 left-1/2 -translate-x-1/2 z-10">
-          {items.map((image, index) => (
-            <Slider.Dot index={index}>
-              <span class="flex h-3 w-3 items-center justify-center">
-                <span class="block h-[6px] w-[6px] rounded-full bg-grey-2 group-disabled:bg-white" />
-              </span>
-            </Slider.Dot>
+    <>
+      <div id={id} class="relative w-full h-fit">
+        <Slider class="carousel carousel-center w-full col-span-full row-span-full">
+          {items?.map((item, index) => (
+            <Slider.Item index={index} class="carousel-item w-full h-full">
+              <Item {...item} />
+            </Slider.Item>
           ))}
-        </div>
-      )}
+        </Slider>
 
-      <SliderJS rootId={id} interval={interval && interval * 1e3} infinite />
-    </div>
+        <div class="absolute left-0 top-0 h-full w-[15%] flex items-center justify-center z-20">
+          <Slider.PrevButton />
+        </div>
+        <div class="absolute right-0 top-0 h-full w-[15%] flex items-center justify-center z-20">
+          <Slider.NextButton />
+        </div>
+
+        {items.length > 1 && (
+          <div class="flex gap-3 tablet:gap-7 absolute bottom-3 tablet:bottom-12 left-1/2 -translate-x-1/2 z-10">
+            {items.map((image, index) => (
+              <Slider.Dot index={index}>
+                <span class="flex h-3 w-3 items-center justify-center">
+                  <span class="block h-[6px] w-[6px] rounded-full bg-grey-2 group-disabled:bg-white" />
+                </span>
+              </Slider.Dot>
+            ))}
+          </div>
+        )}
+
+        <SliderJS rootId={id} interval={interval && interval * 1e3} infinite />
+      </div>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+          (function() {
+            var topbar = document.querySelector(".header-alert-top-bar");
+
+            if (!topbar) return;
+
+            const topbarHeight = topbar.offsetHeight;
+            const banner = document.getElementById("${id}")?.firstElementChild;
+
+            if (!banner) return;
+
+            banner.style.marginTop = (topbarHeight - 1) + "px";
+          })();
+        `,
+        }}
+      />
+    </>
   );
 }
 

@@ -33,13 +33,13 @@ function Alert({ items, interval }: Props) {
   if (visibleItems.length === 0) return null;
 
   return (
-    <div id={id} class="w-full relative">
+    <div id={id} class="flex w-full relative header-alert-top-bar">
       <Slider class="carousel carousel-center w-full col-span-full row-span-full">
         {visibleItems.map((item, index) => (
           <Slider.Item index={index} class="carousel-item w-full h-full">
             <div
               style={{ background: item.background }}
-              class="text-white text-small flex justify-center items-center w-full h-[43px]"
+              class="text-white text-small flex justify-center items-center w-full min-h-[43px] p-0.5"
               dangerouslySetInnerHTML={{ __html: item.text }}
             />
           </Slider.Item>
