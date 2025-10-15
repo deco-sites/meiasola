@@ -168,7 +168,7 @@
       "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/7ec121e4-5cfe-4b7b-b942-d1ed4493803d"
     }
   ],
-  "preload": true,
+  "preload": false,
   "__resolveType": "site/sections/Images/Carousel.tsx",
   "interval": 7
 }
