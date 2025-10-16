@@ -15,6 +15,18 @@
     {
       "button": {
         "text": "Confira",
+        "link": "/flashsale"
+      },
+      "type": "image",
+      "video": {},
+      "image": {
+        "imageMobile": "https://assets.decocache.com/meiasola/eadca98b-938f-4d5d-9fb4-602121f055f5/banner-app-(3).png",
+        "imageDesktop": "https://assets.decocache.com/meiasola/55fe45c9-992e-4a14-a15d-6db190507d0a/banner-site-(2).png"
+      }
+    },
+    {
+      "button": {
+        "text": "Confira",
         "link": "/carrano"
       },
       "type": "image",
@@ -44,20 +56,20 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/a7433165-a23c-41a0-96d7-ce3f78e75843/banner_nova_colecao_780x1320px.jpg",
-        "imageDesktop": "https://assets.decocache.com/meiasola/2397a7cc-acc5-4b63-bc80-299150f6aaed/banner_nova_colecao_2880x1320.jpg"
+        "imageDesktop": "https://assets.decocache.com/meiasola/2397a7cc-acc5-4b63-bc80-299150f6aaed/banner_nova_colecao_2880x1320.jpg",
+        "imageMobile": "https://assets.decocache.com/meiasola/a7433165-a23c-41a0-96d7-ce3f78e75843/banner_nova_colecao_780x1320px.jpg"
       }
     },
     {
-      "button": {
-        "text": "Confira",
-        "link": "/newin?filter.price=27.96%3A499"
-      },
       "type": "image",
       "video": {},
       "image": {
         "imageDesktop": "https://assets.decocache.com/meiasola/2b5f3353-00cf-4029-9209-c11edeae4296/banner-site.png",
         "imageMobile": "https://assets.decocache.com/meiasola/905e74c5-94ef-44bf-8e43-4b4bcff419c3/banner-app.png"
+      },
+      "button": {
+        "text": "Confira",
+        "link": "/newin?filter.price=27.96%3A499"
       }
     },
     {
