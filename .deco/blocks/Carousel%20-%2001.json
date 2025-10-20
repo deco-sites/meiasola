@@ -143,6 +143,17 @@
         "text": "Confira",
         "link": "/vicenza"
       }
+    },
+    {
+      "type": "image",
+      "video": {},
+      "image": {
+        "imageDesktop": "https://assets.decocache.com/meiasola/cb9ff2de-ae5e-40d2-978a-bcf2e88ec687/banner-site.png",
+        "imageMobile": "https://assets.decocache.com/meiasola/85c2d95b-fd33-481a-9126-5afecf9277de/banner-app.png"
+      },
+      "button": {
+        "link": "/newin"
+      }
     }
   ],
   "images": [
