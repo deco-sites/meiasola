@@ -4,12 +4,23 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/55fe45c9-992e-4a14-a15d-6db190507d0a/banner-site-(2).png",
-        "imageMobile": "https://assets.decocache.com/meiasola/eadca98b-938f-4d5d-9fb4-602121f055f5/banner-app-(3).png"
+        "imageDesktop": "https://assets.decocache.com/meiasola/cb9ff2de-ae5e-40d2-978a-bcf2e88ec687/banner-site.png",
+        "imageMobile": "https://assets.decocache.com/meiasola/85c2d95b-fd33-481a-9126-5afecf9277de/banner-app.png"
       },
+      "button": {
+        "link": "/newin"
+      }
+    },
+    {
       "button": {
         "text": "Confira",
         "link": "/flashsale"
+      },
+      "type": "image",
+      "video": {},
+      "image": {
+        "imageMobile": "https://assets.decocache.com/meiasola/eadca98b-938f-4d5d-9fb4-602121f055f5/banner-app-(3).png",
+        "imageDesktop": "https://assets.decocache.com/meiasola/55fe45c9-992e-4a14-a15d-6db190507d0a/banner-site-(2).png"
       }
     },
     {
@@ -44,20 +55,20 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/905e74c5-94ef-44bf-8e43-4b4bcff419c3/banner-app.png",
-        "imageDesktop": "https://assets.decocache.com/meiasola/2b5f3353-00cf-4029-9209-c11edeae4296/banner-site.png"
+        "imageDesktop": "https://assets.decocache.com/meiasola/2b5f3353-00cf-4029-9209-c11edeae4296/banner-site.png",
+        "imageMobile": "https://assets.decocache.com/meiasola/905e74c5-94ef-44bf-8e43-4b4bcff419c3/banner-app.png"
       }
     },
     {
-      "button": {
-        "text": "Confira",
-        "link": "/sapatos?sort=price%3Adesc&filter.category-1=sapatos&filter.category-2=rasteiras&filter.category-2=papetes&filter.category-2=anabela&filter.price=99%3A499"
-      },
       "type": "image",
       "video": {},
       "image": {
         "imageDesktop": "https://assets.decocache.com/meiasola/18db947f-95c8-4b61-862f-0d3f14171212/banner-site.png",
         "imageMobile": "https://assets.decocache.com/meiasola/6f62f136-041d-42a1-8ace-4c5a6882f57c/banner-app.png"
+      },
+      "button": {
+        "text": "Confira",
+        "link": "/sapatos?sort=price%3Adesc&filter.category-1=sapatos&filter.category-2=rasteiras&filter.category-2=papetes&filter.category-2=anabela&filter.price=99%3A499"
       }
     },
     {
@@ -140,19 +151,8 @@
         "imageMobile": "https://assets.decocache.com/meiasola/34901b21-faaa-4112-8d89-8db759955e45/banner_lemco_vcz_780x1320px.jpg"
       },
       "button": {
-        "text": "Confira",
-        "link": "/vicenza"
-      }
-    },
-    {
-      "type": "image",
-      "video": {},
-      "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/cb9ff2de-ae5e-40d2-978a-bcf2e88ec687/banner-site.png",
-        "imageMobile": "https://assets.decocache.com/meiasola/85c2d95b-fd33-481a-9126-5afecf9277de/banner-app.png"
-      },
-      "button": {
-        "link": "/newin"
+        "link": "/vicenza",
+        "text": "Confira"
       }
     }
   ],
