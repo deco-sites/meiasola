@@ -8,7 +8,8 @@
         "imageMobile": "https://assets.decocache.com/meiasola/85c2d95b-fd33-481a-9126-5afecf9277de/banner-app.png"
       },
       "button": {
-        "link": "/newin"
+        "link": "/newin",
+        "text": "Confira"
       }
     },
     {
