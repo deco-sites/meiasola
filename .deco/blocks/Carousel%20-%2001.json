@@ -20,8 +20,20 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/eadca98b-938f-4d5d-9fb4-602121f055f5/banner-app-(3).png",
-        "imageDesktop": "https://assets.decocache.com/meiasola/55fe45c9-992e-4a14-a15d-6db190507d0a/banner-site-(2).png"
+        "imageDesktop": "https://assets.decocache.com/meiasola/9b1fde49-2cd6-47d3-9ab1-93581b328428/banner-site-(1).png",
+        "imageMobile": "https://assets.decocache.com/meiasola/ea256a6b-c19d-47e3-8ab4-418796d41fb6/banner-app-(1).png"
+      }
+    },
+    {
+      "button": {
+        "text": "Confira",
+        "link": "380?map=productClusterIds&O=&sort=release%3Adesc&page"
+      },
+      "type": "image",
+      "video": {},
+      "image": {
+        "imageMobile": "https://assets.decocache.com/meiasola/1d908d43-7ba1-4c39-b4f6-e3e451e657f7/banner-app.png",
+        "imageDesktop": "https://assets.decocache.com/meiasola/c4ed83d4-22d9-492a-8434-52911deae836/banner-site.png"
       }
     },
     {
@@ -44,20 +56,20 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/121412ca-2ec8-41a0-a9c9-ec53eefdd460/banner-app.png",
-        "imageDesktop": "https://assets.decocache.com/meiasola/1172fd78-f23a-4a2f-98e7-f6bc34ca3c13/banner-site.png"
+        "imageDesktop": "https://assets.decocache.com/meiasola/1172fd78-f23a-4a2f-98e7-f6bc34ca3c13/banner-site.png",
+        "imageMobile": "https://assets.decocache.com/meiasola/121412ca-2ec8-41a0-a9c9-ec53eefdd460/banner-app.png"
       }
     },
     {
-      "button": {
-        "text": "Confira",
-        "link": "/newin?filter.price=27.96%3A499"
-      },
       "type": "image",
       "video": {},
       "image": {
         "imageDesktop": "https://assets.decocache.com/meiasola/2b5f3353-00cf-4029-9209-c11edeae4296/banner-site.png",
         "imageMobile": "https://assets.decocache.com/meiasola/905e74c5-94ef-44bf-8e43-4b4bcff419c3/banner-app.png"
+      },
+      "button": {
+        "text": "Confira",
+        "link": "/newin?filter.price=27.96%3A499"
       }
     },
     {
@@ -76,18 +88,6 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/2397a7cc-acc5-4b63-bc80-299150f6aaed/banner_nova_colecao_2880x1320.jpg",
-        "imageMobile": "https://assets.decocache.com/meiasola/a7433165-a23c-41a0-96d7-ce3f78e75843/banner_nova_colecao_780x1320px.jpg"
-      },
-      "button": {
-        "text": "Confira",
-        "link": "/newin"
-      }
-    },
-    {
-      "type": "image",
-      "video": {},
-      "image": {
         "imageDesktop": "https://assets.decocache.com/meiasola/94e5785c-3c1e-47f8-8745-288841871799/banner-site-(1).png",
         "imageMobile": "https://assets.decocache.com/meiasola/2ccbae10-58da-472d-b5bd-8e33755cb60c/banner-app-(2).png"
       },
@@ -100,8 +100,8 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/a0752fe6-6490-41d5-b6f5-20bc56241a87/IMG_9256.jpeg",
-        "imageMobile": "https://assets.decocache.com/meiasola/fa054565-705c-4934-a783-7e8d95baeafd/IMG_9257.jpeg"
+        "imageDesktop": "https://assets.decocache.com/meiasola/c064e45e-fbb8-4814-9c8b-1a2ba68915fe/banner_zz_lenny_niemeyer_2880x1320.jpg",
+        "imageMobile": "https://assets.decocache.com/meiasola/e201e5e0-f143-4a5e-919f-5400b31a539a/banner_sch_lenny_niemeyer_780x1320px.jpg"
       },
       "button": {
         "text": "Confira",
@@ -112,12 +112,12 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/809ba962-576a-4d20-a707-a6a006fcbc39/banner_nova_colecao_sch_2880x1320.jpg",
-        "imageMobile": "https://assets.decocache.com/meiasola/cea446dd-ac70-464b-a588-fb419b44ecb4/banner_nova_colecao_sch_780x1320px.jpg"
+        "imageDesktop": "https://assets.decocache.com/meiasola/703d4724-860c-4a51-b1a0-73486f50fc53/banner_sch_nati_vozza_2880x1320.jpg",
+        "imageMobile": "https://assets.decocache.com/meiasola/a3e49675-b49a-4df1-bd2e-e8e8e4923447/banner_sch_nati_vozza780x1320px.jpg"
       },
       "button": {
         "text": "Confira",
-        "link": "/schutz"
+        "link": "/381?map=productClusterIds&O=&sort=release%3Adesc&page"
       }
     },
     {
@@ -136,12 +136,24 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/ef1369c5-b4b4-4bf9-b088-7208bf3fa34a/banner-site-frete-gratis.png",
-        "imageMobile": "https://assets.decocache.com/meiasola/218d59c4-5395-4fa7-84fd-709aeeb4dd5d/banner-app.png"
+        "imageDesktop": "https://assets.decocache.com/meiasola/2397a7cc-acc5-4b63-bc80-299150f6aaed/banner_nova_colecao_2880x1320.jpg",
+        "imageMobile": "https://assets.decocache.com/meiasola/a7433165-a23c-41a0-96d7-ce3f78e75843/banner_nova_colecao_780x1320px.jpg"
       },
       "button": {
         "text": "Confira",
         "link": "/newin"
+      }
+    },
+    {
+      "type": "image",
+      "video": {},
+      "image": {
+        "imageDesktop": "https://assets.decocache.com/meiasola/ef1369c5-b4b4-4bf9-b088-7208bf3fa34a/banner-site-frete-gratis.png",
+        "imageMobile": "https://assets.decocache.com/meiasola/218d59c4-5395-4fa7-84fd-709aeeb4dd5d/banner-app.png"
+      },
+      "button": {
+        "link": "/newin",
+        "text": "Confira"
       }
     },
     {
