@@ -46,6 +46,15 @@ export default function InfiniteScrollContainer({
         ];
       }
 
+      if (url.pathname.includes("/flashsale")) {
+        selectedFacets = [
+          {
+            key: "productClusterIds",
+            value: "379",
+          },
+        ];
+      }
+
       if (url.pathname.includes("/ms")) {
         selectedFacets = [
           {
