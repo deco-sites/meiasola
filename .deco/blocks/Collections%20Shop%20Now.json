@@ -2,24 +2,24 @@
   "variant": "two",
   "collections": [
     {
-      "link": "/sapatos?filter.category-1=sapatos&filter.category-2=mocassim",
+      "link": "/schutz",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/1f5831dc-8647-4c5d-a3a8-9874f974ed33/LET-THE-SUN-IN.png",
+      "image": "https://assets.decocache.com/meiasola/dc4bf117-6e87-4b41-b416-4d61de72335e/POST-FEED.jpeg",
       "video": "https://data.decoassets.com/meiasola/47d32975-2ab5-441c-ba41-899d239df236/confira-aqui.mp4",
-      "label": "LET THE SUN IN"
+      "label": "schutz"
     },
     {
       "link": "/arezzo",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/7cc54930-5fce-4d96-bcd4-cffeae9b51d4/POR-..png",
-      "label": "versão em tramas 26",
+      "image": "https://assets.decocache.com/meiasola/aa7dc719-183c-4ddf-a529-3f2638688eb0/ARZ_26_V_CAP_LENNY_POSTS_LOGO20.jpeg",
+      "label": "arezzo",
       "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f1853648-79a2-4466-8ae1-6be2f52c8f58/AREZZO---Summer-Hits-2_9x16-(1).mp4"
     },
     {
-      "link": "/sapatos?sort=release%3Adesc&filter.category-1=sapatos&filter.category-2=tenis&filter.brand=anacapri",
+      "link": "/anacapri",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/6d2623ab-b8a4-4fd6-b9dc-d29c1e9f8278/13.-30.09.png",
-      "label": "verão 26",
+      "image": "https://assets.decocache.com/meiasola/ba08980c-d342-47d3-aa57-763b00230868/13.-12.11.png",
+      "label": "Ancapri",
       "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f1853648-79a2-4466-8ae1-6be2f52c8f58/AREZZO---Summer-Hits-2_9x16-(1).mp4"
     }
   ],
