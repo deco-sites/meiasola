@@ -239,7 +239,7 @@ export function Images({
                     ></iframe>
                   ) : (
                     <Image
-                      src={image.url}
+                      src={encodeURI(image.url)}
                       width={400}
                       height={400}
                       fit="contain"
@@ -276,7 +276,7 @@ export function Images({
                           <Image
                             // style={{ aspectRatio: `${1800} / ${1800}` }}
                             fit="contain"
-                            src={image.url!}
+                            src={encodeURI(image.url)!}
                             alt={image.alternateName}
                             width={900}
                             height={900}
@@ -305,7 +305,7 @@ export function Images({
                                 class="group-disabled:border-base-300  rounded-none flex-1"
                                 width={85}
                                 height={125}
-                                src={img.url!}
+                                src={encodeURI(img.url)!}
                                 alt={img.alternateName}
                                 fit="contain"
                               />
@@ -354,7 +354,7 @@ export function Images({
                     ></iframe>
                   ) : (
                     <Image
-                      src={image.url}
+                      src={encodeURI(image.url)}
                       width={400}
                       height={400}
                       fit="contain"
@@ -401,7 +401,7 @@ export function Images({
                     <Image
                       // style={{ aspectRatio: `${1800} / ${1800}` }}
                       fit="contain"
-                      src={image.url!}
+                      src={encodeURI(image.url)!}
                       alt={image.alternateName}
                       width={900}
                       height={900}
@@ -430,7 +430,7 @@ export function Images({
                           class="group-disabled:border-base-300  rounded-none flex-1"
                           width={85}
                           height={125}
-                          src={img.url!}
+                          src={encodeURI(img.url!)}
                           alt={img.alternateName}
                           fit="contain"
                         />
