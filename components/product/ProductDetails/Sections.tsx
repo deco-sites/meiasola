@@ -174,6 +174,11 @@ export function Images({
 
   const id = useId();
 
+  // Function to clean URL by removing "§" character
+  const cleanImageUrl = (url: string) => {
+    return url.replace(/§/g, "");
+  };
+
   const EmbedVideoUrl = (url: string) => {
     if (url.includes("vimeo")) {
       const videoId = url.split("vimeo.com/").pop();
@@ -234,12 +239,12 @@ export function Images({
                       frameborder="0"
                       allow="autoplay; fullscreen"
                       style={{ width: "100%", height: "100%" }}
-                      allowfullscreen
+                      allowFullScreen
                       muted
                     ></iframe>
                   ) : (
                     <Image
-                      src={encodeURI(image.url)}
+                      src={cleanImageUrl(image.url || "")}
                       width={400}
                       height={400}
                       fit="contain"
@@ -276,7 +281,7 @@ export function Images({
                           <Image
                             // style={{ aspectRatio: `${1800} / ${1800}` }}
                             fit="contain"
-                            src={encodeURI(image.url)!}
+                            src={cleanImageUrl(image.url || "")}
                             alt={image.alternateName}
                             width={900}
                             height={900}
@@ -305,7 +310,7 @@ export function Images({
                                 class="group-disabled:border-base-300  rounded-none flex-1"
                                 width={85}
                                 height={125}
-                                src={encodeURI(img.url)!}
+                                src={cleanImageUrl(img.url || "")}
                                 alt={img.alternateName}
                                 fit="contain"
                               />
@@ -349,12 +354,12 @@ export function Images({
                         height: "100%",
                         aspectRatio: "1",
                       }}
-                      allowfullscreen
+                      allowFullScreen
                       muted
                     ></iframe>
                   ) : (
                     <Image
-                      src={encodeURI(image.url)}
+                      src={cleanImageUrl(image.url || "")}
                       width={400}
                       height={400}
                       fit="contain"
@@ -371,7 +376,7 @@ export function Images({
         <SliderJS rootId={id + "-mobile"} />
         {!justOneImage && (
           <div class="flex gap-8 absolute bottom-6 left-1/2 -translate-x-1/2">
-            {imagesList.map((image, index) => (
+            {imagesList.map((_image, index) => (
               <Slider.Dot index={index}>
                 <span class="block h-[6px] w-[6px] rounded-full bg-grey-2 group-disabled:bg-black" />
               </Slider.Dot>
@@ -401,7 +406,7 @@ export function Images({
                     <Image
                       // style={{ aspectRatio: `${1800} / ${1800}` }}
                       fit="contain"
-                      src={encodeURI(image.url)!}
+                      src={cleanImageUrl(image.url || "")}
                       alt={image.alternateName}
                       width={900}
                       height={900}
@@ -430,7 +435,7 @@ export function Images({
                           class="group-disabled:border-base-300  rounded-none flex-1"
                           width={85}
                           height={125}
-                          src={encodeURI(img.url!)}
+                          src={cleanImageUrl(img.url || "")}
                           alt={img.alternateName}
                           fit="contain"
                         />
@@ -585,7 +590,9 @@ export function Colors({
 
       <ul class="flex flex-wrap gap-4">
         {colorVariants?.map((variant) => {
-          const [image] = variant.image;
+          const image = variant.image?.[0];
+
+          if (!image) return null;
 
           return (
             <li key={variant.name}>
@@ -654,7 +661,7 @@ export function Actions({
           discount={discount}
           seller={seller}
         />
-        <BuyWithWhatsappButton productURL={product.url} />
+        <BuyWithWhatsappButton productURL={product.url || ""} />
       </div>
     );
 
