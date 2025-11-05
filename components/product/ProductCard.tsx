@@ -37,6 +37,10 @@ function ProductCard({ product, preload, itemListName, small }: Props) {
 
   const discount = price && listPrice ? listPrice - price : 0;
 
+  const cleanImageUrl = (url: string) => {
+    return url.replace(/§/g, "");
+  };
+
   let availableUrl = url;
 
   // make this to open product with an available size
@@ -124,7 +128,7 @@ function ProductCard({ product, preload, itemListName, small }: Props) {
           fit="contain"
           loading={preload ? "eager" : "lazy"}
           fetchPriority={preload ? "high" : "auto"}
-          src={front.url!}
+          src={cleanImageUrl(front.url!)}
           alt={front.alternateName ?? "Primeira imagem do produto"}
           className="mix-blend-multiply block group-hover/product-card:hidden"
           sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 264px"
@@ -136,7 +140,7 @@ function ProductCard({ product, preload, itemListName, small }: Props) {
           fit="contain"
           loading="lazy"
           fetchPriority="low"
-          src={back?.url ?? front.url!}
+          src={back?.url ? cleanImageUrl(back.url) : cleanImageUrl(front.url!)}
           alt={
             back?.alternateName ??
             front.alternateName ??

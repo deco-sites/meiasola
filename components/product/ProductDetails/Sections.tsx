@@ -584,6 +584,10 @@ export function Colors({
 }) {
   if (!colorVariants || colorVariants.length < 2) return null;
 
+  const cleanImageUrl = (url: string) => {
+    return url.replace(/§/g, "");
+  };
+
   return (
     <div class="flex flex-col gap-4">
       <h4 class="font-bold text-body">Outras Cores:</h4>
@@ -607,7 +611,7 @@ export function Colors({
               >
                 <Image
                   alt={`Imagem da variante: ${variant.name}`}
-                  src={image.url!}
+                  src={cleanImageUrl(image.url || "")}
                   width={64}
                   height={72}
                   loading="lazy"
