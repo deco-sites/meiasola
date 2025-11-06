@@ -4,12 +4,24 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/4f74e8cb-17e9-41c7-adc0-59f3ad386e5d/az_desktop_2880x1320-copiar.jpg",
-        "imageMobile": "https://assets.decocache.com/meiasola/cf2b68a4-efcc-4dda-b4cb-0d30a73123ff/todos_780x1320px_flat_0004_az.png"
+        "imageDesktop": "https://assets.decocache.com/meiasola/5ef1025c-acb7-4ae0-984f-ba48536df098/esquentablack_desktop_2880x1320-copiar.jpg",
+        "imageMobile": "https://assets.decocache.com/meiasola/f93cd07b-0707-4854-a6b3-732c0909ba75/todos_780x1320px_flat_0001_black.png"
       },
       "button": {
-        "link": "/arezzo",
+        "link": "/sale",
         "text": "Confira"
+      }
+    },
+    {
+      "button": {
+        "text": "Confira",
+        "link": "/arezzo"
+      },
+      "type": "image",
+      "video": {},
+      "image": {
+        "imageDesktop": "https://assets.decocache.com/meiasola/4f74e8cb-17e9-41c7-adc0-59f3ad386e5d/az_desktop_2880x1320-copiar.jpg",
+        "imageMobile": "https://assets.decocache.com/meiasola/cf2b68a4-efcc-4dda-b4cb-0d30a73123ff/todos_780x1320px_flat_0004_az.png"
       }
     },
     {
@@ -20,14 +32,14 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/703d4724-860c-4a51-b1a0-73486f50fc53/banner_sch_nati_vozza_2880x1320.jpg",
-        "imageMobile": "https://assets.decocache.com/meiasola/a3e49675-b49a-4df1-bd2e-e8e8e4923447/banner_sch_nati_vozza780x1320px.jpg"
+        "imageMobile": "https://assets.decocache.com/meiasola/a3e49675-b49a-4df1-bd2e-e8e8e4923447/banner_sch_nati_vozza780x1320px.jpg",
+        "imageDesktop": "https://assets.decocache.com/meiasola/703d4724-860c-4a51-b1a0-73486f50fc53/banner_sch_nati_vozza_2880x1320.jpg"
       }
     },
     {
       "button": {
-        "text": "Confira",
-        "link": "/anacapri"
+        "link": "/anacapri",
+        "text": "Confira"
       },
       "type": "image",
       "video": {},
@@ -44,20 +56,20 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/d9277366-a2fd-4ea5-ae51-286a461a4372/todos_780x1320px_flat_0006_mls.png",
-        "imageDesktop": "https://assets.decocache.com/meiasola/8572af20-7cec-4b51-8278-bb76d0f5ee06/mls_desktop_2880x1320-copiar.jpg"
+        "imageDesktop": "https://assets.decocache.com/meiasola/8572af20-7cec-4b51-8278-bb76d0f5ee06/mls_desktop_2880x1320-copiar.jpg",
+        "imageMobile": "https://assets.decocache.com/meiasola/d9277366-a2fd-4ea5-ae51-286a461a4372/todos_780x1320px_flat_0006_mls.png"
       }
     },
     {
-      "button": {
-        "link": "/vicenza",
-        "text": "Confira"
-      },
       "type": "image",
       "video": {},
       "image": {
         "imageDesktop": "https://assets.decocache.com/meiasola/b96c9c3f-d329-4f0c-a7ce-05fe3c8b8b88/vcz_desktop_2880x1320-copiar.jpg",
         "imageMobile": "https://assets.decocache.com/meiasola/4297aa01-dd66-4b3e-8aad-ef119fe0f033/todos_780x1320px_flat_0007_vcz.png"
+      },
+      "button": {
+        "text": "Confira",
+        "link": "/vicenza"
       }
     },
     {
@@ -68,8 +80,8 @@
         "imageMobile": "https://assets.decocache.com/meiasola/a665dacc-5c51-4d72-80d7-f7a2e3155bfb/todos_780x1320px_flat_0000_meia-sola.png"
       },
       "button": {
-        "text": "Confira",
-        "link": "/newin"
+        "link": "/newin",
+        "text": "Confira"
       }
     },
     {
@@ -81,18 +93,6 @@
       },
       "button": {
         "link": "/bolsas",
-        "text": "Confira"
-      }
-    },
-    {
-      "type": "image",
-      "video": {},
-      "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/5ef1025c-acb7-4ae0-984f-ba48536df098/esquentablack_desktop_2880x1320-copiar.jpg",
-        "imageMobile": "https://assets.decocache.com/meiasola/f93cd07b-0707-4854-a6b3-732c0909ba75/todos_780x1320px_flat_0001_black.png"
-      },
-      "button": {
-        "link": "/sale",
         "text": "Confira"
       }
     },
