@@ -253,7 +253,7 @@
             "enableInfiniteScroll": false,
             "isWishlistPage": false,
             "pageOptionalTitle": "Black",
-            "pageOptionalDescription": "Começou o Esquenta Black Friday! Descontos de até 70% nas suas marcas favoritas!"
+            "pageOptionalDescription": "Começou o Esquenta Black Friday! Descontos de até 50% nas suas marcas favoritas!"
           },
           {
             "__resolveType": "site/sections/Category/CategoryTextReadMore.tsx",
