@@ -157,7 +157,8 @@
                 ],
                 "hideUnavailableItems": true,
                 "useCollectionName": false,
-                "count": 100
+                "count": 100,
+                "simulationBehavior": "default"
               },
               "extensions": [
                 {
@@ -249,7 +250,7 @@
               ],
               "__resolveType": "commerce/loaders/product/productListingPage.ts"
             },
-            "enableInfiniteScroll": true,
+            "enableInfiniteScroll": false,
             "isWishlistPage": false,
             "pageOptionalTitle": "Black",
             "pageOptionalDescription": "Começou o Esquenta Black Friday! Descontos de até 70% nas suas marcas favoritas!"
