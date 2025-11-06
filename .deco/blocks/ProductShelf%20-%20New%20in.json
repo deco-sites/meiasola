@@ -8,6 +8,6 @@
     "__resolveType": "vtex/loaders/legacy/productList.ts"
   },
   "seeMoreUrl": "/newin",
-  "description": "As novidades que você precisa ver em até 8x sem juros",
+  "description": "As novidades que você precisa ver em até 10x sem juros",
   "__resolveType": "site/sections/Product/ProductShelf.tsx"
 }
