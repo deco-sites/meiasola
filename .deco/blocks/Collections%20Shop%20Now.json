@@ -2,24 +2,24 @@
   "variant": "two",
   "collections": [
     {
-      "link": "/schutz",
+      "link": "/sale?sort=release%3Adesc&filter.productClusterIds=151&filter.price=299%3A599",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/dc4bf117-6e87-4b41-b416-4d61de72335e/POST-FEED.jpeg",
+      "image": "https://assets.decocache.com/meiasola/42977ebe-bfa5-43df-a7f1-62f2bd27a489/MS_299_ecom_secundario_560x425px.jpg",
       "video": "https://data.decoassets.com/meiasola/47d32975-2ab5-441c-ba41-899d239df236/confira-aqui.mp4",
-      "label": "schutz"
+      "label": "Esquenta"
     },
     {
-      "link": "/arezzo",
+      "link": "/sale?sort=release%3Adesc&filter.productClusterIds=151&filter.price=599%3A1695",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/aa7dc719-183c-4ddf-a529-3f2638688eb0/ARZ_26_V_CAP_LENNY_POSTS_LOGO20.jpeg",
-      "label": "arezzo",
+      "image": "https://assets.decocache.com/meiasola/177efcdf-a813-4506-acdb-5b0ffe735300/MS_599_ecom_secundario_560x425px.jpg",
+      "label": "Black",
       "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f1853648-79a2-4466-8ae1-6be2f52c8f58/AREZZO---Summer-Hits-2_9x16-(1).mp4"
     },
     {
-      "link": "/anacapri",
+      "link": "/esquentablack?sort=release%3Adesc&filter.productClusterIds=383&filter.price=899%3A9999",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/ba08980c-d342-47d3-aa57-763b00230868/13.-12.11.png",
-      "label": "Anacapri",
+      "image": "https://assets.decocache.com/meiasola/e6cc9972-8fea-4da1-a6e4-123651d7b58c/MS_899_ecom_secundario_560x425px.jpg",
+      "label": "Friday",
       "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f1853648-79a2-4466-8ae1-6be2f52c8f58/AREZZO---Summer-Hits-2_9x16-(1).mp4"
     }
   ],
