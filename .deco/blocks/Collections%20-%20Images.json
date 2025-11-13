@@ -2,28 +2,28 @@
   "variant": "two",
   "collections": [
     {
-      "link": "/bolsas?sort=release%3Adesc&filter.category-1=bolsas&filter.category-2=shopping",
+      "link": "/schutz",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/74d4e6d1-6a41-4381-91ef-89fdd0653873/casuak-(2).png",
-      "label": "escolha"
+      "image": "https://assets.decocache.com/meiasola/165319f3-ac65-4a71-8bea-88f589de30a5/Design-sem-nome.png",
+      "label": "SCHUTZ"
     },
     {
-      "link": "/bolsas?sort=release%3Adesc&filter.category-1=bolsas&filter.category-2=tiracolo",
+      "link": "/marcas?filter.brand=vicenza",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/0387f8be-cfcf-4c8d-8514-47784635bc58/confira-aqui-(2).png",
-      "label": "um mood"
+      "image": "https://assets.decocache.com/meiasola/5b381db7-df13-4dd6-9e40-bba5a990c46d/SaveClip.App_567224791_18535060033059632_7263689875017832184_n.jpg",
+      "label": "VICENZA"
     },
     {
-      "link": "/bolsas?sort=release%3Adesc&filter.category-1=bolsas&filter.category-2=hobo",
+      "link": "/arezzo",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/71fce0cf-1c6e-436d-a841-14a24109489d/casuak.png",
-      "label": "para você"
+      "image": "https://assets.decocache.com/meiasola/05d12f83-d7a7-415b-afbb-88ba407e5d0f/SaveClip.App_576073360_18544653886004210_8989394440192378882_n.jpg",
+      "label": "AREZZO"
     },
     {
-      "link": "/bolsas?sort=release%3Adesc&filter.category-1=bolsas&filter.category-2=bucket",
+      "link": "/anacapri",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/6387bf32-6264-42a0-a170-d022ef8479c3/confira-aqui-(1).png",
-      "label": "brilhar ainda mais!"
+      "image": "https://assets.decocache.com/meiasola/2c10fde3-472e-4c3f-abca-1eb1a438899a/SaveClip.App_575694741_18546585136055168_94919382727666515_n.jpg",
+      "label": "ANACAPRI"
     }
   ],
   "__resolveType": "site/sections/MeiaSola/Collections.tsx"
