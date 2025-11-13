@@ -50,26 +50,14 @@
     },
     {
       "button": {
-        "link": "/esquentablack",
+        "link": "/arezzo",
         "text": "Confira"
       },
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/355a4749-80e1-4b8d-8af0-951bcc2ccbbb/esquentablack_desktop_2880x1320.jpg",
-        "imageMobile": "https://assets.decocache.com/meiasola/334f4e51-46e4-433d-88f5-be42f8af91d2/todos_780x1320px.jpg"
-      }
-    },
-    {
-      "type": "image",
-      "video": {},
-      "image": {
         "imageDesktop": "https://assets.decocache.com/meiasola/4f74e8cb-17e9-41c7-adc0-59f3ad386e5d/az_desktop_2880x1320-copiar.jpg",
         "imageMobile": "https://assets.decocache.com/meiasola/cf2b68a4-efcc-4dda-b4cb-0d30a73123ff/todos_780x1320px_flat_0004_az.png"
-      },
-      "button": {
-        "text": "Confira",
-        "link": "/arezzo"
       }
     },
     {
@@ -80,8 +68,8 @@
         "imageMobile": "https://assets.decocache.com/meiasola/a3e49675-b49a-4df1-bd2e-e8e8e4923447/banner_sch_nati_vozza780x1320px.jpg"
       },
       "button": {
-        "link": "/381?map=productClusterIds&O=&sort=release%3Adesc&page",
-        "text": "Confira"
+        "text": "Confira",
+        "link": "/381?map=productClusterIds&O=&sort=release%3Adesc&page"
       }
     },
     {
