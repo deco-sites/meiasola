@@ -838,6 +838,15 @@
                         {
                           "items": [
                             {
+                              "href": "/ms",
+                              "label": "M|S",
+                              "image": {
+                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/199818e3-93c1-496d-b998-ca6798990cde",
+                                "width": 36,
+                                "height": 19
+                              }
+                            },
+                            {
                               "href": "/arezzo?map=brand",
                               "label": "Arezzo",
                               "image": {
@@ -856,12 +865,12 @@
                               }
                             },
                             {
-                              "href": "/ms",
-                              "label": "M|S",
+                              "href": "/marcas?filter.brand=anacapri",
+                              "label": "Anacapri",
                               "image": {
-                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/199818e3-93c1-496d-b998-ca6798990cde",
-                                "width": 36,
-                                "height": 19
+                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/49bf5bea-b2a6-4620-8d55-fc455ad7cf86",
+                                "width": 67,
+                                "height": 16
                               }
                             },
                             {
@@ -875,21 +884,12 @@
                             },
                             {
                               "href": "/marcas?filter.brand=vicenza",
-                              "label": "Vicenza",
                               "image": {
                                 "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/a6534511-38a9-4665-8124-a85834d8407d",
                                 "width": 69,
                                 "height": 20
-                              }
-                            },
-                            {
-                              "href": "/marcas?filter.brand=anacapri",
-                              "image": {
-                                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2403/49bf5bea-b2a6-4620-8d55-fc455ad7cf86",
-                                "width": 67,
-                                "height": 16
                               },
-                              "label": "Anacapri"
+                              "label": "Vicenza"
                             },
                             {
                               "href": "/carrano?map=brand",
