@@ -1007,6 +1007,15 @@
                                 "height": 10
                               },
                               "label": "Carmem Dalessandro"
+                            },
+                            {
+                              "href": "/marcas?filter.brand=saad",
+                              "image": {
+                                "src": "https://assets.decocache.com/meiasola/224cfadc-e9a2-4ebf-86e2-f15147c678e1/LOGO-SAAD-final___e9b02589d2689151d37ecda7baf02077.svg",
+                                "width": 50,
+                                "height": 5
+                              },
+                              "label": "Saad"
                             }
                           ],
                           "label": "Marcas"
