@@ -411,6 +411,15 @@
                       "height": 22,
                       "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/75409780-7e75-4574-942b-be9c88e427a7/full-banner-mobile.png"
                     }
+                  },
+                  {
+                    "label": "saad",
+                    "href": "/saad",
+                    "image": {
+                      "width": 59,
+                      "height": 22,
+                      "src": "https://assets.decocache.com/meiasola/224cfadc-e9a2-4ebf-86e2-f15147c678e1/LOGO-SAAD-final___e9b02589d2689151d37ecda7baf02077.svg"
+                    }
                   }
                 ],
                 "label": "Marcas"
