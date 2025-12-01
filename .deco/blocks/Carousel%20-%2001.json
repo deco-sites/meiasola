@@ -4,12 +4,24 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/0a2625ee-53ee-41ba-b410-c121e73f23fc/zz_desktop_2880x1320-copiar.jpg",
-        "imageMobile": "https://assets.decocache.com/meiasola/b5d3daff-6375-4613-a112-40e77c31153e/zz_780x1320px-copiar.jpg"
+        "imageDesktop": "https://assets.decocache.com/meiasola/69fdbaf7-a9bd-4a0f-8cae-1f1135c51cf9/(2)compre_e_ganhe_bolsa_desktop_2880x1320-(1).jpg",
+        "imageMobile": "https://assets.decocache.com/meiasola/f3600218-6fe3-4e9d-a4d8-e384f3e6463e/(2)compre_e_ganhe_bolsa780x1320px_flat-(1).png"
       },
       "button": {
-        "link": "/arezzo",
+        "link": "/schutz",
         "text": "Confira"
+      }
+    },
+    {
+      "button": {
+        "text": "Confira",
+        "link": "/arezzo"
+      },
+      "type": "image",
+      "video": {},
+      "image": {
+        "imageDesktop": "https://assets.decocache.com/meiasola/0a2625ee-53ee-41ba-b410-c121e73f23fc/zz_desktop_2880x1320-copiar.jpg",
+        "imageMobile": "https://assets.decocache.com/meiasola/b5d3daff-6375-4613-a112-40e77c31153e/zz_780x1320px-copiar.jpg"
       }
     },
     {
@@ -20,14 +32,14 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/d06733e8-bda8-486a-9d17-2340dcdc23f0/sch_NEW_2880x1320-copiar.jpg",
-        "imageMobile": "https://assets.decocache.com/meiasola/5e01138b-21b0-475f-a78e-3fc851b7bdef/sch_780x1320px-copiar.jpg"
+        "imageMobile": "https://assets.decocache.com/meiasola/5e01138b-21b0-475f-a78e-3fc851b7bdef/sch_780x1320px-copiar.jpg",
+        "imageDesktop": "https://assets.decocache.com/meiasola/d06733e8-bda8-486a-9d17-2340dcdc23f0/sch_NEW_2880x1320-copiar.jpg"
       }
     },
     {
       "button": {
-        "text": "Confira",
-        "link": "/anacapri"
+        "link": "/anacapri",
+        "text": "Confira"
       },
       "type": "image",
       "video": {},
@@ -44,20 +56,20 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/b9509f51-32c3-4a7d-8ab2-39a18902e96c/mls_780x1320px-copiar.jpg",
-        "imageDesktop": "https://assets.decocache.com/meiasola/22a5dc75-1fbe-4b20-8d73-2f9949de4715/mls_desktop_2880x1320-copiar.jpg"
+        "imageDesktop": "https://assets.decocache.com/meiasola/22a5dc75-1fbe-4b20-8d73-2f9949de4715/mls_desktop_2880x1320-copiar.jpg",
+        "imageMobile": "https://assets.decocache.com/meiasola/b9509f51-32c3-4a7d-8ab2-39a18902e96c/mls_780x1320px-copiar.jpg"
       }
     },
     {
-      "button": {
-        "link": "/vicenza",
-        "text": "Confira"
-      },
       "type": "image",
       "video": {},
       "image": {
         "imageDesktop": "https://assets.decocache.com/meiasola/c1554095-7aed-4bd9-bcb0-19f50e9098c9/vcz_desktop_2880x1320.jpg",
         "imageMobile": "https://assets.decocache.com/meiasola/0629b7ea-e4d4-4281-b96e-142d34ca9090/vcz_780x1320px_flat.png"
+      },
+      "button": {
+        "text": "Confira",
+        "link": "/vicenza"
       }
     },
     {
@@ -68,8 +80,8 @@
         "imageMobile": "https://assets.decocache.com/meiasola/acfed95e-c9a0-4b18-9bdb-898d6c6d32aa/curadoria_780x1320px-copiar.jpg"
       },
       "button": {
-        "text": "Confira",
-        "link": "/newin"
+        "link": "/newin",
+        "text": "Confira"
       }
     },
     {
