@@ -2,24 +2,24 @@
   "variant": "two",
   "collections": [
     {
-      "link": "/anacapri",
+      "link": "/sapatos?filter.category-1=sapatos&filter.category-2=rasteiras",
       "type": "image",
       "image": "https://assets.decocache.com/meiasola/3e783ae6-5276-418e-aa23-87f1931c1fad/08.-27.11.png",
       "video": "https://data.decoassets.com/meiasola/47d32975-2ab5-441c-ba41-899d239df236/confira-aqui.mp4",
-      "label": "anacapri"
+      "label": "rasteiras"
     },
     {
-      "link": "/schutz",
+      "link": "/sapatos?filter.category-1=sapatos&filter.category-2=sandalia",
       "type": "image",
       "image": "https://assets.decocache.com/meiasola/8e5b7bd7-ae3e-4b9c-b17b-397e400674a0/POST-FEED-(1).jpeg",
-      "label": "SCHUTZ",
+      "label": "Sandálias",
       "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f1853648-79a2-4466-8ae1-6be2f52c8f58/AREZZO---Summer-Hits-2_9x16-(1).mp4"
     },
     {
-      "link": "/arezzo",
+      "link": "/bolsas",
       "type": "image",
       "image": "https://assets.decocache.com/meiasola/1ae2e76a-c4e0-4e83-941d-abee00c1073e/ARZ_26_AV_NOMADIC_WAY_POSTS21.jpeg",
-      "label": "AREZZO",
+      "label": "bolsas",
       "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f1853648-79a2-4466-8ae1-6be2f52c8f58/AREZZO---Summer-Hits-2_9x16-(1).mp4"
     }
   ],
