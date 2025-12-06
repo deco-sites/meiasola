@@ -2,27 +2,27 @@
   "variant": "two",
   "collections": [
     {
-      "link": "/schutz",
-      "type": "image",
-      "image": "https://assets.decocache.com/meiasola/165319f3-ac65-4a71-8bea-88f589de30a5/Design-sem-nome.png",
-      "label": "SCHUTZ"
-    },
-    {
       "link": "/marcas?filter.brand=vicenza",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/5b381db7-df13-4dd6-9e40-bba5a990c46d/SaveClip.App_567224791_18535060033059632_7263689875017832184_n.jpg",
+      "image": "https://assets.decocache.com/meiasola/4a2d33da-6c14-4ca1-9a60-5b3dfdb989bb/SaveClip.App_565342146_18540997192059632_330998157424966377_n.jpg",
       "label": "VICENZA"
     },
     {
       "link": "/arezzo",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/05d12f83-d7a7-415b-afbb-88ba407e5d0f/SaveClip.App_576073360_18544653886004210_8989394440192378882_n.jpg",
+      "image": "https://assets.decocache.com/meiasola/ff0c34de-0999-4d02-a4f5-7d939f9ead68/ARZ_26_V_NATAL_25_CAMPANHA_POST25.jpeg",
       "label": "AREZZO"
+    },
+    {
+      "link": "/schutz",
+      "type": "image",
+      "image": "https://assets.decocache.com/meiasola/6bc1e5bc-2e29-4281-a99e-4d609dfba219/Titi-minha-filha-que-lindo-poder-te-ver-caminhando-sozinha-potente-e-sabendo-que-a-cada-passo-(5).jpeg",
+      "label": "SCHUTZ"
     },
     {
       "link": "/anacapri",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/2c10fde3-472e-4c3f-abca-1eb1a438899a/SaveClip.App_575694741_18546585136055168_94919382727666515_n.jpg",
+      "image": "https://assets.decocache.com/meiasola/51e4be8e-9d65-4823-8cf5-e13da1ba5b12/24.png",
       "label": "ANACAPRI"
     }
   ],
