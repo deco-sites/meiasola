@@ -27,19 +27,7 @@
     {
       "button": {
         "text": "Confira",
-        "link": "/schutz"
-      },
-      "type": "image",
-      "video": {},
-      "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/f3600218-6fe3-4e9d-a4d8-e384f3e6463e/(2)compre_e_ganhe_bolsa780x1320px_flat-(1).png",
-        "imageDesktop": "https://assets.decocache.com/meiasola/69fdbaf7-a9bd-4a0f-8cae-1f1135c51cf9/(2)compre_e_ganhe_bolsa_desktop_2880x1320-(1).jpg"
-      }
-    },
-    {
-      "button": {
-        "link": "/anacapri",
-        "text": "Confira"
+        "link": "/anacapri"
       },
       "type": "image",
       "video": {},
@@ -56,20 +44,20 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/9de00c1e-0ac9-423d-8186-7927675cfadd/mls_desktop_2880x1320-2.jpg",
-        "imageMobile": "https://assets.decocache.com/meiasola/c90ff818-2610-46c7-ac7c-e1a9a61b27a1/MS_780x1320px.jpg"
+        "imageMobile": "https://assets.decocache.com/meiasola/c90ff818-2610-46c7-ac7c-e1a9a61b27a1/MS_780x1320px.jpg",
+        "imageDesktop": "https://assets.decocache.com/meiasola/9de00c1e-0ac9-423d-8186-7927675cfadd/mls_desktop_2880x1320-2.jpg"
       }
     },
     {
+      "button": {
+        "link": "/vicenza",
+        "text": "Confira"
+      },
       "type": "image",
       "video": {},
       "image": {
         "imageDesktop": "https://assets.decocache.com/meiasola/8e3df41a-f392-4b1e-80e7-7f8310d6cb3b/vcz_desktop_2880x1320.jpg",
         "imageMobile": "https://assets.decocache.com/meiasola/742c733c-907c-4048-91c0-a0648ec9c8c0/vcz_780x1320px.jpg"
-      },
-      "button": {
-        "text": "Confira",
-        "link": "/vicenza"
       }
     },
     {
@@ -80,8 +68,8 @@
         "imageMobile": "https://assets.decocache.com/meiasola/aedf0c34-1bcf-438c-9a9e-c830e56e2225/meias_780x1320px.jpg"
       },
       "button": {
-        "link": "/newin",
-        "text": "Confira"
+        "text": "Confira",
+        "link": "/newin"
       }
     },
     {
