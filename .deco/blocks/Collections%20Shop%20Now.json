@@ -2,24 +2,24 @@
   "variant": "two",
   "collections": [
     {
-      "link": "/sapatos?filter.category-1=sapatos&filter.category-2=rasteiras",
+      "link": "/newin?filter.price=99%3A300&sort=price%3Aasc&page=1",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/6fd98cbb-599c-4bd7-b494-fc972dc1ab4f/15.png",
+      "image": "https://assets.decocache.com/meiasola/46456888-eaef-422b-a557-c0d4258ce6c2/banners_faixa_de_preco_299.jpg",
       "video": "https://data.decoassets.com/meiasola/47d32975-2ab5-441c-ba41-899d239df236/confira-aqui.mp4",
-      "label": "rasteiras"
+      "label": "Os melhores"
     },
     {
-      "link": "/sapatos?filter.category-1=sapatos&filter.category-2=sandalia",
+      "link": "/newin?filter.price=299%3A499&sort=price%3Aasc&page=1",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/f5107d9d-3af1-4b87-ae13-a19160d95694/ARZ_26_V_NATAL_25_CAMPANHA_STILLS_POSTS49.jpeg",
-      "label": "Sandálias",
+      "image": "https://assets.decocache.com/meiasola/292d7d19-bab4-496f-8399-e88b31396372/banners_faixa_de_preco_499.jpg",
+      "label": "presentes",
       "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f1853648-79a2-4466-8ae1-6be2f52c8f58/AREZZO---Summer-Hits-2_9x16-(1).mp4"
     },
     {
-      "link": "/bolsas",
+      "link": "/newin?filter.price=399%3A699&sort=price%3Aasc",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/f4d6477e-06ab-4477-bef6-baadd1dd8de2/ARZ_26_V_NATAL_25_CAMPANHA_STILLS_POSTS68.jpeg",
-      "label": "bolsas",
+      "image": "https://assets.decocache.com/meiasola/e1b92de4-3895-4269-adfd-5a6c06d792cc/banners_faixa_de_preco_699.jpg",
+      "label": "para você!",
       "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f1853648-79a2-4466-8ae1-6be2f52c8f58/AREZZO---Summer-Hits-2_9x16-(1).mp4"
     }
   ],
