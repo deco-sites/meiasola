@@ -42,7 +42,7 @@
       ],
       "__resolveType": "site/sections/Product/SearchResult.tsx",
       "isWishlistPage": false,
-      "enableInfiniteScroll": true,
+      "enableInfiniteScroll": false,
       "pageOptionalDescription": "Descubra as novidades que acabaram de chegar! Peças exclusivas, cheias de estilo e tendência, selecionadas para renovar seu closet com sofisticação. Não perca a chance de ser a primeira a garantir os lançamentos mais desejados da temporada!"
     },
     {
