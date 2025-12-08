@@ -243,7 +243,7 @@
               ],
               "__resolveType": "commerce/loaders/product/productListingPage.ts"
             },
-            "enableInfiniteScroll": false,
+            "enableInfiniteScroll": true,
             "isWishlistPage": false
           },
           {
