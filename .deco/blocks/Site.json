@@ -20,9 +20,6 @@
   "global": [
     {
       "__resolveType": "WhatsApp Global"
-    },
-    {
-      "__resolveType": "analytics/sections/Analytics/DecoAnalytics.tsx"
     }
   ],
   "routes": [
@@ -31,7 +28,11 @@
       "includeSiteMap": [],
       "extraPathsToProxy": [],
       "includeScriptsToHead": {
-        "includes": []
+        "includes": [
+          {
+            "__resolveType": "analytics/loaders/OneDollarScript.ts"
+          }
+        ]
       }
     },
     {
