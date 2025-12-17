@@ -4,21 +4,21 @@
     {
       "link": "/newin?filter.price=99%3A300&sort=price%3Aasc&page=1",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/46456888-eaef-422b-a557-c0d4258ce6c2/banners_faixa_de_preco_299.jpg",
+      "image": "https://assets.decocache.com/meiasola/b174c124-1604-4522-b9d5-9d19f9c4a10b/299.png",
       "video": "https://data.decoassets.com/meiasola/47d32975-2ab5-441c-ba41-899d239df236/confira-aqui.mp4",
       "label": "Os melhores"
     },
     {
       "link": "/newin?filter.price=299%3A499&sort=price%3Aasc&page=1",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/292d7d19-bab4-496f-8399-e88b31396372/banners_faixa_de_preco_499.jpg",
+      "image": "https://assets.decocache.com/meiasola/a30db94c-686a-44d6-bba1-e2a441af61dd/499.png",
       "label": "presentes",
       "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f1853648-79a2-4466-8ae1-6be2f52c8f58/AREZZO---Summer-Hits-2_9x16-(1).mp4"
     },
     {
       "link": "/newin?filter.price=399%3A699&sort=price%3Aasc",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/e1b92de4-3895-4269-adfd-5a6c06d792cc/banners_faixa_de_preco_699.jpg",
+      "image": "https://assets.decocache.com/meiasola/6232f43f-bff8-4fe3-8167-fc87e83cf3b8/699.png",
       "label": "para você!",
       "video": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/meiasola/f1853648-79a2-4466-8ae1-6be2f52c8f58/AREZZO---Summer-Hits-2_9x16-(1).mp4"
     }
