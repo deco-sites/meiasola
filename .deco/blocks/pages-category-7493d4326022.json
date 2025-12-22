@@ -200,13 +200,13 @@
             "images": [
               {
                 "alt": "Imagem de um sapato salto alto",
-                "src": "https://assets.decocache.com/meiasola/4940cb80-1a47-4c55-bf12-aa5a58f72a02/29.png",
+                "src": "https://assets.decocache.com/meiasola/c9e19b51-468a-41ee-a903-8666c98e70c7/sapatos.png",
                 "route": "/sapatos",
-                "srcMobile": "https://assets.decocache.com/meiasola/78fbd695-73ee-428b-b044-7f6dbed909d1/47.png"
+                "srcMobile": "https://assets.decocache.com/meiasola/ddfe6d76-6113-4b9a-a1b0-40835d74a345/47.png"
               },
               {
                 "alt": "Imagem de bolsas",
-                "src": "https://assets.decocache.com/meiasola/a696caa9-24cb-4946-acf0-3c21aeabcbab/28.png",
+                "src": "https://assets.decocache.com/meiasola/f5fc01d0-7ef9-476d-8f40-d15ec4f8983f/bolsas.png",
                 "route": "/bolsas",
                 "srcMobile": "https://assets.decocache.com/meiasola/e6ef985a-bcac-4e57-b48d-6145ff1c3c39/46.png"
               },
