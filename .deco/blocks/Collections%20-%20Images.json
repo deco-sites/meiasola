@@ -4,14 +4,8 @@
     {
       "link": "/marcas?filter.brand=vicenza",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/4a2d33da-6c14-4ca1-9a60-5b3dfdb989bb/SaveClip.App_565342146_18540997192059632_330998157424966377_n.jpg",
+      "image": "https://assets.decocache.com/meiasola/7f555303-b9d6-472e-b6ed-780670e2503c/2025-12-03-13.44.45.jpg",
       "label": "VICENZA"
-    },
-    {
-      "link": "/arezzo",
-      "type": "image",
-      "image": "https://assets.decocache.com/meiasola/ff0c34de-0999-4d02-a4f5-7d939f9ead68/ARZ_26_V_NATAL_25_CAMPANHA_POST25.jpeg",
-      "label": "AREZZO"
     },
     {
       "link": "/schutz",
@@ -20,9 +14,15 @@
       "label": "SCHUTZ"
     },
     {
+      "link": "/arezzo",
+      "type": "image",
+      "image": "https://assets.decocache.com/meiasola/e39b6c39-55b9-4bd4-a42b-d063c05223d9/ARZ_26_V_CELEBRE_METAL_ORGANICO_POSTS37.jpeg",
+      "label": "AREZZO"
+    },
+    {
       "link": "/anacapri",
       "type": "image",
-      "image": "https://assets.decocache.com/meiasola/51e4be8e-9d65-4823-8cf5-e13da1ba5b12/24.png",
+      "image": "https://assets.decocache.com/meiasola/5e24ea17-6749-4083-a5c7-845b799c1339/17.12.png",
       "label": "ANACAPRI"
     }
   ],
