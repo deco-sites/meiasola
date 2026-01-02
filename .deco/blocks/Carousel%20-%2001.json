@@ -20,26 +20,14 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/c0f1a646-aa3c-4f22-9b37-1b021a9c3e1a/sch_desktop_2880x1320.jpg",
-        "imageMobile": "https://assets.decocache.com/meiasola/8995b658-643c-486c-be65-fb10cb65132b/sch_mobile_780x1320px.jpg"
+        "imageDesktop": "https://assets.decocache.com/meiasola/976f42d8-48df-4939-a3d7-98c58dd3b492/sch_desktop_2880x1320-copiar.jpg",
+        "imageMobile": "https://assets.decocache.com/meiasola/34e5a15c-eed2-40b4-9717-9f184446b6f1/sch_780x1320px-copiar.jpg"
       }
     },
     {
       "button": {
         "text": "Confira",
-        "link": "/schutz"
-      },
-      "type": "image",
-      "video": {},
-      "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/34e5a15c-eed2-40b4-9717-9f184446b6f1/sch_780x1320px-copiar.jpg",
-        "imageDesktop": "https://assets.decocache.com/meiasola/976f42d8-48df-4939-a3d7-98c58dd3b492/sch_desktop_2880x1320-copiar.jpg"
-      }
-    },
-    {
-      "button": {
-        "link": "/newin",
-        "text": "Confira"
+        "link": "/newin"
       },
       "type": "image",
       "video": {},
@@ -56,20 +44,20 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/0872fd5b-0c91-4210-bcc8-80c395edeec7/ac_desktop_2880x1320-copiar.jpg",
-        "imageMobile": "https://assets.decocache.com/meiasola/c38c66cf-0400-4a0e-bd2e-64b904e29362/ac_780x1320px-copiar.jpg"
+        "imageMobile": "https://assets.decocache.com/meiasola/c38c66cf-0400-4a0e-bd2e-64b904e29362/ac_780x1320px-copiar.jpg",
+        "imageDesktop": "https://assets.decocache.com/meiasola/0872fd5b-0c91-4210-bcc8-80c395edeec7/ac_desktop_2880x1320-copiar.jpg"
       }
     },
     {
+      "button": {
+        "link": "/ms",
+        "text": "Confira"
+      },
       "type": "image",
       "video": {},
       "image": {
         "imageDesktop": "https://assets.decocache.com/meiasola/23ab962c-dd92-4374-9141-4169a7e6226c/ms_desktop_2880x1320-2-copiar.jpg",
         "imageMobile": "https://assets.decocache.com/meiasola/adc9444a-2a9f-441f-b655-46d0d25f0389/ms_780x1320px-copiar.jpg"
-      },
-      "button": {
-        "text": "Confira",
-        "link": "/ms"
       }
     },
     {
@@ -80,8 +68,8 @@
         "imageMobile": "https://assets.decocache.com/meiasola/057d85a9-af8d-4726-8c0b-29abbdaa8d86/vcz_780x1320px-copiar.jpg"
       },
       "button": {
-        "link": "/vicenza",
-        "text": "Confira"
+        "text": "Confira",
+        "link": "/vicenza"
       }
     },
     {
