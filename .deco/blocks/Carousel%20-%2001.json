@@ -64,24 +64,12 @@
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/f5c4a730-1fe2-4038-9ac0-cfbbaa0370c7/vcz_desktop_2880x1320-copiar.jpg",
-        "imageMobile": "https://assets.decocache.com/meiasola/057d85a9-af8d-4726-8c0b-29abbdaa8d86/vcz_780x1320px-copiar.jpg"
-      },
-      "button": {
-        "text": "Confira",
-        "link": "/vicenza"
-      }
-    },
-    {
-      "type": "image",
-      "video": {},
-      "image": {
         "imageDesktop": "https://assets.decocache.com/meiasola/54500169-d87a-48f6-9894-851b123e19bf/bolsas_desktop_2880x1320-copiar.jpg",
         "imageMobile": "https://assets.decocache.com/meiasola/a529f12f-3aa7-49d4-a3d2-3e6854bcfb57/bolsas_780x1320px-copiar.jpg"
       },
       "button": {
-        "link": "/bolsas",
-        "text": "Confira"
+        "text": "Confira",
+        "link": "/bolsas"
       }
     },
     {
