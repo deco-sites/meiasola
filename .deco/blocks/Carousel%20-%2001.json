@@ -38,14 +38,14 @@
     },
     {
       "button": {
-        "link": "/schutz",
+        "link": "/395?map=productClusterIds&O=&sort=discount%3Adesc&page=",
         "text": "Confira"
       },
       "type": "image",
       "video": {},
       "image": {
-        "imageMobile": "https://assets.decocache.com/meiasola/34e5a15c-eed2-40b4-9717-9f184446b6f1/sch_780x1320px-copiar.jpg",
-        "imageDesktop": "https://assets.decocache.com/meiasola/976f42d8-48df-4939-a3d7-98c58dd3b492/sch_desktop_2880x1320-copiar.jpg"
+        "imageMobile": "https://assets.decocache.com/meiasola/eecbf4ca-f862-4611-b091-b214d782e565/sch_780x1320px-copiar.jpg",
+        "imageDesktop": "https://assets.decocache.com/meiasola/46a91a6a-e349-40ad-ae31-03339ab0287c/sch_desktop_2880x1320-copiar.jpg"
       }
     },
     {
