@@ -50,26 +50,14 @@
     },
     {
       "button": {
-        "link": "/ms",
+        "link": "/396?map=productClusterIds&O=&sort=discount%3Adesc&page=",
         "text": "Confira"
       },
       "type": "image",
       "video": {},
       "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/23ab962c-dd92-4374-9141-4169a7e6226c/ms_desktop_2880x1320-2-copiar.jpg",
-        "imageMobile": "https://assets.decocache.com/meiasola/adc9444a-2a9f-441f-b655-46d0d25f0389/ms_780x1320px-copiar.jpg"
-      }
-    },
-    {
-      "type": "image",
-      "video": {},
-      "image": {
-        "imageDesktop": "https://assets.decocache.com/meiasola/54500169-d87a-48f6-9894-851b123e19bf/bolsas_desktop_2880x1320-copiar.jpg",
-        "imageMobile": "https://assets.decocache.com/meiasola/a529f12f-3aa7-49d4-a3d2-3e6854bcfb57/bolsas_780x1320px-copiar.jpg"
-      },
-      "button": {
-        "text": "Confira",
-        "link": "/bolsas"
+        "imageDesktop": "https://assets.decocache.com/meiasola/0cf220ea-bdfc-48ab-886e-2c22b13de486/bolsas_desktop_2880x1320.jpg",
+        "imageMobile": "https://assets.decocache.com/meiasola/26e525c4-2f9e-45e9-abcb-0d95d16854e7/bolsas_780x1320px.jpg"
       }
     },
     {
@@ -80,7 +68,19 @@
         "imageMobile": "https://assets.decocache.com/meiasola/2ccc5c9f-42f5-42b4-a1d4-5868486fb9a0/fg_780x1320px-copiar.jpg"
       },
       "button": {
-        "link": "/newin",
+        "text": "Confira",
+        "link": "/newin"
+      }
+    },
+    {
+      "type": "image",
+      "video": {},
+      "image": {
+        "imageDesktop": "https://assets.decocache.com/meiasola/23ab962c-dd92-4374-9141-4169a7e6226c/ms_desktop_2880x1320-2-copiar.jpg",
+        "imageMobile": "https://assets.decocache.com/meiasola/adc9444a-2a9f-441f-b655-46d0d25f0389/ms_780x1320px-copiar.jpg"
+      },
+      "button": {
+        "link": "/ms",
         "text": "Confira"
       }
     }
